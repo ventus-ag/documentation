@@ -22,7 +22,7 @@ In this article, we will assume that we have already created two Projects, belon
   For detailed instructions on how to do this, see here: [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/)
 
 {{% notice tip %}}
-You can upload any custom Image to your Project. Please see detailed instructions, if you need:: [Images](https://docs.ventuscloud.eu/products/images/custom-images/)
+You can upload any custom Image to your Project. Please see detailed instructions, if you need: [Images](https://docs.ventuscloud.eu/products/images/custom-images/)
 {{% /notice %}} 
 
 - **Project 2** named *dev-2*, that was created in the Organization named *Test2* and related to the Vienna Region, with the following resources:
@@ -37,7 +37,7 @@ For more information on the prerequisites discussed, see the following articles:
     [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/);   
     [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);        
     [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/);  
-    [Images](https://docs.ventuscloud.eu/products/images/custom-images/); 
+    [Images](https://docs.ventuscloud.eu/products/images/custom-images/);      
     [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
 
 
