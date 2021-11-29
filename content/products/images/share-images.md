@@ -1,6 +1,6 @@
 ---
 title: Share Images between Projects
-weight: 24
+weight: 15
 ---
 ___
 On this page, we will discuss a workflow to help you to share Images between Projects in the same Region.
@@ -17,7 +17,7 @@ In this article, we will assume that we have already created two Projects, belon
 
 - **Project 1** named *dev-1*, that was created in the Organization named *Test1* and related to the Vienna Region, with the following resources:
   - **CLI User** named *dev1CLIuser* and which RC file has already been loaded;  
-  - **Ubuntu Virtual Machine (IP: 88.218.53.162, Name: vm-1)**; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;
+  - **Ubuntu Virtual Machine** - IP: 88.218.53.162, Name: *vm-1*; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;
   - **Custon Image** named *img-migrated*, that was created from the VM's Snapshot;   
   For detailed instructions on how to do this, see here: [Create Image from Snapshot](https://docs.ventuscloud.eu/tutorials-advanced/image-from-snapshot/)
 
@@ -32,13 +32,13 @@ You can upload any custom Image to your Project. Please see detailed instruction
 If you want to share an Image with another Project, you need to know the ID of this Project. 
 {{% /notice %}} 
 
-**For more information on the prerequisites discussed, see the following articles:**   
+For more information on the prerequisites discussed, see the following articles:    
     [Projects](https://docs.ventuscloud.eu/getting-started/projects/);  
     [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/);   
     [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);        
     [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/);  
-    [Images](https://docs.ventuscloud.eu/products/storage/custom-images/);  
-    [Create Image from Snapshot](https://docs.ventuscloud.eu/tutorials-advanced/image-from-snapshot/).
+    [Images](https://docs.ventuscloud.eu/products/images/custom-images/); 
+    [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
 
 
 ## Workflow
@@ -158,7 +158,7 @@ To accept shared Image do the following:
     ```
 
 After these steps, the newly created Image will be added to the *Images page* of the the Project-2 named *dev-2* and you can use it to create new Virtual Machines within this Project:   
-![](../../assets/images/tutorials/0-9.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/0-9.png?classes=border,shadow) 
 
 ### Unshare Image
 To unshare an Image use the command:    

@@ -1,6 +1,6 @@
 ---
 title: Images
-weight: 40
+weight: 5
 ---
 ___
 On this page, you can find an explanation of how to find list of default Images in the Cloud Console and how to create and delete custom Images.

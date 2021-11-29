@@ -1,6 +1,6 @@
 ---
 title: Create Image from Snapshot
-weight: 23
+weight: 10
 ---
 ___
 On this page we will discuss the workflow, that can help you to create an Image from Snapshot.
@@ -17,10 +17,10 @@ On this page we will discuss the workflow, that can help you to create an Image 
 ## Prerequisites
 In this article we will assume, that we have already created the following resources, that refer to the Project named *dev-1* that was created in the Organization named *Test1*: 
 
-  - **CLI User** named *dev1CLIuser* and which RC file has already been loaded;  
-  - **Ubuntu Virtual Machine (IP: 88.218.53.162, Name: vm-1)**; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH.    
+  - **CLI User** (Name: *dev1CLIuser*) - which RC file has already been loaded;  
+  - **Ubuntu Virtual Machine** (IP: *88.218.53.162*, Name: *vm-1*) - that was created with an additional firewall, configured to allow connection to this VM remotely via SSH.    
   
-**To find more detailed instructions see the next articles:**   
+To find more detailed instructions see the next articles:    
     [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/);   
     [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);      
     [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/).       
@@ -66,13 +66,13 @@ You can check if this Snapshot is working correctly by creating Virtuale Machine
 To create a Volume from the Snapshot do the following:
 
 - open the *Snapshots page*, click on the **Actions** icon of the selected Snapshot and select the **Create volume** in the list of available options:
-![](../../assets/images/tutorials/15.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/15.png?classes=border,shadow) 
 
 - fill in the form on the next opened *Create volume from snapshot window* and click on the CREATE icon:
-![](../../assets/images/tutorials/16.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/16.png?classes=border,shadow) 
 
 After these steps, the newly created Volume will be added to the *Volumes page* with the status *available*:
-![](../../assets/images/tutorials/16.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/16.png?classes=border,shadow) 
 
 {{% notice tip %}}
 To find detailed instructions about Volume creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/) 
@@ -163,4 +163,4 @@ It may take a long time to create Images from a Volume, please wait until its st
     ```
 
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines:   
-![](../../assets/images/tutorials/0-9.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/0-9.png?classes=border,shadow) 
