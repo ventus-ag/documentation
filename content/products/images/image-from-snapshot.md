@@ -153,13 +153,13 @@ It may take a long time to create Images from a Volume, please wait until its st
     In our case the output will be next:  
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ID                                   | Name                                             | Status |
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ....                                 | ....                                             | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                                     | active |  <--
-    | ....                                 | ....                                             | ....   |
-    +--------------------------------------+--------------------------------------------------+--------+
+    +--------------------------------------+-------------------------------------------+--------+
+    | ID                                   | Name                                      | Status |
+    +--------------------------------------+-------------------------------------------+--------+
+    | ....                                 | ....                                      | ....   |
+    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                              | active |  <--
+    | ....                                 | ....                                      | ....   |
+    +--------------------------------------+-------------------------------------------+--------+
     ```
 
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines:   

@@ -42,8 +42,8 @@ Let's take a closer look at each of them.
 ### Prepare custom Image
 You can upload any custom Image that was already saved locally, or create the neccessery Image from an Snapshot.
 Please choose, what is better for you, and see detailed instructions in the next articles:  
-    [Images](https://docs.ventuscloud.eu/products/storage/custom-images/);  
-    [Create Image from Snapshot](https://docs.ventuscloud.eu/tutorials-advanced/image-from-snapshot/)
+    [Images](https://docs.ventuscloud.eu/products/images/custom-images/);  
+    [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/)
 
 ### Save custom Image
 To save custom Image on the VM do the following:

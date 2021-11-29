@@ -19,10 +19,10 @@ In this article, we will assume that we have already created two Projects, belon
   - **CLI User** named *dev1CLIuser* and which RC file has already been loaded;  
   - **Ubuntu Virtual Machine** - IP: 88.218.53.162, Name: *vm-1*; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;
   - **Custon Image** named *img-migrated*, that was created from the VM's Snapshot;   
-  For detailed instructions on how to do this, see here: [Create Image from Snapshot](https://docs.ventuscloud.eu/tutorials-advanced/image-from-snapshot/)
+  For detailed instructions on how to do this, see here: [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/)
 
 {{% notice tip %}}
-You can upload any custom Image to your Project. Please see detailed instructions, if you need:: [Images](https://docs.ventuscloud.eu/products/storage/custom-images/)
+You can upload any custom Image to your Project. Please see detailed instructions, if you need:: [Images](https://docs.ventuscloud.eu/products/images/custom-images/)
 {{% /notice %}} 
 
 - **Project 2** named *dev-2*, that was created in the Organization named *Test2* and related to the Vienna Region, with the following resources:
@@ -83,13 +83,13 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     In our case the output will be next:    
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ID                                   | Name                                             | Status |
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ....                                 | ....                                             | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                                     | active |  <--
-    | ....                                 | ....                                             | ....   |
-    +--------------------------------------+--------------------------------------------------+--------+
+    +--------------------------------------+-------------------------------------------+--------+
+    | ID                                   | Name                                      | Status |
+    +--------------------------------------+-------------------------------------------+--------+
+    | ....                                 | ....                                      | ....   |
+    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                              | active |  <--
+    | ....                                 | ....                                      | ....   |
+    +--------------------------------------+-------------------------------------------+--------+
     ```
 
 - share the selected Image with your Project-2 *dev-2*:    
@@ -148,13 +148,13 @@ To accept shared Image do the following:
     In our case the output will be next:  
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ID                                   | Name                                             | Status |
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ....                                 | ....                                             | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                                     | active |  <--
-    | ....                                 | ....                                             | ....   |
-    +--------------------------------------+--------------------------------------------------+--------+
+    +--------------------------------------+-------------------------------------------+--------+
+    | ID                                   | Name                                      | Status |
+    +--------------------------------------+-------------------------------------------+--------+
+    | ....                                 | ....                                      | ....   |
+    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                              | active |  <--
+    | ....                                 | ....                                      | ....   |
+    +--------------------------------------+-------------------------------------------+--------+
     ```
 
 After these steps, the newly created Image will be added to the *Images page* of the the Project-2 named *dev-2* and you can use it to create new Virtual Machines within this Project:   
