@@ -43,7 +43,11 @@ It is recommended to stop the Virtual Machine before taking a Snapshot.
 {{% /notice %}} 
 
 {{% notice warning %}}
-Snapshots, taken from a volume with an "in-use" status, may contain corrupted data.
+Snapshots, taken from a Volume with an "in-use" status, may contain corrupted data.
+{{% /notice %}} 
+
+{{% notice info %}}
+To find Volumes with an "available" status, go to the *Volumes page*. For this select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Volumes TAB:**.
 {{% /notice %}} 
 
 - go to the SNAPSHOTS TAB and click the CREATE icon in the upper left corner:
