@@ -10,7 +10,7 @@ On this page we will discuss the workflow, that can help you to create an Image 
 2. [Workflow](#workflow)
     1. [Prepare Snapshot](#prepare-snapshot)
     2. [Create Volume from Snapshot](#create-volume-from-snapshot)
-    3. [Create Image of Volume](#create-image-of-volume)
+    3. [Create Image from Volume](#create-image-from-volume)
 
 
 
@@ -29,7 +29,7 @@ To find more detailed instructions see the next articles:
 The workflow for creating an Image from a Snapshot consists of three steps:
 1. Prepare the Snapshot;
 2. Create a Volume from the Snapshot;
-3. Create an Image of the Volume.
+3. Create an Image from the Volume.
 
 Let's take a closer look at each of them.
 
@@ -82,8 +82,8 @@ After these steps, the newly created Volume will be added to the *Volumes page*
 To find detailed instructions about Volume creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/) 
 {{% /notice %}} 
 
-### Create Image of Volume
-To create a Image of the Volume do the following:
+### Create Image from Volume
+To create a Image from the Volume do the following:
 
 - connect to the preiviously created Virtual Machine in the current Project *dev-1*; 
 
