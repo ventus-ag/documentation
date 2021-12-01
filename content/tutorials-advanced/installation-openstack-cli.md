@@ -33,6 +33,14 @@ For more information, see the article -[CLI Users](https://docs.ventuscloud.eu/p
 `sudo pip3 install python-magnumclient`   
 `sudo pip3 install python-octaviaclient`  
 
+{{% notice info %}}
+In this example we are using python-openstackclient 5.4.0 version.  
+Check your current version and, if necessary, install the required:  
+`openstack --version`;  
+`pip3 uninstall openstacksdk`;  
+`pip3 install python-openstackclient==5.4.0`. 
+{{% /notice %}} 
+
 - Place RC File of the created CLI User to your Virtual Machine:  
 `vi openrc`  
 Сheck that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  

@@ -1,6 +1,6 @@
 ---
 title: Images
-weight: 40
+weight: 5
 ---
 ___
 On this page, you can find an explanation of how to find list of default Images in the Cloud Console and how to create and delete custom Images.
@@ -30,7 +30,7 @@ In this article we will assume, that we have already created the following resou
 - **SSH Key,** that will be specified during creating the Virtual Machine and Kubernetes Cluster for further connection to them via SSH; it was created with the next parameters:
   - *Name*: mykey;
   - *Public key* is placed on the Linux VM during its creation;
-  - *Private Key* was copied to the clipboard and saved on the local system in the next text file (for example: ~/.ssh/id_rsa).
+  - *Private Key* was copied to the clipboard and saved on the local system in the text file (for example: ~/.ssh/id_rsa).
 - **Firewall (Name: for-ssh),** that will be specified during creating the Virtual Machine for further connection to it via SSH - it was created with additional rule allowing incoming traffic on port 22; this rule was created with the next parameters:
   - *Description:* for ssh;
   - *Direction*: ingress;
@@ -51,7 +51,7 @@ In this article we will assume, that we have already created the following resou
   - *Name*: test-conn;
   - *Password*: P@sword.
 
-For more information on creating and configuring these resources, see the following articles:
+For more information about creating and configuring these resources, see the following articles:
 - [SSH Keys](https://docs.ventuscloud.eu/products/security/ssh-keys/)
 - [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/)
 - [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)
@@ -74,6 +74,14 @@ for this we use SSH protocol - to find additional information about, it see the 
 - Install openstack cli tool by running two next commands one by one:   
 `sudo pip3 install python-openstackclient`  
 `sudo pip3 install python-magnumclient`  
+
+{{% notice info %}}
+In this example we are using python-openstackclient 5.4.0 version.  
+Check your current version and, if necessary, install the required:  
+`openstack --version`;  
+`pip3 uninstall openstacksdk`;  
+`pip3 install python-openstackclient==5.4.0`. 
+{{% /notice %}} 
 
 - Place RC File of the created CLI User to your Virtual Machine:  
 `vi openrc`  
@@ -109,22 +117,22 @@ for this we use SSH protocol - to find additional information about, it see the 
 In our case the output will be next:
 ```output
 ubuntu@test-2:~$ openstack image list
-+--------------------------------------+--------------------------------------------------+--------+
-| ID                                   | Name                                             | Status |
-+--------------------------------------+--------------------------------------------------+--------+
-| 8f55bd6c-3ccc-4383-9a72-ebe618949ddc | centos-6.10-1907                                 | active |
-| c0be41ce-7fdd-4f43-bc96-5a72d77a1e4c | centos-7.9-2009                                  | active |
-| e2d59e4e-a192-4f68-99eb-c8a340d8f9d0 | centos-8.2-2004                                  | active |
-| 4947b0b1-5417-4403-8c75-4d3bfbf60481 | debian-buster-10.8.3-20210304                    | active |
-| e5791dcb-9250-43a8-9e07-2d081217c9c1 | debian-stretch-9.13.16-20210219                  | active |
-| 8c9b8117-3563-4c47-b6f8-c2349cf004ee | fedora-coreos-31.20200127.3.0                    | active |
-| 345033d8-1276-478c-9e1e-a6884d87f16a | fedora-coreos-33.20210117.3.2                    | active |
-| 666519ae-cd7b-4af7-8058-474a2e64bec7 | fedora-coreos-34.20210427.3.0                    | active |
-| 44584593-dd1e-453a-8605-535ba3714735 | ubuntu-server-16.04-LTS-20201111                 | active |
-| f68b0cfb-52f8-4710-8d2c-da4ea3a18f43 | ubuntu-server-18.04-LTS-20201111                 | active |
-| 02d12d5c-0820-49ea-b02f-a3986921a7c1 | ubuntu-server-20.04-LTS-20201111                 | active |
-| 2e2148c8-e9cf-44ce-9e35-d4d6cf5ff8d4 | windows-server-2019-datacenter-1809-17763.737-en | active |
-+--------------------------------------+--------------------------------------------------+--------+
++------------------+--------------------------------------------------+--------+
+| ID               | Name                                             | Status |
++------------------+--------------------------------------------------+--------+
+| 8f55bd6c...49ddc | centos-6.10-1907                                 | active |
+| c0be41ce...a1e4c | centos-7.9-2009                                  | active |
+| e2d59e4e...8f9d0 | centos-8.2-2004                                  | active |
+| 4947b0b1...60481 | debian-buster-10.8.3-20210304                    | active |
+| e5791dcb...7c9c1 | debian-stretch-9.13.16-20210219                  | active |
+| 8c9b8117...004ee | fedora-coreos-31.20200127.3.0                    | active |
+| 345033d8...7f16a | fedora-coreos-33.20210117.3.2                    | active |
+| 666519ae...4bec7 | fedora-coreos-34.20210427.3.0                    | active |
+| 44584593...14735 | ubuntu-server-16.04-LTS-20201111                 | active |
+| f68b0cfb...18f43 | ubuntu-server-18.04-LTS-20201111                 | active |
+| 02d12d5c...1a7c1 | ubuntu-server-20.04-LTS-20201111                 | active |
+| 2e2148c8...ff8d4 | windows-server-2019-datacenter-1809-17763.737-en | active |
++------------------+--------------------------------------------------+--------+
 ```
 
 Also, all this Images you can find on the *Images page* in the Cloud Console and use one of them during VM creation:
@@ -142,8 +150,8 @@ To create/upload a custom Image, follow the next steps:
             --disk-format=qcow2 \ 
             --container-format=bare \ 
             --file=focal-server-cloudimg-amd64.img \ 
-            --property os\_distro='ubuntu' \ 
-            --property os\_platform='linux' \
+            --property os_distro='ubuntu' \ 
+            --property os_platform='linux' \
             ubuntu-server-Ventus
   ``` 
     - *–disk-format* - The supported options are: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, and ploop. The default format is: *raw*.
@@ -169,23 +177,23 @@ Without it, you won't see your Image in the Web Console interface. 
 In our case the output should be the next:  
 ```output
 ubuntu@test-2:~$ openstack image list
-+--------------------------------------+--------------------------------------------------+--------+
-| ID                                   | Name                                             | Status |
-+--------------------------------------+--------------------------------------------------+--------+
-| 8f55bd6c-3ccc-4383-9a72-ebe618949ddc | centos-6.10-1907                                 | active |
-| c0be41ce-7fdd-4f43-bc96-5a72d77a1e4c | centos-7.9-2009                                  | active |
-| e2d59e4e-a192-4f68-99eb-c8a340d8f9d0 | centos-8.2-2004                                  | active |
-| 4947b0b1-5417-4403-8c75-4d3bfbf60481 | debian-buster-10.8.3-20210304                    | active |
-| e5791dcb-9250-43a8-9e07-2d081217c9c1 | debian-stretch-9.13.16-20210219                  | active |
-| 8c9b8117-3563-4c47-b6f8-c2349cf004ee | fedora-coreos-31.20200127.3.0                    | active |
-| 345033d8-1276-478c-9e1e-a6884d87f16a | fedora-coreos-33.20210117.3.2                    | active |
-| 666519ae-cd7b-4af7-8058-474a2e64bec7 | fedora-coreos-34.20210427.3.0                    | active |
-| 44584593-dd1e-453a-8605-535ba3714735 | ubuntu-server-16.04-LTS-20201111                 | active |
-| f68b0cfb-52f8-4710-8d2c-da4ea3a18f43 | ubuntu-server-18.04-LTS-20201111                 | active |
-| 02d12d5c-0820-49ea-b02f-a3986921a7c1 | ubuntu-server-20.04-LTS-20201111                 | active |
-| e25063ec-de4e-4dcb-8a79-d893b1ef1201 | ubuntu-server-Ventus              <--            | active |
-| 2e2148c8-e9cf-44ce-9e35-d4d6cf5ff8d4 | windows-server-2019-datacenter-1809-17763.737-en | active |
-+--------------------------------------+--------------------------------------------------+--------+
++------------------+--------------------------------------------------+--------+
+| ID               | Name                                             | Status |
++------------------+--------------------------------------------------+--------+
+| 8f55bd6c...49ddc | centos-6.10-1907                                 | active |
+| c0be41ce...a1e4c | centos-7.9-2009                                  | active |
+| e2d59e4e...8f9d0 | centos-8.2-2004                                  | active |
+| 4947b0b1...60481 | debian-buster-10.8.3-20210304                    | active |
+| e5791dcb...7c9c1 | debian-stretch-9.13.16-20210219                  | active |
+| 8c9b8117...004ee | fedora-coreos-31.20200127.3.0                    | active |
+| 345033d8...7f16a | fedora-coreos-33.20210117.3.2                    | active |
+| 666519ae...4bec7 | fedora-coreos-34.20210427.3.0                    | active |
+| 44584593...14735 | ubuntu-server-16.04-LTS-20201111                 | active |
+| f68b0cfb...18f43 | ubuntu-server-18.04-LTS-20201111                 | active |
+| 02d12d5c...1a7c1 | ubuntu-server-20.04-LTS-20201111                 | active |
+| e25063ec...f1201 | ubuntu-server-Ventus              <--            | active |
+| 2e2148c8...ff8d4 | windows-server-2019-datacenter-1809-17763.737-en | active |
++------------------+--------------------------------------------------+--------+
 ```
 
 Also, you can find this new Image on the *Images page* in the Cloud Console and use it during VM creation:
