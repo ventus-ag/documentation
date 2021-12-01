@@ -150,8 +150,8 @@ To create/upload a custom Image, follow the next steps:
             --disk-format=qcow2 \ 
             --container-format=bare \ 
             --file=focal-server-cloudimg-amd64.img \ 
-            --property os\_distro='ubuntu' \ 
-            --property os\_platform='linux' \
+            --property os_distro='ubuntu' \ 
+            --property os_platform='linux' \
             ubuntu-server-Ventus
   ``` 
     - *–disk-format* - The supported options are: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, and ploop. The default format is: *raw*.

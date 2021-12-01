@@ -124,11 +124,11 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     +--------------------------------------+-------------+-----------+------+-------------------------------+
     ```
 - create an Image from the selected Volume:    
-    `openstack image create --disk-format qcow2 --volume <volume_ID> <your_image_name>`   
+    `openstack image create --property os_platform='linux' --disk-format qcow2 --volume <volume_ID> <your_image_name>`   
 
     In our case the output will be next:    
     ```
-    ubuntu@vm-1:~$ openstack image create --disk-format qcow2 --volume 95ed1f4c-XXXX-XXXX-XXXX-XXXXXXXXXXXX img-migrated    
+    ubuntu@vm-1:~$ openstack image create --property os_platform='linux' --disk-format qcow2 --volume 95ed1f4c-XXXX-XXXX-XXXX-XXXXXXXXXXXX img-migrated    
     +---------------------+--------------------------------------+
     | Field               | Value                                |
     +---------------------+--------------------------------------+
