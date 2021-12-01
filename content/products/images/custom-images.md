@@ -79,7 +79,7 @@ for this we use SSH protocol - to find additional information about, it see the 
 In this example we are using python-openstackclient 5.4.0 version.  
 Check your current version and, if necessary, install the required:  
 `openstack --version`;  
-`pip uninstall openstacksdk`;  
+`pip3 uninstall openstacksdk`;  
 `pip3 install python-openstackclient==5.4.0`. 
 {{% /notice %}} 
 
