@@ -31,7 +31,7 @@ For more information on the prerequisites discussed, see the following articles:
     [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
 
 ## Workflow
-In this article, le look at a scenario where it is needed to share a custom Image, uploaded to the Project-1 named *v-dev* related to the *Vienna* Region, with the Project-2 named *sw-dev* related to the Eastern-Switzerland Region.
+In this article, we look at a scenario where it is needed to share a custom Image, uploaded to the Project-1 named *v-dev* related to the *Vienna* Region, with the Project-2 named *sw-dev* related to the Eastern-Switzerland Region.
 This workflow consists of the next steps:
 1. Prepare custom Image in the Project-1
 2. Save custom Image on the VM
