@@ -83,13 +83,13 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     In our case the output will be next:    
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+-------------------------------------------+--------+
-    | ID                                   | Name                                      | Status |
-    +--------------------------------------+-------------------------------------------+--------+
-    | ....                                 | ....                                      | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                              | active |  <--
-    | ....                                 | ....                                      | ....   |
-    +--------------------------------------+-------------------------------------------+--------+
+    +------------------+-------------------------------------------+--------+
+    | ID               | Name                                      | Status |
+    +------------------+-------------------------------------------+--------+
+    | ....             | ....                                      | ....   |
+    | cc326302-...-XXX | img-migrated                              | active |  <--
+    | ....             | ....                                      | ....   |
+    +------------------+-------------------------------------------+--------+
     ```
 
 - share the selected Image with your Project-2 *dev-2*:    
@@ -97,13 +97,13 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
 
     In our case the output will be next:    
     ```  
-    ubuntu@vm-1:~$ openstack image add project cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX 8726fcdXXXXXXXXXXXXXXXXXXXXXXXXX
+    ubuntu@vm-1:~$ openstack image add project cc326302-...-XXX 8726fcd...XXX
     +------------+--------------------------------------+
     | Field      | Value                                |
     +------------+--------------------------------------+
     | created_at | 2021-11-18T18:14:05Z                 |
-    | image_id   | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
-    | member_id  | 8726fcdXXXXXXXXXXXXXXXXXXXXXXXXX     |
+    | image_id   | cc326302-...-XXX                     |
+    | member_id  | 8726fcd...XXX                        |
     | schema     | /v2/schemas/member                   |
     | status     | pending                              |
     | updated_at | 2021-11-18T18:14:05Z                 |
@@ -115,12 +115,12 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
 
     In our case the output will be next:    
     ```  
-    ubuntu@vm-1:~$ openstack image member list cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-    +--------------------------------------+----------------------------------+---------+
-    | Image ID                             | Member ID                        | Status  |
-    +--------------------------------------+----------------------------------+---------+
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | 8726fcdXXXXXXXXXXXXXXXXXXXXXXXXX | pending |
-    +--------------------------------------+----------------------------------+---------+
+    ubuntu@vm-1:~$ openstack image member list cc326302-...-XXX
+    +----------------------+-------------------+---------+
+    | Image ID             | Member ID         | Status  |
+    +----------------------+-------------------+---------+
+    | cc326302-...-XXX     | 8726fcd...XXX     | pending |
+    +----------------------+-------------------+---------+
     ```
 
 {{% notice info %}}
@@ -139,7 +139,7 @@ To accept shared Image do the following:
 
     In our case the command will look like:  
     ```  
-    ubuntu@vm-1:~$ openstack image set --accept cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+    ubuntu@vm-1:~$ openstack image set --accept cc326302-...-XXX 
     ```
 
 * verify the Image is now available to your Project:  
@@ -148,13 +148,13 @@ To accept shared Image do the following:
     In our case the output will be next:  
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+-------------------------------------------+--------+
-    | ID                                   | Name                                      | Status |
-    +--------------------------------------+-------------------------------------------+--------+
-    | ....                                 | ....                                      | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                              | active |  <--
-    | ....                                 | ....                                      | ....   |
-    +--------------------------------------+-------------------------------------------+--------+
+    +-------------------+-------------------------------------------+--------+
+    | ID                | Name                                      | Status |
+    +-------------------+-------------------------------------------+--------+
+    | ....              | ....                                      | ....   |
+    | cc326302-...-XXX  | img-migrated                              | active |  <--
+    | ....              | ....                                      | ....   |
+    +-------------------+-------------------------------------------+--------+
     ```
 
 After these steps, the newly created Image will be added to the *Images page* of the the Project-2 named *dev-2* and you can use it to create new Virtual Machines within this Project:   
@@ -166,6 +166,6 @@ To unshare an Image use the command:
     
 In our case the command will look like:   
     ```  
-    ubuntu@vm-1:~$ openstack image remove project cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX 8726fcdXXXXXXXXXXXXXXXXXXXXXXXXX
+    ubuntu@vm-1:~$ openstack image remove project cc326302-...-XXX 8726fcd..XXX
     ```
 
