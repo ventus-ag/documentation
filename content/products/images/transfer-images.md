@@ -77,20 +77,20 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     In our case the output will be next:    
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ID                                   | Name                                             | Status |
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ....                                 | ....                                             | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                                     | active |  <--
-    | ....                                 | ....                                             | ....   |
-    +--------------------------------------+--------------------------------------------------+--------+
+    +------------------+------------------------------------+--------+
+    | ID               | Name                               | Status |
+    +------------------+------------------------------------+--------+
+    | ....             | ....                               | ....   |
+    | cc326302-...-XXX | img-migrated                       | active |  <--
+    | ....             | ....                               | ....   |
+    +------------------+------------------------------------+--------+
     ```
 - save the selected Image on your VM:  
     `openstack image save --file <file-name>.raw <image-id>`  
 
     In our case the command will look like:  
     ```
-    ubuntu@vm-1:~$ openstack image save --file image.raw cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+    ubuntu@vm-1:~$ openstack image save --file image.raw cc326302-...-XXX
     ```
 
 ### Upload custom Image
@@ -128,13 +128,13 @@ Make sure you are logged in to the correct OpenStack platform with your CLI tool
     In our case the output will be next:    
     ```
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ID                                   | Name                                             | Status |
-    +--------------------------------------+--------------------------------------------------+--------+
-    | ....                                 | ....                                             | ....   |
-    | af1c886b-XXXX-XXXX-XXXX-XXXXXXXXXXXX | transfered-img                                   | active |  <--
-    | ....                                 | ....                                             | ....   |
-    +--------------------------------------+--------------------------------------------------+--------+
+    +------------------+--------------------------------+--------+
+    | ID               | Name                           | Status |
+    +------------------+--------------------------------+--------+
+    | ....             | ....                           | ....   |
+    | af1c886b-...-XXX | transfered-img                 | active |  <--
+    | ....             | ....                           | ....   |
+    +------------------+--------------------------------+--------+
     ```
 
 After these steps, the newly created Image will be added to the *Images page* of the the Project-2 related to the *Eastern-Switzerland* Region and you can use it to create new Virtual Machines within this Region:   

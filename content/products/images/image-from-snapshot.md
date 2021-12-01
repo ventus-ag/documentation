@@ -115,28 +115,33 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     In our case the output will be next:    
     ```
     ubuntu@vm-1:~$ openstack volume list
-    +--------------------------------------+-------------+-----------+------+-------------------------------+
-    | ID                                   | Name        | Status    | Size | Attached to                   |
-    +--------------------------------------+-------------+-----------+------+-------------------------------+
-    | 95ed1f4c-XXXX-XXXX-XXXX-XXXXXXXXXXXX | vol-from-sn | available |   10 |                               |
-    | 48124dc6-XXXX-XXXX-XXXX-XXXXXXXXXXXX |             | in-use    |   10 | Attached to vm-2 on /dev/vda  |
-    | 777b8334-XXXX-XXXX-XXXX-XXXXXXXXXXXX |             | in-use    |   10 | Attached to vm-1 on /dev/vda  |
-    +--------------------------------------+-------------+-----------+------+-------------------------------+
+    +------------------+-------------+-----------+------+-------------------------------+
+    | ID               | Name        | Status    | Size | Attached to                   |
+    +------------------+-------------+-----------+------+-------------------------------+
+    | 95ed1f4c-...-XXX | vol-from-sn | available |   10 |                               |
+    | 48124dc6-...-XXX |             | in-use    |   10 | Attached to vm-2 on /dev/vda  |
+    | 777b8334-...-XXX |             | in-use    |   10 | Attached to vm-1 on /dev/vda  |
+    +------------------+-------------+-----------+------+-------------------------------+
     ```
 - create an Image from the selected Volume:    
-    `openstack image create --property os_platform='linux' --disk-format qcow2 --volume <volume_ID> <your_image_name>`   
+    ```
+    openstack image create  \
+                --property os_platform='linux' \
+                --disk-format qcow2 \
+                --volume <volume_ID> <your_image_name>`   
+    ```            
 
     In our case the output will be next:    
     ```
-    ubuntu@vm-1:~$ openstack image create --property os_platform='linux' --disk-format qcow2 --volume 95ed1f4c-XXXX-XXXX-XXXX-XXXXXXXXXXXX img-migrated    
+    ubuntu@vm-1:~$ openstack image create --property os_platform='linux' --disk-format qcow2 --volume 95ed1f4c-...-XXX img-migrated    
     +---------------------+--------------------------------------+
     | Field               | Value                                |
     +---------------------+--------------------------------------+
     | container_format    | bare                                 |
     | disk_format         | qcow2                                |
     | display_description | volume created from the snapshot     |
-    | id                  | 95ed1f4c-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
-    | image_id            | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX |
+    | id                  | 95ed1f4c-...-XXX                     |
+    | image_id            | cc326302-...-XXX                     |
     | image_name          | img-migrated                         |
     | protected           | False                                |
     | size                | 10                                   |
@@ -157,13 +162,13 @@ It may take a long time to create Images from a Volume, please wait until its st
     In our case the output will be next:  
     ```  
     ubuntu@vm-1:~$ openstack image list  
-    +--------------------------------------+-------------------------------------------+--------+
-    | ID                                   | Name                                      | Status |
-    +--------------------------------------+-------------------------------------------+--------+
-    | ....                                 | ....                                      | ....   |
-    | cc326302-XXXX-XXXX-XXXX-XXXXXXXXXXXX | img-migrated                              | active |  <--
-    | ....                                 | ....                                      | ....   |
-    +--------------------------------------+-------------------------------------------+--------+
+    +-------------------+-------------------------------------------+--------+
+    | ID                | Name                                      | Status |
+    +-------------------+-------------------------------------------+--------+
+    | ....              | ....                                      | ....   |
+    | cc326302-...-XXX  | img-migrated                              | active |  <--
+    | ....              | ....                                      | ....   |
+    +-------------------+-------------------------------------------+--------+
     ```
 
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines:   
