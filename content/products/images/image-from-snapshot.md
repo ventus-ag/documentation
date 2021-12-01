@@ -43,7 +43,7 @@ It is recommended to stop the Virtual Machine before taking a Snapshot.
 {{% /notice %}} 
 
 {{% notice warning %}}
-Snapshots, taken from a volume with a "in-use" status, may contain corrupted data.
+Snapshots, taken from a volume with an "in-use" status, may contain corrupted data.
 {{% /notice %}} 
 
 - go to the SNAPSHOTS TAB and click the CREATE icon in the upper left corner:
