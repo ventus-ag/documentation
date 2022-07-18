@@ -38,14 +38,6 @@ To create a Snapshot from the current state of the VM do the following:
 - open the *Virtual Machine details page* by clicking on the **Name** of the corresponding Virtual Machine:
 ![](../../../assets/images/tutorials/0-6.png?classes=border,shadow) 
 
-{{% notice note %}}
-It is recommended to stop the Virtual Machine before taking a Snapshot.  
-{{% /notice %}} 
-
-{{% notice warning %}}
-Snapshots, taken from a Volume with an "in-use" status, may contain corrupted data.
-{{% /notice %}} 
-
 {{% notice info %}}
 To find Volumes with an "available" status, go to the *Volumes page*. For this select the *Storage* from the VIRTUAL DATACENTER block in the *side-bar menu* and click the *Volumes TAB*.
 {{% /notice %}} 
@@ -128,7 +120,7 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     openstack image create  \
                 --property os_platform='linux' \
                 --disk-format qcow2 \
-                --volume <volume_ID> <your_image_name>`   
+                --volume <volume_ID> <your_image_name>
     ```            
 
     In our case the output will be next:    
@@ -156,7 +148,7 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
 It may take a long time to create Images from a Volume, please wait until its status becomes active.
 {{% /notice %}} 
 
-- get a list of Images related to the current Project:  
+- Get a list of Images related to the current Project:  
     `openstack image list`    
 
     In our case the output will be next:  
@@ -170,6 +162,10 @@ It may take a long time to create Images from a Volume, please wait until its st
     | ....              | ....                                      | ....   |
     +-------------------+-------------------------------------------+--------+
     ```
+
+- Remove signature inherited from original volumes metadata, if it is kept it can cause issues during new instance creation.
+
+openstack image unset --property signature_verified <image_id>
 
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines:   
 ![](../../../assets/images/tutorials/0-9.png?classes=border,shadow) 
