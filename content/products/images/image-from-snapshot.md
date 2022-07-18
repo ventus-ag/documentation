@@ -164,8 +164,8 @@ It may take a long time to create Images from a Volume, please wait until its st
     ```
 
 - Remove signature inherited from original volumes metadata, if it is kept it can cause issues during new instance creation.
-
-openstack image unset --property signature_verified <image_id>
-
+    ```  
+    openstack image unset --property signature_verified <image_id>
+    ```  
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines:   
 ![](../../../assets/images/tutorials/0-9.png?classes=border,shadow) 
