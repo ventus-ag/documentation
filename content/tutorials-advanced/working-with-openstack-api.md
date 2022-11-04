@@ -3,20 +3,23 @@ title: Working with OpenStack API
 weight: 15
 ---
 ___
-On this page, you can find an explanation of how to work with OpenStack API using the Ventus Cloud Account.
+On this page, you can find an explanation of how to work with OpenStack API
+using the Cloud Console Account.
 
 # Table of contents
-1. [Introduction](#introduction)
-2. [Configure credentials file ](#configure-credentials-file)
-3. [Dot source credentials file](#dot-source-credentials-file)
-4. [Run test commands](#run-test-commands)
-5. [Change region](#change-region)
-6. [Find resources](#find-resources)
-7. [Conclusion](#conclusion)
+- [Table of contents](#table-of-contents)
+	- [Introduction](#introduction)
+	- [Configure credentials file](#configure-credentials-file)
+	- [Dot source credentials file](#dot-source-credentials-file)
+	- [Run test commands](#run-test-commands)
+	- [Change region](#change-region)
+	- [Find resources](#find-resources)
+	- [Conclusion](#conclusion)
 
 ## Introduction
 We encourage clients to use [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/) to work directly with OpenStack API, but it has a limitation - it's bonded to the specific project in the specific region.  
-When you need to manage resources in all regions and all projects using the same credentials, you can use the Ventus Cloud Account.   
+When you need to manage resources in all regions and all projects using the same
+credentials, you can use the Cloud Console Account.   
 
 **Required endpoints:** 
 * *login.ventuscloud.eu* - used for authentication;
@@ -28,9 +31,9 @@ When you need to manage resources in all regions and all projects using the same
 ## Configure credentials file
 Take an example template below to configure your credentials file, you need to adjust only:  
 
-* OS_USERNAME - User email used to login to Ventus Cloud; 
+* OS_USERNAME - User email used to login to Cloud Console; 
 * OS_PASSWORD - User's password;  
-* OS_PROJECT_ID - Id of created projects in Ventus Cloud; can be found on the project details page;   
+* OS_PROJECT_ID - Id of created projects in Cloud Console; can be found on the project details page;   
 * OS_AUTH_URL - Endpoint to the region where your project created.
 
 ```
@@ -65,7 +68,8 @@ Use next command:
 
 `. ventus_credentials`  
 
-This will export environment variables to your shell and let OpenStack CLI client required information for authentication using the Ventus account.
+This will export environment variables to your shell and let OpenStack CLI
+client required information for authentication using the Cloud Console account.
 
 ## Run test commands
 Use next command: 
@@ -145,6 +149,6 @@ Expected result - list of servers deployed in this project:
 ```
 
 ## Conclusion
-You can leverage your Ventus Cloud Account to work with any OpenStack resources in any available regions in any available projects using the same credentials.
+You can leverage your Cloud Console Account to work with any OpenStack resources in any available regions in any available projects using the same credentials.
 
  

@@ -9,7 +9,9 @@ pre = "<b>6. </b>"
 ### Chapter 6
 # **Release Notes**
 ___
-Here are Ventus Cloud Release notes, which refers to the technical documentation produced alongside of Ventus Cloud product or a product update (e.g., recent changes, feature enh.)
+Here are Cloud Console Release notes, which refers to the technical
+documentation produced alongside of Cloud Console product or a product update (e.g.,
+recent changes, feature enh.)
 ___
 
 {{% children style="h4" depth="2" %}}

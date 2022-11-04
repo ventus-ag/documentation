@@ -9,7 +9,8 @@ pre = "<b>2. </b>"
 ### Chapter 2
 # **Identity management**
 ___
-Here are guides for managing members of the Organizations and Projects in the Ventus Cloud.
+Here are guides for managing members of the Organizations and Projects in the
+Cloud Console.
 ___
 
 {{% children style="h4" depth="1" %}}

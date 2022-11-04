@@ -9,7 +9,8 @@ pre = "<b>      </b>"
 
 # **SECURITY**
 ___
-Here you can find an explanation of how to create, manage and use SSH Keys, Firewalls and CLI Users in the Ventus Cloud.
+Here you can find an explanation of how to create, manage and use SSH Keys,
+Firewalls and CLI Users in the Cloud Console.
 ___
 
 {{% children style="h4" depth="1" %}}

@@ -9,7 +9,7 @@ pre = "<b>3. </b>"
 ### Chapter 3
 # **Products**
 ___
-Here are guides for all Ventus Cloud products, services, and tools.
+Here are guides for all Cloud Console products, services, and tools.
 ___
 
 {{% children style="h4" depth="1" %}}
