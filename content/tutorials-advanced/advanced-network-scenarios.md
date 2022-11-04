@@ -240,7 +240,9 @@ Assign Floating IP to server1:
 `#openstack server add floating ip server1 <floating_ip_address>`  
 `openstack server add floating ip server1 88.218.52.5`  
 
-Verify that you can connect to server1 over internet using Floating IP address. *Make sure that you allowed SSH access on Ventus Firewall* - to find more detailed instructions see the article - [Firewall Rules]():  
+Verify that you can connect to server1 over internet using Floating IP address.
+*Make sure that you allowed SSH access on Cloud Console Firewall* - to find more
+detailed instructions see the article - [Firewall Rules]():  
 `#ssh centos@<floating_ip_address>`  
 `ssh centos@88.218.52.5`  
 
