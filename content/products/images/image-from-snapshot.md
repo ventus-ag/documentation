@@ -6,11 +6,12 @@ ___
 On this page we will discuss the workflow, that can help you to create an Image from Snapshot.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Workflow](#workflow)
-    1. [Prepare Snapshot](#prepare-snapshot)
-    2. [Create Volume from Snapshot](#create-volume-from-snapshot)
-    3. [Create Image from Volume](#create-image-from-volume)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Workflow](#workflow)
+    - [Prepare Snapshot](#prepare-snapshot)
+    - [Create Volume from Snapshot](#create-volume-from-snapshot)
+    - [Create Image from Volume](#create-image-from-volume)
 
 
 
@@ -128,7 +129,7 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
     openstack image create  \
                 --property os_platform='linux' \
                 --disk-format qcow2 \
-                --volume <volume_ID> <your_image_name>`   
+                --volume <volume_ID> <your_image_name>
     ```            
 
     In our case the output will be next:    
@@ -156,7 +157,7 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
 It may take a long time to create Images from a Volume, please wait until its status becomes active.
 {{% /notice %}} 
 
-- get a list of Images related to the current Project:  
+- Get a list of Images related to the current Project:  
     `openstack image list`    
 
     In our case the output will be next:  
@@ -171,5 +172,9 @@ It may take a long time to create Images from a Volume, please wait until its st
     +-------------------+-------------------------------------------+--------+
     ```
 
+- Remove signature inherited from original volumes metadata, if it is kept it can cause issues during new instance creation.
+    ```  
+    openstack image unset --property signature_verified <image_id>
+    ```  
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines:   
 ![](../../../assets/images/tutorials/0-9.png?classes=border,shadow) 
