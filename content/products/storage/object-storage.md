@@ -6,18 +6,18 @@ ___
 On this page, you can find an explanation of what is Object Storage in Cloud Console, how to create, delete buckets and instructions for other steps to manage an Object Storage in the Cloud Console.
 
 # Table of contents
-1. [Introduction](#introduction)
-2. [Use Object Storage with Python API](#use-object-storage-with-python-api)
-   1. [Creating connection](#creating-connection)
-   2. [Listing buckets](#listing-buckets)
-   3. [Creating bucket](#creating-bucket)
-   4. [Creating object](#creating-object)
-   5. [Listing bucket content](#listing-bucket-content)
-   6. [Changing object ACL](#changing-bucket-acl)
-   7. [Generating object download-URL](#generating-object-download-url)
-   8. [Deleting object](#deleting-object)
-   9. [Deleting bucket](#deleting-bucket)
-3. [Use Object Storage with S3 Browser](#use-object-storage-with-s3-browser)
+- [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Use Object Storage with Python API](#use-object-storage-with-python-api)
+    - [Creating connection](#creating-connection)
+    - [Creating bucket](#creating-bucket)
+    - [Listing buckets](#listing-buckets)
+    - [Creating object](#creating-object)
+    - [Listing bucket content](#listing-bucket-content)
+    - [Changing object ACL](#changing-object-acl)
+    - [Generating object download URL](#generating-object-download-url)
+    - [Deleting object](#deleting-object)
+  - [Use Object Storage with S3 Browser](#use-object-storage-with-s3-browser)
 
 ## Introduction
 
@@ -146,8 +146,7 @@ Find your Project ID you can:
 * on the *Projects page* in Cloud Console:
 ![](../../../assets/images/store/6.png?classes=border,shadow) 
 
-* in the link, when you use Cloud Console:
-![](../../../assets/images/store/7.png?classes=border,shadow) 
+* in the link, when you use Cloud Console;
 
 ### Deleting object
 To delete an object from the bucket, use the next code block:

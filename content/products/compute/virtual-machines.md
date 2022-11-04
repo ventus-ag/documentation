@@ -6,14 +6,15 @@ ___
 On this page, you can find an explanation of how to create, resize, delete Linux and Windows Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.
 
 # Table of contents
-1. [Virtual Machines Page](#virtual-machines-page)
-2. [Create Linux Virtual Machine](#create-linux-virtual-machine)
-3. [Create Windows Virtual Machine](#create-windows-virtual-machine)
-4. [Virtual Machine details page](#virtual-machine-details-page)
-5. [Download RDP File](#download-rdp-file)
-6. [Edit Virtual Machine](#edit-virtual-machine)
-7. [Resize Virtual Machine](#resize-virtual-machine)
-8. [Delete Virtual Machine](#delete-virtual-machine)
+- [Table of contents](#table-of-contents)
+  - [Virtual Machines page](#virtual-machines-page)
+  - [Create Linux Virtual Machine](#create-linux-virtual-machine)
+  - [Create Windows Virtual Machine](#create-windows-virtual-machine)
+  - [Virtual Machine details page](#virtual-machine-details-page)
+  - [Download RDP File](#download-rdp-file)
+  - [Edit Virtual Machine](#edit-virtual-machine)
+  - [Resize Virtual Machine](#resize-virtual-machine)
+  - [Delete Virtual Machine](#delete-virtual-machine)
 
 
 ## Virtual Machines page 
@@ -154,7 +155,7 @@ Also, you can resize Virtual Machine from *Virtual Machine details page*, by cl
 ## Delete Virtual Machine
 To delete the Virtual Machine, do the following:
 - identify this unnecessary Virtual Machine on the *Virtual Machines page*;
-- click on the **Actions** icon  and select the **Delete** in the list of available options;
+- click on the **Actions** icon and select the **Delete** in the list of available options;
 - confirm the Virtual Machine deletion on the next opened *Confirmation window*.
 
 After these steps, the selected Virtual Machine will be deleted.  

@@ -3,12 +3,14 @@ title: Organization's management over API
 weight: 20
 ---
 ___
-On this page, you can find the workflow for management of your Organization in the Ventus Cloud using API.
+On this page, you can find the workflow for management of your Organization in
+the Cloud Console using API.
 
 # Table of contents
-1. [Required endpoints](#required-endpoints)
-2. [Example using CURL](#example-using-curl)
-3. [Example using Postman](#example-using-postman) 
+- [Table of contents](#table-of-contents)
+  - [Required endpoints](#required-endpoints)
+  - [Example using CURL](#example-using-curl)
+  - [Example using Postman](#example-using-postman)
 
 ## Required endpoints
 - *auth.ventuscloud.eu* - use it to get ID and Access tokens from basic credentials
@@ -42,7 +44,7 @@ export REGION_NAME="eastern-switzerland" //must be in lower case
 export PROJECT_ID="f5......45"
 ```
 
-Organization ID can be extracted from URL in Ventus Console, e.g.:
+Organization ID can be extracted from URL in Cloud Console, e.g.:
 ```
 https://console.ventuscloud.eu/organizations/c19XXXX-XXXX-XXXX-XXXX-XXXX50/projects
 ```
@@ -219,7 +221,7 @@ To list all Projects, do the following:
         * *Access*: Bearer ACCESS_TOKEN;  
 
 {{% notice note %}}
-*ORG-ID* - Organization ID that was extracted from URL in Ventus Console, and saved as a variable.  
+*ORG-ID* - Organization ID that was extracted from URL in Cloud Console, and saved as a variable.  
 *ID_TOKEN* and *ACCESS_TOKEN* - tokens that were received with previous "Get ID And Access tokens" request and saved as a variables.
 {{% /notice %}}
 

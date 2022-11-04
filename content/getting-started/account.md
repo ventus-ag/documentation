@@ -3,24 +3,24 @@ title: Account
 weight: 10
 ---
 ___
-On this page, you can find an explanation of how to create and manage a new user account in teh Cloud Console.
+On this page, you can find an explanation of how to create and manage a new user account in the Cloud Console.
 
 # Table of contents
-1. [Registration](#registration)
-2. [Manage Account ](#manage-account)
-   1. [Edit Account](#edit-account)
-   2. [Change password](#change-password)
-   3. [Set authenticator](#set-authenticator)
-   4. [Find all sessions](#find-all-sessions)
-   5. [Login and Logout](#login-and-logout)
+- [Table of contents](#table-of-contents)
+  - [Registration](#registration)
+  - [Manage account](#manage-account)
+    - [Edit account](#edit-account)
+    - [Change password](#change-password)
+    - [Set authenticator](#set-authenticator)
+    - [Find all sessions](#find-all-sessions)
+    - [Login and Logout](#login-and-logout)
 
 ## Registration
 To start work in the Cloud Console, firstly, you need to register a new account, for this do the following:
-- follow the *Authorization page* of the Cloud Console - [console.ventuscloud.eu](https://console.ventuscloud.eu/), and click on the **Register** icon:
+- follow the *Authorization page* of the Cloud Console, and click on the **Register** icon:
 ![](../../assets/images/account/1-acc.png?classes=border,shadow) 
 - fill in the form on the next opened *Register window* and click on the **Register** icon;
-- read and accept the [Terms and Conditions](https://ventuscloud.eu/terms) and [Privacy](https://ventuscloud.eu/privacy) of the company:
-![](../../assets/images/account/2-acc.png?classes=border,shadow) 
+- read and accept the Terms and Conditions and Privacy of the company;  
 - verify your email address: you will receive a letter to the email that you specified in the registration form and if you successfully pass this verification you will get to the *Organizations page*:
 ![](../../assets/images/account/3-acc.png?classes=border,shadow) 
 

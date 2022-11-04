@@ -3,16 +3,18 @@ title: The Site to Site IPSec VPN
 weight: 25
 ---
 ___
-On this page, you can find an explanation of how to configure Site to Site IPSec connection between the Ventus Cloud Regions.
+On this page, you can find an explanation of how to configure Site to Site IPSec
+connection between the Cloud Console Regions.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Configure Site to Site IPSec connection](#configure-site-to-site-ipsec-connection)
-3. [Strongswan useful commands](#strongswan-useful-commands)
-4. [Capture traffic](#capture-traffic)
-5. [Disable port-security](#disable-port-security) 
-6. [Preparing client side](#preparing-client-side)
-7. [Verifying connectivity](#verifying-connectivity)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Configure Site to Site IPSec connection](#configure-site-to-site-ipsec-connection)
+  - [Strongswan useful commands](#strongswan-useful-commands)
+  - [Capture traffic](#capture-traffic)
+  - [Disable port-security](#disable-port-security)
+  - [Preparing client side](#preparing-client-side)
+  - [Verifying connectivity](#verifying-connectivity)
 
 ## Prerequisites
 1. Create a private network in each region. How to create a network see the articles - [Networks](https://docs.ventuscloud.eu/products/network/networks/) and [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)

@@ -8,7 +8,8 @@ pre = "<b>      </b>"
 
 # **IMAGES**
 ___
-Here you can find an explanation of how to create, manage and use Images in the Ventus Cloud.
+Here you can find an explanation of how to create, manage and use Images in the
+Cloud Console.
 ___
 
 {{% children style="h4" depth="1" %}}
