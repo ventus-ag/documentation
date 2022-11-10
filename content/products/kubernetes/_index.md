@@ -8,7 +8,8 @@ pre = "<b>      </b>"
 
 # **KUBERNETES**
 ___
-Here you can find an explanation of how to create, manage and use Kubernetes Cluster in the Ventus Cloud.
+Here you can find an explanation of how to create, manage and use Kubernetes
+Cluster in the Cloud Console.
 ___
 
 {{% children style="h4" depth="1" %}}

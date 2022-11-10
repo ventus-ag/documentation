@@ -7,12 +7,13 @@ On this page, you can find an explanation of how to find list of default Images 
 
 ## Table of contents
 
-1. [Images page](#images-page)
-2. [Custom Images](#custom-images)
-    1. [Prerequisites](#prerequisites)
-    2. [Get Images list](#get-images-list)
-    3. [Create custom Image](#create-custom-image)
-    4. [Delete custom Image](#delete-custom-image)
+- [Table of contents](#table-of-contents)
+- [Images page](#images-page)
+- [Custom Images](#custom-images)
+  - [Prerequisites](#prerequisites)
+  - [Get Images list](#get-images-list)
+  - [Create custom Image](#create-custom-image)
+  - [Delete Custom Image](#delete-custom-image)
 
 ## Images page
 To get to the *Images page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Images TAB:**

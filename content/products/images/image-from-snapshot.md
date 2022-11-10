@@ -6,11 +6,12 @@ ___
 On this page we will discuss the workflow, that can help you to create an Image from Snapshot.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Workflow](#workflow)
-    1. [Prepare Snapshot](#prepare-snapshot)
-    2. [Create Volume from Snapshot](#create-volume-from-snapshot)
-    3. [Create Image from Volume](#create-image-from-volume)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Workflow](#workflow)
+    - [Prepare Snapshot](#prepare-snapshot)
+    - [Create Volume from Snapshot](#create-volume-from-snapshot)
+    - [Create Image from Volume](#create-image-from-volume)
 
 
 
@@ -37,6 +38,14 @@ Let's take a closer look at each of them.
 To create a Snapshot from the current state of the VM do the following:
 - open the *Virtual Machine details page* by clicking on the **Name** of the corresponding Virtual Machine:
 ![](../../../assets/images/tutorials/0-6.png?classes=border,shadow) 
+
+{{% notice note %}}
+It is recommended to stop the Virtual Machine before taking a Snapshot.  
+{{% /notice %}} 
+
+{{% notice warning %}}
+Snapshots, taken from a Volume with an "in-use" status, may contain corrupted data.
+{{% /notice %}} 
 
 {{% notice info %}}
 To find Volumes with an "available" status, go to the *Volumes page*. For this select the *Storage* from the VIRTUAL DATACENTER block in the *side-bar menu* and click the *Volumes TAB*.

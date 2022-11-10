@@ -10,10 +10,11 @@ On this page we will discuss scenarios, that can help you to build software upgr
 >Most of the features described below are in beta state, thus not available at the Console portal, and can be configured through CLI and IaC tools like Terraform and Ansible.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Port Migration](#port-migration)
-3. [Floating IP](#floating-ip)
-4. [Load Balancer](#load-balancer)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Port Migration](#port-migration)
+  - [Floating IP](#floating-ip)
+  - [Load Balancer](#load-balancer)
 
 
 ## Prerequisites
@@ -70,7 +71,7 @@ Verify created servers:
 `openstack port list`  
 
 **Optionally:**   
-Install Nginx web server on server1 and Apache on server2 and configure Ventus firewall rule to allow TCP port 80 from your workstation:  
+Install Nginx web server on server1 and Apache on server2 and configure firewall rule to allow TCP port 80 from your workstation:  
 * **Centos:**     
     * *Server1:*      
         `yum install nginx`       
@@ -239,7 +240,9 @@ Assign Floating IP to server1:
 `#openstack server add floating ip server1 <floating_ip_address>`  
 `openstack server add floating ip server1 88.218.52.5`  
 
-Verify that you can connect to server1 over internet using Floating IP address. *Make sure that you allowed SSH access on Ventus Firewall* - to find more detailed instructions see the article - [Firewall Rules]():  
+Verify that you can connect to server1 over internet using Floating IP address.
+*Make sure that you allowed SSH access on Cloud Console Firewall* - to find more
+detailed instructions see the article - [Firewall Rules]():  
 `#ssh centos@<floating_ip_address>`  
 `ssh centos@88.218.52.5`  
 

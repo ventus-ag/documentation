@@ -8,7 +8,8 @@ pre = "<b>      </b>"
 
 # **NETWORK**
 ___
-Here you can find an explanation of how to create, manage and use Networks and Subnets in the Ventus Cloud.
+Here you can find an explanation of how to create, manage and use Networks and
+Subnets in the Cloud Console.
 ___
 
 {{% children style="h4" depth="1" %}}
