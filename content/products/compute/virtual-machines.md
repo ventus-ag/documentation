@@ -38,20 +38,30 @@ On this page you can find all created Virtual Machines in the current Project of
 To create new Linux VM, do the following:
 - go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
 - fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
-![](../../../assets/images/vms/3-vm.png?classes=border,shadow)
-  - *Source* - choose the source wich you want to use for VM creating: image, volume or snapshot;
-  - *OS Platform* - choose the OS Platform wich you want to use for VM creating: Linux or Windows (in this example it will be Linux);
-  - *Image ID* - set the ID of the previousluy selected Source for VM creating (Image ID, Volume ID or Snapshot ID); 
-  - *Name* - set a name for the VM;
-  - *Tags* - this field is optional; use it if you need to set some tags for the VM; 
-  - *Flavor* - select the size for new VM;
-  - *Key pair* - this field is necessary only for Linux VMs; select here the SSH Key that was previously created on the *SSH Keys page* or create a new one, which you will use to connect to the Linux VM;
-  - *Networks* - choose one or more networks;
-  - *Firewalls*- choose what collection of network access rules will control the traffic to this VM;  
-    >**NOTE:** To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**;
+![](../../../assets/images/vms/3.2-vm.png?classes=border,shadow)
+  - *Name* - set a name for the VM;  
+  - *Source* - choose the source wich you want to use for VM creating: image, volume or snapshot;  
+    by default, "Image" is pre-selected;  
+  - *OS Platform* - choose the desired OS Platform for your VM: Linux or Windows (in this example we will create the Linux VM);  
+    by default, "Linux" is pre-selected;  
+  - *Linux Distribution* - if in the previous step, you choose the Linux OS, next you need to choose what Linux distribution to use for your VM;  
+    by default, "Ubuntu" is pre-selected;  
+  - *Image Version*/*Volume name*/*Snapshot name* - set the name or ID of the previousluy selected Source for VM creating (Image Version, Volume name or Snapshot name);  
+  - *Flavor* - select the size for new VM;  
+    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected;  
+  - *Key pair* - this field is necessary only for Linux VMs; select here the SSH Key that was previously created on the *SSH Keys page* or create a new one, which you will use to connect to the Linux VM;  
+    if you have only one created SSH Key, it will be pre-selected by default;  
+  - *Networks* - choose one or more networks;  
+    by default, public network is pre-selected;  
+  - *Firewalls*- choose what collection of network access rules will control the traffic to this VM; 
+    by default, "default" Firewall is pre-selected;  
+    default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.  
+      >**NOTE:** To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**;
     ![](../../../assets/images/vms/4-vm.png?classes=border,shadow)
-
-  - *Volume size (GB)* - provide the preferred disk size for the VM, it can be specified in the range from 10 GB to 1000 GB. Minimal available size for Linux VMs - 10 GB; and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;   
+  - *Tags* - this field is optional; use it if you need to set some tags for the VM;   
+  - *Volume size (GB)* - provide the preferred disk size for the VM, it can be specified in the range from 10 GB to 1000 GB. Minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;  
+  by default, "50 GB" is pre-selected;   
+  and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;   
 
 After these steps, the newly created Linux VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/6-vm.png?classes=border,shadow)
@@ -61,32 +71,40 @@ After these steps, the newly created Linux VM will be added to the *Virtual Mac
 To create new Windows VM, do the following:
 - go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
 - fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
-![](../../../assets/images/vms/7-vm.png?classes=border,shadow)
-  - *Source* - choose the source wich you want to use for VM creating: image, volume or snapshot;
-  - *OS Platform* - choose the OS Platform wich you want to use for VM creating: Linux or Windows (in this example it will be Windows);
-  - *Image ID* - set the ID of the previousluy selected Source for VM creating (Image ID, Volume ID or Snapshot ID); 
-  - *Name* - set a name for the VM;
-  - *Tags* - this field is optional; use it if you need to set some tags for the VM; 
-  - *Flavor* - select the size for new VM;
+![](../../../assets/images/vms/7.2-vm.png?classes=border,shadow)
+  - *Name* - set a name for the VM;  
+  - *Source* - choose the source wich you want to use for VM creating: image, volume or snapshot;  
+    by default, "Image" is pre-selected;  
+  - *OS Platform* - choose the desired OS Platform for your VM: Linux or Windows (in this example we will create the Windows VM);  
+    by default, "Linux" is pre-selected;  
+  - *Image Version*/*Volume name*/*Snapshot name* - set the name or ID of the previousluy selected Source for VM creating (Image Version, Volume name or Snapshot name);  
+  - *Flavor* - select the size for new VM;  
+    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected;  
   - *Password* - this field is necessary only for Windows VMs;come up with the root password (it must contain at least one Latin letter in upper case, one Latin letter in lower case, digit, special character, and must be at least 8 characters long);
   - *Confirm password;*
-  - *Networks* - choose one or more networks;
+  - *Networks* - choose one or more networks;  
+    by default, public network is pre-selected;  
   - *Firewalls*- choose what collection of network access rules will control the traffic to this VM; 
+    by default, "default" Firewall is pre-selected;  
+    default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
     >**NOTE:** To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
     ![](../../../assets/images/vms/5-vm.png?classes=border,shadow)
 
-  - *Volume size (GB)* - provide the preferred disk size for this VM, it can be specified in the range from 10 GB to 1000 GB. Minimal available size for Windows VMs - 40 GB; and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;   
+  - *Tags* - this field is optional; use it if you need to set some tags for the VM;   
+  - *Volume size (GB)* - provide the preferred disk size for the VM, it can be specified in the range from 10 GB to 1000 GB. Minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;  
+  by default, "50 GB" is pre-selected;   
+  and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;      
 
 After these steps, the newly created Windows VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/6-vm.png?classes=border,shadow)
 
 ## Virtual Machine details page
 To open the *Virtual Machine details page*, click on the **Name** of the corresponding Virtual Machine:
-![](../../../assets/images/vms/10-vm.png?classes=border,shadow)
+![](../../../assets/images/vms/10.2-vm.png?classes=border,shadow)
 
 This action will redirect you to the *Virtual Machine details page*, where you can find:
-- VM **details area** with actual information about it - name, public IP, region, status, memory and image that was used for VM's creation:
-![](../../../assets/images/vms/13-vm.png?classes=border,shadow)
+- VM **details area** with actual information about it - name, ID, public IP, region, status, memory and image that was used for VM's creation:
+![](../../../assets/images/vms/13.2-vm.png?classes=border,shadow)
 
 - panel with available **quick actions**:
 ![](../../../assets/images/vms/11-vm.png?classes=border,shadow)
@@ -102,20 +120,20 @@ This action will redirect you to the *Virtual Machine details page*, where you
 
 - transition to the NETWORKS & SECURITY, VOLUMES, SNAPSHOTS and LOG pages related to this VM:
 ![](../../../assets/images/vms/12-vm.png?classes=border,shadow)
-  - NETWORKS & SECURITY TAB - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, and also add new Interface or/and Firewall and manage this services.
+  - NETWORKS & SECURITY TAB - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.
   To find additional information about Networks and Security use the articles [Networks and Subnets](https://kb.ventuscloud.eu/knowledge/nerworks-subnets) and [Firewalls and Firewall Rules](https://kb.ventuscloud.eu/knowledge/firewalls)
-  ![](../../../assets/images/vms/14.png?classes=border,shadow)
+  ![](../../../assets/images/vms/14.2.png?classes=border,shadow)
 
   - VOLUMES TAB - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them. 
   To find additional information about volumes use the article [Volumes](https://kb.ventuscloud.eu/knowledge/volumes)
-  ![](../../../assets/images/vms/15.png?classes=border,shadow)
+  ![](../../../assets/images/vms/15.2.png?classes=border,shadow)
 
   - SNAPSHOTS TAB - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.
   To find additional information about snapshots use the article [Snapshots](https://kb.ventuscloud.eu/knowledge/snapshots))
-  ![](../../../assets/images/vms/16.png?classes=border,shadow)
+  ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
   - LOG TAB - opens the *Log page* where you can find VM's logs.
-  ![](../../../assets/images/vms/17.png?classes=border,shadow)
+  ![](../../../assets/images/vms/17.2.png?classes=border,shadow)
 
 ## Download RDP File
 
