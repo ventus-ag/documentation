@@ -12,6 +12,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Create Windows Virtual Machine](#create-windows-virtual-machine)
   - [Virtual Machine details page](#virtual-machine-details-page)
   - [Download RDP File](#download-rdp-file)
+  - [Associate Floating IP](#associate-floating-ip)
   - [Edit Virtual Machine](#edit-virtual-machine)
   - [Resize Virtual Machine](#resize-virtual-machine)
   - [Delete Virtual Machine](#delete-virtual-machine)
@@ -147,6 +148,20 @@ To download RDP for the remote connection to the Windows Virtual Machine, do the
 
 After these steps, the RDP File of the selected Windows Virtual Machine will be downloaded.  
 Also, you can download RDP file from *Virtual Machine details page*, by clicking on the appropriative **quick actions** icon there.
+
+## Associate Floating IP
+
+{{% notice note %}}
+This option is available only for VMs created in the internal network with an configured external Router.
+{{% /notice %}}
+
+To associate Floating IP with the Virtual Machine, do the following:
+- identify Virtual Machine created in the internal network, that you want to make publicly available from the Internet on the *Virtual Machines page*;
+- click on the **Actions** icon and select the **Associate Floating IP** in the list of available options;
+- choose one of the available internal interfaces of your VM and one of the previously created Floating IP that you want to attach to the selected interface on the opened *Associate floating IP* and click on the ASSOCIATE icon.
+
+After these steps, the selected Virtual Machine will be publickly available.  
+To find additional information about Floating IPs use the article [Floating IPs](https://kb.ventuscloud.eu/knowledge/floating-ips)
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:
