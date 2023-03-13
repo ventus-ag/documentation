@@ -6,13 +6,14 @@ ___
 On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.
 
 # Table of contents
-1. [Volumes page](#volumes-page)
-2. [Create Volume](#create-volume)
-3. [Attach Volume](#attach-volume)
-4. [Detach Volume](#detach-volume)
-5. [Edit Volume](#edit-volume)
-6. [Extend Volume](#extend-volume)
-7. [Delete Volume](#delete-volume)
+- [Table of contents](#table-of-contents)
+  - [Volumes page](#volumes-page)
+  - [Create Volume](#create-volume)
+  - [Attach Volume](#attach-volume)
+  - [Detach Volume](#detach-volume)
+  - [Edit Volume](#edit-volume)
+  - [Extend Volume](#extend-volume)
+  - [Delete Volume](#delete-volume)
 
 ## Volumes page
 To get to the *Volumes page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Volumes TAB:**

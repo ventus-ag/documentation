@@ -23,7 +23,7 @@ To find all Firsewall, related to the selected Virtual Machine, you need:
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
 
-In this article, we are interested in the block of information, where you can find all Firewalls related to the corresponding VM with their *Actions icon*, which opens a list of available management actions for the Firewaals of the selected VM:
+In this article, we are interested in the block of information, where you can find all Firewalls related to the corresponding VM with their *Actions icon*, which opens a list of available management actions for the Firewalls of the selected VM:
 ![](../../../assets/images/fw/9.png?classes=border,shadow)
 
 Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the articles [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/).
@@ -32,7 +32,7 @@ Information how to manage Networks, Subnets and Floating IPs from this page, you
 To add additional Firewall or delete unnecessary one from the selected VM, do the following:
 - click on the *Actions icon* and select the **Edit Firewalls** in the list of available options;
 - remove an unnecessary firewall or select an additional one from the list of previously added firewalls and click on the SAVE icon:  
-![](../../../assets/images/fw/13.png?classes=border,shadow)  
+![](../../../assets/images/conn-lin/24.1.60.png?classes=border,shadow)
 
 After these steps, the newly added Firewall will be added to the selected VM:  
 ![](../../../assets/images/fw/14.png?classes=border,shadow)  
