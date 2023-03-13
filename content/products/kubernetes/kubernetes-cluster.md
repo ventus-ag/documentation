@@ -6,12 +6,13 @@ ___
 On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster in the Cloud Console.
 
 # Table of contents
-1. [Clusters Page](#clusters-page)
-2. [Create Cluster](#create-cluster)
-3. [Cluster details page](#cluster-details-page)
-4. [Download kubeconfig file](#download-kubeconfig-file)
-5. [Resize Cluster](#resize-cluster)
-6. [Delete Cluster](#delete-cluster)
+- [Table of contents](#table-of-contents)
+  - [Clusters page](#clusters-page)
+  - [Create Cluster](#create-cluster)
+  - [Cluster details page](#cluster-details-page)
+  - [Download kubeconfig file](#download-kubeconfig-file)
+  - [Resize Cluster](#resize-cluster)
+  - [Delete Cluster](#delete-cluster)
 
 
 ## Clusters page
@@ -32,14 +33,23 @@ To create new Cluster, do the following:
 - fill in the form on the next opened *Create Cluster window* and click on the CREATE icon:
 ![](../../../assets/images/clusters/3.png?classes=border,shadow) 
   - *Name* - set a name for the Cluster;
-  - *Cluster Template* - select the template that will be used to create Cluster;
-  - *Master Flavor* - select the size of the Cluster master-nodes (min is VC-2);
-  - *Node Flavor* - select the size of the Cluster worker-nodes (min is VC-2);
-  - *Key pair* - select the SSH Keypair that was previously created on the *Keypair page* or create a new one; SSH Keypair you will use to configure in the Cluster servers for ssh access;
-  - *Docker image size (GB)* - provide the preferred disc size where container images will be stored, it can be specified in the range from 50 GB to 1000 GB. The size of 50 GB is selected by default;
-  - *Master Count* - set how many master-nodes the Cluster will contain; the default is 1;
-  - *Node Count* - set how many worker-nodes the Cluster will contain; the default is 1;
-  And below the last field you can make a marks: 
+  - *Cluster Template* - select the template that will be used to create Cluster;  
+    by default the newest one is pre-selected;   
+  - *Master Flavor* - select the size of the Cluster master-nodes (min is VC-2);  
+    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected;   
+  - *Node Flavor* - select the size of the Cluster worker-nodes (min is VC-2);  
+    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected;   
+  - *Key pair* - select the SSH Keypair that was previously created on the *Keypair page* or create a new one;   
+    SSH Keypair you will use to configure in the Cluster servers for ssh access;  
+    if you have only one created SSH Key, it will be pre-selected by default;  
+  - *Docker image size (GB)* - provide the preferred disc size where container images will be stored, it can be specified in the range from 50 GB to 1000 GB;  
+    by default, 50 GB is pre-selected;  
+  - *Master Count* - set how many master-nodes the Cluster will contain;   
+    by default, is 1 pre-selected;  
+  - *Node Count* - set how many worker-nodes the Cluster will contain;  
+    by default, is 1 pre-selected;    
+
+  And the last field you can make a marks: 
   - *Enable auto-scaling* - if you choose to enable this option, please set the  limits of node count; the max count is 10 nodes; 
   - *Accessible on private network only*.
 
