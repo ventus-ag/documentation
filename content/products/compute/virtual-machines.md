@@ -52,8 +52,8 @@ To create new Linux VM, do the following:
   - *Key pair* - this field is necessary only for Linux VMs; select here the SSH Key that was previously created on the *SSH Keys page* or create a new one, which you will use to connect to the Linux VM;  
     if you have only one created SSH Key, it will be pre-selected by default;  
   - *Networks* - choose one or more networks;  
-    by default, public network is pre-selected;  
-  - *Firewalls*- choose what collection of network access rules will control the traffic to this VM; 
+    by default, "public" network is pre-selected;  
+  - *Firewalls*- choose what collection of network access rules will control the traffic to this VM;    
     by default, "default" Firewall is pre-selected;  
     default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.  
       >**NOTE:** To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**;
@@ -83,8 +83,8 @@ To create new Windows VM, do the following:
   - *Password* - this field is necessary only for Windows VMs;come up with the root password (it must contain at least one Latin letter in upper case, one Latin letter in lower case, digit, special character, and must be at least 8 characters long);
   - *Confirm password;*
   - *Networks* - choose one or more networks;  
-    by default, public network is pre-selected;  
-  - *Firewalls*- choose what collection of network access rules will control the traffic to this VM; 
+    by default, "public" network is pre-selected;  
+  - *Firewalls*- choose what collection of network access rules will control the traffic to this VM;   
     by default, "default" Firewall is pre-selected;  
     default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
     >**NOTE:** To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
