@@ -6,10 +6,12 @@ ___
 On this page, you can find an explanation of how to create a new Organization and how to manage it in the Cloud Console.
 
 # Table of contents
-1. [Organizations page](#organizations-page)
-2. [Create Organization](#create-organization)
-3. [Edit Organization](#edit-organization)
-4. [Delete Organization](#delete-organization)
+- [Table of contents](#table-of-contents)
+  - [Organizations page](#organizations-page)
+  - [Create Organization](#create-organization)
+  - [Edit Organization](#edit-organization)
+  - [Delete Organization](#delete-organization)
+  - [Leave Organization](#leave-organization)
 
 ## Organizations page
 If you are a new user and have just created new account, you will be automatically redirected to the *Organizations page*, where you can create your first Organization or find a list of Organizations, to which Projects your User has access as a *Member*:  
@@ -23,6 +25,7 @@ This action will redirect you to the *Organizations page*, where you can find al
 **Actions** icon opens the next list of available management actions (are active only if User Role is an *Owner* or *Administartor* in the selected Organization):  
 - *Edit* - this option is using to change the name of the selected Organization.  
 - *Delete* - this option is using to delete the Organization.  
+- *Leave* - this option is open for Organization Administartors or Members and can be used to leave the Organization.  
 
 As you see, in the Organizations User can have next Roles:  
 - **Owner** - this role is assigned to a User, who created this Organization (this User will also be considered the *Administrator* of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;  
@@ -40,7 +43,7 @@ After these steps the newly created Organization will be added to the *Organizat
 
 ## Edit Organization
 {{% notice note %}}
-This action is available only if your User Role in this Organization is *Owner or Administrator*.
+This action is available only if your User Role in this Organization is *Owner*.
 {{% /notice %}}
 
 To edit the Organization, do the following:
@@ -52,7 +55,7 @@ After these steps, the selected Organization will be updated.
 
 ## Delete Organization
 {{% notice note %}}
-This action is available only if your User Role in this Organization is *Owner or Administrator*.
+This action is available only if your User Role in this Organization is *Owner*.
 {{% /notice %}}
 
 To delete the Organization, do the following:
@@ -62,3 +65,14 @@ To delete the Organization, do the following:
       
 After confirming this action, the selected Organization will be deleted.
 
+## Leave Organization
+{{% notice note %}}
+This action is available only if your User Role in this Organization is *Administrator*.
+{{% /notice %}}
+
+To leave the Organization, do the following:
+- identify Organization on the *Organizations page* that you want to leave;   
+- click on the **Actions** icon and select the LEAVE option;    
+- confirm your action on the next opened *Confirmation window*. 
+      
+After these steps, your User will not have access to the selected Organization.
