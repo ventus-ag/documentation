@@ -94,7 +94,7 @@ To create new Windows VM, do the following:
   - *Tags* - this field is optional; use it if you need to set some tags for the VM;   
   - *Volume size (GB)* - provide the preferred disk size for the VM, it can be specified in the range from 10 GB to 1000 GB. Minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;  
   by default, "50 GB" is pre-selected;   
-  and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;      
+and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;      
 
 After these steps, the newly created Windows VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/6-vm.png?classes=border,shadow)
@@ -121,10 +121,11 @@ This action will redirect you to the *Virtual Machine details page*, where you
 
 - transition to the NETWORKS & SECURITY, VOLUMES, SNAPSHOTS and LOG pages related to this VM:
 ![](../../../assets/images/vms/12-vm.png?classes=border,shadow)  
-  NETWORKS & SECURITY TAB - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
+
+  **NETWORKS & SECURITY TAB** - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
   ![](../../../assets/images/vms/14.2.png?classes=border,shadow)  
 
-  To find additional information about Networking and Security and how to manage them through this TAB use the articles:
+  To find additional information about Networking and Security and how to manage them through this TAB use the articles:  
     [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/)  
     [VM's Networks ans Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/)   
     [Networks](https://docs.ventuscloud.eu/products/network/networks/)  
@@ -134,7 +135,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
     [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/)  
     [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)  
   
-  VOLUMES TAB - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.  
+  **VOLUMES TAB** - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.  
   ![](../../../assets/images/vms/15.2.png?classes=border,shadow)  
 
   To find additional information about volumes and how to manage them through this TAB use the articles:  
@@ -143,14 +144,14 @@ This action will redirect you to the *Virtual Machine details page*, where you
 
 
 
-  SNAPSHOTS TAB - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
+  **SNAPSHOTS TAB** - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
   ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
   To find additional information about snapshots and how to manage them through this TAB use the articles:  
     [VM's Snapshots](https://dev-docs.ventuscloud.eu/products/storage/manage-snapshots/)  
     [Snapshots](https://dev-docs.ventuscloud.eu/products/storage/snapshots/)  
   
-  LOG TAB - opens the *Log page* where you can find VM's logs.
+  **LOG TAB** - opens the *Log page* where you can find VM's logs.
   ![](../../../assets/images/vms/17.2.png?classes=border,shadow)
 
 ## Download RDP File
