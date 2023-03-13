@@ -6,9 +6,10 @@ ___
 On this page, you can find an explanation of how to connect to the Linux Virual Machine created in the Cloud Console using the SSH Protocol
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Configuring Firewalls](#configuring-firewalls)
-3. [Connect using SSH](#connect-using-ssh)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Configuring Firewalls](#configuring-firewalls)
+  - [Connect using SSH](#connect-using-ssh)
 
 ## Prerequisites
 In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1* that was created in the Organization named *Test-Shop*:
@@ -66,13 +67,16 @@ This newly added rule will allow access to the TCP port 22 on the all VMs in the
 ![](../../../assets/images/conn-lin/7.png?classes=border,shadow)
 
 - open the *Virtual Machine details page* - click on the **Name** of the corresponding Virtual Machine:
-![](../../../assets/images/conn-lin/8.png?classes=border,shadow)
+![](../../../assets/images/fw/0.png?classes=border,shadow)
 
-- open the NETWORKS & SECURITY TAB and click on the ADD FIREWALL icon in the upper left corner of the opened page:
-![](../../../assets/images/conn-lin/9.png?classes=border,shadow)
+- open the NETWORKS & SECURITY TAB, click on the *Actions icon* and select the **Edit Firewalls** in the list of available options:
+![](../../../assets/images/fw/9.2.png?classes=border,shadow)
 
-- select our newly created firewall on the following *Add firewall window* and click on the ADD icon:
-![](../../../assets/images/conn-lin/10.png?classes=border,shadow)
+- select our newly created firewall from the list on the opened window and click on SAVE:
+![](../../../assets/images/fw/13.png?classes=border,shadow)  
+
+After these steps, the newly added Firewall will be added to the selected VM:  
+![](../../../assets/images/fw/14.png?classes=border,shadow)  
 
 *This is the first option, how we can configure the Firewall for SSH access - by creating a new one with the required rule. But we can just add this rule to the default Firewall that is already assigned to our VM, and these changes will automatically be applied to the VMs.* 
 
@@ -100,7 +104,7 @@ Since we have the public key deployed on our Linux VM, the private key on our lo
 
 {{% notice note %}}
 Username for VMs created with *Ubuntu image* will be **ubuntu**;   
-with *Centos image* - **centos.**
+with *Centos image* - **centos**.
 {{% /notice %}} 
 
 Replace *username* and *10.11.22.333* in the command with your data and specify the appropriate path to your private key. In our example, the command will look like this:

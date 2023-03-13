@@ -6,9 +6,10 @@ ___
 On this page, you can find an explanation of how to connect to the Windows Virtual Machine created in the Cloud Console using the Remote Desktop Protocol
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Configuring Firewalls](#configuring-firewalls)
-3. [Connect using RDP](#connect-using-rdp)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Configuring Firewalls](#configuring-firewalls)
+  - [Connect using RDP](#connect-using-rdp)
 
 ## Prerequisites
 In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1* that was created in the Organization named *Test-Shop*:
@@ -62,11 +63,14 @@ This newly added rule will allow access to the TCP port 54000 on the all VMs in 
 - open the *Virtual Machine details page* - click on the **Name** of the corresponding Virtual Machine:
 ![](../../../assets/images/conn-lin/22.png?classes=border,shadow)
 
-- click on the NETWORKS & SECURITY TAB and click on the ADD FIREWALL icon in the upper left corner of the opened page:
+- open the NETWORKS & SECURITY TAB, click on the *Actions icon* and select the **Edit Firewalls** in the list of available options:
 ![](../../../assets/images/conn-lin/23.png?classes=border,shadow)
 
-- select our newly created firewall on the following *Add firewall window* and click on the ADD icon:
+- select our newly created firewall from the list on the opened window and click on SAVE:
 ![](../../../assets/images/conn-lin/24.png?classes=border,shadow)
+
+After these steps, the newly added Firewall will be added to the selected VM:  
+![](../../../assets/images/conn-lin/24.1.png?classes=border,shadow)
 
 *This is the first option, how we can configure the Firewall for RDP access - by creating a new one with the required rule. But we can just add this rule to the default Firewall that is already assigned to our VM, and these changes will automatically be applied to the VMs.*  
 

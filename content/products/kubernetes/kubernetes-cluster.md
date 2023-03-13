@@ -45,9 +45,9 @@ To create new Cluster, do the following:
   - *Docker image size (GB)* - provide the preferred disc size where container images will be stored, it can be specified in the range from 50 GB to 1000 GB;  
     by default, 50 GB is pre-selected;  
   - *Master Count* - set how many master-nodes the Cluster will contain;   
-    by default, is 1 pre-selected;  
+    by default, 1 is pre-selected;  
   - *Node Count* - set how many worker-nodes the Cluster will contain;  
-    by default, is 1 pre-selected;    
+    by default, 1 is pre-selected;    
 
   And the last field you can make a marks: 
   - *Enable auto-scaling* - if you choose to enable this option, please set the  limits of node count; the max count is 10 nodes; 
