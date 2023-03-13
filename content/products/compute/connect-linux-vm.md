@@ -70,10 +70,10 @@ This newly added rule will allow access to the TCP port 22 on the all VMs in the
 ![](../../../assets/images/fw/0.png?classes=border,shadow)
 
 - open the NETWORKS & SECURITY TAB, click on the *Actions icon* and select the **Edit Firewalls** in the list of available options:
-![](../../../assets/images/fw/9.2.png?classes=border,shadow)
+![](../../../assets/images/conn-lin/23.1.png?classes=border,shadow)
 
 - select our newly created firewall from the list on the opened window and click on SAVE:
-![](../../../assets/images/fw/13.png?classes=border,shadow)  
+![](../../../assets/images/conn-lin/24.1.60.png?classes=border,shadow)
 
 After these steps, the newly added Firewall will be added to the selected VM:  
 ![](../../../assets/images/fw/14.png?classes=border,shadow)  
