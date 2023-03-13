@@ -120,35 +120,37 @@ This action will redirect you to the *Virtual Machine details page*, where you
     - *Delete* - this option is for VM removing;
 
 - transition to the NETWORKS & SECURITY, VOLUMES, SNAPSHOTS and LOG pages related to this VM:
-![](../../../assets/images/vms/12-vm.png?classes=border,shadow)
-  - NETWORKS & SECURITY TAB - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
+![](../../../assets/images/vms/12-vm.png?classes=border,shadow)  
+  NETWORKS & SECURITY TAB - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
+  ![](../../../assets/images/vms/14.2.png?classes=border,shadow)  
+
   To find additional information about Networking and Security and how to manage them through this TAB use the articles:
-  * [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/);
-  * [VM's Networks ans Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/);
-  * [Networks](https://docs.ventuscloud.eu/products/network/networks/);  
-  * [Subnets](https://docs.ventuscloud.eu/products/network/subnets/);  
-  * [Routers and Interfaces](https://docs.ventuscloud.eu/products/network/routers-interfaces/); 
-  * [Floating IPs](https://docs.ventuscloud.eu/products/network/floating-ips/); 
-  * [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/);
-  * [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)
-  * 
-  ![](../../../assets/images/vms/14.2.png?classes=border,shadow)
+    [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/)  
+    [VM's Networks ans Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/)   
+    [Networks](https://docs.ventuscloud.eu/products/network/networks/)  
+    [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)   
+    [Routers and Interfaces](https://docs.ventuscloud.eu/products/network/routers-interfaces/)  
+    [Floating IPs](https://docs.ventuscloud.eu/products/network/floating-ips/)  
+    [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/)  
+    [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)  
+  
+  VOLUMES TAB - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.  
+  ![](../../../assets/images/vms/15.2.png?classes=border,shadow)  
 
-  - VOLUMES TAB - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.   
   To find additional information about volumes and how to manage them through this TAB use the articles:  
-  * [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/);
-  * [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/)
-  
-  ![](../../../assets/images/vms/15.2.png?classes=border,shadow)
+    [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/)  
+    [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/)  
 
-  - SNAPSHOTS TAB - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
-  To find additional information about snapshots and how to manage them through this TAB use the articles:  
-  * [VM's Snapshots](https://dev-docs.ventuscloud.eu/products/storage/manage-snapshots/);
-  * [Snapshots](https://dev-docs.ventuscloud.eu/products/storage/snapshots/)
-  
+
+
+  SNAPSHOTS TAB - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
   ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
-  - LOG TAB - opens the *Log page* where you can find VM's logs.
+  To find additional information about snapshots and how to manage them through this TAB use the articles:  
+    [VM's Snapshots](https://dev-docs.ventuscloud.eu/products/storage/manage-snapshots/)  
+    [Snapshots](https://dev-docs.ventuscloud.eu/products/storage/snapshots/)  
+  
+  LOG TAB - opens the *Log page* where you can find VM's logs.
   ![](../../../assets/images/vms/17.2.png?classes=border,shadow)
 
 ## Download RDP File
