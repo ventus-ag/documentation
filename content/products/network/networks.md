@@ -6,14 +6,17 @@ ___
 On this page, you can find an explanation of how to create, edit and delete Networks in the Cloud Console.
 
 # Table of contents
-1. [Networks page](#networks-page)
-2. [Create Network](#create-network)
-3. [Edit Network](#edit-network)
-4. [Delete Network](#delete-network)
+- [Table of contents](#table-of-contents)
+  - [Networks page](#networks-page)
+  - [Create Network](#create-network)
+    - [Create Subnet](#create-subnet)
+  - [Edit Network](#edit-network)
+  - [Delete Network](#delete-network)
 
 ## Networks page
-To get to the *Networks page*, select the **Networks**  from the VIRTUAL DATACENTER block in the *side-bar menu*:
+To get to the *Networks page*, select the **Networking**  from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Networks TAB:**:
 ![](../../../assets/images/networks/1.png?classes=border,shadow) 
+![](../../../assets/images/networks/0.png?classes=border,shadow) 
 
 On this page you can find the default *public* Network, all your own Networks created in the current Project, and the Networks created during Cluster creation, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/2.png?classes=border,shadow) 
@@ -23,6 +26,10 @@ On this page you can find the default *public* Network, all your own Networks 
 - *Delete* - this option is for Network removing.
 
 ## Create Network
+{{% notice note %}}
+Currently only internal networks can be created.
+{{% /notice %}}
+
 To create new Network, do the following:
 - go to the *Networks page* and click on the CREATE NETWORK icon in the upper left corner;  
 - fill in the form on the next opened *Create Network window* and click on the CREATE icon:
@@ -33,14 +40,16 @@ To create new Network, do the following:
 
 After these steps, the newly created Network will be added to the *Networks page* with the status ACTIVE.  
 
-Now you can open the *Subnets page*, related to this Network - for this click on the **Name** of the corresponding Network:
+As a next step, we recommend to create Subnets in this Network.
+
+### Create Subnet
+To get to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
 ![](../../../assets/images/networks/4.png?classes=border,shadow) 
 
-On the *Subnets page* you can find:
-- panel with available **quick actions** for the selected Network: 
-![](../../../assets/images/networks/13.png?classes=border,shadow) 
-- all created Subnets, related to the selected Network with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Subnet:
-![](../../../assets/images/networks/7.png?classes=border,shadow) 
+On the opened *Subnets page* click on the CREATE SUBNET icon in the upper left corner, fill in the form on the next opened *Create Subnet window* and click on the CREATE icon:
+![](../../../assets/images/networks/14.png?classes=border,shadow) 
+
+After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE. 
 
 For more information about Subnets, please, see the next article - [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)  
 

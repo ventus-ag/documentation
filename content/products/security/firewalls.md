@@ -6,10 +6,12 @@ ___
 On this page, you can find an explanation of how to create, edit and delete Firewalls in the Cloud Console.
 
 # Table of contents
-1. [Firewalls page](#firewalls-page)
-2. [Create Firewall](#create-firewall)
-3. [Edit Firewall](#edit-firewall)
-4. [Delete Firewall](#delete-firewall)
+- [Table of contents](#table-of-contents)
+  - [Firewalls page](#firewalls-page)
+  - [Create Firewall](#create-firewall)
+  - [Edit Firewall](#edit-firewall)
+  - [Delete Firewall](#delete-firewall)
+  - [Add Firewall to the VM](#add-firewall-to-the-vm)
 
 ## Firewalls page
 To get to the *Firewalls page*, select the **Security** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Firewalls TAB:**
@@ -69,3 +71,14 @@ To delete the Firewall, do the following:
 
 After these steps, the selected Firewall will be deleted.  
 Also, you can delete the Firewall from *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there.
+
+## Add Firewall to the VM
+
+You can add a previously created Firewall to a VM at the step of creating this VM:
+![](../../../assets/images/fw/14.png?classes=border,shadow)  
+
+{{% notice note %}}
+You can add and remove rules of the selected Firewall at any time from the *Firewall Rules page* and your changes will automatically applied to the VMs, that are associated with the corresponding Firewall.
+{{% /notice %}}
+
+Also you can change the current set of VM Firewalls from the *VM details pafe*, to see information about this, please use article: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/)  

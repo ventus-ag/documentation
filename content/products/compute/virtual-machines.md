@@ -186,7 +186,7 @@ To associate Floating IP with the Virtual Machine, do the following:
 After these steps, the selected Virtual Machine will be publickly available:  
 ![](../../../assets/images/vms/21.png?classes=border,shadow)
 
-Now, if you want again to close the access from Internet this VM, do the following:  
+Now, if you want to close the access from Internet to this VM again, do the following:  
 - click on the **Actions** icon and select the **Disassociate Floating IP**:
   ![](../../../assets/images/vms/22.png?classes=border,shadow)
 - confirm your action on the next opened *Confirmation window* by clicking on the DISASSOCIATE icon:
