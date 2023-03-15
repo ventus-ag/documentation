@@ -8,39 +8,30 @@ On this page, you can find an explanation of how to create, associate, edit and 
 # Table of contents
 - [Table of contents](#table-of-contents)
   - [Floating IPs page](#floating-ips-page)
-  - [Create Subnet](#create-subnet)
+  - [Create Floating IP](#create-floating-ip)
   - [Edit Subnet](#edit-subnet)
   - [Delete Subnet](#delete-subnet)
   - [Connect Subnets](#connect-subnets)
 
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
-![](../../../assets/images/networks/net-1.png?classes=border,shadow?width=20pc) 
-![](../../../assets/images/networks/4.png?classes=border,shadow?width=20pc) 
+![](../../../assets/images/networks/net-1.png?classes=border,shadow?width=50%) 
+![](../../../assets/images/networks/net-2.png?classes=border,shadow?width=50%) 
 
-On this page you can find:
-- panel with available **quick actions** for the selected Network: 
-![](../../../assets/images/networks/13.png?classes=border,shadow) 
-- all created Subnets, related to the selected Network, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Subnet:
-![](../../../assets/images/networks/7.png?classes=border,shadow) 
+On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
+![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
 
-**Actions** icon opens the next list of available management actions for the selected Subnet:
-- *Edit* - this option is used to update selected Subnet (change Name, Allocation pools, DNS nameservers, Gateway IP, Host routs, state of DHCP and gateway); 
-- *Delete* - this option is for Subnet removing.
+**Actions** icon opens the next list of available management actions for the selected Floating IP:
+- *Associate* - this option is used to associate selected Floating IP with one of the previously created Interfaces; 
+- *Edit* - this option is used to update description of the selected Floating IP; 
+- *Delete* - this option is for Floating IP removing.
 
-## Create Subnet
-To create new Subnet, do the following:
-- go to the *Subnets page* and click on the CREATE SUBNET icon in the upper left corner;
-- fill in the form on the next opened *Create Subnet* *window* and click on the CREATE icon:
-![](../../../assets/images/networks/6.png?classes=border,shadow)
-  - *Name* - set a name for the Subnet;
-  - *Enable DHCP* - enable or disable Dynamic Host Configuration Protocol for Subnet;
-  - *CIDR* - shows Classless Inter-Domain Routing of Subnet;
-  - *Allocation Pools* - specify IP address allocation pools; each entry is: start_ip_address-end_ip_address; one entry per line;
-  - *DNS Nameservers* - specify the IP addresses of DNS Name Servers; format: comma-separated values;
-  - *Gateway IP* - set the IP address of Gateway; the default value is the first IP of the network address; if you want to use the default, leave blank. If you do not want to use a gateway, please check ‘Disable Gateway’;
-  - *Disable Gateway* - enable or disable using Gateway IP for Subnet;
-  - *Host Routes* - specify additional routes announced to the hosts; each entry is: destination_cidr,next-hop; one entry per line.
+## Create Floating IP
+To create new Floating IP, do the following:
+- go to the *Floating IPs page* and click on the CREATE FLOATING IP icon in the upper left corner;
+- come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:
+![](../../../assets/images/networks/net-4.png?classes=border,shadow?width=50%) 
+
 
 After these steps, the newly created Subnet will be added to the *Subnets page*:
 ![](../../../assets/images/networks/16.png?classes=border,shadow)
