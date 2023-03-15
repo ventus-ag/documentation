@@ -49,7 +49,7 @@ There are two ways associate/disassociate already created Floating IP with the V
 - from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*.
 
 In this article we will explain the first way - how to associate/disassociate Floating IP from the *Floating IPs page*.  
-Information about the second one you can find in the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/) .
+Information about the second one you can find in the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/).
 
 Also, as you know from the previous chapter, you can immediately associate Floating IP when you create it.
 
@@ -64,12 +64,12 @@ To associate already created Floating IP with the VM's internal Interfaces, do t
 ![](../../../assets/images/networks/net-9.png?width=35pc&classes=border,shadow) 
 
 After these steps, the selected Floating IP will have ACTIVE status and the associated with it VM will be publicly available:
-![](../../../assets/images/networks/net-11.png&classes=border,shadow) 
+![](../../../assets/images/networks/net-11.png?classes=border,shadow) 
 
 If you need to disassociate Floating IP and to make your VM again publicly unavailable, do the following:
 - identify the associated Floating IP, that you want to disassociate, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Disassociate** in the list of available options:
-![](../../../assets/images/networks/net-12.png&classes=border,shadow) 
+![](../../../assets/images/networks/net-12.png?classes=border,shadow) 
 
 After confirmation your action on the next opened window the selected Virtual Machine will be again publicly unavailable and Floating IP has status DOWN.
 
@@ -84,6 +84,7 @@ To edit the Floating IP, do the following:
 After these steps, the selected Subnet will be updated.
 
 ## Delete Floating IP
+
 To delete the Floating IP, do the following:
 - to identify this unnecessary Floating IP on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Delete** in the list of available options;
