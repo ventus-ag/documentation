@@ -128,7 +128,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
 
   To find additional information about Networking and Security and how to manage them through this TAB use the articles:  
     [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/)  
-    [VM's Networks ans Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/)   
+    [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/)   
     [Networks](https://docs.ventuscloud.eu/products/network/networks/)  
     [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)   
     [Routers and Interfaces](https://docs.ventuscloud.eu/products/network/routers-interfaces/)  
@@ -194,9 +194,9 @@ Now, if you want to close the access from Internet to this VM again, do the foll
 
 After these steps, the selected Virtual Machine will be again publickly unavailable.
 
-To find additional information about Floating IPs use the articles:
+To find additional information about Floating IPs and VM's Interfaces use the articles:
 * [Floating IPs](https://docs.ventuscloud.eu/products/network/floating-ips/);  
-* [VM's Networks ans Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/);
+* [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/);
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:
