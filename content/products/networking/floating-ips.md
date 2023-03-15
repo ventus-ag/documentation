@@ -22,7 +22,8 @@ On this page you can find all Floating IPs created in the current Project, with 
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
 
 **Actions** icon opens the next list of available management actions for the selected Floating IP:
-- *Associate* - this option is used to associate selected Floating IP with one of the previously created Interfaces; 
+- *Associate* - this option is used to associate selected Floating IP with one of the previously created VM's internal Interfaces;
+- *Disassociate* - this option is available only for Floating IPs that are already associated with one of the previously created Interfaces; 
 - *Edit* - this option is used to update description of the selected Floating IP; 
 - *Delete* - this option is for Floating IP removing.
 
