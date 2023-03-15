@@ -54,7 +54,7 @@ To find information how to create Virtual Machine in Cloud Console, please see t
 Instructions how to add Subnet Interface to the already created VM you can find in article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 {{% notice note %}}
-If you need that Virtual Machines created in this Subnet have access to Internet, please, ensure that you attach Router interface to this Subnet.
+If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
 {{% /notice %}}
 
 For more information about Subnets and Routers, please, see the articles - [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Routers](https://docs.ventuscloud.eu/products/networking/routers/). 
@@ -72,7 +72,7 @@ To edit the internal Network, do the following:
 
 After these steps, the selected Network will be updated.  
 Also, you can edit the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/networks/net-14.png?width=35pc&classes=border,shadow)  
+![](../../../assets/images/networks/net-14.png?width=20pc&classes=border,shadow)  
 
 ## Delete Network
 
@@ -87,7 +87,7 @@ To delete the internal Network, do the following:
 
 After these steps, the selected Network will be deleted.  
 Also, you can delete the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there.
-![](../../../assets/images/networks/net-15.png?width=35pc&classes=border,shadow)  
+![](../../../assets/images/networks/net-15.png?width=20pc&classes=border,shadow)  
 
 
 

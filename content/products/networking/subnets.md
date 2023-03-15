@@ -3,7 +3,7 @@ title: Subnets
 weight: 20
 ---
 ___
-On this page, you can find an explanation of how to create, edit and delete Subnets in Cloud Console.
+On this page, you can find an explanation of how to create, edit, delete Subnets in Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
