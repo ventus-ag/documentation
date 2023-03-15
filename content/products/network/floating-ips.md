@@ -9,14 +9,14 @@ On this page, you can find an explanation of how to create, associate, edit and 
 - [Table of contents](#table-of-contents)
   - [Floating IPs page](#floating-ips-page)
   - [Create Floating IP](#create-floating-ip)
+  - [Associate Floating IP](#associate-floating-ip)
   - [Edit Floating IP](#edit-floating-ip)
-  - [Delete Subnet](#delete-subnet)
-  - [Connect Subnets](#connect-subnets)
+  - [Delete Floating IP](#delete-floating-ip)
 
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
-![](../../../assets/images/networks/net-1.png?width=10pc&classes=border,shadow) 
-![](../../../assets/images/networks/net-2.png?width=50%) 
+![](../../../assets/images/networks/net-1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/networks/net-2.png?width=20pc&classes=border,shadow) 
 
 On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
@@ -30,47 +30,41 @@ On this page you can find all Floating IPs created in the current Project, with 
 To create new Floating IP, do the following:
 - go to the *Floating IPs page* and click on the CREATE FLOATING IP icon in the upper left corner;
 - come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:
-![](../../../assets/images/networks/net-4.png?classes=border,shadow?width=100px) 
+![](../../../assets/images/networks/net-4.png?width=25pc&classes=border,shadow) 
 
 After these steps, the newly created Floating IP will be added to the *Floating IPs page*:
 ![](../../../assets/images/networks/net-5.png?classes=border,shadow)
 
 Also, when creating Floating IP, you can immediately associate it with a previously created Interface:
-![](../../../assets/images/networks/net-6.png?classes=border,shadow?width=100px) 
+![](../../../assets/images/networks/net-6.png?width=25pc&classes=border,shadow) 
 
 If Floating IP is currently associated with one of the created Interfaces, it status is ACTIVE:
 ![](../../../assets/images/networks/net-7.png?classes=border,shadow)
 
+## Associate Floating IP
+To associate the Floating IP with the previously created Interface, do the following:
+- ensure that you have created Interface in internal Network that you want to associate with the Floating IP;
+- identify the Floating IP, that you want to associate, on the *Floating IPs page*;
+- click on the **Actions** icon and select the **Associate** in the list of available options;
+- select the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon:
+![](../../../assets/images/networks/net-8.png?width=25pc&classes=border,shadow) 
+
+After these steps, the selected Subnet will be updated.
 
 ## Edit Floating IP
 To edit the Floating IP, do the following:
 - identify the Floating IP, that you want to edit, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
 - update the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon:
-![](../../../assets/images/networks/net-6.png?classes=border,shadow?width=100px) 
+![](../../../assets/images/networks/net-8.png?width=25pc&classes=border,shadow) 
 
 After these steps, the selected Subnet will be updated.
 
-## Delete Subnet
-To delete the Subnet, do the following:
-- to identify this unnecessary Subnet on the *Subnets page*;
+## Delete Floating IP
+To delete the Floating IP, do the following:
+- to identify this unnecessary Floating IP on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Delete** in the list of available options;
-- confirm the Subnet deletion on the next opened *Confirmation window*.  
+- confirm the Floating IP deletion on the next opened *Confirmation window*.  
 
-After these steps, the selected Subnet will be deleted.   
+After these steps, the selected Floating IP will be deleted.   
 
-## Connect Subnets 
-To connect Subnets to each other or to allow them access to the internet you need to add them to the previously created Router on the *Router details page*.  
-
-To open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Network:
-![](../../../assets/images/networks/17.png?classes=border,shadow) 
-
-On the opened *Router details page* click on the ADD INTERFACE icon, select one of the previously created Subnets on the next opened *Add Interface window* and click on the ADD icon:
-![](../../../assets/images/networks/18.png?classes=border,shadow) 
-
-All Subnets that will be added to one Router will be connected to each other:   
-![](../../../assets/images/networks/19.png?classes=border,shadow) 
-{{% notice note %}}
-If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.
-{{% /notice %}} 
-For more information about Routers, please, see the next article - [Routers](https://docs.ventuscloud.eu/products/network/routers/)  
