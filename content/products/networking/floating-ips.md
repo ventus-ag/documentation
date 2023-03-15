@@ -49,7 +49,7 @@ There are two ways associate/disassociate already created Floating IP with the V
 - from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*.
 
 In this article we will explain the first way - how to associate/disassociate Floating IP from the *Floating IPs page*.  
-Information about the second one you can find in the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/).
+Information about the second one you can find in the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 Also, as you know from the previous chapter, you can immediately associate Floating IP when you create it.
 

@@ -26,7 +26,7 @@ On the opened  *NETWORKS & SECURITY page of this VM* you can find information 
 In this article, we are interested in the block of information, where you can find all Firewalls related to the corresponding VM with their *Actions icon*, which opens a list of available management actions for the Firewalls of the selected VM:
 ![](../../../assets/images/fw/9.png?classes=border,shadow)
 
-Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the articles [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/).
+Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the articles [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 ## Change Firewall set
 To add additional Firewall or delete unnecessary one from the selected VM, do the following:

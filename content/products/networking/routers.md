@@ -1,5 +1,5 @@
 ---
-title: Routers and Interfaces
+title: Routers
 weight: 20
 ---
 ___

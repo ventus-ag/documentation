@@ -128,7 +128,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
 
   To find additional information about Networking and Security and how to manage them through this TAB use the articles:  
     [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/)  
-    [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/)   
+    [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/)   
     [Networks](https://docs.ventuscloud.eu/products/networking/networks/)  
     [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)   
     [Routers](https://docs.ventuscloud.eu/products/networking/routers/)  
@@ -196,7 +196,7 @@ After these steps, the selected Virtual Machine will be again publicly unavailab
 
 To find additional information about Floating IPs and VM's Interfaces use the articles:
 * [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);  
-* [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/);
+* [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/);
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:
