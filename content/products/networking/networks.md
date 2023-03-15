@@ -48,8 +48,10 @@ To get to the *Subnets page*, related to this Network click on the **Name** of
 On the opened *Subnets page* click on the CREATE SUBNET icon in the upper left corner, fill in the form on the next opened *Create Subnet window* and click on the CREATE icon:
 ![](../../../assets/images/networks/6.png?width=35pc&classes=border,shadow)  
 
-After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE and you are available to create Virtual Machines in this Subnet.  
-To find information how to create Virtual Machine in Cloud Console, please see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/)    
+After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE and you are available to create Virtual Machines in this Subnet or add it's Interface to the already created VMs.  
+
+To find information how to create Virtual Machine in Cloud Console, please see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).  
+Instructions how to add Subnet Interface to the already created VM you can find in article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 {{% notice note %}}
 If you need that Virtual Machines created in this Subnet have access to Internet, please, ensure that you attach Router interface to this Subnet.
