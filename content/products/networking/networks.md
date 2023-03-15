@@ -77,11 +77,11 @@ Also, you can edit the Network from its *Subnets page*, by clicking on the appro
 ## Delete Network
 
 {{% notice note %}}
-In Cloud Console default public Network can't be deleted by User.
+In Cloud Console default public Network and internal Networks which interfaces are attached to other cloud resources can't be deleted.
 {{% /notice %}}
 
 To delete the internal Network, do the following:
-- identify this unnecessary Network on the *Networks page*;
+- identify this unnecessary Network on the *Networks page* and ensure, that this it isn't still used by other cloud resources;
 - click on the **Actions** icon  and select the **Delete** in the list of available options;
 - confirm the Network deletion on the next opened *Confirmation window*.
 
