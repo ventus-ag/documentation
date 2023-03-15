@@ -15,8 +15,8 @@ On this page, you can find an explanation of how to create, associate, edit and 
 
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
-![](../../../assets/images/networks/net-1.png?classes=border,shadow?width=50%) 
-![](../../../assets/images/networks/net-2.png?classes=border,shadow?width=50%) 
+![](../../../assets/images/networks/net-1.png?classes=border,shadow?height=50%) 
+![](../../../assets/images/networks/net-2.png?classes=border,shadow?height=100) 
 
 On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
@@ -32,9 +32,10 @@ To create new Floating IP, do the following:
 - come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:
 ![](../../../assets/images/networks/net-4.png?classes=border,shadow?width=50%) 
 
-
-After these steps, the newly created Subnet will be added to the *Subnets page*:
+After these steps, the newly created Floating IP will be added to the *Floating IPs page*:
 ![](../../../assets/images/networks/16.png?classes=border,shadow)
+
+Also, when creating Floating IP, you can immediately associate it with a previously created Interface:
 
 {{% notice note %}}
 You can connect Subnets to each other by attaching Router.
