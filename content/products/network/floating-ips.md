@@ -9,14 +9,14 @@ On this page, you can find an explanation of how to create, associate, edit and 
 - [Table of contents](#table-of-contents)
   - [Floating IPs page](#floating-ips-page)
   - [Create Floating IP](#create-floating-ip)
-  - [Edit Subnet](#edit-subnet)
+  - [Edit Floating IP](#edit-floating-ip)
   - [Delete Subnet](#delete-subnet)
   - [Connect Subnets](#connect-subnets)
 
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
-![](../../../assets/images/networks/net-1.png?classes=border,shadow?height=50%) 
-![](../../../assets/images/networks/net-2.png?classes=border,shadow?height=100) 
+![](../../../assets/images/networks/net-1.png?classes=border,shadow?width=100px) 
+![](../../../assets/images/networks/net-2.png?classes=border,shadow?width=100px) 
 
 On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
@@ -30,18 +30,19 @@ On this page you can find all Floating IPs created in the current Project, with 
 To create new Floating IP, do the following:
 - go to the *Floating IPs page* and click on the CREATE FLOATING IP icon in the upper left corner;
 - come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:
-![](../../../assets/images/networks/net-4.png?classes=border,shadow?width=50%) 
+![](../../../assets/images/networks/net-4.png?classes=border,shadow?width=100px) 
 
 After these steps, the newly created Floating IP will be added to the *Floating IPs page*:
-![](../../../assets/images/networks/16.png?classes=border,shadow)
+![](../../../assets/images/networks/net-5.png?classes=border,shadow)
 
 Also, when creating Floating IP, you can immediately associate it with a previously created Interface:
+![](../../../assets/images/networks/net-6.png?classes=border,shadow?width=100px) 
 
-{{% notice note %}}
-You can connect Subnets to each other by attaching Router.
-{{% /notice %}}
+If Floating IP is currently associated with one of the created Interfaces, it status is ACTIVE:
+![](../../../assets/images/networks/net-7.png?classes=border,shadow)
 
-## Edit Subnet
+
+## Edit Floating IP
 To edit the Subnet, do the following:
 - identify the Subnet, that you want to edit, on the *Subnets page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
