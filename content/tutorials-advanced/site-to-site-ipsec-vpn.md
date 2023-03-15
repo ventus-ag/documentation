@@ -17,7 +17,7 @@ connection between the Cloud Console Regions.
   - [Verifying connectivity](#verifying-connectivity)
 
 ## Prerequisites
-1. Create a private network in each region. How to create a network see the articles - [Networks](https://docs.ventuscloud.eu/products/network/networks/) and [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)
+1. Create a private network in each region. How to create a network see the articles - [Networks](https://docs.ventuscloud.eu/products/networking/networks/) and [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)
 2. Create two VMs in private and public networks based on Ubuntu 18.04 or higher in each region. How to create VMs see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/)
 3. For testing, need to create on each private network VM based on Windows or Linux
 

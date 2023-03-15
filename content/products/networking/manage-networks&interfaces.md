@@ -51,8 +51,8 @@ On this page you can find all Subnets, related to the selected Network, with the
 ![](../../../assets/images/networks/12.png?classes=border,shadow) 
   
 For more information about Networks and their Subnets, please, see the next articles:    
-[Networks](https://docs.ventuscloud.eu/products/network/networks/)    
-[Subnets](https://docs.ventuscloud.eu/products/network/subnets/)
+[Networks](https://docs.ventuscloud.eu/products/networking/networks/)    
+[Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)
 
 ## Remove Interface
 To remove the Interface from the corresponding VM, do the following:

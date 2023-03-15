@@ -128,11 +128,11 @@ This action will redirect you to the *Virtual Machine details page*, where you
 
   To find additional information about Networking and Security and how to manage them through this TAB use the articles:  
     [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/)  
-    [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/)   
-    [Networks](https://docs.ventuscloud.eu/products/network/networks/)  
-    [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)   
-    [Routers and Interfaces](https://docs.ventuscloud.eu/products/network/routers-interfaces/)  
-    [Floating IPs](https://docs.ventuscloud.eu/products/network/floating-ips/)  
+    [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/)   
+    [Networks](https://docs.ventuscloud.eu/products/networking/networks/)  
+    [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)   
+    [Routers](https://docs.ventuscloud.eu/products/networking/routers/)  
+    [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/)  
     [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/)  
     [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)  
   
@@ -183,7 +183,7 @@ To associate Floating IP with the Virtual Machine, do the following:
 - choose one of the available internal interfaces of your VM and one of the previously created Floating IP that you want to attach to the selected interface on the opened *Associate floating IP* and click on the ASSOCIATE icon:  
   ![](../../../assets/images/vms/20.png?classes=border,shadow)
 
-After these steps, the selected Virtual Machine will be publickly available:  
+After these steps, the selected Virtual Machine will be publicly available:  
 ![](../../../assets/images/vms/21.png?classes=border,shadow)
 
 Now, if you want to close the access from Internet to this VM again, do the following:  
@@ -192,11 +192,11 @@ Now, if you want to close the access from Internet to this VM again, do the foll
 - confirm your action on the next opened *Confirmation window* by clicking on the DISASSOCIATE icon:
   ![](../../../assets/images/vms/23.png?classes=border,shadow)  
 
-After these steps, the selected Virtual Machine will be again publickly unavailable.
+After these steps, the selected Virtual Machine will be again publicly unavailable.
 
 To find additional information about Floating IPs and VM's Interfaces use the articles:
-* [Floating IPs](https://docs.ventuscloud.eu/products/network/floating-ips/);  
-* [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/network/manage-networksinterfaces/);
+* [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);  
+* [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networksinterfaces/);
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:

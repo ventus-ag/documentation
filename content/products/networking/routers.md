@@ -1,9 +1,9 @@
 ---
-title: Subnets
+title: Routers and Interfaces
 weight: 20
 ---
 ___
-On this page, you can find an explanation of how to create, edit and delete Subnets in Cloud Console.
+On this page, you can find an explanation of how to create, edit, delete Routers and how to manage Interfaces inside them in Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -14,7 +14,7 @@ On this page, you can find an explanation of how to create, edit and delete Subn
   - [Connect Subnets](#connect-subnets)
 
 ## Subnets page
-To open the *Subnets page*, go to *Networking page* and click on the **Name** of the corresponding Network:
+To open the *Subnets page*, go to *Networks page* and click on the **Name** of the corresponding Network:
 ![](../../../assets/images/networks/4.png?classes=border,shadow) 
 
 On this page you can find:
@@ -79,4 +79,4 @@ All Subnets that will be added to one Router will be connected to each other:
 {{% notice note %}}
 If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.
 {{% /notice %}} 
-For more information about Routers, please, see the next article - [Routers and Interfaces](https://docs.ventuscloud.eu/products/network/routers-interfaces/)  
+For more information about Routers, please, see the next article - [Routers](https://docs.ventuscloud.eu/products/networking/routers/)  

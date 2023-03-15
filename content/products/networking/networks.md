@@ -51,7 +51,7 @@ On the opened *Subnets page* click on the CREATE SUBNET icon in the upper left
 
 After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE. 
 
-For more information about Subnets, please, see the next article - [Subnets](https://docs.ventuscloud.eu/products/network/subnets/)  
+For more information about Subnets, please, see the next article - [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)  
 
 ## Edit Network
 To edit the Network, do the following:
