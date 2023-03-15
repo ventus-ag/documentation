@@ -72,7 +72,7 @@ To edit the internal Network, do the following:
 
 After these steps, the selected Network will be updated.  
 Also, you can edit the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/networks/net-14.png?width=20pc&classes=border,shadow)  
+![](../../../assets/images/networks/net-14.png?width=25pc&classes=border,shadow)  
 
 ## Delete Network
 
@@ -87,7 +87,7 @@ To delete the internal Network, do the following:
 
 After these steps, the selected Network will be deleted.  
 Also, you can delete the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there.
-![](../../../assets/images/networks/net-15.png?width=20pc&classes=border,shadow)  
+![](../../../assets/images/networks/net-15.png?width=25pc&classes=border,shadow)  
 
 
 
