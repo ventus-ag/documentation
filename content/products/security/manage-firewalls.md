@@ -3,7 +3,7 @@ title: VM's Firewalls
 weight: 22
 ---
 ___
-On this page, you can find an explanation of how to manage Firewalls related to the selected Virtual Machine in the Cloud Console.
+On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from  the *Virtual Machine details page* in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -23,10 +23,10 @@ To find all Firsewall, related to the selected Virtual Machine, you need:
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
 
-In this article, we are interested in the block of information, where you can find all Firewalls related to the corresponding VM with their *Actions icon*, which opens a list of available management actions for the Firewalls of the selected VM:
+In this article, we are interested in the block of information, where you can find all Firewalls related to the corresponding VM with their *Actions icon*, which opens a list of available management actions:
 ![](../../../assets/images/fw/9.png?classes=border,shadow)
 
-Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the articles [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the article [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 ## Change Firewall set
 To add additional Firewall or delete unnecessary one from the selected VM, do the following:

@@ -3,14 +3,15 @@ title: VM's Volumes
 weight: 27
 ---
 ___
-On this page, you can find an explanation of how to manage Volumes related to the selected Virtual Machine in Cloud Console.
+On this page, you can find an explanation of how to manage Volumes, related to the selected Virtual Machine, the *Virtual Machine details page* in Cloud Console.
 
 # Table of contents
-1. [VM's VOLUMES TAB](#vm's-volumes-tab)
-3. [Attach Volume](#attach-volume)
-4. [Detach Volume](#detach-volume)
-5. [Edit Volume](#edit-volume)
-6. [Extend Volume](#extend-volume)
+- [Table of contents](#table-of-contents)
+  - [VM's VOLUMES TAB](#vms-volumes-tab)
+  - [Attach Volume](#attach-volume)
+  - [Detach Volume](#detach-volume)
+  - [Edit Volume](#edit-volume)
+  - [Extend Volume](#extend-volume)
 
 ## VM's VOLUMES TAB
 To find all Volumes, related to the selected Virtual Machine, you need:

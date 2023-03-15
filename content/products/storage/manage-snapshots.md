@@ -3,13 +3,14 @@ title: VM's Snapshots
 weight: 32
 ---
 ___
-On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, in the Cloud Console.
+On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, the *Virtual Machine details page* in the Cloud Console.
 
 # Table of contents
-1. [VM's SNAPSHOTS TAB](#vm's-snapshots-tab)
-1. [Create Snapshot](#create-snapshot)
-1. [Edit Snapshot](#edit-snapshot)
-1. [Delete Snapshot](#delete-snapshot)
+- [Table of contents](#table-of-contents)
+  - [VM's SNAPSHOTS TAB](#vms-snapshots-tab)
+  - [Create Snapshot](#create-snapshot)
+  - [Edit Snapshot ](#edit-snapshot)
+  - [Delete Snapshot](#delete-snapshot)
 
 ## VM's SNAPSHOTS TAB
 To find all Snapshots, related to the selected Virtual Machine, you need:
