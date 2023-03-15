@@ -15,8 +15,8 @@ On this page, you can find an explanation of how to create, associate, edit and 
 
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
-![](../../../assets/images/networks/net-1.png?width=20pc?classes=border,shadow) 
-![](../../../assets/images/networks/net-2.png?width=20pc) 
+![](../../../assets/images/networks/net-1.png?width=10pc&classes=border,shadow) 
+![](../../../assets/images/networks/net-2.png?width=50%) 
 
 On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
