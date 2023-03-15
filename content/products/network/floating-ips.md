@@ -15,8 +15,8 @@ On this page, you can find an explanation of how to create, associate, edit and 
 
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
-![](../../../assets/images/networks/net-1.png?classes=border,shadow?width=100px) 
-![](../../../assets/images/networks/net-2.png?classes=border,shadow?width=100px) 
+![](../../../assets/images/networks/net-1.png?width=20pc?classes=border,shadow) 
+![](../../../assets/images/networks/net-2.png?width=20pc) 
 
 On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
@@ -43,11 +43,11 @@ If Floating IP is currently associated with one of the created Interfaces, it st
 
 
 ## Edit Floating IP
-To edit the Subnet, do the following:
-- identify the Subnet, that you want to edit, on the *Subnets page*;
+To edit the Floating IP, do the following:
+- identify the Floating IP, that you want to edit, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
-- update the Name, Allocation pools, DNS nameservers, Gateway IP, Host routs or state of DHCP and gateway state on the next opened *Edit Subnet window*, and click on the SAVE icon:
-![](../../../assets/images/networks/8.png?classes=border,shadow)
+- update the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon:
+![](../../../assets/images/networks/net-6.png?classes=border,shadow?width=100px) 
 
 After these steps, the selected Subnet will be updated.
 
