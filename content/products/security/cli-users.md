@@ -6,17 +6,18 @@ ___
 On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.
 
 # Table of contents
-1. [CLI Users page](#cli-users-page)
-1. [Create CLI User](#create-cli-user)
-1. [Download RC File](#download-rc-file)
-1. [Edit CLI User ](#edit-cli-user)
-1. [Change the password](#change-the-password)
-1. [Delete CLI User ](#delete-cli-user)
+- [Table of contents](#table-of-contents)
+	- [CLI Users page](#cli-users-page)
+	- [Create CLI User](#create-cli-user)
+	- [Download RC File](#download-rc-file)
+	- [Edit CLI User ](#edit-cli-user)
+	- [Change the password](#change-the-password)
+	- [Delete CLI User](#delete-cli-user)
 
 ## CLI Users page
 To get to the *CLI Users page*, select the **Security** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **CLI Users TAB:**
-![](../../../assets/images/cli/1.png?classes=border,shadow) 
-![](../../../assets/images/cli/2.png?classes=border,shadow) 
+![](../../../assets/images/cli/1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/cli/2.png?width=20pc&classes=border,shadow) 
 
 On this page you can find all created CLI Users, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected CLI User:
 ![](../../../assets/images/cli/3.png?classes=border,shadow) 
@@ -31,12 +32,12 @@ On this page you can find all created CLI Users, *Create button*, *Search bar*
 To create a new CLI User, do the following:
 - go to the *CLI Users page* and click on the CREATE CLI USER icon in the upper left corner;
 - fill in the form on the next opened *Create CLI User window*:
-![](../../../assets/images/cli/3.png?classes=border,shadow) 
+![](../../../assets/images/cli/3.png?width=35pc&classes=border,shadow) 
   - *Name* - set a name for the CLI User; 
   - *Password* - set the password for the CLI User; 
   - *Confirm password*.
 
-After these steps, the newly created CLI User will be added to the *CLI Users page*:
+After these steps, the newly created CLI User will be added to the *CLI Users page*.
 
 ## Download RC File
 To download the RC File that pertains to the CLI User, do the following:
@@ -48,7 +49,7 @@ After these steps, the *RC file* of the selected CLI User will be downloaded.
 For the next work with CLI User you need:
 - to place RC File of the created CLI User to your Virtual Machine:  
 `vi openrc`  
-Сheck that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  
+Check, that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  
 ```
 #!/usr/bin/env bash
 	export OS_AUTH_URL=https://upper-austria.ventuscloud.eu:443/v3
