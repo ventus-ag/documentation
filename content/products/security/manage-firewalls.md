@@ -3,7 +3,7 @@ title: VM's Firewalls
 weight: 22
 ---
 ___
-On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from  the *Virtual Machine details page* in the Cloud Console.
+On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from the *Virtual Machine details page* in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -11,15 +11,15 @@ On this page, you can find an explanation of how to manage Firewalls, related to
   - [Change Firewall set](#change-firewall-set)
 
 ## VM's NETWORKS & SECURITY TAB
-To find all Firsewall, related to the selected Virtual Machine, you need:
+To find all Firewalls, related to the selected Virtual Machine, you need:
 - open the *Virtual Machines page* - for this select the **Virtual Machines** from the VIRTUAL DATACENTER block in the *side-bar menu*:
-![](../../../assets/images/conn-lin/7.png?classes=border,shadow)
+![](../../../assets/images/conn-lin/7.png?width=15pc&classes=border,shadow)
 
 - open the *Virtual Machine details page* - for this click on the **Name** of the corresponding Virtual Machine:  
 ![](../../../assets/images/fw/0.png?classes=border,shadow)
 
 - open the *NETWORKS & SECURITY page of this VM*:
-![](../../../assets/images/fw/1.png?classes=border,shadow)
+![](../../../assets/images/fw/1.png?width=20pc&classes=border,shadow)
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
 
@@ -32,7 +32,8 @@ Information how to manage Networks, Subnets and Floating IPs from this page, you
 To add additional Firewall or delete unnecessary one from the selected VM, do the following:
 - click on the *Actions icon* and select the **Edit Firewalls** in the list of available options;
 - remove an unnecessary firewall or select an additional one from the list of previously added firewalls and click on the SAVE icon:  
-![](../../../assets/images/conn-lin/24.1.60.png?classes=border,shadow)
+
+![](../../../assets/images/fw/23.png?width=35pc&classes=border,shadow)
 
 After these steps, the newly added Firewall will be added to the selected VM:  
 ![](../../../assets/images/fw/14.png?classes=border,shadow)  
