@@ -30,7 +30,7 @@ On this page you can find all created SSH Keys with the *Create and Add buttons*
 
 There are two ways to create new SSH Key:  
 1) from the *Virtual Machines page* on the step of creating VM:  
-![](../../../assets/images/fw/22.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/ssh/7.png?width=30pc&classes=border,shadow)
 To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);  
 
 1) from the *SSH Keys page* in few steps:
