@@ -53,6 +53,10 @@ Information about the second one you can find in the article - [VM's Networks an
 
 Also, as you know from the previous chapter, you can immediately associate Floating IP when you create it.
 
+{{% notice note %}}
+Successfully Associate Floating IP with VM's internal Interface you can only in case if you have configured Router with enabled external gateway and attached to your internal Network.
+{{% /notice %}}
+
 To associate already created Floating IP with the VM's internal Interfaces, do the following:
 - ensure that you have created VM in internal Network, which Interface you want to associate with the Floating IP.  
   To find information about how to create internal Network use the article [Networks](https://docs.ventuscloud.eu/products/networking/networks/) and how to create VM - article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);

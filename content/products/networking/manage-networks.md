@@ -10,7 +10,7 @@ On this page, you can find an explanation of how to manage Networks and Interfac
   - [VM's NETWORKS \& SECURITY TAB](#vms-networks--securitytab)
   - [Add Interface](#add-interface)
   - [Remove Interface](#remove-interface)
-  - [Associate Floating IP](#associate-floating-ip)
+  - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
 
 ## VM's NETWORKS & SECURITY TAB
 To find all Networks and Interfaces related to the selected Virtual Machine, you need:
@@ -21,7 +21,7 @@ To find all Networks and Interfaces related to the selected Virtual Machine, you
 ![](../../../assets/images/networks/net-18.png?classes=border,shadow) 
 
 - open the *NETWORKS & SECURITY page of this VM* - for this click on the NETWORKS & SECURITY TAB:
-![](../../../assets/images/networks/net-16.png?width=23pc&classes=border,shadow) 
+![](../../../assets/images/networks/net-16.png?width=25pc&classes=border,shadow) 
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
 
@@ -32,6 +32,7 @@ Information how to manage Firewalls from this page, you can find in the article�
 
 ## Add Interface
 To add additional Interface to the selected VM, do the following:
+- ensure that you have already created Networks with associated Subnets;
 - click on the ADD INTERFACE icon;
 - select one of the available Networks, optionally specify *Fixed IPs* on the next opened *Add interface window* and click on the ADD icon:
 ![](../../../assets/images/networks/10.png?width=35pc&classes=border,shadow)
@@ -50,6 +51,9 @@ On this page you can find all Subnets, related to the selected Network, with *C
   
 For more information about Networks and Subnets, please, see the next articles: [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/).
 
+Also, you can create new VM and immediately associate it with Interface of this Network, during it's creation.  
+To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);
+
 ## Remove Interface
 To remove the Interface from the corresponding VM, do the following:
 - identify unnecessary Interface on the NETWORKS & SECURITY TAB of the *selected VM detailed page*;
@@ -58,7 +62,11 @@ To remove the Interface from the corresponding VM, do the following:
 
 After these steps, the selected Interface will be deleted from the selected VM.
 
-## Associate Floating IP
+## Associate/Disassociate Floating IP
+
+{{% notice note %}}
+Successfully Associate Floating IP with VM's internal Interface you can only in case if you have configured Router with enabled external gateway and attached to your internal Network.
+{{% /notice %}}
 
 To associate already created Floating IP with the VM's internal Interfaces, do the following:
 - ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.
@@ -76,3 +84,5 @@ If you need to disassociate Floating IP and to make your VM again publicly unava
 ![](../../../assets/images/networks/net-21.png?classes=border,shadow) 
 
 After confirmation your action on the next opened window the selected Virtual Machine will be again publicly unavailable.
+
+To manage Floating IPs you can also form *Floating IPs page*, to find detailed instructions about it, please, see the article - [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/).
