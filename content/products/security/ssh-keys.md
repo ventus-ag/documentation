@@ -54,11 +54,11 @@ If you want to use your own SSH Key Pair, you can add its public key in Cloud Co
 For this do the following:
 - go to the *SSH Keys page* and click the ADD PUBLIC KEY icon:   
 
-![ssh![](../../../assets/images/ssh/5.png?classes=border,shadow)
+![](../../../assets/images/ssh/5.png?classes=border,shadow)
 
 - specify the **Name** on the next opened *Add public key window*, paste the public key and click on the ADD icon:  
   
-![ssh![](../../../assets/images/ssh/6.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/ssh/6.png?width=35pc&classes=border,shadow)
 
 After these steps, this SSH Key Pair will be added to the *SSH Keys page*.
 
