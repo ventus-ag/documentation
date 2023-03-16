@@ -7,76 +7,99 @@ On this page, you can find an explanation of how to create, edit, delete Routers
 
 # Table of contents
 - [Table of contents](#table-of-contents)
-  - [Subnets page](#subnets-page)
-  - [Create Subnet](#create-subnet)
-  - [Edit Subnet](#edit-subnet)
-  - [Delete Subnet](#delete-subnet)
-  - [Connect Subnets](#connect-subnets)
+  - [Routers page](#routers-page)
+  - [Create Router](#create-router)
+    - [Add Interface to the Router](#add-interface-to-the-router)
+    - [Add custom Route to the Router](#add-custom-route-to-the-router)
+  - [Edit Router](#edit-router)
+  - [Delete router](#delete-router)
 
-## Subnets page
-To open the *Subnets page*, go to *Networks page* and click on the **Name** of the corresponding Network:
-![](../../../assets/images/networks/4.png?classes=border,shadow) 
+## Routers page
+To get to the *Routers page*, select the **Networking** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Routers TAB:**
+![](../../../assets/images/networks/net-1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/routers/1.png?width=20pc&classes=border,shadow) 
 
-On this page you can find:
-- panel with available **quick actions** for the selected Network: 
-![](../../../assets/images/networks/13.png?classes=border,shadow) 
-- all created Subnets, related to the selected Network, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Subnet:
-![](../../../assets/images/networks/7.png?classes=border,shadow) 
+On this page you can find all Routers created in the current Project, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Routers:
+![](../../../assets/images/routers/2.png?classes=border,shadow) 
 
-**Actions** icon opens the next list of available management actions for the selected Subnet:
-- *Edit* - this option is used to update selected Subnet (change Name, Allocation pools, DNS nameservers, Gateway IP, Host routs, state of DHCP and gateway); 
-- *Delete* - this option is for Subnet removing.
+**Actions** icon opens the next list of available management actions for the selected Router:
+- *Edit* - this option is used to update name/description of the selected Router; 
+- *Delete* - this option is for the Router removing.
 
-## Create Subnet
-To create new Subnet, do the following:
-- go to the *Subnets page* and click on the CREATE SUBNET icon in the upper left corner;
-- fill in the form on the next opened *Create Subnet* *window* and click on the CREATE icon:
-![](../../../assets/images/networks/6.png?classes=border,shadow)
-  - *Name* - set a name for the Subnet;
-  - *Enable DHCP* - enable or disable Dynamic Host Configuration Protocol for Subnet;
-  - *CIDR* - shows Classless Inter-Domain Routing of Subnet;
-  - *Allocation Pools* - specify IP address allocation pools; each entry is: start_ip_address-end_ip_address; one entry per line;
-  - *DNS Nameservers* - specify the IP addresses of DNS Name Servers; format: comma-separated values;
-  - *Gateway IP* - set the IP address of Gateway; the default value is the first IP of the network address; if you want to use the default, leave blank. If you do not want to use a gateway, please check ‘Disable Gateway’;
-  - *Disable Gateway* - enable or disable using Gateway IP for Subnet;
-  - *Host Routes* - specify additional routes announced to the hosts; each entry is: destination_cidr,next-hop; one entry per line.
+## Create Router 
 
-After these steps, the newly created Subnet will be added to the *Subnets page*:
-![](../../../assets/images/networks/16.png?classes=border,shadow)
+To create new Router, do the following:
+- go to the *Routers page* and click on the CREATE ROUTER in the upper left corner;  
+- fill in the form on the next opened *Create Router window* and click on the CREATE icon:
+![](../../../assets/images/routers/3.png?width=35pc&classes=border,shadow)  
+  - *Name* - set a name for the Router; 
+  - *Description* - set a description for the new Router;
+  - *Enable external gateway* - make a mark if you need to open access to the Internet for your VMs with this Router.
+
+After these steps, the newly created Router will be added to the *Routers page* with the status ACTIVE.  
+
+As a next step, is highly recommended to attach already created internal Interfaces to this Router and optionally add custom routes. 
+
+### Add Interface to the Router 
+
+To add Interfaces to the already created Router do the following:
+- ensure that you have already created Network with associated Subnets, which Interfaces you want to add to the Router;  
+  To find information about how to create internal Network and Subnet use the articles [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)
+- open the *Router details page* - for this, click on the **Name** of the corresponding Router:
+
+![](../../../assets/images/routers/4.png?classes=border,shadow)  
+
+- click on the ADD INTERFACE icon:
+
+![](../../../assets/images/routers/5.png?classes=border,shadow) 
+
+- select one of the available Subnets and click on the ADD icon:
+![](../../../assets/images/routers/6.png?width=35pc&classes=border,shadow)
 
 {{% notice note %}}
-You can connect Subnets to each other by attaching Router.
+If you add more interfaces to the same Router, the VMs created on these subnets will be able to access each other.
 {{% /notice %}}
 
-## Edit Subnet
-To edit the Subnet, do the following:
-- identify the Subnet, that you want to edit, on the *Subnets page*;
-- click on the **Actions** icon and select the **Edit** in the list of available options;
-- update the Name, Allocation pools, DNS nameservers, Gateway IP, Host routs or state of DHCP and gateway state on the next opened *Edit Subnet window*, and click on the SAVE icon:
-![](../../../assets/images/networks/8.png?classes=border,shadow)
+After these steps, the newly added Interface will appear in the *Router details page* in the ACTIVE status with available action icon for its removing. Now, all Virtual Machines created in this Subnet will have access to the internet, as this Router was created with *Enabled external gateway*:
 
-After these steps, the selected Subnet will be updated.
+![](../../../assets/images/routers/7.png?classes=border,shadow) 
 
-## Delete Subnet
-To delete the Subnet, do the following:
-- to identify this unnecessary Subnet on the *Subnets page*;
-- click on the **Actions** icon and select the **Delete** in the list of available options;
-- confirm the Subnet deletion on the next opened *Confirmation window*.  
+### Add custom Route to the Router 
 
-After these steps, the selected Subnet will be deleted.   
+This step is optional in Router configuration, but if you need to add custom Route to the created Router, do the following:
+- open the *Router details page* - for this, click on the **Name** of the corresponding Router:
+![](../../../assets/images/routers/4.png?classes=border,shadow) 
 
-## Connect Subnets 
-To connect Subnets to each other or to allow them access to the internet you need to add them to the previously created Router on the *Router details page*.  
+- click on the ADD ROUTE icon:
 
-To open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Network:
-![](../../../assets/images/networks/17.png?classes=border,shadow) 
+![](../../../assets/images/routers/10.png?classes=border,shadow) 
 
-On the opened *Router details page* click on the ADD INTERFACE icon, select one of the previously created Subnets on the next opened *Add Interface window* and click on the ADD icon:
-![](../../../assets/images/networks/18.png?classes=border,shadow) 
+- fill in the form on the next opened *Add Route window* and click on the ADD icon:
+![](../../../assets/images/routers/11.png?width=35pc&classes=border,shadow)  
 
-All Subnets that will be added to one Router will be connected to each other:   
-![](../../../assets/images/networks/19.png?classes=border,shadow) 
-{{% notice note %}}
-If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.
-{{% /notice %}} 
-For more information about Routers, please, see the next article - [Routers](https://docs.ventuscloud.eu/products/networking/routers/)  
+After these steps, the newly added Route will appear on the *Router details page* with available action icon for its removing:
+
+![](../../../assets/images/routers/12.png?classes=border,shadow) 
+
+## Edit Router
+
+To edit the Router, do the following:
+- identify iRouter, that you want to edit, on the *Routers page*;
+- click on the **Actions** icon  and select the **Edit** in the list of available options;
+- update the Name or/and Description of the selected Router, on the next opened *Edit Router window* and click on the SAVE icon.
+
+After these steps, the selected Router will be updated.  
+Also, you can edit the Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/routers/8.png?width=30pc&classes=border,shadow)  
+
+## Delete router
+
+To delete Router, do the following:
+- identify this unnecessary Router on the *Routers* and ensure, that this it isn't still used by other cloud resources;
+- click on the **Actions** icon  and select the **Delete** in the list of available options;
+- confirm the Router deletion on the next opened *Confirmation window*.
+
+After these steps, the selected Router will be deleted.  
+Also, you can delete the Router from its *details page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/routers/9.png?width=30pc&classes=border,shadow)  
+

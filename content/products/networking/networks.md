@@ -39,7 +39,7 @@ To create new Network, do the following:
 
 After these steps, the newly created Network will be added to the *Networks page* with the status ACTIVE.  
 
-As a next step, recommended to create Subnets in this Network.
+As a next step, is highly recommended to create Subnets in this Network.
 
 ### Create Subnet
 To get to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
@@ -86,7 +86,7 @@ To delete the internal Network, do the following:
 - confirm the Network deletion on the next opened *Confirmation window*.
 
 After these steps, the selected Network will be deleted.  
-Also, you can delete the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there.
+Also, you can delete the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/networks/net-15.png?width=25pc&classes=border,shadow)  
 
 

@@ -3,7 +3,7 @@ title: Floating IPs
 weight: 20
 ---
 ___
-On this page, you can find an explanation of how to create, associate, edit and delete Floating IPs in Cloud Console.
+On this page, you can find an explanation of how to create, associate, edit and delete Floating IPs in Cloud Console. 
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -14,11 +14,11 @@ On this page, you can find an explanation of how to create, associate, edit and 
   - [Delete Floating IP](#delete-floating-ip)
 
 ## Floating IPs page
-To get to the *Floating IPs page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
+To get to the *Floating IPs page*, select the **Networking** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
 ![](../../../assets/images/networks/net-1.png?width=15pc&classes=border,shadow) 
 ![](../../../assets/images/networks/net-2.png?width=20pc&classes=border,shadow) 
 
-On this page you can find all Floating IPs created in the current Project, with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
+On this page you can find all Floating IPs created in the current Project, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
 
 **Actions** icon opens the next list of available management actions for the selected Floating IP:

@@ -32,7 +32,7 @@ Information how to manage Firewalls from this page, you can find in the article�
 
 ## Add Interface
 To add additional Interface to the selected VM, do the following:
-- ensure that you have already created Networks with associated Subnets;
+- ensure that you have already created Network with associated Subnets;
 - click on the ADD INTERFACE icon;
 - select one of the available Networks, optionally specify *Fixed IPs* on the next opened *Add interface window* and click on the ADD icon:
 ![](../../../assets/images/networks/10.png?width=35pc&classes=border,shadow)
