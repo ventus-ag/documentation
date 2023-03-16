@@ -30,7 +30,7 @@ On this page you can find all Floating IPs created in the current Project, with 
 ## Create Floating IP
 To create new Floating IP, do the following:
 - go to the *Floating IPs page* and click on the CREATE FLOATING IP icon in the upper left corner;
-- come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:
+- come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:   
 ![](../../../assets/images/networks/net-4.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Floating IP will be added to the *Floating IPs page*:

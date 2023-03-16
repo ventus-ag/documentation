@@ -43,6 +43,7 @@ The Fixed IPs should be selected from the Allocation pools of the corresponding 
 {{% /notice %}}
 
 After these steps, the newly added Interface will appear in the NETWORKS & SECURITY TAB of the *selected VM detailed page* with the status ACTIVE.  
+
 Now you can open its *Subnets page* by clicking on the **Name** of the corresponding Network:
 ![](../../../assets/images/networks/11.png?classes=border,shadow)  
 
@@ -51,7 +52,7 @@ On this page you can find all Subnets, related to the selected Network, with *C
   
 For more information about Networks and Subnets, please, see the next articles: [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/).
 
-Also, you can create new VM and immediately associate it with Interface of this Network, during it's creation.  
+Also, you can create new VM and immediately associate it with Interface of this Network, during it's creation.   
 To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);
 
 ## Remove Interface
