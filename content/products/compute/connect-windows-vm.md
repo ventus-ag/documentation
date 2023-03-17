@@ -29,7 +29,6 @@ By default, all created Virtual Machines belong to the *default* Firewall, whi
 {{% notice note %}}
 *Default* *Firewall* allows all outbound traffic and controls the inbound traffic that's allowed to reach the VMs that are associated with the *default* *Firewall* too. 
 {{% /notice %}}
-
 To resolve this, we need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 on the Virtual Machines and assign this Firewall to the VM too, or just add the required rule to the Firewall that is already assigned to the Virtual Machine. 
 
 **To create new Firewall do the following:**
