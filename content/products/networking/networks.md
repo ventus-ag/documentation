@@ -33,6 +33,7 @@ Currently, in Cloud Console can be created only internal networks.
 To create new Network, do the following:
 - go to the *Networks page* and click on the CREATE NETWORK icon in the upper left corner;  
 - fill in the form on the next opened *Create Network window* and click on the CREATE icon:
+
 ![](../../../assets/images/networks/3.png?width=35pc&classes=border,shadow)  
   - *Name* - set a name for the Network; 
   - *Description* - set a description for the Network.

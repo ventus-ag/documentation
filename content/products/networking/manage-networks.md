@@ -15,12 +15,15 @@ On this page, you can find an explanation of how to manage Networks and Interfac
 ## VM's NETWORKS & SECURITY TAB
 To find all Networks and Interfaces related to the selected Virtual Machine, you need:
 - open the *Virtual Machines page* - for this select the **Virtual Machines** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+
 ![](../../../assets/images/conn-lin/7.png?width=15pc&classes=border,shadow)
 
 - open the *Virtual Machine details page* - for this click on the **Name** of the corresponding Virtual Machine:
+
 ![](../../../assets/images/networks/net-18.png?classes=border,shadow) 
 
 - open the *NETWORKS & SECURITY page of this VM* - for this click on the NETWORKS & SECURITY TAB:
+
 ![](../../../assets/images/networks/net-16.png?width=25pc&classes=border,shadow) 
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
@@ -35,6 +38,7 @@ To add additional Interface to the selected VM, do the following:
 - ensure that you have already created Network with associated Subnets;
 - click on the ADD INTERFACE icon;
 - select one of the available Networks, optionally specify *Fixed IPs* on the next opened *Add interface window* and click on the ADD icon:
+
 ![](../../../assets/images/networks/10.png?width=35pc&classes=border,shadow)
 
 {{% notice note %}}
@@ -76,6 +80,7 @@ To associate already created Floating IP with the VM's internal Interfaces, do t
   To find information about how to create Floating IP use the article [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);
 - click on the **Actions** icon and select the **Associate Floating IP** in the list of available options;
 - select one of the available Floating IPs on the next opened window, and click on ASSOCIATE:
+
 ![](../../../assets/images/networks/net-19.png?width=35pc&classes=border,shadow);
 
 After these steps, the selected Floating IP will be attached with current VM, and this VM will become publicly available:

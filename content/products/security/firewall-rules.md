@@ -20,9 +20,12 @@ To get to the *Firewall Rules page*, click on the **Name** of the correspondi
 ![](../../../assets/images/fw/5.png?classes=border,shadow) 
 
 On this page you can find:
-- panel with available **quick actions** for the selected Firewall: 
-![](../../../assets/images/fw/16.png?width=25pc&classes=border,shadow) 
+- panel with available **quick actions** for the selected Firewall:
+
+![](../../../assets/images/fw/16.png?width=25pc&classes=border,shadow)
+
 - all Rules, related to the selected Firewall, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Rule:
+
 ![](../../../assets/images/fw/4.png?classes=border,shadow)  
 
 **Actions** icon opens the next list of available management actions for the selected Rule:
@@ -47,6 +50,7 @@ Firewall Rules have the following characteristics:
 To create new Firewall Rule, do the following:
 - go to the *Firewall Rules page* and click on the CREATE FIREWALL RULE icon in the upper left corner;
 - fill in the form on the next opened *Create Firewall Rule window*:
+
 ![](../../../assets/images/fw/17.png?width=35pc&classes=border,shadow) 
   - *Description* - set a description for the Rule;
   - *Direction* - select a direction for the Rule: *ingress* or *egress*;
@@ -85,7 +89,7 @@ Thus, to open connection to the selected Linux Virtual Machine remotely via SSH,
 Example of such rule you can see below:
 ![](../../../assets/images/fw/17.png?width=35pc&classes=border,shadow)
 
-To find more information about how to connect to the Linux Virtual Machine created in Cloud Console using SSH Protocol, please use the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)
+To find more information about how to connect to the Linux Virtual Machine created in Cloud Console using SSH Protocol, please use the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/).
 
 ## Firewall Rule for RDP
 By default, all created Virtual Machines belong to the *default* Firewall, which allows access to the Internet from the VM, but denies almost all access on the VM from outside, except for objects belonging to the same default Firewall.  
@@ -95,4 +99,4 @@ Thus, to open connection to the selected Windows Virtual Machine remotely via RD
 Example of such rule you can see below:
 ![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow)
 
-To find more information about how to connect to the Windows Virtual Machine created in Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM ](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)
+To find more information about how to connect to the Windows Virtual Machine created in Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/).

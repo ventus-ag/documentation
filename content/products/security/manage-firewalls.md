@@ -13,12 +13,15 @@ On this page, you can find an explanation of how to manage Firewalls, related to
 ## VM's NETWORKS & SECURITY TAB
 To find all Firewalls, related to the selected Virtual Machine, you need:
 - open the *Virtual Machines page* - for this select the **Virtual Machines** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+
 ![](../../../assets/images/conn-lin/7.png?width=15pc&classes=border,shadow)
 
 - open the *Virtual Machine details page* - for this click on the **Name** of the corresponding Virtual Machine:  
+
 ![](../../../assets/images/fw/0.png?classes=border,shadow)
 
 - open the *NETWORKS & SECURITY page of this VM*:
+
 ![](../../../assets/images/fw/1.png?width=20pc&classes=border,shadow)
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
@@ -42,7 +45,5 @@ After these steps, the newly added Firewall will be added to the selected VM:
 You can add and remove rules of the selected Firewall at any time from the *Firewall Rules page* and your changes will automatically applied to the VMs, that are associated with the corresponding Firewall.
 {{% /notice %}}
  
-For more information about Firewalls and their Rules, please, see the next articles:  
-[Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/)  
-[Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)
+For more information about Firewalls and their Rules, please, see the next articles: [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/), [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/).
 

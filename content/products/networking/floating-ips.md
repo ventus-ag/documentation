@@ -30,7 +30,8 @@ On this page you can find all Floating IPs created in the current Project, with 
 ## Create Floating IP
 To create new Floating IP, do the following:
 - go to the *Floating IPs page* and click on the CREATE FLOATING IP icon in the upper left corner;
-- come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:   
+- come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:    
+
 ![](../../../assets/images/networks/net-4.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Floating IP will be added to the *Floating IPs page*:
@@ -65,6 +66,7 @@ To associate already created Floating IP with the VM's internal Interfaces, do t
 - identify the Floating IP, that you want to associate, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Associate** in the list of available options;
 - select one of the available VM's internal Interfaces on the next opened window, and click on ASSOCIATE:
+
 ![](../../../assets/images/networks/net-9.png?width=35pc&classes=border,shadow) 
 
 After these steps, the selected Floating IP will have ACTIVE status and the associated with it VM will be publicly available:
@@ -73,6 +75,7 @@ After these steps, the selected Floating IP will have ACTIVE status and the asso
 If you need to disassociate Floating IP and to make your VM again publicly unavailable, do the following:
 - identify the associated Floating IP, that you want to disassociate, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Disassociate** in the list of available options:
+
 ![](../../../assets/images/networks/net-12.png?classes=border,shadow) 
 
 After confirmation your action on the next opened window the selected Virtual Machine will be again publicly unavailable and Floating IP has status DOWN.
@@ -83,6 +86,7 @@ To edit the Floating IP, do the following:
 - identify the Floating IP, that you want to edit, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
 - update the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon:
+
 ![](../../../assets/images/networks/net-8.png?width=40pc&classes=border,shadow) 
 
 After these steps, the selected Subnet will be updated.

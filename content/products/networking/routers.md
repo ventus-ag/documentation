@@ -31,6 +31,7 @@ On this page you can find all Routers created in the current Project, with the 
 To create new Router, do the following:
 - go to the *Routers page* and click on the CREATE ROUTER in the upper left corner;  
 - fill in the form on the next opened *Create Router window* and click on the CREATE icon:
+
 ![](../../../assets/images/routers/3.png?width=35pc&classes=border,shadow)  
   - *Name* - set a name for the Router; 
   - *Description* - set a description for the new Router;
@@ -44,7 +45,7 @@ As a next step, is highly recommended to attach already created internal Interfa
 
 To add Interfaces to the already created Router do the following:
 - ensure that you have already created Network with associated Subnets, which Interfaces you want to add to the Router;  
-  To find information about how to create internal Network and Subnet use the articles [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/)
+  To find information about how to create internal Network and Subnet use the articles [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/);
 - open the *Router details page* - for this, click on the **Name** of the corresponding Router:
 
 ![](../../../assets/images/routers/4.png?classes=border,shadow)  
@@ -54,6 +55,7 @@ To add Interfaces to the already created Router do the following:
 ![](../../../assets/images/routers/5.png?classes=border,shadow) 
 
 - select one of the available Subnets and click on the ADD icon:
+
 ![](../../../assets/images/routers/6.png?width=35pc&classes=border,shadow)
 
 {{% notice note %}}

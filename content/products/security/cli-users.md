@@ -31,7 +31,8 @@ On this page you can find all created CLI Users, *Create button*, *Search bar*
 ## Create CLI User
 To create a new CLI User, do the following:
 - go to the *CLI Users page* and click on the CREATE CLI USER icon in the upper left corner;
-- fill in the form on the next opened *Create CLI User window*:  
+- fill in the form on the next opened *Create CLI User window*:
+  
 ![](../../../assets/images/cli/4.png?width=35pc&classes=border,shadow) 
   - *Name* - set a name for the CLI User; 
   - *Password* - set the password for the CLI User; 
