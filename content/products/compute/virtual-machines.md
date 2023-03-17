@@ -130,17 +130,17 @@ This action will redirect you to the *Virtual Machine details page*, where you
 **NETWORKS & SECURITY TAB** - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
   ![](../../../assets/images/vms/14.2.png?classes=border,shadow)  
 
-To find additional information about Networking and Security and how to manage them through this TAB use the articles: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/), [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Routers](https://docs.ventuscloud.eu/products/networking/routers/), [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/), [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/).
-  
+To find additional information about Networking and Security and how to manage them through this TAB use the articles: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+
 **VOLUMES TAB** - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.  
 ![](../../../assets/images/vms/15.2.png?classes=border,shadow)  
 
-To find additional information about volumes and how to manage them through this TAB use the articles: [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/), [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/).  
+To find additional information about volumes and how to manage them through this TAB use the articles: [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/). 
 
 **SNAPSHOTS TAB** - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
 ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
-To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://dev-docs.ventuscloud.eu/products/storage/manage-snapshots/), [Snapshots](https://dev-docs.ventuscloud.eu/products/storage/snapshots/).
+To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://dev-docs.ventuscloud.eu/products/storage/manage-snapshots/).
   
 **LOG TAB** - opens the *Log page* where you can find VM's logs.
 ![](../../../assets/images/vms/17.2.png?classes=border,shadow)
