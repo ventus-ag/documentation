@@ -49,7 +49,7 @@ Snapshot, created from the volume with "in-use", status can contain corrupted da
 After these steps, the newly created Snapshot will be added to the *Snapshots page*:
 ![](../../../assets/images/snap/4.png?classes=border,shadow)
 
-Now, if you attach the Volume, form which this Snapshot was created,  to the Virtual Machine - this Snapshot will be displayed on the *SNAPSHOTS TAB* on this *Virtual Machine details page*:
+Now, if you attach the Volume, from which this Snapshot was created,  to the Virtual Machine - this Snapshot will be displayed on the *SNAPSHOTS TAB* on this *Virtual Machine details page*:
 ![](../../../assets/images/snap/5.png?classes=border,shadow)
 
 Also, new Snapshot can be created from the *SNAPSHOTS TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).

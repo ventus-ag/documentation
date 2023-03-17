@@ -185,10 +185,9 @@ Now, if you want to close the access from Internet to this VM again, do the foll
 
 After these steps, the selected Virtual Machine will be again publicly unavailable.
 
-To find additional information about Floating IPs and VM's Interfaces use the articles:
-* [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/).
+To find additional information about Floating IPs and VM's Interfaces use the articles: [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
-Associate/disassociate Floating IPs you can also form the *NETWORKS & SECURITY TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+Associate/disassociate Floating IPs you can also from the *NETWORKS & SECURITY TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:
