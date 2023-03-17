@@ -117,7 +117,7 @@ You can add and remove rules at any time. Your changes are automatically applied
 - fill in the form on the next opened *Create Firewall Rule window* as shown below  and click on the CREATE icon:
 ![](../../../assets/images/fw/17.png?width=35pc&classes=border,shadow) 
 
-And that's all, this newly created Firewall Rule will be automatically applied to our Virtual Machine.
+And that's all, this newly created Firewall Rule will be automatically applied to all Virtual Machine that were attached with this default Firewall.
 
 ## Connect using SSH
 Since we have the public key deployed on our Linux VM, the private key on our local system (for example ~/.ssh/id_rsa) and a Firewall configured to allow incoming traffic on port 22, we can connect to this Virtual Machine remotely from our local server via SSH, just use the next command: 

@@ -113,7 +113,7 @@ You can add and remove rules at any time. Your changes are automatically applied
 
 ![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow) 
 
-And that's all, this newly created Firewall Rule will be automatically applied to our Virtual Machine.
+And that's all, this newly created Firewall Rule will be automatically applied to all Virtual Machine that were attached with this default Firewall.
 
 ## Connect using RDP
 Since we have created Windows Virtual Machine and configured Firewall, that allows incoming traffic to TCP port 54000, so we can connect to the selected Virtual Machine remotely via RDP.
