@@ -37,6 +37,8 @@ The next opened page will provide your *access secret key* and you can save it
 
 After these steps, the newly created Object Storage credentials will be added to the *Object Storage page*.
 
+Next steps, how to use Object Storage credentials to connect to the Cloud Object Storage you can find in the article - [Object Storage](https://docs.ventuscloud.eu/products/storage/object-storage/).
+
 ## Show secret key 
 To show again secret key of the created Object Storage credentials, do the following:
 - on the *Object Storage page* identify Object Storage credentials from what you want to get secret key;
