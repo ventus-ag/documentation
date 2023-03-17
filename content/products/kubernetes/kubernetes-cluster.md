@@ -67,19 +67,19 @@ This action will redirect you to the *Cluster details page*, where you can fin
 
 - INFO Tab with actual information about this Cluster: ID, Current Status, Errors, Creation Date, Date of the last update and Cluster template:
 
-![](../../../assets/images/clusters/8.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/clusters/8.png?width=30pc&classes=border,shadow)
 
 - NODES Tab with actual information about Cluster's Nodes: Master and Node count, their IP addresses and API address of the Cluster:
 
-![](../../../assets/images/clusters/9.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/clusters/9.png?width=30pc&classes=border,shadow)
 
 - MISCELLANEOUS Tab with next information: Discovery URL, Cluster create timeout, Key pair that was used during the Cluster creation, Master and Node flavors, and current Health status of the selected Cluster:
 
-![](../../../assets/images/clusters/10.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/clusters/10.png?width=30pc&classes=border,shadow)
 
 - LABELS Tab with some additional information about this cluster:
 
-![](../../../assets/images/clusters/11.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/clusters/11.png?width=30pc&classes=border,shadow)
 
 ## Download kubeconfig file
 
@@ -95,7 +95,7 @@ After these steps, the *kubeconfig file* will be downloaded.
 
 Also, you can download the kubeconfig file from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
 
-![](../../../assets/images/clusters/20.png?width=30pc&classes=border,shadow)
+![](../../../assets/images/clusters/20.png?width=25pc&classes=border,shadow)
 
 ## Resize Cluster
 To resize the Cluster, do the following:
@@ -108,7 +108,7 @@ To resize the Cluster, do the following:
 After these steps, the selected Cluster will be resized after a few minutes with the status UPDATE_COMPLETE.  
 
 Also, you can resize the Cluster from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/clusters/21.png?width=30pc&classes=border,shadow)
+![](../../../assets/images/clusters/21.png?width=25pc&classes=border,shadow)
 
 ## Delete Cluster
 To delete the Cluster, do the following:
@@ -119,7 +119,7 @@ To delete the Cluster, do the following:
 After these steps, the selected Cluster will be deleted after a few minutes.  
 
 Also, you can delete the Cluster from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/clusters/31.png?width=22pc&classes=border,shadow)
+![](../../../assets/images/clusters/22.png?width=25pc&classes=border,shadow)
 
 
 
