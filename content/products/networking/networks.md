@@ -98,7 +98,7 @@ To find information about how to create Virtual Machine see the article - [Virtu
 
 2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*:
 
-![](../../../assets/images/networks/net-23.png?width=30pc&classes=border,shadow)
+![](../../../assets/images/networks/net-23.png?classes=border,shadow)
   
 Detailed information how to change the current set of the VM's Interfaces from the *VM details page* you can find in article: [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
  
