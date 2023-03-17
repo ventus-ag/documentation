@@ -24,7 +24,7 @@ In this article we will assume, that we have already created the following resou
   - *Key pair*: mykey;
   - *Networks*: public;
   - *Firewalls*: default;
-  - *Volume size*: 10.
+  - *Volume size*: 50.
 
 For more information about creating and configuring these resources, see the following articles: [SSH Keys](https://docs.ventuscloud.eu/products/security/ssh-keys/), [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).  
 
@@ -34,7 +34,6 @@ By default, all created Virtual Machines belong to the *default* Firewall, whi
 {{% notice note %}}
 *Default* *Firewall* allows all outbound traffic and controls the inbound traffic that's allowed to reach the VMs that are associated with the *default* *Firewall* too.
 {{% /notice %}} 
-
 To resolve this, we need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 22 on the Virtual Machines and assign this Firewall to the VM too, or just add the required rule to the Firewall that is already assigned to the Virtual Machine. 
 
 **To create new Firewall do the following:**
@@ -46,16 +45,16 @@ To resolve this, we need to add an additional Firewall with a rule that will all
 - on the *Firewalls page* click on the CREATE FIREWALL icon in the upper left corner;
 - fill in the form on the next opened *Create Firewall window* and click on the CREATE icon:
 
-![](../../../assets/images/fw/3.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/fw/25.png?width=35pc&classes=border,shadow)
 
 **To add the described above rule to the newly created Firewall do the following:** 
 - open the *Firewall Rules page* - for this click on the **Name** of the corresponding Firewall:
 
-![](../../../assets/images/fw/5.png?classes=border,shadow) 
+![](../../../assets/images/fw/28.png?classes=border,shadow) 
 
-- on the *Firewall Rules page* you can see that rules, that allow all outbound traffic, have been already created by default, and to add additional rule here click on the CREATE FIREWALL RULE icon in the upper left corner:
+- on the *Firewall Rules page* you can see that rules, that allow all outbound traffic, have been already created by default, but can be deleted if needed. To add additional rule here click on the CREATE FIREWALL RULE icon in the upper left corner:
 
-![](../../../assets/images/fw/4.png?classes=border,shadow) 
+![](../../../assets/images/fw/29.png?classes=border,shadow) 
 
 - fill in the form on the next opened *Create Firewall Rule window* as shown below and click on the CREATE icon:
 

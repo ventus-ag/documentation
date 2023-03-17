@@ -19,7 +19,7 @@ In this article we will assume, that we have already created the following resou
   - *Image*: windows-server-2019-datacenter-1809-17763.737-en;
   - *Networks*: public;
   - *Firewalls*: default;
-  - *Volume size*: 40.
+  - *Volume size*: 50.
 
 For more information about creating and configuring these resources, see the following articles: [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/). 
 
@@ -41,16 +41,16 @@ To resolve this, we need to add an additional Firewall with a rule that will all
 - on the *Firewalls page* click on the CREATE FIREWALL icon in the upper left corner;
 - fill in the form on the next opened *Create Firewall window* and click on the CREATE icon:
 
-![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/fw/24.png?width=35pc&classes=border,shadow) 
 
 **To add the described above rule to the newly created Firewall do the following:** 
 - open the *Firewall Rules page* - for this click on the **Name** of the corresponding Firewall:
 
-![](../../../assets/images/fw/5.png?classes=border,shadow) 
+![](../../../assets/images/fw/26.png?classes=border,shadow) 
 
-- on the *Firewall Rules page* you can see that rules, that allow all outbound traffic, have been already created by default, and to add additional rule here click on the CREATE FIREWALL RULE icon in the upper left corner:
+- on the *Firewall Rules page* you can see that rules, that allow all outbound traffic, have been already created by default, but can be deleted if needed. To add additional rule here click on the CREATE FIREWALL RULE icon in the upper left corner:
 
-![](../../../assets/images/fw/4.png?classes=border,shadow) 
+![](../../../assets/images/fw/27.png?classes=border,shadow) 
 
 - fill in the form on the next opened *Create Firewall Rule window* as shown below  and click on the CREATE icon:
   
@@ -91,7 +91,7 @@ You can add and remove rules at any time. Your changes are automatically applied
 ![](../../../assets/images/cli/1.png?width=15pc&classes=border,shadow) 
 ![](../../../assets/images/fw/1.png?width=20pc&classes=border,shadow)
 
-- open the *Firewall Rules page* of the default Firewall- for this click on the **Name** of the corresponding Firewall:
+- open the *Firewall Rules page* of the default Firewall - for this click on the **Name** of the corresponding Firewall:
 ![](../../../assets/images/fw/5.1.png?classes=border,shadow) 
 
 - on the *Firewall Rules page* click on the CREATE FIREWALL RULE icon in the upper left corner;
