@@ -57,7 +57,8 @@ On this page you can find all Subnets, related to the selected Network, with *C
 For more information about Networks and Subnets, please, see the next articles: [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/).
 
 Also, you can create new VM and immediately associate it with Interface of this Network, during it's creation.   
-To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);
+To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
+![](../../../assets/images/networks/net-22.png?width=30pc&classes=border,shadow)
 
 ## Remove Interface
 To remove the Interface from the corresponding VM, do the following:

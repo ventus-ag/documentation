@@ -70,7 +70,7 @@ To get to the *Firewall Rule details page*, click on the **ID** of the corres
 ![](../../../assets/images/fw/6.png?classes=border,shadow) 
 
 On this page you can find additional information about this Rule and **quick actions** icon for rule deletion:
-![](../../../assets/images/fw/8.png?width=40pc&classes=border,shadow);
+![](../../../assets/images/fw/8.png?width=35pc&classes=border,shadow)
 
 ## Delete Firewall Rule
 To delete the Firewall Rule, do the following:
@@ -89,7 +89,7 @@ Thus, to open connection to the selected Linux Virtual Machine remotely via SSH,
 Example of such rule you can see below:
 ![](../../../assets/images/fw/17.png?width=35pc&classes=border,shadow)
 
-To find more information about how to connect to the Linux Virtual Machine created in Cloud Console using SSH Protocol, please use the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/).
+To find more information about how to connect to the Linux Virtual Machine created in the Cloud Console using SSH Protocol, please use the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/).
 
 ## Firewall Rule for RDP
 By default, all created Virtual Machines belong to the *default* Firewall, which allows access to the Internet from the VM, but denies almost all access on the VM from outside, except for objects belonging to the same default Firewall.  
@@ -99,4 +99,4 @@ Thus, to open connection to the selected Windows Virtual Machine remotely via RD
 Example of such rule you can see below:
 ![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow)
 
-To find more information about how to connect to the Windows Virtual Machine created in Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/).
+To find more information about how to connect to the Windows Virtual Machine created in the Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/).

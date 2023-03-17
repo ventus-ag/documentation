@@ -3,7 +3,7 @@ title: Floating IPs
 weight: 20
 ---
 ___
-On this page, you can find an explanation of how to create, associate, edit and delete Floating IPs in Cloud Console. 
+On this page, you can find an explanation of how to create, associate, edit, delete Floating IPs and instructions for other steps to manage Floating IPs in the Cloud Console. 
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -85,9 +85,7 @@ After confirmation your action on the next opened window the selected Virtual Ma
 To edit the Floating IP, do the following:
 - identify the Floating IP, that you want to edit, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
-- update the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon:
-
-![](../../../assets/images/networks/net-8.png?width=40pc&classes=border,shadow) 
+- update the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon.
 
 After these steps, the selected Subnet will be updated.
 

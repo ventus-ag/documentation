@@ -3,7 +3,7 @@ title: Firewalls
 weight: 15
 ---
 ___
-On this page, you can find an explanation of how to create, edit and delete Firewalls in the Cloud Console.
+On this page, you can find an explanation of how to create, edit, delete Firewalls and instructions for other steps to manage Firewalls in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -46,7 +46,7 @@ To create new Firewall, do the following:
 After these steps, the newly created Firewall will be added to the *Firewalls page*.  
 
 Now you can configure this Firewall Rules.  
-Ti open *Firewall Rules page* click on the **Name** of the corresponding Firewall:
+To open the *Firewall Rules page* click on the **Name** of the corresponding Firewall:
 ![](../../../assets/images/fw/5.png?classes=border,shadow)  
 
 On this page you can find:
@@ -73,7 +73,7 @@ To edit the Firewall, do the following:
 
 After these steps, the selected Firewall will be updated.  
 
-Also, you can edit the Firewall from *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there:
+Also, you can edit the Firewall from the *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/fw/19.png?width=25pc&classes=border,shadow)
 
 ## Delete Firewall
@@ -84,7 +84,7 @@ To delete the Firewall, do the following:
 
 After these steps, the selected Firewall will be deleted.  
 
-Also, you can delete the Firewall from *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there:
+Also, you can delete the Firewall from the *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/fw/21.png?width=25pc&classes=border,shadow)
 
 ## Add Firewall to the VM
@@ -94,17 +94,15 @@ You can add and remove rules of the selected Firewall at any time from the *Fire
 {{% /notice %}}
 
 There are two ways add already created Firewall to the Virtual Machine:
-1) from the *Virtual Machines page* on the step of creating VM. 
-   To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/); 
+1) from the *Virtual Machines page* on the step of creating VM:
  
 ![](../../../assets/images/fw/22.png?width=30pc&classes=border,shadow)
-  
+To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 
-2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*.
-   Detailed information how to change the current set of VM Firewalls from the *VM details page* you can find in article: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/). 
+2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*:
 
 ![](../../../assets/images/fw/9.2.png?classes=border,shadow)
   
-
+Detailed information how to change the current set of the VM's Firewalls from the *VM details page* you can find in article: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/). 
 
  

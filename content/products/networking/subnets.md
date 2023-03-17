@@ -3,7 +3,7 @@ title: Subnets
 weight: 20
 ---
 ___
-On this page, you can find an explanation of how to create, edit, delete Subnets in Cloud Console.
+On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -78,7 +78,7 @@ To delete the Subnet, do the following:
 After these steps, the selected Subnet will be deleted.   
 
 ## Connect Subnets 
-To connect Subnets to each other or to allow them access to the internet you need to add them to the previously created Router on the *Router details page*.  
+To connect Subnets to each other or to allow them access to the Internet you need to add them to the previously created Router on the *Router details page*.  
 
 To open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Network:
 ![](../../../assets/images/networks/17.png?classes=border,shadow) 
