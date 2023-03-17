@@ -97,6 +97,6 @@ By default, all created Virtual Machines belong to the *default* Firewall, whi
 Thus, to open connection to the selected Windows Virtual Machine remotely via RDP, we need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 54000 on the Virtual Machines, and assign this Firewall to the VM too, or just add the required rule to the Firewall that is already assigned to the Virtual Machine. 
 
 Example of such rule you can see below:
-![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow) 
 
 To find more information about how to connect to the Windows Virtual Machine created in the Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/).

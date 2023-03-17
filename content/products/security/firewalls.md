@@ -99,7 +99,7 @@ There are two ways add already created Firewall to the Virtual Machine:
 ![](../../../assets/images/fw/22.png?width=30pc&classes=border,shadow)
 To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 
-2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*:
+2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*: 
 
 ![](../../../assets/images/fw/9.2.png?classes=border,shadow)
   

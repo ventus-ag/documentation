@@ -36,7 +36,7 @@ To add additional Firewall or delete unnecessary one from the selected VM, do th
 - click on the *Actions icon* and select the **Edit Firewalls** in the list of available options;
 - remove an unnecessary firewall or select an additional one from the list of previously added firewalls and click on the SAVE icon:  
 
-![](../../../assets/images/fw/23.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/fw/23.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly added Firewall will be added to the selected VM:  
 ![](../../../assets/images/fw/14.png?classes=border,shadow)  
