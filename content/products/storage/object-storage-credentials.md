@@ -6,19 +6,19 @@ ___
 On this page, you can find an explanation of how to create, delete and instructions for other steps to manage an Object Storage Credentials in the Cloud Console.
 
 # Table of contents
-1. [Object Storage page](#object-storage-page)
-1. [Create Object Storage credentials](#create-object-storage-credentials)
-1. [Show secret key](#show-secret-key)
-1. [Re-generate secret key](#re-generate-secret-key)
-1. [Delete Object Storage credentials](#delete-object-storage-credentials)
+- [Table of contents](#table-of-contents)
+  - [Object Storage page](#object-storage-page)
+  - [Create Object Storage credentials](#create-object-storage-credentials)
+  - [Show secret key](#show-secret-key)
+  - [Re-generate secret key](#re-generate-secret-key)
+  - [Delete Object Storage Credentials](#delete-object-storage-credentials)
 
 ## Object Storage page
 To get to the *Object Storage page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Object Storage** **TAB:**
-![](../../../assets/images/vol/1.png?classes=border,shadow) 
-![](../../../assets/images/store/1.png?classes=border,shadow) 
+![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/store/1.png?width=25pc&classes=border,shadow) 
 
-
-On this page you can find all created Object Storage credentials in the current Project with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Object Storage credentials:
+On this page you can find all created Object Storage credentials in the current Project with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Object Storage credentials:
 ![](../../../assets/images/store/2.png?classes=border,shadow) 
 
 **Actions** icon opens the next list of available management actions:
@@ -30,13 +30,12 @@ On this page you can find all created Object Storage credentials in the current 
 To create a new Object Storage credentials in the Cloud Console, do the following:
 - go to the *Object Storage page* and click on the CREATE OBJECT STORAGE icon in the upper left corner;  
 - confirm your action on the next opened window by clicking on the CREATE icon:
-![](../../../assets/images/store/3.png?classes=border,shadow) 
 
-The next opened page will provide your *access secret key* and you can save it by clicking on the COPY TO CLIPBOARD icon:
-[](../../../assets/images/store/4.png?classes=border,shadow) 
+![](../../../assets/images/store/3.png?width=35pc&classes=border,shadow) 
 
-After these steps, the newly created Object Storage credentials will be added to the *Object Storage page*:
-[](../../../assets/images/store/5.png?classes=border,shadow) 
+The next opened page will provide your *access secret key* and you can save it by clicking on the COPY TO CLIPBOARD icon. 
+
+After these steps, the newly created Object Storage credentials will be added to the *Object Storage page*.
 
 ## Show secret key 
 To show again secret key of the created Object Storage credentials, do the following:

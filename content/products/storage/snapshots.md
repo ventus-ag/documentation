@@ -6,16 +6,17 @@ ___
 On this page, you can find an explanation of how to create, edit, delete Snapshots and how to create Volumes from the Snapshots in the Cloud Console.
 
 # Table of contents
-1. [Snapshots page](#snapshots-page)
-1. [Create Snapshot](#create-snapshot)
-3. [Create Volume from Snapshot](#create-volume-from-snapshot)
-1. [Edit Snapshot](#edit-snapshot)
-1. [Delete Snapshot](#delete-snapshot)
+- [Table of contents](#table-of-contents)
+  - [Snapshots page](#snapshots-page)
+  - [Create Snapshot](#create-snapshot)
+  - [Create Volume from Snapshot](#create-volume-from-snapshot)
+  - [Edit Snapshot ](#edit-snapshot)
+  - [Delete Snapshot](#delete-snapshot)
 
 ## Snapshots page
 To get to the *Snapshots page*, select **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Snapshots TAB**:
-![](../../../assets/images/vol/1.png?classes=border,shadow) 
-![](../../../assets/images/snap/1.png?classes=border,shadow) 
+![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/snap/1.png?width=30pc&classes=border,shadow)  
 
 On this page you can find all created Snapshots with their *Headers*, *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Snapshot:
 ![](../../../assets/images/snap/2.png?classes=border,shadow)
