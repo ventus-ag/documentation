@@ -40,7 +40,7 @@ On this page you can find all created Virtual Machines in the current Project of
 To create new Linux VM, do the following:
 - go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
 - fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
-![](../../../assets/images/vms/3.png?width=30pc&classes=border,shadow)
+![](../../../assets/images/vms/3.png?width=35pc&classes=border,shadow)
   - *Name* - set a name for the VM;  
   - *Source* - choose the source which you want to use for VM creating: image, volume or snapshot;  
     by default, "Image" is pre-selected;    
@@ -75,7 +75,7 @@ After these steps, the newly created Linux VM will be added to the *Virtual Mac
 To create new Windows VM, do the following:
 - go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
 - fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
-![](../../../assets/images/vms/7.png?width=30pcclasses=border,shadow)
+![](../../../assets/images/vms/7.png?width=35pc&classes=border,shadow)
   - *Name* - set a name for the VM;  
   - *Source* - choose the source which you want to use for VM creating: image, volume or snapshot;  
     by default, "Image" is pre-selected;  
@@ -113,7 +113,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
 ![](../../../assets/images/vms/13.png?width=25pc&classes=border,shadow)
 
 - panel with available **quick actions**:
-![](../../../assets/images/vms/11.png?width=20pc&classes=border,shadow)
+![](../../../assets/images/vms/11.png?width=15pc&classes=border,shadow)
   - *Start* - this option is used to start the VM if it was stopped; 
   - *Reboot* - this option is used to reboot power cycles the VM;
   - *Stop* - this option is used to stop the VM;
@@ -125,7 +125,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
     - *Delete* - this option is for VM removing;
 
 - transition to the NETWORKS & SECURITY, VOLUMES, SNAPSHOTS and LOG pages related to this VM:
-![](../../../assets/images/net/16.png?width=25pc&classes=border,shadow) 
+![](../../../assets/images/networks/net-16.png?width=25pc&classes=border,shadow) 
 
 **NETWORKS & SECURITY TAB** - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
   ![](../../../assets/images/vms/14.2.png?classes=border,shadow)  
@@ -174,7 +174,7 @@ To associate Floating IP with the Virtual Machine, do the following:
 ![](../../../assets/images/vms/18.png?classes=border,shadow)
 - choose one of the available internal interfaces of your VM and one of the previously created Floating IP that you want to attach to the selected interface on the opened *Associate floating IP* and click on the ASSOCIATE icon:  
 
-![](../../../assets/images/vms/20.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/vms/20.png?width=35pc&classes=border,shadow)
 
 After these steps, the selected Virtual Machine will be publicly available:  
 ![](../../../assets/images/vms/21.png?classes=border,shadow)
