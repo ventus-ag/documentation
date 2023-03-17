@@ -18,7 +18,7 @@ On this page, you can find an explanation of how to create, edit, delete Volumes
 ## Volumes page
 To get to the *Volumes page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Volumes TAB:**
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/vol/1.png?width=30pc&classes=border,shadow) 
+![](../../../assets/images/vol/2.png?width=30pc&classes=border,shadow) 
 
 On this page you can find all your own Volumes, created in the current Project, and the Volumes created during Cluster and VM creation, with the *Create button*, *Search bar* and *Actions icon* which opens a list of available management actions for the selected Volume:
 ![](../../../assets/images/vol/3.png?classes=border,shadow) 
@@ -66,7 +66,7 @@ To attach the Volume from the *Volumes page*, do the following:
 ![](../../../assets/images/vol/8.png?width=35pc&classes=border,shadow) 
 
 After these steps, the Volume will be attached to the selected VM and on the *Volumes page* its status will change to *in-use:
-![](../../../assets/images/vol/9.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/vol/9.png?classes=border,shadow) 
 
 Also, this Volume will be displayed on the *VOLUMES TAB* on the *Virtual Machine details page*:
 ![](../../../assets/images/vol/10.png?classes=border,shadow) 

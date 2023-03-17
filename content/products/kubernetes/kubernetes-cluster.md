@@ -32,7 +32,7 @@ To create new Cluster, do the following:
 - go to the *Clusters page* and click on the CREATE CLUSTER icon in the upper left corner;
 - fill in the form on the next opened *Create Cluster window* and click on the CREATE icon:
 
-![](../../../assets/images/clusters/3.png?width=40pc&classes=border,shadow) 
+![](../../../assets/images/clusters/3.png?width=35pc&classes=border,shadow) 
   - *Name* - set a name for the Cluster;
   - *Cluster Template* - select the template that will be used to create Cluster;  
     by default, the newest one is pre-selected;   
