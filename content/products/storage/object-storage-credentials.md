@@ -16,7 +16,7 @@ On this page, you can find an explanation of how to create, delete and instructi
 ## Object Storage page
 To get to the *Object Storage page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Object Storage** **TAB:**
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/store/1.png?width=25pc&classes=border,shadow) 
+![](../../../assets/images/store/1.png?width=30pc&classes=border,shadow) 
 
 On this page you can find all created Object Storage credentials in the current Project with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Object Storage credentials:
 ![](../../../assets/images/store/2.png?classes=border,shadow) 
