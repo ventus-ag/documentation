@@ -108,9 +108,11 @@ For this, do the following:
 - download RDP file of the VM:
   - identify Windows Virtual Machine for what  you want to download RDP file on the *Virtual Machines page*;
   - click on the **Actions** icon and select the **Download RDP file** in the list of available options:
-  ![](../../../assets/images/conn-lin/26.png?classes=border,shadow)
+
+![](../../../assets/images/conn-lin/26.png?classes=border,shadow)
 - open the downloaded RDP file;
 - provide the password of the selected VM and click **OK:**
+
 ![](../../../assets/images/conn-lin/29.png?classes=border,shadow)
 
 And after these steps, a remote connection is established to the selected Windows Virtual Machine:
