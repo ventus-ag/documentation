@@ -103,7 +103,7 @@ To resize the Cluster, do the following:
 - click on the **Actions** icon  and select the **Edit** in the list of available options;
 - update the count of Worker-nodes in the Cluster on the opened *Edit Cluster window* and click on the SAVE icon:
 
-![](../../../assets/images/clusters/5.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/clusters/5.png?width=30pc&classes=border,shadow)
 
 After these steps, the selected Cluster will be resized after a few minutes with the status UPDATE_COMPLETE.  
 
