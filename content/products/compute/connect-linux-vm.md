@@ -9,19 +9,21 @@ On this page, you can find an explanation of how to connect to the Linux Virtual
 - [Table of contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Configuring Firewalls](#configuring-firewalls)
+    - [Create New Firewall with required rule](#create-new-firewall-with-required-rule)
+    - [Add required rule to the existing Firewall](#add-required-rule-to-the-existing-firewall)
   - [Connect using SSH](#connect-using-ssh)
 
 ## Prerequisites
-In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1* that was created in the Organization named *Test-Shop*:
+In this article we will assume, that we have already created the following resources, that refer to the Project named *Test-Project* that was created in the Organization named *Test-Organization*:
 - **SSH Key,** that was created with the next parameters:
-  - *Name*: mykey;
+  - *Name*: main;
   - *Public key* is placed on the Linux VM during its creation;
   - *Private Key* was copied to the clipboard and saved on the local system in the next text file (for example: ~/.ssh/id_rsa).
 - **Linux Virtual Machine** - that was created with the next parameters and has IP: 185.226.41.42:
   - *Name*: test-1;
   - *Flavor*: VC-2;
   - *Image*: ubuntu-server-18.04-LTS-20201111;
-  - *Key pair*: mykey;
+  - *Key pair*: main;
   - *Networks*: public;
   - *Firewalls*: default;
   - *Volume size*: 50.
@@ -34,7 +36,12 @@ By default, all created Virtual Machines belong to the *default* Firewall, whi
 {{% notice note %}}
 *Default* *Firewall* allows all outbound traffic and controls the inbound traffic that's allowed to reach the VMs that are associated with the *default* *Firewall* too.
 {{% /notice %}} 
-To resolve this, we need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 22 on the Virtual Machines and assign this Firewall to the VM too, or just add the required rule to the Firewall that is already assigned to the Virtual Machine. 
+
+There are two ways how to resolve this:
+1) to add an additional Firewall with a rule that will allow incoming traffic to TCP port 22 on the Virtual Machines and assign this Firewall to the VM too;
+2) to add the required rule to the Firewall (can be default Firewall) that is already assigned to the Virtual Machine. 
+
+### Create New Firewall with required rule
 
 **To create new Firewall do the following:**
 - open the *Firewalls page* - for this select the **Security** from the VIRTUAL DATACENTER block and click on the FIREWALL TAB:
@@ -46,6 +53,10 @@ To resolve this, we need to add an additional Firewall with a rule that will all
 - fill in the form on the next opened *Create Firewall window* and click on the CREATE icon:
 
 ![](../../../assets/images/fw/25.png?width=35pc&classes=border,shadow)
+
+After these steps, the newly created Firewall will be added to the *Firewalls page*.  
+
+As a next step, we need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 22 on the Virtual Machines. 
 
 **To add the described above rule to the newly created Firewall do the following:** 
 - open the *Firewall Rules page* - for this click on the **Name** of the corresponding Firewall:
@@ -63,6 +74,8 @@ To resolve this, we need to add an additional Firewall with a rule that will all
 This newly added rule will allow access to the TCP port 22 on the all VMs in the created Firewall over the public Internet, but if you want to allow access only on the one selected VM, you need to specify *IP of this VM / 32* in the field named *Remote IP prefix* - example is shown below:
 
 ![](../../../assets/images/conn-lin/6.png?width=35pc&classes=border,shadow)
+
+After this wee need to add this configured Firewall to our Virtual Machine.
 
 **To add this newly created Firewall to our Virtual Machine, do the following:**
 - open the *Virtual Machines page* - for this select the **Virtual Machines** from the VIRTUAL DATACENTER block:
@@ -89,6 +102,8 @@ After these steps, the newly added Firewall will be added to the selected VM:
 {{% notice note %}}
 You can add and remove rules at any time. Your changes are automatically applied to the VMs that are associated with the corresponding Firewall.
 {{% /notice %}}  
+
+### Add required rule to the existing Firewall
 
 **To add required rule to the default Firewall you need to do next:**
 - open the *Firewalls page* - for this select the **Security** from the VIRTUAL DATACENTER block and click on the FIREWALL TAB:
