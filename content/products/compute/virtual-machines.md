@@ -34,7 +34,11 @@ On this page you can find all created Virtual Machines in the current Project of
 - *Resize* - this option is used to change the Flavor for the VM;  
 - *Delete* - this option is for VM removing;  
 - *Remote console* - this option is used to use remote console for VM;  
-- *Download RDP file* - this option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs;  
+- *Download RDP file* - this option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs.  
+
+{{% notice note %}}
+In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.
+{{% /notice %}}
 
 ## Create Linux Virtual Machine
 To create new Linux VM, do the following:

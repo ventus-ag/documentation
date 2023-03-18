@@ -14,7 +14,7 @@ On this page, you can find an explanation of how to connect to the Windows Virtu
   - [Connect using RDP](#connect-using-rdp)
 
 ## Prerequisites
-In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1* that was created in the Organization named *Test-Shop*:
+In this article we will assume, that we have already created the following resources, that refer to the Project named *Test-Project* that was created in the Organization named *Test-Organization*:
 - **Windows Virtual Machine** - that was created with the next parameters and has IP: 185.226.42.128:
   - *Name*: test-win;
   - *Flavor*: VC-4;
