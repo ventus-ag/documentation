@@ -19,6 +19,9 @@ On this page, you can find an explanation of how to create, resize, delete Linux
 
 
 ## Virtual Machines page 
+{{% notice note %}}
+In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.
+{{% /notice %}}
 To get to the *Virtual Machines page*, select the **Virtual Machines** from the VIRTUAL DATACENTER block in the *side-bar menu*:
 ![](../../../assets/images/vms/1.png?width=15pc&classes=border,shadow)  
 
@@ -35,10 +38,6 @@ On this page you can find all created Virtual Machines in the current Project of
 - *Delete* - this option is for VM removing;  
 - *Remote console* - this option is used to use remote console for VM;  
 - *Download RDP file* - this option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs.  
-
-{{% notice note %}}
-In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.
-{{% /notice %}}
 
 ## Create Linux Virtual Machine
 To create new Linux VM, do the following:
