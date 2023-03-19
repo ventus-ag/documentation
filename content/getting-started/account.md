@@ -34,7 +34,7 @@ To find information and all the available management actions for your personal a
 ![](../../assets/images/account/4.png?width=15pc&classes=border,shadow) 
 
 Here you can see the next *drop-down menu:*
-![](../../assets/images/account/5.png?width=10pc&classes=border,shadow) 
+![](../../assets/images/account/5.png?width=5pc&classes=border,shadow) 
 
 Option **Settings** gives you an access to the available actions to manage your personal account:
 - Edit Account;
