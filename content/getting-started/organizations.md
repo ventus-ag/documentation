@@ -13,7 +13,7 @@ On this page, you can find an explanation of how to create a new Organization an
   - [Edit Organization](#edit-organization)
   - [Delete Organization](#delete-organization)
   - [Leave Organization](#leave-organization)
-    - [Transfer an Organization](#transfer-an-organization)
+  - [Transfer an Organization](#transfer-an-organization)
 
 ## Users within Organization
 
@@ -93,7 +93,7 @@ To leave the Organization, do the following:
       
 After these steps, your User will not have access to the selected Organization.
 
-### Transfer an Organization
+## Transfer an Organization
 {{% notice note %}}
 Transferring Organization is available only if your User Role in this Organization is *Owner*. 
 {{% /notice %}}
