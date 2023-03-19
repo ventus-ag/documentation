@@ -17,19 +17,19 @@ On this page, you can find an explanation of how to find list of default Images 
 
 ## Images page
 To get to the *Images page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Images TAB:**
-![](../../../assets/images/vol/1.png?classes=border,shadow) 
-![](../../../assets/images/images/1.png?classes=border,shadow) 
+![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/images/1.png?width=30pc&classes=border,shadow) 
 
-On this page you can find all default and custom Images, with their *Headers* and *Search bar*:
+On this page you can find all default and custom Images:
 ![](../../../assets/images/images/2.png?classes=border,shadow)  
 
 ## Custom Images
 The Cloud Console functionality allows to upload custom Images to the system, which will be available for all resources in the current Project.
 
 ### Prerequisites
-In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1*, that was created in the Organization named *Test-Shop*:
+In this article we will assume, that we have already created the following resources, that refer to the Project named *Test-Project*, that was created in the Organization named *Test-Organization*:
 - **SSH Key,** that will be specified during creating the Virtual Machine and Kubernetes Cluster for further connection to them via SSH; it was created with the next parameters:
-  - *Name*: mykey;
+  - *Name*: main;
   - *Public key* is placed on the Linux VM during its creation;
   - *Private Key* was copied to the clipboard and saved on the local system in the text file (for example: ~/.ssh/id_rsa).
 - **Firewall (Name: for-ssh),** that will be specified during creating the Virtual Machine for further connection to it via SSH - it was created with additional rule allowing incoming traffic on port 22; this rule was created with the next parameters:
@@ -40,14 +40,14 @@ In this article we will assume, that we have already created the following resou
   - *Port*: 22;
   - *Remote*: CIDR;
   - *Remote IP range:* 0.0.0.0/0
-- **Ubuntu Virtual Machine (IP: 185.226.42.187)**, from which we will create custom Image; it was created with the next parameters and with additional Firewall named *for ssh,* configured to allow incoming traffic on port 22,so we can connect to this Virtual Machine remotely from our local server via SSH:
-  - *Name*: test-2;
+- **Ubuntu Virtual Machine (IP: 185.226.41.46)**, from which we will create custom Image; it was created with the next parameters and with additional Firewall named *for ssh,* configured to allow incoming traffic on port 22,so we can connect to this Virtual Machine remotely from our local server via SSH:
+  - *Name*: test-vm;
   - *Flavor*: VC-2;
   - *Image*: ubuntu-server-20.04-LTS-20201111;
-  - *Key pair*: mykey;
+  - *Key pair*: main;
   - *Networks*: public;
   - *Firewalls*: default, for ssh
-  - *Volume size*: 10.  
+  - *Volume size*: 50.  
 - **CLI User**, created with the following parameters and its RC file has already been loaded:
   - *Name*: test-conn;
   - *Password*: P@sword.
@@ -62,9 +62,9 @@ For more information about creating and configuring these resources, see the fol
 
 ### Get Images list
 To get the list of all available Images in the current Project, follow the next steps:
-- Loggin to your Ubuntu Virtual Machine, from which you are going to create custom Image;  
+- Login to your Ubuntu Virtual Machine, from which you are going to create custom Image;  
 for this we use SSH protocol - to find additional information about, it see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)    
-`ssh -i ~/.ssh/id_rsa ubuntu@185.226.42.187`
+`ssh -i ~/.ssh/id_rsa ubuntu@185.226.41.46`
 
 - Update Ubuntu package sources by running the following command:   
 `sudo apt update`  
