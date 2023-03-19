@@ -41,7 +41,7 @@ To create a new Project, do the following:
 ![](../../assets/images/projects/4.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Project will be added to the *Projects Overview page:*
-![](../../assets/images/projects/5.png?width=80pc&classes=border,shadow) 
+![](../../assets/images/projects/5.png?width=70pc&classes=border,shadow) 
 
 {{% notice note %}}
 All subsequent services provided by the Cloud Console within the one Project, will be created in the corresponding Region, in which this Project was created.
