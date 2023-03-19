@@ -78,5 +78,5 @@ To logout of the Account, open the *User menu* and select **Logout** option
 This will end the login session of your Account and redirect you to the *Login page.*
 
 To login again, you just need to specify the **email** and **password,** that you used during registration and click the **Log in** icon:
-![](../../assets/images/account/10.png?width=10pc&classes=border,shadow) 
+![](../../assets/images/account/10.png?width=35pc&classes=border,shadow) 
 
