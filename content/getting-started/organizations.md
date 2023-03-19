@@ -13,6 +13,7 @@ On this page, you can find an explanation of how to create a new Organization an
   - [Edit Organization](#edit-organization)
   - [Delete Organization](#delete-organization)
   - [Leave Organization](#leave-organization)
+    - [Transfer an Organization](#transfer-an-organization)
 
 ## Users within Organization
 
@@ -68,8 +69,9 @@ To edit the Organization, do the following:
 After these steps, the selected Organization will be updated.
 
 ## Delete Organization
+
 {{% notice note %}}
-This action is available only if User Role in this Organization is *Owner* and all Projects inside were previously deleted.
+This action is available only if the User is a single Admin in this Organization and all Projects inside, were previously deleted.
 {{% /notice %}}
 
 To delete the Organization, do the following:
@@ -90,3 +92,19 @@ To leave the Organization, do the following:
 - confirm your action on the next opened *Confirmation window*. 
       
 After these steps, your User will not have access to the selected Organization.
+
+### Transfer an Organization
+
+As a Owner of the organization you can transfer the ownership to another Administrator of this Organization 
+
+For this, do the following:  
+- open the *Administrators page*:
+
+![](../../../assets/images/organizations/0.png?width=15pc&classes=border,shadow) 
+- identify the Administrator, to whom you want to Transfer the Organization;    
+- click on the **Actions** icon and select the **Transfer the Organization** in the list of available options:
+
+![](../../assets/images/organizations/6.png?classes=border,shadow)    
+- confirm your actions on the next opened *Confirmation window* and click on the SEND icon. 
+
+After confirming this action, the selected User will receive the message with the invitation to become an owner of the specifying Organization and if he accept it, his Role in the selected Organization will be changed from *Administrator* to *Owner*. 
