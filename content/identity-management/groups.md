@@ -36,7 +36,7 @@ To create a new Group, do the following:
 - go to the *Groups page* and click on the CREATE GROUP icon in the upper left corner;
 - specify the **Name** of the Group on the next opened *Create Group window* and click on the CREATE icon:
 
-![](../../assets/images/groups/2.png?width=30pc&classes=border,shadow) 
+![](../../assets/images/groups/2.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Group will be added to the *Groups page*.  
 
@@ -67,7 +67,7 @@ To add a new User to the selected Group, do the next:
 - go to the *Group details page* and click on the ADD USER icon;
 - specify the **E-mail address** of the User, that you want to add to the group, and click on the SEND INVITATION icon:
 
-![](../../assets/images/groups/5.png?width=30pc&classes=border,shadow) 
+![](../../assets/images/groups/5.png?width=35pc&classes=border,shadow) 
 
 After this, the User, whose email address you entered in the invitation, will receive an email with the *Accept invitation link*. By clicking on this link, the user will be redirected to the Cloud Console, where he need to click the *ACCEPT INVITATION* icon.      
 
@@ -92,7 +92,7 @@ To add the Project to the selected Group, do the following:
 - go to the *Group details page* and click on the ASSIGN TO THE PROJECT icon;
 - select the Project, to which you want to assign Users, from the first block, and click on the ASSIGN icon:
 
-![](../../assets/images/groups/8.png?width=30pc&classes=border,shadow)
+![](../../assets/images/groups/8.png?width=35pc&classes=border,shadow)
 
 After these steps, the newly added Project will appear in the second block of the *Group details page* with active *Actions icon*: 
 ![](../../assets/images/groups/9.png?classes=border,shadow)

@@ -38,7 +38,7 @@ To add new Administrator to the selected Organization, do the following:
 - go to the *Administrators page* and click the ADD ADMINISTRATOR icon in the upper left corner;      
 - specify the **E-mail address** of the User that you want to add to your Organization and click on the SEND INVITATION icon: 
  
-![](../../assets/images/organizations/11.png?width=30pc&classes=border,shadow)    
+![](../../assets/images/organizations/11.png?width=35pc&classes=border,shadow)    
 
 After this, the User, whose email address you entered in the invitation, will receive an email with the *Accept invitation link*. By clicking on this link, the user will be redirected to the Cloud Console, where he need to click the *ACCEPT INVITATION* icon.      
 
