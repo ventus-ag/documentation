@@ -94,6 +94,9 @@ To leave the Organization, do the following:
 After these steps, your User will not have access to the selected Organization.
 
 ### Transfer an Organization
+{{% notice note %}}
+Transferring Organization is available only if your User Role in this Organization is *Owner*. 
+{{% /notice %}}
 
 As a Owner of the organization you can transfer the ownership to another Administrator of this Organization 
 
@@ -104,7 +107,7 @@ For this, do the following:
 - identify the Administrator, to whom you want to Transfer the Organization;    
 - click on the **Actions** icon and select the **Transfer the Organization** in the list of available options:
 
-![](../../assets/images/organizations/6.png?classes=border,shadow)    
+![](../../assets/images/projects/6.png?classes=border,shadow)    
 - confirm your actions on the next opened *Confirmation window* and click on the SEND icon. 
 
 After confirming this action, the selected User will receive the message with the invitation to become an owner of the specifying Organization and if he accept it, his Role in the selected Organization will be changed from *Administrator* to *Owner*. 
