@@ -71,7 +71,7 @@ To find information about all sessions, do the following:
 - open the *User menu* and  select **Settings** option from the opened *drop-down menu;*
 - select the **Sessions** TAB from the *side-bar menu*;
 - on the opened *Sessions page* you can find all necessary information and **log out all sessions** by one click if you need:
-![](../../assets/images/account/9-acc.png?classes=border,shadow) 
+![](../../assets/images/account/9.png?classes=border,shadow) 
 
 ### Login and Logout
 To logout of the Account, open the *User menu* and select **Logout** option from the opened *drop-down menu.*
