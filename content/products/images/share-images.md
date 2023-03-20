@@ -34,13 +34,12 @@ If you want to share an Image with another Project, you need to know the ID of t
 {{% /notice %}} 
 
 For more information on the prerequisites discussed, see the following articles:    
-    [Projects](https://docs.ventuscloud.eu/getting-started/projects/);  
-    [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/);   
-    [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);        
-    [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/);  
-    [Images](https://docs.ventuscloud.eu/products/images/custom-images/);      
+    [Projects](https://docs.ventuscloud.eu/getting-started/projects/)   
+    [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)  
+    [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/)          
+    [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)  
+    [Images](https://docs.ventuscloud.eu/products/images/custom-images/)  
     [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
-
 
 ## Workflow
 In this article, we will look at a scenario where it is needed to share a custom Image, uploaded to the Project-1 named *dev-1*, with the Project-2 named *dev-2*.
