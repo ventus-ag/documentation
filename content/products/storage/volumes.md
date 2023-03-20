@@ -11,6 +11,7 @@ On this page, you can find an explanation of how to create, edit, delete Volumes
   - [Create Volume](#create-volume)
   - [Attach Volume](#attach-volume)
   - [Detach Volume](#detach-volume)
+  - [Create VM from Snapshot](#create-vm-from-snapshot)
   - [Edit Volume](#edit-volume)
   - [Extend Volume](#extend-volume)
   - [Delete Volume](#delete-volume)
@@ -90,6 +91,23 @@ To detach the Volume from the *Volumes page*, do the following:
 After these steps, the Volume will be detached from the selected VM and on the *Volumes page* its status will change to *available*.
 
 Detach Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/).
+
+## Create VM from Snapshot
+{{% notice note %}}
+You can Create Virtual Machines only from Volumes with state *available*. 
+{{% /notice %}}
+
+To create Virtual Machine from Volume do the following:
+- open the *Virtual Machines page* - select the **Virtual Machines** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+
+![](../../../assets/images/vms/1.png?width=15pc&classes=border,shadow)  
+- click on the CREATE VM icon in the upper left corner of the *Virtual Machines page*;
+- fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
+![](../../../assets/images/tutorials/21.png?width=30pc&classes=border,shadow)
+
+After these steps, the newly created VM will be added to the *Virtual Machine page* with the status ACTIVE.
+
+To find more information about Virtual Machines and how to connect to them, please, see next articles - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/), [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/). 
 
 ## Edit Volume
 To edit the Volume from the *Volumes page*, do the following:
