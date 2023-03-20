@@ -37,7 +37,7 @@ To create new Snapshot from the *Snapshots page*, do the following:
 - go to the *Snapshots page* and click the *CREATE SNAPSHOT* icon in the upper left corner;
 - fill in the form on the next opened *Create Snapshot window* and click on the CREATE icon:
 
-![](../../../assets/images/snap/3.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/snap/3.png?width=35pc&classes=border,shadow) 
   - *Name* - set a name for the Snapshot;
   - *Description* - set a description for the Snapshot;
   - *Volume* - select volume from what you want to create a Snapshot.
