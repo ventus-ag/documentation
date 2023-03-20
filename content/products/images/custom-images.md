@@ -14,6 +14,7 @@ On this page, you can find an explanation of how to find list of default Images 
   - [Get Images list](#get-images-list)
   - [Create custom Image](#create-custom-image)
   - [Delete Custom Image](#delete-custom-image)
+- [Create image from Snapshot](#create-image-from-snapshot)
 
 ## Images page
 To get to the *Images page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Images TAB:**
@@ -170,6 +171,12 @@ To delete an image, use the next command:
 
 If the image, that you want to delete is protected, the first step for deleting is to unprotect it, for this use the next command:  
 `openstack image set --unprotected <IMAGE-ID>`
+
+## Create image from Snapshot
+The Cloud Console functionality allows to upload custom Images to the system, which will be available for all resources in the current Project.
+
+To find full workflow, of creating a custom Image from Snapshot, please see the article - [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
+
 
 
 
