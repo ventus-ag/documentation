@@ -77,6 +77,7 @@ This step is optional in Router configuration, but if you need to add custom Rou
 ![](../../../assets/images/routers/10.png?classes=border,shadow) 
 
 - fill in the form on the next opened *Add Route window* and click on the ADD icon:
+
 ![](../../../assets/images/routers/11.png?width=35pc&classes=border,shadow)  
 
 After these steps, the newly added Route will appear on the *Router details page* with available action icon for its removing:

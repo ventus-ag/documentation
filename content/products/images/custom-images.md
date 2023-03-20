@@ -162,7 +162,7 @@ In our case the output should be the next:
 
 Also, you can find this new Image on the *Images page* in the Cloud Console and use it during VM creation:
 ![](../../../assets/images/images/3.png?classes=border,shadow) 
- ![](../../../assets/images/images/6.png?width=35pc&classes=border,shadow) 
+ ![](../../../assets/images/images/6.png?width=30pc&classes=border,shadow) 
 
 ### Delete Custom Image
 To delete an image, use the next command:  

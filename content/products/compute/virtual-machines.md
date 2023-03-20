@@ -43,7 +43,7 @@ On this page you can find all created Virtual Machines in the current Project of
 To create new Linux VM, do the following:
 - go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
 - fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
-![](../../../assets/images/vms/3.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/vms/3.png?width=30pc&classes=border,shadow)
   - *Name* - set a name for the VM;  
   - *Source* - choose the source which you want to use for VM creating: image, volume or snapshot;  
     by default, "Image" is pre-selected;    
@@ -78,7 +78,7 @@ After these steps, the newly created Linux VM will be added to the *Virtual Mac
 To create new Windows VM, do the following:
 - go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
 - fill in the form on the next opened *Create Virtual Machine window* and click on the CREATE icon:
-![](../../../assets/images/vms/7.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/vms/7.png?width=30pc&classes=border,shadow)
   - *Name* - set a name for the VM;  
   - *Source* - choose the source which you want to use for VM creating: image, volume or snapshot;  
     by default, "Image" is pre-selected;  

@@ -135,7 +135,7 @@ It may take a long time to create Images from a Volume, please wait until its st
 
     In our case the output will be next:  
 
-![](../../../assets/images/tutorials/19.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/19.png?width=50pc&classes=border,shadow) 
 
 - Remove signature inherited from original volumes metadata, if it is kept it can cause issues during new instance creation.
     ```  
