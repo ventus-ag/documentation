@@ -65,7 +65,7 @@ To find more detailed instructions about Snapshot creation, see the article: [VM
 {{% /notice %}} 
 
 You can check if this Snapshot is working correctly by creating Virtual Machine from it:
-![](../../../assets/images/tutorials/0-8.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/tutorials/0-8.png?width=30pc&classes=border,shadow)
 
 
 ### Create Volume from Snapshot
@@ -75,7 +75,7 @@ To create a Volume from the Snapshot do the following:
 ![](../../../assets/images/tutorials/15.png?classes=border,shadow) 
 
 - fill in the form on the next opened *Create volume from snapshot window* and click on the CREATE icon:
-![](../../../assets/images/tutorials/16.png?classes=border,shadow) 
+![](../../../assets/images/snap/7.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Volume will be added to the *Volumes page* with the status *available*:
 ![](../../../assets/images/snap/8.png?classes=border,shadow) 
@@ -116,7 +116,7 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
 
     In our case the output will be next:    
 
-![](../../../assets/images/snap/18.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/18.png?classes=border,shadow) 
 
 - create an Image from the selected Volume:    
     ```
@@ -135,12 +135,12 @@ It may take a long time to create Images from a Volume, please wait until its st
 
     In our case the output will be next:  
 
-![](../../../assets/images/snap/19.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/19.png?classes=border,shadow) 
 
 - Remove signature inherited from original volumes metadata, if it is kept it can cause issues during new instance creation.
     ```  
     openstack image unset --property signature_verified <image_id>
     ```  
 After these steps, the newly created Image will be added to the *Images page* and you can use to create new Virtual Machines: 
-![](../../../assets/images/snap/20.png?classes=border,shadow)   
-![](../../../assets/images/tutorials/0-9.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/tutorials/20.png?classes=border,shadow)   
+![](../../../assets/images/tutorials/0-9.png?width=30pc&classes=border,shadow) 
