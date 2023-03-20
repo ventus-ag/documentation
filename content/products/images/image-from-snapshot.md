@@ -63,7 +63,7 @@ After these steps, the newly created Snapshot will be added on the *Snapshots pa
 To find more detailed instructions about Snapshot creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
 {{% /notice %}} 
 
-You can check if this Snapshot is working correctly by creating Virtuale Machine from it:
+You can check if this Snapshot is working correctly by creating Virtual Machine from it:
 ![](../../../assets/images/tutorials/0-4.png?classes=border,shadow)
 
 
