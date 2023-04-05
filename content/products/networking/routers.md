@@ -13,7 +13,7 @@ On this page, you can find an explanation of how to create, edit, delete Routers
     - [Add Interface to the Router](#add-interface-to-the-router)
     - [Add custom Route to the Router](#add-custom-route-to-the-router)
   - [Edit Router](#edit-router)
-  - [Delete router](#delete-router)
+  - [Delete Router](#delete-router)
 
 ## Routers
 Router is an important infrastructure component that can come in handy when you need to:  
@@ -100,7 +100,7 @@ After these steps, the selected Router will be updated.
 Also, you can edit the Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/routers/8.png?width=25pc&classes=border,shadow)  
 
-## Delete router
+## Delete Router
 
 To delete Router, do the following:
 - identify this unnecessary Router on the *Routers page* and ensure, that it has no attached interfaces to networks, delete them if any;
