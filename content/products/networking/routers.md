@@ -7,12 +7,19 @@ On this page, you can find an explanation of how to create, edit, delete Routers
 
 # Table of contents
 - [Table of contents](#table-of-contents)
+  - [Routers](#routers)
   - [Routers page](#routers-page)
   - [Create Router](#create-router)
     - [Add Interface to the Router](#add-interface-to-the-router)
     - [Add custom Route to the Router](#add-custom-route-to-the-router)
   - [Edit Router](#edit-router)
   - [Delete router](#delete-router)
+
+## Routers
+Router is an important infrastructure component that can come in handy when you need to:  
+- Provide access to the internet for instances provisioned in a private network;  
+- Interconnect two or more networks;  
+- Manage routes for traffic in advanced network scenarios;  
 
 ## Routers page
 To get to the *Routers page*, select the **Networking** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Routers TAB:**
@@ -35,16 +42,18 @@ To create new Router, do the following:
 ![](../../../assets/images/routers/3.png?width=35pc&classes=border,shadow)  
   - *Name* - set a name for the Router; 
   - *Description* - set a description for the new Router;
-  - *Enable external gateway* - make a mark if you need to open access to the Internet for your VMs with this Router.
+  - *Enable external gateway* - select it if you want to use the router as a gateway for instances created in private network. In other words, it will let instances from private network access to internet. 
 
 After these steps, the newly created Router will be added to the *Routers page* with the status ACTIVE.  
 
-As a next step, is highly recommended to attach already created internal Interfaces to this Router and optionally add custom routes. 
-
 ### Add Interface to the Router 
 
+{{% notice note %}}
+Router can be connected to one or more private networks by adding it's interface to network.  
+{{% /notice %}}
+
 To add Interfaces to the already created Router do the following:
-- ensure that you have already created Network with associated Subnets, which Interfaces you want to add to the Router;  
+- ensure that you have already created Network with associated Subnets;  
   To find information about how to create internal Network and Subnet use the articles [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/);
 - open the *Router details page* - for this, click on the **Name** of the corresponding Router:
 
@@ -57,10 +66,6 @@ To add Interfaces to the already created Router do the following:
 - select one of the available Subnets and click on the ADD icon:
 
 ![](../../../assets/images/routers/6.png?width=35pc&classes=border,shadow)
-
-{{% notice note %}}
-If you add more interfaces to the same Router, the VMs created on these subnets will be able to access each other.
-{{% /notice %}}
 
 After these steps, the newly added Interface will appear in the *Router details page* in the ACTIVE status with available action icon for its removing. Now, all Virtual Machines created in this Subnet will have access to the internet, as this Router was created with *Enabled external gateway*:
 
@@ -87,7 +92,7 @@ After these steps, the newly added Route will appear on the *Router details pag
 ## Edit Router
 
 To edit the Router, do the following:
-- identify iRouter, that you want to edit, on the *Routers page*;
+- identify Router, that you want to edit, on the *Routers page*;
 - click on the **Actions** icon  and select the **Edit** in the list of available options;
 - update the Name or/and Description of the selected Router, on the next opened *Edit Router window* and click on the SAVE icon.
 
@@ -98,7 +103,7 @@ Also, you can edit the Router from its *Details page*, by clicking on the approp
 ## Delete router
 
 To delete Router, do the following:
-- identify this unnecessary Router on the *Routers* and ensure, that this it isn't still used by other cloud resources;
+- identify this unnecessary Router on the *Routers page* and ensure, that it has no attached interfaces to networks, delete them if any;
 - click on the **Actions** icon  and select the **Delete** in the list of available options;
 - confirm the Router deletion on the next opened *Confirmation window*.
 
