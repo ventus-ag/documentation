@@ -102,7 +102,7 @@ To edit the Floating IP, do the following:
 - click on the **Actions** icon and select the **Edit** in the list of available options;
 - update the Description on the next opened *Edit Floating IP window*, and click on the SAVE icon.
 
-After these steps, the selected Subnet will be updated.
+After these steps, the selected Floating IP will be updated.
 
 ## Delete Floating IP
 
