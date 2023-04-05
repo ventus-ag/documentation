@@ -176,10 +176,10 @@ Floating IP is an IP address allocated from Public network range by request and 
 * You can almost immediately transfer Floating IP from one instance to another without any interruptions to service. 
 * Instance itself doesn't know about Floating IP existence. You don't have additional network interface on OS level. You don't need to care about routing with multiple interfaces.
 
-You need to know that:
-* Floating IP can be assigned only to instance provisioned in private network with routing configured. 
-* Only one Floating IP can be assigned to instance at one time
-* You can't have Floating IP created from range of your private network. You can leverage Load Balancers to cover this case.
+You need to know that:  
+* Floating IP can be assigned only to instance provisioned in private network with configured router with external gateway.  
+* Only one Floating IP can be assigned to instance at one time.  
+* You can’t have Floating IP created from range of your private network.  
 
 ![](../../assets/images/tutorials/13.png?classes=border,shadow) 
 

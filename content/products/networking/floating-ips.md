@@ -7,45 +7,60 @@ On this page, you can find an explanation of how to create, associate, edit, del
 
 # Table of contents
 - [Table of contents](#table-of-contents)
+  - [Floating IP](#floating-ip)
   - [Floating IPs page](#floating-ips-page)
   - [Create Floating IP](#create-floating-ip)
   - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
   - [Edit Floating IP](#edit-floating-ip)
   - [Delete Floating IP](#delete-floating-ip)
 
+## Floating IP
+Floating IP is an IP address allocated from Public network range by request and associated with specific project. You can assign Floating IP to any of your instances provisioned in private networks. This provides great flexibility in management of your network resources.
+
+*Some of the key advantages provided by Floating IPs:*
+* Once Floating IP created - it will stay in your project until you explicitly delete it. Regardless if you delete resources to which it attached. It guarantees that you will have your stable static IP for as long as it needed for your infrastructure. 
+* You can create multiple Floating IPs per project.
+* You can almost immediately transfer Floating IP from one instance to another without any interruptions to service. 
+* Instance itself doesn't know about Floating IP existence. You don't have additional network interface on OS level. You don't need to care about routing with multiple interfaces.
+
+You need to know that:  
+* Floating IP can be assigned only to instance provisioned in private network with configured router with external gateway.  
+* Only one Floating IP can be assigned to instance at one time.  
+* You can’t have Floating IP created from range of your private network.  
+
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Networking** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
 ![](../../../assets/images/networks/net-1.png?width=15pc&classes=border,shadow) 
 ![](../../../assets/images/networks/net-2.png?width=20pc&classes=border,shadow) 
 
-On this page you can find all Floating IPs created in the current Project, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Network:
+On this page you can find all Floating IPs created in the current Project, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Floating IP:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
 
 **Actions** icon opens the next list of available management actions for the selected Floating IP:
-- *Associate* - this option is used to associate selected Floating IP with one of the previously created VM's internal Interfaces;
-- *Disassociate* - this option is available only for Floating IPs that are already associated with one of the previously created Interfaces; 
+- *Associate* - this option is used to associate selected Floating IP with available Network Interfaces;
+- *Disassociate* - this option is available only for Floating IPs that are already associated with one of the Network Interfaces; 
 - *Edit* - this option is used to update description of the selected Floating IP; 
-- *Delete* - this option is for Floating IP removing.
+- *Delete* -  this option is for releasing specific Floating IP from the Project.
 
 ## Create Floating IP
 To create new Floating IP, do the following:
 - go to the *Floating IPs page* and click on the CREATE FLOATING IP icon in the upper left corner;
-- come up with the description on the next opened *Create Floating IP window* and click on the CREATE icon:    
+- optionally, add the description on the next opened *Create Floating IP window* and click on the CREATE icon:    
 
 ![](../../../assets/images/networks/net-4.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Floating IP will be added to the *Floating IPs page*:
 ![](../../../assets/images/networks/net-5.png?classes=border,shadow)
 
-Also, when creating Floating IP, you can immediately associate it with a previously created Interface:
+Also, when creating Floating IP, you can immediately associate it with available Interface:
 ![](../../../assets/images/networks/net-6.png?width=35pc&classes=border,shadow) 
 
-If Floating IP is currently associated with one of the created Interfaces, it status is ACTIVE:
+If Floating IP is currently associated with one of the created Interfaces, it's status is ACTIVE:  
 ![](../../../assets/images/networks/net-7.png?classes=border,shadow)
 
 ## Associate/Disassociate Floating IP
 
-There are two ways associate/disassociate already created Floating IP with the VM's internal Interfaces:
+There are two ways to associate/disassociate already created Floating IP with the VM’s internal Interfaces
 - from the *Floating IPs page*;
 - from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*.
 
@@ -55,7 +70,7 @@ Information about the second one you can find in the article - [VM's Networks an
 Also, as you know from the previous chapter, you can immediately associate Floating IP when you create it.
 
 {{% notice note %}}
-Successfully Associate Floating IP with VM's internal Interface you can only in case if you have configured Router with enabled external gateway and attached to your internal Network.
+Floating IP association can be completed successfully to VM's interface in internal subnet with enabled external gateway.
 {{% /notice %}}
 
 To associate already created Floating IP with the VM's internal Interfaces, do the following:
