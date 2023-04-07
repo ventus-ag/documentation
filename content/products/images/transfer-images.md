@@ -3,31 +3,32 @@ title: Transfer Images between Regions
 weight: 20
 ---
 ___
-On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Region.
+On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Regions.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-2. [Workflow](#workflow)
-    1. [Prepare custom Image](#prepare-custom-image)
-    2. [Save custom Image](#save-custom-image)
-    3. [Upload custom Image](#upload-custom-image)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Workflow](#workflow)
+    - [Prepare custom Image](#prepare-custom-image)
+    - [Save custom Image](#save-custom-image)
+    - [Upload custom Image](#upload-custom-image)
 
 ## Prerequisites
 In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:
 
 - **Project-1** named *v-dev*, that related to the *Vienna* Region, with the following resources:
   - **CLI User** named *v-CLIuser* and which RC file has already been loaded;  
-  - **Ubuntu Virtual Machine** - IP: 88.218.53.162, Name: *vm-1*; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;
+  - **Ubuntu Virtual Machine** - IP: 88.218.53.162, Name: *test-1*; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;
 
 - **Project-2** named *sw-dev*, that related to the *Eastern-Switzerland* Region, with the following resources:
   - **CLI User** named *sw-CLIuser* and which RC file has already been loaded;  
 
 For more information on the prerequisites discussed, see the following articles:     
-    [Projects](https://docs.ventuscloud.eu/getting-started/projects/);  
-    [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/);   
-    [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);        
-    [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/);  
-    [Images](https://docs.ventuscloud.eu/products/images/custom-images/);  
+    [Projects](https://docs.ventuscloud.eu/getting-started/projects/)  
+    [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)  
+    [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/)          
+    [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)  
+    [Images](https://docs.ventuscloud.eu/products/images/custom-images/)  
     [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
 
 ## Workflow
@@ -40,14 +41,15 @@ This workflow consists of the next steps:
 Let's take a closer look at each of them.
 
 ### Prepare custom Image
-You can upload any custom Image that was already saved locally, or create the neccessery Image from an Snapshot.
+You can upload any custom Image that was already saved locally, or create the necessary Image from an Snapshot.
+
 Please choose, what is better for you, and see detailed instructions in the next articles:  
-    [Images](https://docs.ventuscloud.eu/products/images/custom-images/);  
+    [Custom Images](https://docs.ventuscloud.eu/products/images/custom-images/#custom-images);  
     [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/)
 
 ### Save custom Image
 To save custom Image on the VM do the following:
-- connect to the preiviously created Virtual Machine in the current Project-1 *v-dev*; 
+- connect to the previously created Virtual Machine in the current Project-1 *v-dev*; 
 
 {{% notice tip %}}
 To find detailed instructions, how to connect to the Linux VM, see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)
@@ -74,23 +76,15 @@ To find detailed instructions, how to load RC Files, see the article: [CLI Users
 - find the ID of the Image you want to transfer:  
     `openstack image list`  
     
-    In our case the output will be next:    
-    ```  
-    ubuntu@vm-1:~$ openstack image list  
-    +------------------+------------------------------------+--------+
-    | ID               | Name                               | Status |
-    +------------------+------------------------------------+--------+
-    | ....             | ....                               | ....   |
-    | cc326302-...-XXX | img-migrated                       | active |  <--
-    | ....             | ....                               | ....   |
-    +------------------+------------------------------------+--------+
-    ```
+    In our case the output will be next: 
+
+![](../../../assets/images/images/5.png?width=45pc&classes=border,shadow) 
 - save the selected Image on your VM:  
     `openstack image save --file <file-name>.raw <image-id>`  
 
     In our case the command will look like:  
     ```
-    ubuntu@vm-1:~$ openstack image save --file image.raw cc326302-...-XXX
+    ubuntu@vm-1:~$ openstack image save --file image.raw 87a57-...-XXX
     ```
 
 ### Upload custom Image
@@ -119,23 +113,15 @@ Make sure you are logged in to the correct OpenStack platform with your CLI tool
                        --disk-format qcow2 \
                        --file image.raw \
                        --property os_platform='linux' \
-                       transfered-img
+                       image-migrated
     ```
     
 * check that the Image is added:  
     `openstack image list`  
 
     In our case the output will be next:    
-    ```
-    ubuntu@vm-1:~$ openstack image list  
-    +------------------+--------------------------------+--------+
-    | ID               | Name                           | Status |
-    +------------------+--------------------------------+--------+
-    | ....             | ....                           | ....   |
-    | af1c886b-...-XXX | transfered-img                 | active |  <--
-    | ....             | ....                           | ....   |
-    +------------------+--------------------------------+--------+
-    ```
+![](../../../assets/images/tutorials/22.png?width=45pc&classes=border,shadow) 
 
 After these steps, the newly created Image will be added to the *Images page* of the the Project-2 related to the *Eastern-Switzerland* Region and you can use it to create new Virtual Machines within this Region:   
-![](../../../assets/images/tutorials/0-0.png?classes=border,shadow) 
+![](../../../assets/images/tutorials/23.png?classes=border,shadow) 
+ ![](../../../assets/images/tutorials/24.png?width=30pc&classes=border,shadow) 

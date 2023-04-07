@@ -3,7 +3,7 @@ title: Object Storage
 weight: 10
 ---
 ___
-On this page, you can find an explanation of what is Object Storage in Cloud Console, how to create, delete buckets and instructions for other steps to manage an Object Storage in the Cloud Console.
+On this page, you can find an explanation of what is Object Storage in the Cloud Console, how to create, delete buckets and instructions for other steps to manage an Object Storage in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -30,13 +30,14 @@ An Object Storage API differs from a conventional filesystem: instead of directo
 There is no notion of hierarchy with containers: you cannot nest a container within another, however, you can emulate a nested folder structure with a naming convention for your objects.
 
 Before we start to configure and use Object Storage we need to create credentials that include the access key and secret key.   
-To find instructions of how to create Object Storage Credentials in Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/#delete-object-storage-credentials)
+To find instructions of how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
 
 ## Use Object Storage with Python API  
 Python support is provided through a fork of the *boto3* library with features to make the most of the Cloud Console Object Storage. 
 To start use the Object Storage with the Python API, do the following:
 - install boto library by running the command:  
-`pip install boto`    
+  `apt install python3-pip`   
+  `pip install boto`    
 
 {{% notice note %}}
 As well as Python API you can select other programming languages for using the Object Storage.
@@ -143,7 +144,7 @@ Please, notice here, when a client application accesses buckets, it always opera
 **for private objects** - "https://upper-austria.ventuscloud.eu:8080/**Your_Project_ID:**new-bucket-using-python/private_info.txt?Signature=XXX&Expires=1316027075&AWSAccessKeyId=XXX"     
 
 Find your Project ID you can:
-* on the *Projects page* in Cloud Console:
+* on the *Overview page* in the Cloud Console:
 ![](../../../assets/images/store/6.png?classes=border,shadow) 
 
 * in the link, when you use Cloud Console;

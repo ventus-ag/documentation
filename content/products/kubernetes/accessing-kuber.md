@@ -3,18 +3,19 @@ title: Access K8S Cluster
 weight: 15
 ---
 ___
-On this page, you can find an explanation of several ways how to access a Kubernetes Cluster created in Cloud Console
+On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-1. [Get access from Ubuntu VM to K8S Cluster using CLI User](#get-access-from-ubuntu-vm-to-k8s-cluster-using-cli-user)
-1. [Get access from Centos VM to K8S Cluster using CLI User](#get-access-from-centos-vm-to-k8s-cluster-using-cli-user)
-1. [Connect to Cluster Master-Node via SSH](#connect-to-cluster-master-node-via-ssh)
+- [Table of contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Get access from Ubuntu VM to K8S Cluster using CLI User](#get-access-from-ubuntu-vm-to-k8s-cluster-using-cli-user)
+  - [Get access from CentOS VM to K8S Cluster using CLI User](#get-access-from-centos-vm-to-k8s-cluster-using-cli-user)
+  - [Connect to Cluster Master-Node via SSH](#connect-to-cluster-master-node-via-ssh)
 
 ## Prerequisites
-In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1* that was created in the Organization named *Test-Shop*:
+In this article we will assume, that we have already created the following resources, that refer to the Project named *Test-Project* that was created in the Organization named *Test-Organization*:
 - **SSH Key,** that will be specified during creating the Virtual Machine and Kubernetes Cluster for further connection to them via SSH; it was created with the next parameters:
-  - *Name*: mykey;
+  - *Name*: main;
   - *Public key* is placed on the Linux VM during its creation;
   - *Private Key* was copied to the clipboard and saved on the local system in the next text file (for example: ~/.ssh/id_rsa).
 - **Firewall (Name: for-ssh),** that will be specified during creating the Virtual Machine for further connection to it via SSH - it was created with additional rule allowing incoming traffic on port 22; this rule was created with the next parameters:
@@ -29,24 +30,24 @@ In this article we will assume, that we have already created the following resou
   - *Name*: test-2;
   - *Flavor*: VC-2;
   - *Image*: ubuntu-server-20.04-LTS-20201111;
-  - *Key pair*: mykey;
+  - *Key pair*: main;
   - *Networks*: public;
   - *Firewalls*: default, for ssh
-  - *Volume size*: 10.  
+  - *Volume size*: 50.  
 - **Centos Virtual Machine (185.226.43.21)**, from which we will get access to the Kubernetes Cluster API; it was created with the next parameters and with additional Firewall named *for-ssh*, configured to allow incoming traffic on port 22,  so we can connect to this Virtual Machine remotely from our local server via SSH:
   - *Name*: test-3;
   - *Flavor*: VC-2;
   - *Image*: centos-8.2-2004;
-  - *Key pair*: mykey;
+  - *Key pair*: main;
   - *Networks*: public;
   - *Firewalls*: default, for-ssh;
-  - *Volume size*: 10.  
+  - *Volume size*: 50.  
 - **Kubernetes Cluster (Master node IP:185.226.41.220)**,  created with the next parameters:
   - *Name*: test-cl-2;
   - *Cluster Template*: v1.21.1;
   - *Master Flavor*: VC-4;
   - *Node Flavor:* VC-2;
-  - *Keypair*: mykey;
+  - *Key pair*: main;
   - *Docker image size (GB):* 50 GB;
   - *Master Count*: 1;
   - *Node Count*: 1.
@@ -66,8 +67,8 @@ For more information about creating and configuring these resources, see the fol
 
 ## Get access from Ubuntu VM to K8S Cluster using CLI User
 To get the access from the Ubuntu Virtual Machine to the created Kubernetes cluster using CLI, follow the next steps:
-- Loggin to your Ubuntu Virtual Machine from which you want to get access to the Kubernetes Cluster API;  
-for this we use SSH protocol - to find additional information about, it see the article:[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)      
+- Login to your Ubuntu Virtual Machine from which you want to get access to the Kubernetes Cluster API;  
+for this we use SSH protocol - to find additional information about it, see the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)      
 `ssh -i ~/.ssh/id_rsa ubuntu@185.226.42.187`
 
 - Update Ubuntu package sources by running the following command:   
@@ -82,7 +83,7 @@ for this we use SSH protocol - to find additional information about, it see the 
 
 - Place RC File of the created CLI User to your Virtual Machine:  
 `vi openrc`  
-Сheck that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  
+Check that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  
 ```
 #!/usr/bin/env bash
 	export OS_AUTH_URL=https://upper-austria.ventuscloud.eu:443/v3
@@ -161,8 +162,8 @@ kube-system   openstack-cloud-controller-manager-mfswf        1/1     Running   
 
 ## Get access from CentOS VM to K8S Cluster using CLI User
 To get the access from the CentOS Virtual Machine to the created Kubernetes cluster using CLI, follow the next steps:  
-- Loggin to your CentOS Virtual Machine from which you want to get access to the Kubernetes Cluster API;  
-for this we use SSH protocol - to find additional information about, it see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)      
+- Login to your CentOS Virtual Machine from which you want to get access to the Kubernetes Cluster API;  
+for this we use SSH protocol - to find additional information about it, see the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)      
 `ssh -i ~/.ssh/id_rsa centos@185.226.43.21`
 
 - Enable the OpenStack repository;  
@@ -260,7 +261,7 @@ kube-system   openstack-cloud-controller-manager-mfswf        1/1     Running   
 ```
 
 ## Connect to Cluster Master-Node via SSH
-Since we created an SSH Keypair (see Prerequsutus of this article), the public key of which is deployed on our Cluster nodes, and the private key on our local system (for example, ~ / .ssh / id_rsa), we can connect to this Kubernetes Cluster remotely from our local server - via SSH to the Master Node of the selected Cluster, which IP is 185.226.41.220. For this, just use the following command:  
+Since we created an SSH Key Pair (see Prerequisites of this article), the public key of which is deployed on our Cluster nodes, and the private key on our local system (for example, ~ / .ssh / id_rsa), we can connect to this Kubernetes Cluster remotely from our local server - via SSH to the Master Node of the selected Cluster, which IP is 185.226.41.220. For this, just use the following command:  
 `ssh -i ~/.ssh/id_rsa username@*10.111.22.333*`  
 
 {{% notice note %}}

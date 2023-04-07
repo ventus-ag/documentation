@@ -14,22 +14,23 @@ On this page, you can find an explanation of how to find list of default Images 
   - [Get Images list](#get-images-list)
   - [Create custom Image](#create-custom-image)
   - [Delete Custom Image](#delete-custom-image)
+- [Create image from Snapshot](#create-image-from-snapshot)
 
 ## Images page
 To get to the *Images page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Images TAB:**
-![](../../../assets/images/vol/1.png?classes=border,shadow) 
-![](../../../assets/images/images/1.png?classes=border,shadow) 
+![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
+![](../../../assets/images/images/1.png?width=30pc&classes=border,shadow) 
 
-On this page you can find all default and custom Images, with their *Headers* and *Search bar*:
+On this page you can find all default and custom Images:
 ![](../../../assets/images/images/2.png?classes=border,shadow)  
 
 ## Custom Images
 The Cloud Console functionality allows to upload custom Images to the system, which will be available for all resources in the current Project.
 
 ### Prerequisites
-In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1*, that was created in the Organization named *Test-Shop*:
+In this article we will assume, that we have already created the following resources, that refer to the Project named *Test-Project*, that was created in the Organization named *Test-Organization*:
 - **SSH Key,** that will be specified during creating the Virtual Machine and Kubernetes Cluster for further connection to them via SSH; it was created with the next parameters:
-  - *Name*: mykey;
+  - *Name*: main;
   - *Public key* is placed on the Linux VM during its creation;
   - *Private Key* was copied to the clipboard and saved on the local system in the text file (for example: ~/.ssh/id_rsa).
 - **Firewall (Name: for-ssh),** that will be specified during creating the Virtual Machine for further connection to it via SSH - it was created with additional rule allowing incoming traffic on port 22; this rule was created with the next parameters:
@@ -40,14 +41,14 @@ In this article we will assume, that we have already created the following resou
   - *Port*: 22;
   - *Remote*: CIDR;
   - *Remote IP range:* 0.0.0.0/0
-- **Ubuntu Virtual Machine (IP: 185.226.42.187)**, from which we will create custom Image; it was created with the next parameters and with additional Firewall named *for ssh,* configured to allow incoming traffic on port 22,so we can connect to this Virtual Machine remotely from our local server via SSH:
-  - *Name*: test-2;
+- **Ubuntu Virtual Machine (IP: 185.226.43.42)**, from which we will create custom Image; it was created with the next parameters and with additional Firewall named *for ssh,* configured to allow incoming traffic on port 22,so we can connect to this Virtual Machine remotely from our local server via SSH:
+  - *Name*: test-1;
   - *Flavor*: VC-2;
   - *Image*: ubuntu-server-20.04-LTS-20201111;
-  - *Key pair*: mykey;
+  - *Key pair*: main;
   - *Networks*: public;
   - *Firewalls*: default, for ssh
-  - *Volume size*: 10.  
+  - *Volume size*: 50.  
 - **CLI User**, created with the following parameters and its RC file has already been loaded:
   - *Name*: test-conn;
   - *Password*: P@sword.
@@ -62,9 +63,9 @@ For more information about creating and configuring these resources, see the fol
 
 ### Get Images list
 To get the list of all available Images in the current Project, follow the next steps:
-- Loggin to your Ubuntu Virtual Machine, from which you are going to create custom Image;  
+- Login to your Ubuntu Virtual Machine, from which you are going to create custom Image;  
 for this we use SSH protocol - to find additional information about, it see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)    
-`ssh -i ~/.ssh/id_rsa ubuntu@185.226.42.187`
+`ssh -i ~/.ssh/id_rsa ubuntu@185.226.43.42`
 
 - Update Ubuntu package sources by running the following command:   
 `sudo apt update`  
@@ -116,25 +117,7 @@ Check your current version and, if necessary, install the required:
 `openstack image list`
 
 In our case the output will be next:
-```output
-ubuntu@test-2:~$ openstack image list
-+------------------+--------------------------------------------------+--------+
-| ID               | Name                                             | Status |
-+------------------+--------------------------------------------------+--------+
-| 8f55bd6c...49ddc | centos-6.10-1907                                 | active |
-| c0be41ce...a1e4c | centos-7.9-2009                                  | active |
-| e2d59e4e...8f9d0 | centos-8.2-2004                                  | active |
-| 4947b0b1...60481 | debian-buster-10.8.3-20210304                    | active |
-| e5791dcb...7c9c1 | debian-stretch-9.13.16-20210219                  | active |
-| 8c9b8117...004ee | fedora-coreos-31.20200127.3.0                    | active |
-| 345033d8...7f16a | fedora-coreos-33.20210117.3.2                    | active |
-| 666519ae...4bec7 | fedora-coreos-34.20210427.3.0                    | active |
-| 44584593...14735 | ubuntu-server-16.04-LTS-20201111                 | active |
-| f68b0cfb...18f43 | ubuntu-server-18.04-LTS-20201111                 | active |
-| 02d12d5c...1a7c1 | ubuntu-server-20.04-LTS-20201111                 | active |
-| 2e2148c8...ff8d4 | windows-server-2019-datacenter-1809-17763.737-en | active |
-+------------------+--------------------------------------------------+--------+
-```
+![](../../../assets/images/images/4.png?width=45pc&classes=border,shadow) 
 
 Also, all this Images you can find on the *Images page* in the Cloud Console and use one of them during VM creation:
 ![](../../../assets/images/images/2.png?classes=border,shadow)  
@@ -153,13 +136,13 @@ To create/upload a custom Image, follow the next steps:
             --file=focal-server-cloudimg-amd64.img \ 
             --property os_distro='ubuntu' \ 
             --property os_platform='linux' \
-            ubuntu-server-Ventus
+            test-custom-image
   ``` 
     - *–disk-format* - The supported options are: ami, ari, aki, vhd, vmdk, raw, qcow2, vhdx, vdi, iso, and ploop. The default format is: *raw*.
     - *–container-format* - The supported options are: ami, ari, aki, bare, docker, ova, ovf. The default format is: *bare*.
     - *–file* - Upload image from a local file.
     - *–property* - Set a property on this image (repeat for multiple values).
-    - *ubuntu-server-Ventus-Test* - New image name.  
+    - *test-custom-image* - New image name.  
     Also, here you can use some other required arguments, for example:
     - *–location* - Download image from an existing URL.
     - *–copy-from* - Copy image from the data store (similar to \*--location\*).
@@ -176,29 +159,11 @@ Without it, you won't see your Image in the Web Console interface. 
 
 - Next, make sure that our new Image appeared among the available  - for this, use again the `openstack image list` command;  
 In our case the output should be the next:  
-```output
-ubuntu@test-2:~$ openstack image list
-+------------------+--------------------------------------------------+--------+
-| ID               | Name                                             | Status |
-+------------------+--------------------------------------------------+--------+
-| 8f55bd6c...49ddc | centos-6.10-1907                                 | active |
-| c0be41ce...a1e4c | centos-7.9-2009                                  | active |
-| e2d59e4e...8f9d0 | centos-8.2-2004                                  | active |
-| 4947b0b1...60481 | debian-buster-10.8.3-20210304                    | active |
-| e5791dcb...7c9c1 | debian-stretch-9.13.16-20210219                  | active |
-| 8c9b8117...004ee | fedora-coreos-31.20200127.3.0                    | active |
-| 345033d8...7f16a | fedora-coreos-33.20210117.3.2                    | active |
-| 666519ae...4bec7 | fedora-coreos-34.20210427.3.0                    | active |
-| 44584593...14735 | ubuntu-server-16.04-LTS-20201111                 | active |
-| f68b0cfb...18f43 | ubuntu-server-18.04-LTS-20201111                 | active |
-| 02d12d5c...1a7c1 | ubuntu-server-20.04-LTS-20201111                 | active |
-| e25063ec...f1201 | ubuntu-server-Ventus              <--            | active |
-| 2e2148c8...ff8d4 | windows-server-2019-datacenter-1809-17763.737-en | active |
-+------------------+--------------------------------------------------+--------+
-```
+![](../../../assets/images/images/5.png?width=45pc&classes=border,shadow) 
 
 Also, you can find this new Image on the *Images page* in the Cloud Console and use it during VM creation:
-![](../../../assets/images/images/3.png?classes=border,shadow)  
+![](../../../assets/images/images/3.png?classes=border,shadow) 
+ ![](../../../assets/images/images/6.png?width=30pc&classes=border,shadow) 
 
 ### Delete Custom Image
 To delete an image, use the next command:  
@@ -206,6 +171,12 @@ To delete an image, use the next command:
 
 If the image, that you want to delete is protected, the first step for deleting is to unprotect it, for this use the next command:  
 `openstack image set --unprotected <IMAGE-ID>`
+
+## Create image from Snapshot
+The Cloud Console functionality allows to upload custom Images to the system, which will be available for all resources in the current Project.
+
+To find full workflow, of creating a custom Image from Snapshot, please see the article - [Create Image from Snapshot](https://docs.ventuscloud.eu/products/images/image-from-snapshot/).
+
 
 
 
