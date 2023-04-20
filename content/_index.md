@@ -4,6 +4,6 @@ date: 2019-09-20T04:20:36+04:30
 weight: 1
 ---
 # Documentation
-Here you can find information of how to use all the services provided by the Cloud, such as Virtual Machines, Kubernetes Clusters, and so on.
+Welcome to our Cloud Console documentation! Here you will find everything you need to know about our Cloud services, from setting up Virtual Machines to managing Kubernetes Clusters and more. Let's get started!
 ## Documentation Summary
 {{% children style="h4" depth="2" %}}
