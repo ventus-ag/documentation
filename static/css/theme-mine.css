@@ -164,12 +164,19 @@ a:hover {
 
 div#body-inner h1{
     font-size: 2.75rem;
+    font-weight: 600;
 }
 
 div#body-inner h1#table-of-contents{
     font-size: 2rem;
+    font-weight: 400;
 }
 
 div#body-inner h2{
     font-size: 2.3rem;
 }
+
+/* div.notices.note p {
+    border-top: 30px solid #0091cfad;
+    background: rgb(238, 243, 246);
+} */
