@@ -159,7 +159,7 @@ a:hover {
 }
 
 #footer {
-    display: none;
+    visibility: hidden
 }
 
 div#body-inner h1{
