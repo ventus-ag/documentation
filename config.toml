@@ -9,3 +9,5 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
 themeVariant = "mine"
+# Change the title separator. Default to "::".
+titleSeparator = "-"
