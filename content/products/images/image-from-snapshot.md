@@ -91,7 +91,7 @@ To find detailed instructions about Volume creation, see the article: [VM's Snap
 ### Create Image from Volume
 To create a Image from the Volume do the following:
 
-- connect to the perviously created Virtual Machine in the current Project *Test-Project*; 
+- connect to the perviously created Virtual Machine in the current Project *Test-Project*;  
 To find detailed instructions, how to connect to the Linux VM, see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)
 
 - install Openstack client on the current VM;  
@@ -99,9 +99,8 @@ To find detailed instructions, how to Install and configure OpenStack CLI, see t
 
 - use CLI User named *test-conn* - place RC File of the created CLI User to your Virtual Machine and execute it starting with dot:  
     `vi openrc`    
-    `. openrc`  
-
-To find detailed instructions, how to load RC Files, see the article: [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)
+    `. openrc`    
+    To find detailed instructions, how to load RC Files, see the article: [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)
 
 {{% notice note %}}
 Please note, that RC file of the current CLI User has already loaded.   
