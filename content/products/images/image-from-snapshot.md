@@ -68,9 +68,7 @@ To find Volumes with an "available" status, go to the *Volumes page*. For this 
 
 After these steps, the newly created Snapshot will be added on the *Snapshots page*.
 
-{{% notice tip %}}
 To find more detailed instructions about Snapshot creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
-{{% /notice %}} 
 
 You can check if this Snapshot is working correctly by creating Virtual Machine from it:
 ![](../../../assets/images/tutorials/0-8.png?width=30pc&classes=border,shadow)
@@ -88,36 +86,26 @@ To create a Volume from the Snapshot do the following:
 After these steps, the newly created Volume will be added to the *Volumes page* with the status *available*:
 ![](../../../assets/images/snap/8.png?classes=border,shadow) 
 
-{{% notice tip %}}
 To find detailed instructions about Volume creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/) 
-{{% /notice %}} 
 
 ### Create Image from Volume
 To create a Image from the Volume do the following:
 
 - connect to the perviously created Virtual Machine in the current Project *Test-Project*; 
-
-{{% notice tip %}}
 To find detailed instructions, how to connect to the Linux VM, see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)
-{{% /notice %}} 
 
-- install Openstack client on the current VM;
-
-{{% notice tip %}}
+- install Openstack client on the current VM;  
 To find detailed instructions, how to Install and configure OpenStack CLI, see the article: [Installation OpenStack CLI](https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/)
-{{% /notice %}} 
 
 - use CLI User named *test-conn* - place RC File of the created CLI User to your Virtual Machine and execute it starting with dot:  
     `vi openrc`    
     `. openrc`  
 
+To find detailed instructions, how to load RC Files, see the article: [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)
+
 {{% notice note %}}
 Please note, that RC file of the current CLI User has already loaded.   
 {{% /notice %}} 
-
-{{% notice tip %}}
-To find detailed instructions, how to load RC Files, see the article: [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)
-{{% /notice %}}   
 
 - get a list of all Volumes created in the corresponding Project and to which your User has access:  
     `openstack volume list`      

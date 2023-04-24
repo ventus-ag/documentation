@@ -22,7 +22,7 @@ To find all Firewalls, related to the selected Virtual Machine, you need:
 
 - open the *NETWORKS & SECURITY page of this VM*:
 
-![](../../../assets/images/net/16.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/networks/net-16.png?width=25pc&classes=border,shadow)
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
 
@@ -49,7 +49,6 @@ For more information about Firewalls and their Rules, please, see the next artic
 
 Also, you can create new VM and immediately associate it with desired Firewall, during it's creation.   
 To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
-![](../../../assets/images/networks/net-22.png?width=30pc&classes=border,shadow)
 ![](../../../assets/images/fw/22.png?width=30pc&classes=border,shadow)
 
 
