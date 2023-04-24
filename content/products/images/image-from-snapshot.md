@@ -109,11 +109,10 @@ Please note, that RC file of the current CLI User has already loaded.
 - get a list of all Volumes created in the corresponding Project and to which your User has access:  
     `openstack volume list`      
 
-    In our case the output will be next:    
+    In our case the output will be next:  
+    ![](../../../assets/images/tutorials/18.png?classes=border,shadow) 
 
-![](../../../assets/images/tutorials/18.png?classes=border,shadow) 
-
-- create an Image from the selected Volume:    
+- create an Image from the selected Volume:
     ```
     openstack image create  \
                 --property os_platform='linux' \
@@ -128,9 +127,8 @@ It may take a long time to create Images from a Volume, please wait until its st
 - Get a list of Images related to the current Project:  
     `openstack image list`    
 
-    In our case the output will be next:  
-
-![](../../../assets/images/tutorials/19.png?width=50pc&classes=border,shadow) 
+    In our case the output will be next:
+    ![](../../../assets/images/tutorials/19.png?width=50pc&classes=border,shadow) 
 
 - Remove signature inherited from original volumes metadata, if it is kept it can cause issues during new instance creation.
     ```  
