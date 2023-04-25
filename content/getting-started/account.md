@@ -50,7 +50,7 @@ To edit the account, do the following:
 - open the *User menu* and  select **Settings** option from the opened *drop-down menu;*
 - select the **Account** TAB from the *side-bar menu*;
 - on the opened  the *Edit Account page* make the changes that you need with your personal information that you have provided before and click on the **Save** icon:
-![](../../assets/images/account/6-acc.png?classes=border,shadow) 
+![](../../assets/images/account/6.png?classes=border,shadow) 
 
 ### Change password
 To change the password of your User Account, do the following:

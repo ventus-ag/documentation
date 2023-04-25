@@ -63,7 +63,7 @@ For more information about creating and configuring these resources, see the fol
 
 ### Get Images list
 To get the list of all available Images in the current Project, follow the next steps:
-- Login to your Ubuntu Virtual Machine, from which you are going to create custom Image;  
+- Login to your Ubuntu Virtual Machine, from which you are going to create custom Image;   
 for this we use SSH protocol - to find additional information about, it see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)    
 `ssh -i ~/.ssh/id_rsa ubuntu@185.226.43.42`
 
@@ -87,7 +87,7 @@ Check your current version and, if necessary, install the required:
 
 - Place RC File of the created CLI User to your Virtual Machine:  
 `vi openrc`  
-Сheck that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  
+Check that there were indicated the correct OS_USERNAME and  OS_PROJECT_ID and press *Esc:wq*, then *Enter* to save the changes:  
 ```
 #!/usr/bin/env bash
 	export OS_AUTH_URL=https://upper-austria.ventuscloud.eu:443/v3
