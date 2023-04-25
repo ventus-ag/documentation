@@ -1,6 +1,6 @@
 baseURL = 'https://docs.ventuscloud.eu/'
 languageCode = "en-us"
-title = "Ventus Docs"
+title = "EWW | ITandTEL Cloud Docs"
 theme = "hugo-theme-learn"
 
 # For search functionality
@@ -8,4 +8,6 @@ theme = "hugo-theme-learn"
 home = [ "HTML", "RSS", "JSON"]
 [params]
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
-themeVariant = "blue"
+themeVariant = "mine"
+# Change the title separator. Default to "::".
+titleSeparator = "-"

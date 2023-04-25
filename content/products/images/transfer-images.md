@@ -49,29 +49,20 @@ Please choose, what is better for you, and see detailed instructions in the next
 
 ### Save custom Image
 To save custom Image on the VM do the following:
-- connect to the previously created Virtual Machine in the current Project-1 *v-dev*; 
-
-{{% notice tip %}}
+- connect to the previously created Virtual Machine in the current Project-1 *v-dev*;   
 To find detailed instructions, how to connect to the Linux VM, see the article: [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)
-{{% /notice %}} 
 
-- install Openstack client on the current VM;
-
-{{% notice tip %}}
+- install Openstack client on the current VM;   
 To find detailed instructions, how to Install and configure OpenStack CLI, see the article: [Installation OpenStack CLI](https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/)
-{{% /notice %}} 
 
 - use CLI User named *v-CLIuser* created in the Project-1 - place RC File of the created CLI User to your Virtual Machine and execute it starting with dot:  
     `vi v-openrc`    
-    `. v-openrc`  
+    `. v-openrc`    
+To find detailed instructions, how to load RC Files, see the article: [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/) 
 
 {{% notice note %}}
 Please note, that RC file of the current CLI User has already loaded.   
 {{% /notice %}} 
-
-{{% notice tip %}}
-To find detailed instructions, how to load RC Files, see the article: [CLI Users](https://docs.ventuscloud.eu/products/security/cli-users/)
-{{% /notice %}}   
 
 - find the ID of the Image you want to transfer:  
     `openstack image list`  
