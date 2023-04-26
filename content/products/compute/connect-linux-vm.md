@@ -121,11 +121,11 @@ And that's all, this newly created Firewall Rule will be automatically applied t
 
 ## Connect using SSH
 Since we have the public key deployed on our Linux VM, the private key on our local system (for example ~/.ssh/id_rsa) and a Firewall configured to allow incoming traffic on port 22, we can connect to this Virtual Machine remotely from our local server via SSH, just use the next command: 
-`ssh -i ~/.ssh/id_rsa username@*10.111.22.333*`
+`ssh -i ~/.ssh/id_rsa username@10.111.22.333`
 
 {{% notice note %}}
-Username for VMs created with *Ubuntu image* will be **ubuntu**;   
-with *Centos image* - **centos**.
+Username for VMs created with Ubuntu image will be **ubuntu**;   
+with Centos image - **centos**.
 {{% /notice %}} 
 
 Replace *username* and *10.11.22.333* in the command with your data and specify the appropriate path to your private key. In our example, the command will look like this:
