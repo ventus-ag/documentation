@@ -12,6 +12,7 @@ On this page, you can find an explanation of how to create, resize, delete Kuber
   - [Cluster details page](#cluster-details-page)
   - [Download kubeconfig file](#download-kubeconfig-file)
   - [Resize Cluster](#resize-cluster)
+  - [Upgrade Cluster](#upgrade-cluster)
   - [Delete Cluster](#delete-cluster)
 
 
@@ -109,6 +110,24 @@ After these steps, the selected Cluster will be resized after a few minutes with
 
 Also, you can resize the Cluster from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/clusters/21.png?width=25pc&classes=border,shadow)
+
+## Upgrade Cluster
+
+{{% notice info %}}
+Please note that when upgrading your cluster, you can only select a version that is higher than your current one.
+{{% /notice %}}
+
+To upgrade the Cluster, do the following:
+- identify the Cluster, that you want to upgrade, on the *Clusters page*;
+- click on the **Actions** icon  and select the **Upgrade** in the list of available options;
+- select the version to which you want to upgrade the selected Cluster on the opened *Upgrade Cluster window* and click on the UPGRADE icon:
+
+![](../../../assets/images/clusters/23.png?width=30pc&classes=border,shadow)
+
+After these steps, the selected Cluster will be upgraded after a few minutes with the status UPDATE_COMPLETE.  
+
+Also, you can upgrade the Cluster from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/clusters/24.png?width=25pc&classes=border,shadow)
 
 ## Delete Cluster
 To delete the Cluster, do the following:

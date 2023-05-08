@@ -23,7 +23,7 @@ To see information about created Projects in the Organization or create more Pro
 
 ![](../../assets/images/organizations/7.png?classes=border,shadow)  
 
-This action will open additional sections on the *side-bar menu* and redirect you to the *Overview page*, where you can find all created Projects, related to the selected Organization with the *Create button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected Project:
+This action will open additional sections on the *side-bar menu* and redirect you to the *Projects page*, where you can find all created Projects, related to the selected Organization with the *Create button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected Project:
 ![](../../assets/images/projects/2.png?classes=border,shadow) 
 
 **Actions** icon opens the next list of available management actions:
@@ -33,7 +33,7 @@ This action will open additional sections on the *side-bar menu* and redirect yo
 ## Create Project
 
 To create a new Project, do the following:
-- go to the *Projects Overview page* and click on the *CREATE PROJECT* icon in the upper left corner; 
+- go to the *Projects page* and click on the *CREATE PROJECT* icon in the upper left corner; 
 - fill in the form on the next opened *Create Project window* and click on the CREATE icon: 
   - **Name**: set a name for the Project;
   - **Region**: specify, which region this Project will belong to. All other cloud resources, that will be created in this Project, will belong to this region too.
@@ -49,7 +49,7 @@ All subsequent services provided by the Cloud Console within the one Project, wi
 
 ## Edit Project 
 To edit the Project, do the following:
-- identify the Project, that you want to edit on the *Projects Overview page*;
+- identify the Project, that you want to edit on the *Projects page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
 - update the Project Name on the next opened *Edit Project window*, and click on the SAVE icon.
 
