@@ -113,8 +113,8 @@ Also, you can resize the Cluster from *Cluster details page*, by clicking on the
 
 ## Upgrade Cluster
 
-{{% notice info %}}
-Please note that when upgrading your cluster, you can only select a version that is higher than your current one.
+{{% notice note %}}
+For cluster upgrading you can select only a version that is higher than current one.
 {{% /notice %}}
 
 To upgrade the Cluster, do the following:
