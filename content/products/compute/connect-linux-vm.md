@@ -124,12 +124,12 @@ Since we have the public key deployed on our Linux VM, the private key on our lo
 `ssh -i ~/.ssh/id_rsa username@10.111.22.333`
 
 {{% notice note %}}
-The default usernames for various Linux distributions are as follows:  
-  * Debian - "debian";  
-  * Fedora - "fedora";  
-  * Fedora CoreOS - "core";  
-  * CentOS 7, CentOS 8 - "centos";  
-  * CentOS 9 and later versions - "cloud-user".  
+The default usernames for various Linux distributions are as follows:
+  Debian - "debian";  
+  Fedora - "fedora";  
+  Fedora CoreOS - "core";  
+  CentOS 7, CentOS 8 - "centos";  
+  CentOS 9 and later versions - "cloud-user".  
 In the case of Windows, the default username is set as "ventus".
 {{% /notice %}} 
 
