@@ -129,6 +129,10 @@ For this, do the following:
 
 ![](../../../assets/images/conn-lin/29.png?classes=border,shadow)
 
+{{% notice note %}}
+For Windows virtual machines, the username is set to "ventus" by default.
+{{% /notice %}} 
+
 And after these steps, a remote connection is established to the selected Windows Virtual Machine:
 ![](../../../assets/images/conn-lin/28.png?classes=border,shadow)
 
