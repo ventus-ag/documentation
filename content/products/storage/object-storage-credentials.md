@@ -3,7 +3,7 @@ title: Object Storage Credentials
 weight: 33
 ---
 ___
-On this page, you can find an explanation of what is Object Storage and what is Object Storage Credentials in the Cloud Console, what Object Storage access methods are available, how to create, delete and instructions for other steps to manage an Object Storage Credentials in the Cloud Console.
+On this page, you can find an explanation of what Object Storage is and what Object Storage Credentials are in the Cloud Console. It also covers the available access methods for Object Storage, as well as instructions on how to create, delete, and manage Object Storage Credentials in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -26,7 +26,6 @@ An Object Storage API differs from a conventional filesystem: instead of directo
 There is no notion of hierarchy with containers: you cannot nest a container within another, however, you can emulate a nested folder structure with a naming convention for your objects.
 
 **Object Storage access methods**  
-
 We can access Object Storage using different methods:
 
 - *Integrated S3-Browser*: The Cloud Console provides its own integrated S3-Browser, which offers a user-friendly interface to manage your Object Storage resources. This browser allows you to browse through folders and files, create new folders, upload files, and perform various other management tasks directly within the Cloud Console.
@@ -37,7 +36,7 @@ We can access Object Storage using different methods:
 
 By offering multiple options to access Object Storage, the Cloud Console allows users to choose the most suitable approach for their storage management needs. Whether through the integrated S3-Browser, APIs, or third-party tools, users can efficiently interact with and manage their Object Storage resources.
 
-But before we start to configure and use Object Storage we need to create credentials that include the access key and secret key.
+But before we start to configure and use Object Storage we need to create **credentials** that include the access key and secret key and will enable secure access to your Object Storage resources, allowing you to manage and interact with your data.
 
 ## Object Storage Credentials page
 To get to the *Object Storage Credentials page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the the **S3 Browser* **TAB:**
