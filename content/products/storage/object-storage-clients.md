@@ -197,7 +197,7 @@ You can make your bucket public from both the *Buckets page* and the inside of t
 
 After these steps your bucket will be publicly available and you can obtain a URL that allows direct access to the entire bucket or to individual objects (files or folders) within it. This URL can be shared with others, and they will be able to access the bucket or objects directly through the provided link without requiring any special authentication or permissions.
 
-{{% warning note %}}
+{{% notice warning %}}
 Making a bucket public allows anyone to access its contents without requiring authentication or special permissions. Please be cautious when setting buckets to public, as it may expose sensitive data to the public. Always review and manage access controls carefully to ensure the security of your data.
 {{% /notice %}}
 
@@ -280,25 +280,6 @@ You can delete bucket from both the *Buckets page* and the inside of the selecte
 
 After these steps, your bucket will be deleted.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Use Object Storage with Python API  
 Python support is provided through a fork of the *boto3* library with features to make the most of the Cloud Console Object Storage. 
 To start use the Object Storage with the Python API, do the following:
@@ -317,9 +298,9 @@ To create a connection for interacting with the server, use next block of code:
 ```python
 import boto
 import boto.s3.connection
-s3_access_key = '**your_access_key**'
-s3_secret_key = '**your_secret_key**'
-s3_host = '**upper-austria.ventuscloud.eu**
+s3_access_key = 'your_access_key'
+s3_secret_key = 'your_secret_key'
+s3_host = 'upper-austria.ventuscloud.eu'
 conn = boto.connect_s3(
     aws_access_key_id=s3_access_key,
     aws_secret_access_key=s3_secret_key,
@@ -333,7 +314,7 @@ Remember to replace the *your_access_key* and *your_secret_key* part with your c
 ### Create bucket
 To create a new Bucket, use the next block of code:
 ```python
-bucket = conn.create_bucket('**1-bucket-using-python**')
+bucket = conn.create_bucket('1-bucket-using-python')
 print(f"New bucket created:\n{bucket_name}\t{bucket}")
 ```
 
@@ -407,8 +388,8 @@ print (private_url)
 ```
 
 Please, notice here, when a client application accesses buckets, it always operates with the credentials of a particular user. As every user belongs to a particular project, therefore, for using this links you should *add your project ID before your bucket name*, and the working links in both examples will look like this:    
-**for publicly readable objects** - "https://upper-austria.ventuscloud.eu:8080/**Your_Project_ID:**new-bucket-using-python/hello.txt";   
-**for private objects** - "https://upper-austria.ventuscloud.eu:8080/**Your_Project_ID:**new-bucket-using-python/private_info.txt?Signature=XXX&Expires=1316027075&AWSAccessKeyId=XXX"     
+**for publicly readable objects** - "https://upper-austria.ventuscloud.eu:8080/Your_Project_ID:new-bucket-using-python/hello.txt";   
+**for private objects** - "https://upper-austria.ventuscloud.eu:8080/Your_Project_ID:new-bucket-using-python/private_info.txt?Signature=XXX&Expires=1316027075&AWSAccessKeyId=XXX"     
 
 Find your Project ID you can:
 * on the *Overview page* in the Cloud Console:
@@ -427,7 +408,7 @@ It deletes a file "hello.txt" from the bucket.
 Deleting bucket
 To delete a whole bucket use the next code block:
 ```python
-conn.delete_bucket("**1-bucket-using-python"**)
+conn.delete_bucket("1-bucket-using-python")
 ```
 
 It deletes the whole bucket called "1-bucket-using-python".
