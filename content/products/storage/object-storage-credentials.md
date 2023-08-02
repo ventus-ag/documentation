@@ -1,17 +1,43 @@
 ---
 title: Object Storage Credentials
-weight: 12
+weight: 33
 ---
 ___
-On this page, you can find an explanation of how to create, delete and instructions for other steps to manage an Object Storage Credentials in the Cloud Console.
+On this page, you can find an explanation of what is Object Storage and what is Object Storage Credentials in the Cloud Console, what Object Storage access methods are available, how to create, delete and instructions for other steps to manage an Object Storage Credentials in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
+  - [Introduction](#introduction)
   - [Object Storage Credentials page](#object-storage-credentials-page)
   - [Create Object Storage credentials](#create-object-storage-credentials)
   - [Show secret key](#show-secret-key)
   - [Re-generate secret key](#re-generate-secret-key)
   - [Delete Object Storage Credentials](#delete-object-storage-credentials)
+
+## Introduction
+
+**What is Object Storage?**  
+The Cloud Console Object Storage makes it possible to store data simply and cost-effectively. It provides a fully distributed, API-accessible storage platform that can be integrated directly into applications or used for backup, archiving, and data retention.
+
+It’s built for scale and optimized for durability, availability, and concurrency across the entire data set. 
+
+An Object Storage API differs from a conventional filesystem: instead of directories and files, you manipulate containers where you store objects. A container can hold millions of objects.
+
+There is no notion of hierarchy with containers: you cannot nest a container within another, however, you can emulate a nested folder structure with a naming convention for your objects.
+
+**Object Storage access methods**  
+
+We can access Object Storage using different methods:
+
+- *Integrated S3-Browser*: The Cloud Console provides its own integrated S3-Browser, which offers a user-friendly interface to manage your Object Storage resources. This browser allows you to browse through folders and files, create new folders, upload files, and perform various other management tasks directly within the Cloud Console.
+
+- *APIs:* You can also interact with Object Storage using different APIs (Application Programming Interfaces). APIs enable developers to programmatically access and manipulate Object Storage resources, allowing for more customized and automated workflows.
+
+- *Third-Party Tools:* Additionally, you have the option to use third-party tools like S3 Browser and Cyberduck, which provide alternative interfaces for managing Object Storage. These tools may offer additional features and functionalities not available in the integrated S3-Browser, catering to specific user preferences and requirements.
+
+By offering multiple options to access Object Storage, the Cloud Console allows users to choose the most suitable approach for their storage management needs. Whether through the integrated S3-Browser, APIs, or third-party tools, users can efficiently interact with and manage their Object Storage resources.
+
+But before we start to configure and use Object Storage we need to create credentials that include the access key and secret key.
 
 ## Object Storage Credentials page
 To get to the *Object Storage Credentials page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the the **S3 Browser* **TAB:**
@@ -53,7 +79,7 @@ After these steps, the newly created Object Storage credentials will be added to
 Please be aware that there are current limitations in the Cloud Console. You can create only one set of Object Storage credentials within one project.
 {{% /notice %}}
 
-Next steps, how to use Object Storage credentials to connect to the Cloud Object Storage in different ways you can find in the article - [Object Storage Clients](https://docs.ventuscloud.eu/products/storage/object-storage-clients/).
+Next steps, how to use Object Storage credentials to connect to the Cloud Object Storage in different ways you can find in the next articles - [Integrated S3-Browser](https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/) and [Object Storage Clients](https://docs.ventuscloud.eu/products/storage/object-storage-clients/).
 
 ## Show secret key 
 To show again secret key of the created Object Storage credentials, do the following:
