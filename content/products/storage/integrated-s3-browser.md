@@ -44,7 +44,7 @@ To find instructions of how to create Object Storage Credentials in the Cloud Co
 
 ## S3 Buckets page
 
-To get inside the integrated S3-Browser select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **S3 Browser* **TAB:**
+To get inside the integrated S3-Browser select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **S3 Browser TAB:**
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
 ![](../../../assets/images/store/1.png?width=30pc&classes=border,shadow) 
 
