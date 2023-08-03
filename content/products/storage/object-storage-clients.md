@@ -3,7 +3,7 @@ title: Object Storage Clients
 weight: 35
 ---
 ___
-On this page, you can find an explanation to configure and use Object Storage with python API and with *S3 Browser* third-party tools - a freeware Windows client.
+On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.
 
 # Table of contents
 - [Table of contents](#table-of-contents)

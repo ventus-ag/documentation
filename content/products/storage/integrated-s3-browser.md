@@ -8,19 +8,18 @@ On this page, you can find an explanation of how to use Object Storage with its 
 # Table of contents
 - [Table of contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Use Object Storage with integrated S3-Browser](#use-object-storage-with-integrated-s3-browser)
-    - [S3 Buckets page](#s3-buckets-page)
-    - [Create bucket](#create-bucket)
-    - [Browse folders and files within a bucket.](#browse-folders-and-files-within-a-bucket)
-    - [Create folder](#create-folder)
-    - [Upload file](#upload-file)
-    - [Download file](#download-file)
-    - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
-    - [Make bucket public](#make-bucket-public)
-    - [Get bucket public URL](#get-bucket-public-url)
-    - [Get object public URL](#get-object-public-url)
-    - [Make bucket private](#make-bucket-private)
-    - [Delete bucket](#delete-bucket)
+  - [S3 Buckets page](#s3-buckets-page)
+  - [Create bucket](#create-bucket)
+  - [Browse folders and files within a bucket.](#browse-folders-and-files-within-a-bucket)
+  - [Create folder](#create-folder)
+  - [Upload file](#upload-file)
+  - [Download file](#download-file)
+  - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
+  - [Make bucket public](#make-bucket-public)
+  - [Get bucket public URL](#get-bucket-public-url)
+  - [Get object public URL](#get-object-public-url)
+  - [Make bucket private](#make-bucket-private)
+  - [Delete bucket](#delete-bucket)
 
 ## Introduction
 In the Cloud Console, you have the option to use Object Storage with its integrated S3-Browser, which offers essential Object Storage functionality.  
@@ -43,24 +42,7 @@ But before we start using integrated S3-Browser we need to create *Object Storag
 
 To find instructions of how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
 
-## Use Object Storage with integrated S3-Browser
-In the Cloud Console, you have the ability to use our own integrated S3 browser, which offers essential Object Storage functionality.  
-
-With our S3 browser, you can perform the following actions:
-- Browse already created buckets and the files stored within them, even if they were created using different APIs or third-party tools;  
-- Create new buckets;  
-- Delete buckets;    
-- Set a bucket to private or public access;  
-- Navigate through folders and files inside a bucket;  
-- Create a folder structure inside a bucket;  
-- Upload files to a bucket;  
-- Download separate files from the buckets;  
-- Delete files from a bucket;    
-- Obtain public links for buckets, folders, and individual files.   
-  
-This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console.
-
-### S3 Buckets page
+## S3 Buckets page
 
 To get inside the integrated S3-Browser select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **S3 Browser* **TAB:**
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
@@ -77,7 +59,7 @@ If you haven't created Object Storage Credentials yet, click on the CREATE S3 CR
 
 To find more information about how to manage Object Storage Credentials, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/). 
 
-### Create bucket
+## Create bucket
 To create a new S3 Bucket in the Cloud Console, do the following:
 
 - go to the *S3 Buckets page* and click on the CREATE BUCKET button in the upper left corner;
@@ -88,7 +70,7 @@ To create a new S3 Bucket in the Cloud Console, do the following:
 After these steps the newly created Bucket will be added to the  *S3 Buckets page* with private access, which is set as the default access setting:
 ![](../../../assets/images/store/18.png?width=45pc&classes=border,shadow) 
 
-### Browse folders and files within a bucket.
+## Browse folders and files within a bucket.
 To access and navigate through the folders and files inside a bucket, click on the **Name** of the corresponding bucket on the *S3 Buckets page*:  
 ![](../../../assets/images/store/19.png?width=45pc&classes=border,shadow) 
 
@@ -122,7 +104,7 @@ To navigate to the parent level in the folder structure, click on the **../** ic
 
 ![](../../../assets/images/store/25.png?width=45pc&classes=border,shadow)
 
-### Create folder
+## Create folder
 To create a new Folder inside S3 Bucket in the Cloud Console, do the following:
 
 - access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*
@@ -131,7 +113,7 @@ To create a new Folder inside S3 Bucket in the Cloud Console, do the following:
 
 After these steps the newly created Folder will be added to the Bucket. Inside the folder, you will have access to the same functionality as before, but on a deeper level. This allows you to continue navigating through the nested folder structure, perform actions like creating new folders or uploading files specific to the selected folder, and manage the files and folders within it.
 
-### Upload file
+## Upload file
 {{% notice note %}}
 As of the current limitations, the largest file you can upload via this integrated S3 browser is 5 GB. 
 {{% /notice %}}
@@ -148,7 +130,7 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 If this is your first time attempting to upload a file to the selected bucket, the system may require you to set up CORS (Cross-Origin Resource Sharing) policies. In this case, a dialog window will appear asking you to grant permissions for console access to the specific bucket. Please click on GRANT PERMISSIONS to enable successful file uploading and proceed with the upload process.
 {{% /notice %}}
 
-### Download file
+## Download file
 {{% notice note %}}
 As of the current limitations, you can only download separate files one by one using the integrated S3 browser. There is no direct option to download entire folders or multiple files at once.
 {{% /notice %}}
@@ -165,7 +147,7 @@ To download a File from S3 Bucket to your local environment, do the following:
 
 After these steps, the downloading process of the selected file will start automatically.
 
-### Delete and multi-delete objects
+## Delete and multi-delete objects
 To delete a object URL from S3 Bucket, do the following:
 
 - access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
@@ -188,7 +170,7 @@ Also the integrated S3 browser allows you to perform **multiple deletions** of f
 
 After these steps, the selected objects will be deleted in a few seconds.
 
-### Make bucket public
+## Make bucket public
 You can make your bucket public from both the *Buckets page* and the inside of the selected *Bucket page*.
 
 1. To make your bucket public from the *Buckets page*, follow these steps:  
@@ -215,7 +197,7 @@ After these steps your bucket will be publicly available and you can obtain a UR
 Making a bucket public allows anyone to access its contents without requiring authentication or special permissions. Please be cautious when setting buckets to public, as it may expose sensitive data to the public. Always review and manage access controls carefully to ensure the security of your data.
 {{% /notice %}}
 
-### Get bucket public URL
+## Get bucket public URL
 {{% notice note %}}
 You can obtain the URL for S3 bucket only if the bucket is publicly available. In such cases, you can generate a URL that allows direct access to the entire bucket or to individual objects (files or folders) through the provided link. However, if the bucket is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the bucket.
 {{% /notice %}}
@@ -241,7 +223,7 @@ You can get your bucket public URL from both the *Buckets page* and the inside o
 
 The next opened window will provide your *bucket URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
 
-### Get object public URL
+## Get object public URL
 {{% notice note %}}
 You can obtain the URL for a folder or file in an S3 bucket only if the object is set as publicly available. In such cases, you can generate a URL that allows direct access to the object through the provided link. However, if the object is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the object.
 {{% /notice %}}
@@ -256,7 +238,7 @@ To get a object URL, do the following:
 
 The next opened window will provide your *object URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
 
-### Make bucket private
+## Make bucket private
 You can make your bucket private from both the *Buckets page* and the inside of the selected *Bucket page*.
 
 1. To make your bucket private from the *Buckets page*, follow these steps:
@@ -281,7 +263,7 @@ You can make your bucket private from both the *Buckets page* and the inside of 
 After these steps, your bucket will not be publicly available.  
 The access permissions will not allow the public to access the bucket or its contents through any direct URL. The objects within the bucket will remain private and can only be accessed by users with appropriate authentication and authorization.
 
-### Delete bucket
+## Delete bucket
 {{% notice note %}}
 To avoid any potential data loss during the deletion process, in the Cloud Console, you can only delete a bucket if it is empty.
 {{% /notice %}}
