@@ -17,6 +17,7 @@ On this page, you can find an explanation to configure and use Object Storage wi
     - [Change object ACL](#change-object-acl)
     - [Generate object download URL](#generate-object-download-url)
     - [Delete object](#delete-object)
+    - [Deleting bucket](#deleting-bucket)
   - [Use Object Storage with third-party tools](#use-object-storage-with-third-party-tools)
 
 ## Introduction
@@ -117,16 +118,16 @@ private_key.set_canned_acl('private')
 So, this code makes the object 'hello.txt' to be publicly readable, and the object 'private_info.txt' to be private.
 
 ### Generate object download URL
-**For *publicly readable* objects** we can generate an unsigned download URL.   
-To do this, use the next block code:
+**For *publicly readable* objects** we can generate an unsigned download URL.     
+Use the following block of code to implement this:   
 ```python
 private_key = bucket.get_key('hello.txt')
 hello_url = hello_key.generate_url(0, query_auth=False, force_http=False)
 print (hello_url)
 ```
 
-**For *private* objects** we can generate a signed download URL that will work for the time period (when the time period is up, the URL will stop working).   
-To do this, use the next block code:
+**For *private* objects** we can generate a time-limited, signed download URL, that will be operational for a specific duration, after which it will become invalid.   
+Use the following block of code to implement this:   
 ```python
 private_key = bucket.get_key('private_data.txt')
 private_url = private_key.generate_url(3600, query_auth=True, force_http=False)
@@ -151,7 +152,7 @@ bucket.delete_key('hello.txt')
 
 It deletes a file "hello.txt" from the bucket.
 
-Deleting bucket
+### Deleting bucket
 To delete a whole bucket use the next code block:
 ```python
 conn.delete_bucket("1-bucket-using-python")

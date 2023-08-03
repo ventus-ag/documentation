@@ -16,8 +16,8 @@ On this page, you can find an explanation of how to use Object Storage with its 
   - [Download file](#download-file)
   - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
   - [Make bucket public](#make-bucket-public)
-  - [Get bucket public URL](#get-bucket-public-url)
-  - [Get object public URL](#get-object-public-url)
+  - [Get bucket's public URL](#get-buckets-public-url)
+  - [Get object's public URL](#get-objects-public-url)
   - [Make bucket private](#make-bucket-private)
   - [Delete bucket](#delete-bucket)
 
@@ -197,14 +197,14 @@ After these steps your bucket will be publicly available and you can obtain a UR
 Making a bucket public allows anyone to access its contents without requiring authentication or special permissions. Please be cautious when setting buckets to public, as it may expose sensitive data to the public. Always review and manage access controls carefully to ensure the security of your data.
 {{% /notice %}}
 
-## Get bucket public URL
+## Get bucket's public URL
 {{% notice note %}}
 You can obtain the URL for S3 bucket only if the bucket is publicly available. In such cases, you can generate a URL that allows direct access to the entire bucket or to individual objects (files or folders) through the provided link. However, if the bucket is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the bucket.
 {{% /notice %}}
 
-You can get your bucket public URL from both the *Buckets page* and the inside of the selected *Bucket page*.
+You can get your bucket's public URL from both the *Buckets page* and the inside of the selected *Bucket page*.
 
-1. To get your bucket public URL from the *Buckets page*, follow these steps:
+1. To get your bucket's public URL from the *Buckets page*, follow these steps:
 
 - go to the *Buckets page* in the Cloud Console;
 - find the bucket which public URL you want to get;  
@@ -212,23 +212,23 @@ You can get your bucket public URL from both the *Buckets page* and the inside o
 
 ![](../../../assets/images/store/34.png?width=35pc&classes=border,shadow)
 
-- the next opened window will provide your *bucket URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
+- the next opened window will provide your *bucket's URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
 
-2. To get your bucket public URL from inside the selected *Bucket page*, follow these steps:
+2. To get your bucket's public URL from inside the selected *Bucket page*, follow these steps:
 
 - access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*.
-- inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to see bucket URL (this icon will be available only if your bucket is public):  
+- inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to see bucket's URL (this icon will be available only if your bucket is public):  
 
 ![](../../../assets/images/store/35.png?width=35pc&classes=border,shadow)
 
-The next opened window will provide your *bucket URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
+The next opened window will provide your *bucket's URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
 
-## Get object public URL
+## Get object's public URL
 {{% notice note %}}
 You can obtain the URL for a folder or file in an S3 bucket only if the object is set as publicly available. In such cases, you can generate a URL that allows direct access to the object through the provided link. However, if the object is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the object.
 {{% /notice %}}
 
-To get a object URL, do the following:
+To get an object's public URL, do the following:
 
 - access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;  
 - identify the file or folder, which URL you want to get on the *Bucket page*;
@@ -236,7 +236,7 @@ To get a object URL, do the following:
 
 ![](../../../assets/images/store/29.png?width=45pc&classes=border,shadow)
 
-The next opened window will provide your *object URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
+The next opened window will provide your *object's URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
 
 ## Make bucket private
 You can make your bucket private from both the *Buckets page* and the inside of the selected *Bucket page*.
