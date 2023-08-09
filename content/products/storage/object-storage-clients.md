@@ -1,35 +1,30 @@
 ---
-title: Object Storage
-weight: 10
+title: Object Storage Clients
+weight: 35
 ---
 ___
-On this page, you can find an explanation of what is Object Storage in the Cloud Console, how to create, delete buckets and instructions for other steps to manage an Object Storage in the Cloud Console.
+On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Use Object Storage with Python API](#use-object-storage-with-python-api)
-    - [Creating connection](#creating-connection)
-    - [Creating bucket](#creating-bucket)
-    - [Listing buckets](#listing-buckets)
-    - [Creating object](#creating-object)
-    - [Listing bucket content](#listing-bucket-content)
-    - [Changing object ACL](#changing-object-acl)
-    - [Generating object download URL](#generating-object-download-url)
-    - [Deleting object](#deleting-object)
-  - [Use Object Storage with S3 Browser](#use-object-storage-with-s3-browser)
+    - [Create connection](#create-connection)
+    - [Create bucket](#create-bucket)
+    - [List buckets](#list-buckets)
+    - [Create object](#create-object)
+    - [List bucket content](#list-bucket-content)
+    - [Change object ACL](#change-object-acl)
+    - [Generate object download URL](#generate-object-download-url)
+    - [Delete object](#delete-object)
+    - [Deleting bucket](#deleting-bucket)
+  - [Use Object Storage with third-party tools](#use-object-storage-with-third-party-tools)
 
 ## Introduction
 
-The Cloud Console Object Storage makes it possible to store data simply and cost-effectively. It provides a fully distributed, API-accessible storage platform that can be integrated directly into applications or used for backup, archiving, and data retention.
+In the Cloud Console, you have the option to use Object Storage as with its integrated S3-Browser, or you can choose to utilize different APIs or third-party tools such as S3 Browser (a freeware Windows client available at https://s3browser.com/) or Cyberduck (a libre server and cloud storage browser available for both Mac and Windows operating systems, accessible at https://cyberduck.io/).
 
-It’s built for scale and optimized for durability, availability, and concurrency across the entire data set. 
-
-An Object Storage API differs from a conventional filesystem: instead of directories and files, you manipulate containers where you store objects. A container can hold millions of objects.
-
-There is no notion of hierarchy with containers: you cannot nest a container within another, however, you can emulate a nested folder structure with a naming convention for your objects.
-
-Before we start to configure and use Object Storage we need to create credentials that include the access key and secret key.   
+Before you can configure and use Object Storage, you need to create credentials that consist of an access key and secret key and will enable secure access to your Object Storage resources, allowing you to manage and interact with your data.  
 To find instructions of how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
 
 ## Use Object Storage with Python API  
@@ -45,14 +40,14 @@ As well as Python API you can select other programming languages for using the O
 
 Now let's take a closer look at each block of code to deal with possible interactions with Object Storage via the Python API:
 
-### Creating connection
+### Create connection
 To create a connection for interacting with the server, use next block of code:  
 ```python
 import boto
 import boto.s3.connection
-s3_access_key = '**your_access_key**'
-s3_secret_key = '**your_secret_key**'
-s3_host = '**upper-austria.ventuscloud.eu**
+s3_access_key = 'your_access_key'
+s3_secret_key = 'your_secret_key'
+s3_host = 'upper-austria.ventuscloud.eu'
 conn = boto.connect_s3(
     aws_access_key_id=s3_access_key,
     aws_secret_access_key=s3_secret_key,
@@ -63,16 +58,16 @@ conn = boto.connect_s3(
 ```
 Remember to replace the *your_access_key* and *your_secret_key* part with your credential information, and, also, check if the s3_host is correct - if it matches the correct Region.
 
-### Creating bucket
+### Create bucket
 To create a new Bucket, use the next block of code:
 ```python
-bucket = conn.create_bucket('**1-bucket-using-python**')
+bucket = conn.create_bucket('1-bucket-using-python')
 print(f"New bucket created:\n{bucket_name}\t{bucket}")
 ```
 
 The *1-bucket-using-python* is the name of the new bucket, please enter the desired name for your bucket here.
 
-### Listing buckets
+### List buckets
 To get a list of Buckets, that you own, use the next block of code:
 ```python
 for bucket in conn.get_all_buckets():
@@ -83,7 +78,7 @@ for bucket in conn.get_all_buckets():
 ```
 It, also, prints out the bucket name and creation date of each bucket.
 
-### Creating object
+### Create object
 To create a new object in the bucket, use the next block of code:
 ```python
 key = bucket.new_key('hello.txt')
@@ -95,7 +90,7 @@ key.set_contents_from_filename('/home/usr/private_data.txt')
 
 So, it creates a file 'hello.txt' with the string "Hello World!" and a file 'private_info.txt' with the data from the local file.
 
-### Listing bucket content
+### List bucket content
 To list a bucket's content, use the next block of code:
 ```python
 for key in bucket.list():
@@ -108,7 +103,7 @@ for key in bucket.list():
 
 It, also, prints out the object name, size and creation date of each object.
 
-### Changing object ACL
+### Change object ACL
 >ACL = access control lists
 
 To make objects to be publicly readable or to be private, use the next block of code:
@@ -122,17 +117,17 @@ private_key.set_canned_acl('private')
 
 So, this code makes the object 'hello.txt' to be publicly readable, and the object 'private_info.txt' to be private.
 
-### Generating object download URL
-**For *publicly readable* objects** we can generate an unsigned download URL.   
-To do this, use the next block code:
+### Generate object download URL
+**For *publicly readable* objects** we can generate an unsigned download URL.     
+Use the following block of code to implement this:   
 ```python
 private_key = bucket.get_key('hello.txt')
 hello_url = hello_key.generate_url(0, query_auth=False, force_http=False)
 print (hello_url)
 ```
 
-**For *private* objects** we can generate a signed download URL that will work for the time period (when the time period is up, the URL will stop working).   
-To do this, use the next block code:
+**For *private* objects** we can generate a time-limited, signed download URL, that will be operational for a specific duration, after which it will become invalid.   
+Use the following block of code to implement this:   
 ```python
 private_key = bucket.get_key('private_data.txt')
 private_url = private_key.generate_url(3600, query_auth=True, force_http=False)
@@ -140,8 +135,8 @@ print (private_url)
 ```
 
 Please, notice here, when a client application accesses buckets, it always operates with the credentials of a particular user. As every user belongs to a particular project, therefore, for using this links you should *add your project ID before your bucket name*, and the working links in both examples will look like this:    
-**for publicly readable objects** - "https://upper-austria.ventuscloud.eu:8080/**Your_Project_ID:**new-bucket-using-python/hello.txt";   
-**for private objects** - "https://upper-austria.ventuscloud.eu:8080/**Your_Project_ID:**new-bucket-using-python/private_info.txt?Signature=XXX&Expires=1316027075&AWSAccessKeyId=XXX"     
+**for publicly readable objects** - "https://upper-austria.ventuscloud.eu:8080/Your_Project_ID:new-bucket-using-python/hello.txt";   
+**for private objects** - "https://upper-austria.ventuscloud.eu:8080/Your_Project_ID:new-bucket-using-python/private_info.txt?Signature=XXX&Expires=1316027075&AWSAccessKeyId=XXX"     
 
 Find your Project ID you can:
 * on the *Overview page* in the Cloud Console:
@@ -149,7 +144,7 @@ Find your Project ID you can:
 
 * in the link, when you use Cloud Console;
 
-### Deleting object
+### Delete object
 To delete an object from the bucket, use the next code block:
 ```python
 bucket.delete_key('hello.txt')
@@ -157,16 +152,26 @@ bucket.delete_key('hello.txt')
 
 It deletes a file "hello.txt" from the bucket.
 
-Deleting bucket
+### Deleting bucket
 To delete a whole bucket use the next code block:
 ```python
-conn.delete_bucket("**1-bucket-using-python"**)
+conn.delete_bucket("1-bucket-using-python")
 ```
 
 It deletes the whole bucket called "1-bucket-using-python".
 
-## Use Object Storage with S3 Browser
-The **S3 Browser** is another way how we can use the Cloud Console Object Storage and manage data stored in it.  
+## Use Object Storage with third-party tools
+
+Another way to utilize the Cloud Console Object Storage and manage data stored in it is by using third-party tools.  
+
+Some of these tools include:
+
+- **S3 Browser** - a freeware Windows client that provides a user-friendly interface for interacting with the Cloud Console Object Storage. You can find more information about it at <https://s3browser.com/>.
+
+- **Cyberduck** - a libre server and cloud storage browser available for both Mac and Windows operating systems. It offers seamless integration with the Cloud Console Object Storage and can be accessed at <https://cyberduck.io/>.
+
+In this section, we will explore how to use the **Windows client S3 Browser** to interact with the Cloud Console Object Storage and manage your data effectively.
+
 To download and install it on your computer, go to the next page <https://s3browser.com/>.  
 
 After installation, you can open on your computer **S3 Browser** and see the next interface of this program:
