@@ -1,6 +1,6 @@
 ---
 title: Databases
-weight: 40
+weight: 10
 ---
 ___
 On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.
@@ -10,10 +10,6 @@ On this page, you can find an explanation of how to create, edit, delete Databas
   - [Databases page](#databases-page)
   - [Create Database](#create-database)
   - [Database details page](#database-details-page)
-  - [Database Replicas](#database-replicas)
-    - [Make Database Replica](#make-database-replica)
-    - [Delete Database Replica](#delete-database-replica)
-  - [Database Backups](#database-backups)
     - [Link Database to the S3 Storage](#link-database-to-the-s3-storage)
     - [Configure the Scheduler for Database Backups](#configure-the-scheduler-for-database-backups)
     - [Create Immediate Database Backup](#create-immediate-database-backup)
@@ -93,48 +89,6 @@ This action will redirect you to the *Database details page*, where you can fi
 ![](../../../assets/images/databases/26.png?width=35pc&classes=border,shadow) 
 
 Details about each tab and its features will be provided in the next chapters of this article.
-
-## Database Replicas
-**Database Replicas** are a feature provided to ensure the security of your databases. In the Cloud Console, you can create up to 5 replicas of your database in different projects, across one or multiple regions.
-
-To find information about all created replicas of corresponding database, and to manage them - open the *REPLICAS TAB* on the *Database details page*, for this do the following:
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database:    
-![](../../../assets/images/databases/6.png?classes=border,shadow)
-- select the *REPLICAS TAB*:  
-![](../../../assets/images/databases/9.png?width=15pc&classes=border,shadow) 
-
-### Make Database Replica
-To make the Replica of the selected Database do the following:  
-- open the selected *Database details page* (click on the **Name** of the corresponding Database);  
-- select the *REPLICAS TAB* and click the *CREATE REPLICA* icon:   
-![](../../../assets/images/databases/14.png?width=40pc&classes=border,shadow) 
-
-- select the project where you want to create the replica on the next opened *Create Replica window* and click on the CREATE icon:  
-![](../../../assets/images/databases/15.png?width=30pc&classes=border,shadow) 
-
-After these steps, the newly created Replica of the current database will be added to the *REPLICAS TAB* with a PROVISIONING status (will changed to ACTIVE shortly) and in the Database **details area** you'll find updated information: the database mode will have switched from *standalone* to *primary* (indicating that this database is now the primary one within the current project), and amount of created Replicas:
-![](../../../assets/images/databases/16.png?width=40pc&classes=border,shadow)
-
-When you navigate to the *Databases page* of the project you designated for the replica, you'll find the identical database, however, it will be in *replica* mode:
-![](../../../assets/images/databases/17.png?classes=border,shadow)
-
-### Delete Database Replica
-To delete the Replica of the selected Database do the following:  
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database;
-- identify this unnecessary Database Replica on the *REPLICAS TAB*;
-- confirm the Database Replica deletion on the next opened *Confirmation window*.   
-![](../../../assets/images/databases/10.png?width=40pc&classes=border,shadow) 
-
-After these steps, the selected Database Replica will be deleted and disappeared from the *REPLICAS TAB* in the selected *Database details page* and from the *Databases page* of the project you designated for the replica.
-
-Also, you can delete the Database Replica from the *Databases page* of the project you designated for the replica, for this do the following:
-- identify this unnecessary Database in *replica* mode on the *Databases page* of the appropriate project;
-- click on the **Actions** icon and select the **Delete** in the list of available options;
-- confirm the Database deletion on the next opened *Confirmation window* and the selected Database Replica will be deleted shortly.
-
-![](../../../assets/images/databases/18.png?classes=border,shadow)
-
-## Database Backups
 **Database Backups** offer an additional layer of security for your databases, similar to Database Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety. 
 
 Within the Cloud Console, you can initiate a database backup at any given time, or set up a scheduler to automate your backups.
