@@ -24,10 +24,12 @@ Before you can begin creating database backups, it's essential to link the Datab
 {{% /notice %}}
 
 To find information about all created backups of corresponding database, to manage them or to use one of it to restore database - navigate the *BACKUPS TAB* on the *Database details page*, for this do the following:
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*:    
+- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*:   
+   
 ![](../../../assets/images/databases/6.png?classes=border,shadow)
 
-- *Database details page* select the *BACKUPS TAB*:  
+- on the *Database details page* select the *BACKUPS TAB*:    
+
 ![](../../../assets/images/databases/22.png?width=20pc&classes=border,shadow) 
 
 To find information about all established backup schedulers for a specific database and to manage them, navigate to the *SCHEDULER TAB* on the *Database details page*:
@@ -39,7 +41,7 @@ To link the Database to the S3 Storage do the following:
   to find information how to create Object Storage Credentials in the Cloud Console use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/).
   
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;  
-- click on the appropriative **quick actions** icon there:  
+- click on the appropriative **quick actions** icon there:    
 ![](../../../assets/images/databases/19.png?width=40pc&classes=border,shadow) 
 
 - fill in the form on the next opened *S3 storage linking* and click on LINK icon;   
@@ -49,7 +51,7 @@ To link the Database to the S3 Storage do the following:
 ![](../../../assets/images/databases/20.png?width=30pc&classes=border,shadow) 
 
 After these steps, the current database will establish a connection with the specified S3 storage and within the *database's details area*, you'll see relevant updates: the S3 mode will change from *Unlinked* to *Linked*, and will be provided details regarding the Endpoint and KEY:
-![](../../../assets/images/databases/21.png?width=45pc&classes=border,shadow) 
+![](../../../assets/images/databases/21.png?width=50pc&classes=border,shadow) 
 
 {{% notice note %}}
 With the S3 linked, you have the capability to create and manage scheduling as well as backups for your database.
@@ -59,7 +61,7 @@ With the S3 linked, you have the capability to create and manage scheduling as w
 To configure the scheduler for database backups do the following:    
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
 - ensure that the selected database is already linked to the S3 storage:   
-![](../../../assets/images/databases/21.png?width=45pc&classes=border,shadow)
+![](../../../assets/images/databases/21.png?width=50pc&classes=border,shadow)
 
 - navigate to the *SCHEDULER TAB* and click CONFIGURE icon:  
 ![](../../../assets/images/databases/24.png?width=35pc&classes=border,shadow)
@@ -72,8 +74,8 @@ After these steps, the scheduler you've set up will be engaged for automating da
 ## Create Immediate Database Backup
 To create immediate on-demand database backup do the following:    
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
-- ensure that the selected database is already linked to the S3 storage:  
-![](../../../assets/images/databases/21.png?width=45pc&classes=border,shadow)
+- ensure that the selected database is already linked to the S3 storage:   
+![](../../../assets/images/databases/21.png?width=50pc&classes=border,shadow)
 
 - navigate to the *BACKUPS TAB* and click CREATE BACKUP icon:  
 ![](../../../assets/images/databases/28.png?width=40pc&classes=border,shadow)
