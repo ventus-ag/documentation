@@ -14,13 +14,13 @@ On this page, you can find an explanation of how to create, edit, delete Databas
   - [Reset Database Password](#reset-database-password)
   - [Delete Database](#delete-database)
 
-## Databases page
-To get to the *Databases page*, select **Databases** from the VIRTUAL DATACENTER block in the *side-bar menu*:
-![](../../../assets/images/databases/1.png?width=15pc&classes=border,shadow) 
-
 {{% notice note %}}
 Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you're willing to accept the associated risks of using a beta service, you're welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.   
 {{% /notice %}}
+
+## Databases page
+To get to the *Databases page*, select **Databases** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+![](../../../assets/images/databases/1.png?width=15pc&classes=border,shadow) 
 
 On this page you can find all created Databases with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Database:
 ![](../../../assets/images/databases/2.png?classes=border,shadow)
@@ -61,7 +61,7 @@ To open the *Database details page*, click on the **Name** of the correspon
 
 This action will redirect you to the *Database details page*, where you can find:
 - Database **details area** with actual information about it:  
-![](../../../assets/images/databases/7.png?width=40pc&classes=border,shadow)
+![](../../../assets/images/databases/7.png?width=35pc&classes=border,shadow)
 
 - panel with available **quick actions**:   
 ![](../../../assets/images/databases/8.png?width=15pc&classes=border,shadow)
@@ -74,7 +74,7 @@ This action will redirect you to the *Database details page*, where you can fi
     - *Reset Password* - this option allows to change the database password; this option is only accessible for databases in a *standalone* or *primary* modes and not for *replicas*. 
    
 - transition to the REPLICAS, SCHEDULER and BACKUPS TABs of this database:  
-![](../../../assets/images/databases/9.png?width=25pc&classes=border,shadow) 
+![](../../../assets/images/databases/9.png?width=20pc&classes=border,shadow) 
 
 **REPLICAS TAB** - provides information about all created replicas of corresponding database in other Projects, and allows to manage this services:   
 ![](../../../assets/images/databases/10.png?width=40pc&classes=border,shadow)  
@@ -95,6 +95,7 @@ To edit the Database do the following:
 ![](../../../assets/images/databases/5.png?width=30pc&classes=border,shadow) 
 
 After these steps, the selected Database will be updated in a few minutes. 
+
 Also, you can edit the Database from the current *Database details page*, by clicking on the appropriative **quick actions** icon there: 
 ![](../../../assets/images/databases/11.png?width=15pc&classes=border,shadow)
 

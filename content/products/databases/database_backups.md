@@ -27,11 +27,11 @@ To find information about all created backups of corresponding database, to mana
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*:    
 ![](../../../assets/images/databases/6.png?classes=border,shadow)
 
-- select the *BACKUPS TAB*:  
-![](../../../assets/images/databases/22.png?width=25pc&classes=border,shadow) 
+- *Database details page* select the *BACKUPS TAB*:  
+![](../../../assets/images/databases/22.png?width=20pc&classes=border,shadow) 
 
 To find information about all established backup schedulers for a specific database and to manage them, navigate to the *SCHEDULER TAB* on the *Database details page*:
-![](../../../assets/images/databases/23.png?width=25pc&classes=border,shadow) 
+![](../../../assets/images/databases/23.png?width=20pc&classes=border,shadow) 
 
 ## Link Database to the S3 Storage
 To link the Database to the S3 Storage do the following:  
@@ -58,8 +58,8 @@ With the S3 linked, you have the capability to create and manage scheduling as w
 ## Configure the Scheduler for Database Backups
 To configure the scheduler for database backups do the following:    
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
-- ensure that the selected database is already linked to the S3 storage:  
-![](../../../assets/images/databases/21.png?width=40pc&classes=border,shadow)
+- ensure that the selected database is already linked to the S3 storage:   
+![](../../../assets/images/databases/21.png?width=45pc&classes=border,shadow)
 
 - navigate to the *SCHEDULER TAB* and click CONFIGURE icon:  
 ![](../../../assets/images/databases/24.png?width=35pc&classes=border,shadow)
@@ -73,7 +73,7 @@ After these steps, the scheduler you've set up will be engaged for automating da
 To create immediate on-demand database backup do the following:    
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
 - ensure that the selected database is already linked to the S3 storage:  
-![](../../../assets/images/databases/21.png?width=40pc&classes=border,shadow)
+![](../../../assets/images/databases/21.png?width=45pc&classes=border,shadow)
 
 - navigate to the *BACKUPS TAB* and click CREATE BACKUP icon:  
 ![](../../../assets/images/databases/28.png?width=40pc&classes=border,shadow)
@@ -84,8 +84,8 @@ After these steps, the newly created Backup of the current database will be adde
 
 ## Restore Database from Backup
 To restore database form the backup do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;  
-- navigate to the *BACKUPS TAB* and select the backup, that you want to use to restore database;   
+- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
+- navigate to the *BACKUPS TAB* and select the backup, that you want to use to restore database;
 - click on the **Actions** icon and select the **Restore** in the list of available options;  
 ![](../../../assets/images/databases/26.png?width=40pc&classes=border,shadow)
 

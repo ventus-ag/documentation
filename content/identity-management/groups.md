@@ -18,14 +18,14 @@ On this page, you can find an explanation of how to create and manage a new Grou
 ## Groups page
 
 {{% notice note %}}
-Using Groups in the Cloud Console you can add additional Users to your Project. 
+In the Cloud Console, using Groups lets you add users to your project within your organization. As 'members' of your organization they can access specified project resources but can't add or remove users, view admin or billing details, create or edit projects within that organization.
 {{% /notice %}}  
 
 To get to the *Group page*, select the **Groups** from the *side-bar menu*:
 ![](../../assets/images/groups/1.png?width=15pc&classes=border,shadow) 
 
 On this page you can find all created Groups, related to the selected Organization with the *Create button, Search bar*, and *Actions icon*, which opens a list of available management actions for the selected Group:
-![](../../assets/images/groups/0.png?classes=border,shadow)  
+![](../../assets/images/groups/0.png?width=50pc&classes=border,shadow)  
 
 **Actions** icon opens the next list of available management actions:
 - *Edit* - this option is using to change the Group name;
@@ -45,10 +45,10 @@ As the next step, is recommended to configure the created Group.
 ## Configure Group
 To set up the Group membership and permissions you can from the *Group details page.*  
 To get to the *Group details page* click on the **Name** of the corresponding Group:
-![](../../assets/images/groups/3.png?classes=border,shadow) 
+![](../../assets/images/groups/3.png?width=50pc&classes=border,shadow) 
 
 On the *Group details page* you can see two blocks: the first top block is for the Users, and the second one is for the Projects, that you want to share with Users from the top block:
-![](../../assets/images/groups/4.png?classes=border,shadow) 
+![](../../assets/images/groups/4.png?width=50pc&classes=border,shadow) 
 
 So, from this page you can:
 - **review** which Users have access to which Projects;
@@ -85,7 +85,11 @@ When the invited User accepts your invitation, he will get access to the Project
 - *Remove* - this option is using to delete the User from the Group.
 
 After these steps, invited User becomes a Member of the current Organization:
-![](../../assets/images/groups/11.png?classes=border,shadow) 
+![](../../assets/images/groups/11.png?width=50pc&classes=border,shadow) 
+
+{{% notice note %}}
+Member- this role is assigned to a User who is granted access to the Organization's Project and, accordingly, to all resources within this Project. Member can't add/remove other Users in the Project, can't see information about Administrators or Billing of the Organization, can't add new Projects, edit or delete current one. 
+{{% /notice %}}  
 
 ### Manage Projects in Group
 To add the Project to the selected Group, do the following:
