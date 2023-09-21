@@ -61,7 +61,7 @@ To open the *Database details page*, click on the **Name** of the correspon
 
 This action will redirect you to the *Database details page*, where you can find:
 - Database **details area** with actual information about it:  
-![](../../../assets/images/databases/7.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/databases/7.png?width=30pc&classes=border,shadow)
 
 - panel with available **quick actions**:   
 ![](../../../assets/images/databases/8.png?width=15pc&classes=border,shadow)
