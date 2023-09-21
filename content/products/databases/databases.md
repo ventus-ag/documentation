@@ -10,10 +10,6 @@ On this page, you can find an explanation of how to create, edit, delete Databas
   - [Databases page](#databases-page)
   - [Create Database](#create-database)
   - [Database details page](#database-details-page)
-    - [Link Database to the S3 Storage](#link-database-to-the-s3-storage)
-    - [Configure the Scheduler for Database Backups](#configure-the-scheduler-for-database-backups)
-    - [Create Immediate Database Backup](#create-immediate-database-backup)
-    - [Restore Database from Backup](#restore-database-from-backup)
   - [Edit Database](#edit-database)
   - [Reset Database Password](#reset-database-password)
   - [Delete Database](#delete-database)
@@ -22,6 +18,9 @@ On this page, you can find an explanation of how to create, edit, delete Databas
 To get to the *Databases page*, select **Databases** from the VIRTUAL DATACENTER block in the *side-bar menu*:
 ![](../../../assets/images/databases/1.png?width=15pc&classes=border,shadow) 
 
+{{% notice note %}}
+Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you're willing to accept the associated risks of using a beta service, you're welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.   
+{{% /notice %}}
 
 On this page you can find all created Databases with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Database:
 ![](../../../assets/images/databases/2.png?classes=border,shadow)
@@ -51,7 +50,7 @@ To create new Database do the following:
   - *IP ACL* - use this option, if you want to open current Database for specified  IP Addresses range;
     or you can provision Database in private network;
 
-After these steps, the newly created Database will be added to the *Databases page* with a PROVISIONING status and the next opened window will provide your *database password*. Please save the password for further use.  
+After these steps, the newly created Database will be added to the *Databases page* with a PROVISIONING status. It will initially be in Standalone Mode as no replicas are associated with it. The subsequent window will reveal your database password. Make sure to save this password for future use.
 
 The database will be fully set up in a few minutes once the status updates to ACTIVE.
 ![](../../../assets/images/databases/4.png?classes=border,shadow)
@@ -62,7 +61,7 @@ To open the *Database details page*, click on the **Name** of the correspon
 
 This action will redirect you to the *Database details page*, where you can find:
 - Database **details area** with actual information about it:  
-![](../../../assets/images/databases/7.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/databases/7.png?width=40pc&classes=border,shadow)
 
 - panel with available **quick actions**:   
 ![](../../../assets/images/databases/8.png?width=15pc&classes=border,shadow)
@@ -74,98 +73,19 @@ This action will redirect you to the *Database details page*, where you can fi
   - **Additional Actions:**
     - *Reset Password* - this option allows to change the database password; this option is only accessible for databases in a *standalone* or *primary* modes and not for *replicas*. 
    
-- transition to the REPLICAS, SCHEDULER and BACKUPS pages related to this database:  
-![](../../../assets/images/databases/9.png?width=15pc&classes=border,shadow) 
+- transition to the REPLICAS, SCHEDULER and BACKUPS TABs of this database:  
+![](../../../assets/images/databases/9.png?width=25pc&classes=border,shadow) 
 
 **REPLICAS TAB** - provides information about all created replicas of corresponding database in other Projects, and allows to manage this services:   
 ![](../../../assets/images/databases/10.png?width=40pc&classes=border,shadow)  
 
-
-
 **SCHEDULER TAB** - provides information about all established backup schedulers for a specific database and allows to manage them:
-![](../../../assets/images/databases/27.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/databases/27.png?width=40pc&classes=border,shadow) 
 
 **BACKUPS TAB** - provides information about all created backups of corresponding database, and allows to manage them or to use one of them for database restore:
-![](../../../assets/images/databases/26.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/databases/26.png?width=40pc&classes=border,shadow) 
 
-Details about each tab and its features will be provided in the next chapters of this article.
-**Database Backups** offer an additional layer of security for your databases, similar to Database Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety. 
-
-Within the Cloud Console, you can initiate a database backup at any given time, or set up a scheduler to automate your backups.
-However, for both scenarios, the initial step involves linking the Database to the S3 Storage.
-
-To find information about all created backups of corresponding database, to manage them or to use one of it for database restore, open the *BACKUPS TAB* on the *Database details page*, for this do the following:
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database:    
-![](../../../assets/images/databases/6.png?classes=border,shadow)
-
-- select the *BACKUPS TAB*:  
-![](../../../assets/images/databases/22.png?width=15pc&classes=border,shadow) 
-
-To find information about all established backup schedulers for a specific database and to manage them, navigate to the *SCHEDULER TAB* on the *Database details page*:
-![](../../../assets/images/databases/23.png?width=15pc&classes=border,shadow) 
-
-### Link Database to the S3 Storage
-To link the Database to the S3 Storage do the following:  
-- ensure that you have already created Object Storage credentials;
-  to find information how to create Object Storage Credentials in the Cloud Console use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/).
-  
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database;
-
-- click on the appropriative **quick actions** icon there:  
-![](../../../assets/images/databases/19.png?width=35pc&classes=border,shadow) 
-
-- fill in the form on the next opened *S3 storage linking* and click on LINK icon;
-  all necessary information you can take form the *Object Storage Credentials page*;  
-  how to get there, please use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/);  
-  
-![](../../../assets/images/databases/20.png?width=30pc&classes=border,shadow) 
-
-After these steps, the current database will establish a connection with the specified S3 storage and within the *database's details area*, you'll see relevant updates: the S3 mode will change from *Unlinked* to *Linked*, and details regarding the Endpoint and KEY for connection will be provided:
-![](../../../assets/images/databases/21.png?width=40pc&classes=border,shadow) 
-
-{{% notice note %}}
-With the S3 linked, you have the capability to create and manage scheduling as well as backups for your database.
-{{% /notice %}}
-
-### Configure the Scheduler for Database Backups
-To configure the scheduler for database backups do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database;
-- ensure that the selected database is already linked to the S3 storage:  
-![](../../../assets/images/databases/21.png?width=40pc&classes=border,shadow)
-
-- navigate to the *SCHEDULER TAB* and click CONFIGURE icon:  
-![](../../../assets/images/databases/24.png?width=30pc&classes=border,shadow)
-
-- fill in the form on the next opened *Scheduler configuration* and click on APPLY icon: 
-![](../../../assets/images/databases/25.png?width=30pc&classes=border,shadow) 
-
-After these steps, the scheduler you've set up will be engaged for automating database backups. All the backups created through this scheduler can be found on the *BACKUPS TAB*.
-
-### Create Immediate Database Backup
-To create immediate on-demand database backup do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database;
-- ensure that the selected database is already linked to the S3 storage:  
-![](../../../assets/images/databases/21.png?width=40pc&classes=border,shadow)
-
-- navigate to the *BACKUPS TAB* and click CREATE BACKUP icon:  
-![](../../../assets/images/databases/28.png?width=35pc&classes=border,shadow)
-
-- confirm your action on the next opened *Confirmation window*.
-
-After these steps, the newly created Backup of the current database will be added to the *BACKUPS TAB* and can be used to restore the database.
-
-### Restore Database from Backup
-To restore database form the backup do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database;
-
-- navigate to the *BACKUPS TAB* and select the backup, that you want to use to restore database;
-- click on the **Actions** icon and select the **Restore** in the list of available options;  
-![](../../../assets/images/databases/26.png?width=30pc&classes=border,shadow)
-
-- confirm your action on the next opened *Confirmation window*.
-
-After these steps, the database restoring will be started.
-
+Details about each tab and its features will be provided in the next articles of this block.
 ## Edit Database
 To edit the Database do the following:  
 - identify Database, that you want to edit, on the *Databases page*;  

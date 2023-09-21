@@ -22,15 +22,15 @@ To find information about all created replicas of corresponding database, and to
 
 ## Make Database's Replica
 To make the Replica of the selected Database do the following:  
-- open the selected *Database details page* (click on the **Name** of the corresponding Database);  
+- open the selected *Database details page* (click on the **Name** of the corresponding Database on the *Databases page*);  
 - select the *REPLICAS TAB* and click the *CREATE REPLICA* icon:   
 ![](../../../assets/images/databases/14.png?width=40pc&classes=border,shadow) 
 
 - select the project where you want to create the replica on the next opened *Create Replica window* and click on the CREATE icon:  
-![](../../../assets/images/databases/15.png?width=30pc&classes=border,shadow) 
+![](../../../assets/images/databases/15.png?width=35pc&classes=border,shadow) 
 
 After these steps, the newly created Replica of the current database will be added to the *REPLICAS TAB* with a PROVISIONING status (will changed to ACTIVE shortly) and in the Database **details area** you'll find updated information: the database mode will have switched from *standalone* to *primary* (indicating that this database is now the primary one within the current project), and amount of created Replicas:
-![](../../../assets/images/databases/16.png?width=40pc&classes=border,shadow)
+![](../../../assets/images/databases/16.png?width=45pc&classes=border,shadow)
 
 When you navigate to the *Databases page* of the project you designated for the replica, you'll find the identical database, however, it will be in *replica* mode:
 ![](../../../assets/images/databases/17.png?classes=border,shadow)
