@@ -120,7 +120,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
   - *Start* - this option is used to start the VM if it was stopped; 
   - *Reboot* - this option is used to reboot power cycles the VM;
   - *Stop* - this option is used to stop the VM;
-  - *Edit* - this option is used to to change VM's name;
+  - *Edit* - this option is used to change VM's name;
   - *Remote console* - this option is used to use remote console for VM;
   - **Additional Actions:**
     - *Resize* - this option is used to change the VM flavor;
@@ -143,7 +143,7 @@ To find additional information about volumes and how to manage them through this
 **SNAPSHOTS TAB** - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
 ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
-To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://dev-docs.ventuscloud.eu/products/storage/manage-snapshots/).
+To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
   
 **LOG TAB** - opens the *Log page* where you can find VM's logs.
 ![](../../../assets/images/vms/17.2.png?classes=border,shadow)

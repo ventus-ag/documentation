@@ -20,7 +20,7 @@ On this page, you can find an explanation of how to create a new Organization an
 In the Cloud Console Organizations User can have next Roles:  
 - **Owner** - this role is assigned to a User, who created this Organization (this User will also be considered the *Administrator* of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;  
 - **Administrator** - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can't edit or delete Organization;  
-- **Member** - this role is assigned to a User who is granted access to the Organization's Project and, accordingly, to all resources within this Project. Member can't add/remove other Users in the Project, can't see information about Groups, Administrators or Billing of the Organization, can't add new Projects or edit current.  
+- **Member** - this role is assigned to a User who is granted access to the Organization's Project and, accordingly, to all resources within this Project. Member can't add/remove other Users in the Project, can't see information about Administrators or Billing of the Organization, can't add new Projects, edit or delete current one.  
 
 As a *Owner* or *Administrator* you can add additional Admins to the Organization, which will also have access to all resources of the Organization.  
 Detailed instructions, how to add new Administrators to the Organization you can find in article - [Administrators](https://docs.ventuscloud.eu/identity-management/administrators/).
