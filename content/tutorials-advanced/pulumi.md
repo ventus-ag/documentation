@@ -32,7 +32,8 @@ pulumi config set --secret passWord $OS_PASSWORD
 pulumi config set tenantId $OS_PROJECT_DOMAIN_ID
 pulumi config set domainName $OS_USER_DOMAIN_NAME
 ```
-- **Create project and run Pulumi stack**
+
+Create project and run Pulumi stack:
 
 ```bash
 mkdir ventus && cd ventus
@@ -42,7 +43,7 @@ pulumi new ventus-dev
 "If you're using pulumi new or any other pulumi command for the first time, you might need to log in to Pulumi Cloud. Pulumi CLI and Pulumi Cloud work together to provide a reliable experience. It's free for personal use, offers features for teams, and there are also self-managed options available. Pressing Enter at the prompt will open a browser for you to sign in or sign up."
 {{% /notice %}}
 
-Place the code example within the "ventus" directory and run 
+Place the code example within the "ventus" directory and run:
 
 ```bash
 pulumi up
@@ -50,9 +51,7 @@ pulumi up
 
 ## Basic virtual machine setup
 
-Code description
-
-This Go code defines an infrastructure deployment using Pulumi for managing resources on the Cloud. Here's a breakdown of what it does:
+The Go code snippet provided below defines an infrastructure deployment using Pulumi for managing resources on the Cloud. Here's a breakdown of what it does:
 
 1. Imports necessary packages from Pulumi and the Pulumi OpenStack SDK.
 2. Sets up the main function to execute the Pulumi program.
@@ -153,7 +152,7 @@ func main() {
 
 ## Complex virtual machine setup
 
-This Go code defines an infrastructure deployment using Pulumi for managing resources on the Cloud. Here's a breakdown of what it does:
+The Go code snippet provided below defines an infrastructure deployment using Pulumi for managing resources on the Cloud. Here's a breakdown of what it does:
 
 1. Imports necessary packages from Pulumi and the Pulumi OpenStack SDK.
 2. Sets up the main function to execute the Pulumi program.
@@ -305,9 +304,7 @@ runcmd:
 
 
 ## Basic Kubernetes setup
-
-
-This Go code sets up an kubernetes cluster scenario using Pulumi to manage resources on the Cloud. Here's a breakdown of its functionality:
+The Go code snippet provided below sets up an kubernetes cluster scenario using Pulumi to manage resources on the Cloud. Here's a breakdown of its functionality:
 
 1. It imports necessary packages from Pulumi and the Pulumi OpenStack SDK.
 2. Configuration values for authentication details are retrieved from Pulumi configuration.
