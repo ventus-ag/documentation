@@ -19,9 +19,9 @@ On this page, you can find essential steps and code for starting with Pulumi and
 - **Create CLI user** - https://docs.ventuscloud.eu/products/security/cli-users
 - **Save credentials in Pulumi secrets** - In our scenario, we utilize the Pulumi CLI to securely store credentials. More detailed info https://www.pulumi.com/docs/concepts/secrets
 
-{{% note %}}
+{{% notice note %}}
 The Pulumi CLI never transmits your cloud credentials to Pulumi Cloud.
-{{% /note %}}
+{{% /notice %}}
 
 Before proceeding with the examples, it's necessary to execute the following Pulumi CLI commands to securely store credentials locally. You can obtain all the credential data from the "rc" file that was downloaded after creating the OpenStack CLI user.
 
@@ -38,9 +38,9 @@ pulumi config set domainName $OS_USER_DOMAIN_NAME
 mkdir ventus && cd ventus
 pulumi new ventus-dev
 ```
-{{% note %}}
+{{% notice note %}}
 "If you're using pulumi new or any other pulumi command for the first time, you might need to log in to Pulumi Cloud. Pulumi CLI and Pulumi Cloud work together to provide a reliable experience. It's free for personal use, offers features for teams, and there are also self-managed options available. Pressing Enter at the prompt will open a browser for you to sign in or sign up."
-{{% /note %}}
+{{% /notice %}}
 
 Place the code example within the "ventus" directory and run 
 
