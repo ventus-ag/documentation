@@ -1,5 +1,5 @@
 ---
-title: IaC Terraform
+title: Terraform
 weight: 31
 ---
 ___

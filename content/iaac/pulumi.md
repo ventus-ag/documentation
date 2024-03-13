@@ -1,5 +1,5 @@
 ---
-title: IaC Pulumi
+title: Pulumi
 weight: 30
 ---
 ___
