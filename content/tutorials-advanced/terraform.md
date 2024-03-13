@@ -101,11 +101,11 @@ This command generates an execution plan based on your configuration files. It o
 ```bash
 terraform apply
 ```
-1. Clean Up (Optional)
+
+10. Clean Up (Optional)
 ```bash
 terraform destroy
 ```
-{{% /note %}}
 
 
 ## Basic virtual machine setup
