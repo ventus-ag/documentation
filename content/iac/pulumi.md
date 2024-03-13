@@ -3,7 +3,7 @@ title: Pulumi
 weight: 30
 ---
 ___
-On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as a code (IaaC) for simplifying and automating cloud infrastructure management.
+On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
