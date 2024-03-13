@@ -229,7 +229,7 @@ resource "openstack_networking_secgroup_rule_v2" "allow_ssh" {
   security_group_id = "${openstack_networking_secgroup_v2.sec_group.id}"
 }
 
-//Add ingress rule ssh in security group with name sec_group
+//Add ingress rule http in security group with name sec_group
 resource "openstack_networking_secgroup_rule_v2" "allow_http" {
   direction         = "ingress"
   ethertype         = "IPv4"
@@ -240,7 +240,7 @@ resource "openstack_networking_secgroup_rule_v2" "allow_http" {
   security_group_id = "${openstack_networking_secgroup_v2.sec_group.id}"
 }
 
-//Add ingress rule ssh in security group with name sec_group
+//Add ingress rule https in security group with name sec_group
 resource "openstack_networking_secgroup_rule_v2" "allow_https" {
   direction         = "ingress"
   ethertype         = "IPv4"
