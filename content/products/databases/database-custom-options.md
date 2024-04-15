@@ -7,11 +7,11 @@ On this page, you can find an explanation of what is database's Custom Options, 
 
 # Table of contents
 - [Table of contents](#table-of-contents)
-  - [Introduction](#introduction) 
-  - [Edit Database's Custom Options](#edit-databases-custom-options)
-    - [PostgreSQL](#postgresql)
-    - [MySQL](#mysql)
-    - [MariaDB](#mariadb)
+- [Introduction](#introduction) 
+- [Edit Database's Custom Options](#edit-databases-custom-options)
+  - [PostgreSQL](#postgresql)
+  - [MySQL](#mysql)
+  - [MariaDB](#mariadb)
 
 ## Introduction
 **Database's Custom Options** are a feature provided to modify options of your database. You can edit various settings such as max connections, WAL sender timeout, streaming delay, etc. depending on the database type.
