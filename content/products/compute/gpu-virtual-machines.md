@@ -66,7 +66,7 @@ But, before starting to create GPU VM, please ensure that your project is locate
   by default, "50 GB" is pre-selected;    
   and also just below this field you can make a mark ***for auto-deleting volume*** when the VM is terminated;    
 
-1) Complete VM Creation: Click on the CREATE icon to finalize the creation of your GPU VM.   
+4) Complete VM Creation: Click on the CREATE icon to finalize the creation of your GPU VM.   
 
 After these steps, the newly created GPU VM will be added to the *Virtual Machine page* with the status ACTIVE.
 
