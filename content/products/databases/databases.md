@@ -85,6 +85,9 @@ This action will redirect you to the *Database details page*, where you can fi
 **BACKUPS TAB** - provides information about all created backups of corresponding database, and allows to manage them or to use one of them for database restore:
 ![](../../../assets/images/databases/26.png?width=40pc&classes=border,shadow) 
 
+**CUSTOM OPTIONS TAB** - provides information about all custom options of corresponding database, and allows to manage them:
+![](../../../assets/images/databases/29.png?width=40pc&classes=border,shadow)
+
 Details about each tab and its features will be provided in the next articles of this block.
 ## Edit Database
 To edit the Database do the following:  
