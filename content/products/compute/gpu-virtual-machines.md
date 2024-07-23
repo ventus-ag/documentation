@@ -71,5 +71,3 @@ After these steps, the newly created GPU VM will be added to the *Virtual Machi
 The management actions for GPU VMs, such as Editing, Resizing, Associating/Disassociating a Floating IP, or Deleting, are identical to those for non-GPU VMs. 
 
 For additional details on these processes, refer to the **[Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/)** article.
-
-This structured guide should help users navigate the process of setting up a GPU VM in Cloud Console environment efficiently and effectively.
