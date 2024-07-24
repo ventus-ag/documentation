@@ -15,10 +15,10 @@ On this page, you can find an explanation of how to create GPU Virtual Machine, 
 GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations. 
 
 {{% notice note %}}
-GPU services in the Cloud Console are currently accessible only for projects established in the Vienna and Upper-Austria regions.
+GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.
 {{% /notice %}} 
 
-Currently, our GPU services are exclusively available in the Vienna and Upper-Austria regions. We offer a range of GPU cards, including the H100 and L40S series, each available in multiple configurations to suit various performance needs:  
+Currently, our GPU services are exclusively available in the Upper-Austria region. We offer a range of GPU cards, including the H100 and L40S series, each available in multiple configurations to suit various performance needs:  
 - GPU-H100-1: 1 H100, 12 vCPUs, 250 GiB memory;  
 - GPU-H100-2: 2 H100, 24 vCPUs, 500 GiB memory;  
 - GPU-H100-4: 4 H100, 48 vCPUs, 1000 GiB memory;  
