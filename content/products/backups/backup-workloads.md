@@ -76,18 +76,18 @@ To open the *Backup Workload details page*, click on the **Name** of the co
 This action will redirect you to the *Backup Workload details page*, where you can find panel with available **quick actions** on the selected workload and 3 tabs:
 ![](../../../assets/images/backups/6.png?width=35pc&classes=border,shadow)
 
-**WORKLOAD INFO TAB** - shows the workload's general information, such as workload type and retention policy type; schedule details; and storage usage, which includes the count and memory usage of full and incremental backups:
+**WORKLOAD INFO TAB** - shows the workload's general information, such as workload type and retention policy type; schedule details; storage usage, which includes total amount of full and incremental backups with its memory usage:
 ![](../../../assets/images/backups/7.png?classes=border,shadow)
   
-**ASSIGNED VM's TAB** - lists all the Virtual Machines assigned to this workload. These VMs will have backups created according to the workload's schedule, allowing for future restoration from any of these backups:  
+**ASSIGNED VM's TAB** - lists all protected virtual machines by this workload. These VMs will have backups created according to the workload's schedule, allowing for future restoration from any of these backups:  
 ![](../../../assets/images/backups/8.png?classes=border,shadow)
 
-Clicking on a VM name will navigate you to the *VM details page*. More information about it you can find here - [Virtual Machine details page](https://docs.ventuscloud.eu/products/compute/virtual-machines/#virtual-machine-details-page):
+From here it is possible to change list of assigned VMs to this workload and to navigate to the protected VM directly from this page - clicking on a VM name will navigate you to the *VM details page*. More information about it you can find here - [Virtual Machine details page](https://docs.ventuscloud.eu/products/compute/virtual-machines/#virtual-machine-details-page):
   
 **CREATED BACKUPS TAB** - shows all backups created according to the workload's schedule for the VMs assigned to this workload:
 ![](../../../assets/images/backups/9.png?classes=border,shadow)
 
-Clicking on a Backup name will navigate you to the *Backup details page*, where you can find all necessary information about it and restore the corresponding VM. More information about it will be provided in the following sections.   
+From here it is possible to work with the created backups (cancel, delete, restore VM from it) and navigate to the *Backup details page* - clicking on a backup name will navigate you to the *Backup details page*, where you can find all necessary information about it, create backup on demand and start restores of the corresponding VMs. More information about it will be provided in the following sections.   
 
 ## Edit Backup Workload
 To edit the Backup Workload, do the following:
