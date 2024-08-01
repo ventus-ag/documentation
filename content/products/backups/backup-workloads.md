@@ -87,7 +87,7 @@ From here it is possible to change list of assigned VMs to this workload and to 
 **CREATED BACKUPS TAB** - shows all backups created according to the workload's schedule for the VMs assigned to this workload:
 ![](../../../assets/images/backups/9.png?classes=border,shadow)
 
-From here it is possible to work with the created backups (cancel, delete, restore VM from it) and navigate to the *Backup details page* - clicking on a backup name will navigate you to the *Backup details page*, where you can find all necessary information about it, create backup on demand and start restores of the corresponding VMs. More information about it will be provided in the following sections.   
+From here it is possible to work with the created backups (cancel, delete, restore VM from it), create backup on demand and navigate to the *Backup details page* - clicking on the backup name will navigate you to the *Backup details page*, where you can find all necessary information about it, start restores of the corresponding VMs and see the list all already created restores. More information about it will be provided in the following sections.   
 
 ## Edit Backup Workload
 To edit the Backup Workload, do the following:
