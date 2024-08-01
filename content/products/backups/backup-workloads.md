@@ -13,6 +13,10 @@ On this page, you can find an explanation of how to create, edit, delete Backup 
   - [Workload details page](#workload-details-page)
   - [Edit Backup Workload](#edit-backup-workload)
   - [Delete Backup Workload](#delete-backup-workload)
+  
+{{% notice note %}}
+Please be aware that the Backup feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
+{{% /notice %}}
 
 ## Introduction
 A Backup Workload is a task that ensures the safety of one or more Virtual Machines according to a defined policy. 
