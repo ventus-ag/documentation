@@ -16,13 +16,13 @@ On this page, you can find an explanation of how to mange already created Backup
   - [Multi-Delete Backups](#multi-delete-backups)
   
 {{% notice note %}}
-Please be aware that the Backup feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
+Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
 {{% /notice %}}
 
 ## Introduction
 Backups in the Cloud Console refer to VM backups created within a specific Backup Workload and contain the information of all VM's that are protected by this workload. Backup Workload settings also control the number of backups by deleting oldest ones based on retention policy and creating new backups according to the schedule if it is enabled.
 
-So, to create a backup on demand or by schedule, you first need to create a Backup Workload. More information about backup workloads you can find here - [Backup Workloads](https://docs.ventuscloud.eu/products/backups/backup-workloads/):
+So, to create a backup on demand or by schedule, you first need to create a Backup Workload. More information about backup workloads you can find here - [Backup Workloads](https://docs.ventuscloud.eu/products/backups/backup-workloads/).
 
 ## Backups page
 
@@ -36,7 +36,7 @@ To get to the *Backups page* do the following:
 3) Select *CREATED BACKUPS TAB* on the opened *Workload details page*:  
 ![](../../../assets/images/backups/13.png?width=25pc&classes=border,shadow)
 
-On this page, you can find all backups within the selected workload, whether they are automatically created by the workload scheduler or created on demand manually when the scheduler is deactivated. You will also find the *Create button*, *Search bar*, and *Actions icon*, which opens a list of available management actions for the selected backup.
+On this page, you can find all backups within the selected workload, whether they are automatically created by the workload scheduler or created on demand manually when the scheduler is deactivated. You will also find the *Create button*, *Search bar*, and *Actions icon*, which opens a list of available management actions for the selected backup:
 ![](../../../assets/images/backups/14.png?classes=border,shadow)
 
 **Actions** icon opens the next list of available management actions:  
