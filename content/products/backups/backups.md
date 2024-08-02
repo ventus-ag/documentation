@@ -44,7 +44,7 @@ On this page, you can find all backups within the selected workload, whether the
 - *Delete* - this option is used for the backup removing;  
 - *Restore from backup* - this option is used to bring back all VMs from the backup in the same state as they were backed up.
 
-Additionally, from this page, you can navigate to the detail page of each backup by clicking on its name. There, you will find detailed information about backup and gain access to the restore options, among other management actions for the selected backup. More information about the *Backup details page* will be provided in the following sections.   
+Additionally, from this page, you can navigate to the detail page of each backup by clicking on its **name**. There, you will find detailed information about backup and gain access to the restore options, among other management actions for the selected backup. More information about the *Backup details page* will be provided in the following sections.   
 ![](../../../assets/images/backups/15.png?classes=border,shadow)
 
 ## Create Backup 
@@ -66,27 +66,27 @@ To create new Backup on demand manually, do the following:
   - *Name* - set a name for the Backup; 
   - *Description* - set a description for the Backup;  
 
-After these steps, the newly created Backup will be added to the *Backups TAB* and you can click on its **name** to navigate to the *Backup details page* to view all necessary information about it, including assigned VMs and created restores. More information about the *Restore details page* will be provided in the following sections.   
+After these steps, the newly created Backup will be added to the *Backups TAB* and you can click on its **name** to navigate to the *Backup details page* to view all necessary information about it, including assigned VMs and created restores. More information about this page will be provided in the following sections.   
 
 ## Backup details page
 To open the *Backup details page*, click on the **Name** of the corresponding backup on the *Backups TAB*:
 ![](../../../assets/images/backups/15.png?classes=border,shadow)
 
-This action will redirect you to the *Backup details page*, where you can find backup **details area** with actual information about it, panel with available **quick actions** on the selected backup and 2 tabs:
+This action will redirect you to the *Backup details page*, where you can find backup **details area** with actual information about it, panel with available **quick actions** on the selected backup and **2 tabs**:
 ![](../../../assets/images/backups/17.png?width=35pc&classes=border,shadow)
 
 **BACKUPED VMs TAB** - lists all protected virtual machines by this workload, that are part of the this backup:
 ![](../../../assets/images/backups/18.png?classes=border,shadow)
 
-From here it is possible to restore a VM and, if it is still available, navigate to the *VM details page* by clicking on the VM name. More information about this page you can find here - [Virtual Machine details page](https://docs.ventuscloud.eu/products/compute/virtual-machines/#virtual-machine-details-page):
+From here it is possible to restore a VM and, if it is still available, navigate to the *VM details page* by clicking on the VM **name**. More information about this page you can find here - [Virtual Machine details page](https://docs.ventuscloud.eu/products/compute/virtual-machines/#virtual-machine-details-page).
   
 **RESTORES TAB** - displays a list of restores initiated from the current backup, with available actions to start a new restore, cancel, or delete an existing ones:
 ![](../../../assets/images/backups/19.png?classes=border,shadow)
 
-More information about Restores you can find here - [Restores](https://docs.ventuscloud.eu/products/backups/restores/):
+More information about Restores you can find here - [Restores](https://docs.ventuscloud.eu/products/backups/restores/).
 
 ## Cancel Backup
-To cancel the Backup, do the following:
+To cancel the ongoing Backup, do the following:
 - identify Backup, that you want to cancel, on the *Backups TAB* of the *Workload details page*;
 - click on the **Actions** icon and select the **Cancel** in the list of available options;
 - confirm your action on the next opened *Confirmation window*. 
@@ -94,6 +94,10 @@ To cancel the Backup, do the following:
 ![](../../../assets/images/backups/23.png?classes=border,shadow)
 
 After these steps, the selected Backup will be canceled.  
+
+{{% notice note %}}
+Canceled Backups will be treated like errored Backups.
+{{% /notice %}}
 
 Also, you can cancel the Backup from the *Backup details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/backups/24.png?width=30pc&classes=border,shadow)
@@ -137,5 +141,7 @@ To delete group of Backups, do the following:
 - confirm the Backups deletion on the next opened *Confirmation window*.
 
 ![](../../../assets/images/backups/22.png?classes=border,shadow)
+
+![](../../../assets/images/backups/25.png?width=30pc&classes=border,shadow)
 
 After these steps, the selected Backups will be deleted.  
