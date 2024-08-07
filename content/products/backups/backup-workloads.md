@@ -34,7 +34,7 @@ On this page you can find all created Backup Workloads in the current Project, w
 - *Edit* - this option is used to reconfigure the policy and schedule of the backup workload;      
 - *Delete* - this option is for workload removing;  
 
-Additionally, from this page, you can navigate to the detail page of each workload by clicking on its **name**. There, you will find detailed information about its policy and schedule and gain access to backup and restore options, among other management actions for the selected workload. More information about the *Workload details page* will be provided in the following sections.   
+Additionally, from this page, you can navigate to the detail page of each created workload by clicking on its **name**. There, you will find detailed information about its policy and schedule and gain access to backup and restore options, among other management actions for the selected workload. More information about the *Workload details page* will be provided in the following sections.   
 ![](../../../assets/images/backups/4.png?classes=border,shadow)
 
 ## Create Backup Workload

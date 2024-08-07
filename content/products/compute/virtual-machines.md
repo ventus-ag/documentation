@@ -16,6 +16,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Edit Virtual Machine](#edit-virtual-machine)
   - [Resize Virtual Machine](#resize-virtual-machine)
   - [Delete Virtual Machine](#delete-virtual-machine)
+  - [Backup Virtual Machine](#backup-virtual-machine)
 
 
 ## Virtual Machines page 
@@ -228,6 +229,36 @@ After these steps, the selected Virtual Machine will be deleted.
 
 Delete Virtual Machine you can also from *Virtual Machine details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/vms/24.png?width=10pc&classes=border,shadow)
+
+
+## Backup Virtual Machine
+
+{{% notice note %}}
+Please be aware that Backup feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
+{{% /notice %}}
+
+Now, in the Cloud Console you have the option to set up regular backups for your virtual machines by creating a backup workload and assigning the virtual machine to it.  
+The VM will be backed up according to the workload's schedule. If the schedule is turned off, you can still perform a manual one-time backup. However, to perform any backup, the VM must be assigned to a specific backup workload. 
+
+To get to the *Backup Workloads page*, select the **Backups** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+![](../../../assets/images/backups/1.png?width=15pc&classes=border,shadow) 
+
+On this page you can find all created Backup Workloads in the current Project, with the *Create button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected workload.  
+![](../../../assets/images/backups/5.png?classes=border,shadow)
+
+Additionally, from this page, you can navigate to the detail page of each created workload by clicking on its **name**. There, you will find detailed information about its policy and schedule and gain access to backup and restore options, among other management actions for the selected workload:
+![](../../../assets/images/backups/32.png?classes=border,shadow)
+
+More information about backup workloads you can find here - [Backup Workloads](https://docs.ventuscloud.eu/products/backups/backup-workloads/).
+
+
+
+
+
+
+
+
+
 
 
 
