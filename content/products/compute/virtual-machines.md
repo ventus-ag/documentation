@@ -17,6 +17,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Resize Virtual Machine](#resize-virtual-machine)
   - [Delete Virtual Machine](#delete-virtual-machine)
   - [Backup Virtual Machine](#backup-virtual-machine)
+  - [Restore Virtual Machine](#restore-virtual-machine)
 
 
 ## Virtual Machines page 
@@ -250,6 +251,37 @@ Additionally, from this page, you can navigate to the detail page of each create
 ![](../../../assets/images/backups/32.png?classes=border,shadow)
 
 More information about backup workloads you can find here - [Backup Workloads](https://docs.ventuscloud.eu/products/backups/backup-workloads/).
+
+## Restore Virtual Machine
+
+{{% notice note %}}
+Please be aware that Restore feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
+{{% /notice %}}
+
+If your VM is assigned to a Backup Workload and has a successfully created Backup, you can restore it when needed with the same settings and data.  
+
+The restore process will return the VM to its previous state, including the same project, network, image, and key pair. However, you can assign a new name and flavor to the restored VMs during the process.
+
+To get to the *Restores page* do the following:   
+1) Open the *Backup Workloads page* - select the **Backups** from the VIRTUAL DATACENTER block in the *side-bar menu*:    
+![](../../../assets/images/backups/1.png?width=15pc&classes=border,shadow) 
+
+2) Navigate to the *Workload details page* by clicking on the desired workload **name**:    
+![](../../../assets/images/backups/4.png?classes=border,shadow)
+
+3) Select *CREATED BACKUPS TAB* on the opened *Workload details page*:  
+![](../../../assets/images/backups/13.png?width=25pc&classes=border,shadow)
+
+4) Navigate to the *Backup details page* by clicking on the desired backup **name**:    
+![](../../../assets/images/backups/26.png?classes=border,shadow)
+
+4) Select *RESTORES TAB* on the opened *Backup details page*:  
+![](../../../assets/images/backups/27.png?width=20pc&classes=border,shadow)
+
+On this page you can find all records of the restore operation initiated from the current Backup, with the *Restore VM button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected Restore:
+![](../../../assets/images/backups/28.png?classes=border,shadow)
+
+More information about restores can be found here - [Restores](https://docs.ventuscloud.eu/products/backups/restores/).
 
 
 

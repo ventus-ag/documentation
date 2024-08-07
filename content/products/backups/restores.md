@@ -80,7 +80,7 @@ The restore process will bring back all selected VMs to the same state as when t
 - connect to the same network;
 - have the same image and flavor;
 - use the same key pair.   
-However, you can choose to assign a new name and flavor to the restored VMs during the process.
+However, you can assign a new name and flavor to the restored VMs during the process.
 
 ## Cancel Restore
 To cancel the ongoing Restore, do the following:
