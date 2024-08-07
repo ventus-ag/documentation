@@ -21,10 +21,10 @@ Please be aware that Backup and Restore features in the Cloud Console is current
 Restore in the Cloud Console is the procedure used to recover backed-up Virtual Machines (VMs) from a saved backup. This process allows you to bring VMs back to their original state using the available backup data.
 
 {{% notice note %}}
-The restore process will bring back all selected VMs to the same state as when they were backed up.
+Restored VMs will keep their original settings, but you can change their name and flavor during the restore process.
 {{% /notice %}}
 
-So, to initiate a Restore, you first need to have an available Backup. More information about backups can be found here - [Backups](https://docs.ventuscloud.eu/products/backups/backups/)
+So, to initiate a Restore, you first need to have an available Backup. More information about backups can be found here - [Backups](https://docs.ventuscloud.eu/products/backups/backups/).
 
 ## Restores page
 
@@ -57,15 +57,21 @@ On this page you can find all records of the restore operation initiated from th
 Restore can only be initiated if current Backup and Workload are in available states.
 {{% /notice %}}
 
+{{% notice note %}}
+Restored VMs will keep their original settings, but you can change their name and flavor during the restore process.
+{{% /notice %}}
+
 To restore VMs from Backup, do the following:
 
 - open the *Restores TAB* or *Backuped VMs TAB* on the *Backup details page* and click on the RESTORE VM icon in the upper left corner;
 - fill in the form on the next opened *Restore from Backup window*:
-  - *Name* - assign a name to the Restore record;  
-  - *Description* - provide a description for the Restore record;  
-  - *Instances* - if the backup includes multiple VMs, select which ones you want to restore.
+  - *Restore ame* - assign a name to the Restore record;  
+  - *Restore description* - provide a description for the Restore record;  
+  - *Select instances to restore* - if the backup includes multiple VMs, select which ones you want to restore:
+    - *New name for restored VM* -  assign a new name for the restored VM;
+    - *New flavor for restored VM* - select a new flavor for the restored VM. If this field is left empty, the VM will be restored with its original flavor.
 
-![](../../../assets/images/backups/31.png?width=35pc&classes=border,shadow). 
+![](../../../assets/images/backups/31-1.png?width=35pc&classes=border,shadow). 
 
 After these steps, the newly created Restore record will be added to the *Restores TAB* and  you can navigate to the *Virtual Machines page* to see that the restored VM is being created and will be in ACTIVE status in a few minutes.
 
@@ -73,7 +79,8 @@ The restore process will bring back all selected VMs to the same state as when t
 - be created in the same project;
 - connect to the same network;
 - have the same image and flavor;
-- use the same key pair.
+- use the same key pair.   
+However, you can choose to assign a new name and flavor to the restored VMs during the process.
 
 ## Cancel Restore
 To cancel the ongoing Restore, do the following:
