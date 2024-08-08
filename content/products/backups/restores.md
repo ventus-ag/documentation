@@ -65,15 +65,15 @@ To restore VMs from Backup, do the following:
 
 - open the *Restores TAB* or *Backuped VMs TAB* on the *Backup details page* and click on the RESTORE VM icon in the upper left corner;
 - fill in the form on the next opened *Restore from Backup window*:
-  - *Restore ame* - assign a name to the Restore record;  
-  - *Restore description* - provide a description for the Restore record;  
+  - *Restore name* - assign a name to the Restore record;  
   - *Select instances to restore* - if the backup includes multiple VMs, select which ones you want to restore:
-    - *New name for restored VM* -  assign a new name for the restored VM;
-    - *New flavor for restored VM* - select a new flavor for the restored VM. If this field is left empty, the VM will be restored with its original flavor.
+    - *New instance name* -  assign a new name for the restored VM. If this field is left empty, the VM will be restored with its original name.
+    - *New instance flavor* - select a new flavor for the restored VM. If this field is left empty, the VM will be restored with its original flavor.
 
 ![](../../../assets/images/backups/31-1.png?width=35pc&classes=border,shadow). 
 
-After these steps, the newly created Restore record will be added to the *Restores TAB* and  you can navigate to the *Virtual Machines page* to see that the restored VM is being created and will be in ACTIVE status in a few minutes.
+After these steps, the newly created Restore record will be added to the *Restores TAB* and  you can navigate to the *Virtual Machines page* to see that the restored VM is being created and will be in ACTIVE status in a few minutes:  
+![](../../../assets/images/backups/33.png?classes=border,shadow)
 
 The restore process will bring back all selected VMs to the same state as when they were backed up. They will:  
 - be created in the same project;
@@ -81,6 +81,9 @@ The restore process will bring back all selected VMs to the same state as when t
 - have the same image and flavor;
 - use the same key pair.   
 However, you can assign a new name and flavor to the restored VMs during the process.
+
+Restore can also be initiated from the *CREATED BACKUPS TAB* on the *Workload details page* by clicking on the **Actions** icon of the appropriate Backup and selecting the **Restore from backup** action there:  
+![](../../../assets/images/backups/34.png?classes=border,shadow)
 
 ## Cancel Restore
 To cancel the ongoing Restore, do the following:
