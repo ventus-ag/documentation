@@ -36,8 +36,7 @@ If you are a new user and have just created new account, you will be automatical
 If you aren't a new User, but want to see information about created Organizations or find information about Organizations to which Projects your User has access, you need to select the **Organizations** from the *side-bar menu:* 
 ![](../../../assets/images/organizations/2.png?width=15pc&classes=border,shadow)  
 
-This action will redirect you to the *Organizations page*, where you can find all created Organizations and Organizations, to which Projects your User has access, with the *Add Organization button, Search bar* and *Actions icon* which opens a list of available management actions for the selected Organization:  
-![](../../assets/images/organizations/3.png?classes=border,shadow)  
+This action will redirect you to the *Organizations page*, where you can find all created Organizations and Organizations, to which Projects your User has access, with the *Add Organization button, Search bar* and *Actions icon* which opens a list of available management actions for the selected Organization.
 
 **Actions** icon opens the list of available management actions, which differ depending on the user's role in the Organization: 
   * **for Owners:**
@@ -46,6 +45,10 @@ This action will redirect you to the *Organizations page*, where you can find al
   * **for Administrators and Members**  
     - *Leave* - this option can be used to leave the Organization.  
 
+Additionally, from this page, you can navigate to the *Projects page* or *Administrators page* of each created Organization by clicking on its **name**. More information about this pages you can find here - [Projects page](https://docs.ventuscloud.eu/getting-started/projects/#projects-page), [Administrators page](https://docs.ventuscloud.eu/identity-management/administrators/#administrators-page).
+
+![](../../assets/images/organizations/3.png?classes=border,shadow)  
+
 ## Create Organization 
 To create a new Organization, do the following:  
 - go to the *Organizations page* and click the CREATE ORGANIZATION icon in the upper left corner;    
@@ -53,8 +56,8 @@ To create a new Organization, do the following:
 
 ![](../../assets/images/organizations/4.png?width=35pc&classes=border,shadow)  
 
-After these steps the newly created Organization will be added to the *Organizations page* and User Role there will be *Owner*:  
-![](../../assets/images/organizations/5.png?classes=border,shadow)  
+After these steps the newly created Organization will be added to the *Organizations page* with User Role *Owner* and you can navigate to its *Projects page* by clicking on Organization **name**. More information about this page you can find here - [Projects page](https://docs.ventuscloud.eu/getting-started/projects/#projects-page).  
+![](../../assets/images/organizations/5.png?classes=border,shadow)
 
 ## Edit Organization
 {{% notice note %}}
@@ -68,10 +71,13 @@ To edit the Organization, do the following:
 
 After these steps, the selected Organization will be updated.
 
+Also, you can edit the Organization from its *Projects page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/organizations/14.png?width=25pc&classes=border,shadow)
+
 ## Delete Organization
 
 {{% notice note %}}
-This action is available only if the User is a single Admin in this Organization and all Projects inside, were previously deleted.
+This action is available if User Role in this Organization is *Owner* and all Projects inside, were previously deleted.
 {{% /notice %}}
 
 To delete the Organization, do the following:
@@ -80,6 +86,9 @@ To delete the Organization, do the following:
 - confirm the Organization deletion on the next opened *Confirmation window*. 
       
 After confirming this action, the selected Organization will be deleted.
+
+Also, you can delete the Organization from its *Projects page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/organizations/15.png?width=25pc&classes=border,shadow)
 
 ## Leave Organization
 {{% notice note %}}
@@ -92,6 +101,9 @@ To leave the Organization, do the following:
 - confirm your action on the next opened *Confirmation window*. 
       
 After these steps, your User will not have access to the selected Organization.
+
+Also, you can leave the Organization from its *Projects page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/organizations/16.png?width=25pc&classes=border,shadow)
 
 ## Transfer an Organization
 {{% notice note %}}

@@ -9,6 +9,7 @@ On this page, you can find an explanation of how to create a new Project, and ho
 - [Table of contents](#table-of-contents)
   - [Projects page](#projects-page)
   - [Create Project](#create-project)
+  - [Project Overview Page](#project-overview-page)
   - [Edit Project](#edit-project)
   - [Delete Project](#delete-project)
   - [Add users to Project](#add-users-to-project)
@@ -23,12 +24,12 @@ To see information about created Projects in the Organization or create more Pro
 
 ![](../../assets/images/organizations/7.png?classes=border,shadow)  
 
-This action will open additional sections on the *side-bar menu* and redirect you to the *Projects page*, where you can find all created Projects, related to the selected Organization with the *Create button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected Project:
-![](../../assets/images/projects/2.png?classes=border,shadow) 
-
-**Actions** icon opens the next list of available management actions:
+This action will open additional sections on the *side-bar menu* and redirect you to the *Projects page*, where you can find all created Projects, related to the selected Organization with the *Create button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected Project:  
 - *Edit* - by selecting this option, you can change the Project name;
 - *Delete* - this option is for Project removing.
+
+Additionally, from this page, you can navigate to the overview page of each created Project by clicking on its **name**. There, you will find resource utilization graphs, quota details, and billing information for essential resources such as virtual machines, volumes, databases, and object storage. More information about the *Project overview page* will be provided in the following sections.   
+![](../../assets/images/projects/2.png?classes=border,shadow) 
 
 ## Create Project
 
@@ -40,12 +41,27 @@ To create a new Project, do the following:
 
 ![](../../assets/images/projects/4.png?width=35pc&classes=border,shadow) 
 
-After these steps, the newly created Project will be added to the *Projects Overview page:*
+After these steps, the newly created Project will be added to the *Projects page* and you can navigate to the *Project overview page* by clicking on its **name**:
 ![](../../assets/images/projects/5.png?width=70pc&classes=border,shadow) 
 
 {{% notice note %}}
 All subsequent services provided by the Cloud Console within the one Project, will be created in the corresponding Region, in which this Project was created.
 {{% /notice %}}
+
+## Project Overview Page
+To open the *Project overview page*, click on the **Name** of the appropriate Project on the *Projects page*:
+![](../../assets/images/projects/5.png?width=70pc&classes=border,shadow) 
+
+This action will redirect you to the *Project overview page*, where you can find:   
+- project **details area** with actual information about it (id, region):  
+![](../../assets/images/projects/7.png?width=30pc&classes=border,shadow)   
+
+- resource **utilization graphs** with its quota details:  
+![](../../assets/images/projects/8.png?width=35pc&classes=border,shadow) 
+
+- project **billing information** for essential resources such as virtual machines, volumes, databases, and object storage:  
+![](../../assets/images/projects/9.png?width=35pc&classes=border,shadow) 
+
 
 ## Edit Project 
 To edit the Project, do the following:
@@ -55,13 +71,24 @@ To edit the Project, do the following:
 
 After these steps, the selected Project will be updated.
 
+Also, you can edit the Project from the *Project overview page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/projects/10.png?width=25pc&classes=border,shadow)
+
 ## Delete Project 
+
+{{% notice note %}}
+Deleting a Project will permanently erase all related resources, including virtual machines, Kubernetes clusters, volumes, and other components, with no option for recovery.
+{{% /notice %}}
 
 To delete the Project, do the following:
 - identify this unnecessary Project on the *Projects page*;
 - click on the **Actions** icon  and select the **Delete** in the list of available options;
 - confirm the Project deletion on the next opened *Confirmation window*.
+
 After these steps, the selected Project will be deleted.
+
+Also, you can delete the Project from the *Project overview page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/projects/11.png?width=25pc&classes=border,shadow)
 
 ## Add users to Project
 
