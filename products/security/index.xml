@@ -1,7 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SECURITY on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/security/</link><description>Recent content in SECURITY on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Firewalls</title><link>https://docs.ventuscloud.eu/products/security/firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewalls/</guid><description>On this page, you can find an explanation of how to create, edit, delete Firewalls and instructions for other steps to manage Firewalls in the Cloud Console.
-Table of contents Table of contents Firewalls page Create Firewall Edit Firewall Delete Firewall Add Firewall to the VM Firewalls page To get to the Firewalls page, select the Security from the VIRTUAL DATACENTER block in the side-bar menu and click the Firewalls TAB: On this page you can find default Firewall, all your own Firewalls created in the current Project, and the Firewalls created during Cluster creation, with the Create button, Search bar and Actions icon, which opens a list of available management actions for the selected Firewall: All VMs have a default Firewall which is applied to every VM.</description></item><item><title>Firewall Rules</title><link>https://docs.ventuscloud.eu/products/security/firewall-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewall-rules/</guid><description>On this page, you can find an explanation of how to create, delete Firewall Rules and instructions for other steps to manage Firewall Rules in the Cloud Console.
-Table of contents Table of contents Firewall Rules page Firewall Rules Characteristics Create Firewall Rule Firewall Rule details page Delete Firewall Rule Firewall Rule for SSH Protocol Firewall Rule for RDP Firewall Rules page To get to the Firewall Rules page, click on the Name of the corresponding Firewall on the Firewalls page: On this page you can find:</description></item><item><title>VM's Firewalls</title><link>https://docs.ventuscloud.eu/products/security/manage-firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/manage-firewalls/</guid><description>On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from the Virtual Machine details page in the Cloud Console.
-Table of contents Table of contents VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB Change Firewall set VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB To find all Firewalls, related to the selected Virtual Machine, you need:
-open the Virtual Machines page - for this select the Virtual Machines from the VIRTUAL DATACENTER block in the side-bar menu: open the Virtual Machine details page - for this click on the Name of the corresponding Virtual Machine: open the NETWORKS &amp;amp; SECURITY page of this VM: On the opened NETWORKS &amp;amp; SECURITY page of this VM you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.</description></item><item><title>SSH Keys</title><link>https://docs.ventuscloud.eu/products/security/ssh-keys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/ssh-keys/</guid><description>On this page, you can find an explanation of how to create, delete SSH Keys and instructions for other steps to manage SSH Keys in the Cloud Console.
-Table of contents Table of contents SSH Keys page Create SSH Key Pair Add Public Key Copy Public Key Delete SSH Key Pair SSH Keys page To get to the SSH Keys page, select Security from the VIRTUAL DATACENTER block in the side-bar menu and click the SSH Keys TAB: On this page you can find all created SSH Keys with the Create and Add buttons, Search bar and Actions icon, which opens a list of available management actions for the selected Key Pair: Actions icon opens the next list of available management actions with the selected Key Pair:</description></item><item><title>CLI Users</title><link>https://docs.ventuscloud.eu/products/security/cli-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/cli-users/</guid><description>On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.
-Table of contents Table of contents CLI Users page Create CLI User Download RC File Edit CLI User Change the password Delete CLI User CLI Users page To get to the CLI Users page, select the Security from the VIRTUAL DATACENTER block in the side-bar menu and click the CLI Users TAB: On this page you can find all created CLI Users, Create button, Search bar and Actions icon, which opens a list of available management actions for the selected CLI User: Actions icon opens the next list of available management actions with the selected CLI User:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SECURITY on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/security/</link><description>Recent content in SECURITY on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Firewalls</title><link>https://docs.ventuscloud.eu/products/security/firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewalls/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, edit, delete Firewalls and instructions for other steps to manage Firewalls in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#firewalls-page">Firewalls page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-firewall">Create Firewall&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-firewall">Edit Firewall&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-firewall">Delete Firewall&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#add-firewall-to-the-vm">Add Firewall to the VM&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="firewalls-page">Firewalls page&lt;/h2>
+&lt;p>To get to the &lt;em>Firewalls page&lt;/em>, select the &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Firewalls TAB:&lt;/strong>
+&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
+&lt;img src="../../../assets/images/fw/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Firewall Rules</title><link>https://docs.ventuscloud.eu/products/security/firewall-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewall-rules/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, delete Firewall Rules and instructions for other steps to manage Firewall Rules in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#firewall-rules-page">Firewall Rules page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#firewall-rules-characteristics">Firewall Rules Characteristics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-firewall-rule">Create Firewall Rule&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#firewall-rule-details-page">Firewall Rule details page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-firewall-rule">Delete Firewall Rule&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#firewall-rule-for-ssh-protocol">Firewall Rule for SSH Protocol&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#firewall-rule-for-rdp">Firewall Rule for RDP&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="firewall-rules-page">Firewall Rules page&lt;/h2>
+&lt;p>To get to the &lt;em>Firewall Rules page&lt;/em>, click on the &lt;strong>Name&lt;/strong> of the corresponding Firewall on the &lt;em>Firewalls page&lt;/em>:
+&lt;img src="../../../assets/images/fw/5.png?classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Firewalls</title><link>https://docs.ventuscloud.eu/products/security/manage-firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/manage-firewalls/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#vms-networks--security-tab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#change-firewall-set">Change Firewall set&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="vms-networks--security-tab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2>
+&lt;p>To find all Firewalls, related to the selected Virtual Machine, you need:&lt;/p>
+&lt;ul>
+&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>SSH Keys</title><link>https://docs.ventuscloud.eu/products/security/ssh-keys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/ssh-keys/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, delete SSH Keys and instructions for other steps to manage SSH Keys in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#ssh-keys-page">SSH Keys page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-ssh-key-pair">Create SSH Key Pair&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#add-public-key">Add Public Key&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#copy-public-key">Copy Public Key&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-ssh-key-pair">Delete SSH Key Pair&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="ssh-keys-page">SSH Keys page&lt;/h2>
+&lt;p>To get to the &lt;em>SSH Keys page&lt;/em>, select &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>SSH Keys TAB:&lt;/strong>
+&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
+&lt;img src="../../../assets/images/ssh/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>CLI Users</title><link>https://docs.ventuscloud.eu/products/security/cli-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/cli-users/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#cli-users-page">CLI Users page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-cli-user">Create CLI User&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#download-rc-file">Download RC File&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-cli-user">Edit CLI User &lt;/a>&lt;/li>
+&lt;li>&lt;a href="#change-the-password">Change the password&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-cli-user">Delete CLI User&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="cli-users-page">CLI Users page&lt;/h2>
+&lt;p>To get to the &lt;em>CLI Users page&lt;/em>, select the &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>CLI Users TAB:&lt;/strong>
+&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
+&lt;img src="../../../assets/images/cli/2.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item></channel></rss>

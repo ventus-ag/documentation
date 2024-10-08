@@ -1,3 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KUBERNETES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/kubernetes/</link><description>Recent content in KUBERNETES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</guid><description>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster in the Cloud Console.
-Table of contents Table of contents Clusters page Create Cluster Cluster details page Download kubeconfig file Resize Cluster Upgrade Cluster Delete Cluster Clusters page To get to the Clusters page, select the Clusters from the VIRTUAL DATACENTER block in the side-bar menu: On this page you can find all created Kubernetes Clusters in the current Project of the selected Organization, with the Create button, Search bar and Actions icon which opens a list of available management actions for the selected Cluster: Actions icon opens the next list of available management actions:</description></item><item><title>Access K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</guid><description>On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.
-Table of contents Table of contents Prerequisites Get access from Ubuntu VM to K8S Cluster using CLI User Get access from CentOS VM to K8S Cluster using CLI User Connect to Cluster Master-Node via SSH Prerequisites In this article we will assume, that we have already created the following resources, that refer to the Project named Test-Project that was created in the Organization named Test-Organization:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KUBERNETES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/kubernetes/</link><description>Recent content in KUBERNETES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#clusters-page">Clusters page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-cluster">Create Cluster&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#cluster-details-page">Cluster details page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#download-kubeconfig-file">Download kubeconfig file&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#resize-cluster">Resize Cluster&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#upgrade-cluster">Upgrade Cluster&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-cluster">Delete Cluster&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="clusters-page">Clusters page&lt;/h2>
+&lt;p>To get to the &lt;em>Clusters page&lt;/em>, select the &lt;strong>Clusters&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:
+&lt;img src="../../../assets/images/clusters/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Access K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#get-access-from-ubuntu-vm-to-k8s-cluster-using-cli-user">Get access from Ubuntu VM to K8S Cluster using CLI User&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#get-access-from-centos-vm-to-k8s-cluster-using-cli-user">Get access from CentOS VM to K8S Cluster using CLI User&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#connect-to-cluster-master-node-via-ssh">Connect to Cluster Master-Node via SSH&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p></description></item></channel></rss>

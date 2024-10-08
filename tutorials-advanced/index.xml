@@ -1,9 +1,88 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Advanced on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/tutorials-advanced/</link><description>Recent content in Advanced on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/tutorials-advanced/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation OpenStack CLI</title><link>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</guid><description>On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.
-Table of contents Prerequisites Install OpenStack CLI on Ubuntu VM Install OpenStack CLI on Centos VM Prerequisites In this article we will assume, that we have already created the following resources, that refer to the Project named dev1, that was created in the Organization named Test-Shop:
-API User, created with the following parameters and its RC file has already been loaded: Name: testCLIuser; Password: P@sword.</description></item><item><title>Working with OpenStack API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</guid><description>On this page, you can find an explanation of how to work with OpenStack API using the Cloud Console Account.
-Table of contents Table of contents Introduction Configure credentials file Dot source credentials file Run test commands Change region Find resources Conclusion Introduction We encourage clients to use CLI Users to work directly with OpenStack API, but it has a limitation - it&amp;rsquo;s bonded to the specific project in the specific region.</description></item><item><title>Organization's management over API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</guid><description>On this page, you can find the workflow for management of your Organization in the Cloud Console using API.
-Table of contents Table of contents Required endpoints Example using CURL Example using Postman Required endpoints auth.ventuscloud.eu - use it to get ID and Access tokens from basic credentials api.ventuscloud.eu - use it to work with organization&amp;rsquo;s resources Example using CURL Get ID and Access tokens
-To get ID and Access tokens.</description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.
-Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.
-Most of the features described below are in beta state, thus not available at the Console portal, and can be configured through CLI and IaC tools like Terraform and Ansible.</description></item><item><title>The Site to Site IPSec VPN</title><link>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</guid><description>On this page, you can find an explanation of how to configure Site to Site IPSec connection between the Cloud Console Regions.
-Table of contents Table of contents Prerequisites Configure Site to Site IPSec connection Strongswan useful commands Capture traffic Disable port-security Preparing client side Verifying connectivity Prerequisites Create a private network in each region. How to create a network see the articles - Networks and Subnets Create two VMs in private and public networks based on Ubuntu 18.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Advanced on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/tutorials-advanced/</link><description>Recent content in Advanced on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/tutorials-advanced/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation OpenStack CLI</title><link>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ol>
+&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#install-openstack-cli-on-ubuntu-vm">Install OpenStack CLI on Ubuntu VM&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#install-openstack-cli-on-centos-vm">Install OpenStack CLI on Centos VM&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>dev1&lt;/em>, that was created in the Organization named &lt;em>Test-Shop&lt;/em>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>API User&lt;/strong>, created with the following parameters and its RC file has already been loaded:
+&lt;ul>
+&lt;li>&lt;em>Name&lt;/em>: testCLIuser;&lt;/li>
+&lt;li>&lt;em>Password&lt;/em>: P@sword.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>For more information, see the article -&lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/">CLI Users&lt;/a>&lt;/p></description></item><item><title>Working with OpenStack API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to work with OpenStack API
+using the Cloud Console Account.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#configure-credentials-file">Configure credentials file&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#dot-source-credentials-file">Dot source credentials file&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#run-test-commands">Run test commands&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#change-region">Change region&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#find-resources">Find resources&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>We encourage clients to use &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/">CLI Users&lt;/a> to work directly with OpenStack API, but it has a limitation - it&amp;rsquo;s bonded to the specific project in the specific region.&lt;br>
+When you need to manage resources in all regions and all projects using the same
+credentials, you can use the Cloud Console Account.&lt;/p></description></item><item><title>Organization's management over API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</guid><description>&lt;hr>
+&lt;p>On this page, you can find the workflow for management of your Organization in
+the Cloud Console using API.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#required-endpoints">Required endpoints&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#example-using-curl">Example using CURL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#example-using-postman">Example using Postman&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="required-endpoints">Required endpoints&lt;/h2>
+&lt;ul>
+&lt;li>&lt;em>auth.ventuscloud.eu&lt;/em> - use it to get ID and Access tokens from basic credentials&lt;/li>
+&lt;li>&lt;em>api.ventuscloud.eu&lt;/em> - use it to work with organization&amp;rsquo;s resources &lt;/li>
+&lt;/ul>
+&lt;h2 id="example-using-curl">Example using CURL&lt;/h2>
+&lt;p>&lt;strong>Get ID and Access tokens&lt;/strong>&lt;br>
+To get ID and Access tokens. use next command:&lt;/p></description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr>
+&lt;p>On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p>
+&lt;blockquote>
+&lt;p>Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.&lt;/p>
+&lt;p>Most of the features described below are in beta state, thus not available at the Console portal, and can be configured through CLI and IaC tools like Terraform and Ansible.&lt;/p></description></item><item><title>The Site to Site IPSec VPN</title><link>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to configure Site to Site IPSec
+connection between the Cloud Console Regions.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#configure-site-to-site-ipsec-connection">Configure Site to Site IPSec connection&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#strongswan-useful-commands">Strongswan useful commands&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#capture-traffic">Capture traffic&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#disable-port-security">Disable port-security&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#preparing-client-side">Preparing client side&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#verifying-connectivity">Verifying connectivity&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ol>
+&lt;li>Create a private network in each region. How to create a network see the articles - &lt;a href="https://docs.ventuscloud.eu/products/networking/networks/">Networks&lt;/a> and &lt;a href="https://docs.ventuscloud.eu/products/networking/subnets/">Subnets&lt;/a>&lt;/li>
+&lt;li>Create two VMs in private and public networks based on Ubuntu 18.04 or higher in each region. How to create VMs see the article - &lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/">Virtual Machines&lt;/a>&lt;/li>
+&lt;li>For testing, need to create on each private network VM based on Windows or Linux&lt;/li>
+&lt;/ol>
+&lt;h2 id="configure-site-to-site-ipsec-connection">Configure Site to Site IPSec connection&lt;/h2>
+&lt;p>Example network topology:
+&lt;img src="../../assets/images/tutorials/11.png?classes=border,shadow" alt="">&lt;/p></description></item></channel></rss>

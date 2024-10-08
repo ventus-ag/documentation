@@ -1,10 +1,142 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STORAGE on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/storage/</link><description>Recent content in STORAGE on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/storage/index.xml" rel="self" type="application/rss+xml"/><item><title>Volumes</title><link>https://docs.ventuscloud.eu/products/storage/volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/volumes/</guid><description>On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.
-Table of contents Table of contents Volumes page Create Volume Attach Volume Detach Volume Create VM from Volume Edit Volume Extend Volume Delete Volume Volumes page To get to the Volumes page, select the Storage from the VIRTUAL DATACENTER block in the side-bar menu and click the Volumes TAB: On this page you can find all your own Volumes, created in the current Project, and the Volumes created during Cluster and VM creation, with the Create button, Search bar and Actions icon which opens a list of available management actions for the selected Volume: Actions icon opens the next list of available management actions:</description></item><item><title>VM's Volumes</title><link>https://docs.ventuscloud.eu/products/storage/manage-volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-volumes/</guid><description>On this page, you can find an explanation of how to manage Volumes, related to the selected Virtual Machine, from the Virtual Machine details page in the Cloud Console.
-Table of contents Table of contents VM&amp;rsquo;s VOLUMES TAB Attach Volume Detach Volume Edit Volume Extend Volume VM&amp;rsquo;s VOLUMES TAB To find all Volumes, related to the selected Virtual Machine, you need:
-open the Virtual Machines page - for this select the Virtual Machines from the VIRTUAL DATACENTER block in the side-bar menu: open the Virtual Machine details page - for this click on the Name of the corresponding Virtual Machine: open the VOLUMES page of this VM - for this click on the VOLUMES TAB: On this page you can find all Volumes, attached to the corresponding VM, with the Attach button, Search bar and Actions icon, which opens a list of available management actions for the selected Volume: Actions icon opens the next list of available management actions:</description></item><item><title>Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/snapshots/</guid><description>On this page, you can find an explanation of how to create, edit, delete Snapshots and how to create Volumes from the Snapshots in the Cloud Console.
-Table of contents Table of contents Snapshots page Create Snapshot Create Volume from Snapshot Create VM from Snapshot Create image from Snapshot Edit Snapshot Delete Snapshot Snapshots page To get to the Snapshots page, select Storage from the VIRTUAL DATACENTER block in the side-bar menu and click the Snapshots TAB: On this page you can find all created Snapshots with the Create button, Search bar and Actions icon, which opens a list of available management actions for the selected Snapshot: Actions icon opens the next list of available management actions:</description></item><item><title>VM's Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</guid><description>On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, from the Virtual Machine details page in the Cloud Console.
-Table of contents Table of contents VM&amp;rsquo;s SNAPSHOTS TAB Create Snapshot Edit Snapshot Delete Snapshot VM&amp;rsquo;s SNAPSHOTS TAB To find all Snapshots, related to the selected Virtual Machine, you need:
-open the Virtual Machines page - for this select the Virtual Machines from the VIRTUAL DATACENTER block in the side-bar menu: open the Virtual Machine details page - for this click on the Name of the corresponding Virtual Machine: open the SNAPSHOTS page of this VM - for this click on the SNAPSHOTS TAB: On this page you can find all Snapshots, related to the corresponding VM, with the Create button, Search bar and Actions icon, which opens a list of available management actions for the selected Snapshot: Actions icon opens the next list of available management actions:</description></item><item><title>Object Storage Credentials</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</guid><description>On this page, you can find an explanation of what Object Storage is and what Object Storage Credentials are in the Cloud Console. It also covers the available access methods for Object Storage, as well as instructions on how to create, delete, and manage Object Storage Credentials in the Cloud Console.
-Table of contents Table of contents Introduction Object Storage Credentials page Create Object Storage credentials Show secret key Re-generate secret key Delete Object Storage Credentials Introduction What is Object Storage?</description></item><item><title>Integrated S3-Browser</title><link>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</guid><description>On this page, you can find an explanation of how to use Object Storage with its integrated S3-Browser in the Cloud Console, how to create and delete buckets, how to navigate through folders and files, upload and download files and instructions for other steps to manage an Object Storage effectively in the Cloud Console.
-Table of contents Table of contents Introduction S3 Buckets page Create bucket Browse folders and files within a bucket.</description></item><item><title>Object Storage Clients</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</guid><description>On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.
-Table of contents Table of contents Introduction Use Object Storage with Python API Create connection Create bucket List buckets Create object List bucket content Change object ACL Generate object download URL Delete object Deleting bucket Use Object Storage with third-party tools Introduction In the Cloud Console, you have the option to use Object Storage as with its integrated S3-Browser, or you can choose to utilize different APIs or third-party tools such as S3 Browser (a freeware Windows client available at https://s3browser.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>STORAGE on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/storage/</link><description>Recent content in STORAGE on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/storage/index.xml" rel="self" type="application/rss+xml"/><item><title>Volumes</title><link>https://docs.ventuscloud.eu/products/storage/volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/volumes/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#volumes-page">Volumes page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-volume">Create Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#attach-volume">Attach Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#detach-volume">Detach Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-vm-from-volume">Create VM from Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-volume">Edit Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#extend-volume">Extend Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-volume">Delete Volume&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="volumes-page">Volumes page&lt;/h2>
+&lt;p>To get to the &lt;em>Volumes page&lt;/em>, select the &lt;strong>Storage&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Volumes TAB:&lt;/strong>
+&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
+&lt;img src="../../../assets/images/vol/2.png?width=30pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Volumes</title><link>https://docs.ventuscloud.eu/products/storage/manage-volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-volumes/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to manage Volumes, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#vms-volumes-tab">VM&amp;rsquo;s VOLUMES TAB&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#attach-volume">Attach Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#detach-volume">Detach Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-volume">Edit Volume&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#extend-volume">Extend Volume&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="vms-volumes-tab">VM&amp;rsquo;s VOLUMES TAB&lt;/h2>
+&lt;p>To find all Volumes, related to the selected Virtual Machine, you need:&lt;/p>
+&lt;ul>
+&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/snapshots/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, edit, delete Snapshots and how to create Volumes from the Snapshots in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#snapshots-page">Snapshots page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-snapshot">Create Snapshot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-volume-from-snapshot">Create Volume from Snapshot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-vm-from-snapshot">Create VM from Snapshot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-image-from-snapshot">Create image from Snapshot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-snapshot">Edit Snapshot &lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-snapshot">Delete Snapshot&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="snapshots-page">Snapshots page&lt;/h2>
+&lt;p>To get to the &lt;em>Snapshots page&lt;/em>, select &lt;strong>Storage&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Snapshots TAB&lt;/strong>:
+&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
+&lt;img src="../../../assets/images/snap/1.png?width=30pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#vms-snapshots-tab">VM&amp;rsquo;s SNAPSHOTS TAB&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-snapshot">Create Snapshot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-snapshot">Edit Snapshot &lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-snapshot">Delete Snapshot&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="vms-snapshots-tab">VM&amp;rsquo;s SNAPSHOTS TAB&lt;/h2>
+&lt;p>To find all Snapshots, related to the selected Virtual Machine, you need:&lt;/p>
+&lt;ul>
+&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Object Storage Credentials</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of what Object Storage is and what Object Storage Credentials are in the Cloud Console. It also covers the available access methods for Object Storage, as well as instructions on how to create, delete, and manage Object Storage Credentials in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#object-storage-credentials-page">Object Storage Credentials page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-object-storage-credentials">Create Object Storage credentials&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#show-secret-key">Show secret key&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#re-generate-secret-key">Re-generate secret key&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-object-storage-credentials">Delete Object Storage Credentials&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>&lt;strong>What is Object Storage?&lt;/strong>&lt;br>
+The Cloud Console Object Storage makes it possible to store data simply and cost-effectively. It provides a fully distributed, API-accessible storage platform that can be integrated directly into applications or used for backup, archiving, and data retention.&lt;/p></description></item><item><title>Integrated S3-Browser</title><link>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to use Object Storage with its integrated S3-Browser in the Cloud Console, how to create and delete buckets, how to navigate through folders and files, upload and download files and instructions for other steps to manage an Object Storage effectively in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s3-buckets-page">S3 Buckets page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-bucket">Create bucket&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket.&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-folder">Create folder&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#upload-file">Upload file&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#download-file">Download file&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-and-multi-delete-objects">Delete and multi-delete objects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#make-bucket-public">Make bucket public&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#get-buckets-public-url">Get bucket&amp;rsquo;s public URL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#get-objects-public-url">Get object&amp;rsquo;s public URL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#make-bucket-private">Make bucket private&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-bucket">Delete bucket&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>In the Cloud Console, you have the option to use Object Storage with its integrated S3-Browser, which offers essential Object Storage functionality.&lt;/p></description></item><item><title>Object Storage Clients</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#use-object-storage-with-python-api">Use Object Storage with Python API&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#create-connection">Create connection&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-bucket">Create bucket&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#list-buckets">List buckets&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-object">Create object&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#list-bucket-content">List bucket content&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#change-object-acl">Change object ACL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#generate-object-download-url">Generate object download URL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-object">Delete object&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#deleting-bucket">Deleting bucket&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#use-object-storage-with-third-party-tools">Use Object Storage with third-party tools&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>In the Cloud Console, you have the option to use Object Storage as with its integrated S3-Browser, or you can choose to utilize different APIs or third-party tools such as S3 Browser (a freeware Windows client available at &lt;a href="https://s3browser.com/">https://s3browser.com/&lt;/a>) or Cyberduck (a libre server and cloud storage browser available for both Mac and Windows operating systems, accessible at &lt;a href="https://cyberduck.io/)">https://cyberduck.io/)&lt;/a>.&lt;/p></description></item></channel></rss>
