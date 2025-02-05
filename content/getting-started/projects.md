@@ -69,22 +69,25 @@ Access to this section is granted only to Administrators or Owners (project memb
 In Cloud Console you can configure a **monthly budget tracker** for your Project to monitor and control cloud resource consumption. Once the budget reaches 80% of the set limit, the subscribed Administrators of your Organization will receive daily email notifications informing them that the budget is nearly exhausted.
 
 {{% notice note %}}
-Only Administrators or Owners can configure the monthly budget tracker (project members do not have access to billing information).
+Only Administrators or Owners can configure the monthly budget tracker (project members do not have access to billing information).  
+Likewise, only Administrators or Owners can be subscribed to receive budget alerts.
 {{% /notice %}}
 
 To set a budget limit, follow these steps:
 
 - navigate to the **billing information** section on the *Project overview page* and click the **Set Budget Threshold** button:  
-![](../../assets/images/projects/13.png?width=50pc&classes=border,shadow) 
-- on the next opened *Set Budget Threshold* window - enter the budget limit amount, select subscribers who will receive budget alerts (from the list of Organization Administrators and the Owner) and click on the SET button:  
+![](../../assets/images/projects/13.png?width=50pc&classes=border,shadow)   
+- fill in the form on the next opened *Set Budget Threshold window* and click on the SET button: 
+  - **Budget limit amount**:  enter the monthly budget limit amount, which will trigger daily alerts once 80% of the limit is reached;
+  - **Subscribers**: select who will receive budget alerts from the list of Organization Administrators and the Owner — these users will be notified when the budget threshold is reached.  
 ![](../../assets/images/projects/15.png?width=35pc&classes=border,shadow) 
 
 Once the budget limit is set, a **Budget Tracker** will be displayed on the page, allowing Administrators to monitor the project's monthly consumption in real time.
 ![](../../assets/images/projects/16.png?width=50pc&classes=border,shadow) 
 
-Additionally, if the budget limit is configured, when 80% of the budget is reached, subscribed Administrators of the Organization will receive daily email alerts, notifying them that the budget is close to being exceeded.
-
-If you wish to disable the budget limit, set the amount to 0.
+{{% notice note %}}
+If you wish to disable the budget limit, hide the Budget Tracker, and stop all budget alerts, set the Budget Limit Amount to 0.
+{{% /notice %}}
 
 ## Edit Project 
 To edit the Project, do the following:
