@@ -27,7 +27,7 @@ It will open next additional sections on the *side-bar menu,* from which you nee
 ![](../../../assets/images/organizations/0.png?width=15pc&classes=border,shadow) 
 
 This action will redirect you to the *Administrators page*, where you can find all Administrators, related to this Organization with the *Add Administrator button* and *Search bar*:  
-![](../../assets/images/organizations/9.png?width=35pc&classes=border,shadow)  
+![](../../assets/images/organizations/9.png?width=45pc&classes=border,shadow)  
 
 ## Add Administrator
 {{% notice note %}}
@@ -59,13 +59,13 @@ If the user is not yet registered, you can create an account in the Cloud Consol
 After this, the User, whose email address you entered in the invitation, will receive an email with the *Accept invitation link*. By clicking on this link, the user will be redirected to the Cloud Console, where he need to click the *ACCEPT INVITATION* icon.      
 
 And on the yours *Administrators page* you will see the added information about your invitation with the active **Actions** icon:
-![](../../assets/images/organizations/12.png?width=35pc&classes=border,shadow)  
+![](../../assets/images/organizations/12.png?width=45pc&classes=border,shadow)  
 **Actions** icon in this step opens the next list of available management actions:  
 - *Resend invitation* - this option is using to send one more invitation with the *Accept invitation link*.
 - *Delete invitation* - this option is using to block the *Accept invitation link* in the invitation.
 
 When the invited User accepts your invitation, he will get an Administrator role in appropriate Organization and the access to all resources of it and on your *Administrators page* you will see this newly added Administrator with active *Actions icon*:
-![](../../assets/images/organizations/13.png?width=35pc&classes=border,shadow)  
+![](../../assets/images/organizations/13.png?width=45pc&classes=border,shadow)  
 
 **Actions** icon after accepting invitation opens the next list of available management actions:  
 - *Transfer an organization* - this option is using to change the Owner of the selected Organization.  
