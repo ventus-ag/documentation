@@ -10,7 +10,7 @@ On this page, you can find an explanation of how to create a new Project, and ho
   - [Projects page](#projects-page)
   - [Create Project](#create-project)
   - [Project Overview Page](#project-overview-page)
-  - [Set Budget Limit](#set-budget-limit)
+  - [Set Budget Threshold](#set-budget-threshold)
   - [Edit Project](#edit-project)
   - [Delete Project](#delete-project)
   - [Add users to Project](#add-users-to-project)
@@ -64,7 +64,7 @@ This action will redirect you to the *Project overview page*, where you can fin
 Access to this section is granted only to Administrators or Owners (project members cannot view billing information):  
 ![](../../assets/images/projects/12.png?width=50pc&classes=border,shadow) 
 
-## Set Budget Limit
+## Set Budget Threshold
 
 In Cloud Console you can configure a **monthly budget tracker** for your Project to monitor and control cloud resource consumption. Once the budget reaches 80% of the set limit, the subscribed Administrators of your Organization will receive daily email notifications informing them that the budget is nearly exhausted.
 
@@ -86,7 +86,7 @@ Once the budget limit is set, a **Budget Tracker** will be displayed on the page
 ![](../../assets/images/projects/16.png?width=50pc&classes=border,shadow) 
 
 {{% notice note %}}
-If you wish to disable the budget limit, hide the Budget Tracker, and stop all budget alerts, set the Budget Limit Amount to 0.
+If you wish to disable the budget threshold, hide the Budget Tracker, and stop all budget alerts, set the Budget Limit Amount to 0.
 {{% /notice %}}
 
 ## Edit Project 
