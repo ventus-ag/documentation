@@ -29,7 +29,7 @@ To find necessary information about this, see the next articles:
 [Projects](https://docs.ventuscloud.eu/getting-started/projects/).   
 
 If you are already a registered User and have an active Organization, you can register new users and assign them as Administrators within your Organization.
-To find necessary information about this, see the next articles:  
+To find necessary information about this, see the next article:  
 [Administrators](https://docs.ventuscloud.eu/getting-started/administrators/).  
 
 

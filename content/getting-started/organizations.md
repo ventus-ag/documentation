@@ -13,6 +13,7 @@ On this page, you can find an explanation of how to create a new Organization an
   - [Edit Organization](#edit-organization)
   - [Delete Organization](#delete-organization)
   - [Leave Organization](#leave-organization)
+  - [Add Administrators](#add-administrators)
   - [Transfer an Organization](#transfer-an-organization)
 
 ## Users within Organization
@@ -104,6 +105,30 @@ After these steps, your User will not have access to the selected Organization.
 
 Also, you can leave the Organization from its *Projects page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/organizations/16.png?width=25pc&classes=border,shadow)
+
+## Add Administrators
+
+{{% notice note %}}
+To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an *Administrator* or *Owner*.   
+{{% /notice %}}
+
+To see information about Administrators of the Organization, go to the *Organizations page* and click on the **Name** of the Organization:  
+![](../../assets/images/organizations/7.png?classes=border,shadow)  
+
+It will open next additional sections on the *side-bar menu,* from which you need to select **Administrators**:
+![](../../../assets/images/organizations/0.png?width=15pc&classes=border,shadow) 
+
+This action will redirect you to the *Administrators page*, where you can find all Administrators, related to this Organization:  
+![](../../assets/images/organizations/9.png?width=35pc&classes=border,shadow)  
+
+From this page you can: 
+- Add Administrators to the Organization (already registered users);
+- Register new users and add them as an Administrators to the Organization;
+- Remove Administrators;
+- Transfer an Organization;
+
+To see detailed instructions about each action, please see the next article:  
+[Administrators](https://docs.ventuscloud.eu/getting-started/administrators/).  
 
 ## Transfer an Organization
 {{% notice note %}}
