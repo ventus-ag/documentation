@@ -274,7 +274,22 @@
 &lt;li>&lt;strong>Member&lt;/strong> - this role is assigned to a User who is granted access to the Organization&amp;rsquo;s Project and, accordingly, to all resources within this Project. Member can&amp;rsquo;t add/remove other Users in the Project, can&amp;rsquo;t see information about Administrators or Billing of the Organization, can&amp;rsquo;t add new Projects, edit or delete current one.&lt;/li>
 &lt;/ul>
 &lt;p>As a &lt;em>Owner&lt;/em> or &lt;em>Administrator&lt;/em> you can add additional Admins to the Organization, which will also have access to all resources of the Organization.&lt;br>
-Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/">Administrators&lt;/a>.&lt;/p></description></item><item><title>Share Images between Projects</title><link>https://docs.ventuscloud.eu/products/images/share-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/share-images/</guid><description>&lt;hr>
+Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/">Administrators&lt;/a>.&lt;/p></description></item><item><title>RWX Storage Class</title><link>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to access your Kubernetes cluster and configure ReadWriteMany (RWX) storage using SeaweedFS.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#configuring-seaweedfs-as-rwx-storage-in-kubernetes">Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#why-seaweedfs-for-rwx-storage">Why SeaweedFS for RWX Storage?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#seaweedfs-components">SeaweedFS Components&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#non-ha-vs-ha">Non-HA vs. HA&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#installing-seaweedfs-and-the-csi-driver">Installing SeaweedFS and the CSI Driver&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#testing-rwx-storage">Testing RWX Storage&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="configuring-seaweedfs-as-rwx-storage-in-kubernetes">Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/h1>
+&lt;p>This guide walks you through setting up SeaweedFS as an NFS-like RWX (ReadWriteMany) storage solution in a Kubernetes cluster. We’ll cover:&lt;/p></description></item><item><title>Share Images between Projects</title><link>https://docs.ventuscloud.eu/products/images/share-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/share-images/</guid><description>&lt;hr>
 &lt;p>On this page, we will discuss a workflow to help you to share Images between Projects in the same Region.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
