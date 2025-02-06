@@ -3,7 +3,7 @@ title: Administrators
 weight: 20
 ---
 ___
-On this page, you can find an explanation of how to add a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.
+On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -35,7 +35,7 @@ You can add only those Users, who have already passed the registration stage in 
 {{% /notice %}}   
 
 {{% notice note %}}
-If you need to add a user who is not yet registered, you can do so directly from the "Add Administrator" dialog by selecting the "Register new user" option.
+If you need to add a user who is not yet registered, you can create an account in the Cloud Console for the user before adding them as an Administrator to the selected Organization.
 {{% /notice %}}   
 
 **Add an Administrator (Registered User):**
@@ -48,11 +48,11 @@ To add new Administrator, who is already registered in the Cloud Console, to the
 **Add an Administrator (New User):**
 If the user is not yet registered, you can create an account in the Cloud Console for the user before adding them as an Administrator to the selected Organization. To do it, follow these steps:  
 - go to the *Administrators page* and click the ADD ADMINISTRATOR icon in the upper left corner;  
-- check the *Register new user* checkbox:  
+- on  the next opened *Add Administrator window* check the **Register new user** checkbox: 
 ![](../../assets/images/organizations/17.png?width=35pc&classes=border,shadow)  
-- fill in the form on the next opened *Register new user* window and click on the REGISTER button:
+- fill in the form on the next opened *Register new user window* and click on the REGISTER button:
 ![](../../assets/images/organizations/18.png?width=35pc&classes=border,shadow)  
-- after completing the registration, return to the *Add Administrator* window, enter the newly registered email address and click on the SEND INVITATION button: 
+- after completing the registration, return to the *Add Administrator window*, enter the newly registered email address and click on the SEND INVITATION button: 
 ![](../../assets/images/organizations/19.png?width=35pc&classes=border,shadow)  
  
 
