@@ -6,9 +6,10 @@ ___
 On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.
 
 # Table of contents
-1. [Prerequisites](#prerequisites)
-1. [Install OpenStack CLI on Ubuntu VM](#install-openstack-cli-on-ubuntu-vm)
-1. [Install OpenStack CLI on Centos VM](#install-openstack-cli-on-centos-vm)
+- [Table of contents](#table-of-contents)
+	- [Prerequisites](#prerequisites)
+	- [Install OpenStack CLI on Ubuntu VM](#install-openstack-cli-on-ubuntu-vm)
+	- [Install OpenStack CLI on Centos VM](#install-openstack-cli-oncentos-vm)
 
 ## Prerequisites
 In this article we will assume, that we have already created the following resources, that refer to the Project named *dev1*, that was created in the Organization named *Test-Shop*:
@@ -28,7 +29,7 @@ For more information, see the article -[CLI Users](https://docs.ventuscloud.eu/p
 - Install Kubernetes Python Client by running the next command:    
 `sudo apt install python3-pip`  
 
-- Install openstack cli tool by running two next commands one by one:   
+- Install openstack cli tool by running next commands one by one:   
 `sudo pip3 install python-openstackclient`    
 `sudo pip3 install python-magnumclient`   
 `sudo pip3 install python-octaviaclient`  

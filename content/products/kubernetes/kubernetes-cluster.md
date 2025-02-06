@@ -25,7 +25,8 @@ On this page you can find all created Kubernetes Clusters in the current Project
 
 **Actions** icon opens the next list of available management actions:
 - *Download kubeconfig file* - this option is used to get the kubeconfig file, that pertains to the selected Cluster;
-- *Edit* - this option is used to change the count of Worker-nodes in the selected Cluster;
+- *Resize* - this option is used to change the count of Worker-nodes in the selected Cluster;
+- *Upgrade* - this option is used to update template (version) of the selected Cluster;
 - *Delete* - this option is for Cluster removing.
 
 ## Create Cluster
@@ -62,7 +63,7 @@ To open the *Cluster details page*, click on the **Name** of the correspondin
 ![](../../../assets/images/clusters/7.png?classes=border,shadow)
 
 This action will redirect you to the *Cluster details page*, where you can find four tabs with additional information about selected Cluster and panel with available **quick actions**:
-- panel with available **quick actions** include all available management actions with this cluster such as: edit (resize), delete and download kubeconfig file:
+- panel with available **quick actions** include all available management actions with this cluster such as: resize, delete, upgrade and download kubeconfig file:
 
 ![](../../../assets/images/clusters/12.png?width=25pc&classes=border,shadow)
 
@@ -101,8 +102,8 @@ Also, you can download the kubeconfig file from *Cluster details page*, by clic
 ## Resize Cluster
 To resize the Cluster, do the following:
 - identify the Cluster, that you want to resize, on the *Clusters page*;
-- click on the **Actions** icon  and select the **Edit** in the list of available options;
-- update the count of Worker-nodes in the Cluster on the opened *Edit Cluster window* and click on the SAVE icon:
+- click on the **Actions** icon  and select the **Resize** in the list of available options;
+- update the count of Worker-nodes in the Cluster on the opened *Resize Cluster window* and click on the SAVE icon:
 
 ![](../../../assets/images/clusters/5.png?width=30pc&classes=border,shadow)
 
@@ -114,7 +115,7 @@ Also, you can resize the Cluster from *Cluster details page*, by clicking on the
 ## Upgrade Cluster
 
 {{% notice note %}}
-For cluster upgrading you can select only a version that is higher than current one.
+For cluster upgrading you can select only a version that is higher than current one or you can choose the current version to re-apply the configuration.
 {{% /notice %}}
 
 To upgrade the Cluster, do the following:

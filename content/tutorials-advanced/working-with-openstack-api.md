@@ -89,7 +89,7 @@ Expected result - list of all projects in your currently active region:
 ```
 
 ## Change region
-To change the region, do the dollowing:
+To change the region, do the following:
 
 * Edit your *ventus_credentials file*, change currently selected region to another one;
 * Dot source your ventus_credentials file:  
