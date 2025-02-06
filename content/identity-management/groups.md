@@ -81,7 +81,7 @@ Users from the second block will have access to this Project and, accordingly, t
 ### Manage Users in Group
 
 {{% notice note %}}
-You can add as many Users and Projects to the Group as you need. Their organizational role will be "Member", and they will only have access to the current project.
+You can add as many Users and Projects to the Group as you need. Their role in the Organization will be a "Member", and they will only have access to the currently assigned projects to the Group.
 {{% /notice %}}
 
 {{% notice note %}}
