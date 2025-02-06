@@ -38,14 +38,14 @@ You can add only those Users, who have already passed the registration stage in 
 If you need to add a user who is not yet registered, you can create an account in the Cloud Console for the user before adding them as an Administrator to the selected Organization.
 {{% /notice %}}   
 
-**Add an Administrator (Registered User):**
+**Add an Administrator (Registered User):**   
 To add new Administrator, who is already registered in the Cloud Console, to the selected Organization, do the following:   
 - go to the *Administrators page* and click the ADD ADMINISTRATOR icon in the upper left corner;      
 - specify the **E-mail address** of the User that you want to add to your Organization and click on the SEND INVITATION button: 
  
 ![](../../assets/images/organizations/11.png?width=35pc&classes=border,shadow)   
 
-**Add an Administrator (New User):**
+**Add an Administrator (New User):**   
 If the user is not yet registered, you can create an account in the Cloud Console for the user before adding them as an Administrator to the selected Organization. To do it, follow these steps:  
 - go to the *Administrators page* and click the ADD ADMINISTRATOR icon in the upper left corner;  
 - on  the next opened *Add Administrator window* check the **Register new user** checkbox: 
