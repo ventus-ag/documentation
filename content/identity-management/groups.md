@@ -36,7 +36,7 @@ To create a new Group, do the following:
 - go to the *Groups page* and click on the CREATE GROUP icon in the upper left corner;
 - specify the **Name** of the Group on the next opened *Create Group window* and click on the CREATE icon:
 
-![](../../assets/images/groups/2.png?width=35pc&classes=border,shadow) 
+![](../../assets/images/groups/2.png?width=30pc&classes=border,shadow) 
 
 After these steps, the newly created Group will be added to the *Groups page*.  
 
@@ -67,7 +67,7 @@ To add the Project to the selected Group, do the following:
 - go to the *Group details page* and click on the ASSIGN PROJECT icon;
 - select the Project, to which you want to assign Users, from the second block, and click on the ASSIGN icon:
 
-![](../../assets/images/groups/8.png?width=35pc&classes=border,shadow)
+![](../../assets/images/groups/8.png?width=30pc&classes=border,shadow)
 
 After these steps, the newly added Project will appear in the first block of the *Group details page* with active *Actions icon*: 
 ![](../../assets/images/groups/9.png?width=50pc&classes=border,shadow)
@@ -94,30 +94,30 @@ To add a new User to the selected Group, do the next:
 - go to the *Group details page* and click on the ADD MEMBER button;
 - specify the **E-mail address** of the User, that you want to add to the group, and click on the SEND INVITATION icon:
 
-![](../../assets/images/groups/5.png?width=35pc&classes=border,shadow) 
+![](../../assets/images/groups/5.png?width=30pc&classes=border,shadow) 
 
 **Add a Member to the Group (New User):**
 If the user isn't yet registered, you can create an account in the Cloud Console for the user before adding them as a Member to the selected Group. To do it, follow these steps:  
 - go to the *Group details page* and click on the ADD MEMBER button;
 - on  the next opened *Add Member window* check the **Register new user** checkbox:  
-![](../../assets/images/groups/14.png?width=35pc&classes=border,shadow)  
+![](../../assets/images/groups/14.png?width=30pc&classes=border,shadow)  
 - fill in the form on the next opened *Register new user window* and click on the REGISTER button:
-![](../../assets/images/groups/13.png?width=35pc&classes=border,shadow)  
+![](../../assets/images/groups/13.png?width=30pc&classes=border,shadow)  
 - after completing the registration, return to the *Add Member window*, enter the newly registered email address and click on the SEND INVITATION button: 
-![](../../assets/images/groups/12.png?width=35pc&classes=border,shadow)  
+![](../../assets/images/groups/12.png?width=30pc&classes=border,shadow)  
  
 
 After this, the User, whose email address you entered in the invitation, will receive an email with the *Accept invitation link*. By clicking on this link, the user will be redirected to the Cloud Console, where he need to click the *ACCEPT INVITATION* icon.      
 
 And on the yours *Group details page* you will see the added information about your invitation with the active **Actions** icon:
-![](../../assets/images/groups/6.png?classes=border,shadow)
+![](../../assets/images/groups/6.png?width=50pc&classes=border,shadow)
 
 **Actions** icon in this step opens the next list of available management actions:  
 - *Resend invitation* - this option is using to send one more invitation with the *Accept invitation link*.
 - *Delete invitation* - this option is using to block the *Accept invitation link* in the invitation.
 
 When the invited User accepts your invitation, he will get access to the Projects, that you provided in the appropriate Group, and on your *Group details page* you will see this newly added User with active *Actions icon*:
-![](../../assets/images/groups/7.png?classes=border,shadow) 
+![](../../assets/images/groups/7.png?width=50pc&classes=border,shadow) 
 
 **Actions** icon after accepting invitation opens the next list of available management actions:  
 - *Remove* - this option is using to delete the User from the Group.
