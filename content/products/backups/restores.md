@@ -1,7 +1,7 @@
----
+<!-- ---
 title: Restores
 weight: 5
----
+--- -->
 ___
 On this page, you can find an explanation of what is the Restore in the Cloud Console, how to recover backed-up Virtual Machines and instructions for other steps to manage Restores in the Cloud Console.
 
