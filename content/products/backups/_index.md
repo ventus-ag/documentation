@@ -1,7 +1,8 @@
-<!-- +++
++++
 title = "BACKUPS"
 date = 2019-09-25T01:53:09+03:30
 weight = 31
+draft = true
 chapter = true
 pre = "<b>      </b>"
 +++
@@ -15,4 +16,4 @@ Backups feature in the Cloud Console is currently in beta and is currently avail
 {{% /notice %}}
 ___
 
-{{% children style="h4" depth="1" %}} -->
+{{% children style="h4" depth="1" %}}
