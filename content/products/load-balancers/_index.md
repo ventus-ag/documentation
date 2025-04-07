@@ -8,7 +8,7 @@ pre = "<b>      </b>"
 
 # **LOAD BALANCERS**
 ___
-Here you can find an explanation of how to configure Load Balancers in the Cloud Console — including setting up listeners, creating pools, and assigning a floating IP to your Load Balancer.
+Here you can find an explanation of how to configure Load Balancers in the Cloud Console, including setting up listeners, creating pools, and assigning a floating IP to your Load Balancer.
 
 {{% notice note %}}
 Load Balancers feature in the Cloud Console is currently in beta.
