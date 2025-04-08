@@ -1,6 +1,6 @@
 ---
 title: Load Balancers
-weight: 1
+weight: 21
 ---
 ___
 On this page, you can find an explanation of how to create, edit, delete Load Balancer and instructions for other steps to manage it in the Cloud Console.
