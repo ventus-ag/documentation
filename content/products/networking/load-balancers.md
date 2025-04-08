@@ -11,16 +11,21 @@ On this page, you can find an explanation of how to create, edit, delete Load Ba
   - [Load Balancers page](#load-balancers-page)
   - [Create Load Balancer](#create-load-balancer)
   - [Load Balancer details page](#load-balancer-details-page)
-    - [Listeners TAB](#listeners-tab)
+    - [Listeners](#listeners)
       - [Create Listener](#create-listener)
       - [Listener details page](#listener-details-page)
       - [Edit Listener](#edit-listener)
       - [Delete Listener](#delete-listener)
-    - [Pools TAB](#pools-tab)
+    - [Pools](#pools)
       - [Create Pool](#create-pool)
       - [Pool details page](#pool-details-page)
       - [Edit Pool](#edit-pool)
       - [Delete Pool](#delete-pool)
+    - [Health Monitors.](#health-monitors)
+      - [Create Health Monitor](#create-health-monitor)
+      - [Edit Health Monitor](#edit-health-monitor)
+      - [Edit Health Monitor](#edit-health-monitor-1)
+      - [Delete Health Monitor](#delete-health-monitor)
   - [Edit Load Balancer](#edit-load-balancer)
   - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
   - [Delete Load Balancer](#delete-load-balancer)
@@ -98,10 +103,13 @@ This action will redirect you to the *Load Balancer details page*, where you ca
 - **two tabs**: Listeners and Pools.
 ![](../../../assets/images/lb/6.png?width=30pc&classes=border,shadow)
   
-### Listeners TAB  
-**LISTENERS TAB** on the *Load Balancer details page* - displays all listeners associated with the Load Balancer. 
+### Listeners 
+**Listeners** define how the Load Balancer receives and handles incoming traffic based on protocol and port.  
+Load Balancer may have multiple listeners, each independently configured to handle incoming connections on a specific port and protocol.  
+All listeners associated with the same Load Balancer must use distinct ports to avoid conflicts.
 
-From here, it is possible to:
+**LISTENERS TAB** on the *Load Balancer details page* - displays all listeners associated with the selected Load Balancer.   
+From here, it is possible to:  
 - create new listeners;  
 - manage (edit/delete/change associated pool) existing ones; 
 - navigate to the *Listener details page* by clicking on the listener's **name**.   
@@ -172,7 +180,7 @@ Also, you can edit the Listener from:
 - the *Listener Details page* – by clicking on the appropriative **quick actions** icon at the top:   
 ![](../../../assets/images/lb/23.png?width=35pc&classes=border,shadow)  
 
-- on the *Pool Details page* - by clicking the **edit icon** in the Listener information block:   
+- the *Pool Details page* - by clicking the **edit icon** in the Listener information block:   
 ![](../../../assets/images/lb/24.png?classes=border,shadow)   
 
 #### Delete Listener
@@ -190,10 +198,12 @@ Also, you can delete the Listener from:
 ![](../../../assets/images/lb/25.png?width=35pc&classes=border,shadow)  
 
 
-### Pools TAB  
-**POOLS TAB** on the *Load Balancer details page* - lists all pools created under the Load Balancer.  
+### Pools  
+**Pool** is a group of backend servers (members) that receive traffic distributed by the Load Balancer.  
+Each pool can be attached to one listener, but only if the pool and listener use the same or compatible protocol.  
 
-From here, it is possible to:
+**POOLS TAB** on the *Load Balancer details page* lists all pools created under the selected Load Balancer.  
+From here, it is possible to:  
 - create new pools;  
 - edit or delete existing ones;  
 - navigate to the *Pool Details page* by clicking on the pool’s **name**.  
@@ -210,9 +220,6 @@ More information about the *Pool details page* will be provided in the following
 
 
 #### Create Pool
-{{% notice note %}}
-A pool represents a group of members over which the load balancing will be applied.
-{{% /notice %}}
 
 To create new Pool associated to the current load balancer, do the following:
 - open POOLS TAB on the *Load Balancer details page* and click on the CREATE POOL icon in the upper left corner;
@@ -266,7 +273,7 @@ Also, you can edit the Pool from:
 - the *Pool Details page* – by clicking on the appropriate **quick actions** icon at the top:   
 ![](../../../assets/images/lb/39.png?width=30pc&classes=border,shadow)  
 
-- on the *Listener Details page* - by clicking the **edit icon** in the Pool information block:   
+- the *Listener Details page* - by clicking the **edit icon** in the Pool information block:   
 ![](../../../assets/images/lb/40.png?classes=border,shadow)   
 
 #### Delete Pool
@@ -283,9 +290,82 @@ Also, you can delete the Pool from:
 - the *Pool Details page* – by clicking on the appropriate **quick actions** icon at the top:   
 ![](../../../assets/images/lb/43.png?width=30pc&classes=border,shadow)  
 
-- on the *Listener Details page* - by clicking the **remove icon** and selecting *Delete* in the Pool information block:   
+- the *Listener Details page* - by clicking the **remove icon** and selecting *Delete* in the Pool information block:   
 ![](../../../assets/images/lb/42.png?classes=border,shadow)   
 
+### Health Monitors. 
+**Health Monitor** is used to check the status of each member in the pool. It regularly performs health checks, and only members that pass these checks will continue to receive new traffic from the Load Balancer.
+
+{{% notice note %}}
+Each Pool can only have one Health Monitor assigned to it.
+{{% /notice %}}
+
+You can access to the details and manage the configured Health Monitor from:  
+- *Listener Details page*, if the Listener has a Pool assigned:  
+![](../../../assets/images/lb/44.png?classes=border,shadow)  
+- *Pool Details page*, where the Health Monitor is always visible and manageable:  
+![](../../../assets/images/lb/45.png?classes=border,shadow)  
+
+#### Create Health Monitor
+{{% notice note %}}
+Each Pool can only have one Health Monitor assigned to it.
+{{% /notice %}}
+
+To create the Health Monitor, do the following:  
+- identify the Pool, where you want to add a Health Monitor and navigate to its *Pool details page*;   
+- click on the CREATE HEALTH MONITOR in the *Health Monitor section*:     
+![](../../../assets/images/lb/49.png?classes=border,shadow)
+- fill in the form on the next opened *Create Health Monitor window*:  
+![](../../../assets/images/lb/50.png?width=30pc&classes=border,shadow)
+  - *Name* - set a name for the health monitor; 
+  - *Health Monitor Type* - choose the protocol for health checks (e.g., HTTP, TCP);  
+  - *Timeout* - time (in seconds) to wait for a response before marking the check as failed;    
+  - *Delay* -  interval (in seconds) between consecutive health checks. Must be greater than or equal to the timeout;  
+  - *Max Retries* - number of failed checks before marking the member as inactive. Must be a number from 1 to 10;  
+  - *Max Retries Down* - number of failures before marking the member as in error. Must be a number from 1 to 10;  
+  - *HTTP Method* - the HTTP method used for the health check (e.g., GET);  
+  - *Expected Codes* - expected HTTP status codes that indicate a healthy response (can be a number, list, or range);  
+  - *URL Path* - the endpoint path for the health check (e.g., /health).
+
+After these steps, the Health Monitor will be created and attached to the selected Pool.
+
+Also you can create a Health Monitor from the *Listener Details page* — if the Listener is linked to a Pool that doesn't yet have a Health Monitor assigned.
+
+#### Edit Health Monitor
+To edit the Health Monitor, do the following:  
+- identify Pool, which Health Monitor you want to edit and navigate to this *Pool details page*;   
+- click on the **edit icon** in the Health Monitor information block:     
+![](../../../assets/images/lb/46.png?width=25pc&classes=border,shadow)
+- update desired settings on the next opened *Edit Health Monitor window*:  
+![](../../../assets/images/lb/47.png?width=30pc&classes=border,shadow)
+
+After these steps, the selected Health Monitor will be updated.   
+
+Also you can access and edit the Health Monitor from the *Listener Details page* — if the Listener is associated with Pool that has a Health Monitor configured.
+
+#### Edit Health Monitor
+To edit the Health Monitor, do the following:  
+- identify Pool, which Health Monitor you want to edit and navigate to this *Pool details page*;   
+- click on the **edit icon** in the Health Monitor information block:     
+![](../../../assets/images/lb/46.png?width=25pc&classes=border,shadow)
+- update desired settings on the next opened *Edit Health Monitor window*:  
+![](../../../assets/images/lb/47.png?width=30pc&classes=border,shadow)
+
+After these steps, the selected Health Monitor will be updated.   
+
+Also you can access and edit the Health Monitor from the *Listener Details page* — if the Listener is associated with Pool that has a Health Monitor configured.
+
+#### Delete Health Monitor
+
+To delete the Health Monitor, do the following:
+- identify Pool, which Health Monitor you want to delete and navigate to this *Pool details page*;   
+- click on the **delete icon** in the Health Monitor information block:     
+- confirm the Health Monitor deletion on the next opened *Confirmation window*.  
+![](../../../assets/images/lb/48.png?width=25pc&classes=border,shadow)
+
+After these steps, the selected Health Monitor will be deleted. 
+
+Also you can access and delete the Health Monitor from the *Listener Details page* — if the Listener is associated with Pool that has a Health Monitor configured.
 
 ## Edit Load Balancer
 To edit the Load Balancer, do the following:  
