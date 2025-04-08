@@ -52,48 +52,48 @@ To create new Floating IP, do the following:
 After these steps, the newly created Floating IP will be added to the *Floating IPs page*:
 ![](../../../assets/images/networks/net-5.png?classes=border,shadow)
 
-Also, when creating Floating IP, you can immediately associate it with available Interface:
+Also, when creating Floating IP, you can immediately associate it with available VM's Interface or Load Balancer:
 ![](../../../assets/images/networks/net-6.png?width=35pc&classes=border,shadow) 
 
-If Floating IP is currently associated with one of the created Interfaces, it's status is ACTIVE:  
+If Floating IP is currently associated with one of the created Interfaces or Load Balancer, it's status is ACTIVE:  
 ![](../../../assets/images/networks/net-7.png?classes=border,shadow)
 
 ## Associate/Disassociate Floating IP
 
-There are two ways to associate/disassociate already created Floating IP with the VM’s internal Interfaces
-- from the *Floating IPs page*;
-- from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*.
-
-In this article we will explain the first way - how to associate/disassociate Floating IP from the *Floating IPs page*.  
-Information about the second one you can find in the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
-
-Also, as you know from the previous chapter, you can immediately associate Floating IP when you create it.
-
 {{% notice note %}}
-Floating IP association can be completed successfully to VM's interface in internal subnet with enabled external gateway.
+Floating IP association can be completed successfully to VM's interface or with Load Balancer in internal subnet with enabled external gateway.
 {{% /notice %}}
 
-To associate already created Floating IP with the VM's internal Interfaces, do the following:
-- ensure that you have created VM in internal Network, which Interface you want to associate with the Floating IP.  
-  To find information about how to create internal Network use the article [Networks](https://docs.ventuscloud.eu/products/networking/networks/) and how to create VM - article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);
+**Associate Floating IP**  
+To associate already created Floating IP with the VM's internal Interface or with Load Balancer, do the following:
+- ensure that you have created VM or Load Balancer in internal Network, which Interface you want to associate with the Floating IP.  
+  To find information about:  
+  how to create internal Network - use the article [Networks](https://docs.ventuscloud.eu/products/networking/networks/)  
+  how to create Virtual Machine - use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);  
+    how to create Load Balancer - use the article [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/);   
 - ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.
   To find information about how to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
 - identify the Floating IP, that you want to associate, on the *Floating IPs page*;
-- click on the **Actions** icon and select the **Associate** in the list of available options;
-- select one of the available VM's internal Interfaces on the next opened window, and click on ASSOCIATE:
+- click on the **Actions** icon and select the **Associate** in the list of available options;  
+- select the resource to attach this floating IP to (Virtual Machine or Load Balancer):
+- select one of the available VM's internal Interfaces or available Load Balancer on the next opened window, and click on ASSOCIATE:
 
 ![](../../../assets/images/networks/net-9.png?width=35pc&classes=border,shadow) 
 
-After these steps, the selected Floating IP will have ACTIVE status and the associated with it VM will be publicly available:
-![](../../../assets/images/networks/net-11.png?classes=border,shadow) 
+After these steps, the selected Floating IP will have ACTIVE status and the associated with it VM or LB will be publicly available.  
+Also, as you know from the previous chapter, you can immediately associate Floating IP during its creation.
 
-If you need to disassociate Floating IP and to make your VM again publicly unavailable, do the following:
+**Disassociate Floating IP**  
+If you need to disassociate Floating IP and to make your VM or LB again publicly unavailable, do the following:
 - identify the associated Floating IP, that you want to disassociate, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Disassociate** in the list of available options:
 
-![](../../../assets/images/networks/net-12.png?classes=border,shadow) 
+After confirmation your action on the next opened window the selected resource (Vm or LB) will be again publicly unavailable and Floating IP has status DOWN.
 
-After confirmation your action on the next opened window the selected Virtual Machine will be again publicly unavailable and Floating IP has status DOWN.
+**Additional ways to associate/disassociate Floating IPs**
+It is possible to manage a Floating IP for a specific VM directly from the NETWORKS & SECURITY tab on the *Virtual Machine details page*. See [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/) for more info.
+
+To manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*. Detailed steps are described in the article - [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/)
 
 ## Edit Floating IP
 
