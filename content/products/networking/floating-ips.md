@@ -90,10 +90,10 @@ If you need to disassociate Floating IP and to make your VM or LB again publicly
 
 After confirmation your action on the next opened window the selected resource (Vm or LB) will be again publicly unavailable and Floating IP has status DOWN.
 
-**Additional ways to associate/disassociate Floating IPs**
-It is possible to manage a Floating IP for a specific VM directly from the NETWORKS & SECURITY tab on the *Virtual Machine details page*. See [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/) for more info.
+**Additional ways to associate/disassociate Floating IPs**  
+It is possible to manage a Floating IP for a specific VM directly from the *Virtual Machine details page*. See [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/) for more info.
 
-To manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*. Detailed steps are described in the article - [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/)
+If ypu need to manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*. See [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/) for more info.
 
 ## Edit Floating IP
 
