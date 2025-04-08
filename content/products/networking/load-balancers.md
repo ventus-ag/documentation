@@ -34,9 +34,27 @@ On this page, you can find an explanation of how to create, edit, delete Load Ba
   - [Delete Load Balancer](#delete-load-balancer)
 
 ## Introduction
-A Load Balancer (LB) helps distribute incoming traffic across multiple backend servers to ensure high availability and better performance. It provides a single access point to your application and automatically reroutes traffic if a server becomes unavailable. 
+**Load Balancer (LB)** helps distribute incoming traffic across multiple backend servers to ensure high availability and better performance. It provides a single access point to your application and automatically reroutes traffic if a server becomes unavailable. 
 
-A Load Balancer is a layered, multi-component entity. It always works in combination with **listeners** *(which define how incoming traffic is accepted)* and **pools** *(which group backend servers)*. Each pool can have multiple **members** (instances) and an associated **health monitor** that ensures traffic is only sent to healthy servers. These components work together to provide a flexible and reliable traffic distribution system.
+Load Balancer is a layered, multi-component entity. It always works in combination with:
+- **Listeners** – define how incoming traffic is accepted (by protocol and port).  
+  Load Balancer can have multiple listeners, but each must use a unique port.
+- **Pools** – group backend servers (members) to which traffic is distributed.  
+  Each listener can be associated with one pool, and the pool’s protocol must be identical or compatible with the listener’s protocol.  
+- **Pool Members** – individual virtual machines that handle the actual traffic.  
+  Each pool can contain multiple members. 
+- **Health Monitor** – checks the status of each pool member to ensure traffic is only sent to healthy servers.  
+  Each pool can have only one health monitor assigned.
+
+These components work together to provide a flexible and reliable traffic distribution system.
+
+{{% notice note %}}
+The listener and assigned to it pool must use the same or compatible protocol types.  
+You can refer to the table below to see valid combinations:
+{{% /notice %}}
+
+**Valid protocol combinations**
+![](../../../assets/images/lb/56.png?width=30pc&classes=border,shadow)
 
 In the Cloud Console, you can easily create a Load Balancer, add backend members, set up health checks, and assign a floating IP for external access.
 
@@ -144,6 +162,14 @@ To create new Listener that will be tied to the current LB, do the following:
   - *Member Connect Timeout* - time (in milliseconds) to wait while establishing a connection to a backend member. Default: 5000;  
   - *Member Data Timeout* - time (in milliseconds) the listener will wait for data from a backend member before timing out. Default: 50000;  
   - *Default Pool* - select or create a pool to be used by this listener. Only unassigned pools with a compatible protocol can be selected. This field is optional, you can attach a pool later by using the Edit Listener action.
+
+{{% notice note %}}
+The listener and assigned to it pool must use the same or compatible protocol types.  
+You can refer to the table below to see valid combinations:
+{{% /notice %}}
+
+**Valid protocol combinations**
+![](../../../assets/images/lb/56.png?width=30pc&classes=border,shadow)
 
 After these steps, the newly created Listener will be added to the LISTENERS TAB on the *Load Balancer details page* and you can click on its **name** to navigate to the *Listener details page*:
 ![](../../../assets/images/lb/20.png?classes=border,shadow)
