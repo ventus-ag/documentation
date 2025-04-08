@@ -24,7 +24,7 @@ On this page, you can find an explanation of how to create, edit, delete Load Ba
     - [Pool Members](#pool-members)
       - [Add Pool Member](#add-pool-member)
       - [Edit Pool Member](#edit-pool-member)
-  - [Delete Pool Member](#delete-pool-member)
+      - [Delete Pool Member](#delete-pool-member)
     - [Health Monitors](#health-monitors)
       - [Create Health Monitor](#create-health-monitor)
       - [Edit Health Monitor](#edit-health-monitor)
@@ -327,7 +327,7 @@ To edit the Pool Member, do the following:
 
 After these steps, the selected Pool Member will be updated.  
 
-## Delete Pool Member
+#### Delete Pool Member
 
 To delete the Pool Member from the Load Balancer's pool, do the following:
 - identify this unnecessary Pool Member on the *Pool details page* or *Listener details page*;
