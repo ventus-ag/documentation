@@ -44,7 +44,8 @@ On this page you can find all created Load Balancers in the current Project, wit
 - *Edit* - update the LB’s name, description, or administrative state (enable/disable);  
 - *Delete* - permanently remove the LB from the project.
 
-Additionally, from this page, you can navigate to the detail page of each created Load Balancer by clicking on its **name**. There, you will find detailed information about its listeners and pools and allows you to manage pool members and perform other actions related to the selected Load Balancer. More information about the *Load Balancer details page* will be provided in the following sections.   
+Additionally, you can access the details of any created Load Balancer by clicking on its **name**. This will take you to the *Load Balancer Details page*, where you’ll find comprehensive information about its listeners and pools. From there, you can manage pools and listeners, and perform other actions related to the selected Load Balancer.  
+More information about the *Load Balancer details page* will be provided in the following sections.   
 ![](../../../assets/images/lb/4.png?classes=border,shadow)
 
 ## Create Load Balancer
@@ -73,7 +74,6 @@ To create new Load Balancer, do the following:
       SOURCE IP – based on source IP address.  
       HTTP COOKIE – based on an HTTP cookie.  
       APP COOKIE – based on an application-specific cookie.  
-
   **Health Monitor Configuration:**  
   - *Health Monitor Type* - choose the protocol for health checks (e.g., HTTP, TCP);  
   - *Timeout* - time (in seconds) to wait for a response before marking the check as failed;    
@@ -96,10 +96,11 @@ This action will redirect you to the *Load Balancer details page*, where you ca
 - **details section** showing key information about the selected Load Balancer;  
 - panel with available **quick actions**: edit, delete, associate/disassociate floating IP;  
 - two **tabs**: Listeners and Pools.
-![](../../../assets/images/lb/6.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/lb/6.png?width=30pc&classes=border,shadow)
   
 ### Listeners TAB  
-**LISTENERS TAB** on the *Load Balancer details page* - displays all listeners associated with the Load Balancer.  
+**LISTENERS TAB** on the *Load Balancer details page* - displays all listeners associated with the Load Balancer. 
+
 From here, it is possible to:
 - create new listeners;  
 - manage (edit/delete/change associated pool) existing ones; 
@@ -144,13 +145,13 @@ To open the *Listener details page*, click on the **Name** of the correspond
 ![](../../../assets/images/lb/28.png?classes=border,shadow)
 
 This action will redirect you to the *Listener details page*, where you can find:  
-- a **listener details section**, showing key information about the selected Listener, with available **quick actions** panel: edit, delete;   
+- **listener details section**, showing key information about the selected Listener, with available **quick actions** panel: edit, delete;   
 ![](../../../assets/images/lb/29.png?width=35pc&classes=border,shadow)
 
-- an **information block** that displays details about the listener's related components — including the Load Balancer it belongs to, the assigned pool, and the configured health monitor. Each component has its own quick actions panel for easy management:  
+- **information block** that displays details about the listener's related components — including the Load Balancer it belongs to, the assigned pool, and the configured health monitor. Each component has its own quick actions panel for easy management:  
 ![](../../../assets/images/lb/30.png?classes=border,shadow)  
 
-- a **pool members section**, listing all backend members of the associated pool. This section includes a *Create button*, *Search bar*, and an *actions icon* for each member, which opens a menu with available management actions for the selected member: 
+- **pool members section**, listing all backend members of the associated pool. This section includes a *Create button*, *Search bar*, and an *actions icon* for each member, which opens a menu with available management actions for the selected member: 
 ![](../../../assets/images/lb/31.png?classes=border,shadow)  
 
 #### Edit Listener
@@ -240,13 +241,13 @@ To open the *Pool details page*, click on the **Name** of the corresponding 
 ![](../../../assets/images/lb/34.png?classes=border,shadow)
 
 This action will redirect you to the *Pool details page*, where you can find:  
-- a **Pool details section**, showing key information about the selected Pool, with available **quick actions** panel: edit, delete;   
+- **Pool details section**, showing key information about the selected Pool, with available **quick actions** panel: edit, delete;   
 ![](../../../assets/images/lb/35.png?width=30pc&classes=border,shadow)
 
-- an **information block** that displays details about the pool's related components — including the Load Balancer and Listener it belongs to, and the configured health monitor. Each component has its own quick actions panel for easy management:  
+- **information block** that displays details about the pool's related components — including the Load Balancer and Listener it belongs to, and the configured health monitor. Each component has its own quick actions panel for easy management:  
 ![](../../../assets/images/lb/36.png?classes=border,shadow)  
 
-- a **pool members section**, listing all backend members of the associated pool. This section includes a *Create button*, *Search bar*, and an *actions icon* for each member, which opens a menu with available management actions for the selected member: 
+- **pool members section**, listing all backend members of the associated pool. This section includes a *Create button*, *Search bar*, and an *actions icon* for each member, which opens a menu with available management actions for the selected member: 
 ![](../../../assets/images/lb/31.png?classes=border,shadow)  
 
 
