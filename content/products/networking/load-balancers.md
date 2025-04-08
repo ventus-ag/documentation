@@ -21,6 +21,10 @@ On this page, you can find an explanation of how to create, edit, delete Load Ba
       - [Pool details page](#pool-details-page)
       - [Edit Pool](#edit-pool)
       - [Delete Pool](#delete-pool)
+    - [Pool Members](#pool-members)
+      - [Add Pool Member](#add-pool-member)
+      - [Edit Pool Member](#edit-pool-member)
+  - [Delete Pool Member](#delete-pool-member)
     - [Health Monitors](#health-monitors)
       - [Create Health Monitor](#create-health-monitor)
       - [Edit Health Monitor](#edit-health-monitor)
@@ -167,7 +171,7 @@ Using the Edit Listener action, you can not only update the general information 
 
 To edit the Listener, do the following:
 - identify Listener, that you want to edit, on the the LISTENERS TAB on the *Load Balancer details page*;  
-- in the opened window click on the **Actions** icon and select the **Edit** in the list of available options;   
+- click on the **Actions** icon and select the **Edit** in the list of available options;   
 ![](../../../assets/images/lb/21.png?classes=border,shadow)
 - update desired settings on the next opened *Edit Listener window*:  
 ![](../../../assets/images/lb/22.png?width=30pc&classes=border,shadow)
@@ -260,7 +264,7 @@ This action will redirect you to the *Pool details page*, where you can find:
 
 To edit the Pool, do the following:
 - identify Pool, that you want to edit, on POOLS TAB on the *Load Balancer details page*;  
-- in the opened window click on the **Actions** icon and select the **Edit** in the list of available options;   
+- click on the **Actions** icon and select the **Edit** in the list of available options;   
 ![](../../../assets/images/lb/37.png?classes=border,shadow)
 - update desired settings on the next opened *Edit Pool window*:  
 ![](../../../assets/images/lb/38.png?width=30pc&classes=border,shadow)
@@ -290,6 +294,48 @@ Also, you can delete the Pool from:
 
 - the *Listener Details page* - by clicking the **remove icon** and selecting *Delete* in the Pool information block:   
 ![](../../../assets/images/lb/42.png?classes=border,shadow)   
+
+### Pool Members 
+**Pool Members** are the actual Virtual Machines that handle traffic forwarded by the Load Balancer.
+
+You can view and manage Pool Members from the *Listener Details page* or from the *Pool Details page* — both pages include a **pool Members section**, listing all backend members of the associated pool:
+![](../../../assets/images/lb/31.png?classes=border,shadow)  
+
+#### Add Pool Member
+
+To add a Pool Member, do the following:  
+- navigate to the **pool Members section** on either the *Pool details page* or *Listener details page* and click on the ADD POOL MEMBER button:  
+![](../../../assets/images/lb/51.png?classes=border,shadow)
+- fill in the form on the next opened *Add Pool Member window*:  
+![](../../../assets/images/lb/52.png?width=30pc&classes=border,shadow)
+  - *Virtual Machine* - select the virtual machine that should receive traffic from the Load Balancer;  
+  - *IP Address* - choose the network interface (IP address) of the selected VM that will be used for traffic;   
+  - *Subnet* - optionally specify the subnet from which the member's service is accessible.  If omitted, parent lb's subnet will be used;  
+  - *Protocol Port* -  set the port on which the member will receive traffic (e.g., 80, 443).;  
+  - *Weight* - define how much traffic this member should handle relative to others. Range: 1–256;  
+  - *Backup Member* - enable this option if the member should only receive traffic when all primary members are unavailable.  
+  
+After these steps, the Pool Member will be added and linked to the selected Load Balancer.
+
+#### Edit Pool Member
+To edit the Pool Member, do the following:  
+- identify Pool Member, that you want to edit, on the *Pool details page* or *Listener details page*;  
+- click on the **Actions** icon and select the **Edit** in the list of available options;  
+![](../../../assets/images/lb/53.png?classes=border,shadow)
+- update desired settings on the next opened *Edit Pool Member window*: 
+![](../../../assets/images/lb/54.png?width=30pc&classes=border,shadow)
+
+After these steps, the selected Pool Member will be updated.  
+
+## Delete Pool Member
+
+To delete the Pool Member from the Load Balancer's pool, do the following:
+- identify this unnecessary Pool Member on the *Pool details page* or *Listener details page*;
+- click on the **Actions** icon and select the **Delete** in the list of available options;
+- confirm the Pool Member deletion on the next opened *Confirmation window*.  
+![](../../../assets/images/lb/55.png?classes=border,shadow)
+
+After these steps, the selected Pool Member will be removed from the Load Balancer's pool — but the underlying virtual machine will not be deleted from the project.
 
 ### Health Monitors 
 **Health Monitor** is used to check the status of each member in the pool. It regularly performs health checks, and only members that pass these checks will continue to receive new traffic from the Load Balancer.
@@ -356,7 +402,7 @@ Also you can access and delete the Health Monitor from the *Listener Details pag
 ## Edit Load Balancer
 To edit the Load Balancer, do the following:  
 - identify Load Balancer, that you want to edit, on the *Load Balancers page*;  
-- in the opened window click on the **Actions** icon and select the **Edit** in the list of available options;  
+- click on the **Actions** icon and select the **Edit** in the list of available options;  
 ![](../../../assets/images/lb/10.1.png?classes=border,shadow)
 - update desired settings, such as the name, description, and administrative state on the opened dialog: 
 ![](../../../assets/images/lb/10.png?width=30pc&classes=border,shadow)
