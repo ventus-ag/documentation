@@ -21,10 +21,9 @@ On this page, you can find an explanation of how to create, edit, delete Load Ba
       - [Pool details page](#pool-details-page)
       - [Edit Pool](#edit-pool)
       - [Delete Pool](#delete-pool)
-    - [Health Monitors.](#health-monitors)
+    - [Health Monitors](#health-monitors)
       - [Create Health Monitor](#create-health-monitor)
       - [Edit Health Monitor](#edit-health-monitor)
-      - [Edit Health Monitor](#edit-health-monitor-1)
       - [Delete Health Monitor](#delete-health-monitor)
   - [Edit Load Balancer](#edit-load-balancer)
   - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
@@ -104,8 +103,7 @@ This action will redirect you to the *Load Balancer details page*, where you ca
 ![](../../../assets/images/lb/6.png?width=30pc&classes=border,shadow)
   
 ### Listeners 
-**Listeners** define how the Load Balancer receives and handles incoming traffic based on protocol and port.  
-Load Balancer may have multiple listeners, each independently configured to handle incoming connections on a specific port and protocol.  
+**Listeners** define how the Load Balancer receives and handles incoming traffic based on protocol and port. Load Balancer may have multiple listeners, each independently configured to handle incoming connections on a specific port and protocol.  
 All listeners associated with the same Load Balancer must use distinct ports to avoid conflicts.
 
 **LISTENERS TAB** on the *Load Balancer details page* - displays all listeners associated with the selected Load Balancer.   
@@ -248,7 +246,7 @@ To open the *Pool details page*, click on the **name** of the corresponding 
 ![](../../../assets/images/lb/34.png?classes=border,shadow)
 
 This action will redirect you to the *Pool details page*, where you can find:  
-- **Pool details section**, showing key information about the selected Pool, with available **quick actions panel**: edit, delete;   
+- **pool details section**, showing key information about the selected Pool, with available **quick actions panel**: edit, delete;   
 ![](../../../assets/images/lb/35.png?width=30pc&classes=border,shadow)
 
 - **information block** that displays details about the pool's related components — including the Load Balancer and Listener it belongs to, and the configured health monitor. Each component has its own quick actions panel for easy management:  
@@ -293,7 +291,7 @@ Also, you can delete the Pool from:
 - the *Listener Details page* - by clicking the **remove icon** and selecting *Delete* in the Pool information block:   
 ![](../../../assets/images/lb/42.png?classes=border,shadow)   
 
-### Health Monitors. 
+### Health Monitors 
 **Health Monitor** is used to check the status of each member in the pool. It regularly performs health checks, and only members that pass these checks will continue to receive new traffic from the Load Balancer.
 
 {{% notice note %}}
@@ -335,19 +333,7 @@ Also you can create a Health Monitor from the *Listener Details page* — if the
 To edit the Health Monitor, do the following:  
 - identify Pool, which Health Monitor you want to edit and navigate to this *Pool details page*;   
 - click on the **edit icon** in the Health Monitor information block:     
-![](../../../assets/images/lb/46.png?width=25pc&classes=border,shadow)
-- update desired settings on the next opened *Edit Health Monitor window*:  
-![](../../../assets/images/lb/47.png?width=30pc&classes=border,shadow)
-
-After these steps, the selected Health Monitor will be updated.   
-
-Also you can access and edit the Health Monitor from the *Listener Details page* — if the Listener is associated with Pool that has a Health Monitor configured.
-
-#### Edit Health Monitor
-To edit the Health Monitor, do the following:  
-- identify Pool, which Health Monitor you want to edit and navigate to this *Pool details page*;   
-- click on the **edit icon** in the Health Monitor information block:     
-![](../../../assets/images/lb/46.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/lb/46.png?classes=border,shadow)
 - update desired settings on the next opened *Edit Health Monitor window*:  
 ![](../../../assets/images/lb/47.png?width=30pc&classes=border,shadow)
 
@@ -361,7 +347,7 @@ To delete the Health Monitor, do the following:
 - identify Pool, which Health Monitor you want to delete and navigate to this *Pool details page*;   
 - click on the **delete icon** in the Health Monitor information block:     
 - confirm the Health Monitor deletion on the next opened *Confirmation window*.  
-![](../../../assets/images/lb/48.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/lb/48.png?classes=border,shadow)
 
 After these steps, the selected Health Monitor will be deleted. 
 
