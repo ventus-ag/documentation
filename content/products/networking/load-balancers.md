@@ -84,18 +84,18 @@ To create new Load Balancer, do the following:
   - *Expected Codes* - expected HTTP status codes that indicate a healthy response (can be a number, list, or range);  
   - *URL Path* - the endpoint path for the health check (e.g., /health).
 
-After these steps, the newly created Load Balancer will be added to the *Load Balancers page* and you can click on its **name** to navigate to the *Load Balancer details page* to view all necessary information about it, including created listener, pool, and configured health monitor. More information about the *Load Balancer details page* will be provided in the following sections.  
-
+After these steps, the newly created Load Balancer will be added to the *Load Balancers page* and you can click on its **name** to navigate to the *Load Balancer details page* to view all necessary information about it, including created listener, pool, and configured health monitor.  
 ![](../../../assets/images/lb/16.png?classes=border,shadow)
+More information about the *Load Balancer details page* will be provided in the following sections.  
 
 ## Load Balancer details page
-To open the *Load Balancer details page*, click on the **Name** of the corresponding LB on the *Load Balancers page*:
+To open the *Load Balancer details page*, click on the **name** of the corresponding LB on the *Load Balancers page*:
 ![](../../../assets/images/lb/4.png?classes=border,shadow)
 
 This action will redirect you to the *Load Balancer details page*, where you can find:  
 - **details section** showing key information about the selected Load Balancer;  
-- panel with available **quick actions**: edit, delete, associate/disassociate floating IP;  
-- two **tabs**: Listeners and Pools.
+- **quick actions panel**: edit, delete, associate/disassociate floating IP;  
+- **two tabs**: Listeners and Pools.
 ![](../../../assets/images/lb/6.png?width=30pc&classes=border,shadow)
   
 ### Listeners TAB  
@@ -118,10 +118,10 @@ More information about the *Listener details page* will be provided in the follo
 
 #### Create Listener
 {{% notice note %}}
-Multiple listeners can be associated with the same load balancer but each must use a unique port.
+Multiple listeners can be associated with the same Load Balancer but each must use a unique port.
 {{% /notice %}}
 
-To create new Listener that will be tied to the current load balancer, do the following:
+To create new Listener that will be tied to the current LB, do the following:
 - open the LISTENERS TAB on the *Load Balancer details page* and click on the CREATE LISTENER icon in the upper left corner;
 - fill in the form on the next opened *Create Listener window*:
 
@@ -141,11 +141,11 @@ After these steps, the newly created Listener will be added to the LISTENERS TA
 More information about the *Listener details page* will be provided in the following sections.  
 
 #### Listener details page
-To open the *Listener details page*, click on the **Name** of the corresponding Listener on the *LISTENERS TAB* in the *Load Balancer details page*:
+To open the *Listener details page*, click on the **name** of the corresponding Listener on the *LISTENERS TAB* in the *Load Balancer details page*:
 ![](../../../assets/images/lb/28.png?classes=border,shadow)
 
 This action will redirect you to the *Listener details page*, where you can find:  
-- **listener details section**, showing key information about the selected Listener, with available **quick actions** panel: edit, delete;   
+- **listener details section**, showing key information about the selected Listener, with available **quick actions panel**: edit, delete;   
 ![](../../../assets/images/lb/29.png?width=35pc&classes=border,shadow)
 
 - **information block** that displays details about the listener's related components — including the Load Balancer it belongs to, the assigned pool, and the configured health monitor. Each component has its own quick actions panel for easy management:  
@@ -178,7 +178,7 @@ Also, you can edit the Listener from:
 #### Delete Listener
 
 To delete the Listener, do the following:
-- identify this unnecessary Listener on the on the the LISTENERS TAB on the *Load Balancer details page*;  
+- identify this unnecessary Listener on the on the LISTENERS TAB on the *Load Balancer details page*;  
 - click on the **Actions** icon and select the **Delete** in the list of available options;
 - confirm the Listener deletion on the next opened *Confirmation window*.  
 ![](../../../assets/images/lb/26.png?classes=border,shadow)
@@ -186,7 +186,7 @@ To delete the Listener, do the following:
 After these steps, the selected Listener will be deleted. 
 
 Also, you can delete the Listener from:  
-- the *Listener Details page* – by clicking on the appropriative **quick actions** icon at the top:   
+- the *Listener Details page* – by clicking on the appropriate **quick actions** icon at the top:   
 ![](../../../assets/images/lb/25.png?width=35pc&classes=border,shadow)  
 
 
@@ -200,11 +200,11 @@ From here, it is possible to:
 ![](../../../assets/images/lb/8.png?classes=border,shadow)  
 
 On the *Pool Details page*, you can: 
-- find all relevant information about the selected pool and its associated health monitor;  
+- find all relevant information about the selected pool and its related components, including the Load Balancer  and Listener it belongs to, and the configured health monitor;;  
 - manage the pool itself (edit, delete);   
 - manage related components such as the listener and health monitor;  
 - add or remove pool members;  
-![](../../../assets/images/lb/17.png?classes=border,shadow)  
+![](../../../assets/images/lb/18.png?classes=border,shadow)  
 
 More information about the *Pool details page* will be provided in the following sections.  
 
@@ -237,11 +237,11 @@ After these steps, the newly created Pool will be added to POOLS TAB on the *Loa
 More information about the *Pool details page* will be provided in the following sections.  
 
 #### Pool details page
-To open the *Pool details page*, click on the **Name** of the corresponding Listener on the *POOL TAB* in the *Load Balancer details page*:
+To open the *Pool details page*, click on the **name** of the corresponding Pool on the *POOL TAB* in the *Load Balancer details page*:
 ![](../../../assets/images/lb/34.png?classes=border,shadow)
 
 This action will redirect you to the *Pool details page*, where you can find:  
-- **Pool details section**, showing key information about the selected Pool, with available **quick actions** panel: edit, delete;   
+- **Pool details section**, showing key information about the selected Pool, with available **quick actions panel**: edit, delete;   
 ![](../../../assets/images/lb/35.png?width=30pc&classes=border,shadow)
 
 - **information block** that displays details about the pool's related components — including the Load Balancer and Listener it belongs to, and the configured health monitor. Each component has its own quick actions panel for easy management:  
@@ -263,7 +263,7 @@ To edit the Pool, do the following:
 After these steps, the selected Pool will be updated.   
 
 Also, you can edit the Pool from:  
-- the *Pool Details page* – by clicking on the appropriative **quick actions** icon at the top:   
+- the *Pool Details page* – by clicking on the appropriate **quick actions** icon at the top:   
 ![](../../../assets/images/lb/39.png?width=30pc&classes=border,shadow)  
 
 - on the *Listener Details page* - by clicking the **edit icon** in the Pool information block:   
@@ -280,7 +280,7 @@ To delete the Pool, do the following:
 After these steps, the selected Pool will be deleted. 
 
 Also, you can delete the Pool from:  
-- the *Pool Details page* – by clicking on the appropriative **quick actions** icon at the top:   
+- the *Pool Details page* – by clicking on the appropriate **quick actions** icon at the top:   
 ![](../../../assets/images/lb/43.png?width=30pc&classes=border,shadow)  
 
 - on the *Listener Details page* - by clicking the **remove icon** and selecting *Delete* in the Pool information block:   
@@ -298,7 +298,7 @@ To edit the Load Balancer, do the following:
 After these steps, the selected Load Balancer will be updated.  
 
 Also, you can edit the Load Balancer directly from its related detail pages:  
-- on the *Load Balancer details page* - by clicking on the appropriative **quick actions** icon at the top:   
+- on the *Load Balancer details page* - by clicking on the appropriate **quick actions** icon at the top:   
 ![](../../../assets/images/lb/11.png?width=25pc&classes=border,shadow)   
 - on the *Listener Details page* – by clicking the **edit icon** in the Load Balancer information block:   
 ![](../../../assets/images/lb/11.1.png?classes=border,shadow)  
@@ -347,7 +347,7 @@ To delete the Load Balancer, do the following:
 
 After these steps, the selected Load Balancer will be deleted with all its associated resources, including listeners, pools, and health monitors. 
 
-Also, you can delete the Load Balancer from the *Load Balancer details page*, by clicking on the appropriative **quick actions** icon there:
+Also, you can delete the Load Balancer from the *Load Balancer details page*, by clicking on the appropriate **quick actions** icon there:
 ![](../../../assets/images/lb/12.png?width=25pc&classes=border,shadow)
 
 
