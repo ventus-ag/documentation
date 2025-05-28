@@ -3,7 +3,7 @@ title: VM's Networks and Interfaces
 weight: 25
 ---
 ___
-On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the the *Virtual Machine details page* in the Cloud Console.
+On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the *Virtual Machine details page* in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)

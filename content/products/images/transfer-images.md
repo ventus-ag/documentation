@@ -113,6 +113,6 @@ Make sure you are logged in to the correct OpenStack platform with your CLI tool
     In our case the output will be next:    
 ![](../../../assets/images/tutorials/22.png?width=45pc&classes=border,shadow) 
 
-After these steps, the newly created Image will be added to the *Images page* of the the Project-2 related to the *Eastern-Switzerland* Region and you can use it to create new Virtual Machines within this Region:   
+After these steps, the newly created Image will be added to the *Images page* of the Project-2 related to the *Eastern-Switzerland* Region and you can use it to create new Virtual Machines within this Region:   
 ![](../../../assets/images/tutorials/23.png?classes=border,shadow) 
  ![](../../../assets/images/tutorials/24.png?width=30pc&classes=border,shadow) 

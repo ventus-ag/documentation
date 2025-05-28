@@ -19,13 +19,18 @@ On this page, you can find an explanation of how to create and manage a new user
 To start work in the Cloud Console, firstly, you need to register a new user account. For this, please, contact to the [Cloud Support](mailto:support@ventus.ag).
 
 {{% notice note %}}
-Currently, we've closed ability for public registration. Please, contact to the [Cloud Support](mailto:support@ventus.ag), and we will help you to create an account. 
+Currently, we've closed ability for public registration. However, if you are already a registered user with an active Organization, you can register new users and add them as Administrators.  
+Please, contact to the [Cloud Support](mailto:support@ventus.ag), and we will help you to create an account. 
 {{% /notice %}}
 
 Since you are a new User, you do not have any Organizations created yet, so the next step to take full advantage of all the services provided by the Cloud Console is to create an Organization and a Project. 
 To find necessary information about this, see the next articles:  
 [Organizations](https://docs.ventuscloud.eu/getting-started/organizations/);        
-[Projects](https://docs.ventuscloud.eu/getting-started/projects/).      
+[Projects](https://docs.ventuscloud.eu/getting-started/projects/).   
+
+If you are already a registered User and have an active Organization, you can register new users and assign them as Administrators within your Organization.
+To find necessary information about this, see the next article:  
+[Administrators](https://docs.ventuscloud.eu/getting-started/administrators/).  
 
 
 ## Manage account

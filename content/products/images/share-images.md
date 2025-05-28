@@ -127,7 +127,7 @@ To accept shared Image do the following:
     In our case the output will be next:  
 ![](../../../assets/images/images/5.png?width=45pc&classes=border,shadow) 
 
-After these steps, the newly created Image will be added to the *Images page* of the the Project-2 named *dev-2* and you can use it to create new Virtual Machines within this Project:   
+After these steps, the newly created Image will be added to the *Images page* of the Project-2 named *dev-2* and you can use it to create new Virtual Machines within this Project:   
 ![](../../../assets/images/images/3.png?classes=border,shadow) 
  ![](../../../assets/images/images/6.png?width=30pc&classes=border,shadow) 
 
