@@ -28,7 +28,7 @@ On this page you can find the default *public* Network, all your own Networks 
 
 ## Create Network
 {{% notice note %}}
-🔔 Currently, in Cloud Console can be created only internal networks.
+Currently, in Cloud Console can be created only internal networks.
 {{% /notice %}}
 
 To create new Network, do the following:
@@ -41,19 +41,24 @@ To create new Network, do the following:
 
 After these steps, the newly created Network will be added to the *Networks page* with the status ACTIVE.  
 
-🟡 As a next step, it is highly recommended to create subnets within this network.
+🔔 As a next step, it is highly recommended to create subnets within this network.
 
 ### Create Subnet
-To get to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
+To navigate to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
 ![](../../../assets/images/networks/4.png?classes=border,shadow) 
 
-On the opened *Subnets page* click on the CREATE SUBNET icon in the upper left corner, fill in the form on the next opened *Create Subnet window* and click on the CREATE icon:
+This action will redirect you to the *Subnets page*, where you’ll see a list of all subnets associated with the selected network. The page includes a *Create button, Search bar,* and an **actions** icon for managing each subnet:
+![](../../../assets/images/networks/15.png?classes=border,shadow) 
+
+To create a new Subnet do the following:
+- on the *Subnets page* click on the CREATE SUBNET icon in the upper left corner;
+- fill in the form on the next opened *Create Subnet window* and click on the CREATE icon:
 ![](../../../assets/images/networks/6.png?width=35pc&classes=border,shadow)  
 
 After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE and you are available to create Virtual Machines in this Subnet or add it's Interface to the already created VMs.  
 
 {{% notice note %}}
-ℹ️ If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
+If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
 {{% /notice %}}
 
 💡 For more information about Virtual Machines, Subnets and Routers, please, see the articles - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Routers](https://docs.ventuscloud.eu/products/networking/routers/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/). 
@@ -61,7 +66,7 @@ After these steps, the newly created Subnet will be added to the *Subnets page*
 ## Edit Network
 
 {{% notice note %}}
-🔔 In Cloud Console default public Network can't be edited by User.
+In Cloud Console default public Network can't be edited by User.
 {{% /notice %}}
 
 To edit the internal Network, do the following:
@@ -76,7 +81,7 @@ Alternatively, you can edit the Network from its *Subnets page*, by clicking on 
 ## Delete Network
 
 {{% notice note %}}
-🔔 In Cloud Console default public Network and internal Networks which interfaces are attached to other cloud resources can't be deleted.
+In Cloud Console default public Network and internal Networks which interfaces are attached to other cloud resources can't be deleted.
 {{% /notice %}}
 
 To delete the internal Network, do the following:

@@ -62,7 +62,7 @@ To create new Linux VM, do the following:
     by default, "public" network is pre-selected.     
   - *Firewalls* -  choose what collection of network access rules will control the traffic to this VM;     
     by default, "default" Firewall is pre-selected;   
-    ℹ️ Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.   
+    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.   
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
@@ -73,7 +73,7 @@ To create new Linux VM, do the following:
 After these steps, the newly created Linux VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/6.png?classes=border,shadow)
 
-ℹ️ To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional instructions and information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**.
+💡 To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional instructions and information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**.
   
   ![](../../../assets/images/vms/35.png?width=35pc&classes=border,shadow) 
 
@@ -97,7 +97,7 @@ To create new Windows VM, do the following:
     by default, "public" network is pre-selected.   
   - *Firewalls* - choose what collection of network access rules will control the traffic to this VM;   
     by default, "default" Firewall is pre-selected;  
-    ℹ️ Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
+    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
@@ -108,7 +108,7 @@ To create new Windows VM, do the following:
 After these steps, the newly created Windows VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/8.png?classes=border,shadow)
 
-ℹ️ To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional instructions and information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
+💡 To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional instructions and information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
   
   ![](../../../assets/images/vms/36.png?width=35pc&classes=border,shadow)
 
@@ -175,7 +175,7 @@ Alternatively, you can download RDP file from *Virtual Machine details page*, b
 ## Associate/Disassociate Floating IP
 
 {{% notice note %}}
-ℹ️ This option is available only for VMs created in the internal network with an configured external Router.
+This option is available only for VMs created in the internal network with an configured external Router.
 {{% /notice %}}
 
 To associate Floating IP with the Virtual Machine, do the following:
