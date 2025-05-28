@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Identity Management on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/identity-management/</link><description>Recent content in Identity Management on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/identity-management/index.xml" rel="self" type="application/rss+xml"/><item><title>Administrators</title><link>https://docs.ventuscloud.eu/identity-management/administrators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/administrators/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to add a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p>
+&lt;p>On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
@@ -28,8 +28,8 @@
 &lt;li>&lt;a href="#create-group">Create Group&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#configure-group">Configure Group&lt;/a>
 &lt;ul>
-&lt;li>&lt;a href="#manage-users-in-group">Manage Users in Group&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#manage-projects-in-group">Manage Projects in Group&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#manage-users-in-group">Manage Users in Group&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;a href="#edit-group">Edit Group&lt;/a>&lt;/li>

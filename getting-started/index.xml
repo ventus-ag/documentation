@@ -20,7 +20,8 @@
 &lt;h2 id="registration">Registration&lt;/h2>
 &lt;p>To start work in the Cloud Console, firstly, you need to register a new user account. For this, please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>.&lt;/p>
 
-&lt;div class="notices note" >&lt;p>Currently, we&amp;rsquo;ve closed ability for public registration. Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>, and we will help you to create an account.&lt;/p></description></item><item><title>Organizations</title><link>https://docs.ventuscloud.eu/getting-started/organizations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/organizations/</guid><description>&lt;hr>
+&lt;div class="notices note" >&lt;p>Currently, we&amp;rsquo;ve closed ability for public registration. However, if you are already a registered user with an active Organization, you can register new users and add them as Administrators.&lt;br>
+Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>, and we will help you to create an account.&lt;/p></description></item><item><title>Organizations</title><link>https://docs.ventuscloud.eu/getting-started/organizations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/organizations/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of how to create a new Organization and how to manage it in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
@@ -32,6 +33,7 @@
 &lt;li>&lt;a href="#edit-organization">Edit Organization&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-organization">Delete Organization&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#leave-organization">Leave Organization&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#add-administrators">Add Administrators&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#transfer-an-organization">Transfer an Organization&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -52,6 +54,8 @@ Detailed instructions, how to add new Administrators to the Organization you can
 &lt;ul>
 &lt;li>&lt;a href="#projects-page">Projects page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#create-project">Create Project&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#project-overview-page">Project Overview Page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#set-budget-threshold">Set Budget Threshold&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#edit-project">Edit Project&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-project">Delete Project&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#add-users-to-project">Add users to Project&lt;/a>&lt;/li>

@@ -86,7 +86,7 @@
 &lt;li>panel with available &lt;strong>quick actions&lt;/strong> for the selected Network:&lt;/li>
 &lt;/ul>
 &lt;p>&lt;img src="../../../assets/images/networks/net-14.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Networks and Interfaces</title><link>https://docs.ventuscloud.eu/products/networking/manage-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/manage-networks/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
+&lt;p>On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>

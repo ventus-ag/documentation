@@ -12,6 +12,9 @@
 &lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#edit-virtual-machine">Edit Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#resize-virtual-machine">Resize Virtual Machine&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#shutoff-virtual-machine">Shutoff Virtual Machine&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#shelve-virtual-machine">Shelve Virtual Machine&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#start-virtual-machine">Start Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-virtual-machine">Delete Virtual Machine&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>

@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Advanced on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/tutorials-advanced/</link><description>Recent content in Advanced on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/tutorials-advanced/index.xml" rel="self" type="application/rss+xml"/><item><title>Installation OpenStack CLI</title><link>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ol>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
 &lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#install-openstack-cli-on-ubuntu-vm">Install OpenStack CLI on Ubuntu VM&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#install-openstack-cli-on-centos-vm">Install OpenStack CLI on Centos VM&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>dev1&lt;/em>, that was created in the Organization named &lt;em>Test-Shop&lt;/em>:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>API User&lt;/strong>, created with the following parameters and its RC file has already been loaded:
-&lt;ul>
-&lt;li>&lt;em>Name&lt;/em>: testCLIuser;&lt;/li>
-&lt;li>&lt;em>Password&lt;/em>: P@sword.&lt;/li>
+&lt;li>&lt;a href="#install-openstack-cli-oncentos-vm">Install OpenStack CLI on Centos VM&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>For more information, see the article -&lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/">CLI Users&lt;/a>&lt;/p></description></item><item><title>Working with OpenStack API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</guid><description>&lt;hr>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>dev1&lt;/em>, that was created in the Organization named &lt;em>Test-Shop&lt;/em>:&lt;/p></description></item><item><title>Working with OpenStack API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of how to work with OpenStack API
 using the Cloud Console Account.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
