@@ -176,10 +176,6 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a
 &lt;li>&lt;a href="#virtual-machine-details-page">Virtual Machine details page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#download-rdp-file">Download RDP File&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#to-find-additional-instructions-and-information-about-floating-ips-and-vms-interfaces-use-the-articles-floating-ips-vms-networks-and-interfaces">To find additional instructions and information about Floating IPs and VM&amp;rsquo;s Interfaces use the articles: Floating IPs, VM&amp;rsquo;s Networks and Interfaces.&lt;/a>
-&lt;ul>
 &lt;li>&lt;a href="#edit-virtual-machine">Edit Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#resize-virtual-machine">Resize Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#shutoff-virtual-machine">Shutoff Virtual Machine&lt;/a>&lt;/li>
