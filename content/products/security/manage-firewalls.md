@@ -22,14 +22,14 @@ To find all Firewalls, related to the selected Virtual Machine, you need:
 
 - open the *NETWORKS & SECURITY page of this VM*:
 
-![](../../../assets/images/networks/net-16.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/networks/net-16.png?width=35pc&classes=border,shadow)
 
 On the opened  *NETWORKS & SECURITY page of this VM* you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.
 
 In this article, we are interested in the block of information, where you can find all Firewalls related to the corresponding VM with their *Actions icon*, which opens a list of available management actions:
-![](../../../assets/images/fw/9.png?classes=border,shadow)
+![](../../../assets/images/conn-lin/23.1.png?classes=border,shadow)
 
-Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the article [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+💡 Information how to manage Networks, Subnets and Floating IPs from this page, you can find in the article [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 ## Change Firewall set
 To add additional Firewall or delete unnecessary one from the selected VM, do the following:
@@ -42,13 +42,13 @@ After these steps, the newly added Firewall will be added to the selected VM:
 ![](../../../assets/images/fw/14.png?classes=border,shadow)  
 
 {{% notice note %}}
-You can add and remove rules of the selected Firewall at any time from the *Firewall Rules page* and your changes will automatically applied to the VMs, that are associated with the corresponding Firewall.
+📌 You can add and remove rules of the selected Firewall at any time from the *Firewall Rules page* and your changes will automatically applied to the VMs, that are associated with the corresponding Firewall.
 {{% /notice %}}
  
-For more information about Firewalls and their Rules, please, see the next articles: [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/), [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/).
+💡 For more information about Firewalls and their Rules, please, see the next articles: [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/), [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/).
 
-Also, you can create new VM and immediately associate it with desired Firewall, during it's creation.   
-To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
+Alternatively, you can create new VM and immediately associate it with desired Firewall, during it's creation.    
+💡 To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 ![](../../../assets/images/fw/22.png?width=30pc&classes=border,shadow)
 
 
