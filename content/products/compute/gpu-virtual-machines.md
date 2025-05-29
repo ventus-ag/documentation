@@ -46,11 +46,12 @@ Creating a GPU VM involves a similar process to setting up regular Ubuntu or Win
   - *Linux Distribution* -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).  
   - *Image Version*/*Volume name*/*Snapshot name* - based on the selected source, specify the corresponding image version, volume name, or snapshot name.      
   - *Choose Flavor Type* - select *GPU Flavor Type* if you need a VM with GPU capabilities.   
-  - *Choose Flavor* - pick the type of GPU card and size for your new VM;
+  - *Choose Flavor* - pick the type of GPU card and size for your new VM;  
     ℹ️ available GPU flavors:
     ![](../../../assets/images/vms/gpu-2.png?width=30pc&classes=border,shadow)
 
-    🔔 If the list of GPU flavors is empty, this indicates that your project is not currently associated with any GPU flavors. Please contact support to request access:
+    ℹ️ If the list of GPU flavors is empty, your project is not currently associated with any GPU flavors.   
+    🔔 Please contact support to request access:
     ![](../../../assets/images/vms/gpu-3.png?width=30pc&classes=border,shadow)
 
   - *Key pair* - required for Linux VMs; choose an existing SSH key (created on the *SSH Keys* page) or create a new one to connect to the VM via SSH.   
@@ -66,7 +67,7 @@ Creating a GPU VM involves a similar process to setting up regular Ubuntu or Win
     by default, "50 GB" is pre-selected.  
   - *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
 
-1) Complete VM Creation: Click on the CREATE icon to finalize the creation of your GPU VM.   
+3) Complete VM Creation: Click on the CREATE icon to finalize the creation of your GPU VM.   
 
 After these steps, the newly created GPU VM will be added to the *Virtual Machine page* with the status ACTIVE.
 
