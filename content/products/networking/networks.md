@@ -41,7 +41,7 @@ To create new Network, do the following:
 
 After these steps, the newly created Network will be added to the *Networks page* with the status ACTIVE.  
 
-🔔 As a next step, it is highly recommended to create subnets within this network.
+📌 As a next step, it is highly recommended to create Subnets within this Network.
 
 ### Create Subnet
 To navigate to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
@@ -58,7 +58,7 @@ To create a new Subnet do the following:
 After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE and you are available to create Virtual Machines in this Subnet or add it's Interface to the already created VMs.  
 
 {{% notice note %}}
-If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
+📌 If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
 {{% /notice %}}
 
 💡 For more information about Virtual Machines, Subnets and Routers, please, see the articles - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Routers](https://docs.ventuscloud.eu/products/networking/routers/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/). 

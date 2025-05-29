@@ -24,7 +24,7 @@ Router is an important infrastructure component that can come in handy when you 
 ## Routers page
 To get to the *Routers page*, select the **Networking** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Routers TAB:**
 ![](../../../assets/images/networks/net-1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/routers/1.png?width=20pc&classes=border,shadow) 
+![](../../../assets/images/routers/1.png?width=25pc&classes=border,shadow) 
 
 On this page you can find all Routers created in the current Project, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Routers:
 ![](../../../assets/images/routers/2.png?classes=border,shadow) 
@@ -68,7 +68,7 @@ To add Interfaces to the already created Router do the following:
 ![](../../../assets/images/routers/6.png?width=35pc&classes=border,shadow)
 
 {{% notice note %}}
-If Router was created with *Enabled external gateway* all Virtual Machines created in this Subnet will have access to the internet.
+📌 If Router was created with *Enabled external gateway* all Virtual Machines created in this Subnet will have access to the internet.
 {{% /notice %}}
 
 
@@ -79,10 +79,11 @@ After these steps, the newly added Interface will appear in the *Router details
 ### Add custom Route to the Router 
 
 This step is optional in Router configuration, but if you need to add custom Route to the created Router, do the following:
-- open the *Router details page* - for this, click on the **Name** of the corresponding Router:
+- open the *Router details page* - for this, click on the **Name** of the corresponding Router:  
+
 ![](../../../assets/images/routers/4.png?classes=border,shadow) 
 
-- click on the ADD ROUTE icon:
+- click on the ADD ROUTE icon:  
 
 ![](../../../assets/images/routers/10.png?classes=border,shadow) 
 
@@ -103,7 +104,7 @@ To edit the Router, do the following:
 
 After these steps, the selected Router will be updated.  
 Alternatively, you can edit Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/routers/8.png?width=5pc&classes=border,shadow)  
+![](../../../assets/images/routers/8.png?width=13pc&classes=border,shadow)  
 
 ## Delete Router
 
@@ -114,5 +115,5 @@ To delete Router, do the following:
 
 After these steps, the selected Router will be deleted.  
 Alternatively, you can delete Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/routers/9.png?width=5pc&classes=border,shadow)  
+![](../../../assets/images/routers/9.png?width=13pc&classes=border,shadow)  
 

@@ -110,7 +110,7 @@ After these steps, the newly created Windows VM will be added to the *Virtual M
 
 💡 To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional instructions and information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
   
-  ![](../../../assets/images/vms/36.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/vms/36.png?width=35pc&classes=border,shadow)
 
 ## Virtual Machine details page
 To open the *Virtual Machine details page*, click on the **Name** of the corresponding Virtual Machine:
@@ -161,7 +161,7 @@ This action will redirect you to the *Virtual Machine details page*, where you
 ## Download RDP File
 
 {{% notice note %}}
-ℹ️ This option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs.
+📌 This option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs.
 {{% /notice %}}
 
 To download RDP for the remote connection to the Windows Virtual Machine, do the following:
@@ -175,7 +175,7 @@ Alternatively, you can download RDP file from *Virtual Machine details page*, b
 ## Associate/Disassociate Floating IP
 
 {{% notice note %}}
-This option is available only for VMs created in the internal network with an configured external Router.
+📌 This option is available only for VMs created in the internal network with an configured external Router.
 {{% /notice %}}
 
 To associate Floating IP with the Virtual Machine, do the following:

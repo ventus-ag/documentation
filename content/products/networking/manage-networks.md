@@ -71,7 +71,7 @@ After these steps, the selected Interface will be deleted from the selected VM.
 ## Associate/Disassociate Floating IP
 
 {{% notice note %}}
-Successfully Associate Floating IP with VM's internal Interface you can only in case if you have configured Router with enabled external gateway and attached to your internal Network.
+📌 Successfully Associate Floating IP with VM's internal Interface you can only in case if you have configured Router with enabled external gateway and attached to your internal Network.
 {{% /notice %}}
 
 To associate already created Floating IP with the VM's internal Interfaces, do the following:
@@ -82,7 +82,7 @@ To associate already created Floating IP with the VM's internal Interfaces, do t
 - click on the **Actions** icon and select the **Associate Floating IP** in the list of available options;
 - select one of the available Floating IPs on the next opened window, and click on ASSOCIATE:
 
-![](../../../assets/images/networks/net-19.png?width=35pc&classes=border,shadow);
+![](../../../assets/images/networks/net-19.png?width=35pc&classes=border,shadow)
 
 After these steps, the selected Floating IP will be attached with current VM, and this VM will become publicly available:
 ![](../../../assets/images/networks/net-20.png?classes=border,shadow) 
