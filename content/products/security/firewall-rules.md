@@ -22,7 +22,7 @@ To get to the *Firewall Rules page*, click on the **Name** of the correspondi
 On this page you can find:
 - panel with available **quick actions** for the selected Firewall:
 
-![](../../../assets/images/fw/16.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/fw/16.png?width=30pc&classes=border,shadow)
 
 - all Rules, related to the selected Firewall, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Rule:
 
@@ -32,8 +32,8 @@ On this page you can find:
 - *Delete* - this option is for Firewall Rule deletion.
 
 {{% notice note %}}
-After creating a new Firewall two rules always have been automatically added to the *Firewall Rules page* - the default rules that allow all outgoing traffic. 
-You can remove them, if needed.
+📌 After creating a new Firewall two rules always have been automatically added to the *Firewall Rules page* - the default rules that allow all outgoing traffic.   
+💡 You can remove them, if needed.
 {{% /notice %}}
 
 ## Firewall Rules Characteristics 
@@ -79,7 +79,8 @@ To delete the Firewall Rule, do the following:
 - confirm the Firewall Rule deletion on the next opened *Confirmation window*.
 
 After these steps, the selected Firewall Rule will be deleted.  
-Also, you can delete the rule from *Firewall Rule details page*, by clicking on the appropriative **quick actions** icon there.
+Alternatively, you can delete the Rule from its *Details page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/fw/8.png?width=35pc&classes=border,shadow)
 
 ## Firewall Rule for SSH Protocol
 By default, all created Virtual Machines belong to the *default* Firewall, which allows access to the Internet from the VM, but denies almost all access on the VM from outside, except for objects belonging to the same default Firewall.  
@@ -89,7 +90,7 @@ Thus, to open connection to the selected Linux Virtual Machine remotely via SSH,
 Example of such rule you can see below:
 ![](../../../assets/images/fw/17.png?width=35pc&classes=border,shadow)
 
-To find more information about how to connect to the Linux Virtual Machine created in the Cloud Console using SSH Protocol, please use the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/).
+💡 To find more information about how to connect to the Linux Virtual Machine created in the Cloud Console using SSH Protocol, please use the article - [Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/).
 
 ## Firewall Rule for RDP
 By default, all created Virtual Machines belong to the *default* Firewall, which allows access to the Internet from the VM, but denies almost all access on the VM from outside, except for objects belonging to the same default Firewall.  
@@ -99,4 +100,4 @@ Thus, to open connection to the selected Windows Virtual Machine remotely via RD
 Example of such rule you can see below:
 ![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow) 
 
-To find more information about how to connect to the Windows Virtual Machine created in the Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/).
+💡 To find more information about how to connect to the Windows Virtual Machine created in the Cloud Console using Remote Desktop Protocol, please, use the article - [Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/).

@@ -67,8 +67,7 @@ To edit the Firewall, do the following:
 - click on the **Actions** icon and select the **Edit** in the list of available options;
 - update the Firewall Name or/and Description on the next opened *Edit Firewall window*, and click on the SAVE icon.  
 
-After these steps, the selected Firewall will be updated.  
-
+After these steps, the selected Firewall will be updated.   
 Alternatively, you can edit the Firewall from its *Rules page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/fw/19.png?width=25pc&classes=border,shadow)
 
@@ -78,8 +77,7 @@ To delete the Firewall, do the following:
 - click on the **Actions** icon and select the **Delete** in the list of available options;
 - confirm the Firewall deletion on the next opened *Confirmation window*.
 
-After these steps, the selected Firewall will be deleted.  
-
+After these steps, the selected Firewall will be deleted.   
 Alternatively, you can delete the Firewall from its *Rules page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/fw/21.png?width=25pc&classes=border,shadow)
 
