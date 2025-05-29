@@ -22,9 +22,7 @@ To create a new database user:
   - Database: Select the database(s) the user should have access to
   - Permissions: Choose either Read or ReadWrite permissions
 - Click CREATE to confirm
-
-![](../../../assets/images/databases/savepassword.png?classes=border,shadow)
-- Note the displayed password for the new user
+- Note the displayed password for the new user on the next opened window.
 
 ## Delete User
 To delete a user:
@@ -43,8 +41,7 @@ To reset a user's password:
 ![](../../../assets/images/databases/resetpassword.png?classes=border,shadow)
 
 - Confirm the action in the popup window
-- Note the new password displayed
-![](../../../assets/images/databases/savepassword.png?classes=border,shadow)
+- Note the new password displayed on the next opened window
 
 
 ## Set User Permissions

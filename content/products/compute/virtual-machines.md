@@ -13,7 +13,6 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Virtual Machine details page](#virtual-machine-details-page)
   - [Download RDP File](#download-rdp-file)
   - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
-- [To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: Floating IPs, VM's Networks and Interfaces.](#to-find-additional-instructions-and-information-about-floating-ips-and-vms-interfaces-use-the-articles-floating-ips-vms-networks-and-interfaces)
   - [Edit Virtual Machine](#edit-virtual-machine)
   - [Resize Virtual Machine](#resize-virtual-machine)
   - [Shutoff Virtual Machine](#shutoff-virtual-machine)
@@ -200,11 +199,7 @@ After these steps, the selected Virtual Machine will be again publicly unavailab
 Alternatively, you can associate/disassociate floating IPs from the *NETWORKS & SECURITY TAB* on the *Virtual Machine details page*:  
 ![](../../../assets/images/vms/31.png?classes=border,shadow)
 
-<<<<<<< HEAD
-To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
-=======
 💡 To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
->>>>>>> dev
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:

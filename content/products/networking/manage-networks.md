@@ -95,4 +95,4 @@ If you need to disassociate Floating IP and to make your VM again publicly unava
 
 After confirmation your action on the next opened window the selected Virtual Machine will be again publicly unavailable.
 
-💡 To manage Floating IPs you can also form *Floating IPs page*, to find detailed instructions about it, please, see the article - [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/).
+💡 To manage Floating IPs you can also form *Floating IPs page*. To find detailed instructions about it, please, see the article - [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/).
