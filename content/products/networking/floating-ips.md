@@ -31,7 +31,7 @@ You need to know that:
 ## Floating IPs page
 To get to the *Floating IPs page*, select the **Networking** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Floating IPs TAB:**
 ![](../../../assets/images/networks/net-1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/networks/net-2.png?width=20pc&classes=border,shadow) 
+![](../../../assets/images/networks/net-2.png?width=23pc&classes=border,shadow) 
 
 On this page you can find all Floating IPs created in the current Project, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Floating IP:
 ![](../../../assets/images/networks/net-3.png?classes=border,shadow) 
@@ -61,18 +61,18 @@ If Floating IP is currently associated with one of the created Interfaces or Loa
 ## Associate/Disassociate Floating IP
 
 {{% notice note %}}
-Floating IP association can be completed successfully to VM's interface or with Load Balancer in internal subnet with enabled external gateway.
+📌 Floating IP association can be completed successfully to VM's interface or with Load Balancer in internal subnet with enabled external gateway.
 {{% /notice %}}
 
 **Associate Floating IP**  
 To associate already created Floating IP with the VM's internal Interface or with Load Balancer, do the following:
 - ensure that you have created VM or Load Balancer in internal Network, which Interface you want to associate with the Floating IP.  
   To find information about:  
-  how to create internal Network - use the article [Networks](https://docs.ventuscloud.eu/products/networking/networks/)  
-  how to create Virtual Machine - use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);  
-    how to create Load Balancer - use the article [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/);   
+  💡 how to create internal Network - use the article [Networks](https://docs.ventuscloud.eu/products/networking/networks/)  
+  💡 how to create Virtual Machine - use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/);  
+  💡 how to create Load Balancer - use the article [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/);   
 - ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.
-  To find information about how to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
+  💡 how to create and configure Router - use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
 - identify the Floating IP, that you want to associate, on the *Floating IPs page*;
 - click on the **Actions** icon and select the **Associate** in the list of available options;  
 - select the resource to attach this floating IP to (Virtual Machine or Load Balancer):
@@ -91,9 +91,11 @@ If you need to disassociate Floating IP and to make your VM or LB again publicly
 After confirmation your action on the next opened window the selected resource (Vm or LB) will be again publicly unavailable and Floating IP has status DOWN.
 
 **Additional ways to associate/disassociate Floating IPs**  
-It is possible to manage a Floating IP for a specific VM directly from the *Virtual Machine details page*. See [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/) for more info.
+It is possible to manage a Floating IP for a specific VM directly from the *Virtual Machine details page*.  
+💡 For more instructions and information see the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
-If ypu need to manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*. See [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/) for more info.
+If ypu need to manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*.  
+💡 For more instructions and information see the article - [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/).
 
 ## Edit Floating IP
 

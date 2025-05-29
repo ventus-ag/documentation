@@ -41,22 +41,27 @@ To create new Network, do the following:
 
 After these steps, the newly created Network will be added to the *Networks page* with the status ACTIVE.  
 
-As a next step, is highly recommended to create Subnets in this Network.
+📌 As a next step, it is highly recommended to create Subnets within this Network.
 
 ### Create Subnet
-To get to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
+To navigate to the *Subnets page*, related to this Network click on the **Name** of the corresponding Network:
 ![](../../../assets/images/networks/4.png?classes=border,shadow) 
 
-On the opened *Subnets page* click on the CREATE SUBNET icon in the upper left corner, fill in the form on the next opened *Create Subnet window* and click on the CREATE icon:
+This action will redirect you to the *Subnets page*, where you’ll see a list of all subnets associated with the selected network. The page includes a *Create button, Search bar,* and an **actions** icon for managing each subnet:
+![](../../../assets/images/networks/15.png?classes=border,shadow) 
+
+To create a new Subnet do the following:
+- on the *Subnets page* click on the CREATE SUBNET icon in the upper left corner;
+- fill in the form on the next opened *Create Subnet window* and click on the CREATE icon:
 ![](../../../assets/images/networks/6.png?width=35pc&classes=border,shadow)  
 
 After these steps, the newly created Subnet will be added to the *Subnets page* with the status ACTIVE and you are available to create Virtual Machines in this Subnet or add it's Interface to the already created VMs.  
 
 {{% notice note %}}
-If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
+📌 If you need that Virtual Machines created in this Subnet have access to the Internet, please, ensure that you attach Router interface to this Subnet.
 {{% /notice %}}
 
-For more information about Virtual Machines, Subnets and Routers, please, see the articles - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Routers](https://docs.ventuscloud.eu/products/networking/routers/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/). 
+💡 For more information about Virtual Machines, Subnets and Routers, please, see the articles - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Routers](https://docs.ventuscloud.eu/products/networking/routers/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/). 
 
 ## Edit Network
 
@@ -70,7 +75,7 @@ To edit the internal Network, do the following:
 - update the Name or/and Description of the selected Network, on the next opened *Edit Network window* and click on the SAVE icon.
 
 After these steps, the selected Network will be updated.  
-Also, you can edit the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
+Alternatively, you can edit the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/networks/net-14.png?width=25pc&classes=border,shadow)  
 
 ## Delete Network
@@ -85,7 +90,7 @@ To delete the internal Network, do the following:
 - confirm the Network deletion on the next opened *Confirmation window*.
 
 After these steps, the selected Network will be deleted.  
-Also, you can delete the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
+Alternatively, you can delete the Network from its *Subnets page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/networks/net-15.png?width=25pc&classes=border,shadow)  
 
 ## Attach Network Interface to the VM
@@ -94,12 +99,12 @@ There are two ways add already created network Interface to the Virtual Machine:
 1) from the *Virtual Machines page* on the step of creating VM:
  
 ![](../../../assets/images/networks/net-22.png?width=30pc&classes=border,shadow)
-To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
+💡 To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 
 2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*:
 
 ![](../../../assets/images/networks/net-23.png?classes=border,shadow)
   
-Detailed information how to change the current set of the VM's Interfaces from the *VM details page* you can find in article: [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+💡 Detailed information how to change the current set of the VM's Interfaces from the *VM details page* you can find in article: [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
  
 

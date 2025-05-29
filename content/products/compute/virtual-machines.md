@@ -13,6 +13,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Virtual Machine details page](#virtual-machine-details-page)
   - [Download RDP File](#download-rdp-file)
   - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
+- [To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: Floating IPs, VM's Networks and Interfaces.](#to-find-additional-instructions-and-information-about-floating-ips-and-vms-interfaces-use-the-articles-floating-ips-vms-networks-and-interfaces)
   - [Edit Virtual Machine](#edit-virtual-machine)
   - [Resize Virtual Machine](#resize-virtual-machine)
   - [Shutoff Virtual Machine](#shutoff-virtual-machine)
@@ -55,28 +56,27 @@ To create new Linux VM, do the following:
     in this example we will create the Linux VM.     
   - *Linux Distribution* -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).  
   - *Image Version*/*Volume name*/*Snapshot name* - based on the selected source, specify the corresponding image version, volume name, or snapshot name.  
-  - *Flavor* - select the size of the VM (number of vCPUs and RAM).  
-    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected;   
+  - *Flavor* - select the size of the VM (number of vCPUs and RAM);  
+    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected.     
   - *Key pair* - required for Linux VMs; choose an existing SSH key (created on the *SSH Keys* page) or create a new one to connect to the VM via SSH.   
-  - *Networks* - select one or more networks to connect the VM to.  
-    by default, "public" network is pre-selected;   
+  - *Networks* - select one or more networks to connect the VM to;  
+    by default, "public" network is pre-selected.     
   - *Firewalls* -  choose what collection of network access rules will control the traffic to this VM;     
     by default, "default" Firewall is pre-selected;   
-    default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.   
-      >**NOTE:** To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**;
-  
-  ![](../../../assets/images/fw/17.png?width=35pc&classes=border,shadow) 
-
+    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.   
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
     minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;    
-    by default, "50 GB" is pre-selected;    
-- *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
+    by default, "50 GB" is pre-selected.  
+  - *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
 
 After these steps, the newly created Linux VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/6.png?classes=border,shadow)
 
+💡 To connect to the selected **Linux Virtual Machine** remotely via SSH, you need to add an additional Firewall with a rule, that will allow incoming traffic to TCP port 22 (like shown below) - to find additional instructions and information about this, please see the article **[Access Linux VM](https://docs.ventuscloud.eu/products/compute/connect-linux-vm/)**.
+  
+  ![](../../../assets/images/vms/35.png?width=35pc&classes=border,shadow) 
 
 ## Create Windows Virtual Machine
 To create new Windows VM, do the following:
@@ -90,28 +90,28 @@ To create new Windows VM, do the following:
     in this example we will create the Linux VM.     
   - *Linux Distribution* -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).  
   - *Image Version*/*Volume name*/*Snapshot name* - based on the selected source, specify the corresponding image version, volume name, or snapshot name.  
-  - *Flavor* - select the size of the VM (number of vCPUs and RAM).  
-    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected;   
+  - *Flavor* - select the size of the VM (number of vCPUs and RAM);  
+    by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected.  
   - *Password* - required for Windows VMs; come up with the root password (it must contain at least one Latin letter in upper case, one Latin letter in lower case, digit, special character, and must be at least 8 characters long);  
   - *Confirm password;*  
-  - *Networks* - select one or more networks to connect the VM to.  
-    by default, "public" network is pre-selected;   
+  - *Networks* - select one or more networks to connect the VM to;  
+    by default, "public" network is pre-selected.   
   - *Firewalls* - choose what collection of network access rules will control the traffic to this VM;   
     by default, "default" Firewall is pre-selected;  
-    default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
-    >**NOTE:** To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
-  
-  ![](../../../assets/images/fw/18.png?width=35pc&classes=border,shadow)
-
+    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
     minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;    
-    by default, "50 GB" is pre-selected;    
-- *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
+    by default, "50 GB" is pre-selected.  
+  - *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
 
 After these steps, the newly created Windows VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/8.png?classes=border,shadow)
+
+💡 To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional instructions and information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
+  
+![](../../../assets/images/vms/36.png?width=35pc&classes=border,shadow)
 
 ## Virtual Machine details page
 To open the *Virtual Machine details page*, click on the **Name** of the corresponding Virtual Machine:
@@ -120,7 +120,7 @@ To open the *Virtual Machine details page*, click on the **Name** of the co
 This action will redirect you to the *Virtual Machine details page*, where you can find:
 - VM **details area** with actual information about it - name, ID, public IP, region, status, memory and image that was used for VM's creation:
 
-![](../../../assets/images/vms/13.png?width=25pc&classes=border,shadow)
+![](../../../assets/images/vms/13.png?width=30pc&classes=border,shadow)
 
 - panel with available **quick actions**:
 ![](../../../assets/images/vms/11.png?width=15pc&classes=border,shadow)
@@ -136,22 +136,22 @@ This action will redirect you to the *Virtual Machine details page*, where you
     - *Delete* - permanently removes the VM.  
 
 - transition to the NETWORKS & SECURITY, VOLUMES, SNAPSHOTS and LOG pages related to this VM:
-![](../../../assets/images/networks/net-16.png?width=25pc&classes=border,shadow) 
+![](../../../assets/images/networks/net-16.png?width=35pc&classes=border,shadow) 
 
 **NETWORKS & SECURITY TAB** - opens the *Networks & Security page* where you can find all available Interfaces and Security Groups (Firewalls) of corresponding VM, add new Interface or/and Firewall, associate Floating IP and manage this services.  
   ![](../../../assets/images/vms/14.2.png?classes=border,shadow)  
 
-To find additional information about Networking and Security and how to manage them through this TAB use the articles: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+💡 To find additional information about Networking and Security and how to manage them through this TAB use the articles: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
 **VOLUMES TAB** - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.  
 ![](../../../assets/images/vms/15.2.png?classes=border,shadow)  
 
-To find additional information about volumes and how to manage them through this TAB use the articles: [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/). 
+💡 To find additional information about volumes and how to manage them through this TAB use the articles: [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/). 
 
 **SNAPSHOTS TAB** - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
 ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
-To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
+💡 To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
   
 **LOG TAB** - opens the *Log page* where you can find VM's logs.
 ![](../../../assets/images/vms/17.2.png?classes=border,shadow)
@@ -162,7 +162,7 @@ To find additional information about snapshots and how to manage them through th
 ## Download RDP File
 
 {{% notice note %}}
-This option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs.
+📌 This option is available only for Windows VMs and is used to download RDP file for the remote connection to the Windows VMs.
 {{% /notice %}}
 
 To download RDP for the remote connection to the Windows Virtual Machine, do the following:
@@ -176,14 +176,14 @@ Alternatively, you can download RDP file from *Virtual Machine details page*, b
 ## Associate/Disassociate Floating IP
 
 {{% notice note %}}
-This option is available only for VMs created in the internal network with an configured external Router.
+📌 This option is available only for VMs created in the internal network with an configured external Router.
 {{% /notice %}}
 
 To associate Floating IP with the Virtual Machine, do the following:
-- ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.
-  To find information about how to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
-- ensure that you have created Floating IP and it isn't already associated with other cloud Resources;
-  To find information about how to create Floating IP use the article [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);
+- ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.    
+  💡 To find information about how to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
+- ensure that you have created Floating IP and it isn't already associated with other cloud Resources.     
+  💡 To find information about how to create Floating IP use the article [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);
 - identify Virtual Machine created in the internal network, that you want to make publicly available from the Internet on the *Virtual Machines page*;
 - click on the **Actions** icon and select the **Associate Floating IP** in the list of available options;  
 - choose one of the available internal interfaces of your VM and one of the previously created Floating IP that you want to attach to the selected interface on the opened *Associate floating IP* and click on the ASSOCIATE icon:  
@@ -200,7 +200,11 @@ After these steps, the selected Virtual Machine will be again publicly unavailab
 Alternatively, you can associate/disassociate floating IPs from the *NETWORKS & SECURITY TAB* on the *Virtual Machine details page*:  
 ![](../../../assets/images/vms/31.png?classes=border,shadow)
 
+<<<<<<< HEAD
 To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+=======
+💡 To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+>>>>>>> dev
 
 ## Edit Virtual Machine
 To edit the Virtual Machine, do the following:
@@ -210,7 +214,7 @@ To edit the Virtual Machine, do the following:
 
 After these steps, the selected Virtual Machine will be updated.
 
-Alternatively, you can edit virtual machine from its *Details page*,, by clicking on the appropriative **quick actions** icon there:
+Alternatively, you can edit virtual machine from its *Details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/vms/22.png?width=15pc&classes=border,shadow)
 
 ## Resize Virtual Machine

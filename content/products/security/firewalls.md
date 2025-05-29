@@ -22,11 +22,9 @@ On this page you can find *default* Firewall, all your own Firewalls created in 
 ![](../../../assets/images/fw/2.png?classes=border,shadow)
 
 {{% notice note %}}
-All VMs have a default Firewall which is applied to every VM.  
-
-User cannot delete default Firewall or change its Name/Description but can change its rules.  
-
-Default Firewall Rules allow access to the Internet from the VMs, but deny almost all access on the VMs from outside, except for objects belonging to the same default Firewall.  
+ℹ️ All VMs have a default Firewall which is applied to every VM.    
+📌 User cannot delete default Firewall or change its Name/Description but can change its rules.    
+📝 Default Firewall Rules allow access to the Internet from the VMs, but deny almost all access on the VMs from outside, except for objects belonging to the same default Firewall.  
 {{% /notice %}}
 
 **Actions** icon opens the next list of available management actions but isn't active for default Firewall:
@@ -60,20 +58,17 @@ On this page you can find:
 
 As you can see, the rules, that allow all outbound traffic, have been already created by default, but you can delete them by using **Actions** icon or add additional rule here by using CREATE FIREWALL RULE button.   
 
-For more information about Firewall Rules, please, see the article - [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)
+💡 For more information about Firewall Rules, please, see the article - [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/)
 
 ## Edit Firewall
 
 To edit the Firewall, do the following:
 - identify Firewall, that you want to edit, on the *Firewalls page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
-- update the Firewall Name or/and Description on the next opened *Edit Firewall window*, and click on the SAVE icon: 
-  
-![](../../../assets/images/fw/20.png?width=35pc&classes=border,shadow)
+- update the Firewall Name or/and Description on the next opened *Edit Firewall window*, and click on the SAVE icon.  
 
-After these steps, the selected Firewall will be updated.  
-
-Also, you can edit the Firewall from the *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there:
+After these steps, the selected Firewall will be updated.   
+Alternatively, you can edit the Firewall from its *Rules page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/fw/19.png?width=25pc&classes=border,shadow)
 
 ## Delete Firewall
@@ -82,27 +77,26 @@ To delete the Firewall, do the following:
 - click on the **Actions** icon and select the **Delete** in the list of available options;
 - confirm the Firewall deletion on the next opened *Confirmation window*.
 
-After these steps, the selected Firewall will be deleted.  
-
-Also, you can delete the Firewall from the *Firewall Rules page*, by clicking on the appropriative **quick actions** icon there:
+After these steps, the selected Firewall will be deleted.   
+Alternatively, you can delete the Firewall from its *Rules page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/fw/21.png?width=25pc&classes=border,shadow)
 
 ## Add Firewall to the VM
 
 {{% notice note %}}
-You can add and remove rules of the selected Firewall at any time from the *Firewall Rules page* and your changes will automatically applied to the VMs, that are associated with the corresponding Firewall.
+📌 You can add and remove rules of the selected Firewall at any time from the *Firewall Rules page* and your changes will automatically applied to the VMs, that are associated with the corresponding Firewall.
 {{% /notice %}}
 
 There are two ways add already created Firewall to the Virtual Machine:
 1) from the *Virtual Machines page* on the step of creating VM:
  
 ![](../../../assets/images/fw/22.png?width=30pc&classes=border,shadow)
-To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
+💡 To find more instructions and information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 
 2) from the NETWORKS & SECURITY TAB on the *Virtual Machine details page*: 
 
-![](../../../assets/images/fw/9.2.png?classes=border,shadow)
+![](../../../assets/images/conn-lin/23.1.png?classes=border,shadow)
   
-Detailed information how to change the current set of the VM's Firewalls from the *VM details page* you can find in article: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/). 
+💡 Detailed information how to change the current set of the VM's Firewalls from the *VM details page* you can find in article: [VM's Firewalls](https://docs.ventuscloud.eu/products/security/manage-firewalls/). 
 
  

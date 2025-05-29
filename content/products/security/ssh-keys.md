@@ -17,7 +17,7 @@ On this page, you can find an explanation of how to create, delete SSH Keys and 
 ## SSH Keys page
 To get to the *SSH Keys page*, select **Security** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **SSH Keys TAB:**
 ![](../../../assets/images/cli/1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/ssh/1.png?width=20pc&classes=border,shadow)
+![](../../../assets/images/ssh/1.png?width=23pc&classes=border,shadow)
 
 On this page you can find all created SSH Keys with the *Create and Add buttons*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Key Pair:
 ![](../../../assets/images/ssh/2.png?classes=border,shadow)   
@@ -29,14 +29,13 @@ On this page you can find all created SSH Keys with the *Create and Add buttons*
 ## Create SSH Key Pair
 
 There are two ways to create new SSH Key:  
-1) from the *Virtual Machines page* on the step of creating VM.
-  To find information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/); 
+1) from the *Virtual Machines page* on the step of creating VM:    
+  💡 To find more instructions and information about how to create Virtual Machine see the article - [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/); 
 
 ![](../../../assets/images/ssh/7.png?width=30pc&classes=border,shadow) 
 
 2) from the *SSH Keys page* in few steps:
-   * go to the *SSH Keys page* and click the CREATE SSH KEY PAIR icon in the upper left corner:
-   * 
+   * go to the *SSH Keys page* and click the CREATE SSH KEY PAIR icon in the upper left corner:  
 ![](../../../assets/images/ssh/5.png?classes=border,shadow)
 
    * specify the **Name** on the next opened *Create SSH Key window* and click on the CREATE icon:  
@@ -47,7 +46,7 @@ The next open page will provide your *Private Key* and you can copy it or uplo
 ![](../../../assets/images/ssh/4.png?width=25pc&classes=border,shadow)
 
 {{% notice warning %}}
-You will have access to the private key only after creation, please save it to your private server if necessary.
+📌 You will have access to the private key only after creation, please save it to your private server if necessary.
 {{% /notice %}}
  
 After these steps, the newly created SSH Key Pair will be added to the *SSH Keys page*.
@@ -59,7 +58,7 @@ If you want to use your own SSH Key Pair, you can add its public key in the Clou
 For this do the following:
 - go to the *SSH Keys page* and click the ADD PUBLIC KEY icon:   
 
-![](../../../assets/images/ssh/5.png?classes=border,shadow)
+![](../../../assets/images/ssh/5.1.png?classes=border,shadow)
 
 - specify the **Name** on the next opened *Add public key window*, paste the public key and click on the ADD icon:  
   
