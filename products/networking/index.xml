@@ -64,7 +64,7 @@
 &lt;h2 id="routers-page">Routers page&lt;/h2>
 &lt;p>To get to the &lt;em>Routers page&lt;/em>, select the &lt;strong>Networking&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Routers TAB:&lt;/strong>
 &lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/routers/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr>
+&lt;img src="../../../assets/images/routers/1.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
@@ -72,9 +72,9 @@
 &lt;ul>
 &lt;li>&lt;a href="#subnets-page">Subnets page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#create-subnet">Create Subnet&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#connect-subnets">Connect Subnets&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#edit-subnet">Edit Subnet&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-subnet">Delete Subnet&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#connect-subnets">Connect Subnets&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>

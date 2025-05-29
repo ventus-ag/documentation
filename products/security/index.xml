@@ -66,7 +66,7 @@
 &lt;h2 id="ssh-keys-page">SSH Keys page&lt;/h2>
 &lt;p>To get to the &lt;em>SSH Keys page&lt;/em>, select &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>SSH Keys TAB:&lt;/strong>
 &lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/ssh/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>CLI Users</title><link>https://docs.ventuscloud.eu/products/security/cli-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/cli-users/</guid><description>&lt;hr>
+&lt;img src="../../../assets/images/ssh/1.png?width=23pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>CLI Users</title><link>https://docs.ventuscloud.eu/products/security/cli-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/cli-users/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>

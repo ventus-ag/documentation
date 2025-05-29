@@ -176,6 +176,10 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a
 &lt;li>&lt;a href="#virtual-machine-details-page">Virtual Machine details page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#download-rdp-file">Download RDP File&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#to-find-additional-instructions-and-information-about-floating-ips-and-vms-interfaces-use-the-articles-floating-ips-vms-networks-and-interfaces">To find additional instructions and information about Floating IPs and VM&amp;rsquo;s Interfaces use the articles: Floating IPs, VM&amp;rsquo;s Networks and Interfaces.&lt;/a>
+&lt;ul>
 &lt;li>&lt;a href="#edit-virtual-machine">Edit Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#resize-virtual-machine">Resize Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#shutoff-virtual-machine">Shutoff Virtual Machine&lt;/a>&lt;/li>
@@ -202,7 +206,7 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations.&lt;/p>
 
-&lt;div class="notices note" >&lt;p>GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p></description></item><item><title>Access K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</guid><description>&lt;hr>
+&lt;div class="notices note" >&lt;p>📌 GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p></description></item><item><title>Access K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
@@ -526,7 +530,7 @@ To get ID and Access tokens. use next command:&lt;/p></description></item><item>
 &lt;h2 id="routers-page">Routers page&lt;/h2>
 &lt;p>To get to the &lt;em>Routers page&lt;/em>, select the &lt;strong>Networking&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Routers TAB:&lt;/strong>
 &lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/routers/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr>
+&lt;img src="../../../assets/images/routers/1.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr>
 &lt;p>On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
@@ -534,9 +538,9 @@ To get ID and Access tokens. use next command:&lt;/p></description></item><item>
 &lt;ul>
 &lt;li>&lt;a href="#subnets-page">Subnets page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#create-subnet">Create Subnet&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#connect-subnets">Connect Subnets&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#edit-subnet">Edit Subnet&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-subnet">Delete Subnet&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#connect-subnets">Connect Subnets&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -796,7 +800,7 @@ connection between the Cloud Console Regions.&lt;/p>
 &lt;h2 id="ssh-keys-page">SSH Keys page&lt;/h2>
 &lt;p>To get to the &lt;em>SSH Keys page&lt;/em>, select &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>SSH Keys TAB:&lt;/strong>
 &lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/ssh/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>User Management</title><link>https://docs.ventuscloud.eu/products/databases/database-user-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-user-management/</guid><description>&lt;hr>
+&lt;img src="../../../assets/images/ssh/1.png?width=23pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>User Management</title><link>https://docs.ventuscloud.eu/products/databases/database-user-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-user-management/</guid><description>&lt;hr>
 &lt;p>On this page, you can find instructions on how to manage database users, including creating and deleting users, assigning permissions, and resetting passwords.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
