@@ -56,7 +56,7 @@ After these steps, the newly created Subnet will be added to the *Subnets page*
 To connect Subnets to each other or to allow them access to the Internet you need to add them to the previously created Router on the *Router details page*.  
 For this follow the next steps:   
 
-- open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Network:  
+- open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Router:  
 ![](../../../assets/images/routers/4.png?classes=border,shadow) 
 
 - on the opened *Router details page* click on the ADD INTERFACE icon:  
@@ -68,10 +68,7 @@ For this follow the next steps:
 ✅ All Subnets that will be added to one Router will be connected to each other:   
 ![](../../../assets/images/networks/19.png?classes=border,shadow) 
 
-{{% notice note %}}
-📌 If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.
-{{% /notice %}} 
-
+📌 If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.   
 💡 For more information about Routers, please, see the next article - [Routers](https://docs.ventuscloud.eu/products/networking/routers/).  
 
 ## Edit Subnet
