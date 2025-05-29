@@ -9,9 +9,9 @@ On this page, you can find an explanation of how to create, edit, delete Subnets
 - [Table of contents](#table-of-contents)
   - [Subnets page](#subnets-page)
   - [Create Subnet](#create-subnet)
+  - [Connect Subnets](#connect-subnets)
   - [Edit Subnet](#edit-subnet)
   - [Delete Subnet](#delete-subnet)
-  - [Connect Subnets](#connect-subnets)
 
 ## Subnets page
 To open the *Subnets page*, go to *Networking page* and click on the **Name** of the corresponding Network:
@@ -47,10 +47,32 @@ To create new Subnet, do the following:
   - *Host Routes* - is optional and specifies additional routes announced to the hosts;  
   each entry is: destination_cidr,next-hop; one entry per line.
 
-After these steps, the newly created Subnet will be added to the *Subnets page*.
+After these steps, the newly created Subnet will be added to the *Subnets page*:
+![](../../../assets/images/networks/16.png?classes=border,shadow) 
 
 📝 You can connect Subnets to each other by attaching Router.   
-💡 How to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
+
+## Connect Subnets 
+To connect Subnets to each other or to allow them access to the Internet you need to add them to the previously created Router on the *Router details page*.  
+For this follow the next steps:   
+
+- open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Network:  
+![](../../../assets/images/routers/4.png?classes=border,shadow) 
+
+- on the opened *Router details page* click on the ADD INTERFACE icon:  
+![](../../../assets/images/networks/17.png?classes=border,shadow) 
+
+- select one of the previously created Subnets on the next opened *Add Interface window* and click on the ADD icon:  
+![](../../../assets/images/networks/18.png?width=35pc&classes=border,shadow) 
+
+✅ All Subnets that will be added to one Router will be connected to each other:   
+![](../../../assets/images/networks/19.png?classes=border,shadow) 
+
+{{% notice note %}}
+📌 If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.
+{{% /notice %}} 
+
+💡 For more information about Routers, please, see the next article - [Routers](https://docs.ventuscloud.eu/products/networking/routers/).  
 
 ## Edit Subnet
 To edit the Subnet, do the following:
@@ -74,21 +96,3 @@ To delete the Subnet, do the following:
 - confirm the Subnet deletion on the next opened *Confirmation window*.  
 
 After these steps, the selected Subnet will be deleted.   
-
-## Connect Subnets 
-To connect Subnets to each other or to allow them access to the Internet you need to add them to the previously created Router on the *Router details page*.  
-
-To open the *Router details page*, go to *Routers page* and click on the **Name** of the corresponding Network:
-![](../../../assets/images/networks/17.png?classes=border,shadow) 
-
-On the opened *Router details page* click on the ADD INTERFACE icon, select one of the previously created Subnets on the next opened *Add Interface window* and click on the ADD icon:
-![](../../../assets/images/networks/18.png?width=35pc&classes=border,shadow) 
-
-All Subnets that will be added to one Router will be connected to each other:   
-![](../../../assets/images/networks/19.png?classes=border,shadow) 
-
-{{% notice note %}}
-📌 If Router has an external gateway enabled, the Subnets added to this router will be able to access the Internet.
-{{% /notice %}} 
-
-💡 For more information about Routers, please, see the next article - [Routers](https://docs.ventuscloud.eu/products/networking/routers/).  

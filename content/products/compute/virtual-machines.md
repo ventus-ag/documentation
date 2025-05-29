@@ -179,9 +179,9 @@ Alternatively, you can download RDP file from *Virtual Machine details page*, b
 {{% /notice %}}
 
 To associate Floating IP with the Virtual Machine, do the following:
-- ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.
+- ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.    
   💡 To find information about how to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
-- ensure that you have created Floating IP and it isn't already associated with other cloud Resources;
+- ensure that you have created Floating IP and it isn't already associated with other cloud Resources.     
   💡 To find information about how to create Floating IP use the article [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);
 - identify Virtual Machine created in the internal network, that you want to make publicly available from the Internet on the *Virtual Machines page*;
 - click on the **Actions** icon and select the **Associate Floating IP** in the list of available options;  

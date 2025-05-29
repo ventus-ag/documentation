@@ -104,7 +104,7 @@ To edit the Router, do the following:
 
 After these steps, the selected Router will be updated.  
 Alternatively, you can edit Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/routers/8.png?width=13pc&classes=border,shadow)  
+![](../../../assets/images/routers/8.png?width=7pc&classes=border,shadow)  
 
 ## Delete Router
 
@@ -115,5 +115,5 @@ To delete Router, do the following:
 
 After these steps, the selected Router will be deleted.  
 Alternatively, you can delete Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/routers/9.png?width=13pc&classes=border,shadow)  
+![](../../../assets/images/routers/9.png?width=7pc&classes=border,shadow)  
 

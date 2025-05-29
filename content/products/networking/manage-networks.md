@@ -36,7 +36,10 @@ In this article, we are interested in the block of information, where you can f
 ## Add Interface
 To add additional Interface to the selected VM, do the following:
 - ensure that you have already created Network with associated Subnets;
-- click on the ADD INTERFACE icon;
+- on the opened *NETWORKS & SECURITY page of the VM* click on the ADD INTERFACE icon:
+
+![](../../../assets/images/networks/net-23.png?classes=border,shadow) 
+
 - select one of the available Networks, optionally specify *Fixed IPs* on the next opened *Add interface window* and click on the ADD icon:
 
 ![](../../../assets/images/networks/10.png?width=35pc&classes=border,shadow)
@@ -75,9 +78,9 @@ After these steps, the selected Interface will be deleted from the selected VM.
 {{% /notice %}}
 
 To associate already created Floating IP with the VM's internal Interfaces, do the following:
-- ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.
+- ensure that you have configured Router with enabled external gateway, which is attached to your internal Network.   
   💡 To find information about how to create and configure Router use the article [Routers](https://docs.ventuscloud.eu/products/networking/routers/);
-- ensure that you have created Floating IP and it isn't already associated with other cloud Resources;
+- ensure that you have created Floating IP and it isn't already associated with other cloud Resources.    
   💡 To find information about how to create Floating IP use the article [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/);
 - click on the **Actions** icon and select the **Associate Floating IP** in the list of available options;
 - select one of the available Floating IPs on the next opened window, and click on ASSOCIATE:

@@ -33,7 +33,10 @@ In this article, we are interested in the block of information, where you can f
 
 ## Change Firewall set
 To add additional Firewall or delete unnecessary one from the selected VM, do the following:
-- click on the *Actions icon* and select the **Edit Firewalls** in the list of available options;
+- on the opened  *NETWORKS & SECURITY page of this VM* click on the *Actions icon* and select the **Edit Firewalls** in the list of available options:  
+
+![](../../../assets/images/conn-lin/23.1.png?classes=border,shadow)
+
 - remove an unnecessary firewall or select an additional one from the list of previously added firewalls and click on the SAVE icon:  
 
 ![](../../../assets/images/fw/23.png?width=35pc&classes=border,shadow) 
@@ -48,7 +51,8 @@ After these steps, the newly added Firewall will be added to the selected VM:
 💡 For more information about Firewalls and their Rules, please, see the next articles: [Firewalls](https://docs.ventuscloud.eu/products/security/firewalls/), [Firewall Rules](https://docs.ventuscloud.eu/products/security/firewall-rules/).
 
 Alternatively, you can create new VM and immediately associate it with desired Firewall, during it's creation.    
-💡 To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 ![](../../../assets/images/fw/22.png?width=30pc&classes=border,shadow)
+
+💡 To find information about how to create Virtual Machine use the article [Virtual Machines](https://docs.ventuscloud.eu/products/compute/virtual-machines/).
 
 
