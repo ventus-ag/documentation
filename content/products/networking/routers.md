@@ -54,7 +54,7 @@ Router can be connected to one or more private networks by adding it's interface
 
 To add Interfaces to the already created Router do the following:
 - ensure that you have already created Network with associated Subnets;  
-  To find information about how to create internal Network and Subnet use the articles [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/);
+  💡 To find information about how to create internal Network and Subnet use the articles [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/);
 - open the *Router details page* - for this, click on the **Name** of the corresponding Router:
 
 ![](../../../assets/images/routers/4.png?classes=border,shadow)  
@@ -67,7 +67,12 @@ To add Interfaces to the already created Router do the following:
 
 ![](../../../assets/images/routers/6.png?width=35pc&classes=border,shadow)
 
-After these steps, the newly added Interface will appear in the *Router details page* in the ACTIVE status with available action icon for its removing. Now, all Virtual Machines created in this Subnet will have access to the internet, as this Router was created with *Enabled external gateway*:
+{{% notice note %}}
+If Router was created with *Enabled external gateway* all Virtual Machines created in this Subnet will have access to the internet.
+{{% /notice %}}
+
+
+After these steps, the newly added Interface will appear in the *Router details page* in the ACTIVE status with available *action icon* for its removing. Now, all Virtual Machines created in this Subnet will have access to the internet, as this Router was created with *Enabled external gateway*:
 
 ![](../../../assets/images/routers/7.png?classes=border,shadow) 
 
@@ -97,8 +102,8 @@ To edit the Router, do the following:
 - update the Name or/and Description of the selected Router, on the next opened *Edit Router window* and click on the SAVE icon.
 
 After these steps, the selected Router will be updated.  
-Also, you can edit the Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/routers/8.png?width=25pc&classes=border,shadow)  
+Alternatively, you can edit Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/routers/8.png?width=5pc&classes=border,shadow)  
 
 ## Delete Router
 
@@ -108,6 +113,6 @@ To delete Router, do the following:
 - confirm the Router deletion on the next opened *Confirmation window*.
 
 After these steps, the selected Router will be deleted.  
-Also, you can delete the Router from its *details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/routers/9.png?width=25pc&classes=border,shadow)  
+Alternatively, you can delete Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
+![](../../../assets/images/routers/9.png?width=5pc&classes=border,shadow)  
 
