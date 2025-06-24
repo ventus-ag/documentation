@@ -16,6 +16,8 @@
 &lt;li>&lt;a href="#shelve-virtual-machine">Shelve Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#start-virtual-machine">Start Virtual Machine&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-virtual-machine">Delete Virtual Machine&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#backup-virtual-machine">Backup Virtual Machine&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#restore-virtual-machine">Restore Virtual Machine&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>

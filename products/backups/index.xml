@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BACKUPS on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/backups/</link><description>Recent content in BACKUPS on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/backups/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Workloads</title><link>https://docs.ventuscloud.eu/products/backups/backup-workloads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/backup-workloads/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to create, edit, delete Backup Workload and instructions for other steps to manage it in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#backup-workloads-page">Backup Workloads page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-backup-workload">Create Backup Workload&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#workload-details-page">Workload details page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#edit-backup-workload">Edit Backup Workload&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-backup-workload">Delete Backup Workload&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+
+&lt;div class="notices note" >&lt;p>Please be aware that Backup and Restore feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Backups</title><link>https://docs.ventuscloud.eu/products/backups/backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/backups/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of how to mange already created Backups, create Backup on demand and by schedule, multi-delete Backups and instructions for other steps to manage Backups in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#backups-page">Backups page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-backup">Create Backup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#backup-details-page">Backup details page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#cancel-backup">Cancel Backup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-backup">Delete Backup&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#multi-delete-backups">Multi-Delete Backups&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+
+&lt;div class="notices note" >&lt;p>Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Restores</title><link>https://docs.ventuscloud.eu/products/backups/restores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/restores/</guid><description>&lt;hr>
+&lt;p>On this page, you can find an explanation of what is the Restore in the Cloud Console, how to recover backed-up Virtual Machines and instructions for other steps to manage Restores in the Cloud Console.&lt;/p>
+&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#restores-page">Restores page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#initiate-restore">Initiate Restore&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#cancel-restore">Cancel Restore&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-restore">Delete Restore&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+
+&lt;div class="notices note" >&lt;p>Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to restore your VMs from backups. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>VM</title><link>https://docs.ventuscloud.eu/products/backups/add-to-the-vm-article/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/add-to-the-vm-article/</guid><description>&lt;hr>
+&lt;h2 id="backup-virtual-machine">Backup Virtual Machine&lt;/h2>
+
+&lt;div class="notices note" >&lt;p>Please be aware that Backup feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item></channel></rss>
