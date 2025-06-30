@@ -1,4 +1,5 @@
 .github/workflows/gh-pages.yml
 static/CNAME
 .DS_Store
+.cursor/rules
 
