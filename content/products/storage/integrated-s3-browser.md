@@ -20,6 +20,8 @@ On this page, you can find an explanation of how to use Object Storage with its 
   - [Make bucket private](#make-bucket-private)
   - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
   - [Set bucket retention policy](#set-bucket-retention-policy)
+      - [Fast bucket cleanup technique](#fast-bucket-cleanup-technique)
+      - [Delete retention policy](#delete-retention-policy)
   - [Delete bucket](#delete-bucket)
 
 ## Introduction
@@ -38,11 +40,9 @@ With our S3 browser, you can perform the following actions:
 - Obtain public links for buckets, folders, and individual files;
 - Set retention policies for automatic cleanup of older files.   
   
-This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console.
+This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create *Object Storage credentials* that include the access key and secret key.  
 
-But before we start using the integrated S3-Browser, we need to create *Object Storage credentials* that include the access key and secret key.  
-
-To find instructions on how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
+💡 To find instructions on how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
 
 ## S3 Buckets page
 
@@ -59,7 +59,7 @@ Clicking on this button will open the integrated S3-Browser and take you to the 
 If you haven't created Object Storage Credentials yet, click on the CREATE S3 CREDENTIALS button and once you have completed this step, you will be able to use the BROWSE BUCKETS button:   
 ![](../../../assets/images/store/15.png?width=45pc&classes=border,shadow) 
 
-To find more information about how to manage Object Storage Credentials, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/). 
+💡 To find more information about how to manage Object Storage Credentials, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/). 
 
 ## Create bucket
 To create a new S3 Bucket in the Cloud Console, do the following:
@@ -78,9 +78,10 @@ To access and navigate through the folders and files inside a bucket, click on t
 
 This action will redirect you to the inside *Bucket page*, where you can find:
 
-- **Bucket Details Area** and **Panel with Quick Actions** - this section displays basic information about the bucket, such as its name and whether it is set as public or private and provides various quick actions, including next options:   
+- **Bucket Details Area** and **Panel with Quick Actions** - this section displays basic information about the bucket, such as its name, whether it is set as public or private, retention policy status, and provides various quick actions, including next options:   
   -  get the bucket's URL (if it is public);  
   -  to change the bucket's access settings (make it public or private);  
+  -  set retention policy for the bucket;
   -  delete the bucket;  
   -  perform multi-deletion for selected files/folders (become enabled once you have selected at least one object (file or folder)).
     
@@ -178,7 +179,7 @@ Making a bucket public allows anyone to access its contents without requiring au
 
 ## Get bucket's public URL
 {{% notice note %}}
-📌 You can obtain the URL for S3 bucket only if the bucket is publicly available. In such cases, you can generate a URL that allows direct access to the entire bucket or to individual objects (files or folders) through the provided link. However, if the bucket is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the bucket.
+You can obtain the URL for S3 bucket only if the bucket is publicly available. In such cases, you can generate a URL that allows direct access to the entire bucket or to individual objects (files or folders) through the provided link. However, if the bucket is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the bucket.
 {{% /notice %}}
 
 You can get your bucket's public URL from both the *Buckets page* and the inside of the selected *Bucket page*.
@@ -204,7 +205,7 @@ The next opened window will provide your *bucket's URL* and you can save it by
 
 ## Get object's public URL
 {{% notice note %}}
-📌 You can obtain the URL for a folder or file in an S3 bucket only if the object is set as publicly available. In such cases, you can generate a URL that allows direct access to the object through the provided link. However, if the object is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the object.
+You can obtain the URL for a folder or file in an S3 bucket only if the object is set as publicly available. In such cases, you can generate a URL that allows direct access to the object through the provided link. However, if the object is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the object.
 {{% /notice %}}
 
 To get an object's public URL, do the following:
@@ -265,13 +266,13 @@ Also, the integrated S3 browser allows you to perform **multiple deletions** of 
 
 After these steps, the selected objects will be deleted in a few seconds.
 
-**Best practice for large datasets**
+💡 **Best practice for large datasets**
 
-💡 For buckets containing large datasets with numerous files, manually deleting objects one by one or even using multi-delete functionality can be time-consuming and inefficient. In such cases, the best practice is to use the **retention policy** feature, which provides automated cleanup functionality.
+For buckets containing large datasets with numerous files, manually deleting objects one by one or even using multi-delete functionality can be time-consuming and inefficient. In such cases, the best practice is to use the **retention policy** feature, which provides automated cleanup functionality.
 
 The retention policy allows you to automatically and permanently remove files older than a specified number of days, making it ideal for managing large datasets that require regular cleanup.
 
-**Fast bucket cleanup technique**
+💡 **Fast bucket cleanup technique:**
 
 To quickly delete all files from a bucket with large amounts of data:
 
@@ -282,34 +283,41 @@ To quickly delete all files from a bucket with large amounts of data:
 This method will clear all bucket content while keeping the bucket itself intact.
 
 {{% notice warning %}}
-CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.
+⚠️ CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.
 {{% /notice %}}
 
 {{% notice note %}}
-💡 This technique is the fastest way to empty buckets containing thousands of files, much more efficient than manual deletion methods.
+This technique is the fastest way to empty buckets containing thousands of files, much more efficient than manual deletion methods.
 {{% /notice %}}
 
-To learn more about setting up and managing retention policies for your buckets, please see the section - [Set bucket retention policy](#set-bucket-retention-policy).
+💡 To learn more about setting up and managing retention policies for your buckets, please see the section - [Set bucket retention policy](#set-bucket-retention-policy).
 
 
 ## Set bucket retention policy
+
 The integrated S3 browser allows you to set a retention policy for your bucket, which provides automatic cleanup functionality for managing large datasets. This feature enables you to specify the number of days after which files will be automatically and permanently removed from the bucket. The bucket itself will never be deleted by the retention policy and will remain intact and functional.
 
 To set a retention policy for your bucket, do the following:
 
 - access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
-- locate the SET RETENTION POLICY button in the upper right corner of the bucket interface;
-- click on the SET RETENTION POLICY button to open the configuration dialog;
-- specify the number of days for the retention period (files older than this number of days will be permanently removed);
-- review your settings and click on the APPLY POLICY button to confirm the retention policy.
+- inside the bucket on the Panel with Quick Actions, click an option icon that allows you to set the bucket’s retention policy:  
+![](../../../assets/images/store/40.png?width=35pc&classes=border,shadow)  
+- on the next opened window specify the number of days for the retention period (files older than this number of days will be permanently removed) and click on the SET button:  
+![](../../../assets/images/store/41.png?width=35pc&classes=border,shadow)  
 
 After these steps, the retention policy will be active for your bucket. All files that are older than the specified number of days will be automatically and permanently deleted from the bucket. The bucket itself will never be affected by this policy and will remain available for new uploads and continued use.
+
+![](../../../assets/images/store/42.png?width=40pc&classes=border,shadow)  
 
 {{% notice note %}}
 📌 Once a retention policy is applied to a bucket, you cannot modify the existing policy settings. If you need to change the retention period, you must first delete the current policy and then set a new one with the desired settings.
 {{% /notice %}}
 
-**Fast bucket cleanup technique**
+{{% notice warning %}}
+Setting a retention policy will permanently delete files older than the specified number of days. This action cannot be undone. Please ensure you have proper backups of important data before applying a retention policy. This feature is particularly useful for managing large datasets that require regular cleanup. Remember that the bucket itself will never be deleted by the retention policy.
+{{% /notice %}}
+
+#### Fast bucket cleanup technique
 
 To quickly delete all files from a bucket with large amounts of data:
 
@@ -320,32 +328,30 @@ To quickly delete all files from a bucket with large amounts of data:
 This method will clear all bucket content while keeping the bucket itself intact.
 
 {{% notice warning %}}
-CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.
+⚠️ CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.
 {{% /notice %}}
 
 {{% notice note %}}
 💡 This technique is the fastest way to empty buckets containing thousands of files, much more efficient than manual deletion methods.
 {{% /notice %}}
 
-**Delete retention policy**
+#### Delete retention policy
 
 To delete an existing retention policy from your bucket, do the following:
 
 - access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
-- locate the DELETE RETENTION POLICY button in the upper right corner of the bucket interface (this button will be visible only if a retention policy is currently applied);
-- click on the DELETE RETENTION POLICY button;
-- confirm your action on the next opened *Confirmation window* by clicking on the DELETE POLICY button.
+- inside the bucket on the Panel with Quick Actions, click an option icon that allows you to delete the bucket’s retention policy:  
+![](../../../assets/images/store/43.png?width=35pc&classes=border,shadow)   
+- confirm your action on the next opened *Confirmation window* by clicking on the DELETE button.
 
 After these steps, the retention policy will be removed from your bucket, and no automatic file deletion will occur. You can then set a new retention policy if needed.
 
-{{% notice warning %}}
-Setting a retention policy will permanently delete files older than the specified number of days. This action cannot be undone. Please ensure you have proper backups of important data before applying a retention policy. This feature is particularly useful for managing large datasets that require regular cleanup. Remember that the bucket itself will never be deleted by the retention policy.
-{{% /notice %}}
-
 ## Delete bucket
 {{% notice note %}}
-📌 To avoid any potential data loss during the deletion process, in the Cloud Console, you can only delete a bucket if it is empty.
+To avoid any potential data loss during the deletion process, in the Cloud Console, you can only delete a bucket if it is empty.
 {{% /notice %}}
+
+Before deleting a bucket, all files must be removed. To empty your bucket efficiently, you can either use the [Fast bucket cleanup technique](#fast-bucket-cleanup-technique) with retention policy for large datasets, or the [multi-delete functionality](#delete-and-multi-delete-objects) for smaller amounts of data.
 
 You can delete bucket from both the *Buckets page* and the inside of the selected *Bucket page* but before, please ensure that all the objects (files and folders) inside the bucket have been removed or moved to another location.
 
