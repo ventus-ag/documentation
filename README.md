@@ -5,12 +5,22 @@ Documentation for the EWW | ITandTEL Cloud platform (docs.ventuscloud.eu), built
 ## 🚀 Quick Start
 
 ### Requirements
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) version 0.111+ 
+- [Hugo Extended](https://gohugo.io/getting-started/installing/) version 0.147.9+ 
 - Git
 
 ### Check Hugo Installation
 ```bash
 hugo version
+```
+
+Should show: `hugo v0.147.9+extended` or newer
+
+### Update Hugo (if needed)
+```bash
+# For macOS with Homebrew
+brew update && brew upgrade hugo
+
+# For other systems, visit: https://gohugo.io/installation/
 ```
 
 ### Local Development
@@ -81,10 +91,21 @@ weight = 10
 
 ## 🛠️ Common Issues
 
-### Error "can't evaluate field IsMultilingual"
-If you see Hugo compatibility errors, fixes are already applied to theme files:
-- `themes/hugo-theme-learn/layouts/partials/search.html`
-- `themes/hugo-theme-learn/layouts/partials/menu.html`
+### Hugo Version Compatibility
+This documentation requires Hugo v0.147.9+ for compatibility with GitHub Pages deployment. If you have an older version:
+
+```bash
+# Check current version
+hugo version
+
+# Update Hugo (macOS with Homebrew)
+brew update && brew upgrade hugo
+
+# Verify update
+hugo version
+```
+
+**Note**: Hugo v0.124.0+ deprecated `.Site.IsMultiLingual` in favor of `hugo.IsMultilingual`. Our theme files have been updated to use the modern syntax.
 
 ### Site not accessible at localhost:1313
 1. Ensure Hugo server started without errors
@@ -160,7 +181,9 @@ pre = "<b>1. </b>"            # Chapter numbering
 
 ## 🚀 Deployment
 
-Site automatically deploys to `docs.ventuscloud.eu` on changes to main branch.
+Site automatically deploys to `docs.ventuscloud.eu` on changes to main branch using Hugo v0.147.9.
+
+**Local & Remote Sync**: Both local development and GitHub Pages use the same Hugo version (v0.147.9+) for consistent behavior.
 
 ## 🤝 Contributing
 

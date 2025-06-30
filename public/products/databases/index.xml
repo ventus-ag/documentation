@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DATABASES on EWW | ITandTEL Cloud Docs</title>
+    <link>http://localhost:52848/products/databases/</link>
+    <description>Recent content in DATABASES on EWW | ITandTEL Cloud Docs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52848/products/databases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Databases</title>
+      <link>http://localhost:52848/products/databases/databases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52848/products/databases/databases/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#databases-page&#34;&gt;Databases page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-database&#34;&gt;Create Database&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#database-details-page&#34;&gt;Database details page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-database&#34;&gt;Edit Database&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#reset-database-password&#34;&gt;Reset Database Password&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-database&#34;&gt;Delete Database&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you&amp;rsquo;re willing to accept the associated risks of using a beta service, you&amp;rsquo;re welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database&#39;s Custom Options</title>
+      <link>http://localhost:52848/products/databases/database-custom-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52848/products/databases/database-custom-options/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Custom Options, how to manage them in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-databases-custom-options&#34;&gt;Edit Database&amp;rsquo;s Custom Options&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#postgresql&#34;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#mysql&#34;&gt;MySQL&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#mariadb&#34;&gt;MariaDB&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Custom Options&lt;/strong&gt; are a feature provided to modify options of your database. You can edit various settings such as max connections, WAL sender timeout, streaming delay, etc. depending on the database type.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database&#39;s Replicas</title>
+      <link>http://localhost:52848/products/databases/database-replicas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52848/products/databases/database-replicas/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Replica, how to create and manage them in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#make-databases-replica&#34;&gt;Make Database&amp;rsquo;s Replica&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-databases-replica&#34;&gt;Delete Database&amp;rsquo;s Replica&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Replicas&lt;/strong&gt; are a feature provided to ensure the security of your databases. In the Cloud Console, you can create up to 5 replicas of your database in different projects, across one or multiple regions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database&#39;s Backups</title>
+      <link>http://localhost:52848/products/databases/database_backups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52848/products/databases/database_backups/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Backups, how to create it and how to restore Database from its Backup in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#link-database-to-the-s3-storage&#34;&gt;Link Database to the S3 Storage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configure-the-scheduler-for-database-backups&#34;&gt;Configure the Scheduler for Database Backups&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-immediate-database-backup&#34;&gt;Create Immediate Database Backup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#restore-database-from-backup&#34;&gt;Restore Database from Backup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Backups&lt;/strong&gt; offer an additional layer of security for your databases, similar to Database&amp;rsquo;s Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database Management</title>
+      <link>http://localhost:52848/products/databases/database-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52848/products/databases/database-management/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create and delete databases within your main database instance in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-database&#34;&gt;Create Database&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-database&#34;&gt;Delete Database&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;create-database&#34;&gt;Create Database&lt;/h2&gt;&#xA;&lt;p&gt;To create a new database within your main database instance:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Navigate to the Database Management page&#xA;&lt;img src=&#34;../../../assets/images/databases/dbs.png?classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click the CREATE button&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In the opened window, fill in the following parameters:&#xA;&lt;img src=&#34;../../../assets/images/databases/createdb.png?classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Name: Enter a name for your new database&lt;/li&gt;&#xA;&lt;li&gt;Charset: Select the character set for the database&lt;/li&gt;&#xA;&lt;li&gt;Collation: Choose the collation for the database&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click CREATE to confirm&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>User Management</title>
+      <link>http://localhost:52848/products/databases/database-user-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52848/products/databases/database-user-management/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find instructions on how to manage database users, including creating and deleting users, assigning permissions, and resetting passwords.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-user&#34;&gt;Create User&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-user&#34;&gt;Delete User&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#reset-user-password&#34;&gt;Reset User Password&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#set-user-permissions&#34;&gt;Set User Permissions&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;create-user&#34;&gt;Create User&lt;/h2&gt;&#xA;&lt;p&gt;To create a new database user:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click the CREATE USER button&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In the opened window, enter the following information:&#xA;&lt;img src=&#34;../../../assets/images/databases/createuser.png?classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Username: Enter a name for the new user&lt;/li&gt;&#xA;&lt;li&gt;Database: Select the database(s) the user should have access to&lt;/li&gt;&#xA;&lt;li&gt;Permissions: Choose either Read or ReadWrite permissions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Click CREATE to confirm&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
