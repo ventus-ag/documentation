@@ -266,29 +266,9 @@ Also, the integrated S3 browser allows you to perform **multiple deletions** of 
 
 After these steps, the selected objects will be deleted in a few seconds.
 
-💡 **Best practice for large datasets**
+📌 **Best practice for large datasets**
 
 For buckets containing large datasets with numerous files, manually deleting objects one by one or even using multi-delete functionality can be time-consuming and inefficient. In such cases, the best practice is to use the **retention policy** feature, which provides automated cleanup functionality.
-
-The retention policy allows you to automatically and permanently remove files older than a specified number of days, making it ideal for managing large datasets that require regular cleanup.
-
-💡 **Fast bucket cleanup technique:**
-
-To quickly delete all files from a bucket with large amounts of data:
-
-1. Set a retention policy to **1 day**
-2. Wait for automatic cleanup to complete  
-3. Remove the retention policy before uploading new files
-
-This method will clear all bucket content while keeping the bucket itself intact.
-
-{{% notice warning %}}
-⚠️ CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.
-{{% /notice %}}
-
-{{% notice note %}}
-This technique is the fastest way to empty buckets containing thousands of files, much more efficient than manual deletion methods.
-{{% /notice %}}
 
 💡 To learn more about setting up and managing retention policies for your buckets, please see the section - [Set bucket retention policy](#set-bucket-retention-policy).
 
@@ -313,8 +293,12 @@ After these steps, the retention policy will be active for your bucket. All file
 📌 Once a retention policy is applied to a bucket, you cannot modify the existing policy settings. If you need to change the retention period, you must first delete the current policy and then set a new one with the desired settings.
 {{% /notice %}}
 
-{{% notice warning %}}
+{{% notice note %}}
 Setting a retention policy will permanently delete files older than the specified number of days. This action cannot be undone. Please ensure you have proper backups of important data before applying a retention policy. This feature is particularly useful for managing large datasets that require regular cleanup. Remember that the bucket itself will never be deleted by the retention policy.
+{{% /notice %}}
+
+{{% notice warning %}}
+⚠️ **Lifecycle Configuration Conflicts**: If you have manually configured custom lifecycle rules on your bucket through S3 API or other tools, they may conflict with or override the retention policy set through the Cloud Console. Custom lifecycle configurations can shadow this retention policy setting, causing unexpected behavior. Before setting a retention policy, ensure you review and remove any conflicting custom lifecycle rules.
 {{% /notice %}}
 
 #### Fast bucket cleanup technique

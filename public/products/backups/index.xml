@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BACKUPS on EWW | ITandTEL Cloud Docs</title>
-    <link>http://localhost:52848/products/backups/</link>
+    <link>http://localhost:58070/products/backups/</link>
     <description>Recent content in BACKUPS on EWW | ITandTEL Cloud Docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52848/products/backups/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58070/products/backups/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backup Workloads</title>
-      <link>http://localhost:52848/products/backups/backup-workloads/</link>
+      <link>http://localhost:58070/products/backups/backup-workloads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/backups/backup-workloads/</guid>
+      <guid>http://localhost:58070/products/backups/backup-workloads/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Backup Workload and instructions for other steps to manage it in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#backup-workloads-page&#34;&gt;Backup Workloads page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-backup-workload&#34;&gt;Create Backup Workload&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#workload-details-page&#34;&gt;Workload details page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-backup-workload&#34;&gt;Edit Backup Workload&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-backup-workload&#34;&gt;Delete Backup Workload&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Please be aware that Backup and Restore feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Backups</title>
-      <link>http://localhost:52848/products/backups/backups/</link>
+      <link>http://localhost:58070/products/backups/backups/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/backups/backups/</guid>
+      <guid>http://localhost:58070/products/backups/backups/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to mange already created Backups, create Backup on demand and by schedule, multi-delete Backups and instructions for other steps to manage Backups in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#backups-page&#34;&gt;Backups page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-backup&#34;&gt;Create Backup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#backup-details-page&#34;&gt;Backup details page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#cancel-backup&#34;&gt;Cancel Backup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-backup&#34;&gt;Delete Backup&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#multi-delete-backups&#34;&gt;Multi-Delete Backups&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Restores</title>
-      <link>http://localhost:52848/products/backups/restores/</link>
+      <link>http://localhost:58070/products/backups/restores/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/backups/restores/</guid>
+      <guid>http://localhost:58070/products/backups/restores/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of what is the Restore in the Cloud Console, how to recover backed-up Virtual Machines and instructions for other steps to manage Restores in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#restores-page&#34;&gt;Restores page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#initiate-restore&#34;&gt;Initiate Restore&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#cancel-restore&#34;&gt;Cancel Restore&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-restore&#34;&gt;Delete Restore&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to restore your VMs from backups. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description>
     </item>
   </channel>

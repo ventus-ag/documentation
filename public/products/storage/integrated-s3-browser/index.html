@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52848&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=58070&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.147.9">
@@ -12,22 +12,22 @@
     <title>Integrated S3-Browser - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1751280364" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751280364" rel="stylesheet">
-    <link href="/css/hybrid.css?1751280364" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751280364" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751280364" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751280364" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751280364" rel="stylesheet">
-    <link href="/css/theme.css?1751280364" rel="stylesheet">
-    <link href="/css/tabs.css?1751280364" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751280364" rel="stylesheet">
+    <link href="/css/nucleus.css?1751303792" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751303792" rel="stylesheet">
+    <link href="/css/hybrid.css?1751303792" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751303792" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751303792" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751303792" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751303792" rel="stylesheet">
+    <link href="/css/theme.css?1751303792" rel="stylesheet">
+    <link href="/css/tabs.css?1751303792" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751303792" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1751280364" rel="stylesheet">
+    <link href="/css/theme-mine.css?1751303792" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751280364"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751303792"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751280364"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751280364"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751303792"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751303792"></script>
 <script type="text/javascript">
     
-        var baseurl = "http:\/\/localhost:52848\/";
+        var baseurl = "http:\/\/localhost:58070\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751280364"></script>
+<script type="text/javascript" src="/js/search.js?1751303792"></script>
 
     
   </div>
@@ -2010,25 +2010,8 @@ The access permissions will not allow the public to access the bucket or its con
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on the DELETE button.</li>
 </ul>
 <p>After these steps, the selected objects will be deleted in a few seconds.</p>
-<p>💡 <strong>Best practice for large datasets</strong></p>
+<p>📌 <strong>Best practice for large datasets</strong></p>
 <p>For buckets containing large datasets with numerous files, manually deleting objects one by one or even using multi-delete functionality can be time-consuming and inefficient. In such cases, the best practice is to use the <strong>retention policy</strong> feature, which provides automated cleanup functionality.</p>
-<p>The retention policy allows you to automatically and permanently remove files older than a specified number of days, making it ideal for managing large datasets that require regular cleanup.</p>
-<p>💡 <strong>Fast bucket cleanup technique:</strong></p>
-<p>To quickly delete all files from a bucket with large amounts of data:</p>
-<ol>
-<li>Set a retention policy to <strong>1 day</strong></li>
-<li>Wait for automatic cleanup to complete</li>
-<li>Remove the retention policy before uploading new files</li>
-</ol>
-<p>This method will clear all bucket content while keeping the bucket itself intact.</p>
-
-<div class="notices warning" ><p>⚠️ CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.</p>
-</div>
-
-
-<div class="notices note" ><p>This technique is the fastest way to empty buckets containing thousands of files, much more efficient than manual deletion methods.</p>
-</div>
-
 <p>💡 To learn more about setting up and managing retention policies for your buckets, please see the section - <a href="#set-bucket-retention-policy">Set bucket retention policy</a>.</p>
 <h2 id="set-bucket-retention-policy">Set bucket retention policy</h2>
 <p>The integrated S3 browser allows you to set a retention policy for your bucket, which provides automatic cleanup functionality for managing large datasets. This feature enables you to specify the number of days after which files will be automatically and permanently removed from the bucket. The bucket itself will never be deleted by the retention policy and will remain intact and functional.</p>
@@ -2047,7 +2030,11 @@ The access permissions will not allow the public to access the bucket or its con
 </div>
 
 
-<div class="notices warning" ><p>Setting a retention policy will permanently delete files older than the specified number of days. This action cannot be undone. Please ensure you have proper backups of important data before applying a retention policy. This feature is particularly useful for managing large datasets that require regular cleanup. Remember that the bucket itself will never be deleted by the retention policy.</p>
+<div class="notices note" ><p>Setting a retention policy will permanently delete files older than the specified number of days. This action cannot be undone. Please ensure you have proper backups of important data before applying a retention policy. This feature is particularly useful for managing large datasets that require regular cleanup. Remember that the bucket itself will never be deleted by the retention policy.</p>
+</div>
+
+
+<div class="notices warning" ><p>⚠️ <strong>Lifecycle Configuration Conflicts</strong>: If you have manually configured custom lifecycle rules on your bucket through S3 API or other tools, they may conflict with or override the retention policy set through the Cloud Console. Custom lifecycle configurations can shadow this retention policy setting, causing unexpected behavior. Before setting a retention policy, ensure you review and remove any conflicting custom lifecycle rules.</p>
 </div>
 
 <h4 id="fast-bucket-cleanup-technique">Fast bucket cleanup technique</h4>
@@ -3185,19 +3172,19 @@ The access permissions will not allow the public to access the bucket or its con
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751280364"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751280364"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751280364"></script>
-    <script src="/js/jquery.sticky.js?1751280364"></script>
-    <script src="/js/featherlight.min.js?1751280364"></script>
-    <script src="/js/highlight.pack.js?1751280364"></script>
+    <script src="/js/clipboard.min.js?1751303792"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751303792"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751303792"></script>
+    <script src="/js/jquery.sticky.js?1751303792"></script>
+    <script src="/js/featherlight.min.js?1751303792"></script>
+    <script src="/js/highlight.pack.js?1751303792"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751280364"></script>
-    <script src="/js/learn.js?1751280364"></script>
-    <script src="/js/hugo-learn.js?1751280364"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751303792"></script>
+    <script src="/js/learn.js?1751303792"></script>
+    <script src="/js/hugo-learn.js?1751303792"></script>
     
         
-            <script src="/mermaid/mermaid.js?1751280364"></script>
+            <script src="/mermaid/mermaid.js?1751303792"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

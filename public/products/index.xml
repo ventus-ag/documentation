@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Products on EWW | ITandTEL Cloud Docs</title>
-    <link>http://localhost:52848/products/</link>
+    <link>http://localhost:58070/products/</link>
     <description>Recent content in Products on EWW | ITandTEL Cloud Docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:52848/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58070/products/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

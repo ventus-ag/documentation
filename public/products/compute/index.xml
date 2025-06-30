@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>COMPUTE on EWW | ITandTEL Cloud Docs</title>
-    <link>http://localhost:52848/products/compute/</link>
+    <link>http://localhost:58070/products/compute/</link>
     <description>Recent content in COMPUTE on EWW | ITandTEL Cloud Docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52848/products/compute/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58070/products/compute/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Virtual Machines</title>
-      <link>http://localhost:52848/products/compute/virtual-machines/</link>
+      <link>http://localhost:58070/products/compute/virtual-machines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/compute/virtual-machines/</guid>
+      <guid>http://localhost:58070/products/compute/virtual-machines/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, resize, delete Linux and Windows Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#virtual-machines-page&#34;&gt;Virtual Machines page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-linux-virtual-machine&#34;&gt;Create Linux Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-windows-virtual-machine&#34;&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#virtual-machine-details-page&#34;&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#download-rdp-file&#34;&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#associatedisassociate-floating-ip&#34;&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-virtual-machine&#34;&gt;Edit Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#resize-virtual-machine&#34;&gt;Resize Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#shutoff-virtual-machine&#34;&gt;Shutoff Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#shelve-virtual-machine&#34;&gt;Shelve Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#start-virtual-machine&#34;&gt;Start Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-virtual-machine&#34;&gt;Delete Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#backup-virtual-machine&#34;&gt;Backup Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#restore-virtual-machine&#34;&gt;Restore Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;virtual-machines-page&#34;&gt;Virtual Machines page&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GPU Virtual Machines</title>
-      <link>http://localhost:52848/products/compute/gpu-virtual-machines/</link>
+      <link>http://localhost:58070/products/compute/gpu-virtual-machines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/compute/gpu-virtual-machines/</guid>
+      <guid>http://localhost:58070/products/compute/gpu-virtual-machines/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create GPU Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-gpu-virtual-machine&#34;&gt;Create GPU Virtual Machine&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#post-creation-management&#34;&gt;Post-Creation Management&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations.&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;📌 GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Access Linux VM</title>
-      <link>http://localhost:52848/products/compute/connect-linux-vm/</link>
+      <link>http://localhost:58070/products/compute/connect-linux-vm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/compute/connect-linux-vm/</guid>
+      <guid>http://localhost:58070/products/compute/connect-linux-vm/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to connect to the Linux Virtual Machine created in the Cloud Console using the SSH Protocol&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configuring-firewalls&#34;&gt;Configuring Firewalls&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-new-firewall-with-required-rule&#34;&gt;Create New Firewall with required rule&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#add-required-rule-to-the-existing-firewall&#34;&gt;Add required rule to the existing Firewall&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#connect-using-ssh&#34;&gt;Connect using SSH&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Access Windows VM</title>
-      <link>http://localhost:52848/products/compute/connect-windows-vm/</link>
+      <link>http://localhost:58070/products/compute/connect-windows-vm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52848/products/compute/connect-windows-vm/</guid>
+      <guid>http://localhost:58070/products/compute/connect-windows-vm/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to connect to the Windows Virtual Machine created in the Cloud Console using the Remote Desktop Protocol&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configuring-firewalls&#34;&gt;Configuring Firewalls&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-new-firewall-with-required-rule&#34;&gt;Create New Firewall with required rule&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#add-required-rule-to-the-existing-firewall&#34;&gt;Add required rule to the existing Firewall&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#connect-using-rdp&#34;&gt;Connect using RDP&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description>
     </item>
   </channel>
