@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Identity Management on EWW | ITandTEL Cloud Docs</title>
+    <link>http://localhost:1313/identity-management/</link>
+    <description>Recent content in Identity Management on EWW | ITandTEL Cloud Docs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/identity-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Administrators</title>
+      <link>http://localhost:1313/identity-management/administrators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/identity-management/administrators/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#administrators-page&#34;&gt;Administrators page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#add-administrator&#34;&gt;Add Administrator&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#resend-invitation&#34;&gt;Resend Invitation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-invitation&#34;&gt;Delete Invitation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#transfer-organization&#34;&gt;Transfer Organization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#remove-administrator&#34;&gt;Remove Administrator&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;administrators-page&#34;&gt;Administrators page&lt;/h2&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Groups</title>
+      <link>http://localhost:1313/identity-management/groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/identity-management/groups/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create and manage a new Group in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#groups-page&#34;&gt;Groups page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-group&#34;&gt;Create Group&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configure-group&#34;&gt;Configure Group&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#manage-projects-in-group&#34;&gt;Manage Projects in Group&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#manage-users-in-group&#34;&gt;Manage Users in Group&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-group&#34;&gt;Edit Group&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-group&#34;&gt;Delete Group&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;groups-page&#34;&gt;Groups page&lt;/h2&gt;&#xA;&#xA;&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

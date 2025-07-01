@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SECURITY on EWW | ITandTEL Cloud Docs</title>
+    <link>http://localhost:1313/products/security/</link>
+    <description>Recent content in SECURITY on EWW | ITandTEL Cloud Docs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/products/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Firewalls</title>
+      <link>http://localhost:1313/products/security/firewalls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/security/firewalls/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Firewalls and instructions for other steps to manage Firewalls in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#firewalls-page&#34;&gt;Firewalls page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-firewall&#34;&gt;Create Firewall&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-firewall&#34;&gt;Edit Firewall&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-firewall&#34;&gt;Delete Firewall&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#add-firewall-to-the-vm&#34;&gt;Add Firewall to the VM&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;firewalls-page&#34;&gt;Firewalls page&lt;/h2&gt;&#xA;&lt;p&gt;To get to the &lt;em&gt;Firewalls page&lt;/em&gt;, select the &lt;strong&gt;Security&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Firewalls TAB:&lt;/strong&gt;&#xA;&lt;img src=&#34;../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../../../assets/images/fw/1.png?width=20pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Firewall Rules</title>
+      <link>http://localhost:1313/products/security/firewall-rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/security/firewall-rules/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, delete Firewall Rules and instructions for other steps to manage Firewall Rules in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#firewall-rules-page&#34;&gt;Firewall Rules page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#firewall-rules-characteristics&#34;&gt;Firewall Rules Characteristics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-firewall-rule&#34;&gt;Create Firewall Rule&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#firewall-rule-details-page&#34;&gt;Firewall Rule details page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-firewall-rule&#34;&gt;Delete Firewall Rule&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#firewall-rule-for-ssh-protocol&#34;&gt;Firewall Rule for SSH Protocol&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#firewall-rule-for-rdp&#34;&gt;Firewall Rule for RDP&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;firewall-rules-page&#34;&gt;Firewall Rules page&lt;/h2&gt;&#xA;&lt;p&gt;To get to the &lt;em&gt;Firewall Rules page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Firewall on the &lt;em&gt;Firewalls page&lt;/em&gt;:&#xA;&lt;img src=&#34;../../../assets/images/fw/5.png?classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VM&#39;s Firewalls</title>
+      <link>http://localhost:1313/products/security/manage-firewalls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/security/manage-firewalls/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#vms-networks--security-tab&#34;&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#change-firewall-set&#34;&gt;Change Firewall set&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;vms-networks--security-tab&#34;&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2&gt;&#xA;&lt;p&gt;To find all Firewalls, related to the selected Virtual Machine, you need:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSH Keys</title>
+      <link>http://localhost:1313/products/security/ssh-keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/security/ssh-keys/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, delete SSH Keys and instructions for other steps to manage SSH Keys in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#ssh-keys-page&#34;&gt;SSH Keys page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-ssh-key-pair&#34;&gt;Create SSH Key Pair&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#add-public-key&#34;&gt;Add Public Key&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#copy-public-key&#34;&gt;Copy Public Key&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-ssh-key-pair&#34;&gt;Delete SSH Key Pair&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ssh-keys-page&#34;&gt;SSH Keys page&lt;/h2&gt;&#xA;&lt;p&gt;To get to the &lt;em&gt;SSH Keys page&lt;/em&gt;, select &lt;strong&gt;Security&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;SSH Keys TAB:&lt;/strong&gt;&#xA;&lt;img src=&#34;../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../../../assets/images/ssh/1.png?width=23pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CLI Users</title>
+      <link>http://localhost:1313/products/security/cli-users/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/products/security/cli-users/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#cli-users-page&#34;&gt;CLI Users page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-cli-user&#34;&gt;Create CLI User&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#download-rc-file&#34;&gt;Download RC File&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#edit-cli-user&#34;&gt;Edit CLI User &lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#change-the-password&#34;&gt;Change the password&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-cli-user&#34;&gt;Delete CLI User&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;cli-users-page&#34;&gt;CLI Users page&lt;/h2&gt;&#xA;&lt;p&gt;To get to the &lt;em&gt;CLI Users page&lt;/em&gt;, select the &lt;strong&gt;Security&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;CLI Users TAB:&lt;/strong&gt;&#xA;&lt;img src=&#34;../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&#xA;&lt;img src=&#34;../../../assets/images/cli/2.png?width=20pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

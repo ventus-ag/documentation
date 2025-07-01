@@ -14,11 +14,14 @@ On this page, you can find an explanation of how to use Object Storage with its 
   - [Create folder](#create-folder)
   - [Upload file](#upload-file)
   - [Download file](#download-file)
-  - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
   - [Make bucket public](#make-bucket-public)
   - [Get bucket's public URL](#get-buckets-public-url)
   - [Get object's public URL](#get-objects-public-url)
   - [Make bucket private](#make-bucket-private)
+  - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
+  - [Set bucket retention policy](#set-bucket-retention-policy)
+      - [Fast bucket cleanup technique](#fast-bucket-cleanup-technique)
+      - [Delete retention policy](#delete-retention-policy)
   - [Delete bucket](#delete-bucket)
 
 ## Introduction
@@ -34,13 +37,12 @@ With our S3 browser, you can perform the following actions:
 - Upload files to a bucket;  
 - Download separate files from the buckets;  
 - Delete files from a bucket;    
-- Obtain public links for buckets, folders, and individual files.   
+- Obtain public links for buckets, folders, and individual files;
+- Set retention policies for automatic cleanup of older files.   
   
-This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console.
+This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create *Object Storage credentials* that include the access key and secret key.  
 
-But before we start using integrated S3-Browser we need to create *Object Storage credentials* that include the access key and secret key.  
-
-To find instructions of how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
+💡 To find instructions on how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
 
 ## S3 Buckets page
 
@@ -48,7 +50,7 @@ To get inside the integrated S3-Browser select the **Storage** from the VIRTUA
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
 ![](../../../assets/images/store/1.png?width=30pc&classes=border,shadow) 
 
-These actions will redirect you to the Object Storage Credentials page and if you have already created Object Storage Credentials you will have available BROWSE BUCKETS button:  
+These actions will redirect you to the Object Storage Credentials page, and if you have already created Object Storage Credentials, you will have the BROWSE BUCKETS button available:  
 ![](../../../assets/images/store/14.png?width=45pc&classes=border,shadow) 
 
 Clicking on this button will open the integrated S3-Browser and take you to the *S3 Buckets page*, where you can view all your previously created buckets, create new ones, browse objects inside the buckets, and perform other related actions:  
@@ -57,7 +59,7 @@ Clicking on this button will open the integrated S3-Browser and take you to the 
 If you haven't created Object Storage Credentials yet, click on the CREATE S3 CREDENTIALS button and once you have completed this step, you will be able to use the BROWSE BUCKETS button:   
 ![](../../../assets/images/store/15.png?width=45pc&classes=border,shadow) 
 
-To find more information about how to manage Object Storage Credentials, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/). 
+💡 To find more information about how to manage Object Storage Credentials, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/). 
 
 ## Create bucket
 To create a new S3 Bucket in the Cloud Console, do the following:
@@ -76,9 +78,10 @@ To access and navigate through the folders and files inside a bucket, click on t
 
 This action will redirect you to the inside *Bucket page*, where you can find:
 
-- **Bucket Details Area** and **Panel with Quick Actions** - this section displays basic information about the bucket, such as its name and whether it is set as public or private and provides various quick actions, including next options:   
+- **Bucket Details Area** and **Panel with Quick Actions** - this section displays basic information about the bucket, such as its name, whether it is set as public or private, retention policy status, and provides various quick actions, including next options:   
   -  get the bucket's URL (if it is public);  
   -  to change the bucket's access settings (make it public or private);  
+  -  set retention policy for the bucket;
   -  delete the bucket;  
   -  perform multi-deletion for selected files/folders (become enabled once you have selected at least one object (file or folder)).
     
@@ -107,7 +110,7 @@ To navigate to the parent level in the folder structure, click on the **../** ic
 ## Create folder
 To create a new Folder inside S3 Bucket in the Cloud Console, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*
+- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
 - click on the CREATE FOLDER button in the upper left corner;
 - specify the Name of the Folder and click on the CREATE button. 
 
@@ -115,7 +118,7 @@ After these steps the newly created Folder will be added to the Bucket. Inside t
 
 ## Upload file
 {{% notice note %}}
-As of the current limitations, the largest file you can upload via this integrated S3 browser is 5 GB. 
+📌 As of the current limitations, the largest file you can upload via this integrated S3 browser is 5 GB. 
 {{% /notice %}}
 To upload a File inside S3 Bucket in the Cloud Console, do the following:
 
@@ -127,12 +130,12 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 ![](../../../assets/images/store/26.png?width=30pc&classes=border,shadow)
 
 {{% notice note %}}
-If this is your first time attempting to upload a file to the selected bucket, the system may require you to set up CORS (Cross-Origin Resource Sharing) policies. In this case, a dialog window will appear asking you to grant permissions for console access to the specific bucket. Please click on GRANT PERMISSIONS to enable successful file uploading and proceed with the upload process.
+💡 If this is your first time attempting to upload a file to the selected bucket, the system may require you to set up CORS (Cross-Origin Resource Sharing) policies. In this case, a dialog window will appear asking you to grant permissions for console access to the specific bucket. Please click on GRANT PERMISSIONS to enable successful file uploading and proceed with the upload process.
 {{% /notice %}}
 
 ## Download file
 {{% notice note %}}
-As of the current limitations, you can only download separate files one by one using the integrated S3 browser. There is no direct option to download entire folders or multiple files at once.
+📌 As of the current limitations, you can only download separate files one by one using the integrated S3 browser. There is no direct option to download entire folders or multiple files at once.
 {{% /notice %}}
 
 To download a File from S3 Bucket to your local environment, do the following:
@@ -146,29 +149,6 @@ To download a File from S3 Bucket to your local environment, do the following:
 - confirm your action on the next opened *Confirmation window* by clicking on the DOWNLOAD button. 
 
 After these steps, the downloading process of the selected file will start automatically.
-
-## Delete and multi-delete objects
-To delete a object URL from S3 Bucket, do the following:
-
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
-- identify the file or folder, that you want to delete on the *Bucket page*;
-- click on the *Actions icon* and select the **Delete** in the list of available options:
-
-![](../../../assets/images/store/30.png?width=45pc&classes=border,shadow)
-
-- confirm your action on the next opened *Confirmation window* by clicking on the DELETE button. 
-
-After these steps, the selected file or folder will be deleted.
-
-Also the integrated S3 browser allows you to perform **multiple deletions** of files and folders using the following steps:  
-- make checks in the checkboxes of the files or folders that you want to delete;
-- click on the delete icon which will become enabled on the *Panel with Quick Actions* once you have selected at least one object (file or folder):
-
-![](../../../assets/images/store/31.png?width=45pc&classes=border,shadow)
-
-- confirm your action on the next opened *Confirmation window* by clicking on the DELETE button.   
-
-After these steps, the selected objects will be deleted in a few seconds.
 
 ## Make bucket public
 You can make your bucket public from both the *Buckets page* and the inside of the selected *Bucket page*.
@@ -263,10 +243,99 @@ You can make your bucket private from both the *Buckets page* and the inside of 
 After these steps, your bucket will not be publicly available.  
 The access permissions will not allow the public to access the bucket or its contents through any direct URL. The objects within the bucket will remain private and can only be accessed by users with appropriate authentication and authorization.
 
+## Delete and multi-delete objects
+To delete an object from S3 Bucket, do the following:
+
+- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- identify the file or folder, that you want to delete on the *Bucket page*;
+- click on the *Actions icon* and select the **Delete** in the list of available options:
+
+![](../../../assets/images/store/30.png?width=45pc&classes=border,shadow)
+
+- confirm your action on the next opened *Confirmation window* by clicking on the DELETE button. 
+
+After these steps, the selected file or folder will be deleted.
+
+Also, the integrated S3 browser allows you to perform **multiple deletions** of files and folders using the following steps:  
+- select the checkboxes of the files or folders that you want to delete;
+- click on the delete icon which will become enabled on the *Panel with Quick Actions* once you have selected at least one object (file or folder):
+
+![](../../../assets/images/store/31.png?width=45pc&classes=border,shadow)
+
+- confirm your action on the next opened *Confirmation window* by clicking on the DELETE button.   
+
+After these steps, the selected objects will be deleted in a few seconds.
+
+📌 **Best practice for large datasets**
+
+For buckets containing large datasets with numerous files, manually deleting objects one by one or even using multi-delete functionality can be time-consuming and inefficient. In such cases, the best practice is to use the **retention policy** feature, which provides automated cleanup functionality.
+
+💡 To learn more about setting up and managing retention policies for your buckets, please see the section - [Set bucket retention policy](#set-bucket-retention-policy).
+
+
+## Set bucket retention policy
+
+The integrated S3 browser allows you to set a retention policy for your bucket, which provides automatic cleanup functionality for managing large datasets. This feature enables you to specify the number of days after which files will be automatically and permanently removed from the bucket. The bucket itself will never be deleted by the retention policy and will remain intact and functional.
+
+To set a retention policy for your bucket, do the following:
+
+- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- inside the bucket on the Panel with Quick Actions, click an option icon that allows you to set the bucket’s retention policy:  
+![](../../../assets/images/store/40.png?width=35pc&classes=border,shadow)  
+- on the next opened window specify the number of days for the retention period (files older than this number of days will be permanently removed) and click on the SET button:  
+![](../../../assets/images/store/41.png?width=35pc&classes=border,shadow)  
+
+After these steps, the retention policy will be active for your bucket. All files that are older than the specified number of days will be automatically and permanently deleted from the bucket. The bucket itself will never be affected by this policy and will remain available for new uploads and continued use.
+
+![](../../../assets/images/store/42.png?width=40pc&classes=border,shadow)  
+
+{{% notice note %}}
+📌 Once a retention policy is applied to a bucket, you cannot modify the existing policy settings. If you need to change the retention period, you must first delete the current policy and then set a new one with the desired settings.
+{{% /notice %}}
+
+{{% notice note %}}
+Setting a retention policy will permanently delete files older than the specified number of days. This action cannot be undone. Please ensure you have proper backups of important data before applying a retention policy. This feature is particularly useful for managing large datasets that require regular cleanup. Remember that the bucket itself will never be deleted by the retention policy.
+{{% /notice %}}
+
+{{% notice warning %}}
+⚠️ **Lifecycle Configuration Shadowing:** If you’ve previously set up custom lifecycle rules on your bucket using the S3 API or other tools, please note that these may shadow the retention policy set through the Cloud Console. To avoid unexpected behavior, review and adjust any existing lifecycle rules before applying a new policy.
+{{% /notice %}}
+
+#### Fast bucket cleanup technique
+
+To quickly delete all files from a bucket with large amounts of data:
+
+1. Set a retention policy to **1 day**
+2. Wait for automatic cleanup to complete  
+3. Remove the retention policy before uploading new files
+
+This method will clear all bucket content while keeping the bucket itself intact.
+
+{{% notice warning %}}
+⚠️ CRITICAL: You must delete or change the 1-day retention policy before uploading any new files, otherwise new uploads will also be automatically deleted after one day.
+{{% /notice %}}
+
+{{% notice note %}}
+💡 This technique is the fastest way to empty buckets containing thousands of files, much more efficient than manual deletion methods.
+{{% /notice %}}
+
+#### Delete retention policy
+
+To delete an existing retention policy from your bucket, do the following:
+
+- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- inside the bucket on the Panel with Quick Actions, click an option icon that allows you to delete the bucket’s retention policy:  
+![](../../../assets/images/store/43.png?width=35pc&classes=border,shadow)   
+- confirm your action on the next opened *Confirmation window* by clicking on the DELETE button.
+
+After these steps, the retention policy will be removed from your bucket, and no automatic file deletion will occur. You can then set a new retention policy if needed.
+
 ## Delete bucket
 {{% notice note %}}
 To avoid any potential data loss during the deletion process, in the Cloud Console, you can only delete a bucket if it is empty.
 {{% /notice %}}
+
+Before deleting a bucket, all files must be removed. To empty your bucket efficiently, you can either use the [Fast bucket cleanup technique](#fast-bucket-cleanup-technique) with retention policy for large datasets, or the [multi-delete functionality](#delete-and-multi-delete-objects) for smaller amounts of data.
 
 You can delete bucket from both the *Buckets page* and the inside of the selected *Bucket page* but before, please ensure that all the objects (files and folders) inside the bucket have been removed or moved to another location.
 

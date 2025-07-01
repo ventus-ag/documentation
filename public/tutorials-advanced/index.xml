@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced on EWW | ITandTEL Cloud Docs</title>
+    <link>http://localhost:1313/tutorials-advanced/</link>
+    <description>Recent content in Advanced on EWW | ITandTEL Cloud Docs</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tutorials-advanced/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation OpenStack CLI</title>
+      <link>http://localhost:1313/tutorials-advanced/installation-openstack-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials-advanced/installation-openstack-cli/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#install-openstack-cli-on-ubuntu-vm&#34;&gt;Install OpenStack CLI on Ubuntu VM&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#install-openstack-cli-oncentos-vm&#34;&gt;Install OpenStack CLI on Centos VM&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;dev1&lt;/em&gt;, that was created in the Organization named &lt;em&gt;Test-Shop&lt;/em&gt;:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Working with OpenStack API</title>
+      <link>http://localhost:1313/tutorials-advanced/working-with-openstack-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials-advanced/working-with-openstack-api/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to work with OpenStack API&#xA;using the Cloud Console Account.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#introduction&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configure-credentials-file&#34;&gt;Configure credentials file&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#dot-source-credentials-file&#34;&gt;Dot source credentials file&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#run-test-commands&#34;&gt;Run test commands&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#change-region&#34;&gt;Change region&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#find-resources&#34;&gt;Find resources&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;We encourage clients to use &lt;a href=&#34;https://docs.ventuscloud.eu/products/security/cli-users/&#34;&gt;CLI Users&lt;/a&gt; to work directly with OpenStack API, but it has a limitation - it&amp;rsquo;s bonded to the specific project in the specific region.&lt;br&gt;&#xA;When you need to manage resources in all regions and all projects using the same&#xA;credentials, you can use the Cloud Console Account.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Organization&#39;s management over API</title>
+      <link>http://localhost:1313/tutorials-advanced/org-management--over-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials-advanced/org-management--over-api/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find the workflow for management of your Organization in&#xA;the Cloud Console using API.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#required-endpoints&#34;&gt;Required endpoints&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#example-using-curl&#34;&gt;Example using CURL&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#example-using-postman&#34;&gt;Example using Postman&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;required-endpoints&#34;&gt;Required endpoints&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;auth.ventuscloud.eu&lt;/em&gt; - use it to get ID and Access tokens from basic credentials&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;api.ventuscloud.eu&lt;/em&gt; - use it to work with organization&amp;rsquo;s resources &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;example-using-curl&#34;&gt;Example using CURL&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Get ID and Access tokens&lt;/strong&gt;&lt;br&gt;&#xA;To get ID and Access tokens. use next command:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Advanced network scenarios</title>
+      <link>http://localhost:1313/tutorials-advanced/advanced-network-scenarios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials-advanced/advanced-network-scenarios/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.&lt;/p&gt;&#xA;&lt;p&gt;Most of the features described below are in beta state, thus not available at the Console portal, and can be configured through CLI and IaC tools like Terraform and Ansible.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Site to Site IPSec VPN</title>
+      <link>http://localhost:1313/tutorials-advanced/site-to-site-ipsec-vpn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tutorials-advanced/site-to-site-ipsec-vpn/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to configure Site to Site IPSec&#xA;connection between the Cloud Console Regions.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configure-site-to-site-ipsec-connection&#34;&gt;Configure Site to Site IPSec connection&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#strongswan-useful-commands&#34;&gt;Strongswan useful commands&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#capture-traffic&#34;&gt;Capture traffic&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#disable-port-security&#34;&gt;Disable port-security&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#preparing-client-side&#34;&gt;Preparing client side&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#verifying-connectivity&#34;&gt;Verifying connectivity&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a private network in each region. How to create a network see the articles - &lt;a href=&#34;https://docs.ventuscloud.eu/products/networking/networks/&#34;&gt;Networks&lt;/a&gt; and &lt;a href=&#34;https://docs.ventuscloud.eu/products/networking/subnets/&#34;&gt;Subnets&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Create two VMs in private and public networks based on Ubuntu 18.04 or higher in each region. How to create VMs see the article - &lt;a href=&#34;https://docs.ventuscloud.eu/products/compute/virtual-machines/&#34;&gt;Virtual Machines&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;For testing, need to create on each private network VM based on Windows or Linux&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;configure-site-to-site-ipsec-connection&#34;&gt;Configure Site to Site IPSec connection&lt;/h2&gt;&#xA;&lt;p&gt;Example network topology:&#xA;&lt;img src=&#34;../../assets/images/tutorials/11.png?classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
