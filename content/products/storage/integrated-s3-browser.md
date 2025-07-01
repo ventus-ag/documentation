@@ -298,7 +298,7 @@ Setting a retention policy will permanently delete files older than the specifie
 {{% /notice %}}
 
 {{% notice warning %}}
-⚠️ **Lifecycle Configuration Conflicts**: If you have manually configured custom lifecycle rules on your bucket through S3 API or other tools, they may conflict with or override the retention policy set through the Cloud Console. Custom lifecycle configurations can shadow this retention policy setting, causing unexpected behavior. Before setting a retention policy, ensure you review and remove any conflicting custom lifecycle rules.
+⚠️ **Lifecycle Configuration Shadowing:** If you’ve previously set up custom lifecycle rules on your bucket using the S3 API or other tools, please note that these may override or interfere with retention policies configured through the Cloud Console. To avoid unexpected behavior, review and adjust any existing lifecycle rules before applying a new policy.
 {{% /notice %}}
 
 #### Fast bucket cleanup technique
