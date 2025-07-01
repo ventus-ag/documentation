@@ -104,11 +104,17 @@ The Cloud Console Object Storage makes it possible to store data simply and cost
 &lt;li>&lt;a href="#create-folder">Create folder&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#upload-file">Upload file&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#download-file">Download file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-and-multi-delete-objects">Delete and multi-delete objects&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#make-bucket-public">Make bucket public&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#get-buckets-public-url">Get bucket&amp;rsquo;s public URL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#get-objects-public-url">Get object&amp;rsquo;s public URL&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#make-bucket-private">Make bucket private&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-and-multi-delete-objects">Delete and multi-delete objects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#set-bucket-retention-policy">Set bucket retention policy&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#fast-bucket-cleanup-technique">Fast bucket cleanup technique&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#delete-retention-policy">Delete retention policy&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>&lt;a href="#delete-bucket">Delete bucket&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
