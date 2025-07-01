@@ -2,150 +2,150 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:58070/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2019-09-20T04:20:36+04:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/backups/backup-workloads/</loc>
+    <loc>http://localhost:1313/products/backups/backup-workloads/</loc>
   </url><url>
-    <loc>http://localhost:58070/getting-started/</loc>
+    <loc>http://localhost:1313/getting-started/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/backups/backups/</loc>
+    <loc>http://localhost:1313/products/backups/backups/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/images/custom-images/</loc>
+    <loc>http://localhost:1313/products/images/custom-images/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/backups/restores/</loc>
+    <loc>http://localhost:1313/products/backups/restores/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/compute/</loc>
+    <loc>http://localhost:1313/products/compute/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/getting-started/account/</loc>
+    <loc>http://localhost:1313/getting-started/account/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/images/image-from-snapshot/</loc>
+    <loc>http://localhost:1313/products/images/image-from-snapshot/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/databases/databases/</loc>
+    <loc>http://localhost:1313/products/databases/databases/</loc>
   </url><url>
-    <loc>http://localhost:58070/tutorials-advanced/installation-openstack-cli/</loc>
+    <loc>http://localhost:1313/tutorials-advanced/installation-openstack-cli/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/kubernetes/kubernetes-cluster/</loc>
+    <loc>http://localhost:1313/products/kubernetes/kubernetes-cluster/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/compute/virtual-machines/</loc>
+    <loc>http://localhost:1313/products/compute/virtual-machines/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/compute/gpu-virtual-machines/</loc>
+    <loc>http://localhost:1313/products/compute/gpu-virtual-machines/</loc>
   </url><url>
-    <loc>http://localhost:58070/identity-management/</loc>
+    <loc>http://localhost:1313/identity-management/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/kubernetes/</loc>
+    <loc>http://localhost:1313/products/kubernetes/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/kubernetes/accessing-kuber/</loc>
+    <loc>http://localhost:1313/products/kubernetes/accessing-kuber/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/compute/connect-linux-vm/</loc>
+    <loc>http://localhost:1313/products/compute/connect-linux-vm/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/databases/database-custom-options/</loc>
+    <loc>http://localhost:1313/products/databases/database-custom-options/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/databases/database-replicas/</loc>
+    <loc>http://localhost:1313/products/databases/database-replicas/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/security/firewalls/</loc>
+    <loc>http://localhost:1313/products/security/firewalls/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/networks/</loc>
+    <loc>http://localhost:1313/products/networking/networks/</loc>
   </url><url>
-    <loc>http://localhost:58070/getting-started/organizations/</loc>
+    <loc>http://localhost:1313/getting-started/organizations/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/kubernetes/rwx-storage-class/</loc>
+    <loc>http://localhost:1313/products/kubernetes/rwx-storage-class/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/images/share-images/</loc>
+    <loc>http://localhost:1313/products/images/share-images/</loc>
   </url><url>
-    <loc>http://localhost:58070/tutorials-advanced/working-with-openstack-api/</loc>
+    <loc>http://localhost:1313/tutorials-advanced/working-with-openstack-api/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/databases/</loc>
+    <loc>http://localhost:1313/products/databases/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/</loc>
+    <loc>http://localhost:1313/products/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/security/</loc>
+    <loc>http://localhost:1313/products/security/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/compute/connect-windows-vm/</loc>
+    <loc>http://localhost:1313/products/compute/connect-windows-vm/</loc>
   </url><url>
-    <loc>http://localhost:58070/identity-management/administrators/</loc>
+    <loc>http://localhost:1313/identity-management/administrators/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/databases/database_backups/</loc>
+    <loc>http://localhost:1313/products/databases/database_backups/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/security/firewall-rules/</loc>
+    <loc>http://localhost:1313/products/security/firewall-rules/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/floating-ips/</loc>
+    <loc>http://localhost:1313/products/networking/floating-ips/</loc>
   </url><url>
-    <loc>http://localhost:58070/tutorials-advanced/org-management--over-api/</loc>
+    <loc>http://localhost:1313/tutorials-advanced/org-management--over-api/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/routers/</loc>
+    <loc>http://localhost:1313/products/networking/routers/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/subnets/</loc>
+    <loc>http://localhost:1313/products/networking/subnets/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/images/transfer-images/</loc>
+    <loc>http://localhost:1313/products/images/transfer-images/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/load-balancers/</loc>
+    <loc>http://localhost:1313/products/networking/load-balancers/</loc>
   </url><url>
-    <loc>http://localhost:58070/tutorials-advanced/advanced-network-scenarios/</loc>
+    <loc>http://localhost:1313/tutorials-advanced/advanced-network-scenarios/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/security/manage-firewalls/</loc>
+    <loc>http://localhost:1313/products/security/manage-firewalls/</loc>
   </url><url>
-    <loc>http://localhost:58070/tutorials-advanced/</loc>
+    <loc>http://localhost:1313/tutorials-advanced/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/databases/database-management/</loc>
+    <loc>http://localhost:1313/products/databases/database-management/</loc>
   </url><url>
-    <loc>http://localhost:58070/getting-started/projects/</loc>
+    <loc>http://localhost:1313/getting-started/projects/</loc>
   </url><url>
-    <loc>http://localhost:58070/tutorials-advanced/site-to-site-ipsec-vpn/</loc>
+    <loc>http://localhost:1313/tutorials-advanced/site-to-site-ipsec-vpn/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/manage-networks/</loc>
+    <loc>http://localhost:1313/products/networking/manage-networks/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/storage/volumes/</loc>
+    <loc>http://localhost:1313/products/storage/volumes/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/storage/manage-volumes/</loc>
+    <loc>http://localhost:1313/products/storage/manage-volumes/</loc>
   </url><url>
-    <loc>http://localhost:58070/iac/</loc>
+    <loc>http://localhost:1313/iac/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/storage/</loc>
+    <loc>http://localhost:1313/products/storage/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/identity-management/groups/</loc>
+    <loc>http://localhost:1313/identity-management/groups/</loc>
   </url><url>
-    <loc>http://localhost:58070/iac/pulumi/</loc>
+    <loc>http://localhost:1313/iac/pulumi/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/storage/snapshots/</loc>
+    <loc>http://localhost:1313/products/storage/snapshots/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/security/ssh-keys/</loc>
+    <loc>http://localhost:1313/products/security/ssh-keys/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/databases/database-user-management/</loc>
+    <loc>http://localhost:1313/products/databases/database-user-management/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/backups/</loc>
+    <loc>http://localhost:1313/products/backups/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/iac/terraform/</loc>
+    <loc>http://localhost:1313/iac/terraform/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/images/</loc>
+    <loc>http://localhost:1313/products/images/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/storage/manage-snapshots/</loc>
+    <loc>http://localhost:1313/products/storage/manage-snapshots/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/storage/object-storage-credentials/</loc>
+    <loc>http://localhost:1313/products/storage/object-storage-credentials/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/storage/integrated-s3-browser/</loc>
+    <loc>http://localhost:1313/products/storage/integrated-s3-browser/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/networking/</loc>
+    <loc>http://localhost:1313/products/networking/</loc>
     <lastmod>2019-09-25T01:53:09+03:30</lastmod>
   </url><url>
-    <loc>http://localhost:58070/products/security/cli-users/</loc>
+    <loc>http://localhost:1313/products/security/cli-users/</loc>
   </url><url>
-    <loc>http://localhost:58070/products/storage/object-storage-clients/</loc>
+    <loc>http://localhost:1313/products/storage/object-storage-clients/</loc>
   </url><url>
-    <loc>http://localhost:58070/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:58070/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

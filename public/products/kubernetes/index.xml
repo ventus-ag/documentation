@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KUBERNETES on EWW | ITandTEL Cloud Docs</title>
-    <link>http://localhost:58070/products/kubernetes/</link>
+    <link>http://localhost:1313/products/kubernetes/</link>
     <description>Recent content in KUBERNETES on EWW | ITandTEL Cloud Docs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:58070/products/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/products/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K8S Cluster</title>
-      <link>http://localhost:58070/products/kubernetes/kubernetes-cluster/</link>
+      <link>http://localhost:1313/products/kubernetes/kubernetes-cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58070/products/kubernetes/kubernetes-cluster/</guid>
+      <guid>http://localhost:1313/products/kubernetes/kubernetes-cluster/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#clusters-page&#34;&gt;Clusters page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#create-cluster&#34;&gt;Create Cluster&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#cluster-details-page&#34;&gt;Cluster details page&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#download-kubeconfig-file&#34;&gt;Download kubeconfig file&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#resize-cluster&#34;&gt;Resize Cluster&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#upgrade-cluster&#34;&gt;Upgrade Cluster&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#delete-cluster&#34;&gt;Delete Cluster&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;clusters-page&#34;&gt;Clusters page&lt;/h2&gt;&#xA;&lt;p&gt;To get to the &lt;em&gt;Clusters page&lt;/em&gt;, select the &lt;strong&gt;Clusters&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&#xA;&lt;img src=&#34;../../../assets/images/clusters/1.png?width=15pc&amp;amp;classes=border,shadow&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Access K8S Cluster</title>
-      <link>http://localhost:58070/products/kubernetes/accessing-kuber/</link>
+      <link>http://localhost:1313/products/kubernetes/accessing-kuber/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58070/products/kubernetes/accessing-kuber/</guid>
+      <guid>http://localhost:1313/products/kubernetes/accessing-kuber/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#table-of-contents&#34;&gt;Table of contents&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#prerequisites&#34;&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#get-access-from-ubuntu-vm-to-k8s-cluster-using-cli-user&#34;&gt;Get access from Ubuntu VM to K8S Cluster using CLI User&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#get-access-from-centos-vm-to-k8s-cluster-using-cli-user&#34;&gt;Get access from CentOS VM to K8S Cluster using CLI User&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#connect-to-cluster-master-node-via-ssh&#34;&gt;Connect to Cluster Master-Node via SSH&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RWX Storage Class</title>
-      <link>http://localhost:58070/products/kubernetes/rwx-storage-class/</link>
+      <link>http://localhost:1313/products/kubernetes/rwx-storage-class/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58070/products/kubernetes/rwx-storage-class/</guid>
+      <guid>http://localhost:1313/products/kubernetes/rwx-storage-class/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;On this page, you can find an explanation of how to access your Kubernetes cluster and configure ReadWriteMany (RWX) storage using SeaweedFS.&lt;/p&gt;&#xA;&lt;h1 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#configuring-seaweedfs-as-rwx-storage-in-kubernetes&#34;&gt;Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#why-seaweedfs-for-rwx-storage&#34;&gt;Why SeaweedFS for RWX Storage?&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#seaweedfs-components&#34;&gt;SeaweedFS Components&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#non-ha-vs-ha&#34;&gt;Non-HA vs. HA&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#installing-seaweedfs-and-the-csi-driver&#34;&gt;Installing SeaweedFS and the CSI Driver&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#testing-rwx-storage&#34;&gt;Testing RWX Storage&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;configuring-seaweedfs-as-rwx-storage-in-kubernetes&#34;&gt;Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/h1&gt;&#xA;&lt;p&gt;This guide walks you through setting up SeaweedFS as an NFS-like RWX (ReadWriteMany) storage solution in a Kubernetes cluster. We’ll cover:&lt;/p&gt;</description>
     </item>
   </channel>
