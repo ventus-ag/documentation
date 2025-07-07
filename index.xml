@@ -567,57 +567,7 @@ To get ID and Access tokens. use next command:&lt;/p></description></item><item>
 &lt;p>In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:&lt;/p>
 &lt;ul>
 &lt;li>
-&lt;p>&lt;strong>Project-1&lt;/strong> named &lt;em>v-dev&lt;/em>, that related to the &lt;em>Vienna&lt;/em> Region, with the following resources:&lt;/p></description></item><item><title>Load Balancers</title><link>https://docs.ventuscloud.eu/products/networking/load-balancers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/load-balancers/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Load Balancer and instructions for other steps to manage it in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#load-balancers-page">Load Balancers page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-load-balancer">Create Load Balancer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#load-balancer-details-page">Load Balancer details page&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#listeners">Listeners&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-listener">Create Listener&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#listener-details-page">Listener details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-listener">Edit Listener&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-listener">Delete Listener&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#pools">Pools&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-pool">Create Pool&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#pool-details-page">Pool details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-pool">Edit Pool&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-pool">Delete Pool&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#pool-members">Pool Members&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#add-pool-member">Add Pool Member&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-pool-member">Edit Pool Member&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-pool-member">Delete Pool Member&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#health-monitors">Health Monitors&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-health-monitor">Create Health Monitor&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-health-monitor">Edit Health Monitor&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-health-monitor">Delete Health Monitor&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-load-balancer">Edit Load Balancer&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-load-balancer">Delete Load Balancer&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Load Balancer (LB)&lt;/strong> helps distribute incoming traffic across multiple backend servers to ensure high availability and better performance. It provides a single access point to your application and automatically reroutes traffic if a server becomes unavailable.&lt;/p></description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr>
+&lt;p>&lt;strong>Project-1&lt;/strong> named &lt;em>v-dev&lt;/em>, that related to the &lt;em>Vienna&lt;/em> Region, with the following resources:&lt;/p></description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr>
 &lt;p>On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p>
 &lt;blockquote>
 &lt;p>Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.&lt;/p>
