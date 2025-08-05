@@ -10,9 +10,13 @@ On this page, you can find an explanation of how to create, resize, delete Kuber
   - [Clusters page](#clusters-page)
   - [Create Cluster](#create-cluster)
   - [Cluster details page](#cluster-details-page)
+  - [Node Pools Management](#node-pools-management)
+  - [Node Pool Creation](#node-pool-creation)
+  - [Node Pool Resize](#node-pool-resize)
+  - [Node Pool Autoscaling Configuration](#node-pool-autoscaling-configuration)
   - [Download kubeconfig file](#download-kubeconfig-file)
-  - [Resize Cluster](#resize-cluster)
   - [Upgrade Cluster](#upgrade-cluster)
+  - [Upgrade Node Pool](#upgrade-node-pool)
   - [Delete Cluster](#delete-cluster)
 
 
@@ -25,8 +29,6 @@ On this page you can find all created Kubernetes Clusters in the current Project
 
 **Actions** icon opens the next list of available management actions:
 - *Download kubeconfig file* - this option is used to get the kubeconfig file, that pertains to the selected Cluster;
-- *Resize* - this option is used to change the count of Worker-nodes in the selected Cluster;
-- *Upgrade* - this option is used to update template (version) of the selected Cluster;
 - *Delete* - this option is for Cluster removing.
 
 ## Create Cluster
@@ -63,25 +65,68 @@ To open the *Cluster details page*, click on the **Name** of the correspondin
 ![](../../../assets/images/clusters/7.png?classes=border,shadow)
 
 This action will redirect you to the *Cluster details page*, where you can find four tabs with additional information about selected Cluster and panel with available **quick actions**:
-- panel with available **quick actions** include all available management actions with this cluster such as: resize, delete, upgrade and download kubeconfig file:
+- panel with available **quick actions** include management actions with this cluster such as: delete, download kubeconfig file and cluster upgrade:
 
 ![](../../../assets/images/clusters/12.png?width=25pc&classes=border,shadow)
 
-- INFO Tab with actual information about this Cluster: ID, Current Status, Errors, Creation Date, Date of the last update and Cluster template:
+- General section showing Status, Health, Kube Version, and Created timestamp; Current Master Nodes count, Flavor, and Updated timestamp; Connection section with API Address; and NODE POOLS tab showing three node pools with their respective Status, Node count, Flavor, and Image details.:
 
 ![](../../../assets/images/clusters/8.png?width=30pc&classes=border,shadow)
-
-- NODES Tab with actual information about Cluster's Nodes: Master and Node count, their IP addresses and API address of the Cluster:
-
-![](../../../assets/images/clusters/9.png?width=30pc&classes=border,shadow)
-
-- MISCELLANEOUS Tab with next information: Discovery URL, Cluster create timeout, Key pair that was used during the Cluster creation, Master and Node flavors, and current Health status of the selected Cluster:
-
-![](../../../assets/images/clusters/10.png?width=30pc&classes=border,shadow)
 
 - LABELS Tab with some additional information about this cluster:
 
 ![](../../../assets/images/clusters/11.png?width=30pc&classes=border,shadow)
+
+## Node Pools Management
+
+The **NODE POOLS** tab displays all node pools within the selected Kubernetes cluster, showing their current status, node count, flavor specifications, and base images. Each node pool can be managed independently with different scaling and configuration options.
+
+### Node Pool Types and Scaling Behavior
+
+#### Master Node Pool (default-master)
+- Supports horizontal scaling up only (1→2→3 nodes)
+- Cannot be scaled down once additional nodes are added
+- Critical for cluster control plane high availability
+- **Upgrade**: Requires whole cluster upgrade using **Action Button > Upgrade**
+
+#### Worker Node Pool (default-worker)
+- Supports bidirectional scaling (scale up and down)
+- Configurable autoscaling can be enabled or disabled
+- Handles application workload distribution
+- **Upgrade**: Requires whole cluster upgrade using **Action Button > Upgrade**
+
+## Node Pool Creation
+
+When creating new node pools using the **ADD NODE POOL** button, administrators can:
+
+- **Kubernetes Version**: Deploy node pools with different Kubernetes versions than the cluster default
+- **Node Sizing**: Configure specific node flavors and resource allocations
+- **Autoscaling Options**: 
+  - Enable autoscaling with minimum and maximum node limits
+  - Create fixed-size pools without autoscaling
+- **Custom Configuration**: Define labels, taints, and other node-specific settings
+- **Independent Upgrades**: Create and upgrade separate node pools to newer versions independently
+
+![](../../../assets/images/clusters/25.png?width=30pc&classes=border,shadow)
+
+## Node Pool Resize
+
+To resize the Node Pool, do the following:
+- identify the Node Pool, that you want to resize, on the *Cluster details page*;
+- click on the **Actions** icon  and select the **Resize** in the list of available options;
+- update the count of Worker-nodes in the Node Pool on the opened *Resize Node Pool window* and click on the SAVE icon:
+
+![](../../../assets/images/clusters/27.png?width=30pc&classes=border,shadow)
+
+## Node Pool Autoscaling Configuration
+
+To enable or disable the Autoscaling for the Node Pool, do the following:
+- identify the Node Pool, that you want to upgrade, on the *Cluster details page*;
+- click on the **Actions** icon  and select the **Configure Autoscaling** in the list of available options;
+- select the option to enable or disable the Autoscaling for the selected Node Pool on the opened *Autoscaling Node Pool window* or change the minimum and maximum node count and click on the SAVE icon:
+
+![](../../../assets/images/clusters/28.png?width=30pc&classes=border,shadow)
+
 
 ## Download kubeconfig file
 
@@ -99,19 +144,6 @@ Also, you can download the kubeconfig file from *Cluster details page*, by clic
 
 ![](../../../assets/images/clusters/20.png?width=25pc&classes=border,shadow)
 
-## Resize Cluster
-To resize the Cluster, do the following:
-- identify the Cluster, that you want to resize, on the *Clusters page*;
-- click on the **Actions** icon  and select the **Resize** in the list of available options;
-- update the count of Worker-nodes in the Cluster on the opened *Resize Cluster window* and click on the SAVE icon:
-
-![](../../../assets/images/clusters/5.png?width=30pc&classes=border,shadow)
-
-After these steps, the selected Cluster will be resized after a few minutes with the status UPDATE_COMPLETE.  
-
-Also, you can resize the Cluster from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/clusters/21.png?width=25pc&classes=border,shadow)
-
 ## Upgrade Cluster
 
 {{% notice note %}}
@@ -120,15 +152,25 @@ For cluster upgrading you can select only a version that is higher than current 
 
 To upgrade the Cluster, do the following:
 - identify the Cluster, that you want to upgrade, on the *Clusters page*;
+- go to the *Cluster details page*;
 - click on the **Actions** icon  and select the **Upgrade** in the list of available options;
+
+![](../../../assets/images/clusters/24.png?width=30pc&classes=border,shadow)
+
 - select the version to which you want to upgrade the selected Cluster on the opened *Upgrade Cluster window* and click on the UPGRADE icon:
 
 ![](../../../assets/images/clusters/23.png?width=30pc&classes=border,shadow)
 
 After these steps, the selected Cluster will be upgraded after a few minutes with the status UPDATE_COMPLETE.  
 
-Also, you can upgrade the Cluster from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
-![](../../../assets/images/clusters/24.png?width=25pc&classes=border,shadow)
+## Upgrade Node Pool
+
+To upgrade the Node Pool, do the following:
+- identify the Node Pool, that you want to upgrade, on the *Cluster details page*;
+- click on the **Actions** icon  and select the **Upgrade** in the list of available options;
+- select the version to which you want to upgrade the selected Node Pool on the opened *Upgrade Node Pool window* and click on the UPGRADE icon:
+
+![](../../../assets/images/clusters/26.png?width=30pc&classes=border,shadow)
 
 ## Delete Cluster
 To delete the Cluster, do the following:
