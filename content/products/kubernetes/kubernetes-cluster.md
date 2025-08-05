@@ -11,6 +11,9 @@ On this page, you can find an explanation of how to create, resize, delete Kuber
   - [Create Cluster](#create-cluster)
   - [Cluster details page](#cluster-details-page)
   - [Node Pools Management](#node-pools-management)
+  - [Node Pool Creation](#node-pool-creation)
+  - [Node Pool Resize](#node-pool-resize)
+  - [Node Pool Autoscaling Configuration](#node-pool-autoscaling-configuration)
   - [Download kubeconfig file](#download-kubeconfig-file)
   - [Upgrade Cluster](#upgrade-cluster)
   - [Upgrade Node Pool](#upgrade-node-pool)
@@ -92,7 +95,7 @@ The **NODE POOLS** tab displays all node pools within the selected Kubernetes cl
 - Handles application workload distribution
 - **Upgrade**: Requires whole cluster upgrade using **Action Button > Upgrade**
 
-### Node Pool Creation
+## Node Pool Creation
 
 When creating new node pools using the **ADD NODE POOL** button, administrators can:
 
@@ -106,7 +109,7 @@ When creating new node pools using the **ADD NODE POOL** button, administrators 
 
 ![](../../../assets/images/clusters/25.png?width=30pc&classes=border,shadow)
 
-### Node Pool Resize
+## Node Pool Resize
 
 To resize the Node Pool, do the following:
 - identify the Node Pool, that you want to resize, on the *Cluster details page*;
@@ -115,7 +118,7 @@ To resize the Node Pool, do the following:
 
 ![](../../../assets/images/clusters/27.png?width=30pc&classes=border,shadow)
 
-### Node Pool Autoscaling Configuration
+## Node Pool Autoscaling Configuration
 
 To enable or disable the Autoscaling for the Node Pool, do the following:
 - identify the Node Pool, that you want to upgrade, on the *Cluster details page*;
