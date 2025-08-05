@@ -152,9 +152,13 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a
 &lt;li>&lt;a href="#clusters-page">Clusters page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#create-cluster">Create Cluster&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#cluster-details-page">Cluster details page&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#node-pools-management">Node Pools Management&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#node-pool-creation">Node Pool Creation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#node-pool-resize">Node Pool Resize&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#node-pool-autoscaling-configuration">Node Pool Autoscaling Configuration&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#download-kubeconfig-file">Download kubeconfig file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#resize-cluster">Resize Cluster&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#upgrade-cluster">Upgrade Cluster&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#upgrade-node-pool">Upgrade Node Pool&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-cluster">Delete Cluster&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
