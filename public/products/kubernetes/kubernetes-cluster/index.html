@@ -12,22 +12,22 @@
     <title>K8S Cluster - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1751360028" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751360028" rel="stylesheet">
-    <link href="/css/hybrid.css?1751360028" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751360028" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751360028" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751360028" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751360028" rel="stylesheet">
-    <link href="/css/theme.css?1751360028" rel="stylesheet">
-    <link href="/css/tabs.css?1751360028" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751360028" rel="stylesheet">
+    <link href="/css/nucleus.css?1754474226" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754474226" rel="stylesheet">
+    <link href="/css/hybrid.css?1754474226" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754474226" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754474226" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754474226" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754474226" rel="stylesheet">
+    <link href="/css/theme.css?1754474226" rel="stylesheet">
+    <link href="/css/tabs.css?1754474226" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754474226" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1751360028" rel="stylesheet">
+    <link href="/css/theme-mine.css?1754474226" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751360028"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754474226"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751360028"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751360028"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754474226"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754474226"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751360028"></script>
+<script type="text/javascript" src="/js/search.js?1754474226"></script>
 
     
   </div>
@@ -1710,9 +1710,17 @@
     <li><a href="#clusters-page">Clusters page</a></li>
     <li><a href="#create-cluster">Create Cluster</a></li>
     <li><a href="#cluster-details-page">Cluster details page</a></li>
-    <li><a href="#download-kubeconfig-file">Download kubeconfig file</a></li>
-    <li><a href="#resize-cluster">Resize Cluster</a></li>
+    <li><a href="#node-pools-management">Node Pools Management</a>
+      <ul>
+        <li><a href="#node-pool-types-and-scaling-behavior">Node Pool Types and Scaling Behavior</a></li>
+        <li><a href="#create-node-pool">Create Node Pool</a></li>
+        <li><a href="#resize-node-pool">Resize Node Pool</a></li>
+        <li><a href="#node-pool-autoscaling-configuration">Node Pool Autoscaling Configuration</a></li>
+        <li><a href="#upgrade-node-pool">Upgrade Node Pool</a></li>
+      </ul>
+    </li>
     <li><a href="#upgrade-cluster">Upgrade Cluster</a></li>
+    <li><a href="#download-kubeconfig-file">Download kubeconfig file</a></li>
     <li><a href="#delete-cluster">Delete Cluster</a></li>
   </ul>
 </nav>
@@ -1739,7 +1747,7 @@
 
 
 <hr>
-<p>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster in the Cloud Console.</p>
+<p>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster and its Node Pools in the Cloud Console.</p>
 <h1 id="table-of-contents">Table of contents</h1>
 <ul>
 <li><a href="#table-of-contents">Table of contents</a>
@@ -1747,9 +1755,17 @@
 <li><a href="#clusters-page">Clusters page</a></li>
 <li><a href="#create-cluster">Create Cluster</a></li>
 <li><a href="#cluster-details-page">Cluster details page</a></li>
-<li><a href="#download-kubeconfig-file">Download kubeconfig file</a></li>
-<li><a href="#resize-cluster">Resize Cluster</a></li>
+<li><a href="#node-pools-management">Node Pools Management</a>
+<ul>
+<li><a href="#node-pool-types-and-scaling-behavior">Node Pool Types and Scaling Behavior</a></li>
+<li><a href="#create-node-pool">Create Node Pool</a></li>
+<li><a href="#resize-node-pool">Resize Node Pool</a></li>
+<li><a href="#node-pool-autoscaling-configuration">Node Pool Autoscaling Configuration</a></li>
+<li><a href="#upgrade-node-pool">Upgrade Node Pool</a></li>
+</ul>
+</li>
 <li><a href="#upgrade-cluster">Upgrade Cluster</a></li>
+<li><a href="#download-kubeconfig-file">Download kubeconfig file</a></li>
 <li><a href="#delete-cluster">Delete Cluster</a></li>
 </ul>
 </li>
@@ -1762,8 +1778,6 @@
 <p><strong>Actions</strong> icon opens the next list of available management actions:</p>
 <ul>
 <li><em>Download kubeconfig file</em> - this option is used to get the kubeconfig file, that pertains to the selected Cluster;</li>
-<li><em>Resize</em> - this option is used to change the count of Worker-nodes in the selected Cluster;</li>
-<li><em>Upgrade</em> - this option is used to update template (version) of the selected Cluster;</li>
 <li><em>Delete</em> - this option is for Cluster removing.</li>
 </ul>
 <h2 id="create-cluster">Create Cluster</h2>
@@ -1775,55 +1789,120 @@
 <p><img src="../../../assets/images/clusters/3.png?width=30pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li><em>Name</em> - set a name for the Cluster;</li>
-<li><em>Cluster Template</em> - select the template that will be used to create Cluster;<br>
-by default, the newest one is pre-selected;</li>
-<li><em>Master Flavor</em> - select the size of the Cluster master-nodes (min is VC-2);<br>
-by default, &ldquo;VC-4 (2 vCPUs, 4 GiB memory)&rdquo; is pre-selected;</li>
-<li><em>Node Flavor</em> - select the size of the Cluster worker-nodes (min is VC-2);<br>
-by default, &ldquo;VC-4 (2 vCPUs, 4 GiB memory)&rdquo; is pre-selected;</li>
+<li><em>Cluster Template</em> - select the template that will be used to create Cluster;</li>
+<li><em>Master Flavor</em> - select the size of the Cluster master-nodes (min is VC-2);</li>
+<li><em>Node Flavor</em> - select the size of the Cluster worker-nodes (min is VC-2);</li>
 <li><em>Key pair</em> - select the SSH Keypair that was previously created on the <em>Keypair page</em> or create a new one;<br>
-SSH Keypair you will use to configure in the Cluster servers for ssh access;<br>
-if you have only one created SSH Key, it will be pre-selected by default;</li>
-<li><em>Docker image size (GB)</em> - provide the preferred disc size where container images will be stored, it can be specified in the range from 50 GB to 1000 GB;<br>
-by default, 50 GB is pre-selected;</li>
+💡 SSH Keypair you will use to configure in the Cluster servers for ssh access;</li>
+<li><em>Docker image size (GB)</em> - provide the preferred disc size where container images will be stored;<br>
+💡 the range - from 50 GB to 1000 GB;</li>
 <li><em>Master Count</em> - set how many master-nodes the Cluster will contain;<br>
-by default, 1 is pre-selected;</li>
-<li><em>Node Count</em> - set how many worker-nodes the Cluster will contain;<br>
-by default, 1 is pre-selected;</li>
-</ul>
-<p>And the last field you can make a marks: </p>
-<ul>
-<li><em>Enable auto-scaling</em> - if you choose to enable this option, please set the  limits of node count; the max count is 10 nodes; </li>
+💡 for production environments, use at least 3 master-nodes;</li>
+<li><em>Node Count</em> - set how many worker-nodes the Cluster will contain;     </li>
+<li><em>Enable auto-scaling</em> - if you choose to enable this option, please set the  limits of node count;<br>
+💡 the max count is 10 nodes; </li>
 <li><em>Accessible on private network only</em>.</li>
 </ul>
-<p>After these steps, the newly created Cluster will be added to the <em>Clusters page</em> with the status CREATE_COMPLETE (Estimate creation time about 5 minutes).</p>
+<p>After these steps, the newly created Cluster will be added to the <em>Clusters page</em> with the status CREATE_COMPLETE.<br>
+Estimate creation time about 5 minutes.</p>
 <h2 id="cluster-details-page">Cluster details page</h2>
 <p>To open the <em>Cluster details page</em>, click on the <strong>Name</strong> of the corresponding Cluster:
 <img src="../../../assets/images/clusters/7.png?classes=border,shadow" alt=""></p>
-<p>This action will redirect you to the <em>Cluster details page</em>, where you can find four tabs with additional information about selected Cluster and panel with available <strong>quick actions</strong>:</p>
+<p>This action will redirect you to the <em>Cluster details page</em>, where you can find:</p>
 <ul>
-<li>panel with available <strong>quick actions</strong> include all available management actions with this cluster such as: resize, delete, upgrade and download kubeconfig file:</li>
+<li>Cluster <strong>details area</strong> with actual information about it - Status, Health, Kube Version, Created timestamp; Current Master Nodes count, Flavor and Connection section with API Address:</li>
 </ul>
-<p><img src="../../../assets/images/clusters/12.png?width=25pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/clusters/29.png?classes=border,shadow" alt=""></p>
 <ul>
-<li>INFO Tab with actual information about this Cluster: ID, Current Status, Errors, Creation Date, Date of the last update and Cluster template:</li>
+<li>
+<p>panel with available <strong>quick actions</strong> include management actions with this cluster such as: delete, download kubeconfig file and cluster upgrade:
+<img src="../../../assets/images/clusters/30.png?width=15pc&amp;classes=border,shadow" alt=""></p>
+</li>
+<li>
+<p>transition to the NODE POOLS and LABELS pages related to this Cluster:<br>
+<img src="../../../assets/images/clusters/31.png?width=15pc&amp;classes=border,shadow" alt=""></p>
+</li>
 </ul>
-<p><img src="../../../assets/images/clusters/8.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<p><strong>NODE POOLS TAB</strong> - opens the <em>Cluster Node Pools page</em> where you can find all available Node Pools of corresponding Cluster with their details; add, delete, resize, and configure autoscaling for individual Node Pools.</p>
+<p>💡 More information about the <em>Node Pools Management</em> will be provided in the following sections.<br>
+<img src="../../../assets/images/clusters/32.png?classes=border,shadow" alt=""></p>
+<p><strong>LABELS TAB</strong> - opens the <em>Cluster Labels page</em> with some additional information about this cluster:
+<img src="../../../assets/images/clusters/33.png?classes=border,shadow" alt=""></p>
+<h2 id="node-pools-management">Node Pools Management</h2>
+<p>The <strong>NODE POOLS</strong> tab displays all node pools within the selected Kubernetes cluster, showing their current status, node count, flavor specifications, and base images. Each node pool can be managed independently with different scaling and configuration options.</p>
+<h3 id="node-pool-types-and-scaling-behavior">Node Pool Types and Scaling Behavior</h3>
+<p><strong>Master Node Pool (default-master):</strong></p>
 <ul>
-<li>NODES Tab with actual information about Cluster&rsquo;s Nodes: Master and Node count, their IP addresses and API address of the Cluster:</li>
+<li>Supports horizontal scaling up only (1→2→3 nodes)</li>
+<li>Cannot be scaled down once additional nodes are added</li>
+<li>Critical for cluster control plane high availability</li>
+<li><strong>Upgrade</strong>: Requires whole cluster upgrade using <strong>Action Button &gt; Upgrade</strong></li>
 </ul>
-<p><img src="../../../assets/images/clusters/9.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<p><strong>Worker Node Pool (default-worker):</strong></p>
 <ul>
-<li>MISCELLANEOUS Tab with next information: Discovery URL, Cluster create timeout, Key pair that was used during the Cluster creation, Master and Node flavors, and current Health status of the selected Cluster:</li>
+<li>Supports bidirectional scaling (scale up and down)</li>
+<li>Configurable autoscaling can be enabled or disabled</li>
+<li>Handles application workload distribution</li>
+<li><strong>Upgrade</strong>: Requires whole cluster upgrade using <strong>Action Button &gt; Upgrade</strong></li>
 </ul>
-<p><img src="../../../assets/images/clusters/10.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<h3 id="create-node-pool">Create Node Pool</h3>
+<p>When creating new node pools using the <strong>ADD NODE POOL</strong> button, administrators can:</p>
 <ul>
-<li>LABELS Tab with some additional information about this cluster:</li>
+<li><strong>Kubernetes Version</strong>: Deploy node pools with different Kubernetes versions than the cluster default</li>
+<li><strong>Node Sizing</strong>: Configure specific node flavors and resource allocations</li>
+<li><strong>Autoscaling Options</strong>:
+<ul>
+<li>Enable autoscaling with minimum and maximum node limits</li>
+<li>Create fixed-size pools without autoscaling</li>
 </ul>
-<p><img src="../../../assets/images/clusters/11.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+</li>
+<li><strong>Custom Configuration</strong>: Define labels, taints, and other node-specific settings</li>
+<li><strong>Independent Upgrades</strong>: Create and upgrade separate node pools to newer versions independently</li>
+</ul>
+<p><img src="../../../assets/images/clusters/25.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<h3 id="resize-node-pool">Resize Node Pool</h3>
+<p>To resize the Node Pool, do the following:</p>
+<ul>
+<li>identify the Node Pool, that you want to resize, on the <em>Cluster details page</em>;</li>
+<li>click on the <strong>Actions</strong> icon  and select the <strong>Resize</strong> in the list of available options;</li>
+<li>update the count of Worker-nodes in the Node Pool on the opened <em>Resize Node Pool window</em> and click on the SAVE icon:</li>
+</ul>
+<p><img src="../../../assets/images/clusters/27.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<h3 id="node-pool-autoscaling-configuration">Node Pool Autoscaling Configuration</h3>
+<p>To enable or disable the Autoscaling for the Node Pool, do the following:</p>
+<ul>
+<li>identify the Node Pool, that you want to upgrade, on the <em>Cluster details page</em>;</li>
+<li>click on the <strong>Actions</strong> icon  and select the <strong>Configure Autoscaling</strong> in the list of available options;</li>
+<li>select the option to enable or disable the Autoscaling for the selected Node Pool on the opened <em>Autoscaling Node Pool window</em> or change the minimum and maximum node count and click on the SAVE icon:</li>
+</ul>
+<p><img src="../../../assets/images/clusters/28.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<h3 id="upgrade-node-pool">Upgrade Node Pool</h3>
+<p>To upgrade the Node Pool, do the following:</p>
+<ul>
+<li>identify the Node Pool, that you want to upgrade, on the <em>Cluster details page</em>;</li>
+<li>click on the <strong>Actions</strong> icon  and select the <strong>Upgrade</strong> in the list of available options;</li>
+<li>select the version to which you want to upgrade the selected Node Pool on the opened <em>Upgrade Node Pool window</em> and click on the UPGRADE icon:</li>
+</ul>
+<h2 id="upgrade-cluster">Upgrade Cluster</h2>
+
+<div class="notices note" ><p>📌 For cluster upgrading you can select only a version that is higher than current one or you can choose the current version to re-apply the configuration.</p>
+</div>
+
+<p>To upgrade the Cluster, do the following:</p>
+<ul>
+<li>identify the Cluster, that you want to upgrade, on the <em>Clusters page</em>;</li>
+<li>go to the <em>Cluster details page</em>;</li>
+<li>click on the <strong>Actions</strong> icon  and select the <strong>Upgrade</strong> in the list of available options;</li>
+</ul>
+<p><img src="../../../assets/images/clusters/34.png?width=15pc&amp;classes=border,shadow" alt=""></p>
+<ul>
+<li>select the version to which you want to upgrade the selected Cluster on the opened <em>Upgrade Cluster window</em> and click on the UPGRADE icon:</li>
+</ul>
+<p><img src="../../../assets/images/clusters/23.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<p>After these steps, the selected Cluster will be upgraded after a few minutes with the status UPDATE_COMPLETE.</p>
 <h2 id="download-kubeconfig-file">Download kubeconfig file</h2>
 
-<div class="notices info" ><p>The kubeconfig file is required to configure access to a cluster and switch between multiple clusters, multiple users, and with different authentication mechanisms such as passwords or tokens.</p>
+<div class="notices note" ><p>💡 The kubeconfig file is required to configure access to a cluster and switch between multiple clusters, multiple users, and with different authentication mechanisms such as passwords or tokens.</p>
 </div>
 
 <p>To download the kubeconfig file that pertains to Cluster, do the following:</p>
@@ -1833,33 +1912,7 @@ by default, 1 is pre-selected;</li>
 </ul>
 <p>After these steps, the <em>kubeconfig file</em> will be downloaded.</p>
 <p>Also, you can download the kubeconfig file from <em>Cluster details page</em>, by clicking on the appropriative <strong>quick actions</strong> icon there:</p>
-<p><img src="../../../assets/images/clusters/20.png?width=25pc&amp;classes=border,shadow" alt=""></p>
-<h2 id="resize-cluster">Resize Cluster</h2>
-<p>To resize the Cluster, do the following:</p>
-<ul>
-<li>identify the Cluster, that you want to resize, on the <em>Clusters page</em>;</li>
-<li>click on the <strong>Actions</strong> icon  and select the <strong>Resize</strong> in the list of available options;</li>
-<li>update the count of Worker-nodes in the Cluster on the opened <em>Resize Cluster window</em> and click on the SAVE icon:</li>
-</ul>
-<p><img src="../../../assets/images/clusters/5.png?width=30pc&amp;classes=border,shadow" alt=""></p>
-<p>After these steps, the selected Cluster will be resized after a few minutes with the status UPDATE_COMPLETE.</p>
-<p>Also, you can resize the Cluster from <em>Cluster details page</em>, by clicking on the appropriative <strong>quick actions</strong> icon there:
-<img src="../../../assets/images/clusters/21.png?width=25pc&amp;classes=border,shadow" alt=""></p>
-<h2 id="upgrade-cluster">Upgrade Cluster</h2>
-
-<div class="notices note" ><p>For cluster upgrading you can select only a version that is higher than current one or you can choose the current version to re-apply the configuration.</p>
-</div>
-
-<p>To upgrade the Cluster, do the following:</p>
-<ul>
-<li>identify the Cluster, that you want to upgrade, on the <em>Clusters page</em>;</li>
-<li>click on the <strong>Actions</strong> icon  and select the <strong>Upgrade</strong> in the list of available options;</li>
-<li>select the version to which you want to upgrade the selected Cluster on the opened <em>Upgrade Cluster window</em> and click on the UPGRADE icon:</li>
-</ul>
-<p><img src="../../../assets/images/clusters/23.png?width=30pc&amp;classes=border,shadow" alt=""></p>
-<p>After these steps, the selected Cluster will be upgraded after a few minutes with the status UPDATE_COMPLETE.</p>
-<p>Also, you can upgrade the Cluster from <em>Cluster details page</em>, by clicking on the appropriative <strong>quick actions</strong> icon there:
-<img src="../../../assets/images/clusters/24.png?width=25pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/clusters/35.png?width=15pc&amp;classes=border,shadow" alt=""></p>
 <h2 id="delete-cluster">Delete Cluster</h2>
 <p>To delete the Cluster, do the following:</p>
 <ul>
@@ -1869,7 +1922,7 @@ by default, 1 is pre-selected;</li>
 </ul>
 <p>After these steps, the selected Cluster will be deleted after a few minutes.</p>
 <p>Also, you can delete the Cluster from <em>Cluster details page</em>, by clicking on the appropriative <strong>quick actions</strong> icon there:
-<img src="../../../assets/images/clusters/22.png?width=25pc&amp;classes=border,shadow" alt=""></p>
+<img src="../../../assets/images/clusters/36.png?width=10pc&amp;classes=border,shadow" alt=""></p>
 
 
 <footer class="footline">
@@ -2946,19 +2999,19 @@ by default, 1 is pre-selected;</li>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751360028"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751360028"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751360028"></script>
-    <script src="/js/jquery.sticky.js?1751360028"></script>
-    <script src="/js/featherlight.min.js?1751360028"></script>
-    <script src="/js/highlight.pack.js?1751360028"></script>
+    <script src="/js/clipboard.min.js?1754474226"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754474226"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754474226"></script>
+    <script src="/js/jquery.sticky.js?1754474226"></script>
+    <script src="/js/featherlight.min.js?1754474226"></script>
+    <script src="/js/highlight.pack.js?1754474226"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751360028"></script>
-    <script src="/js/learn.js?1751360028"></script>
-    <script src="/js/hugo-learn.js?1751360028"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754474226"></script>
+    <script src="/js/learn.js?1754474226"></script>
+    <script src="/js/hugo-learn.js?1754474226"></script>
     
         
-            <script src="/mermaid/mermaid.js?1751360028"></script>
+            <script src="/mermaid/mermaid.js?1754474226"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
