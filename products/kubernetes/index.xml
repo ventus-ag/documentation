@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KUBERNETES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/kubernetes/</link><description>Recent content in KUBERNETES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster in the Cloud Console.&lt;/p>
+&lt;p>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster and its Node Pools in the Cloud Console.&lt;/p>
 &lt;h1 id="table-of-contents">Table of contents&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
@@ -7,13 +7,17 @@
 &lt;li>&lt;a href="#clusters-page">Clusters page&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#create-cluster">Create Cluster&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#cluster-details-page">Cluster details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#node-pools-management">Node Pools Management&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#node-pool-creation">Node Pool Creation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#node-pool-resize">Node Pool Resize&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#node-pools-management">Node Pools Management&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#node-pool-types-and-scaling-behavior">Node Pool Types and Scaling Behavior&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#create-node-pool">Create Node Pool&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#resize-node-pool">Resize Node Pool&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#node-pool-autoscaling-configuration">Node Pool Autoscaling Configuration&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#download-kubeconfig-file">Download kubeconfig file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#upgrade-cluster">Upgrade Cluster&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#upgrade-node-pool">Upgrade Node Pool&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#upgrade-cluster">Upgrade Cluster&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#download-kubeconfig-file">Download kubeconfig file&lt;/a>&lt;/li>
 &lt;li>&lt;a href="#delete-cluster">Delete Cluster&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
