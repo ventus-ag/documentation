@@ -1,6 +1,6 @@
 .github/workflows/gh-pages.yml
 static/CNAME
 .DS_Store
-public
+public/
 .cursor/rules
 
