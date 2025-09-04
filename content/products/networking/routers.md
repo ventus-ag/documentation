@@ -13,6 +13,7 @@ On this page, you can find an explanation of how to create, edit, delete Routers
     - [Add Interface to the Router](#add-interface-to-the-router)
     - [Add custom Route to the Router](#add-custom-route-to-the-router)
   - [Edit Router](#edit-router)
+  - [Enable/Disable Router](#enabledisable-router)
   - [Delete Router](#delete-router)
 
 ## Routers
@@ -31,6 +32,7 @@ On this page you can find all Routers created in the current Project, with the 
 
 **Actions** icon opens the next list of available management actions for the selected Router:
 - *Edit* - this option is used to update name/description of the selected Router; 
+- *Enable/Disable* - this option is used to control whether a router is active or inactive;
 - *Delete* - this option is for the Router removing.
 
 ## Create Router 
@@ -105,6 +107,18 @@ To edit the Router, do the following:
 After these steps, the selected Router will be updated.  
 Alternatively, you can edit Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/routers/8.png?width=7pc&classes=border,shadow)  
+
+## Enable/Disable Router
+
+To enable or disable a Router, do the following:
+- identify the Router you want to manage on the *Routers page*;  
+- click on the **Actions** icon and select **Enable** or **Disable** from the list of available options;  
+- confirm your choice in the next *Confirmation window*.
+
+After these steps, the state of the selected Router will be updated accordingly.  
+Alternatively, you can enable or disable a Router from its *Details page*, by clicking on the appropriative **quick actions** icon there:
+
+![](../../../assets/images/routers/13.png?width=7pc&classes=border,shadow) 
 
 ## Delete Router
 
