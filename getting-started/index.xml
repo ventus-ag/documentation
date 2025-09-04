@@ -1,67 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/getting-started/</link><description>Recent content in Getting Started on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Account</title><link>https://docs.ventuscloud.eu/getting-started/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/account/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create and manage a new user account in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#registration">Registration&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#manage-account">Manage account&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#edit-account">Edit account&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#change-password">Change password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-authenticator">Set authenticator&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#find-all-sessions">Find all sessions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#login-and-logout">Login and Logout&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="registration">Registration&lt;/h2>
-&lt;p>To start work in the Cloud Console, firstly, you need to register a new user account. For this, please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Getting Started on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/getting-started/</link><description>Recent content in Getting Started on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Account</title><link>https://docs.ventuscloud.eu/getting-started/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/account/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create and manage a new user account in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#registration"&gt;Registration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manage-account"&gt;Manage account&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#edit-account"&gt;Edit account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#change-password"&gt;Change password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-authenticator"&gt;Set authenticator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#find-all-sessions"&gt;Find all sessions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#login-and-logout"&gt;Login and Logout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="registration"&gt;Registration&lt;/h2&gt;
+&lt;p&gt;To start work in the Cloud Console, firstly, you need to register a new user account. For this, please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class="notices note" >&lt;p>Currently, we&amp;rsquo;ve closed ability for public registration. However, if you are already a registered user with an active Organization, you can register new users and add them as Administrators.&lt;br>
-Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>, and we will help you to create an account.&lt;/p></description></item><item><title>Organizations</title><link>https://docs.ventuscloud.eu/getting-started/organizations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/organizations/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create a new Organization and how to manage it in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#users-within-organization">Users within Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#organizations-page">Organizations page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-organization">Create Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-organization">Edit Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-organization">Delete Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#leave-organization">Leave Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-administrators">Add Administrators&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#transfer-an-organization">Transfer an Organization&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="users-within-organization">Users within Organization&lt;/h2>
-&lt;p>In the Cloud Console Organizations User can have next Roles:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Owner&lt;/strong> - this role is assigned to a User, who created this Organization (this User will also be considered the &lt;em>Administrator&lt;/em> of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;&lt;/li>
-&lt;li>&lt;strong>Administrator&lt;/strong> - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can&amp;rsquo;t edit or delete Organization;&lt;/li>
-&lt;li>&lt;strong>Member&lt;/strong> - this role is assigned to a User who is granted access to the Organization&amp;rsquo;s Project and, accordingly, to all resources within this Project. Member can&amp;rsquo;t add/remove other Users in the Project, can&amp;rsquo;t see information about Administrators or Billing of the Organization, can&amp;rsquo;t add new Projects, edit or delete current one.&lt;/li>
-&lt;/ul>
-&lt;p>As a &lt;em>Owner&lt;/em> or &lt;em>Administrator&lt;/em> you can add additional Admins to the Organization, which will also have access to all resources of the Organization.&lt;br>
-Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/">Administrators&lt;/a>.&lt;/p></description></item><item><title>Projects</title><link>https://docs.ventuscloud.eu/getting-started/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/projects/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create a new Project, and how to manage them in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#projects-page">Projects page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-project">Create Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#project-overview-page">Project Overview Page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-budget-threshold">Set Budget Threshold&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-project">Edit Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-project">Delete Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-users-to-project">Add users to Project&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="projects-page">Projects page&lt;/h2>
+&lt;div class="notices note" &gt;&lt;p&gt;Currently, we&amp;rsquo;ve closed ability for public registration. However, if you are already a registered user with an active Organization, you can register new users and add them as Administrators.&lt;br&gt;
+Please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt;/a&gt;, and we will help you to create an account.&lt;/p&gt;</description></item><item><title>Organizations</title><link>https://docs.ventuscloud.eu/getting-started/organizations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/organizations/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create a new Organization and how to manage it in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#users-within-organization"&gt;Users within Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#organizations-page"&gt;Organizations page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-organization"&gt;Create Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-organization"&gt;Edit Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-organization"&gt;Delete Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#leave-organization"&gt;Leave Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-administrators"&gt;Add Administrators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#transfer-an-organization"&gt;Transfer an Organization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="users-within-organization"&gt;Users within Organization&lt;/h2&gt;
+&lt;p&gt;In the Cloud Console Organizations User can have next Roles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Owner&lt;/strong&gt; - this role is assigned to a User, who created this Organization (this User will also be considered the &lt;em&gt;Administrator&lt;/em&gt; of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Administrator&lt;/strong&gt; - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can&amp;rsquo;t edit or delete Organization;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Member&lt;/strong&gt; - this role is assigned to a User who is granted access to the Organization&amp;rsquo;s Project and, accordingly, to all resources within this Project. Member can&amp;rsquo;t add/remove other Users in the Project, can&amp;rsquo;t see information about Administrators or Billing of the Organization, can&amp;rsquo;t add new Projects, edit or delete current one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a &lt;em&gt;Owner&lt;/em&gt; or &lt;em&gt;Administrator&lt;/em&gt; you can add additional Admins to the Organization, which will also have access to all resources of the Organization.&lt;br&gt;
+Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/"&gt;Administrators&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Projects</title><link>https://docs.ventuscloud.eu/getting-started/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/projects/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create a new Project, and how to manage them in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#projects-page"&gt;Projects page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-project"&gt;Create Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#project-overview-page"&gt;Project Overview Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-budget-threshold"&gt;Set Budget Threshold&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-project"&gt;Edit Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-project"&gt;Delete Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-users-to-project"&gt;Add users to Project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="projects-page"&gt;Projects page&lt;/h2&gt;
 
-&lt;div class="notices note" >&lt;p>To see information about Projects of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em>Administrator&lt;/em> or &lt;em>Owner&lt;/em>.&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;To see information about Projects of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description></item></channel></rss>

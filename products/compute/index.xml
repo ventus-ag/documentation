@@ -1,77 +1,77 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>COMPUTE on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/compute/</link><description>Recent content in COMPUTE on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/compute/index.xml" rel="self" type="application/rss+xml"/><item><title>Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/virtual-machines/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, resize, delete Linux and Windows Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#virtual-machines-page">Virtual Machines page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-linux-virtual-machine">Create Linux Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-windows-virtual-machine">Create Windows Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#virtual-machine-details-page">Virtual Machine details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#download-rdp-file">Download RDP File&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-virtual-machine">Edit Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#resize-virtual-machine">Resize Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#shutoff-virtual-machine">Shutoff Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#shelve-virtual-machine">Shelve Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#start-virtual-machine">Start Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-virtual-machine">Delete Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#backup-virtual-machine">Backup Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#restore-virtual-machine">Restore Virtual Machine&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="virtual-machines-page">Virtual Machines page&lt;/h2>
-&lt;p>
-&lt;div class="notices note" >&lt;p>In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.&lt;/p></description></item><item><title>GPU Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create GPU Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-gpu-virtual-machine">Create GPU Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#post-creation-management">Post-Creation Management&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>COMPUTE on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/compute/</link><description>Recent content in COMPUTE on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/compute/index.xml" rel="self" type="application/rss+xml"/><item><title>Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/virtual-machines/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, resize, delete Linux and Windows Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#virtual-machines-page"&gt;Virtual Machines page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-linux-virtual-machine"&gt;Create Linux Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-windows-virtual-machine"&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#virtual-machine-details-page"&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-rdp-file"&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-virtual-machine"&gt;Edit Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#resize-virtual-machine"&gt;Resize Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#shutoff-virtual-machine"&gt;Shutoff Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#shelve-virtual-machine"&gt;Shelve Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#start-virtual-machine"&gt;Start Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-virtual-machine"&gt;Delete Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#backup-virtual-machine"&gt;Backup Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#restore-virtual-machine"&gt;Restore Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="virtual-machines-page"&gt;Virtual Machines page&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.&lt;/p&gt;</description></item><item><title>GPU Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create GPU Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-gpu-virtual-machine"&gt;Create GPU Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#post-creation-management"&gt;Post-Creation Management&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations.&lt;/p&gt;
 
-&lt;div class="notices note" >&lt;p>📌 GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p></description></item><item><title>Access Linux VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to connect to the Linux Virtual Machine created in the Cloud Console using the SSH Protocol&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configuring-firewalls">Configuring Firewalls&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-new-firewall-with-required-rule">Create New Firewall with required rule&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-required-rule-to-the-existing-firewall">Add required rule to the existing Firewall&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#connect-using-ssh">Connect using SSH&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p></description></item><item><title>Access Windows VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to connect to the Windows Virtual Machine created in the Cloud Console using the Remote Desktop Protocol&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configuring-firewalls">Configuring Firewalls&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-new-firewall-with-required-rule">Create New Firewall with required rule&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-required-rule-to-the-existing-firewall">Add required rule to the existing Firewall&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#connect-using-rdp">Connect using RDP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;📌 GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p&gt;</description></item><item><title>Access Linux VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to connect to the Linux Virtual Machine created in the Cloud Console using the SSH Protocol&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuring-firewalls"&gt;Configuring Firewalls&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-new-firewall-with-required-rule"&gt;Create New Firewall with required rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-required-rule-to-the-existing-firewall"&gt;Add required rule to the existing Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-using-ssh"&gt;Connect using SSH&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description></item><item><title>Access Windows VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to connect to the Windows Virtual Machine created in the Cloud Console using the Remote Desktop Protocol&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuring-firewalls"&gt;Configuring Firewalls&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-new-firewall-with-required-rule"&gt;Create New Firewall with required rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-required-rule-to-the-existing-firewall"&gt;Add required rule to the existing Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-using-rdp"&gt;Connect using RDP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description></item></channel></rss>

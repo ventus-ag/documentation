@@ -1,60 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Infrastructure as code on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/iac/</link><description>Recent content in Infrastructure as code on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/iac/index.xml" rel="self" type="application/rss+xml"/><item><title>Pulumi</title><link>https://docs.ventuscloud.eu/iac/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/pulumi/</guid><description>&lt;hr>
-&lt;p>On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-virtual-machine-setup">Basic virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#complex-virtual-machine-setup">Complex virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-kubernetes-setup">Basic Kubernetes setup&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Pulumi installation&lt;/strong> - &lt;a href="https://www.pulumi.com/docs/install">https://www.pulumi.com/docs/install&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Create CLI user&lt;/strong> - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users">https://docs.ventuscloud.eu/products/security/cli-users&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Save credentials in Pulumi secrets&lt;/strong> - In our scenario, we utilize the Pulumi CLI to securely store credentials. More detailed info &lt;a href="https://www.pulumi.com/docs/concepts/secrets">https://www.pulumi.com/docs/concepts/secrets&lt;/a>&lt;/li>
-&lt;/ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Infrastructure as code on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/iac/</link><description>Recent content in Infrastructure as code on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/iac/index.xml" rel="self" type="application/rss+xml"/><item><title>Pulumi</title><link>https://docs.ventuscloud.eu/iac/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/pulumi/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-virtual-machine-setup"&gt;Basic virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#complex-virtual-machine-setup"&gt;Complex virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-kubernetes-setup"&gt;Basic Kubernetes setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pulumi installation&lt;/strong&gt; - &lt;a href="https://www.pulumi.com/docs/install"&gt;https://www.pulumi.com/docs/install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create CLI user&lt;/strong&gt; - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users"&gt;https://docs.ventuscloud.eu/products/security/cli-users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save credentials in Pulumi secrets&lt;/strong&gt; - In our scenario, we utilize the Pulumi CLI to securely store credentials. More detailed info &lt;a href="https://www.pulumi.com/docs/concepts/secrets"&gt;https://www.pulumi.com/docs/concepts/secrets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>The Pulumi CLI never transmits your cloud credentials to Pulumi Cloud.&lt;/p></description></item><item><title>Terraform</title><link>https://docs.ventuscloud.eu/iac/terraform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/terraform/</guid><description>&lt;hr>
-&lt;p>On this page, you can find essential steps and code for starting with Terraform and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#prepare-terraform-environment">Prepare Terraform environment&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-virtual-machine-setup">Basic virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#complex-virtual-machine-setup">Complex virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-kubernetes-setup">Basic Kubernetes setup&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Terraform installation&lt;/strong> - &lt;a href="https://developer.hashicorp.com/terraform/install">https://developer.hashicorp.com/terraform/install&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Create CLI user&lt;/strong> - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users">https://docs.ventuscloud.eu/products/security/cli-users&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Install CLI client&lt;/strong> - &lt;a href="https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/">https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="prepare-terraform-environment">Prepare Terraform environment&lt;/h2>
-&lt;ol>
-&lt;li>Set Up Your Environment
-Once Terraform is installed, create a new directory for your Terraform configurations. This directory will hold all your Terraform files for a specific project:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mkdir terraform_basic_vm
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd terraform_basic_vm
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
-&lt;li>Create file provider.tf in terraform_basic_vm folder and add following code:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tf" data-lang="tf">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">terraform&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">required_version&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;gt;= 0.14.0&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">required_providers&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">openstack&lt;/span> &lt;span style="color:#f92672">=&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;terraform-provider-openstack/openstack&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">version&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;~&amp;gt; 1.53.0&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is a configuration block for Terraform, an infrastructure as code tool used for building, changing, and versioning infrastructure safely and efficiently. We will use it in all our examples.&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;The Pulumi CLI never transmits your cloud credentials to Pulumi Cloud.&lt;/p&gt;</description></item><item><title>Terraform</title><link>https://docs.ventuscloud.eu/iac/terraform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/terraform/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find essential steps and code for starting with Terraform and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#prepare-terraform-environment"&gt;Prepare Terraform environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-virtual-machine-setup"&gt;Basic virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#complex-virtual-machine-setup"&gt;Complex virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-kubernetes-setup"&gt;Basic Kubernetes setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Terraform installation&lt;/strong&gt; - &lt;a href="https://developer.hashicorp.com/terraform/install"&gt;https://developer.hashicorp.com/terraform/install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create CLI user&lt;/strong&gt; - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users"&gt;https://docs.ventuscloud.eu/products/security/cli-users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install CLI client&lt;/strong&gt; - &lt;a href="https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/"&gt;https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prepare-terraform-environment"&gt;Prepare Terraform environment&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set Up Your Environment
+Once Terraform is installed, create a new directory for your Terraform configurations. This directory will hold all your Terraform files for a specific project:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir terraform_basic_vm
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd terraform_basic_vm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;Create file provider.tf in terraform_basic_vm folder and add following code:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-tf" data-lang="tf"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;terraform&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;required_version&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;gt;= 0.14.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;required_providers&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;openstack&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;source&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;terraform-provider-openstack/openstack&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;version&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;~&amp;gt; 1.53.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is a configuration block for Terraform, an infrastructure as code tool used for building, changing, and versioning infrastructure safely and efficiently. We will use it in all our examples.&lt;/p&gt;</description></item></channel></rss>

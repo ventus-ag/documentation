@@ -1,97 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IMAGES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/images/</link><description>Recent content in IMAGES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/images/index.xml" rel="self" type="application/rss+xml"/><item><title>Images</title><link>https://docs.ventuscloud.eu/products/images/custom-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/custom-images/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to find list of default Images in the Cloud Console and how to create and delete custom Images.&lt;/p>
-&lt;h2 id="table-of-contents">Table of contents&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#images-page">Images page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#custom-images">Custom Images&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#get-images-list">Get Images list&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-custom-image">Create custom Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-custom-image">Delete Custom Image&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#create-image-from-snapshot">Create image from Snapshot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="images-page">Images page&lt;/h2>
-&lt;p>To get to the &lt;em>Images page&lt;/em>, select the &lt;strong>Storage&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Images TAB:&lt;/strong>
-&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/images/1.png?width=30pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Create Image from Snapshot</title><link>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</guid><description>&lt;hr>
-&lt;p>On this page we will discuss the workflow, that can help you to create an Image from Snapshot.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workflow">Workflow&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prepare-snapshot">Prepare Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-volume-from-snapshot">Create Volume from Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-image-from-volume">Create Image from Volume&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>CLI User&lt;/strong> (Name: &lt;em>test-conn&lt;/em>) - which RC file has already been loaded;&lt;/li>
-&lt;li>&lt;strong>Ubuntu Virtual Machine&lt;/strong> (IP: &lt;em>185.226.43.42&lt;/em>, Name: &lt;em>test-1&lt;/em>) - that was created with an additional firewall, configured to allow connection to this VM remotely via SSH.&lt;/li>
-&lt;/ul>
-&lt;p>To find more detailed instructions see the next articles: &lt;br>
-&lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/">CLI Users&lt;/a>;&lt;br>
-&lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/">Virtual Machines&lt;/a>; &lt;br>
-&lt;a href="https://docs.ventuscloud.eu/products/compute/connect-linux-vm/">Access Linux VM&lt;/a>.&lt;/p></description></item><item><title>Share Images between Projects</title><link>https://docs.ventuscloud.eu/products/images/share-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/share-images/</guid><description>&lt;hr>
-&lt;p>On this page, we will discuss a workflow to help you to share Images between Projects in the same Region.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workflow">Workflow&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#share-image-with-another-project">Share Image with another Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#accept-shared-image">Accept shared Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#unshare-image">Unshare Image&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article, we will assume that we have already created two Projects, belonging to different Organizations, but to the same Region, and the following resources within these Projects:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Project 1&lt;/strong> named &lt;em>dev-1&lt;/em>, that was created in the Organization named &lt;em>Test1&lt;/em> and related to the Vienna Region, with the following resources:
-&lt;ul>
-&lt;li>&lt;strong>CLI User&lt;/strong> named &lt;em>dev1CLIuser&lt;/em> and which RC file has already been loaded;&lt;/li>
-&lt;li>&lt;strong>Ubuntu Virtual Machine&lt;/strong> - IP: 185.226.43.42, Name: &lt;em>test-1&lt;/em>; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;&lt;/li>
-&lt;li>&lt;strong>Custom Image&lt;/strong> named &lt;em>test-custom-image&lt;/em>;&lt;br>
-For detailed instructions on how to upload custom image, see next articles: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/#custom-images">Custom Images&lt;/a>, &lt;a href="https://docs.ventuscloud.eu/products/images/image-from-snapshot/">Create Image from Snapshot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IMAGES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/images/</link><description>Recent content in IMAGES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/images/index.xml" rel="self" type="application/rss+xml"/><item><title>Images</title><link>https://docs.ventuscloud.eu/products/images/custom-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/custom-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to find list of default Images in the Cloud Console and how to create and delete custom Images.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#images-page"&gt;Images page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#custom-images"&gt;Custom Images&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#get-images-list"&gt;Get Images list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-custom-image"&gt;Create custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-custom-image"&gt;Delete Custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-image-from-snapshot"&gt;Create image from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="images-page"&gt;Images page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Images page&lt;/em&gt;, select the &lt;strong&gt;Storage&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Images TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/images/1.png?width=30pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Create Image from Snapshot</title><link>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page we will discuss the workflow, that can help you to create an Image from Snapshot.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workflow"&gt;Workflow&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prepare-snapshot"&gt;Prepare Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-volume-from-snapshot"&gt;Create Volume from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-image-from-volume"&gt;Create Image from Volume&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CLI User&lt;/strong&gt; (Name: &lt;em&gt;test-conn&lt;/em&gt;) - which RC file has already been loaded;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Virtual Machine&lt;/strong&gt; (IP: &lt;em&gt;185.226.43.42&lt;/em&gt;, Name: &lt;em&gt;test-1&lt;/em&gt;) - that was created with an additional firewall, configured to allow connection to this VM remotely via SSH.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To find more detailed instructions see the next articles: &lt;br&gt;
+&lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/"&gt;CLI Users&lt;/a&gt;;&lt;br&gt;
+&lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/"&gt;Virtual Machines&lt;/a&gt;; &lt;br&gt;
+&lt;a href="https://docs.ventuscloud.eu/products/compute/connect-linux-vm/"&gt;Access Linux VM&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Share Images between Projects</title><link>https://docs.ventuscloud.eu/products/images/share-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/share-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, we will discuss a workflow to help you to share Images between Projects in the same Region.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workflow"&gt;Workflow&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#share-image-with-another-project"&gt;Share Image with another Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#accept-shared-image"&gt;Accept shared Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#unshare-image"&gt;Unshare Image&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article, we will assume that we have already created two Projects, belonging to different Organizations, but to the same Region, and the following resources within these Projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project 1&lt;/strong&gt; named &lt;em&gt;dev-1&lt;/em&gt;, that was created in the Organization named &lt;em&gt;Test1&lt;/em&gt; and related to the Vienna Region, with the following resources:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CLI User&lt;/strong&gt; named &lt;em&gt;dev1CLIuser&lt;/em&gt; and which RC file has already been loaded;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Virtual Machine&lt;/strong&gt; - IP: 185.226.43.42, Name: &lt;em&gt;test-1&lt;/em&gt;; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Custom Image&lt;/strong&gt; named &lt;em&gt;test-custom-image&lt;/em&gt;;&lt;br&gt;
+For detailed instructions on how to upload custom image, see next articles: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/#custom-images"&gt;Custom Images&lt;/a&gt;, &lt;a href="https://docs.ventuscloud.eu/products/images/image-from-snapshot/"&gt;Create Image from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices tip" >&lt;p>You can upload any custom Image to your Project. Please see detailed instructions, if you need: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/">Images&lt;/a>&lt;/p></description></item><item><title>Transfer Images between Regions</title><link>https://docs.ventuscloud.eu/products/images/transfer-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/transfer-images/</guid><description>&lt;hr>
-&lt;p>On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Regions.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workflow">Workflow&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prepare-custom-image">Prepare custom Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#save-custom-image">Save custom Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#upload-custom-image">Upload custom Image&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Project-1&lt;/strong> named &lt;em>v-dev&lt;/em>, that related to the &lt;em>Vienna&lt;/em> Region, with the following resources:&lt;/p></description></item></channel></rss>
+&lt;div class="notices tip" &gt;&lt;p&gt;You can upload any custom Image to your Project. Please see detailed instructions, if you need: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/"&gt;Images&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Transfer Images between Regions</title><link>https://docs.ventuscloud.eu/products/images/transfer-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/transfer-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Regions.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workflow"&gt;Workflow&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prepare-custom-image"&gt;Prepare custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#save-custom-image"&gt;Save custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#upload-custom-image"&gt;Upload custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Project-1&lt;/strong&gt; named &lt;em&gt;v-dev&lt;/em&gt;, that related to the &lt;em&gt;Vienna&lt;/em&gt; Region, with the following resources:&lt;/p&gt;</description></item></channel></rss>

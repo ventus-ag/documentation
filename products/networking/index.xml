@@ -1,106 +1,107 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NETWORKING on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/networking/</link><description>Recent content in NETWORKING on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Networks</title><link>https://docs.ventuscloud.eu/products/networking/networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/networks/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Networks and instructions for other steps to manage Networks in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#networks-page">Networks page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-network">Create Network&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-subnet">Create Subnet&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-network">Edit Network&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-network">Delete Network&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#attach-network-interface-to-the-vm">Attach Network Interface to the VM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="networks-page">Networks page&lt;/h2>
-&lt;p>To get to the &lt;em>Networks page&lt;/em>, select the &lt;strong>Networking&lt;/strong>  from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Networks TAB:&lt;/strong>:
-&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/networks/net-13.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Floating IPs</title><link>https://docs.ventuscloud.eu/products/networking/floating-ips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/floating-ips/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, associate, edit, delete Floating IPs and instructions for other steps to manage Floating IPs in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#floating-ip">Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#floating-ips-page">Floating IPs page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-floating-ip">Create Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-floating-ip">Edit Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-floating-ip">Delete Floating IP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="floating-ip">Floating IP&lt;/h2>
-&lt;p>Floating IP is an IP address allocated from Public network range by request and associated with specific project. You can assign Floating IP to any of your instances provisioned in private networks. This provides great flexibility in management of your network resources.&lt;/p></description></item><item><title>Routers</title><link>https://docs.ventuscloud.eu/products/networking/routers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/routers/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Routers and how to manage Interfaces inside them in Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#routers">Routers&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#routers-page">Routers page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-router">Create Router&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#add-interface-to-the-router">Add Interface to the Router&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-custom-route-to-the-router">Add custom Route to the Router&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-router">Edit Router&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-router">Delete Router&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="routers">Routers&lt;/h2>
-&lt;p>Router is an important infrastructure component that can come in handy when you need to:&lt;/p>
-&lt;ul>
-&lt;li>Provide access to the internet for instances provisioned in a private network;&lt;/li>
-&lt;li>Interconnect two or more networks;&lt;/li>
-&lt;li>Manage routes for traffic in advanced network scenarios;&lt;/li>
-&lt;/ul>
-&lt;h2 id="routers-page">Routers page&lt;/h2>
-&lt;p>To get to the &lt;em>Routers page&lt;/em>, select the &lt;strong>Networking&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Routers TAB:&lt;/strong>
-&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/routers/1.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#subnets-page">Subnets page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-subnet">Create Subnet&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#connect-subnets">Connect Subnets&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-subnet">Edit Subnet&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-subnet">Delete Subnet&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="subnets-page">Subnets page&lt;/h2>
-&lt;p>To open the &lt;em>Subnets page&lt;/em>, go to &lt;em>Networking page&lt;/em> and click on the &lt;strong>Name&lt;/strong> of the corresponding Network:
-&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt="">&lt;/p>
-&lt;p>On this page you can find:&lt;/p>
-&lt;ul>
-&lt;li>panel with available &lt;strong>quick actions&lt;/strong> for the selected Network:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/networks/net-14.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Networks and Interfaces</title><link>https://docs.ventuscloud.eu/products/networking/manage-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/manage-networks/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#vms-networks--securitytab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-interface">Add Interface&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#remove-interface">Remove Interface&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="vms-networks--securitytab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2>
-&lt;p>To find all Networks and Interfaces related to the selected Virtual Machine, you need:&lt;/p>
-&lt;ul>
-&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NETWORKING on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/networking/</link><description>Recent content in NETWORKING on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Networks</title><link>https://docs.ventuscloud.eu/products/networking/networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/networks/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Networks and instructions for other steps to manage Networks in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#networks-page"&gt;Networks page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-network"&gt;Create Network&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-subnet"&gt;Create Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-network"&gt;Edit Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-network"&gt;Delete Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#attach-network-interface-to-the-vm"&gt;Attach Network Interface to the VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="networks-page"&gt;Networks page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Networks page&lt;/em&gt;, select the &lt;strong&gt;Networking&lt;/strong&gt;  from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Networks TAB:&lt;/strong&gt;:
+&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/networks/net-13.png?width=20pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Floating IPs</title><link>https://docs.ventuscloud.eu/products/networking/floating-ips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/floating-ips/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, associate, edit, delete Floating IPs and instructions for other steps to manage Floating IPs in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#floating-ip"&gt;Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#floating-ips-page"&gt;Floating IPs page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-floating-ip"&gt;Create Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-floating-ip"&gt;Edit Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-floating-ip"&gt;Delete Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="floating-ip"&gt;Floating IP&lt;/h2&gt;
+&lt;p&gt;Floating IP is an IP address allocated from Public network range by request and associated with specific project. You can assign Floating IP to any of your instances provisioned in private networks. This provides great flexibility in management of your network resources.&lt;/p&gt;</description></item><item><title>Routers</title><link>https://docs.ventuscloud.eu/products/networking/routers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/routers/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Routers and how to manage Interfaces inside them in Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#routers"&gt;Routers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#routers-page"&gt;Routers page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-router"&gt;Create Router&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#add-interface-to-the-router"&gt;Add Interface to the Router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-custom-route-to-the-router"&gt;Add custom Route to the Router&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-router"&gt;Edit Router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enabledisable-router"&gt;Enable/Disable Router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-router"&gt;Delete Router&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="routers"&gt;Routers&lt;/h2&gt;
+&lt;p&gt;Router is an important infrastructure component that can come in handy when you need to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide access to the internet for instances provisioned in a private network;&lt;/li&gt;
+&lt;li&gt;Interconnect two or more networks;&lt;/li&gt;
+&lt;li&gt;Manage routes for traffic in advanced network scenarios;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="routers-page"&gt;Routers page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Routers page&lt;/em&gt;, select the &lt;strong&gt;Networking&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Routers TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/routers/1.png?width=25pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#subnets-page"&gt;Subnets page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-subnet"&gt;Create Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-subnets"&gt;Connect Subnets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-subnet"&gt;Edit Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-subnet"&gt;Delete Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="subnets-page"&gt;Subnets page&lt;/h2&gt;
+&lt;p&gt;To open the &lt;em&gt;Subnets page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt; and click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network:
+&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;On this page you can find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;panel with available &lt;strong&gt;quick actions&lt;/strong&gt; for the selected Network:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/networks/net-14.png?width=25pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>VM's Networks and Interfaces</title><link>https://docs.ventuscloud.eu/products/networking/manage-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/manage-networks/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vms-networks--securitytab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-interface"&gt;Add Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#remove-interface"&gt;Remove Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vms-networks--securitytab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2&gt;
+&lt;p&gt;To find all Networks and Interfaces related to the selected Virtual Machine, you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item></channel></rss>

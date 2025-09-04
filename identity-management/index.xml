@@ -1,42 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Identity Management on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/identity-management/</link><description>Recent content in Identity Management on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/identity-management/index.xml" rel="self" type="application/rss+xml"/><item><title>Administrators</title><link>https://docs.ventuscloud.eu/identity-management/administrators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/administrators/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#administrators-page">Administrators page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-administrator">Add Administrator&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#resend-invitation">Resend Invitation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-invitation">Delete Invitation&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#transfer-organization">Transfer Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#remove-administrator">Remove Administrator&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="administrators-page">Administrators page&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Identity Management on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/identity-management/</link><description>Recent content in Identity Management on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/identity-management/index.xml" rel="self" type="application/rss+xml"/><item><title>Administrators</title><link>https://docs.ventuscloud.eu/identity-management/administrators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/administrators/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#administrators-page"&gt;Administrators page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-administrator"&gt;Add Administrator&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#resend-invitation"&gt;Resend Invitation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-invitation"&gt;Delete Invitation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#transfer-organization"&gt;Transfer Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#remove-administrator"&gt;Remove Administrator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="administrators-page"&gt;Administrators page&lt;/h2&gt;
 
-&lt;div class="notices note" >&lt;p>To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em>Administrator&lt;/em> or &lt;em>Owner&lt;/em>.&lt;/p></description></item><item><title>Groups</title><link>https://docs.ventuscloud.eu/identity-management/groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/groups/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create and manage a new Group in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#groups-page">Groups page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-group">Create Group&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configure-group">Configure Group&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#manage-projects-in-group">Manage Projects in Group&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#manage-users-in-group">Manage Users in Group&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-group">Edit Group&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-group">Delete Group&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="groups-page">Groups page&lt;/h2>
+&lt;div class="notices note" &gt;&lt;p&gt;To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Groups</title><link>https://docs.ventuscloud.eu/identity-management/groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/groups/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create and manage a new Group in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#groups-page"&gt;Groups page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-group"&gt;Create Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configure-group"&gt;Configure Group&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#manage-projects-in-group"&gt;Manage Projects in Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manage-users-in-group"&gt;Manage Users in Group&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-group"&gt;Edit Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-group"&gt;Delete Group&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="groups-page"&gt;Groups page&lt;/h2&gt;
 
-&lt;div class="notices note" >&lt;p>In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p&gt;</description></item></channel></rss>

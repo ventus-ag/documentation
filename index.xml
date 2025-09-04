@@ -1,981 +1,982 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home Page on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/</link><description>Recent content in Home Page on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Workloads</title><link>https://docs.ventuscloud.eu/products/backups/backup-workloads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/backup-workloads/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Backup Workload and instructions for other steps to manage it in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#backup-workloads-page">Backup Workloads page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-backup-workload">Create Backup Workload&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workload-details-page">Workload details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-backup-workload">Edit Backup Workload&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-backup-workload">Delete Backup Workload&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home Page on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/</link><description>Recent content in Home Page on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Workloads</title><link>https://docs.ventuscloud.eu/products/backups/backup-workloads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/backup-workloads/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Backup Workload and instructions for other steps to manage it in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#backup-workloads-page"&gt;Backup Workloads page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-backup-workload"&gt;Create Backup Workload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workload-details-page"&gt;Workload details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-backup-workload"&gt;Edit Backup Workload&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-backup-workload"&gt;Delete Backup Workload&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>Please be aware that Backup and Restore feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Backups</title><link>https://docs.ventuscloud.eu/products/backups/backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/backups/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to mange already created Backups, create Backup on demand and by schedule, multi-delete Backups and instructions for other steps to manage Backups in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#backups-page">Backups page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-backup">Create Backup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#backup-details-page">Backup details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#cancel-backup">Cancel Backup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-backup">Delete Backup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#multi-delete-backups">Multi-Delete Backups&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;div class="notices note" &gt;&lt;p&gt;Please be aware that Backup and Restore feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description></item><item><title>Backups</title><link>https://docs.ventuscloud.eu/products/backups/backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/backups/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to mange already created Backups, create Backup on demand and by schedule, multi-delete Backups and instructions for other steps to manage Backups in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#backups-page"&gt;Backups page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-backup"&gt;Create Backup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#backup-details-page"&gt;Backup details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cancel-backup"&gt;Cancel Backup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-backup"&gt;Delete Backup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#multi-delete-backups"&gt;Multi-Delete Backups&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Images</title><link>https://docs.ventuscloud.eu/products/images/custom-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/custom-images/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to find list of default Images in the Cloud Console and how to create and delete custom Images.&lt;/p>
-&lt;h2 id="table-of-contents">Table of contents&lt;/h2>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#images-page">Images page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#custom-images">Custom Images&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#get-images-list">Get Images list&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-custom-image">Create custom Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-custom-image">Delete Custom Image&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#create-image-from-snapshot">Create image from Snapshot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="images-page">Images page&lt;/h2>
-&lt;p>To get to the &lt;em>Images page&lt;/em>, select the &lt;strong>Storage&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Images TAB:&lt;/strong>
-&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/images/1.png?width=30pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Restores</title><link>https://docs.ventuscloud.eu/products/backups/restores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/restores/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is the Restore in the Cloud Console, how to recover backed-up Virtual Machines and instructions for other steps to manage Restores in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#restores-page">Restores page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#initiate-restore">Initiate Restore&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#cancel-restore">Cancel Restore&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-restore">Delete Restore&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;div class="notices note" &gt;&lt;p&gt;Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description></item><item><title>Images</title><link>https://docs.ventuscloud.eu/products/images/custom-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/custom-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to find list of default Images in the Cloud Console and how to create and delete custom Images.&lt;/p&gt;
+&lt;h2 id="table-of-contents"&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#images-page"&gt;Images page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#custom-images"&gt;Custom Images&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#get-images-list"&gt;Get Images list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-custom-image"&gt;Create custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-custom-image"&gt;Delete Custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-image-from-snapshot"&gt;Create image from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="images-page"&gt;Images page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Images page&lt;/em&gt;, select the &lt;strong&gt;Storage&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Images TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/images/1.png?width=30pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Restores</title><link>https://docs.ventuscloud.eu/products/backups/restores/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/backups/restores/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is the Restore in the Cloud Console, how to recover backed-up Virtual Machines and instructions for other steps to manage Restores in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#restores-page"&gt;Restores page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#initiate-restore"&gt;Initiate Restore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cancel-restore"&gt;Cancel Restore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-restore"&gt;Delete Restore&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to restore your VMs from backups. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Account</title><link>https://docs.ventuscloud.eu/getting-started/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/account/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create and manage a new user account in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#registration">Registration&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#manage-account">Manage account&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#edit-account">Edit account&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#change-password">Change password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-authenticator">Set authenticator&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#find-all-sessions">Find all sessions&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#login-and-logout">Login and Logout&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="registration">Registration&lt;/h2>
-&lt;p>To start work in the Cloud Console, firstly, you need to register a new user account. For this, please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>.&lt;/p>
+&lt;div class="notices note" &gt;&lt;p&gt;Please be aware that Backup and Restore features in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to restore your VMs from backups. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description></item><item><title>Account</title><link>https://docs.ventuscloud.eu/getting-started/account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/account/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create and manage a new user account in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#registration"&gt;Registration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manage-account"&gt;Manage account&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#edit-account"&gt;Edit account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#change-password"&gt;Change password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-authenticator"&gt;Set authenticator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#find-all-sessions"&gt;Find all sessions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#login-and-logout"&gt;Login and Logout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="registration"&gt;Registration&lt;/h2&gt;
+&lt;p&gt;To start work in the Cloud Console, firstly, you need to register a new user account. For this, please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt;/a&gt;.&lt;/p&gt;
 
-&lt;div class="notices note" >&lt;p>Currently, we&amp;rsquo;ve closed ability for public registration. However, if you are already a registered user with an active Organization, you can register new users and add them as Administrators.&lt;br>
-Please, contact to the &lt;a href="mailto:support@ventus.ag">Cloud Support&lt;/a>, and we will help you to create an account.&lt;/p></description></item><item><title>Create Image from Snapshot</title><link>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</guid><description>&lt;hr>
-&lt;p>On this page we will discuss the workflow, that can help you to create an Image from Snapshot.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workflow">Workflow&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prepare-snapshot">Prepare Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-volume-from-snapshot">Create Volume from Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-image-from-volume">Create Image from Volume&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>CLI User&lt;/strong> (Name: &lt;em>test-conn&lt;/em>) - which RC file has already been loaded;&lt;/li>
-&lt;li>&lt;strong>Ubuntu Virtual Machine&lt;/strong> (IP: &lt;em>185.226.43.42&lt;/em>, Name: &lt;em>test-1&lt;/em>) - that was created with an additional firewall, configured to allow connection to this VM remotely via SSH.&lt;/li>
-&lt;/ul>
-&lt;p>To find more detailed instructions see the next articles: &lt;br>
-&lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/">CLI Users&lt;/a>;&lt;br>
-&lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/">Virtual Machines&lt;/a>; &lt;br>
-&lt;a href="https://docs.ventuscloud.eu/products/compute/connect-linux-vm/">Access Linux VM&lt;/a>.&lt;/p></description></item><item><title>Databases</title><link>https://docs.ventuscloud.eu/products/databases/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/databases/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#databases-page">Databases page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-database">Create Database&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#database-details-page">Database details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-database">Edit Database&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#reset-database-password">Reset Database Password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-database">Delete Database&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;div class="notices note" &gt;&lt;p&gt;Currently, we&amp;rsquo;ve closed ability for public registration. However, if you are already a registered user with an active Organization, you can register new users and add them as Administrators.&lt;br&gt;
+Please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt;/a&gt;, and we will help you to create an account.&lt;/p&gt;</description></item><item><title>Create Image from Snapshot</title><link>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/image-from-snapshot/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page we will discuss the workflow, that can help you to create an Image from Snapshot.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workflow"&gt;Workflow&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prepare-snapshot"&gt;Prepare Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-volume-from-snapshot"&gt;Create Volume from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-image-from-volume"&gt;Create Image from Volume&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CLI User&lt;/strong&gt; (Name: &lt;em&gt;test-conn&lt;/em&gt;) - which RC file has already been loaded;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Virtual Machine&lt;/strong&gt; (IP: &lt;em&gt;185.226.43.42&lt;/em&gt;, Name: &lt;em&gt;test-1&lt;/em&gt;) - that was created with an additional firewall, configured to allow connection to this VM remotely via SSH.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To find more detailed instructions see the next articles: &lt;br&gt;
+&lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/"&gt;CLI Users&lt;/a&gt;;&lt;br&gt;
+&lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/"&gt;Virtual Machines&lt;/a&gt;; &lt;br&gt;
+&lt;a href="https://docs.ventuscloud.eu/products/compute/connect-linux-vm/"&gt;Access Linux VM&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Databases</title><link>https://docs.ventuscloud.eu/products/databases/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/databases/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#databases-page"&gt;Databases page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-database"&gt;Create Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#database-details-page"&gt;Database details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-database"&gt;Edit Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reset-database-password"&gt;Reset Database Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-database"&gt;Delete Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you&amp;rsquo;re willing to accept the associated risks of using a beta service, you&amp;rsquo;re welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Installation OpenStack CLI</title><link>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#install-openstack-cli-on-ubuntu-vm">Install OpenStack CLI on Ubuntu VM&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#install-openstack-cli-oncentos-vm">Install OpenStack CLI on Centos VM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>dev1&lt;/em>, that was created in the Organization named &lt;em>Test-Shop&lt;/em>:&lt;/p></description></item><item><title>K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster and its Node Pools in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#clusters-page">Clusters page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-cluster">Create Cluster&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#cluster-details-page">Cluster details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#node-pools-management">Node Pools Management&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#node-pool-types-and-scaling-behavior">Node Pool Types and Scaling Behavior&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-node-pool">Create Node Pool&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#resize-node-pool">Resize Node Pool&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#node-pool-autoscaling-configuration">Node Pool Autoscaling Configuration&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#upgrade-node-pool">Upgrade Node Pool&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#upgrade-cluster">Upgrade Cluster&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#download-kubeconfig-file">Download kubeconfig file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-cluster">Delete Cluster&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="clusters-page">Clusters page&lt;/h2>
-&lt;p>To get to the &lt;em>Clusters page&lt;/em>, select the &lt;strong>Clusters&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:
-&lt;img src="../../../assets/images/clusters/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/virtual-machines/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, resize, delete Linux and Windows Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#virtual-machines-page">Virtual Machines page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-linux-virtual-machine">Create Linux Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-windows-virtual-machine">Create Windows Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#virtual-machine-details-page">Virtual Machine details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#download-rdp-file">Download RDP File&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-virtual-machine">Edit Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#resize-virtual-machine">Resize Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#shutoff-virtual-machine">Shutoff Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#shelve-virtual-machine">Shelve Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#start-virtual-machine">Start Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-virtual-machine">Delete Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#backup-virtual-machine">Backup Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#restore-virtual-machine">Restore Virtual Machine&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="virtual-machines-page">Virtual Machines page&lt;/h2>
-&lt;p>
-&lt;div class="notices note" >&lt;p>In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.&lt;/p></description></item><item><title>GPU Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create GPU Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-gpu-virtual-machine">Create GPU Virtual Machine&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#post-creation-management">Post-Creation Management&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations.&lt;/p>
+&lt;div class="notices note" &gt;&lt;p&gt;Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you&amp;rsquo;re willing to accept the associated risks of using a beta service, you&amp;rsquo;re welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description></item><item><title>Installation OpenStack CLI</title><link>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to install OpenStack CLI on Linux VM in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#install-openstack-cli-on-ubuntu-vm"&gt;Install OpenStack CLI on Ubuntu VM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#install-openstack-cli-oncentos-vm"&gt;Install OpenStack CLI on Centos VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;dev1&lt;/em&gt;, that was created in the Organization named &lt;em&gt;Test-Shop&lt;/em&gt;:&lt;/p&gt;</description></item><item><title>K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/kubernetes-cluster/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, resize, delete Kubernetes Cluster and instructions for other steps to manage Kubernetes Cluster and its Node Pools in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#clusters-page"&gt;Clusters page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-cluster"&gt;Create Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cluster-details-page"&gt;Cluster details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#node-pools-management"&gt;Node Pools Management&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#node-pool-types-and-scaling-behavior"&gt;Node Pool Types and Scaling Behavior&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-node-pool"&gt;Create Node Pool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#resize-node-pool"&gt;Resize Node Pool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#node-pool-autoscaling-configuration"&gt;Node Pool Autoscaling Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#upgrade-node-pool"&gt;Upgrade Node Pool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#upgrade-cluster"&gt;Upgrade Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-kubeconfig-file"&gt;Download kubeconfig file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-cluster"&gt;Delete Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="clusters-page"&gt;Clusters page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Clusters page&lt;/em&gt;, select the &lt;strong&gt;Clusters&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:
+&lt;img src="../../../assets/images/clusters/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/virtual-machines/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, resize, delete Linux and Windows Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#virtual-machines-page"&gt;Virtual Machines page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-linux-virtual-machine"&gt;Create Linux Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-windows-virtual-machine"&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#virtual-machine-details-page"&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-rdp-file"&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-virtual-machine"&gt;Edit Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#resize-virtual-machine"&gt;Resize Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#shutoff-virtual-machine"&gt;Shutoff Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#shelve-virtual-machine"&gt;Shelve Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#start-virtual-machine"&gt;Start Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-virtual-machine"&gt;Delete Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#backup-virtual-machine"&gt;Backup Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#restore-virtual-machine"&gt;Restore Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="virtual-machines-page"&gt;Virtual Machines page&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console you can create Windows and Linux Virtual Machines from official and custom images, snapshots or volumes.&lt;/p&gt;</description></item><item><title>GPU Virtual Machines</title><link>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/gpu-virtual-machines/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create GPU Virtual Machine, and instructions for other steps to manage Virtual Machines in Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-gpu-virtual-machine"&gt;Create GPU Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#post-creation-management"&gt;Post-Creation Management&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;GPU virtual machines (VMs) offer significant advantages for tasks that require intensive graphics processing or parallel computations.&lt;/p&gt;
 
-&lt;div class="notices note" >&lt;p>📌 GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p></description></item><item><title>Access K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#get-access-from-ubuntu-vm-to-k8s-cluster-using-cli-user">Get access from Ubuntu VM to K8S Cluster using CLI User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#get-access-from-centos-vm-to-k8s-cluster-using-cli-user">Get access from CentOS VM to K8S Cluster using CLI User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#connect-to-cluster-master-node-via-ssh">Connect to Cluster Master-Node via SSH&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p></description></item><item><title>Access Linux VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to connect to the Linux Virtual Machine created in the Cloud Console using the SSH Protocol&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configuring-firewalls">Configuring Firewalls&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-new-firewall-with-required-rule">Create New Firewall with required rule&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-required-rule-to-the-existing-firewall">Add required rule to the existing Firewall&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#connect-using-ssh">Connect using SSH&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p></description></item><item><title>Database's Custom Options</title><link>https://docs.ventuscloud.eu/products/databases/database-custom-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-custom-options/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is database&amp;rsquo;s Custom Options, how to manage them in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-databases-custom-options">Edit Database&amp;rsquo;s Custom Options&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#postgresql">PostgreSQL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#mysql">MySQL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#mariadb">MariaDB&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Database&amp;rsquo;s Custom Options&lt;/strong> are a feature provided to modify options of your database. You can edit various settings such as max connections, WAL sender timeout, streaming delay, etc. depending on the database type.&lt;/p></description></item><item><title>Database's Replicas</title><link>https://docs.ventuscloud.eu/products/databases/database-replicas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-replicas/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is database&amp;rsquo;s Replica, how to create and manage them in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#make-databases-replica">Make Database&amp;rsquo;s Replica&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-databases-replica">Delete Database&amp;rsquo;s Replica&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Database&amp;rsquo;s Replicas&lt;/strong> are a feature provided to ensure the security of your databases. In the Cloud Console, you can create up to 5 replicas of your database in different projects, across one or multiple regions.&lt;/p></description></item><item><title>Firewalls</title><link>https://docs.ventuscloud.eu/products/security/firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewalls/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Firewalls and instructions for other steps to manage Firewalls in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#firewalls-page">Firewalls page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-firewall">Create Firewall&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-firewall">Edit Firewall&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-firewall">Delete Firewall&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-firewall-to-the-vm">Add Firewall to the VM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="firewalls-page">Firewalls page&lt;/h2>
-&lt;p>To get to the &lt;em>Firewalls page&lt;/em>, select the &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Firewalls TAB:&lt;/strong>
-&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/fw/1.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Networks</title><link>https://docs.ventuscloud.eu/products/networking/networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/networks/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Networks and instructions for other steps to manage Networks in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#networks-page">Networks page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-network">Create Network&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-subnet">Create Subnet&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-network">Edit Network&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-network">Delete Network&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#attach-network-interface-to-the-vm">Attach Network Interface to the VM&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="networks-page">Networks page&lt;/h2>
-&lt;p>To get to the &lt;em>Networks page&lt;/em>, select the &lt;strong>Networking&lt;/strong>  from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Networks TAB:&lt;/strong>:
-&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/networks/net-13.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Organizations</title><link>https://docs.ventuscloud.eu/getting-started/organizations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/organizations/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create a new Organization and how to manage it in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#users-within-organization">Users within Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#organizations-page">Organizations page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-organization">Create Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-organization">Edit Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-organization">Delete Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#leave-organization">Leave Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-administrators">Add Administrators&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#transfer-an-organization">Transfer an Organization&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="users-within-organization">Users within Organization&lt;/h2>
-&lt;p>In the Cloud Console Organizations User can have next Roles:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Owner&lt;/strong> - this role is assigned to a User, who created this Organization (this User will also be considered the &lt;em>Administrator&lt;/em> of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;&lt;/li>
-&lt;li>&lt;strong>Administrator&lt;/strong> - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can&amp;rsquo;t edit or delete Organization;&lt;/li>
-&lt;li>&lt;strong>Member&lt;/strong> - this role is assigned to a User who is granted access to the Organization&amp;rsquo;s Project and, accordingly, to all resources within this Project. Member can&amp;rsquo;t add/remove other Users in the Project, can&amp;rsquo;t see information about Administrators or Billing of the Organization, can&amp;rsquo;t add new Projects, edit or delete current one.&lt;/li>
-&lt;/ul>
-&lt;p>As a &lt;em>Owner&lt;/em> or &lt;em>Administrator&lt;/em> you can add additional Admins to the Organization, which will also have access to all resources of the Organization.&lt;br>
-Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/">Administrators&lt;/a>.&lt;/p></description></item><item><title>RWX Storage Class</title><link>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to access your Kubernetes cluster and configure ReadWriteMany (RWX) storage using SeaweedFS.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#configuring-seaweedfs-as-rwx-storage-in-kubernetes">Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#why-seaweedfs-for-rwx-storage">Why SeaweedFS for RWX Storage?&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#seaweedfs-components">SeaweedFS Components&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#non-ha-vs-ha">Non-HA vs. HA&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#installing-seaweedfs-and-the-csi-driver">Installing SeaweedFS and the CSI Driver&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#testing-rwx-storage">Testing RWX Storage&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h1 id="configuring-seaweedfs-as-rwx-storage-in-kubernetes">Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/h1>
-&lt;p>This guide walks you through setting up SeaweedFS as an NFS-like RWX (ReadWriteMany) storage solution in a Kubernetes cluster. We’ll cover:&lt;/p></description></item><item><title>Share Images between Projects</title><link>https://docs.ventuscloud.eu/products/images/share-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/share-images/</guid><description>&lt;hr>
-&lt;p>On this page, we will discuss a workflow to help you to share Images between Projects in the same Region.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workflow">Workflow&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#share-image-with-another-project">Share Image with another Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#accept-shared-image">Accept shared Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#unshare-image">Unshare Image&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article, we will assume that we have already created two Projects, belonging to different Organizations, but to the same Region, and the following resources within these Projects:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>Project 1&lt;/strong> named &lt;em>dev-1&lt;/em>, that was created in the Organization named &lt;em>Test1&lt;/em> and related to the Vienna Region, with the following resources:
-&lt;ul>
-&lt;li>&lt;strong>CLI User&lt;/strong> named &lt;em>dev1CLIuser&lt;/em> and which RC file has already been loaded;&lt;/li>
-&lt;li>&lt;strong>Ubuntu Virtual Machine&lt;/strong> - IP: 185.226.43.42, Name: &lt;em>test-1&lt;/em>; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;&lt;/li>
-&lt;li>&lt;strong>Custom Image&lt;/strong> named &lt;em>test-custom-image&lt;/em>;&lt;br>
-For detailed instructions on how to upload custom image, see next articles: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/#custom-images">Custom Images&lt;/a>, &lt;a href="https://docs.ventuscloud.eu/products/images/image-from-snapshot/">Create Image from Snapshot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+&lt;div class="notices note" &gt;&lt;p&gt;📌 GPU services in the Cloud Console are currently accessible only for projects established in the Upper-Austria region.&lt;/p&gt;</description></item><item><title>Access K8S Cluster</title><link>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/accessing-kuber/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of several ways how to access to the Kubernetes Cluster created in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#get-access-from-ubuntu-vm-to-k8s-cluster-using-cli-user"&gt;Get access from Ubuntu VM to K8S Cluster using CLI User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#get-access-from-centos-vm-to-k8s-cluster-using-cli-user"&gt;Get access from CentOS VM to K8S Cluster using CLI User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-to-cluster-master-node-via-ssh"&gt;Connect to Cluster Master-Node via SSH&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description></item><item><title>Access Linux VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-linux-vm/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to connect to the Linux Virtual Machine created in the Cloud Console using the SSH Protocol&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuring-firewalls"&gt;Configuring Firewalls&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-new-firewall-with-required-rule"&gt;Create New Firewall with required rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-required-rule-to-the-existing-firewall"&gt;Add required rule to the existing Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-using-ssh"&gt;Connect using SSH&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description></item><item><title>Database's Custom Options</title><link>https://docs.ventuscloud.eu/products/databases/database-custom-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-custom-options/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Custom Options, how to manage them in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-databases-custom-options"&gt;Edit Database&amp;rsquo;s Custom Options&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#postgresql"&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mysql"&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mariadb"&gt;MariaDB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Custom Options&lt;/strong&gt; are a feature provided to modify options of your database. You can edit various settings such as max connections, WAL sender timeout, streaming delay, etc. depending on the database type.&lt;/p&gt;</description></item><item><title>Database's Replicas</title><link>https://docs.ventuscloud.eu/products/databases/database-replicas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-replicas/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Replica, how to create and manage them in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#make-databases-replica"&gt;Make Database&amp;rsquo;s Replica&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-databases-replica"&gt;Delete Database&amp;rsquo;s Replica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Replicas&lt;/strong&gt; are a feature provided to ensure the security of your databases. In the Cloud Console, you can create up to 5 replicas of your database in different projects, across one or multiple regions.&lt;/p&gt;</description></item><item><title>Firewalls</title><link>https://docs.ventuscloud.eu/products/security/firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewalls/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Firewalls and instructions for other steps to manage Firewalls in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#firewalls-page"&gt;Firewalls page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-firewall"&gt;Create Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-firewall"&gt;Edit Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-firewall"&gt;Delete Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-firewall-to-the-vm"&gt;Add Firewall to the VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="firewalls-page"&gt;Firewalls page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Firewalls page&lt;/em&gt;, select the &lt;strong&gt;Security&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Firewalls TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/fw/1.png?width=20pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Networks</title><link>https://docs.ventuscloud.eu/products/networking/networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/networks/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Networks and instructions for other steps to manage Networks in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#networks-page"&gt;Networks page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-network"&gt;Create Network&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-subnet"&gt;Create Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-network"&gt;Edit Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-network"&gt;Delete Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#attach-network-interface-to-the-vm"&gt;Attach Network Interface to the VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="networks-page"&gt;Networks page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Networks page&lt;/em&gt;, select the &lt;strong&gt;Networking&lt;/strong&gt;  from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Networks TAB:&lt;/strong&gt;:
+&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/networks/net-13.png?width=20pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Organizations</title><link>https://docs.ventuscloud.eu/getting-started/organizations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/organizations/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create a new Organization and how to manage it in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#users-within-organization"&gt;Users within Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#organizations-page"&gt;Organizations page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-organization"&gt;Create Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-organization"&gt;Edit Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-organization"&gt;Delete Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#leave-organization"&gt;Leave Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-administrators"&gt;Add Administrators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#transfer-an-organization"&gt;Transfer an Organization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="users-within-organization"&gt;Users within Organization&lt;/h2&gt;
+&lt;p&gt;In the Cloud Console Organizations User can have next Roles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Owner&lt;/strong&gt; - this role is assigned to a User, who created this Organization (this User will also be considered the &lt;em&gt;Administrator&lt;/em&gt; of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Administrator&lt;/strong&gt; - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can&amp;rsquo;t edit or delete Organization;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Member&lt;/strong&gt; - this role is assigned to a User who is granted access to the Organization&amp;rsquo;s Project and, accordingly, to all resources within this Project. Member can&amp;rsquo;t add/remove other Users in the Project, can&amp;rsquo;t see information about Administrators or Billing of the Organization, can&amp;rsquo;t add new Projects, edit or delete current one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As a &lt;em&gt;Owner&lt;/em&gt; or &lt;em&gt;Administrator&lt;/em&gt; you can add additional Admins to the Organization, which will also have access to all resources of the Organization.&lt;br&gt;
+Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/"&gt;Administrators&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>RWX Storage Class</title><link>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to access your Kubernetes cluster and configure ReadWriteMany (RWX) storage using SeaweedFS.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#configuring-seaweedfs-as-rwx-storage-in-kubernetes"&gt;Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#why-seaweedfs-for-rwx-storage"&gt;Why SeaweedFS for RWX Storage?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#seaweedfs-components"&gt;SeaweedFS Components&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#non-ha-vs-ha"&gt;Non-HA vs. HA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#installing-seaweedfs-and-the-csi-driver"&gt;Installing SeaweedFS and the CSI Driver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#testing-rwx-storage"&gt;Testing RWX Storage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="configuring-seaweedfs-as-rwx-storage-in-kubernetes"&gt;Configuring SeaweedFS as RWX Storage in Kubernetes&lt;/h1&gt;
+&lt;p&gt;This guide walks you through setting up SeaweedFS as an NFS-like RWX (ReadWriteMany) storage solution in a Kubernetes cluster. We’ll cover:&lt;/p&gt;</description></item><item><title>Share Images between Projects</title><link>https://docs.ventuscloud.eu/products/images/share-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/share-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, we will discuss a workflow to help you to share Images between Projects in the same Region.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workflow"&gt;Workflow&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#share-image-with-another-project"&gt;Share Image with another Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#accept-shared-image"&gt;Accept shared Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#unshare-image"&gt;Unshare Image&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article, we will assume that we have already created two Projects, belonging to different Organizations, but to the same Region, and the following resources within these Projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project 1&lt;/strong&gt; named &lt;em&gt;dev-1&lt;/em&gt;, that was created in the Organization named &lt;em&gt;Test1&lt;/em&gt; and related to the Vienna Region, with the following resources:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CLI User&lt;/strong&gt; named &lt;em&gt;dev1CLIuser&lt;/em&gt; and which RC file has already been loaded;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu Virtual Machine&lt;/strong&gt; - IP: 185.226.43.42, Name: &lt;em&gt;test-1&lt;/em&gt;; it was created with an additional firewall, configured to allow connection to this VM remotely via SSH;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Custom Image&lt;/strong&gt; named &lt;em&gt;test-custom-image&lt;/em&gt;;&lt;br&gt;
+For detailed instructions on how to upload custom image, see next articles: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/#custom-images"&gt;Custom Images&lt;/a&gt;, &lt;a href="https://docs.ventuscloud.eu/products/images/image-from-snapshot/"&gt;Create Image from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices tip" >&lt;p>You can upload any custom Image to your Project. Please see detailed instructions, if you need: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/">Images&lt;/a>&lt;/p></description></item><item><title>Working with OpenStack API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to work with OpenStack API
-using the Cloud Console Account.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configure-credentials-file">Configure credentials file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#dot-source-credentials-file">Dot source credentials file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#run-test-commands">Run test commands&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#change-region">Change region&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#find-resources">Find resources&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>We encourage clients to use &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/">CLI Users&lt;/a> to work directly with OpenStack API, but it has a limitation - it&amp;rsquo;s bonded to the specific project in the specific region.&lt;br>
+&lt;div class="notices tip" &gt;&lt;p&gt;You can upload any custom Image to your Project. Please see detailed instructions, if you need: &lt;a href="https://docs.ventuscloud.eu/products/images/custom-images/"&gt;Images&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Working with OpenStack API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/working-with-openstack-api/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to work with OpenStack API
+using the Cloud Console Account.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configure-credentials-file"&gt;Configure credentials file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#dot-source-credentials-file"&gt;Dot source credentials file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#run-test-commands"&gt;Run test commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#change-region"&gt;Change region&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#find-resources"&gt;Find resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#conclusion"&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We encourage clients to use &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users/"&gt;CLI Users&lt;/a&gt; to work directly with OpenStack API, but it has a limitation - it&amp;rsquo;s bonded to the specific project in the specific region.&lt;br&gt;
 When you need to manage resources in all regions and all projects using the same
-credentials, you can use the Cloud Console Account.&lt;/p></description></item><item><title>Access Windows VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to connect to the Windows Virtual Machine created in the Cloud Console using the Remote Desktop Protocol&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configuring-firewalls">Configuring Firewalls&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-new-firewall-with-required-rule">Create New Firewall with required rule&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-required-rule-to-the-existing-firewall">Add required rule to the existing Firewall&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#connect-using-rdp">Connect using RDP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em>Test-Project&lt;/em> that was created in the Organization named &lt;em>Test-Organization&lt;/em>:&lt;/p></description></item><item><title>Administrators</title><link>https://docs.ventuscloud.eu/identity-management/administrators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/administrators/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#administrators-page">Administrators page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-administrator">Add Administrator&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#resend-invitation">Resend Invitation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-invitation">Delete Invitation&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#transfer-organization">Transfer Organization&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#remove-administrator">Remove Administrator&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="administrators-page">Administrators page&lt;/h2>
+credentials, you can use the Cloud Console Account.&lt;/p&gt;</description></item><item><title>Access Windows VM</title><link>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/compute/connect-windows-vm/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to connect to the Windows Virtual Machine created in the Cloud Console using the Remote Desktop Protocol&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configuring-firewalls"&gt;Configuring Firewalls&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-new-firewall-with-required-rule"&gt;Create New Firewall with required rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-required-rule-to-the-existing-firewall"&gt;Add required rule to the existing Firewall&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-using-rdp"&gt;Connect using RDP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article we will assume, that we have already created the following resources, that refer to the Project named &lt;em&gt;Test-Project&lt;/em&gt; that was created in the Organization named &lt;em&gt;Test-Organization&lt;/em&gt;:&lt;/p&gt;</description></item><item><title>Administrators</title><link>https://docs.ventuscloud.eu/identity-management/administrators/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/administrators/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to register new Users and to add them as a new Administrator to the Organization, how to transfer the Organization to another User and how to remove Administrator from the Organization in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#administrators-page"&gt;Administrators page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-administrator"&gt;Add Administrator&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#resend-invitation"&gt;Resend Invitation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-invitation"&gt;Delete Invitation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#transfer-organization"&gt;Transfer Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#remove-administrator"&gt;Remove Administrator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="administrators-page"&gt;Administrators page&lt;/h2&gt;
 
-&lt;div class="notices note" >&lt;p>To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em>Administrator&lt;/em> or &lt;em>Owner&lt;/em>.&lt;/p></description></item><item><title>Database's Backups</title><link>https://docs.ventuscloud.eu/products/databases/database_backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database_backups/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is database&amp;rsquo;s Backups, how to create it and how to restore Database from its Backup in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#link-database-to-the-s3-storage">Link Database to the S3 Storage&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configure-the-scheduler-for-database-backups">Configure the Scheduler for Database Backups&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-immediate-database-backup">Create Immediate Database Backup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#restore-database-from-backup">Restore Database from Backup&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Database&amp;rsquo;s Backups&lt;/strong> offer an additional layer of security for your databases, similar to Database&amp;rsquo;s Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety.&lt;/p></description></item><item><title>Firewall Rules</title><link>https://docs.ventuscloud.eu/products/security/firewall-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewall-rules/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, delete Firewall Rules and instructions for other steps to manage Firewall Rules in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#firewall-rules-page">Firewall Rules page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#firewall-rules-characteristics">Firewall Rules Characteristics&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-firewall-rule">Create Firewall Rule&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#firewall-rule-details-page">Firewall Rule details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-firewall-rule">Delete Firewall Rule&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#firewall-rule-for-ssh-protocol">Firewall Rule for SSH Protocol&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#firewall-rule-for-rdp">Firewall Rule for RDP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="firewall-rules-page">Firewall Rules page&lt;/h2>
-&lt;p>To get to the &lt;em>Firewall Rules page&lt;/em>, click on the &lt;strong>Name&lt;/strong> of the corresponding Firewall on the &lt;em>Firewalls page&lt;/em>:
-&lt;img src="../../../assets/images/fw/5.png?classes=border,shadow" alt="">&lt;/p></description></item><item><title>Floating IPs</title><link>https://docs.ventuscloud.eu/products/networking/floating-ips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/floating-ips/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, associate, edit, delete Floating IPs and instructions for other steps to manage Floating IPs in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#floating-ip">Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#floating-ips-page">Floating IPs page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-floating-ip">Create Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-floating-ip">Edit Floating IP&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-floating-ip">Delete Floating IP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="floating-ip">Floating IP&lt;/h2>
-&lt;p>Floating IP is an IP address allocated from Public network range by request and associated with specific project. You can assign Floating IP to any of your instances provisioned in private networks. This provides great flexibility in management of your network resources.&lt;/p></description></item><item><title>Organization's management over API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</guid><description>&lt;hr>
-&lt;p>On this page, you can find the workflow for management of your Organization in
-the Cloud Console using API.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#required-endpoints">Required endpoints&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#example-using-curl">Example using CURL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#example-using-postman">Example using Postman&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="required-endpoints">Required endpoints&lt;/h2>
-&lt;ul>
-&lt;li>&lt;em>auth.ventuscloud.eu&lt;/em> - use it to get ID and Access tokens from basic credentials&lt;/li>
-&lt;li>&lt;em>api.ventuscloud.eu&lt;/em> - use it to work with organization&amp;rsquo;s resources &lt;/li>
-&lt;/ul>
-&lt;h2 id="example-using-curl">Example using CURL&lt;/h2>
-&lt;p>&lt;strong>Get ID and Access tokens&lt;/strong>&lt;br>
-To get ID and Access tokens. use next command:&lt;/p></description></item><item><title>Routers</title><link>https://docs.ventuscloud.eu/products/networking/routers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/routers/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Routers and how to manage Interfaces inside them in Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#routers">Routers&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#routers-page">Routers page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-router">Create Router&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#add-interface-to-the-router">Add Interface to the Router&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-custom-route-to-the-router">Add custom Route to the Router&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-router">Edit Router&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-router">Delete Router&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="routers">Routers&lt;/h2>
-&lt;p>Router is an important infrastructure component that can come in handy when you need to:&lt;/p>
-&lt;ul>
-&lt;li>Provide access to the internet for instances provisioned in a private network;&lt;/li>
-&lt;li>Interconnect two or more networks;&lt;/li>
-&lt;li>Manage routes for traffic in advanced network scenarios;&lt;/li>
-&lt;/ul>
-&lt;h2 id="routers-page">Routers page&lt;/h2>
-&lt;p>To get to the &lt;em>Routers page&lt;/em>, select the &lt;strong>Networking&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Routers TAB:&lt;/strong>
-&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/routers/1.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#subnets-page">Subnets page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-subnet">Create Subnet&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#connect-subnets">Connect Subnets&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-subnet">Edit Subnet&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-subnet">Delete Subnet&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="subnets-page">Subnets page&lt;/h2>
-&lt;p>To open the &lt;em>Subnets page&lt;/em>, go to &lt;em>Networking page&lt;/em> and click on the &lt;strong>Name&lt;/strong> of the corresponding Network:
-&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt="">&lt;/p>
-&lt;p>On this page you can find:&lt;/p>
-&lt;ul>
-&lt;li>panel with available &lt;strong>quick actions&lt;/strong> for the selected Network:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/networks/net-14.png?width=25pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Transfer Images between Regions</title><link>https://docs.ventuscloud.eu/products/images/transfer-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/transfer-images/</guid><description>&lt;hr>
-&lt;p>On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Regions.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#workflow">Workflow&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prepare-custom-image">Prepare custom Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#save-custom-image">Save custom Image&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#upload-custom-image">Upload custom Image&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Project-1&lt;/strong> named &lt;em>v-dev&lt;/em>, that related to the &lt;em>Vienna&lt;/em> Region, with the following resources:&lt;/p></description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr>
-&lt;p>On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p>
-&lt;blockquote>
-&lt;p>Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.&lt;/p>
-&lt;p>Most of the features described below are in beta state, thus not available at the Console portal, and can be configured through CLI and IaC tools like Terraform and Ansible.&lt;/p></description></item><item><title>VM's Firewalls</title><link>https://docs.ventuscloud.eu/products/security/manage-firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/manage-firewalls/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#vms-networks--security-tab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#change-firewall-set">Change Firewall set&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="vms-networks--security-tab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2>
-&lt;p>To find all Firewalls, related to the selected Virtual Machine, you need:&lt;/p>
-&lt;ul>
-&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Database Management</title><link>https://docs.ventuscloud.eu/products/databases/database-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-management/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create and delete databases within your main database instance in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-database">Create Database&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-database">Delete Database&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="create-database">Create Database&lt;/h2>
-&lt;p>To create a new database within your main database instance:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Navigate to the Database Management page
-&lt;img src="../../../assets/images/databases/dbs.png?classes=border,shadow" alt="">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click the CREATE button&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the opened window, fill in the following parameters:
-&lt;img src="../../../assets/images/databases/createdb.png?classes=border,shadow" alt="">&lt;/p>
-&lt;ul>
-&lt;li>Name: Enter a name for your new database&lt;/li>
-&lt;li>Charset: Select the character set for the database&lt;/li>
-&lt;li>Collation: Choose the collation for the database&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Click CREATE to confirm&lt;/p></description></item><item><title>Projects</title><link>https://docs.ventuscloud.eu/getting-started/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/projects/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create a new Project, and how to manage them in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#projects-page">Projects page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-project">Create Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#project-overview-page">Project Overview Page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-budget-threshold">Set Budget Threshold&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-project">Edit Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-project">Delete Project&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-users-to-project">Add users to Project&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="projects-page">Projects page&lt;/h2>
+&lt;div class="notices note" &gt;&lt;p&gt;To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Database's Backups</title><link>https://docs.ventuscloud.eu/products/databases/database_backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database_backups/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Backups, how to create it and how to restore Database from its Backup in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#link-database-to-the-s3-storage"&gt;Link Database to the S3 Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configure-the-scheduler-for-database-backups"&gt;Configure the Scheduler for Database Backups&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-immediate-database-backup"&gt;Create Immediate Database Backup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#restore-database-from-backup"&gt;Restore Database from Backup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Backups&lt;/strong&gt; offer an additional layer of security for your databases, similar to Database&amp;rsquo;s Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety.&lt;/p&gt;</description></item><item><title>Firewall Rules</title><link>https://docs.ventuscloud.eu/products/security/firewall-rules/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/firewall-rules/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, delete Firewall Rules and instructions for other steps to manage Firewall Rules in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#firewall-rules-page"&gt;Firewall Rules page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#firewall-rules-characteristics"&gt;Firewall Rules Characteristics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-firewall-rule"&gt;Create Firewall Rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#firewall-rule-details-page"&gt;Firewall Rule details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-firewall-rule"&gt;Delete Firewall Rule&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#firewall-rule-for-ssh-protocol"&gt;Firewall Rule for SSH Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#firewall-rule-for-rdp"&gt;Firewall Rule for RDP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="firewall-rules-page"&gt;Firewall Rules page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Firewall Rules page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Firewall on the &lt;em&gt;Firewalls page&lt;/em&gt;:
+&lt;img src="../../../assets/images/fw/5.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Floating IPs</title><link>https://docs.ventuscloud.eu/products/networking/floating-ips/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/floating-ips/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, associate, edit, delete Floating IPs and instructions for other steps to manage Floating IPs in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#floating-ip"&gt;Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#floating-ips-page"&gt;Floating IPs page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-floating-ip"&gt;Create Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-floating-ip"&gt;Edit Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-floating-ip"&gt;Delete Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="floating-ip"&gt;Floating IP&lt;/h2&gt;
+&lt;p&gt;Floating IP is an IP address allocated from Public network range by request and associated with specific project. You can assign Floating IP to any of your instances provisioned in private networks. This provides great flexibility in management of your network resources.&lt;/p&gt;</description></item><item><title>Organization's management over API</title><link>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/org-management--over-api/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find the workflow for management of your Organization in
+the Cloud Console using API.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#required-endpoints"&gt;Required endpoints&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#example-using-curl"&gt;Example using CURL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#example-using-postman"&gt;Example using Postman&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="required-endpoints"&gt;Required endpoints&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;auth.ventuscloud.eu&lt;/em&gt; - use it to get ID and Access tokens from basic credentials&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;api.ventuscloud.eu&lt;/em&gt; - use it to work with organization&amp;rsquo;s resources &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="example-using-curl"&gt;Example using CURL&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Get ID and Access tokens&lt;/strong&gt;&lt;br&gt;
+To get ID and Access tokens. use next command:&lt;/p&gt;</description></item><item><title>Routers</title><link>https://docs.ventuscloud.eu/products/networking/routers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/routers/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Routers and how to manage Interfaces inside them in Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#routers"&gt;Routers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#routers-page"&gt;Routers page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-router"&gt;Create Router&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#add-interface-to-the-router"&gt;Add Interface to the Router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-custom-route-to-the-router"&gt;Add custom Route to the Router&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-router"&gt;Edit Router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enabledisable-router"&gt;Enable/Disable Router&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-router"&gt;Delete Router&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="routers"&gt;Routers&lt;/h2&gt;
+&lt;p&gt;Router is an important infrastructure component that can come in handy when you need to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide access to the internet for instances provisioned in a private network;&lt;/li&gt;
+&lt;li&gt;Interconnect two or more networks;&lt;/li&gt;
+&lt;li&gt;Manage routes for traffic in advanced network scenarios;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="routers-page"&gt;Routers page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Routers page&lt;/em&gt;, select the &lt;strong&gt;Networking&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Routers TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/networks/net-1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/routers/1.png?width=25pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Subnets</title><link>https://docs.ventuscloud.eu/products/networking/subnets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/subnets/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Subnets and instructions for other steps to manage Subnets in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#subnets-page"&gt;Subnets page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-subnet"&gt;Create Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#connect-subnets"&gt;Connect Subnets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-subnet"&gt;Edit Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-subnet"&gt;Delete Subnet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="subnets-page"&gt;Subnets page&lt;/h2&gt;
+&lt;p&gt;To open the &lt;em&gt;Subnets page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt; and click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network:
+&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;On this page you can find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;panel with available &lt;strong&gt;quick actions&lt;/strong&gt; for the selected Network:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/networks/net-14.png?width=25pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Transfer Images between Regions</title><link>https://docs.ventuscloud.eu/products/images/transfer-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/transfer-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Regions.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#workflow"&gt;Workflow&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prepare-custom-image"&gt;Prepare custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#save-custom-image"&gt;Save custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#upload-custom-image"&gt;Upload custom Image&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Project-1&lt;/strong&gt; named &lt;em&gt;v-dev&lt;/em&gt;, that related to the &lt;em&gt;Vienna&lt;/em&gt; Region, with the following resources:&lt;/p&gt;</description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.&lt;/p&gt;
+&lt;p&gt;Most of the features described below are in beta state, thus not available at the Console portal, and can be configured through CLI and IaC tools like Terraform and Ansible.&lt;/p&gt;</description></item><item><title>VM's Firewalls</title><link>https://docs.ventuscloud.eu/products/security/manage-firewalls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/manage-firewalls/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to manage Firewalls, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vms-networks--security-tab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#change-firewall-set"&gt;Change Firewall set&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vms-networks--security-tab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2&gt;
+&lt;p&gt;To find all Firewalls, related to the selected Virtual Machine, you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Database Management</title><link>https://docs.ventuscloud.eu/products/databases/database-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-management/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create and delete databases within your main database instance in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-database"&gt;Create Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-database"&gt;Delete Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="create-database"&gt;Create Database&lt;/h2&gt;
+&lt;p&gt;To create a new database within your main database instance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the Database Management page
+&lt;img src="../../../assets/images/databases/dbs.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the CREATE button&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the opened window, fill in the following parameters:
+&lt;img src="../../../assets/images/databases/createdb.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name: Enter a name for your new database&lt;/li&gt;
+&lt;li&gt;Charset: Select the character set for the database&lt;/li&gt;
+&lt;li&gt;Collation: Choose the collation for the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click CREATE to confirm&lt;/p&gt;</description></item><item><title>Projects</title><link>https://docs.ventuscloud.eu/getting-started/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/projects/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create a new Project, and how to manage them in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#projects-page"&gt;Projects page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-project"&gt;Create Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#project-overview-page"&gt;Project Overview Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-budget-threshold"&gt;Set Budget Threshold&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-project"&gt;Edit Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-project"&gt;Delete Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-users-to-project"&gt;Add users to Project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="projects-page"&gt;Projects page&lt;/h2&gt;
 
-&lt;div class="notices note" >&lt;p>To see information about Projects of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em>Administrator&lt;/em> or &lt;em>Owner&lt;/em>.&lt;/p></description></item><item><title>The Site to Site IPSec VPN</title><link>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to configure Site to Site IPSec
-connection between the Cloud Console Regions.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configure-site-to-site-ipsec-connection">Configure Site to Site IPSec connection&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#strongswan-useful-commands">Strongswan useful commands&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#capture-traffic">Capture traffic&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#disable-port-security">Disable port-security&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#preparing-client-side">Preparing client side&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#verifying-connectivity">Verifying connectivity&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ol>
-&lt;li>Create a private network in each region. How to create a network see the articles - &lt;a href="https://docs.ventuscloud.eu/products/networking/networks/">Networks&lt;/a> and &lt;a href="https://docs.ventuscloud.eu/products/networking/subnets/">Subnets&lt;/a>&lt;/li>
-&lt;li>Create two VMs in private and public networks based on Ubuntu 18.04 or higher in each region. How to create VMs see the article - &lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/">Virtual Machines&lt;/a>&lt;/li>
-&lt;li>For testing, need to create on each private network VM based on Windows or Linux&lt;/li>
-&lt;/ol>
-&lt;h2 id="configure-site-to-site-ipsec-connection">Configure Site to Site IPSec connection&lt;/h2>
-&lt;p>Example network topology:
-&lt;img src="../../assets/images/tutorials/11.png?classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Networks and Interfaces</title><link>https://docs.ventuscloud.eu/products/networking/manage-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/manage-networks/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#vms-networks--securitytab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-interface">Add Interface&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#remove-interface">Remove Interface&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="vms-networks--securitytab">VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2>
-&lt;p>To find all Networks and Interfaces related to the selected Virtual Machine, you need:&lt;/p>
-&lt;ul>
-&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Volumes</title><link>https://docs.ventuscloud.eu/products/storage/volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/volumes/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#volumes-page">Volumes page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-volume">Create Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#attach-volume">Attach Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#detach-volume">Detach Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-vm-from-volume">Create VM from Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-volume">Edit Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#extend-volume">Extend Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-volume">Delete Volume&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="volumes-page">Volumes page&lt;/h2>
-&lt;p>To get to the &lt;em>Volumes page&lt;/em>, select the &lt;strong>Storage&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Volumes TAB:&lt;/strong>
-&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/vol/2.png?width=30pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>VM's Volumes</title><link>https://docs.ventuscloud.eu/products/storage/manage-volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-volumes/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to manage Volumes, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#vms-volumes-tab">VM&amp;rsquo;s VOLUMES TAB&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#attach-volume">Attach Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#detach-volume">Detach Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-volume">Edit Volume&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#extend-volume">Extend Volume&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="vms-volumes-tab">VM&amp;rsquo;s VOLUMES TAB&lt;/h2>
-&lt;p>To find all Volumes, related to the selected Virtual Machine, you need:&lt;/p>
-&lt;ul>
-&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Groups</title><link>https://docs.ventuscloud.eu/identity-management/groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/groups/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create and manage a new Group in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#groups-page">Groups page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-group">Create Group&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configure-group">Configure Group&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#manage-projects-in-group">Manage Projects in Group&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#manage-users-in-group">Manage Users in Group&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#edit-group">Edit Group&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-group">Delete Group&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="groups-page">Groups page&lt;/h2>
+&lt;div class="notices note" &gt;&lt;p&gt;To see information about Projects of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>The Site to Site IPSec VPN</title><link>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/site-to-site-ipsec-vpn/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to configure Site to Site IPSec
+connection between the Cloud Console Regions.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configure-site-to-site-ipsec-connection"&gt;Configure Site to Site IPSec connection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#strongswan-useful-commands"&gt;Strongswan useful commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#capture-traffic"&gt;Capture traffic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#disable-port-security"&gt;Disable port-security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#preparing-client-side"&gt;Preparing client side&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#verifying-connectivity"&gt;Verifying connectivity&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a private network in each region. How to create a network see the articles - &lt;a href="https://docs.ventuscloud.eu/products/networking/networks/"&gt;Networks&lt;/a&gt; and &lt;a href="https://docs.ventuscloud.eu/products/networking/subnets/"&gt;Subnets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create two VMs in private and public networks based on Ubuntu 18.04 or higher in each region. How to create VMs see the article - &lt;a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/"&gt;Virtual Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;For testing, need to create on each private network VM based on Windows or Linux&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="configure-site-to-site-ipsec-connection"&gt;Configure Site to Site IPSec connection&lt;/h2&gt;
+&lt;p&gt;Example network topology:
+&lt;img src="../../assets/images/tutorials/11.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>VM's Networks and Interfaces</title><link>https://docs.ventuscloud.eu/products/networking/manage-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/manage-networks/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vms-networks--securitytab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-interface"&gt;Add Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#remove-interface"&gt;Remove Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vms-networks--securitytab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2&gt;
+&lt;p&gt;To find all Networks and Interfaces related to the selected Virtual Machine, you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Volumes</title><link>https://docs.ventuscloud.eu/products/storage/volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/volumes/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#volumes-page"&gt;Volumes page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-volume"&gt;Create Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#attach-volume"&gt;Attach Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#detach-volume"&gt;Detach Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-vm-from-volume"&gt;Create VM from Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-volume"&gt;Edit Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#extend-volume"&gt;Extend Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-volume"&gt;Delete Volume&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="volumes-page"&gt;Volumes page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Volumes page&lt;/em&gt;, select the &lt;strong&gt;Storage&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Volumes TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/vol/2.png?width=30pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>VM's Volumes</title><link>https://docs.ventuscloud.eu/products/storage/manage-volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-volumes/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to manage Volumes, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vms-volumes-tab"&gt;VM&amp;rsquo;s VOLUMES TAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#attach-volume"&gt;Attach Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#detach-volume"&gt;Detach Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-volume"&gt;Edit Volume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#extend-volume"&gt;Extend Volume&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vms-volumes-tab"&gt;VM&amp;rsquo;s VOLUMES TAB&lt;/h2&gt;
+&lt;p&gt;To find all Volumes, related to the selected Virtual Machine, you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Groups</title><link>https://docs.ventuscloud.eu/identity-management/groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/identity-management/groups/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create and manage a new Group in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#groups-page"&gt;Groups page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-group"&gt;Create Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configure-group"&gt;Configure Group&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#manage-projects-in-group"&gt;Manage Projects in Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#manage-users-in-group"&gt;Manage Users in Group&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-group"&gt;Edit Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-group"&gt;Delete Group&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="groups-page"&gt;Groups page&lt;/h2&gt;
 
-&lt;div class="notices note" >&lt;p>In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p></description></item><item><title>Pulumi</title><link>https://docs.ventuscloud.eu/iac/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/pulumi/</guid><description>&lt;hr>
-&lt;p>On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-virtual-machine-setup">Basic virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#complex-virtual-machine-setup">Complex virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-kubernetes-setup">Basic Kubernetes setup&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Pulumi installation&lt;/strong> - &lt;a href="https://www.pulumi.com/docs/install">https://www.pulumi.com/docs/install&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Create CLI user&lt;/strong> - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users">https://docs.ventuscloud.eu/products/security/cli-users&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Save credentials in Pulumi secrets&lt;/strong> - In our scenario, we utilize the Pulumi CLI to securely store credentials. More detailed info &lt;a href="https://www.pulumi.com/docs/concepts/secrets">https://www.pulumi.com/docs/concepts/secrets&lt;/a>&lt;/li>
-&lt;/ul>
+&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p&gt;</description></item><item><title>Pulumi</title><link>https://docs.ventuscloud.eu/iac/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/pulumi/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-virtual-machine-setup"&gt;Basic virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#complex-virtual-machine-setup"&gt;Complex virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-kubernetes-setup"&gt;Basic Kubernetes setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pulumi installation&lt;/strong&gt; - &lt;a href="https://www.pulumi.com/docs/install"&gt;https://www.pulumi.com/docs/install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create CLI user&lt;/strong&gt; - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users"&gt;https://docs.ventuscloud.eu/products/security/cli-users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save credentials in Pulumi secrets&lt;/strong&gt; - In our scenario, we utilize the Pulumi CLI to securely store credentials. More detailed info &lt;a href="https://www.pulumi.com/docs/concepts/secrets"&gt;https://www.pulumi.com/docs/concepts/secrets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>The Pulumi CLI never transmits your cloud credentials to Pulumi Cloud.&lt;/p></description></item><item><title>Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/snapshots/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Snapshots and how to create Volumes from the Snapshots in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#snapshots-page">Snapshots page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-snapshot">Create Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-volume-from-snapshot">Create Volume from Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-vm-from-snapshot">Create VM from Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-image-from-snapshot">Create image from Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-snapshot">Edit Snapshot &lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-snapshot">Delete Snapshot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="snapshots-page">Snapshots page&lt;/h2>
-&lt;p>To get to the &lt;em>Snapshots page&lt;/em>, select &lt;strong>Storage&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>Snapshots TAB&lt;/strong>:
-&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/snap/1.png?width=30pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>SSH Keys</title><link>https://docs.ventuscloud.eu/products/security/ssh-keys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/ssh-keys/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, delete SSH Keys and instructions for other steps to manage SSH Keys in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#ssh-keys-page">SSH Keys page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-ssh-key-pair">Create SSH Key Pair&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#add-public-key">Add Public Key&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#copy-public-key">Copy Public Key&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-ssh-key-pair">Delete SSH Key Pair&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="ssh-keys-page">SSH Keys page&lt;/h2>
-&lt;p>To get to the &lt;em>SSH Keys page&lt;/em>, select &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>SSH Keys TAB:&lt;/strong>
-&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/ssh/1.png?width=23pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>User Management</title><link>https://docs.ventuscloud.eu/products/databases/database-user-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-user-management/</guid><description>&lt;hr>
-&lt;p>On this page, you can find instructions on how to manage database users, including creating and deleting users, assigning permissions, and resetting passwords.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-user">Create User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-user">Delete User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#reset-user-password">Reset User Password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-user-permissions">Set User Permissions&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="create-user">Create User&lt;/h2>
-&lt;p>To create a new database user:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Click the CREATE USER button&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the opened window, enter the following information:
-&lt;img src="../../../assets/images/databases/createuser.png?classes=border,shadow" alt="">&lt;/p>
-&lt;ul>
-&lt;li>Username: Enter a name for the new user&lt;/li>
-&lt;li>Database: Select the database(s) the user should have access to&lt;/li>
-&lt;li>Permissions: Choose either Read or ReadWrite permissions&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Click CREATE to confirm&lt;/p></description></item><item><title>Terraform</title><link>https://docs.ventuscloud.eu/iac/terraform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/terraform/</guid><description>&lt;hr>
-&lt;p>On this page, you can find essential steps and code for starting with Terraform and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#prerequisites">Prerequisites&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#prepare-terraform-environment">Prepare Terraform environment&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-virtual-machine-setup">Basic virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#complex-virtual-machine-setup">Complex virtual machine setup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#basic-kubernetes-setup">Basic Kubernetes setup&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Terraform installation&lt;/strong> - &lt;a href="https://developer.hashicorp.com/terraform/install">https://developer.hashicorp.com/terraform/install&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Create CLI user&lt;/strong> - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users">https://docs.ventuscloud.eu/products/security/cli-users&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Install CLI client&lt;/strong> - &lt;a href="https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/">https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="prepare-terraform-environment">Prepare Terraform environment&lt;/h2>
-&lt;ol>
-&lt;li>Set Up Your Environment
-Once Terraform is installed, create a new directory for your Terraform configurations. This directory will hold all your Terraform files for a specific project:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>mkdir terraform_basic_vm
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd terraform_basic_vm
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
-&lt;li>Create file provider.tf in terraform_basic_vm folder and add following code:&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-tf" data-lang="tf">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">terraform&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">required_version&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;gt;= 0.14.0&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">required_providers&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">openstack&lt;/span> &lt;span style="color:#f92672">=&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">source&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;terraform-provider-openstack/openstack&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">version&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;~&amp;gt; 1.53.0&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is a configuration block for Terraform, an infrastructure as code tool used for building, changing, and versioning infrastructure safely and efficiently. We will use it in all our examples.&lt;/p></description></item><item><title>VM's Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, from the &lt;em>Virtual Machine details page&lt;/em> in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#vms-snapshots-tab">VM&amp;rsquo;s SNAPSHOTS TAB&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-snapshot">Create Snapshot&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-snapshot">Edit Snapshot &lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-snapshot">Delete Snapshot&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="vms-snapshots-tab">VM&amp;rsquo;s SNAPSHOTS TAB&lt;/h2>
-&lt;p>To find all Snapshots, related to the selected Virtual Machine, you need:&lt;/p>
-&lt;ul>
-&lt;li>open the &lt;em>Virtual Machines page&lt;/em> - for this select the &lt;strong>Virtual Machines&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em>:&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Object Storage Credentials</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what Object Storage is and what Object Storage Credentials are in the Cloud Console. It also covers the available access methods for Object Storage, as well as instructions on how to create, delete, and manage Object Storage Credentials in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#object-storage-credentials-page">Object Storage Credentials page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-object-storage-credentials">Create Object Storage credentials&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#show-secret-key">Show secret key&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#re-generate-secret-key">Re-generate secret key&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-object-storage-credentials">Delete Object Storage Credentials&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>What is Object Storage?&lt;/strong>&lt;br>
-The Cloud Console Object Storage makes it possible to store data simply and cost-effectively. It provides a fully distributed, API-accessible storage platform that can be integrated directly into applications or used for backup, archiving, and data retention.&lt;/p></description></item><item><title>Integrated S3-Browser</title><link>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to use Object Storage with its integrated S3-Browser in the Cloud Console, how to create and delete buckets, how to navigate through folders and files, upload and download files and instructions for other steps to manage an Object Storage effectively in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#s3-buckets-page">S3 Buckets page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-bucket">Create bucket&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket.&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-folder">Create folder&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#upload-file">Upload file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#download-file">Download file&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#make-bucket-public">Make bucket public&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#get-buckets-public-url">Get bucket&amp;rsquo;s public URL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#get-objects-public-url">Get object&amp;rsquo;s public URL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#make-bucket-private">Make bucket private&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-and-multi-delete-objects">Delete and multi-delete objects&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-bucket-retention-policy">Set bucket retention policy&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#fast-bucket-cleanup-technique">Fast bucket cleanup technique&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-retention-policy">Delete retention policy&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#delete-bucket">Delete bucket&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In the Cloud Console, you have the option to use Object Storage with its integrated S3-Browser, which offers essential Object Storage functionality.&lt;/p></description></item><item><title>CLI Users</title><link>https://docs.ventuscloud.eu/products/security/cli-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/cli-users/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#cli-users-page">CLI Users page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-cli-user">Create CLI User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#download-rc-file">Download RC File&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-cli-user">Edit CLI User &lt;/a>&lt;/li>
-&lt;li>&lt;a href="#change-the-password">Change the password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-cli-user">Delete CLI User&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="cli-users-page">CLI Users page&lt;/h2>
-&lt;p>To get to the &lt;em>CLI Users page&lt;/em>, select the &lt;strong>Security&lt;/strong> from the VIRTUAL DATACENTER block in the &lt;em>side-bar menu&lt;/em> and click the &lt;strong>CLI Users TAB:&lt;/strong>
-&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt="">
-&lt;img src="../../../assets/images/cli/2.png?width=20pc&amp;amp;classes=border,shadow" alt="">&lt;/p></description></item><item><title>Object Storage Clients</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#use-object-storage-with-python-api">Use Object Storage with Python API&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-connection">Create connection&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-bucket">Create bucket&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#list-buckets">List buckets&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-object">Create object&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#list-bucket-content">List bucket content&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#change-object-acl">Change object ACL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#generate-object-download-url">Generate object download URL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-object">Delete object&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#deleting-bucket">Deleting bucket&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#use-object-storage-with-third-party-tools">Use Object Storage with third-party tools&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>In the Cloud Console, you have the option to use Object Storage as with its integrated S3-Browser, or you can choose to utilize different APIs or third-party tools such as S3 Browser (a freeware Windows client available at &lt;a href="https://s3browser.com/">https://s3browser.com/&lt;/a>) or Cyberduck (a libre server and cloud storage browser available for both Mac and Windows operating systems, accessible at &lt;a href="https://cyberduck.io/)">https://cyberduck.io/)&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;The Pulumi CLI never transmits your cloud credentials to Pulumi Cloud.&lt;/p&gt;</description></item><item><title>Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/snapshots/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Snapshots and how to create Volumes from the Snapshots in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#snapshots-page"&gt;Snapshots page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-snapshot"&gt;Create Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-volume-from-snapshot"&gt;Create Volume from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-vm-from-snapshot"&gt;Create VM from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-image-from-snapshot"&gt;Create image from Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-snapshot"&gt;Edit Snapshot &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-snapshot"&gt;Delete Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="snapshots-page"&gt;Snapshots page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;Snapshots page&lt;/em&gt;, select &lt;strong&gt;Storage&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;Snapshots TAB&lt;/strong&gt;:
+&lt;img src="../../../assets/images/vol/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/snap/1.png?width=30pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>SSH Keys</title><link>https://docs.ventuscloud.eu/products/security/ssh-keys/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/ssh-keys/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, delete SSH Keys and instructions for other steps to manage SSH Keys in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#ssh-keys-page"&gt;SSH Keys page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-ssh-key-pair"&gt;Create SSH Key Pair&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#add-public-key"&gt;Add Public Key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#copy-public-key"&gt;Copy Public Key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-ssh-key-pair"&gt;Delete SSH Key Pair&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="ssh-keys-page"&gt;SSH Keys page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;SSH Keys page&lt;/em&gt;, select &lt;strong&gt;Security&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;SSH Keys TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/ssh/1.png?width=23pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>User Management</title><link>https://docs.ventuscloud.eu/products/databases/database-user-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-user-management/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find instructions on how to manage database users, including creating and deleting users, assigning permissions, and resetting passwords.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-user"&gt;Create User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-user"&gt;Delete User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reset-user-password"&gt;Reset User Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-user-permissions"&gt;Set User Permissions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="create-user"&gt;Create User&lt;/h2&gt;
+&lt;p&gt;To create a new database user:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click the CREATE USER button&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the opened window, enter the following information:
+&lt;img src="../../../assets/images/databases/createuser.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Username: Enter a name for the new user&lt;/li&gt;
+&lt;li&gt;Database: Select the database(s) the user should have access to&lt;/li&gt;
+&lt;li&gt;Permissions: Choose either Read or ReadWrite permissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click CREATE to confirm&lt;/p&gt;</description></item><item><title>Terraform</title><link>https://docs.ventuscloud.eu/iac/terraform/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/terraform/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find essential steps and code for starting with Terraform and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#prerequisites"&gt;Prerequisites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#prepare-terraform-environment"&gt;Prepare Terraform environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-virtual-machine-setup"&gt;Basic virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#complex-virtual-machine-setup"&gt;Complex virtual machine setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#basic-kubernetes-setup"&gt;Basic Kubernetes setup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Terraform installation&lt;/strong&gt; - &lt;a href="https://developer.hashicorp.com/terraform/install"&gt;https://developer.hashicorp.com/terraform/install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create CLI user&lt;/strong&gt; - &lt;a href="https://docs.ventuscloud.eu/products/security/cli-users"&gt;https://docs.ventuscloud.eu/products/security/cli-users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install CLI client&lt;/strong&gt; - &lt;a href="https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/"&gt;https://docs.ventuscloud.eu/tutorials-advanced/installation-openstack-cli/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="prepare-terraform-environment"&gt;Prepare Terraform environment&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Set Up Your Environment
+Once Terraform is installed, create a new directory for your Terraform configurations. This directory will hold all your Terraform files for a specific project:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir terraform_basic_vm
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd terraform_basic_vm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;Create file provider.tf in terraform_basic_vm folder and add following code:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-tf" data-lang="tf"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;terraform&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;required_version&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;gt;= 0.14.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;required_providers&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;openstack&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;source&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;terraform-provider-openstack/openstack&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;version&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;~&amp;gt; 1.53.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is a configuration block for Terraform, an infrastructure as code tool used for building, changing, and versioning infrastructure safely and efficiently. We will use it in all our examples.&lt;/p&gt;</description></item><item><title>VM's Snapshots</title><link>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/manage-snapshots/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#vms-snapshots-tab"&gt;VM&amp;rsquo;s SNAPSHOTS TAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-snapshot"&gt;Create Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-snapshot"&gt;Edit Snapshot &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-snapshot"&gt;Delete Snapshot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="vms-snapshots-tab"&gt;VM&amp;rsquo;s SNAPSHOTS TAB&lt;/h2&gt;
+&lt;p&gt;To find all Snapshots, related to the selected Virtual Machine, you need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Object Storage Credentials</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-credentials/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what Object Storage is and what Object Storage Credentials are in the Cloud Console. It also covers the available access methods for Object Storage, as well as instructions on how to create, delete, and manage Object Storage Credentials in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#object-storage-credentials-page"&gt;Object Storage Credentials page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-object-storage-credentials"&gt;Create Object Storage credentials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#show-secret-key"&gt;Show secret key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#re-generate-secret-key"&gt;Re-generate secret key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-object-storage-credentials"&gt;Delete Object Storage Credentials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;What is Object Storage?&lt;/strong&gt;&lt;br&gt;
+The Cloud Console Object Storage makes it possible to store data simply and cost-effectively. It provides a fully distributed, API-accessible storage platform that can be integrated directly into applications or used for backup, archiving, and data retention.&lt;/p&gt;</description></item><item><title>Integrated S3-Browser</title><link>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/integrated-s3-browser/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to use Object Storage with its integrated S3-Browser in the Cloud Console, how to create and delete buckets, how to navigate through folders and files, upload and download files and instructions for other steps to manage an Object Storage effectively in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#s3-buckets-page"&gt;S3 Buckets page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-bucket"&gt;Create bucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#browse-folders-and-files-within-a-bucket"&gt;Browse folders and files within a bucket.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-folder"&gt;Create folder&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#upload-file"&gt;Upload file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-file"&gt;Download file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#make-bucket-public"&gt;Make bucket public&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#get-buckets-public-url"&gt;Get bucket&amp;rsquo;s public URL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#get-objects-public-url"&gt;Get object&amp;rsquo;s public URL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#make-bucket-private"&gt;Make bucket private&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-and-multi-delete-objects"&gt;Delete and multi-delete objects&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-bucket-retention-policy"&gt;Set bucket retention policy&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#fast-bucket-cleanup-technique"&gt;Fast bucket cleanup technique&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-retention-policy"&gt;Delete retention policy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-bucket"&gt;Delete bucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In the Cloud Console, you have the option to use Object Storage with its integrated S3-Browser, which offers essential Object Storage functionality.&lt;/p&gt;</description></item><item><title>CLI Users</title><link>https://docs.ventuscloud.eu/products/security/cli-users/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/security/cli-users/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete CLI Users and instructions for other steps to manage CLI Users in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#cli-users-page"&gt;CLI Users page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-cli-user"&gt;Create CLI User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#download-rc-file"&gt;Download RC File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-cli-user"&gt;Edit CLI User &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#change-the-password"&gt;Change the password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-cli-user"&gt;Delete CLI User&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="cli-users-page"&gt;CLI Users page&lt;/h2&gt;
+&lt;p&gt;To get to the &lt;em&gt;CLI Users page&lt;/em&gt;, select the &lt;strong&gt;Security&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt; and click the &lt;strong&gt;CLI Users TAB:&lt;/strong&gt;
+&lt;img src="../../../assets/images/cli/1.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/cli/2.png?width=20pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Object Storage Clients</title><link>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/object-storage-clients/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#use-object-storage-with-python-api"&gt;Use Object Storage with Python API&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-connection"&gt;Create connection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-bucket"&gt;Create bucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#list-buckets"&gt;List buckets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-object"&gt;Create object&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#list-bucket-content"&gt;List bucket content&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#change-object-acl"&gt;Change object ACL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#generate-object-download-url"&gt;Generate object download URL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-object"&gt;Delete object&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#deleting-bucket"&gt;Deleting bucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#use-object-storage-with-third-party-tools"&gt;Use Object Storage with third-party tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In the Cloud Console, you have the option to use Object Storage as with its integrated S3-Browser, or you can choose to utilize different APIs or third-party tools such as S3 Browser (a freeware Windows client available at &lt;a href="https://s3browser.com/"&gt;https://s3browser.com/&lt;/a&gt;) or Cyberduck (a libre server and cloud storage browser available for both Mac and Windows operating systems, accessible at &lt;a href="https://cyberduck.io/)"&gt;https://cyberduck.io/)&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

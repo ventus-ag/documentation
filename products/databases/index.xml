@@ -1,120 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DATABASES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/databases/</link><description>Recent content in DATABASES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/databases/index.xml" rel="self" type="application/rss+xml"/><item><title>Databases</title><link>https://docs.ventuscloud.eu/products/databases/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/databases/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#databases-page">Databases page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-database">Create Database&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#database-details-page">Database details page&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-database">Edit Database&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#reset-database-password">Reset Database Password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-database">Delete Database&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DATABASES on EWW | ITandTEL Cloud Docs</title><link>https://docs.ventuscloud.eu/products/databases/</link><description>Recent content in DATABASES on EWW | ITandTEL Cloud Docs</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.ventuscloud.eu/products/databases/index.xml" rel="self" type="application/rss+xml"/><item><title>Databases</title><link>https://docs.ventuscloud.eu/products/databases/databases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/databases/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#databases-page"&gt;Databases page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-database"&gt;Create Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#database-details-page"&gt;Database details page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-database"&gt;Edit Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reset-database-password"&gt;Reset Database Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-database"&gt;Delete Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class="notices note" >&lt;p>Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you&amp;rsquo;re willing to accept the associated risks of using a beta service, you&amp;rsquo;re welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.&lt;/p></description></item><item><title>Database's Custom Options</title><link>https://docs.ventuscloud.eu/products/databases/database-custom-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-custom-options/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is database&amp;rsquo;s Custom Options, how to manage them in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#edit-databases-custom-options">Edit Database&amp;rsquo;s Custom Options&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#postgresql">PostgreSQL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#mysql">MySQL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#mariadb">MariaDB&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Database&amp;rsquo;s Custom Options&lt;/strong> are a feature provided to modify options of your database. You can edit various settings such as max connections, WAL sender timeout, streaming delay, etc. depending on the database type.&lt;/p></description></item><item><title>Database's Replicas</title><link>https://docs.ventuscloud.eu/products/databases/database-replicas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-replicas/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is database&amp;rsquo;s Replica, how to create and manage them in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#make-databases-replica">Make Database&amp;rsquo;s Replica&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-databases-replica">Delete Database&amp;rsquo;s Replica&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Database&amp;rsquo;s Replicas&lt;/strong> are a feature provided to ensure the security of your databases. In the Cloud Console, you can create up to 5 replicas of your database in different projects, across one or multiple regions.&lt;/p></description></item><item><title>Database's Backups</title><link>https://docs.ventuscloud.eu/products/databases/database_backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database_backups/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of what is database&amp;rsquo;s Backups, how to create it and how to restore Database from its Backup in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#link-database-to-the-s3-storage">Link Database to the S3 Storage&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#configure-the-scheduler-for-database-backups">Configure the Scheduler for Database Backups&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#create-immediate-database-backup">Create Immediate Database Backup&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#restore-database-from-backup">Restore Database from Backup&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>&lt;strong>Database&amp;rsquo;s Backups&lt;/strong> offer an additional layer of security for your databases, similar to Database&amp;rsquo;s Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety.&lt;/p></description></item><item><title>Database Management</title><link>https://docs.ventuscloud.eu/products/databases/database-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-management/</guid><description>&lt;hr>
-&lt;p>On this page, you can find an explanation of how to create and delete databases within your main database instance in the Cloud Console.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-database">Create Database&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-database">Delete Database&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="create-database">Create Database&lt;/h2>
-&lt;p>To create a new database within your main database instance:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Navigate to the Database Management page
-&lt;img src="../../../assets/images/databases/dbs.png?classes=border,shadow" alt="">&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Click the CREATE button&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the opened window, fill in the following parameters:
-&lt;img src="../../../assets/images/databases/createdb.png?classes=border,shadow" alt="">&lt;/p>
-&lt;ul>
-&lt;li>Name: Enter a name for your new database&lt;/li>
-&lt;li>Charset: Select the character set for the database&lt;/li>
-&lt;li>Collation: Choose the collation for the database&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Click CREATE to confirm&lt;/p></description></item><item><title>User Management</title><link>https://docs.ventuscloud.eu/products/databases/database-user-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-user-management/</guid><description>&lt;hr>
-&lt;p>On this page, you can find instructions on how to manage database users, including creating and deleting users, assigning permissions, and resetting passwords.&lt;/p>
-&lt;h1 id="table-of-contents">Table of contents&lt;/h1>
-&lt;ul>
-&lt;li>&lt;a href="#table-of-contents">Table of contents&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#create-user">Create User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#delete-user">Delete User&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#reset-user-password">Reset User Password&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#set-user-permissions">Set User Permissions&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="create-user">Create User&lt;/h2>
-&lt;p>To create a new database user:&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>Click the CREATE USER button&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>In the opened window, enter the following information:
-&lt;img src="../../../assets/images/databases/createuser.png?classes=border,shadow" alt="">&lt;/p>
-&lt;ul>
-&lt;li>Username: Enter a name for the new user&lt;/li>
-&lt;li>Database: Select the database(s) the user should have access to&lt;/li>
-&lt;li>Permissions: Choose either Read or ReadWrite permissions&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Click CREATE to confirm&lt;/p></description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you&amp;rsquo;re willing to accept the associated risks of using a beta service, you&amp;rsquo;re welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.&lt;/p&gt;</description></item><item><title>Database's Custom Options</title><link>https://docs.ventuscloud.eu/products/databases/database-custom-options/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-custom-options/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Custom Options, how to manage them in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-databases-custom-options"&gt;Edit Database&amp;rsquo;s Custom Options&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#postgresql"&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mysql"&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#mariadb"&gt;MariaDB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Custom Options&lt;/strong&gt; are a feature provided to modify options of your database. You can edit various settings such as max connections, WAL sender timeout, streaming delay, etc. depending on the database type.&lt;/p&gt;</description></item><item><title>Database's Replicas</title><link>https://docs.ventuscloud.eu/products/databases/database-replicas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-replicas/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Replica, how to create and manage them in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#make-databases-replica"&gt;Make Database&amp;rsquo;s Replica&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-databases-replica"&gt;Delete Database&amp;rsquo;s Replica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Replicas&lt;/strong&gt; are a feature provided to ensure the security of your databases. In the Cloud Console, you can create up to 5 replicas of your database in different projects, across one or multiple regions.&lt;/p&gt;</description></item><item><title>Database's Backups</title><link>https://docs.ventuscloud.eu/products/databases/database_backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database_backups/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Backups, how to create it and how to restore Database from its Backup in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#link-database-to-the-s3-storage"&gt;Link Database to the S3 Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#configure-the-scheduler-for-database-backups"&gt;Configure the Scheduler for Database Backups&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-immediate-database-backup"&gt;Create Immediate Database Backup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#restore-database-from-backup"&gt;Restore Database from Backup&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Database&amp;rsquo;s Backups&lt;/strong&gt; offer an additional layer of security for your databases, similar to Database&amp;rsquo;s Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety.&lt;/p&gt;</description></item><item><title>Database Management</title><link>https://docs.ventuscloud.eu/products/databases/database-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-management/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create and delete databases within your main database instance in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-database"&gt;Create Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-database"&gt;Delete Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="create-database"&gt;Create Database&lt;/h2&gt;
+&lt;p&gt;To create a new database within your main database instance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Navigate to the Database Management page
+&lt;img src="../../../assets/images/databases/dbs.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click the CREATE button&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the opened window, fill in the following parameters:
+&lt;img src="../../../assets/images/databases/createdb.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Name: Enter a name for your new database&lt;/li&gt;
+&lt;li&gt;Charset: Select the character set for the database&lt;/li&gt;
+&lt;li&gt;Collation: Choose the collation for the database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click CREATE to confirm&lt;/p&gt;</description></item><item><title>User Management</title><link>https://docs.ventuscloud.eu/products/databases/database-user-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database-user-management/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find instructions on how to manage database users, including creating and deleting users, assigning permissions, and resetting passwords.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#create-user"&gt;Create User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-user"&gt;Delete User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reset-user-password"&gt;Reset User Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-user-permissions"&gt;Set User Permissions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="create-user"&gt;Create User&lt;/h2&gt;
+&lt;p&gt;To create a new database user:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Click the CREATE USER button&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In the opened window, enter the following information:
+&lt;img src="../../../assets/images/databases/createuser.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Username: Enter a name for the new user&lt;/li&gt;
+&lt;li&gt;Database: Select the database(s) the user should have access to&lt;/li&gt;
+&lt;li&gt;Permissions: Choose either Read or ReadWrite permissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click CREATE to confirm&lt;/p&gt;</description></item></channel></rss>
