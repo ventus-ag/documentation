@@ -39,6 +39,7 @@ With our S3 browser, you can perform the following actions:
 - Download separate files from the buckets;  
 - Delete files from a bucket;    
 - Obtain public links for buckets, folders, and individual files;
+- Configure versioning for buckets to keep multiple versions of the same object;
 - Set retention policies for automatic cleanup of older files.   
   
 This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create *Object Storage credentials* that include the access key and secret key.  
