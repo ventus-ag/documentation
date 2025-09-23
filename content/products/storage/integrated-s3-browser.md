@@ -18,7 +18,7 @@ On this page, you can find an explanation of how to use Object Storage with its 
   - [Get bucket's public URL](#get-buckets-public-url)
   - [Get object's public URL](#get-objects-public-url)
   - [Make bucket private](#make-bucket-private)
-  - [Enable/disable bucket versioning](#enabledisable-bucket-versioning)
+  - [Enable/suspend bucket versioning](#enablesuspend-bucket-versioning)
   - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
   - [Set bucket retention policy](#set-bucket-retention-policy)
       - [Fast bucket cleanup technique](#fast-bucket-cleanup-technique)
@@ -247,7 +247,7 @@ You can make your bucket private from both the *Buckets page* and the inside of 
 After these steps, your bucket will not be publicly available.  
 The access permissions will not allow the public to access the bucket or its contents through any direct URL. The objects within the bucket will remain private and can only be accessed by users with appropriate authentication and authorization.
 
-## Enable/disable bucket versioning
+## Enable/suspend bucket versioning
 
 {{% notice note %}}
 💡 Bucket versioning allows you to keep multiple versions of the same object in your S3 bucket.
@@ -312,6 +312,10 @@ If bucket versioning is "enabled" or "suspended", a simple **Delete** action wil
 In this case, select **Delete all versions** from the Actions menu:  
 ![](../../../assets/images/store/44.png?width=45pc&classes=border,shadow)
 
+{{% notice note %}}
+⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions. To completely delete an object and all its versions, you must use the **Delete all versions** option from the Actions menu.
+{{% /notice %}}
+
 📌 **Multi-delete files and folders:**. 
 Also, the integrated S3 browser allows you to perform **multiple deletions** of files and folders using the following steps:  
 - select the checkboxes of the files or folders that you want to delete;
@@ -324,6 +328,11 @@ Also, the integrated S3 browser allows you to perform **multiple deletions** of 
 ![](../../../assets/images/store/45.png?width=35pc&classes=border,shadow) 
 
 After these steps, the selected objects will be deleted in a few seconds.
+
+{{% notice warning %}}
+⚠️ In multi-delete, if versioning is **enabled** or **suspended**,  mark **Delete all versions**.   
+⚠️ Multi-delete affects files only — selected folders will be ignored.
+{{% /notice %}}
 
 📌 **Best practice for large datasets:**  
 
