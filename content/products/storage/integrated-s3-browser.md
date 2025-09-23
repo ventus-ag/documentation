@@ -290,7 +290,8 @@ Once versioning has been enabled on a bucket, you can later suspend it in the sa
 
 
 {{% notice note %}}
-⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions. To completely delete an object and all its versions, you must use the **Delete all versions** option from the Actions menu.
+⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions.  
+To completely delete an object and all its versions, use the **Delete all versions** option from the Actions menu.
 {{% /notice %}}
 
 
@@ -313,7 +314,8 @@ In this case, select **Delete all versions** from the Actions menu:
 ![](../../../assets/images/store/44.png?width=45pc&classes=border,shadow)
 
 {{% notice note %}}
-⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions. To completely delete an object and all its versions, you must use the **Delete all versions** option from the Actions menu.
+⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions.   
+To completely delete an object and all its versions, use the **Delete all versions** option from the Actions menu.
 {{% /notice %}}
 
 📌 **Multi-delete files and folders:**. 
@@ -329,9 +331,9 @@ Also, the integrated S3 browser allows you to perform **multiple deletions** of 
 
 After these steps, the selected objects will be deleted in a few seconds.
 
-{{% notice warning %}}
-⚠️ In multi-delete, if versioning is **enabled** or **suspended**,  mark **Delete all versions**.   
-⚠️ Multi-delete affects files only — selected folders will be ignored.
+{{% notice note %}}
+⚠️ **Multi-delete objects with versioning:** if versioning is **enabled** or **suspended**, mark the option **to delete all versions**.   
+Also, please note here, that multi-delete applies to files only — selected folders will be ignored.
 {{% /notice %}}
 
 📌 **Best practice for large datasets:**  
