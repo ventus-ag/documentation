@@ -12,22 +12,22 @@
     <title>Integrated S3-Browser - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1758620367" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1758620367" rel="stylesheet">
-    <link href="/css/hybrid.css?1758620367" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1758620367" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1758620367" rel="stylesheet">
-    <link href="/css/auto-complete.css?1758620367" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1758620367" rel="stylesheet">
-    <link href="/css/theme.css?1758620367" rel="stylesheet">
-    <link href="/css/tabs.css?1758620367" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1758620367" rel="stylesheet">
+    <link href="/css/nucleus.css?1758620566" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1758620566" rel="stylesheet">
+    <link href="/css/hybrid.css?1758620566" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1758620566" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1758620566" rel="stylesheet">
+    <link href="/css/auto-complete.css?1758620566" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1758620566" rel="stylesheet">
+    <link href="/css/theme.css?1758620566" rel="stylesheet">
+    <link href="/css/tabs.css?1758620566" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1758620566" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1758620367" rel="stylesheet">
+    <link href="/css/theme-mine.css?1758620566" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1758620367"></script>
+    <script src="/js/jquery-3.3.1.min.js?1758620566"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1758620367"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1758620367"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1758620566"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1758620566"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1758620367"></script>
+<script type="text/javascript" src="/js/search.js?1758620566"></script>
 
     
   </div>
@@ -2025,7 +2025,7 @@ The access permissions will not allow the public to access the bucket or its con
 </ul>
 <p>After these steps, the bucket’s versioning status will be <strong>enabled</strong>.<br>
 
-<div class="notices note" ><p>📌 <strong>Important versioning behavior:</strong> Once versioning has been enabled on a bucket, it cannot be returned to &ldquo;not configured&rdquo; status. You can only suspend versioning, which prevents new versions from being created but keeps all existing versions intact.</p>
+<div class="notices note" ><p>📌 <strong>Versioning behavior:</strong> Once versioning has been enabled on a bucket, it cannot be returned to &ldquo;not configured&rdquo; status. You can only suspend versioning, which prevents new versions from being created but keeps all existing versions intact.</p>
 </div>
 </p>
 <p>Once versioning has been enabled on a bucket, you can later suspend it in the same way — either from the <em>Buckets page</em> or the selected <em>Bucket page</em> using the <strong>Suspend versioning</strong> option:</p>
@@ -2036,7 +2036,7 @@ The access permissions will not allow the public to access the bucket or its con
 <img src="../../../assets/images/store/49.png?width=45pc&amp;classes=border,shadow" alt=""></li>
 </ul>
 
-<div class="notices note" ><p>⚠️ <strong>Deleting objects with versioning:</strong> When versioning is enabled or suspended, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
+<div class="notices note" ><p><strong>Deleting objects with versioning:</strong> When versioning is enabled or suspended, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
 To completely delete an object and all its versions, use the <strong>Delete all versions</strong> option from the Actions menu.</p>
 </div>
 
@@ -2058,7 +2058,7 @@ If bucket versioning is &ldquo;enabled&rdquo; or &ldquo;suspended&rdquo;, a simp
 In this case, select <strong>Delete all versions</strong> from the Actions menu:<br>
 <img src="../../../assets/images/store/44.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 
-<div class="notices note" ><p>⚠️ <strong>Deleting objects with versioning:</strong> When versioning is enabled or suspended, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
+<div class="notices note" ><p><strong>Deleting objects with versioning:</strong> When versioning is enabled or suspended, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
 To completely delete an object and all its versions, use the <strong>Delete all versions</strong> option from the Actions menu.</p>
 </div>
 
@@ -2075,8 +2075,8 @@ Also, the integrated S3 browser allows you to perform <strong>multiple deletions
 <p><img src="../../../assets/images/store/45.png?width=35pc&amp;classes=border,shadow" alt=""></p>
 <p>After these steps, the selected objects will be deleted in a few seconds.</p>
 
-<div class="notices note" ><p>⚠️ <strong>Multi-delete objects with versioning:</strong> if versioning is <strong>enabled</strong> or <strong>suspended</strong>, mark the option <strong>to delete all versions</strong>.<br>
-Also, please note here, that multi-delete applies to files only — selected folders will be ignored.</p>
+<div class="notices note" ><p><strong>Multi-delete objects with versioning:</strong> if versioning is enabled or suspended, mark the option <strong>to delete all versions</strong>.<br>
+<strong>Note:</strong> multi-delete applies to files only — selected folders will be ignored.</p>
 </div>
 
 <p>📌 <strong>Best practice for large datasets:</strong></p>
@@ -3241,19 +3241,19 @@ Also, please note here, that multi-delete applies to files only — selected fol
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1758620367"></script>
-    <script src="/js/perfect-scrollbar.min.js?1758620367"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1758620367"></script>
-    <script src="/js/jquery.sticky.js?1758620367"></script>
-    <script src="/js/featherlight.min.js?1758620367"></script>
-    <script src="/js/highlight.pack.js?1758620367"></script>
+    <script src="/js/clipboard.min.js?1758620566"></script>
+    <script src="/js/perfect-scrollbar.min.js?1758620566"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1758620566"></script>
+    <script src="/js/jquery.sticky.js?1758620566"></script>
+    <script src="/js/featherlight.min.js?1758620566"></script>
+    <script src="/js/highlight.pack.js?1758620566"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1758620367"></script>
-    <script src="/js/learn.js?1758620367"></script>
-    <script src="/js/hugo-learn.js?1758620367"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1758620566"></script>
+    <script src="/js/learn.js?1758620566"></script>
+    <script src="/js/hugo-learn.js?1758620566"></script>
     
         
-            <script src="/mermaid/mermaid.js?1758620367"></script>
+            <script src="/mermaid/mermaid.js?1758620566"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

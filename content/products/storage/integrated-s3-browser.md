@@ -278,7 +278,7 @@ You can enable bucket versioning from both the *Buckets page* and the inside of 
 
 After these steps, the bucket’s versioning status will be **enabled**.  
 {{% notice note %}}
-📌 **Important versioning behavior:** Once versioning has been enabled on a bucket, it cannot be returned to "not configured" status. You can only suspend versioning, which prevents new versions from being created but keeps all existing versions intact.
+📌 **Versioning behavior:** Once versioning has been enabled on a bucket, it cannot be returned to "not configured" status. You can only suspend versioning, which prevents new versions from being created but keeps all existing versions intact.
 {{% /notice %}}
 
 Once versioning has been enabled on a bucket, you can later suspend it in the same way — either from the *Buckets page* or the selected *Bucket page* using the **Suspend versioning** option:  
@@ -290,7 +290,7 @@ Once versioning has been enabled on a bucket, you can later suspend it in the sa
 
 
 {{% notice note %}}
-⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions.  
+**Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions.  
 To completely delete an object and all its versions, use the **Delete all versions** option from the Actions menu.
 {{% /notice %}}
 
@@ -314,7 +314,7 @@ In this case, select **Delete all versions** from the Actions menu:
 ![](../../../assets/images/store/44.png?width=45pc&classes=border,shadow)
 
 {{% notice note %}}
-⚠️ **Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions.   
+**Deleting objects with versioning:** When versioning is enabled or suspended, a simple **Delete** action will not permanently remove all object versions.   
 To completely delete an object and all its versions, use the **Delete all versions** option from the Actions menu.
 {{% /notice %}}
 
@@ -332,8 +332,8 @@ Also, the integrated S3 browser allows you to perform **multiple deletions** of 
 After these steps, the selected objects will be deleted in a few seconds.
 
 {{% notice note %}}
-⚠️ **Multi-delete objects with versioning:** if versioning is **enabled** or **suspended**, mark the option **to delete all versions**.   
-Also, please note here, that multi-delete applies to files only — selected folders will be ignored.
+**Multi-delete objects with versioning:** if versioning is enabled or suspended, mark the option **to delete all versions**.   
+**Note:** multi-delete applies to files only — selected folders will be ignored.
 {{% /notice %}}
 
 📌 **Best practice for large datasets:**  
