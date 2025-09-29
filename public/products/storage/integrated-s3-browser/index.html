@@ -12,22 +12,22 @@
     <title>Integrated S3-Browser - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1756984634" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1756984634" rel="stylesheet">
-    <link href="/css/hybrid.css?1756984634" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1756984634" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1756984634" rel="stylesheet">
-    <link href="/css/auto-complete.css?1756984634" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1756984634" rel="stylesheet">
-    <link href="/css/theme.css?1756984634" rel="stylesheet">
-    <link href="/css/tabs.css?1756984634" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1756984634" rel="stylesheet">
+    <link href="/css/nucleus.css?1758620566" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1758620566" rel="stylesheet">
+    <link href="/css/hybrid.css?1758620566" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1758620566" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1758620566" rel="stylesheet">
+    <link href="/css/auto-complete.css?1758620566" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1758620566" rel="stylesheet">
+    <link href="/css/theme.css?1758620566" rel="stylesheet">
+    <link href="/css/tabs.css?1758620566" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1758620566" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1756984634" rel="stylesheet">
+    <link href="/css/theme-mine.css?1758620566" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1756984634"></script>
+    <script src="/js/jquery-3.3.1.min.js?1758620566"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1756984634"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1756984634"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1758620566"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1758620566"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1756984634"></script>
+<script type="text/javascript" src="/js/search.js?1758620566"></script>
 
     
   </div>
@@ -1710,7 +1710,7 @@
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#s3-buckets-page">S3 Buckets page</a></li>
     <li><a href="#create-bucket">Create bucket</a></li>
-    <li><a href="#browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket.</a></li>
+    <li><a href="#browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket</a></li>
     <li><a href="#create-folder">Create folder</a></li>
     <li><a href="#upload-file">Upload file</a></li>
     <li><a href="#download-file">Download file</a></li>
@@ -1718,6 +1718,7 @@
     <li><a href="#get-buckets-public-url">Get bucket&rsquo;s public URL</a></li>
     <li><a href="#get-objects-public-url">Get object&rsquo;s public URL</a></li>
     <li><a href="#make-bucket-private">Make bucket private</a></li>
+    <li><a href="#enablesuspend-bucket-versioning">Enable/suspend bucket versioning</a></li>
     <li><a href="#delete-and-multi-delete-objects">Delete and multi-delete objects</a></li>
     <li><a href="#set-bucket-retention-policy">Set bucket retention policy</a>
       <ul>
@@ -1758,7 +1759,7 @@
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#s3-buckets-page">S3 Buckets page</a></li>
 <li><a href="#create-bucket">Create bucket</a></li>
-<li><a href="#browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket.</a></li>
+<li><a href="#browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket</a></li>
 <li><a href="#create-folder">Create folder</a></li>
 <li><a href="#upload-file">Upload file</a></li>
 <li><a href="#download-file">Download file</a></li>
@@ -1766,6 +1767,7 @@
 <li><a href="#get-buckets-public-url">Get bucket&rsquo;s public URL</a></li>
 <li><a href="#get-objects-public-url">Get object&rsquo;s public URL</a></li>
 <li><a href="#make-bucket-private">Make bucket private</a></li>
+<li><a href="#enablesuspend-bucket-versioning">Enable/suspend bucket versioning</a></li>
 <li><a href="#delete-and-multi-delete-objects">Delete and multi-delete objects</a></li>
 <li><a href="#set-bucket-retention-policy">Set bucket retention policy</a>
 <ul>
@@ -1791,6 +1793,7 @@
 <li>Download separate files from the buckets;</li>
 <li>Delete files from a bucket;</li>
 <li>Obtain public links for buckets, folders, and individual files;</li>
+<li>Configure versioning for buckets to keep multiple versions of the same object;</li>
 <li>Set retention policies for automatic cleanup of older files.</li>
 </ul>
 <p>This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create <em>Object Storage credentials</em> that include the access key and secret key.</p>
@@ -1813,9 +1816,9 @@
 <li>specify the name of the Bucket and click on the CREATE button:</li>
 </ul>
 <p><img src="../../../assets/images/store/17.png?width=35pc&amp;classes=border,shadow" alt=""></p>
-<p>After these steps the newly created Bucket will be added to the  <em>S3 Buckets page</em> with private access, which is set as the default access setting:
+<p>After these steps the newly created Bucket will be added to the  <em>S3 Buckets page</em> with &ldquo;private&rdquo; access and &ldquo;not configured&rdquo; versioning status, which are the default settings:
 <img src="../../../assets/images/store/18.png?width=45pc&amp;classes=border,shadow" alt=""></p>
-<h2 id="browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket.</h2>
+<h2 id="browse-folders-and-files-within-a-bucket">Browse folders and files within a bucket</h2>
 <p>To access and navigate through the folders and files inside a bucket, click on the <strong>Name</strong> of the corresponding bucket on the <em>S3 Buckets page</em>:<br>
 <img src="../../../assets/images/store/19.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <p>This action will redirect you to the inside <em>Bucket page</em>, where you can find:</p>
@@ -1825,26 +1828,28 @@
 <li>get the bucket&rsquo;s URL (if it is public);</li>
 <li>to change the bucket&rsquo;s access settings (make it public or private);</li>
 <li>set retention policy for the bucket;</li>
+<li>enable/suspend versioning;</li>
 <li>delete the bucket;</li>
 <li>perform multi-deletion for selected files/folders (become enabled once you have selected at least one object (file or folder)).</li>
 </ul>
 </li>
 </ul>
-<p><img src="../../../assets/images/store/22.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/22.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
-<li><strong>Create Folder Button</strong> and <strong>Upload Files Section</strong> - this section allows you to create a new folder directly within the bucket, providing an efficient way to organize your files and enables you to upload files to the bucket from your local machine, making it easy to add new content to the bucket;</li>
+<li><strong>Create Folder Button</strong>, <strong>Upload Files Section</strong> and <strong>Search</strong> - this section allows you to create new folders within the bucket to organize your files, upload files from your local machine, and quickly search for content in the bucket:</li>
 </ul>
-<p><img src="../../../assets/images/store/23.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/23.png?width=50pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li><strong>Table of All Folders and Files</strong>, this section presents a comprehensive list of all folders and files stored within the bucket with their <strong>action icon</strong>, that opens a list of available management actions for the selected object:
 <ul>
 <li>download file (currently you can download only separate files);</li>
 <li>show object url (available only if object has public visibility);</li>
-<li>delete object.</li>
+<li>delete object;</li>
+<li>delete object all versions (available only if bucket has enabled or suspend versioning);</li>
 </ul>
 </li>
 </ul>
-<p><img src="../../../assets/images/store/20.png?width=45pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/20.png?&amp;classes=border,shadow" alt=""></p>
 <p>To browse inside folders within the bucket, click on the <strong>Name</strong> of the desired folder:<br>
 <img src="../../../assets/images/store/21.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <p>Inside the folder, you will have access to the same functionality as before, but on a deeper level. This allows you to continue navigating through the nested folder structure, perform actions like creating new folders or uploading files specific to the selected folder, and manage the files and folders within it.</p>
@@ -1870,7 +1875,7 @@ To upload a File inside S3 Bucket in the Cloud Console, do the following:</p>
 <li>after selecting the file you will be able to use UPLOAD FILE button.
 Click on it to initiate the upload process, and you will see a loader icon indicating the progress of the upload:</li>
 </ul>
-<p><img src="../../../assets/images/store/26.png?width=30pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/26.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 
 <div class="notices note" ><p>💡 If this is your first time attempting to upload a file to the selected bucket, the system may require you to set up CORS (Cross-Origin Resource Sharing) policies. In this case, a dialog window will appear asking you to grant permissions for console access to the specific bucket. Please click on GRANT PERMISSIONS to enable successful file uploading and proceed with the upload process.</p>
 </div>
@@ -1912,7 +1917,7 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 <li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>.</li>
 <li>inside the bucket on the <em>Panel with Quick Actions</em>, click an option icon that allows you to change the bucket&rsquo;s access permissions:</li>
 </ul>
-<p><img src="../../../assets/images/store/33.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/33.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on MAKE PUBLIC button.</li>
 </ul>
@@ -1935,7 +1940,7 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 <li>find the bucket which public URL you want to get;</li>
 <li>click on the <strong>Actions</strong> icon and select the <strong>Show URL</strong> in the list of available options:</li>
 </ul>
-<p><img src="../../../assets/images/store/34.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/34.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li>the next opened window will provide your <em>bucket&rsquo;s URL</em> and you can save it by clicking on the COPY TO CLIPBOARD button.</li>
 </ul>
@@ -1946,7 +1951,7 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 <li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>.</li>
 <li>inside the bucket on the <em>Panel with Quick Actions</em>, click an option icon that allows you to see bucket&rsquo;s URL (this icon will be available only if your bucket is public):</li>
 </ul>
-<p><img src="../../../assets/images/store/35.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/35.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <p>The next opened window will provide your <em>bucket&rsquo;s URL</em> and you can save it by clicking on the COPY TO CLIPBOARD button.</p>
 <h2 id="get-objects-public-url">Get object&rsquo;s public URL</h2>
 
@@ -1971,7 +1976,7 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 <li>find the bucket you want to make private;</li>
 <li>click on the <strong>Actions</strong> icon and select the <strong>Make bucket private</strong> in the list of available options:</li>
 </ul>
-<p><img src="../../../assets/images/store/36.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/36.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on MAKE PRIVATE button.</li>
 </ul>
@@ -1982,14 +1987,62 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 <li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>;</li>
 <li>inside the bucket on the <em>Panel with Quick Actions</em>, click an option icon that allows you to change the bucket&rsquo;s access permissions:</li>
 </ul>
-<p><img src="../../../assets/images/store/37.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/37.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on MAKE PRIVATE button.</li>
 </ul>
 <p>After these steps, your bucket will not be publicly available.<br>
 The access permissions will not allow the public to access the bucket or its contents through any direct URL. The objects within the bucket will remain private and can only be accessed by users with appropriate authentication and authorization.</p>
+<h2 id="enablesuspend-bucket-versioning">Enable/suspend bucket versioning</h2>
+
+<div class="notices note" ><p>💡 Bucket versioning allows you to keep multiple versions of the same object in your S3 bucket.</p>
+</div>
+
+<p>By default, when you create a new bucket via the integrated S3 browser, versioning is set to &ldquo;not configured&rdquo;, which means files exist in a single version only.</p>
+<p>You can enable bucket versioning from both the <em>Buckets page</em> and the inside of the selected <em>Bucket page</em>.</p>
+<ol>
+<li>To enable bucket versioning from the <em>Buckets page</em>, follow these steps:</li>
+</ol>
+<ul>
+<li>go to the <em>Buckets page</em> in the Cloud Console;</li>
+<li>find the bucket for which you want to change versioning settings;</li>
+<li>click on the <strong>Actions</strong> icon and select <strong>Enable versioning</strong> in the list of available options:</li>
+</ul>
+<p><img src="../../../assets/images/store/46.png?width=45pc&amp;classes=border,shadow" alt=""></p>
+<ul>
+<li>confirm your action on the next opened <em>Confirmation window</em> by clicking on ENABLE button.</li>
+</ul>
+<ol>
+<li>To enable bucket versioning from inside the selected <em>Bucket page</em>, follow these steps:</li>
+</ol>
+<ul>
+<li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>;</li>
+<li>inside the bucket on the <em>Panel with Quick Actions</em>, click an option icon that allows you to change the bucket&rsquo;s versioning settings:</li>
+</ul>
+<p><img src="../../../assets/images/store/47.png?width=45pc&amp;classes=border,shadow" alt=""></p>
+<ul>
+<li>confirm your action on the next opened <em>Confirmation window</em> by clicking on ENABLE button.</li>
+</ul>
+<p>After these steps, the bucket’s versioning status will be <strong>enabled</strong>.<br>
+
+<div class="notices note" ><p>📌 <strong>Versioning behavior:</strong> Once versioning has been enabled on a bucket, it cannot be returned to &ldquo;not configured&rdquo; status. You can only suspend versioning, which prevents new versions from being created but keeps all existing versions intact.</p>
+</div>
+</p>
+<p>Once versioning has been enabled on a bucket, you can later suspend it in the same way — either from the <em>Buckets page</em> or the selected <em>Bucket page</em> using the <strong>Suspend versioning</strong> option:</p>
+<ul>
+<li>suspend versioning from the <em>Buckets page</em>:
+<img src="../../../assets/images/store/48.png?width=45pc&amp;classes=border,shadow" alt=""></li>
+<li>suspend versioning from the <em>Bucket page</em>:
+<img src="../../../assets/images/store/49.png?width=45pc&amp;classes=border,shadow" alt=""></li>
+</ul>
+
+<div class="notices note" ><p><strong>Deleting objects with versioning:</strong> When versioning is enabled or suspended, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
+To completely delete an object and all its versions, use the <strong>Delete all versions</strong> option from the Actions menu.</p>
+</div>
+
 <h2 id="delete-and-multi-delete-objects">Delete and multi-delete objects</h2>
-<p>To delete an object from S3 Bucket, do the following:</p>
+<p>📌 <strong>Deleting objects in buckets with &ldquo;not configured&rdquo; versioning:</strong><br>
+To delete an object from an S3 bucket with <strong>versioning set to &ldquo;not configured&rdquo;</strong>, do the following:</p>
 <ul>
 <li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>;</li>
 <li>identify the file or folder, that you want to delete on the <em>Bucket page</em>;</li>
@@ -2000,17 +2053,33 @@ The access permissions will not allow the public to access the bucket or its con
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on the DELETE button.</li>
 </ul>
 <p>After these steps, the selected file or folder will be deleted.</p>
-<p>Also, the integrated S3 browser allows you to perform <strong>multiple deletions</strong> of files and folders using the following steps:</p>
+<p>📌 <strong>Deleting objects in buckets with versioning:</strong>  <br>
+If bucket versioning is &ldquo;enabled&rdquo; or &ldquo;suspended&rdquo;, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
+In this case, select <strong>Delete all versions</strong> from the Actions menu:<br>
+<img src="../../../assets/images/store/44.png?width=45pc&amp;classes=border,shadow" alt=""></p>
+
+<div class="notices note" ><p><strong>Deleting objects with versioning:</strong> When versioning is enabled or suspended, a simple <strong>Delete</strong> action will not permanently remove all object versions.<br>
+To completely delete an object and all its versions, use the <strong>Delete all versions</strong> option from the Actions menu.</p>
+</div>
+
+<p>📌 <strong>Multi-delete files and folders:</strong>.
+Also, the integrated S3 browser allows you to perform <strong>multiple deletions</strong> of files and folders using the following steps:</p>
 <ul>
 <li>select the checkboxes of the files or folders that you want to delete;</li>
 <li>click on the delete icon which will become enabled on the <em>Panel with Quick Actions</em> once you have selected at least one object (file or folder):</li>
 </ul>
 <p><img src="../../../assets/images/store/31.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
-<li>confirm your action on the next opened <em>Confirmation window</em> by clicking on the DELETE button.</li>
+<li>if  bucket versioning is &ldquo;enabled&rdquo; or &ldquo;suspended&rdquo;, mark the option <strong>to delete all versions</strong> (if needed) on the next opened <em>Confirmation window</em> and confirm your action by clicking on the DELETE button:</li>
 </ul>
+<p><img src="../../../assets/images/store/45.png?width=35pc&amp;classes=border,shadow" alt=""></p>
 <p>After these steps, the selected objects will be deleted in a few seconds.</p>
-<p>📌 <strong>Best practice for large datasets</strong></p>
+
+<div class="notices note" ><p><strong>Multi-delete objects with versioning:</strong> if versioning is enabled or suspended, mark the option <strong>to delete all versions</strong>.<br>
+<strong>Note:</strong> multi-delete applies to files only — selected folders will be ignored.</p>
+</div>
+
+<p>📌 <strong>Best practice for large datasets:</strong></p>
 <p>For buckets containing large datasets with numerous files, manually deleting objects one by one or even using multi-delete functionality can be time-consuming and inefficient. In such cases, the best practice is to use the <strong>retention policy</strong> feature, which provides automated cleanup functionality.</p>
 <p>💡 To learn more about setting up and managing retention policies for your buckets, please see the section - <a href="#set-bucket-retention-policy">Set bucket retention policy</a>.</p>
 <h2 id="set-bucket-retention-policy">Set bucket retention policy</h2>
@@ -2058,7 +2127,7 @@ The access permissions will not allow the public to access the bucket or its con
 <ul>
 <li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>;</li>
 <li>inside the bucket on the Panel with Quick Actions, click an option icon that allows you to delete the bucket’s retention policy:<br>
-<img src="../../../assets/images/store/43.png?width=35pc&amp;classes=border,shadow" alt=""></li>
+<img src="../../../assets/images/store/43.png?width=45pc&amp;classes=border,shadow" alt=""></li>
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on the DELETE button.</li>
 </ul>
 <p>After these steps, the retention policy will be removed from your bucket, and no automatic file deletion will occur. You can then set a new retention policy if needed.</p>
@@ -2077,7 +2146,7 @@ The access permissions will not allow the public to access the bucket or its con
 <li>find the bucket you want to delete;</li>
 <li>click on the <strong>Actions</strong> icon and select the <strong>Delete</strong> in the list of available options:</li>
 </ul>
-<p><img src="../../../assets/images/store/38.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/38.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on DELETE button.</li>
 </ul>
@@ -2088,7 +2157,7 @@ The access permissions will not allow the public to access the bucket or its con
 <li>access the <em>Bucket page</em> in the Cloud Console by clicking on the <strong>name</strong> of the bucket from the <em>Buckets page</em>;</li>
 <li>inside the bucket on the <em>Panel with Quick Actions</em>, click an option icon that allows you to delete bucket:</li>
 </ul>
-<p><img src="../../../assets/images/store/39.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+<p><img src="../../../assets/images/store/39.png?width=45pc&amp;classes=border,shadow" alt=""></p>
 <ul>
 <li>confirm your action on the next opened <em>Confirmation window</em> by clicking on DELETE button.</li>
 </ul>
@@ -3172,19 +3241,19 @@ The access permissions will not allow the public to access the bucket or its con
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1756984634"></script>
-    <script src="/js/perfect-scrollbar.min.js?1756984634"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1756984634"></script>
-    <script src="/js/jquery.sticky.js?1756984634"></script>
-    <script src="/js/featherlight.min.js?1756984634"></script>
-    <script src="/js/highlight.pack.js?1756984634"></script>
+    <script src="/js/clipboard.min.js?1758620566"></script>
+    <script src="/js/perfect-scrollbar.min.js?1758620566"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1758620566"></script>
+    <script src="/js/jquery.sticky.js?1758620566"></script>
+    <script src="/js/featherlight.min.js?1758620566"></script>
+    <script src="/js/highlight.pack.js?1758620566"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1756984634"></script>
-    <script src="/js/learn.js?1756984634"></script>
-    <script src="/js/hugo-learn.js?1756984634"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1758620566"></script>
+    <script src="/js/learn.js?1758620566"></script>
+    <script src="/js/hugo-learn.js?1758620566"></script>
     
         
-            <script src="/mermaid/mermaid.js?1756984634"></script>
+            <script src="/mermaid/mermaid.js?1758620566"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
