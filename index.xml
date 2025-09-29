@@ -916,7 +916,7 @@ The Cloud Console Object Storage makes it possible to store data simply and cost
 &lt;li&gt;&lt;a href="#introduction"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#s3-buckets-page"&gt;S3 Buckets page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-bucket"&gt;Create bucket&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#browse-folders-and-files-within-a-bucket"&gt;Browse folders and files within a bucket.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#browse-folders-and-files-within-a-bucket"&gt;Browse folders and files within a bucket&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-folder"&gt;Create folder&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#upload-file"&gt;Upload file&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#download-file"&gt;Download file&lt;/a&gt;&lt;/li&gt;
@@ -924,6 +924,7 @@ The Cloud Console Object Storage makes it possible to store data simply and cost
 &lt;li&gt;&lt;a href="#get-buckets-public-url"&gt;Get bucket&amp;rsquo;s public URL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#get-objects-public-url"&gt;Get object&amp;rsquo;s public URL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#make-bucket-private"&gt;Make bucket private&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enablesuspend-bucket-versioning"&gt;Enable/suspend bucket versioning&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#delete-and-multi-delete-objects"&gt;Delete and multi-delete objects&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#set-bucket-retention-policy"&gt;Set bucket retention policy&lt;/a&gt;
 &lt;ul&gt;
