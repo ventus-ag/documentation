@@ -16,7 +16,7 @@ On this page, you can find an explanation of how to create, edit, delete Subnets
 ## Subnets page
 To open the *Subnets page*, go to *Networking page*, click on the **Name** of the corresponding Network and select the **Subnets TAB**:
 ![](../../../assets/images/networks/4.png?classes=border,shadow) 
-![](../../../assets/images/networks/3.png?width=15pc&classes=border,shadow)  
+![](../../../assets/images/networks/21.png?width=15pc&classes=border,shadow)  
 
 On this page you can find all created Subnets, related to the selected Network, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Subnet:
 

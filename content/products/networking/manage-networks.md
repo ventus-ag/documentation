@@ -64,7 +64,7 @@ Now you can open its *Network details page* by clicking on the **Name** of the
 ![](../../../assets/images/networks/11.png?classes=border,shadow)  
 
 On this page, you can view and manage all Subnets and Ports associated with the selected network.
-![](../../../assets/images/networks/23.png?width=45pc&classes=border,shadow)  
+![](../../../assets/images/networks/23.png?classes=border,shadow)  
   
 💡 For more information about Networks, Subnets and Ports, please, see the next articles: [Networks](https://docs.ventuscloud.eu/products/networking/networks/), [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/), [Ports](https://docs.ventuscloud.eu/products/networking/ports/).
 
@@ -91,7 +91,7 @@ To activate or deactivate the Interface of the selected VM, do the following:
 - confirm your action in the next opened *Confirmation window*.
 
 After these steps, the selected Interface will change its status accordingly — UP when activated, or DOWN when deactivated:
-![](../../../assets/images/networks/net-24.png?width=45pc&classes=border,shadow)
+![](../../../assets/images/networks/net-24.png?classes=border,shadow)
 
 ## Associate/Disassociate Floating IP
 

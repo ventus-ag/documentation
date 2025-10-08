@@ -200,7 +200,7 @@ To activate or deactivate the Interface of the selected VM, do the following:
 - confirm your action in the next opened *Confirmation window*.
 
 After these steps, the selected Interface will change its status accordingly — UP when activated, or DOWN when deactivated:
-![](../../../assets/images/networks/net-24.png?width=45pc&classes=border,shadow)
+![](../../../assets/images/networks/net-24.png?classes=border,shadow)
 
 💡 To find additional instructions and information VM's Interfaces use the articles: [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 

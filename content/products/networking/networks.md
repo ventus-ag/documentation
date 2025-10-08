@@ -73,12 +73,12 @@ To open the *Network details page*, click on the **Name** of the correspond
 This action will redirect you to the *Network details page*, where you can find network **details area** with actual information about it (name, ID), panel with available **quick actions** on the selected network (edit, delete) and **2 tabs**:
 
 **SUBNETS TAB** - list of all subnets associated with the selected network:
-![](../../../assets/images/networks/23.png?width=45pc&classes=border,shadow)  
+![](../../../assets/images/networks/23.png?classes=border,shadow)  
 
 From here it is possible to create new Subnet and to manage existing ones. More information about this page you can find here - [Subnets](https://docs.ventuscloud.eu/products/networking/subnets/).
   
 **PORTS TAB** - displays a list of all ports associated with the selected network, with available actions to create new port, edit, or delete an existing ones:
-![](../../../assets/images/networks/24.png?width=45pc&classes=border,shadow)  
+![](../../../assets/images/networks/24.png?classes=border,shadow)  
 
 More information about Ports you can find here - [Ports](https://docs.ventuscloud.eu/products/networking/ports/).
 
