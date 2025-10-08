@@ -55,11 +55,17 @@ Creating a GPU VM involves a similar process to setting up regular Ubuntu or Win
     ![](../../../assets/images/vms/gpu-3.png?width=30pc&classes=border,shadow)
 
   - *Key pair* - required for Linux VMs; choose an existing SSH key (created on the *SSH Keys* page) or create a new one to connect to the VM via SSH.   
-  - *Networks* - select one or more networks to connect the VM to;  
-    by default, "public" network is pre-selected.     
-  - *Firewalls* -  choose what collection of network access rules will control the traffic to this VM;     
-    by default, "default" Firewall is pre-selected;   
-    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.   
+  - *Networks / Ports* — choose how the VM will connect to the network:
+    - *Networks* — select one or more available networks. A new port will be created automatically for each selected network;  
+      by default, "public" network is pre-selected;  
+      optionally specify Fixed IPs within the subnet when using the network option.   
+    - *Ports* — select an existing port to attach to the VM; the assigned firewalls will be displayed below (read-only). 
+  - *Firewalls* - define which network rules control VM traffic:       
+    - using *Networks*, you can select Firewalls manually;   
+      by default, "default" Firewall is pre-selected;  
+    - using *Ports*, Firewalls will be inherited from the selected port.     
+
+    💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.  
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
