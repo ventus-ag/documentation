@@ -9,6 +9,7 @@
 &lt;li&gt;&lt;a href="#create-windows-virtual-machine"&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#virtual-machine-details-page"&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#download-rdp-file"&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#activatedeactivate-interface"&gt;Activate/Deactivate Interface&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#edit-virtual-machine"&gt;Edit Virtual Machine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#resize-virtual-machine"&gt;Resize Virtual Machine&lt;/a&gt;&lt;/li&gt;

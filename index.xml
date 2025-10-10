@@ -180,6 +180,7 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt
 &lt;li&gt;&lt;a href="#create-windows-virtual-machine"&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#virtual-machine-details-page"&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#download-rdp-file"&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#activatedeactivate-interface"&gt;Activate/Deactivate Interface&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#edit-virtual-machine"&gt;Edit Virtual Machine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#resize-virtual-machine"&gt;Resize Virtual Machine&lt;/a&gt;&lt;/li&gt;
@@ -298,6 +299,7 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt
 &lt;li&gt;&lt;a href="#create-subnet"&gt;Create Subnet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href="#network-details-page"&gt;Network details page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#edit-network"&gt;Edit Network&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#delete-network"&gt;Delete Network&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#attach-network-interface-to-the-vm"&gt;Attach Network Interface to the VM&lt;/a&gt;&lt;/li&gt;
@@ -549,13 +551,10 @@ To get ID and Access tokens. use next command:&lt;/p&gt;</description></item><it
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="subnets-page"&gt;Subnets page&lt;/h2&gt;
-&lt;p&gt;To open the &lt;em&gt;Subnets page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt; and click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network:
-&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;On this page you can find:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;panel with available &lt;strong&gt;quick actions&lt;/strong&gt; for the selected Network:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="../../../assets/images/networks/net-14.png?width=25pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Transfer Images between Regions</title><link>https://docs.ventuscloud.eu/products/images/transfer-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/transfer-images/</guid><description>&lt;hr&gt;
+&lt;p&gt;To open the &lt;em&gt;Subnets page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network and select the &lt;strong&gt;Subnets TAB&lt;/strong&gt;:
+&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/networks/21.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;On this page you can find all created Subnets, related to the selected Network, with the &lt;em&gt;Create button&lt;/em&gt;, &lt;em&gt;Search bar&lt;/em&gt; and &lt;em&gt;Actions icon&lt;/em&gt;, which opens a list of available management actions for the selected Subnet:&lt;/p&gt;</description></item><item><title>Transfer Images between Regions</title><link>https://docs.ventuscloud.eu/products/images/transfer-images/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/images/transfer-images/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page, we will discuss a workflow to help you to transfer Images between Projects in the different Regions.&lt;/p&gt;
 &lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
 &lt;ul&gt;
@@ -576,7 +575,24 @@ To get ID and Access tokens. use next command:&lt;/p&gt;</description></item><it
 &lt;p&gt;In this article, we will assume that we have already created two Projects, belonging to different Regions, and the following resources within these Projects:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Project-1&lt;/strong&gt; named &lt;em&gt;v-dev&lt;/em&gt;, that related to the &lt;em&gt;Vienna&lt;/em&gt; Region, with the following resources:&lt;/p&gt;</description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Project-1&lt;/strong&gt; named &lt;em&gt;v-dev&lt;/em&gt;, that related to the &lt;em&gt;Vienna&lt;/em&gt; Region, with the following resources:&lt;/p&gt;</description></item><item><title>Ports</title><link>https://docs.ventuscloud.eu/products/networking/ports/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/ports/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Port and instructions for other steps to manage Ports in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#ports-page"&gt;Ports page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-port"&gt;Create Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#attach-port-to-the-vm"&gt;Attach Port to the VM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#edit-port"&gt;Edit Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#delete-port"&gt;Delete Port&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="ports-page"&gt;Ports page&lt;/h2&gt;
+&lt;p&gt;To open the &lt;em&gt;Ports page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network and select the &lt;strong&gt;Ports TAB&lt;/strong&gt;:
+&lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;
+&lt;img src="../../../assets/images/networks/26.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Most of the topics described below considered advanced. Basic Linux and Networking skills are required. Please contact support if you need guidance and best practices for your specific use case.&lt;/p&gt;
@@ -679,16 +695,13 @@ connection between the Cloud Console Regions.&lt;/p&gt;
 &lt;li&gt;&lt;a href="#vms-networks--securitytab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#add-interface"&gt;Add Interface&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#remove-interface"&gt;Remove Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#activatedeactivate-interface"&gt;Activate/Deactivate Interface&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#associatedisassociate-floating-ip"&gt;Associate/Disassociate Floating IP&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="vms-networks--securitytab"&gt;VM&amp;rsquo;s NETWORKS &amp;amp; SECURITY TAB&lt;/h2&gt;
-&lt;p&gt;To find all Networks and Interfaces related to the selected Virtual Machine, you need:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;open the &lt;em&gt;Virtual Machines page&lt;/em&gt; - for this select the &lt;strong&gt;Virtual Machines&lt;/strong&gt; from the VIRTUAL DATACENTER block in the &lt;em&gt;side-bar menu&lt;/em&gt;:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="../../../assets/images/conn-lin/7.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Volumes</title><link>https://docs.ventuscloud.eu/products/storage/volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/volumes/</guid><description>&lt;hr&gt;
+&lt;p&gt;To find all Networks and Interfaces related to the selected Virtual Machine, you need:&lt;/p&gt;</description></item><item><title>Volumes</title><link>https://docs.ventuscloud.eu/products/storage/volumes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/storage/volumes/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.&lt;/p&gt;
 &lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
 &lt;ul&gt;
