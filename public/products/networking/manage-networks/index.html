@@ -12,22 +12,22 @@
     <title>VM&#39;s Networks and Interfaces - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1758549965" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1758549965" rel="stylesheet">
-    <link href="/css/hybrid.css?1758549965" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1758549965" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1758549965" rel="stylesheet">
-    <link href="/css/auto-complete.css?1758549965" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1758549965" rel="stylesheet">
-    <link href="/css/theme.css?1758549965" rel="stylesheet">
-    <link href="/css/tabs.css?1758549965" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1758549965" rel="stylesheet">
+    <link href="/css/nucleus.css?1759922042" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1759922042" rel="stylesheet">
+    <link href="/css/hybrid.css?1759922042" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1759922042" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1759922042" rel="stylesheet">
+    <link href="/css/auto-complete.css?1759922042" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1759922042" rel="stylesheet">
+    <link href="/css/theme.css?1759922042" rel="stylesheet">
+    <link href="/css/tabs.css?1759922042" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1759922042" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1758549965" rel="stylesheet">
+    <link href="/css/theme-mine.css?1759922042" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1758549965"></script>
+    <script src="/js/jquery-3.3.1.min.js?1759922042"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1758549965"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1758549965"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1759922042"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1759922042"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1758549965"></script>
+<script type="text/javascript" src="/js/search.js?1759922042"></script>
 
     
   </div>
@@ -1394,6 +1394,27 @@
  
   
     
+      <li data-nav-id="/products/networking/ports/" title="Ports" class="dd-item ">
+        <a href="/products/networking/ports/">
+        Ports
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
       <li data-nav-id="/products/networking/manage-networks/" title="VM&#39;s Networks and Interfaces" class="dd-item active">
         <a href="/products/networking/manage-networks/">
         VM&#39;s Networks and Interfaces
@@ -1710,6 +1731,7 @@
     <li><a href="#vms-networks--securitytab">VM&rsquo;s NETWORKS &amp; SECURITY TAB</a></li>
     <li><a href="#add-interface">Add Interface</a></li>
     <li><a href="#remove-interface">Remove Interface</a></li>
+    <li><a href="#activatedeactivate-interface">Activate/Deactivate Interface</a></li>
     <li><a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP</a></li>
   </ul>
 </nav>
@@ -1744,6 +1766,7 @@
 <li><a href="#vms-networks--securitytab">VM&rsquo;s NETWORKS &amp; SECURITY TAB</a></li>
 <li><a href="#add-interface">Add Interface</a></li>
 <li><a href="#remove-interface">Remove Interface</a></li>
+<li><a href="#activatedeactivate-interface">Activate/Deactivate Interface</a></li>
 <li><a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP</a></li>
 </ul>
 </li>
@@ -1762,32 +1785,46 @@
 <li>open the <em>NETWORKS &amp; SECURITY page of this VM</em> - for this click on the NETWORKS &amp; SECURITY TAB:</li>
 </ul>
 <p><img src="../../../assets/images/networks/net-16.png?width=35pc&amp;classes=border,shadow" alt=""></p>
-<p>On the opened  <em>NETWORKS &amp; SECURITY page of this VM</em> you can find information about all Networks, Subnets, Floating IPs and also information about all Firewalls related to this VM.</p>
+<p>On the opened  <em>NETWORKS &amp; SECURITY page of this VM</em> you can find information about all Networks, Subnets, Ports, Floating IPs and also information about all Firewalls related to this VM.</p>
 <p>In this article, we are interested in the block of information, where you can find all Networks, Subnets and Interfaces related to the corresponding VM with the <em>Add Interface button</em>, <em>Search bar</em> and <em>Actions icon</em>, which opens a list of available management actions:
 <img src="../../../assets/images/networks/net-17.png?classes=border,shadow" alt=""></p>
 <p>💡 Information how to manage Firewalls from this page, you can find in the article  <a href="https://docs.ventuscloud.eu/products/security/manage-firewalls/">VM&rsquo;s Firewalls</a> .</p>
 <h2 id="add-interface">Add Interface</h2>
+
+<div class="notices note" ><p>💡 You can add an interface to a Virtual Machine either by selecting a Network (to create a new port automatically) or by attaching an existing Port.</p>
+</div>
+
 <p>To add additional Interface to the selected VM, do the following:</p>
 <ul>
-<li>ensure that you have already created Network with associated Subnets;</li>
+<li>ensure that you have already created a Network with at least one Subnet, or an existing Port;</li>
 <li>on the opened <em>NETWORKS &amp; SECURITY page of the VM</em> click on the ADD INTERFACE icon:</li>
 </ul>
 <p><img src="../../../assets/images/networks/net-23.png?classes=border,shadow" alt=""></p>
 <ul>
-<li>select one of the available Networks, optionally specify <em>Fixed IPs</em> on the next opened <em>Add interface window</em> and click on the ADD icon:</li>
+<li>in the opened <em>Add Interface window</em>, select one of the available options:
+<ul>
+<li>
+<p><strong>Network</strong> — choose a Network, and optionally specify Fixed IPs within the corresponding subnet:
+<img src="../../../assets/images/networks/30.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+</li>
+<li>
+<p><strong>Port</strong> — choose an existing Port to attach to the VM. The assigned firewalls will be displayed automatically as read-only:
+<img src="../../../assets/images/networks/31.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+</li>
 </ul>
-<p><img src="../../../assets/images/networks/10.png?width=35pc&amp;classes=border,shadow" alt=""></p>
+</li>
+</ul>
 
 <div class="notices note" ><p>💡 You can select only Networks that have associated Subnets.<br>
 ℹ️ The Fixed IPs should be selected from the Allocation pools of the corresponding Subnet.</p>
 </div>
 
 <p>After these steps, the newly added Interface will appear in the NETWORKS &amp; SECURITY TAB of the <em>selected VM detailed page</em> with the status ACTIVE.</p>
-<p>Now you can open its <em>Subnets page</em> by clicking on the <strong>Name</strong> of the corresponding Network:
+<p>Now you can open its <em>Network details page</em> by clicking on the <strong>Name</strong> of the corresponding Network:
 <img src="../../../assets/images/networks/11.png?classes=border,shadow" alt=""></p>
-<p>On this page you can find all Subnets, related to the selected Network, with <em>Create button</em>, <em>Search bar</em> and <em>Actions icon</em>, which opens a list of available management actions for the selected Subnet:
-<img src="../../../assets/images/networks/15.png?classes=border,shadow" alt=""></p>
-<p>💡 For more information about Networks and Subnets, please, see the next articles: <a href="https://docs.ventuscloud.eu/products/networking/networks/">Networks</a>, <a href="https://docs.ventuscloud.eu/products/networking/subnets/">Subnets</a>.</p>
+<p>On this page, you can view and manage all Subnets and Ports associated with the selected network.
+<img src="../../../assets/images/networks/23.png?classes=border,shadow" alt=""></p>
+<p>💡 For more information about Networks, Subnets and Ports, please, see the next articles: <a href="https://docs.ventuscloud.eu/products/networking/networks/">Networks</a>, <a href="https://docs.ventuscloud.eu/products/networking/subnets/">Subnets</a>, <a href="https://docs.ventuscloud.eu/products/networking/ports/">Ports</a>.</p>
 <p>Also, you can create new VM and immediately associate it with Interface of this Network, during it&rsquo;s creation.<br>
 💡 To find information about how to create Virtual Machine use the article <a href="https://docs.ventuscloud.eu/products/compute/virtual-machines/">Virtual Machines</a>.
 <img src="../../../assets/images/networks/net-22.png?width=30pc&amp;classes=border,shadow" alt=""></p>
@@ -1799,6 +1836,19 @@
 <li>confirm the Interface deletion on the next opened <em>Confirmation window</em>.</li>
 </ul>
 <p>After these steps, the selected Interface will be deleted from the selected VM.</p>
+<h2 id="activatedeactivate-interface">Activate/Deactivate Interface</h2>
+
+<div class="notices note" ><p>💡 Activating or deactivating an Interface allows to temporarily enable or disable network connectivity for a Virtual Machine without deleting the Interface itself.</p>
+</div>
+
+<p>To activate or deactivate the Interface of the selected VM, do the following:</p>
+<ul>
+<li>identify the required Interface on the NETWORKS &amp; SECURITY tab of the selected VM details page;</li>
+<li>click on the <strong>Actions</strong> icon and select <strong>Activate interface</strong> or <strong>Deactivate interface</strong> from the list of available options;</li>
+<li>confirm your action in the next opened <em>Confirmation window</em>.</li>
+</ul>
+<p>After these steps, the selected Interface will change its status accordingly — UP when activated, or DOWN when deactivated:
+<img src="../../../assets/images/networks/net-24.png?classes=border,shadow" alt=""></p>
 <h2 id="associatedisassociate-floating-ip">Associate/Disassociate Floating IP</h2>
 
 <div class="notices note" ><p>📌 Successfully Associate Floating IP with VM&rsquo;s internal Interface you can only in case if you have configured Router with enabled external gateway and attached to your internal Network.</p>
@@ -2712,6 +2762,22 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -2886,7 +2952,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/products/networking/load-balancers/" title="Load Balancers"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/products/networking/ports/" title="Ports"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/tutorials-advanced/" title="Advanced" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -2899,19 +2965,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1758549965"></script>
-    <script src="/js/perfect-scrollbar.min.js?1758549965"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1758549965"></script>
-    <script src="/js/jquery.sticky.js?1758549965"></script>
-    <script src="/js/featherlight.min.js?1758549965"></script>
-    <script src="/js/highlight.pack.js?1758549965"></script>
+    <script src="/js/clipboard.min.js?1759922042"></script>
+    <script src="/js/perfect-scrollbar.min.js?1759922042"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1759922042"></script>
+    <script src="/js/jquery.sticky.js?1759922042"></script>
+    <script src="/js/featherlight.min.js?1759922042"></script>
+    <script src="/js/highlight.pack.js?1759922042"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1758549965"></script>
-    <script src="/js/learn.js?1758549965"></script>
-    <script src="/js/hugo-learn.js?1758549965"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1759922042"></script>
+    <script src="/js/learn.js?1759922042"></script>
+    <script src="/js/hugo-learn.js?1759922042"></script>
     
         
-            <script src="/mermaid/mermaid.js?1758549965"></script>
+            <script src="/mermaid/mermaid.js?1759922042"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

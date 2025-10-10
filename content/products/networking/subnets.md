@@ -14,17 +14,13 @@ On this page, you can find an explanation of how to create, edit, delete Subnets
   - [Delete Subnet](#delete-subnet)
 
 ## Subnets page
-To open the *Subnets page*, go to *Networking page* and click on the **Name** of the corresponding Network:
+To open the *Subnets page*, go to *Networking page*, click on the **Name** of the corresponding Network and select the **Subnets TAB**:
 ![](../../../assets/images/networks/4.png?classes=border,shadow) 
+![](../../../assets/images/networks/21.png?width=15pc&classes=border,shadow)  
 
-On this page you can find:
-- panel with available **quick actions** for the selected Network:
- 
-![](../../../assets/images/networks/net-14.png?width=25pc&classes=border,shadow)  
+On this page you can find all created Subnets, related to the selected Network, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Subnet:
 
-- all created Subnets, related to the selected Network, with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Subnet:
-
-![](../../../assets/images/networks/7.png?classes=border,shadow) 
+![](../../../assets/images/networks/23.png?classes=border,shadow)  
 
 **Actions** icon opens the next list of available management actions for the selected Subnet:
 - *Edit* - this option is used to update selected Subnet (change Name, Allocation pools, DNS nameservers, Gateway IP, Host routs, state of DHCP and gateway); 
@@ -36,7 +32,7 @@ To create new Subnet, do the following:
 - go to the *Subnets page* and click on the CREATE SUBNET icon in the upper left corner;
 - fill in the form on the next opened *Create Subnet* *window* and click on the CREATE icon:
 
-![](../../../assets/images/networks/6.png?width=35pc&classes=border,shadow)
+![](../../../assets/images/networks/25.png?width=35pc&classes=border,shadow)
   - *Name* - set a name for the Subnet;
   - *Enable DHCP* - enable or disable Dynamic Host Configuration Protocol for Subnet;
   - *CIDR* - shows Classless Inter-Domain Routing of Subnet;

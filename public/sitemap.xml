@@ -88,6 +88,8 @@
   </url><url>
     <loc>http://localhost:1313/products/networking/load-balancers/</loc>
   </url><url>
+    <loc>http://localhost:1313/products/networking/ports/</loc>
+  </url><url>
     <loc>http://localhost:1313/tutorials-advanced/advanced-network-scenarios/</loc>
   </url><url>
     <loc>http://localhost:1313/products/security/manage-firewalls/</loc>

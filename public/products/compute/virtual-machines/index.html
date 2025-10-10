@@ -12,22 +12,22 @@
     <title>Virtual Machines - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1758549965" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1758549965" rel="stylesheet">
-    <link href="/css/hybrid.css?1758549965" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1758549965" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1758549965" rel="stylesheet">
-    <link href="/css/auto-complete.css?1758549965" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1758549965" rel="stylesheet">
-    <link href="/css/theme.css?1758549965" rel="stylesheet">
-    <link href="/css/tabs.css?1758549965" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1758549965" rel="stylesheet">
+    <link href="/css/nucleus.css?1759922042" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1759922042" rel="stylesheet">
+    <link href="/css/hybrid.css?1759922042" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1759922042" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1759922042" rel="stylesheet">
+    <link href="/css/auto-complete.css?1759922042" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1759922042" rel="stylesheet">
+    <link href="/css/theme.css?1759922042" rel="stylesheet">
+    <link href="/css/tabs.css?1759922042" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1759922042" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1758549965" rel="stylesheet">
+    <link href="/css/theme-mine.css?1759922042" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1758549965"></script>
+    <script src="/js/jquery-3.3.1.min.js?1759922042"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1758549965"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1758549965"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1759922042"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1759922042"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1758549965"></script>
+<script type="text/javascript" src="/js/search.js?1759922042"></script>
 
     
   </div>
@@ -1394,6 +1394,27 @@
  
   
     
+      <li data-nav-id="/products/networking/ports/" title="Ports" class="dd-item ">
+        <a href="/products/networking/ports/">
+        Ports
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
       <li data-nav-id="/products/networking/manage-networks/" title="VM&#39;s Networks and Interfaces" class="dd-item ">
         <a href="/products/networking/manage-networks/">
         VM&#39;s Networks and Interfaces
@@ -1712,6 +1733,7 @@
     <li><a href="#create-windows-virtual-machine">Create Windows Virtual Machine</a></li>
     <li><a href="#virtual-machine-details-page">Virtual Machine details page</a></li>
     <li><a href="#download-rdp-file">Download RDP File</a></li>
+    <li><a href="#activatedeactivate-interface">Activate/Deactivate Interface</a></li>
     <li><a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP</a></li>
     <li><a href="#edit-virtual-machine">Edit Virtual Machine</a></li>
     <li><a href="#resize-virtual-machine">Resize Virtual Machine</a></li>
@@ -1756,6 +1778,7 @@
 <li><a href="#create-windows-virtual-machine">Create Windows Virtual Machine</a></li>
 <li><a href="#virtual-machine-details-page">Virtual Machine details page</a></li>
 <li><a href="#download-rdp-file">Download RDP File</a></li>
+<li><a href="#activatedeactivate-interface">Activate/Deactivate Interface</a></li>
 <li><a href="#associatedisassociate-floating-ip">Associate/Disassociate Floating IP</a></li>
 <li><a href="#edit-virtual-machine">Edit Virtual Machine</a></li>
 <li><a href="#resize-virtual-machine">Resize Virtual Machine</a></li>
@@ -1797,27 +1820,60 @@ To get to the <em>Virtual Machines page</em>, select the <strong>Virtual Mac
 <li>fill in the form on the next opened <em>Create Virtual Machine window</em> and click on the CREATE icon:
 <img src="../../../assets/images/vms/3.png?width=30pc&amp;classes=border,shadow" alt="">
 <ul>
-<li><em>Name</em> - specify a name for the virtual machine.</li>
-<li><em>Source</em> - choose the source for creating the VM: image, volume, or snapshot;<br>
-by default, &ldquo;image&rdquo; is pre-selected.</li>
-<li><em>OS Platform</em> - choose the operating system platform: Linux or Windows;<br>
-in this example we will create the Linux VM.</li>
-<li><em>Linux Distribution</em> -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).</li>
-<li><em>Image Version</em>/<em>Volume name</em>/<em>Snapshot name</em> - based on the selected source, specify the corresponding image version, volume name, or snapshot name.</li>
-<li><em>Flavor</em> - select the size of the VM (number of vCPUs and RAM);<br>
-by default, &ldquo;VC-4 (2 vCPUs, 4 GiB memory)&rdquo; is pre-selected.</li>
-<li><em>Key pair</em> - required for Linux VMs; choose an existing SSH key (created on the <em>SSH Keys</em> page) or create a new one to connect to the VM via SSH.</li>
-<li><em>Networks</em> - select one or more networks to connect the VM to;<br>
-by default, &ldquo;public&rdquo; network is pre-selected.</li>
-<li><em>Firewalls</em> -  choose what collection of network access rules will control the traffic to this VM;  <br>
-by default, &ldquo;default&rdquo; Firewall is pre-selected;<br>
-💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.</li>
-<li><em>Tags</em> - optional; use this field to assign tags to the VM.</li>
-<li><em>Volume size (GB)</em> - provide the preferred disk size for the VM;<br>
+<li>
+<p><em>Name</em> - specify a name for the virtual machine.</p>
+</li>
+<li>
+<p><em>Source</em> - choose the source for creating the VM: image, volume, or snapshot;<br>
+by default, &ldquo;image&rdquo; is pre-selected.</p>
+</li>
+<li>
+<p><em>OS Platform</em> - choose the operating system platform: Linux or Windows;<br>
+in this example we will create the Linux VM.</p>
+</li>
+<li>
+<p><em>Linux Distribution</em> -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).</p>
+</li>
+<li>
+<p><em>Image Version</em>/<em>Volume name</em>/<em>Snapshot name</em> - based on the selected source, specify the corresponding image version, volume name, or snapshot name.</p>
+</li>
+<li>
+<p><em>Flavor</em> - select the size of the VM (number of vCPUs and RAM);<br>
+by default, &ldquo;VC-4 (2 vCPUs, 4 GiB memory)&rdquo; is pre-selected.</p>
+</li>
+<li>
+<p><em>Key pair</em> - required for Linux VMs; choose an existing SSH key (created on the <em>SSH Keys</em> page) or create a new one to connect to the VM via SSH.</p>
+</li>
+<li>
+<p><em>Networks / Ports</em> — choose how the VM will connect to the network:</p>
+<ul>
+<li><em>Networks</em> — select one or more available networks. A new port will be created automatically for each selected network;<br>
+by default, &ldquo;public&rdquo; network is pre-selected;<br>
+optionally specify Fixed IPs within the subnet when using the network option.</li>
+<li><em>Ports</em> — select an existing port to attach to the VM; the assigned firewalls will be displayed below (read-only).</li>
+</ul>
+</li>
+<li>
+<p><em>Firewalls</em> - define which network rules control VM traffic:</p>
+<ul>
+<li>using <em>Networks</em>, you can select Firewalls manually;<br>
+by default, &ldquo;default&rdquo; Firewall is pre-selected;</li>
+<li>using <em>Ports</em>, Firewalls will be inherited from the selected port.</li>
+</ul>
+<p>💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.</p>
+</li>
+<li>
+<p><em>Tags</em> - optional; use this field to assign tags to the VM.</p>
+</li>
+<li>
+<p><em>Volume size (GB)</em> - provide the preferred disk size for the VM;<br>
 valid range: 10–1000 GiB;<br>
 minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB; <br>
-by default, &ldquo;50 GB&rdquo; is pre-selected.</li>
-<li><em>Delete Volume after VM deletion</em> – enable this option to automatically delete the volume when the VM is removed. </li>
+by default, &ldquo;50 GB&rdquo; is pre-selected.</p>
+</li>
+<li>
+<p><em>Delete Volume after VM deletion</em> – enable this option to automatically delete the volume when the VM is removed. </p>
+</li>
 </ul>
 </li>
 </ul>
@@ -1832,28 +1888,63 @@ by default, &ldquo;50 GB&rdquo; is pre-selected.</li>
 <li>fill in the form on the next opened <em>Create Virtual Machine window</em> and click on the CREATE icon:
 <img src="../../../assets/images/vms/7.png?width=30pc&amp;classes=border,shadow" alt="">
 <ul>
-<li><em>Name</em> - specify a name for the virtual machine.</li>
-<li><em>Source</em> - choose the source for creating the VM: image, volume, or snapshot;<br>
-by default, &ldquo;image&rdquo; is pre-selected.</li>
-<li><em>OS Platform</em> - choose the operating system platform: Linux or Windows;<br>
-in this example we will create the Linux VM.</li>
-<li><em>Linux Distribution</em> -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).</li>
-<li><em>Image Version</em>/<em>Volume name</em>/<em>Snapshot name</em> - based on the selected source, specify the corresponding image version, volume name, or snapshot name.</li>
-<li><em>Flavor</em> - select the size of the VM (number of vCPUs and RAM);<br>
-by default, &ldquo;VC-4 (2 vCPUs, 4 GiB memory)&rdquo; is pre-selected.</li>
-<li><em>Password</em> - required for Windows VMs; come up with the root password (it must contain at least one Latin letter in upper case, one Latin letter in lower case, digit, special character, and must be at least 8 characters long);</li>
-<li><em>Confirm password;</em></li>
-<li><em>Networks</em> - select one or more networks to connect the VM to;<br>
-by default, &ldquo;public&rdquo; network is pre-selected.</li>
-<li><em>Firewalls</em> - choose what collection of network access rules will control the traffic to this VM;<br>
-by default, &ldquo;default&rdquo; Firewall is pre-selected;<br>
-💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.</li>
-<li><em>Tags</em> - optional; use this field to assign tags to the VM.</li>
-<li><em>Volume size (GB)</em> - provide the preferred disk size for the VM;<br>
+<li>
+<p><em>Name</em> - specify a name for the virtual machine.</p>
+</li>
+<li>
+<p><em>Source</em> - choose the source for creating the VM: image, volume, or snapshot;<br>
+by default, &ldquo;image&rdquo; is pre-selected.</p>
+</li>
+<li>
+<p><em>OS Platform</em> - choose the operating system platform: Linux or Windows;<br>
+in this example we will create the Linux VM.</p>
+</li>
+<li>
+<p><em>Linux Distribution</em> -  if Linux OS is selected, choose the desired distribution (e.g. Ubuntu, CentOS, etc.).</p>
+</li>
+<li>
+<p><em>Image Version</em>/<em>Volume name</em>/<em>Snapshot name</em> - based on the selected source, specify the corresponding image version, volume name, or snapshot name.</p>
+</li>
+<li>
+<p><em>Flavor</em> - select the size of the VM (number of vCPUs and RAM);<br>
+by default, &ldquo;VC-4 (2 vCPUs, 4 GiB memory)&rdquo; is pre-selected.</p>
+</li>
+<li>
+<p><em>Password</em> - required for Windows VMs; come up with the root password (it must contain at least one Latin letter in upper case, one Latin letter in lower case, digit, special character, and must be at least 8 characters long);</p>
+</li>
+<li>
+<p><em>Confirm password;</em></p>
+</li>
+<li>
+<p><em>Networks / Ports</em> — choose how the VM will connect to the network:</p>
+<ul>
+<li><em>Networks</em> — select one or more available networks. A new port will be created automatically for each selected network;<br>
+by default, &ldquo;public&rdquo; network is pre-selected;<br>
+optionally specify Fixed IPs within the subnet when using the network option.</li>
+<li><em>Ports</em> — select an existing port to attach to the VM; the assigned firewalls will be displayed below (read-only).</li>
+</ul>
+</li>
+<li>
+<p><em>Firewalls</em> - define which network rules control VM traffic:</p>
+<ul>
+<li>using <em>Networks</em>, you can select Firewalls manually;<br>
+by default, &ldquo;default&rdquo; Firewall is pre-selected;</li>
+<li>using <em>Ports</em>, Firewalls will be inherited from the selected port.</li>
+</ul>
+<p>💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.</p>
+</li>
+<li>
+<p><em>Tags</em> - optional; use this field to assign tags to the VM.</p>
+</li>
+<li>
+<p><em>Volume size (GB)</em> - provide the preferred disk size for the VM;<br>
 valid range: 10–1000 GiB;<br>
 minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB; <br>
-by default, &ldquo;50 GB&rdquo; is pre-selected.</li>
-<li><em>Delete Volume after VM deletion</em> – enable this option to automatically delete the volume when the VM is removed. </li>
+by default, &ldquo;50 GB&rdquo; is pre-selected.</p>
+</li>
+<li>
+<p><em>Delete Volume after VM deletion</em> – enable this option to automatically delete the volume when the VM is removed. </p>
+</li>
 </ul>
 </li>
 </ul>
@@ -1920,6 +2011,20 @@ by default, &ldquo;50 GB&rdquo; is pre-selected.</li>
 <p>After these steps, the RDP File of the selected Windows Virtual Machine will be downloaded.<br>
 Alternatively, you can download RDP file from <em>Virtual Machine details page</em>, by clicking on the appropriative <strong>quick actions</strong> icon there:
 <img src="../../../assets/images/vms/30.png?width=15pc&amp;classes=border,shadow" alt=""></p>
+<h2 id="activatedeactivate-interface">Activate/Deactivate Interface</h2>
+
+<div class="notices note" ><p>💡 Activating or deactivating an Interface allows to temporarily enable or disable network connectivity for a Virtual Machine without deleting the Interface itself.</p>
+</div>
+
+<p>To activate or deactivate the Interface of the selected VM, do the following:</p>
+<ul>
+<li>identify the required Interface on the NETWORKS &amp; SECURITY tab of the selected VM details page;</li>
+<li>click on the <strong>Actions</strong> icon and select <strong>Activate interface</strong> or <strong>Deactivate interface</strong> from the list of available options;</li>
+<li>confirm your action in the next opened <em>Confirmation window</em>.</li>
+</ul>
+<p>After these steps, the selected Interface will change its status accordingly — UP when activated, or DOWN when deactivated:
+<img src="../../../assets/images/networks/net-24.png?classes=border,shadow" alt=""></p>
+<p>💡 To find additional instructions and information VM&rsquo;s Interfaces use the articles: <a href="https://docs.ventuscloud.eu/products/networking/manage-networks/">VM&rsquo;s Networks and Interfaces</a>.</p>
 <h2 id="associatedisassociate-floating-ip">Associate/Disassociate Floating IP</h2>
 
 <div class="notices note" ><p>📌 This option is available only for VMs created in the internal network with an configured external Router.</p>
@@ -1944,7 +2049,7 @@ Alternatively, you can download RDP file from <em>Virtual Machine details page<
 </ul>
 <p>After these steps, the selected Virtual Machine will be again publicly unavailable.</p>
 <p>Alternatively, you can associate/disassociate floating IPs from the <em>NETWORKS &amp; SECURITY TAB</em> on the <em>Virtual Machine details page</em>:<br>
-<img src="../../../assets/images/vms/31.png?classes=border,shadow" alt=""></p>
+<img src="../../../assets/images/vms/14.2.png?classes=border,shadow" alt=""></p>
 <p>💡 To find additional instructions and information about Floating IPs and VM&rsquo;s Interfaces use the articles: <a href="https://docs.ventuscloud.eu/products/networking/floating-ips/">Floating IPs</a>, <a href="https://docs.ventuscloud.eu/products/networking/manage-networks/">VM&rsquo;s Networks and Interfaces</a>.</p>
 <h2 id="edit-virtual-machine">Edit Virtual Machine</h2>
 <p>To edit the Virtual Machine, do the following:</p>
@@ -2066,7 +2171,7 @@ The VM will be backed up according to the workload&rsquo;s schedule. If the sche
 </li>
 <li>
 <p>Select <em>RESTORES TAB</em> on the opened <em>Backup details page</em>:<br>
-<img src="../../../assets/images/backups/27.png?width=20pc&amp;classes=border,shadow" alt=""></p>
+<img src="../../../assets/images/backups/27.png?width=15pc&amp;classes=border,shadow" alt=""></p>
 </li>
 </ol>
 <p>On this page you can find all records of the restore operation initiated from the current Backup, with the <em>Restore VM button, Search bar</em> and <em>Actions icon</em>, which opens a list of available management actions for the selected Restore:
@@ -2973,6 +3078,22 @@ The VM will be backed up according to the workload&rsquo;s schedule. If the sche
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -3145,19 +3266,19 @@ The VM will be backed up according to the workload&rsquo;s schedule. If the sche
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1758549965"></script>
-    <script src="/js/perfect-scrollbar.min.js?1758549965"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1758549965"></script>
-    <script src="/js/jquery.sticky.js?1758549965"></script>
-    <script src="/js/featherlight.min.js?1758549965"></script>
-    <script src="/js/highlight.pack.js?1758549965"></script>
+    <script src="/js/clipboard.min.js?1759922042"></script>
+    <script src="/js/perfect-scrollbar.min.js?1759922042"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1759922042"></script>
+    <script src="/js/jquery.sticky.js?1759922042"></script>
+    <script src="/js/featherlight.min.js?1759922042"></script>
+    <script src="/js/highlight.pack.js?1759922042"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1758549965"></script>
-    <script src="/js/learn.js?1758549965"></script>
-    <script src="/js/hugo-learn.js?1758549965"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1759922042"></script>
+    <script src="/js/learn.js?1759922042"></script>
+    <script src="/js/hugo-learn.js?1759922042"></script>
     
         
-            <script src="/mermaid/mermaid.js?1758549965"></script>
+            <script src="/mermaid/mermaid.js?1759922042"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
