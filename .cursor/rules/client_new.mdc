@@ -1,0 +1,48 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Purpose: Inform users about new features in a clear, friendly, and engaging tone.
+Use Case: Product update announcements (e.g., new feature in Client Console).
+Word limit: Try to keep the message within 150 words.
+Clarity rule: Use the shortest and clearest possible wording. Avoid complex sentences, jargon, or redundant phrases.
+
+0. ✏️ Structure Template:
+- Header / Branding (Optional)
+- Greeting and short intro
+- What's new (different appropriate emojis)
+- Call to action with 🔗
+- Encouraging closing
+
+1. Tone & Style Guidelines
+✅ Friendly and professional.
+✅ Prioritize clarity over formality.
+✅ Use short sentences and simple words.
+✅ Use emojis like 📌, 🔗, ⚠️ to visually organize the message.
+✅ Avoid unnecessary detail — say only what matters to the user.
+✅ Link to docs/tutorials.
+
+1. Closing Encouragement
+
+"Stay tuned for more updates, and as always, we’re here to assist you!"
+
+3. example:
+Ventus ____
+Greetings!
+We’re excited to announce the launch of Virtual Machine Backups in the Client Console — a powerful new feature that lets you easily protect your workloads.
+What’s new?
+
+💡 VM Backup feature now available (Closed Beta)
+You can now enable backups for your virtual machines, test the functionality, and explore the experience through our step-by-step guide in the official documentation.
+🔗 Learn how to back up a VM
+📌 Free testing period before billing starts
+Backup billing will begin in July. Until then, testing is completely free of charge.
+Planned pricing:
+• €9 per license for each protected VM
+• + standard storage price (€0.00003 per GB/hour) based on the space used
+It’s a perfect time to test backups and see how they fit your setup. 
+
+Stay tuned for more updates, and as always, we’re here to assist you!
+
+

@@ -1,0 +1,172 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# EWW | ITandTEL Cloud Documentation - Cursor Project Rules
+
+## Project Overview
+This is a Hugo-based documentation website for EWW | ITandTEL Cloud platform (docs.ventuscloud.eu) using the hugo-theme-learn theme with custom branding.
+
+## File Structure & Organization
+
+### Content Structure
+- `/content/` - Main documentation content in Markdown
+- `/content/_index.md` - Homepage content
+- `/content/getting-started/` - Chapter 1: User onboarding guides
+- `/content/identity-management/` - Chapter 2: User and group management
+- `/content/products/` - Chapter 3: Core cloud services documentation
+- `/content/iac/` - Chapter 4: Infrastructure as Code guides
+- `/content/tutorials-advanced/` - Chapter 5: Advanced scenarios
+
+### Asset Organization
+- `/content/assets/images/` - All documentation images organized by service:
+  - `/account/` - Account management screenshots
+  - `/vms/` - Virtual machine interfaces
+  - `/databases/` - Database service images
+  - `/networks/` - Networking screenshots
+  - `/lb/` - Load balancer images
+  - `/clusters/` - Kubernetes screenshots
+  - `/backups/` - Backup service images
+  - And 15+ other service-specific directories
+
+### Configuration & Styling
+- `/config.toml` - Hugo site configuration
+- `/static/css/theme-mine.css` - Custom brand styling
+- `/layouts/partials/` - Custom Hugo templates
+- `/themes/hugo-theme-learn/` - Base theme (do not modify directly)
+
+## Content Writing Guidelines
+
+### Front Matter Format
+Use TOML front matter for all content files:
+```toml
++++
+title = "Page Title"
+date = 2019-09-25T01:53:09+03:30
+weight = 10
+chapter = true  # For index pages
+pre = "<b>1. </b>"  # Chapter numbering
++++
+```
+
+### Content Structure Rules
+1. **Chapter Index Pages** (`_index.md`):
+   - Must have `chapter = true` in front matter
+   - Include weight for proper ordering
+   - End with `{{% children style="h4" depth="2" %}}`
+   - Use chapter numbering in `pre` field
+
+2. **Regular Pages**:
+   - No `chapter = true` flag
+   - Descriptive titles targeting technical users
+   - Include step-by-step instructions
+   - Reference screenshots with relative paths
+
+### Writing Style
+- **Audience**: DevOps engineers, system administrators, developers
+- **Tone**: Professional, technical, instructional
+- **Format**: Step-by-step guides with numbered lists
+- **Screenshots**: Include relevant images for every major step
+- **Code Examples**: Use proper syntax highlighting
+
+### Formatting Guidelines
+- **List Formatting**: In bulleted or numbered lists, the last item may include additional spacing for visual separation or emphasis when appropriate
+- **Consistent Indentation**: Maintain consistent indentation levels throughout nested lists
+- **Parallel Structure**: Keep list items in parallel grammatical structure
+
+## Image Management Rules
+
+### Image Naming Convention
+- Use descriptive, numbered filenames: `1.png`, `2.png`, etc.
+- For variations: `21-1.png`, `21.png`
+- Place in service-specific directories under `/content/assets/images/`
+
+### Image References
+- Use relative paths: `![Description](mdc:../../assets/images/service-name/filename.png)` or `![Description](mdc:../../../assets/images/service-name/filename.png)` depending on directory depth
+- Always include alt text for accessibility
+- Keep images under 500KB when possible
+- Use PNG format for screenshots
+- Include Hugo parameters for styling: `?width=30pc&classes=border,shadow`
+
+## Styling & Branding
+### Color Scheme (defined in theme-mine.css)
+- Primary brand color: `#0092cf`
+- Hover color: `#0078c0`
+- Menu background: `#252c31`
+- Active sections: `#20272b`
+
+### CSS Customization Rules
+- Only modify `/static/css/theme-mine.css`
+- Use CSS custom properties (variables) defined in `:root`
+- Maintain consistent branding across all pages
+- Center-align main headings and navigation elements
+
+## Hugo-Specific Guidelines
+
+### Shortcodes Usage
+- Use `{{% children %}}` for automatic page listings
+- Use `{{% notice note %}}` for important callouts
+- Reference theme documentation for additional shortcodes
+
+### Menu Configuration
+- Weight determines menu order (lower = higher in menu)
+- Use chapter structure for main sections
+- Maintain consistent numbering scheme
+
+### Search Functionality
+- Ensure `outputs = ["HTML", "RSS", "JSON"]` in config.toml
+- All content is automatically indexed
+- Use descriptive titles and headings for better search results
+
+## Development Workflow
+
+### Local Development
+- Run `hugo server -D` for development with drafts
+- Use `hugo server --navigateToChanged` for automatic navigation
+- Test all links and images before committing
+
+### Content Updates
+1. Create/edit Markdown files in appropriate `/content/` subdirectory
+2. Add/update images in corresponding `/content/assets/images/` folder
+3. Update front matter with correct weight and metadata
+4. Test locally before deploying
+
+### File Naming Conventions
+- Use lowercase with hyphens: `virtual-machines.md`
+- Match directory names to service categories
+- Keep URLs SEO-friendly and descriptive
+
+## Quality Standards
+
+### Content Requirements
+- Every guide must include screenshots for major steps
+- Code examples must be tested and functional
+- Links must be verified and working
+- Technical accuracy is paramount
+
+### Accessibility
+- Include alt text for all images
+- Use proper heading hierarchy (H1, H2, H3, etc.)
+- Ensure color contrast meets standards
+- Test with screen readers when possible
+
+### SEO Optimization
+- Use descriptive, keyword-rich titles
+- Include meta descriptions where appropriate
+- Optimize images with descriptive filenames
+- Maintain consistent URL structure
+
+## Deployment Notes
+- Site builds automatically on changes to main branch
+- Deployed to docs.ventuscloud.eu
+- Hugo version compatibility maintained in CI/CD pipeline
+- Static assets served from CDN for performance
+
+## Common Tasks
+- Adding new service documentation: Create subdirectory in `/content/products/`
+- Updating screenshots: Replace files in appropriate `/content/assets/images/` subdirectory
+- Modifying navigation: Update `weight` values in front matter
+- Styling changes: Modify `/static/css/theme-mine.css` only
+
+Remember: This documentation serves enterprise cloud platform users. Maintain professional quality, technical accuracy, and consistent branding throughout all content.
