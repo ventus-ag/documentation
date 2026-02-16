@@ -109,7 +109,8 @@ Removing Administrator is available only if your User Role in this Organization 
 
 To remove Administrator from the selected Organization, do the following:
 - identify this unnecessary Administrator on the *Administrators page*;   
-- click on the **Actions** icon and select the **Remove** in the list of available options;    
+- click on the **Actions** icon and select the **Remove** in the list of available options:  
+![](../../assets/images/projects/6.png?classes=border,shadow)    
 - confirm the User deletion on the next opened *Confirmation window*. 
      
 After confirming this action, the selected User will be removed from the selected Organization.

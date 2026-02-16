@@ -44,7 +44,7 @@ To get to the *Object Storage Credentials page*, select the **Storage** from
 ![](../../../assets/images/store/1.png?width=30pc&classes=border,shadow) 
 
 On this page you can find created Object Storage credentials in the current Project with the *Create or Browse buckets button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Object Storage credentials:
-![](../../../assets/images/store/2.png?classes=border,shadow) 
+![](../../../assets/images/store/2.png?width=45pc&classes=border,shadow) 
 
 **Actions** icon opens the next list of available management actions:
 - *Show access secret* - this option is used to find the secret key of the selected Object Storage credentials;

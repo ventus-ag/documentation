@@ -102,17 +102,6 @@ After these steps, the selected Database will be updated in a few minutes.
 Also, you can edit the Database from the current *Database details page*, by clicking on the appropriative **quick actions** icon there: 
 ![](../../../assets/images/databases/11.png?width=15pc&classes=border,shadow)
 
-## Reset Database Password
-To reset the Database password do the following:
-- identify Database, which password you want to reset, on the *Databases page*;  
-- click on the **Actions** icon and select the **Reset Password** in the list of available options;
-- confirm your action on the next opened *Confirmation window*.
-
-After these steps, the password of the selected Database will be regenerated and the next opened window will provide your *new password*. Please save the password for further use.
-
-Also, you can reset password from the current *Database details page*, by clicking on the appropriative **quick actions** icon there: 
-![](../../../assets/images/databases/12.png?width=15pc&classes=border,shadow)
-
 ## Delete Database
 To delete the Database do the following:
 - identify this unnecessary Database on the *Databases page*;

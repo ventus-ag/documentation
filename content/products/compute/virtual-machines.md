@@ -12,6 +12,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Create Windows Virtual Machine](#create-windows-virtual-machine)
   - [Virtual Machine details page](#virtual-machine-details-page)
   - [Download RDP File](#download-rdp-file)
+  - [Activate/Deactivate Interface](#activatedeactivate-interface)
   - [Associate/Disassociate Floating IP](#associatedisassociate-floating-ip)
   - [Edit Virtual Machine](#edit-virtual-machine)
   - [Resize Virtual Machine](#resize-virtual-machine)
@@ -19,6 +20,8 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Shelve Virtual Machine](#shelve-virtual-machine)
   - [Start Virtual Machine](#start-virtual-machine)
   - [Delete Virtual Machine](#delete-virtual-machine)
+  - [Backup Virtual Machine](#backup-virtual-machine)
+  - [Restore Virtual Machine](#restore-virtual-machine)
 
 
 ## Virtual Machines page 
@@ -58,11 +61,18 @@ To create new Linux VM, do the following:
   - *Flavor* - select the size of the VM (number of vCPUs and RAM);  
     by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected.     
   - *Key pair* - required for Linux VMs; choose an existing SSH key (created on the *SSH Keys* page) or create a new one to connect to the VM via SSH.   
-  - *Networks* - select one or more networks to connect the VM to;  
-    by default, "public" network is pre-selected.     
-  - *Firewalls* -  choose what collection of network access rules will control the traffic to this VM;     
-    by default, "default" Firewall is pre-selected;   
-    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall.   
+  - *Networks / Ports* — choose how the VM will connect to the network:
+    - *Networks* — select one or more available networks. A new port will be created automatically for each selected network;  
+      by default, "public" network is pre-selected;  
+      optionally specify Fixed IPs within the subnet when using the network option.   
+    - *Ports* — select an existing port to attach to the VM; the assigned firewalls will be displayed below (read-only). 
+  - *Firewalls* - define which network rules control VM traffic:       
+    - using *Networks*, you can select Firewalls manually;   
+      by default, "default" Firewall is pre-selected;  
+    - using *Ports*, Firewalls will be inherited from the selected port.     
+
+    💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.
+    
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
@@ -93,11 +103,18 @@ To create new Windows VM, do the following:
     by default, "VC-4 (2 vCPUs, 4 GiB memory)" is pre-selected.  
   - *Password* - required for Windows VMs; come up with the root password (it must contain at least one Latin letter in upper case, one Latin letter in lower case, digit, special character, and must be at least 8 characters long);  
   - *Confirm password;*  
-  - *Networks* - select one or more networks to connect the VM to;  
-    by default, "public" network is pre-selected.   
-  - *Firewalls* - choose what collection of network access rules will control the traffic to this VM;   
-    by default, "default" Firewall is pre-selected;  
-    💡 Default Firewall allows access to the Internet from the VMs, but denies almost all access on the VMs from outside, except for objects belonging to the same default Firewall. 
+  - *Networks / Ports* — choose how the VM will connect to the network:
+    - *Networks* — select one or more available networks. A new port will be created automatically for each selected network;  
+      by default, "public" network is pre-selected;  
+      optionally specify Fixed IPs within the subnet when using the network option.   
+    - *Ports* — select an existing port to attach to the VM; the assigned firewalls will be displayed below (read-only). 
+  - *Firewalls* - define which network rules control VM traffic:       
+    - using *Networks*, you can select Firewalls manually;   
+      by default, "default" Firewall is pre-selected;  
+    - using *Ports*, Firewalls will be inherited from the selected port.     
+
+    💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.
+
   - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
@@ -172,6 +189,21 @@ After these steps, the RDP File of the selected Windows Virtual Machine will be 
 Alternatively, you can download RDP file from *Virtual Machine details page*, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/vms/30.png?width=15pc&classes=border,shadow)
 
+## Activate/Deactivate Interface
+{{% notice note %}}
+💡 Activating or deactivating an Interface allows to temporarily enable or disable network connectivity for a Virtual Machine without deleting the Interface itself.
+{{% /notice %}}
+
+To activate or deactivate the Interface of the selected VM, do the following:
+- identify the required Interface on the NETWORKS & SECURITY tab of the selected VM details page;
+- click on the **Actions** icon and select **Activate interface** or **Deactivate interface** from the list of available options;
+- confirm your action in the next opened *Confirmation window*.
+
+After these steps, the selected Interface will change its status accordingly — UP when activated, or DOWN when deactivated:
+![](../../../assets/images/networks/net-24.png?classes=border,shadow)
+
+💡 To find additional instructions and information VM's Interfaces use the articles: [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
+
 ## Associate/Disassociate Floating IP
 
 {{% notice note %}}
@@ -197,7 +229,7 @@ Now, if you want to close the access from Internet to this VM again, do the foll
 After these steps, the selected Virtual Machine will be again publicly unavailable.
 
 Alternatively, you can associate/disassociate floating IPs from the *NETWORKS & SECURITY TAB* on the *Virtual Machine details page*:  
-![](../../../assets/images/vms/31.png?classes=border,shadow)
+![](../../../assets/images/vms/14.2.png?classes=border,shadow)
 
 💡 To find additional instructions and information about Floating IPs and VM's Interfaces use the articles: [Floating IPs](https://docs.ventuscloud.eu/products/networking/floating-ips/), [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
@@ -290,5 +322,71 @@ After these steps, the selected Virtual Machine will be deleted.
 
 Alternatively, you can delete virtual machine from its *Details page*,, by clicking on the appropriative **quick actions** icon there:
 ![](../../../assets/images/vms/24.png?width=15pc&classes=border,shadow)
+
+
+## Backup Virtual Machine
+
+{{% notice note %}}
+Please be aware that Backup feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
+{{% /notice %}}
+
+Now, in the Cloud Console you have the option to set up regular backups for your virtual machines by creating a backup workload and assigning the virtual machine to it.  
+The VM will be backed up according to the workload's schedule. If the schedule is turned off, you can still perform a manual one-time backup. However, to perform any backup, the VM must be assigned to a specific backup workload. 
+
+To get to the *Backup Workloads page*, select the **Backups** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+![](../../../assets/images/backups/1.png?width=15pc&classes=border,shadow) 
+
+On this page you can find all created Backup Workloads in the current Project, with the *Create button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected workload.  
+![](../../../assets/images/backups/5.png?classes=border,shadow)
+
+Additionally, from this page, you can navigate to the detail page of each created workload by clicking on its **name**. There, you will find detailed information about its policy and schedule and gain access to backup and restore options, among other management actions for the selected workload:
+![](../../../assets/images/backups/32.png?classes=border,shadow)
+
+More information about backup workloads you can find here - [Backup Workloads](https://docs.ventuscloud.eu/products/backups/backup-workloads/).
+
+## Restore Virtual Machine
+
+{{% notice note %}}
+Please be aware that Restore feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage backups for your VMs. If you’re willing to accept the associated risks of using a beta service, you’re welcome to proceed. Rest assured, customer support is readily available for any questions or issues you may encounter.  
+{{% /notice %}}
+
+If your VM is assigned to a Backup Workload and has a successfully created Backup, you can restore it when needed with the same settings and data.  
+
+The restore process will return the VM to its previous state, including the same project, network, image, and key pair. However, you can assign a new name and flavor to the restored VMs during the process.
+
+To get to the *Restores page* do the following:   
+1) Open the *Backup Workloads page* - select the **Backups** from the VIRTUAL DATACENTER block in the *side-bar menu*:    
+![](../../../assets/images/backups/1.png?width=15pc&classes=border,shadow) 
+
+2) Navigate to the *Workload details page* by clicking on the desired workload **name**:    
+![](../../../assets/images/backups/4.png?classes=border,shadow)
+
+3) Select *CREATED BACKUPS TAB* on the opened *Workload details page*:  
+![](../../../assets/images/backups/13.png?width=25pc&classes=border,shadow)
+
+4) Navigate to the *Backup details page* by clicking on the desired backup **name**:    
+![](../../../assets/images/backups/26.png?classes=border,shadow)
+
+4) Select *RESTORES TAB* on the opened *Backup details page*:  
+![](../../../assets/images/backups/27.png?width=15pc&classes=border,shadow)
+
+On this page you can find all records of the restore operation initiated from the current Backup, with the *Restore VM button, Search bar* and *Actions icon*, which opens a list of available management actions for the selected Restore:
+![](../../../assets/images/backups/28.png?classes=border,shadow)
+
+More information about restores can be found here - [Restores](https://docs.ventuscloud.eu/products/backups/restores/).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -10,7 +10,6 @@ On this page, you can find an explanation of how to create a new Project, and ho
   - [Projects page](#projects-page)
   - [Create Project](#create-project)
   - [Project Overview Page](#project-overview-page)
-  - [Set Budget Threshold](#set-budget-threshold)
   - [Edit Project](#edit-project)
   - [Delete Project](#delete-project)
   - [Add users to Project](#add-users-to-project)
@@ -29,7 +28,7 @@ This action will open additional sections on the *side-bar menu* and redirect yo
 - *Edit* - by selecting this option, you can change the Project name;
 - *Delete* - this option is for Project removing.
 
-Additionally, from this page, you can navigate to the overview page of each created Project by clicking on its **name**. There, you will find resource utilization graphs, quota details, and billing information for essential resources such as virtual machines, volumes, databases, and object storage. More information about the *Project overview page* will be provided in the following sections.   
+Additionally, from this page, you can navigate to the overview page of each created Project by clicking on its **name**. There, you will find resource utilization graphs and quota details. More information about the *Project overview page* will be provided in the following sections.   
 ![](../../assets/images/projects/2.png?width=50pc&classes=border,shadow) 
 
 ## Create Project
@@ -51,7 +50,7 @@ All subsequent services provided by the Cloud Console within the one Project, wi
 
 ## Project Overview Page
 To open the *Project overview page*, click on the **Name** of the appropriate Project on the *Projects page*:
-![](../../assets/images/projects/5.png?width=45pc&classes=border,shadow) 
+![](../../assets/images/projects/5.1.png?width=45pc&classes=border,shadow) 
 
 This action will redirect you to the *Project overview page*, where you can find:   
 - project **details area** with actual information about it (id, region):  
@@ -59,35 +58,6 @@ This action will redirect you to the *Project overview page*, where you can fin
 
 - resource **utilization graphs** with its quota details:  
 ![](../../assets/images/projects/14.png?width=60pc&classes=border,shadow) 
-
-- project **billing information** for essential resources such as virtual machines, volumes, databases, and object storage. 
-Access to this section is granted only to Administrators or Owners (project members cannot view billing information):  
-![](../../assets/images/projects/12.png?width=60pc&classes=border,shadow) 
-
-## Set Budget Threshold
-
-In Cloud Console you can configure a **monthly budget tracker** for your Project to monitor and control cloud resource consumption. Once the budget reaches 80% of the set limit, the subscribed Administrators of your Organization will receive daily email notifications informing them that the budget is nearly exhausted.
-
-{{% notice note %}}
-Only Administrators or Owners can configure the monthly budget tracker (project members do not have access to billing information).  
-Likewise, only Administrators or Owners can be subscribed to receive budget alerts.
-{{% /notice %}}
-
-To set a budget limit, follow these steps:
-
-- navigate to the **billing information** section on the *Project overview page* and click the **Set Budget Threshold** button:  
-![](../../assets/images/projects/13.png?width=60pc&classes=border,shadow)   
-- fill in the form on the next opened *Set Budget Threshold window* and click on the SET button: 
-  - **Budget limit amount**:  enter the monthly budget limit amount, which will trigger daily alerts once 80% of the limit is reached;
-  - **Subscribers**: select who will receive budget alerts from the list of Organization Administrators and the Owner — these users will be notified when the budget threshold is reached.  
-![](../../assets/images/projects/15.png?width=35pc&classes=border,shadow) 
-
-Once the budget limit is set, a **Budget Tracker** will be displayed on the page, allowing Administrators to monitor the project's monthly consumption in real time.
-![](../../assets/images/projects/16.png?width=60pc&classes=border,shadow) 
-
-{{% notice note %}}
-If you wish to disable the budget threshold, hide the Budget Tracker, and stop all budget alerts, set the Budget Limit Amount to 0.
-{{% /notice %}}
 
 ## Edit Project 
 To edit the Project, do the following:
@@ -117,7 +87,6 @@ Also, you can delete the Project from the *Project overview page*, by clicking o
 ![](../../../assets/images/projects/11.png?width=25pc&classes=border,shadow)
 
 ## Add users to Project
-
 To add Users to the Project, you need to create a Group, in which you can create a list of Projects and a corresponding list of Users, who will be added to this Project as *Members*.
 
 For more details, please, see - [Groups](https://docs.ventuscloud.eu/identity-management/groups/)
