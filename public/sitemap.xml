@@ -72,6 +72,8 @@
   </url><url>
     <loc>http://localhost:1313/identity-management/administrators/</loc>
   </url><url>
+    <loc>http://localhost:1313/getting-started/billing/</loc>
+  </url><url>
     <loc>http://localhost:1313/products/databases/database_backups/</loc>
   </url><url>
     <loc>http://localhost:1313/products/security/firewall-rules/</loc>

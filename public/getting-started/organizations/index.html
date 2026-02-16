@@ -12,22 +12,22 @@
     <title>Organizations - EWW | ITandTEL Cloud Docs</title>
 
     
-    <link href="/css/nucleus.css?1759920302" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1759920302" rel="stylesheet">
-    <link href="/css/hybrid.css?1759920302" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1759920302" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1759920302" rel="stylesheet">
-    <link href="/css/auto-complete.css?1759920302" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1759920302" rel="stylesheet">
-    <link href="/css/theme.css?1759920302" rel="stylesheet">
-    <link href="/css/tabs.css?1759920302" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1759920302" rel="stylesheet">
+    <link href="/css/nucleus.css?1771273683" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1771273683" rel="stylesheet">
+    <link href="/css/hybrid.css?1771273683" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1771273683" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1771273683" rel="stylesheet">
+    <link href="/css/auto-complete.css?1771273683" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1771273683" rel="stylesheet">
+    <link href="/css/theme.css?1771273683" rel="stylesheet">
+    <link href="/css/tabs.css?1771273683" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1771273683" rel="stylesheet">
     
-    <link href="/css/theme-mine.css?1759920302" rel="stylesheet">
+    <link href="/css/theme-mine.css?1771273683" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1759920302"></script>
+    <script src="/js/jquery-3.3.1.min.js?1771273683"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -102,14 +102,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1759920302"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1759920302"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1771273683"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1771273683"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1759920302"></script>
+<script type="text/javascript" src="/js/search.js?1771273683"></script>
 
     
   </div>
@@ -187,6 +187,27 @@
       <li data-nav-id="/getting-started/organizations/" title="Organizations" class="dd-item active">
         <a href="/getting-started/organizations/">
         Organizations
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/billing/" title="Billing" class="dd-item ">
+        <a href="/getting-started/billing/">
+        Billing
         
         </a>
     </li>
@@ -1772,16 +1793,42 @@
 </li>
 </ul>
 <h2 id="users-within-organization">Users within Organization</h2>
-<p>In the Cloud Console Organizations User can have next Roles:</p>
+<p>In the Cloud Console, Organization Users can have different roles depending on their access level.
+<strong>🔹 Resource Access Roles</strong>
+The following roles define access to Organization resources and its Projects:</p>
 <ul>
-<li><strong>Owner</strong> - this role is assigned to a User, who created this Organization (this User will also be considered the <em>Administrator</em> of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;</li>
-<li><strong>Administrator</strong> - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can&rsquo;t edit or delete Organization;</li>
-<li><strong>Member</strong> - this role is assigned to a User who is granted access to the Organization&rsquo;s Project and, accordingly, to all resources within this Project. Member can&rsquo;t add/remove other Users in the Project, can&rsquo;t see information about Administrators or Billing of the Organization, can&rsquo;t add new Projects, edit or delete current one.</li>
+<li>
+<p><strong>Owner</strong> - this role is assigned to the User who created the Organization. The Owner has full access to all Organization resources, including management of Groups, Projects, and their Users. The Owner also has full access to the Billing information of the Organizations and its Project;</p>
+</li>
+<li>
+<p><strong>Administrator</strong> - this role can be assigned to a User by the Owner or another Administrator of the Organization. Administrators have access to all Organization resources, including management of Groups, Projects, and their Users. However, Administrators cannot edit or delete the Organization and do not have access to Billing information;</p>
+</li>
+<li>
+<p><strong>Member</strong> - this role is assigned to Users who are granted access to specific Projects, typically through Group membership: when a Group is created with access to selected Projects, invited Users automatically become Organization Members. Members have access only to the resources within those Projects. Their permissions are limited: they cannot view and manage Organization Administrators, modify Projects, or access Billing information.</p>
+</li>
 </ul>
-<p>As a <em>Owner</em> or <em>Administrator</em> you can add additional Admins to the Organization, which will also have access to all resources of the Organization.<br>
-Detailed instructions, how to add new Administrators to the Organization you can find in article - <a href="https://docs.ventuscloud.eu/identity-management/administrators/">Administrators</a>.</p>
-<p>Also you can create a Group and open access only to specified Projects of the Organizations. Users, who you invite to the Group will be just an Organization Members, with very limited management actions within Organization.<br>
-How to create and configure Group, please see the article - <a href="https://docs.ventuscloud.eu/identity-management/groups/">Groups</a></p>
+
+<div class="notices note" ><p>📌 Resource roles (Administrator or Member) can be assigned only by the Owner or Administrators.  Members do not have permission to assign roles.</p>
+</div>
+
+
+<div class="notices note" ><p>📌 Groups allow you to restrict access to selected Projects. Users assigned to a Group are granted the Member role with limited permissions.</p>
+</div>
+
+<p>💡 Detailed instructions:<br>
+how to add new Administrators to the Organization you can find in article - <a href="https://docs.ventuscloud.eu/identity-management/administrators/">Administrators</a>;<br>
+how to create and configure Group, please see the article - <a href="https://docs.ventuscloud.eu/identity-management/groups/">Groups</a>.</p>
+<p><strong>🔹 Billing Role</strong>
+In addition to resource access roles, the Organization may have Billing Administrators.<br>
+<strong>Billing Administrator</strong> – has access exclusively to the Billing section of te Console. Billing Administrators can view and manage Billing information but do not have access to Organization resources, Projects, or User management (unless they are also assigned a resource role).</p>
+
+<div class="notices note" ><p>⚠️ Billing information is accessible only to the Organization Owner and Billing Administrators.</p>
+</div>
+
+
+<div class="notices note" ><p>⚠️ Only the Owner can assign Billing Administrators.</p>
+</div>
+
 <h2 id="organizations-page">Organizations page</h2>
 <p>If you are a new user and have just created new account, you will be automatically redirected to the <em>Organizations page</em>, where you can create your first Organization or find a list of Organizations, to which Projects your User has access as a <em>Member</em> or <em>Administrator</em>:<br>
 <img src="../../../assets/images/organizations/10.png?width=50pc&amp;classes=border,shadow" alt=""></p>
@@ -1984,6 +2031,22 @@ How to create and configure Group, please see the article - <a href="https://doc
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2973,7 +3036,7 @@ How to create and configure Group, please see the article - <a href="https://doc
 			<a class="nav nav-prev" href="/getting-started/account/" title="Account"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/getting-started/projects/" title="Projects" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/getting-started/billing/" title="Billing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2983,19 +3046,19 @@ How to create and configure Group, please see the article - <a href="https://doc
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1759920302"></script>
-    <script src="/js/perfect-scrollbar.min.js?1759920302"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1759920302"></script>
-    <script src="/js/jquery.sticky.js?1759920302"></script>
-    <script src="/js/featherlight.min.js?1759920302"></script>
-    <script src="/js/highlight.pack.js?1759920302"></script>
+    <script src="/js/clipboard.min.js?1771273683"></script>
+    <script src="/js/perfect-scrollbar.min.js?1771273683"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1771273683"></script>
+    <script src="/js/jquery.sticky.js?1771273683"></script>
+    <script src="/js/featherlight.min.js?1771273683"></script>
+    <script src="/js/highlight.pack.js?1771273683"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1759920302"></script>
-    <script src="/js/learn.js?1759920302"></script>
-    <script src="/js/hugo-learn.js?1759920302"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1771273683"></script>
+    <script src="/js/learn.js?1771273683"></script>
+    <script src="/js/hugo-learn.js?1771273683"></script>
     
         
-            <script src="/mermaid/mermaid.js?1759920302"></script>
+            <script src="/mermaid/mermaid.js?1771273683"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

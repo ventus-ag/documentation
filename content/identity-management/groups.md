@@ -18,7 +18,7 @@ On this page, you can find an explanation of how to create and manage a new Grou
 ## Groups page
 
 {{% notice note %}}
-In the Cloud Console, using Groups lets you add users to your project within your organization. As 'members' of your organization they can access specified project resources but can't add or remove users, view admin or billing details, create or edit projects within that organization.
+In the Cloud Console, using Groups lets you add users to your project within your organization. As 'members' of your organization they can access specified project resources but can't add or remove users, view admin details, create or edit projects within that organization.
 {{% /notice %}}  
 
 To get to the *Group page*, select the **Groups** from the *side-bar menu*:
@@ -75,7 +75,7 @@ After these steps, the newly added Project will appear in the first block of the
 **Actions** icon after accepting invitation opens the next list of available management actions:  
 - *Remove* - this option is using to delete the Project from the Group.
 
-Users from the second block will have access to this Project and, accordingly, to all resources in this Project, but they will not be able to add new projects to this Organization, see billing Information and manage the Groups and Administrators of the Organization that owns this Project.
+Users from the second block will have access to this Project and, accordingly, to all resources in this Project, but they will not be able to add new projects to this Organization,  and manage the Groups and Administrators of the Organization that owns this Project.
 
 
 ### Manage Users in Group
@@ -126,7 +126,7 @@ After these steps, invited User becomes a Member of the current Organization and
 ![](../../assets/images/groups/11.png?width=50pc&classes=border,shadow) 
 
 {{% notice note %}}
-Member - this role is assigned to a User who is granted access to the Organization's Project and, accordingly, to all resources within this Project. Member can't add/remove other Users in the Project, can't see information about Administrators or Billing of the Organization/Project, can't add new Projects, edit or delete current one. 
+Member - this role is assigned to a User who is granted access to the Organization's Project and, accordingly, to all resources within this Project. Member can't add/remove other Users in the Project, can't see information about Administrators of the Organization/Project, can't add new Projects, edit or delete current one. 
 {{% /notice %}}  
 
 ## Edit Group
