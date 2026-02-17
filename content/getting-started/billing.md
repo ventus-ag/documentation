@@ -18,7 +18,7 @@ On this page, you can find an explanation of how to use Billing Section in the C
 ## User Billing page
 
 {{% notice note %}}
-The Billing Section is available only to Users with the **owner** or **billing-administrator** role within the Organization.  
+The Billing section displays only Organizations where the User has the **owner** or **billing administrator** role.
 More detailed information about User roles within an Organization can be found here - [Users within Organization](https://docs.ventuscloud.eu/getting-started/organizations/#users-within-organization).
 {{% /notice %}}
 
@@ -26,11 +26,11 @@ More detailed information about User roles within an Organization can be found h
 To access billing information, select **Billing** from the *side-bar menu*:
 ![](../../../assets/images/billing/2.png?width=15pc&classes=border,shadow)  
 
-💡 Users assigned only the **billing-administrator** role will see a restricted set of sections in the sidebar:
+💡 Users assigned only the **billing administrator** role do not have permission to manage Organization resources and can only access billing-related information:
 ![](../../../assets/images/billing/1.png?width=15pc&classes=border,shadow)  
 
 This action will redirect you to the *User Billing* page, where you can:
-- view billing information for all organizations where you have the **owner** or **billing-administrator** role;
+- view billing information for all organizations where you have the **owner** or **billing administrator** role;
 - generate a consolidated billing report for all your owned organizations using the **Generate Billing Report** button;
 - update list of *billing administrators* for the organization using the **actions icon** (available only to Organization **owners**).
   
@@ -120,8 +120,8 @@ Also, you can generate a detailed billing report for a specific Project directly
 In Cloud Console you can configure a **monthly budget tracker** for your Project to monitor and control cloud resource consumption. Once the budget reaches 80% of the set limit, the subscribed Administrators of your Organization will receive daily email notifications informing them that the budget is nearly exhausted.
 
 {{% notice note %}}
-Only **billing-administrators** or **owner** can configure the monthly budget tracker.  
-Likewise, only **billing-administrators** or **owner** can be subscribed to receive budget alerts.
+Only **billing administrators** or **owner** can configure the monthly budget tracker.  
+Likewise, only **billing administrators** or **owner** can be subscribed to receive budget alerts.
 {{% /notice %}}
 
 To set a budget limit, follow these steps:
