@@ -42,7 +42,7 @@ how to create and configure Group, please see the article - [Groups](https://doc
   
 **🔹 Billing Role**
 In addition to resource access roles, the Organization may have Billing Administrators.  
-**Billing Administrator** – has access exclusively to the Billing section of te Console. Billing Administrators can view and manage Billing information but do not have access to Organization resources, Projects, or User management (unless they are also assigned a resource role).
+**Billing Administrator** – has access exclusively to the Billing section of the Console. Billing Administrators can view and manage Billing information but do not have access to Organization resources, Projects, or User management (unless they are also assigned a resource role).
 
 {{% notice note %}}
 ⚠️ Billing information is accessible only to the Organization Owner and Billing Administrators.
