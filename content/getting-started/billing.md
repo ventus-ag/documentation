@@ -31,8 +31,8 @@ To access billing information, select **Billing** from the *side-bar menu*:
 
 This action will redirect you to the *User Billing* page, where you can:
 - view billing information for all organizations where you have the **owner** or **billing administrator** role;
-- generate a consolidated billing report for all your owned organizations using the **Generate Billing Report** button;
-- update list of *billing administrators* for the organization using the **actions icon** (available only to Organization **owners**).
+- generate a consolidated billing report for all these organizations using the **Generate Billing Report** button;
+- update list of **billing administrators** for the organization using the **actions icon** (available only to Organization **owners**).
   
 ![](../../assets/images/billing/3.png?width=50pc&classes=border,shadow)  
 
@@ -50,7 +50,7 @@ To generate a consolidated billing report for all Organizations where you have t
 After completing these steps, the generated report will be automatically downloaded to your device.
 
 {{% notice note %}}
-The generated report includes aggregated data across all your owned Organizations.  
+The generated report includes aggregated data across all Organizations where you have the **owner** or **billing administrator** role.  
 To obtain a detailed billing report for a specific Project, generate it from the corresponding *Project Billing Overview* page.
 {{% /notice %}}
 
