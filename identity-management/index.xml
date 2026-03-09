@@ -39,4 +39,4 @@
 &lt;/ul&gt;
 &lt;h2 id="groups-page"&gt;Groups page&lt;/h2&gt;
 
-&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p&gt;</description></item></channel></rss>
+&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin details, create or edit projects within that organization.&lt;/p&gt;</description></item></channel></rss>

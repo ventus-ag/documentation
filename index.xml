@@ -327,14 +327,9 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="users-within-organization"&gt;Users within Organization&lt;/h2&gt;
-&lt;p&gt;In the Cloud Console Organizations User can have next Roles:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Owner&lt;/strong&gt; - this role is assigned to a User, who created this Organization (this User will also be considered the &lt;em&gt;Administrator&lt;/em&gt; of this Organization) and opens access to all resources of the Organization including the management of Groups, Projects and their all Users;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Administrator&lt;/strong&gt; - this role can be assigned to a User by another Administrator of the Organization. Administrators have access to all resources of the Organization, including the management of Groups, Projects and their Users, but they can&amp;rsquo;t edit or delete Organization;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Member&lt;/strong&gt; - this role is assigned to a User who is granted access to the Organization&amp;rsquo;s Project and, accordingly, to all resources within this Project. Member can&amp;rsquo;t add/remove other Users in the Project, can&amp;rsquo;t see information about Administrators or Billing of the Organization, can&amp;rsquo;t add new Projects, edit or delete current one.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As a &lt;em&gt;Owner&lt;/em&gt; or &lt;em&gt;Administrator&lt;/em&gt; you can add additional Admins to the Organization, which will also have access to all resources of the Organization.&lt;br&gt;
-Detailed instructions, how to add new Administrators to the Organization you can find in article - &lt;a href="https://docs.ventuscloud.eu/identity-management/administrators/"&gt;Administrators&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>RWX Storage Class</title><link>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</guid><description>&lt;hr&gt;
+&lt;p&gt;In the Cloud Console, Organization Users can have different roles depending on their access level.
+&lt;strong&gt;🔹 Resource Access Roles&lt;/strong&gt;
+The following roles define access to Organization resources and its Projects:&lt;/p&gt;</description></item><item><title>RWX Storage Class</title><link>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/kubernetes/rwx-storage-class/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page, you can find an explanation of how to access your Kubernetes cluster and configure ReadWriteMany (RWX) storage using SeaweedFS.&lt;/p&gt;
 &lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
 &lt;ul&gt;
@@ -437,7 +432,32 @@ credentials, you can use the Cloud Console Account.&lt;/p&gt;</description></ite
 &lt;/ul&gt;
 &lt;h2 id="administrators-page"&gt;Administrators page&lt;/h2&gt;
 
-&lt;div class="notices note" &gt;&lt;p&gt;To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Database's Backups</title><link>https://docs.ventuscloud.eu/products/databases/database_backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database_backups/</guid><description>&lt;hr&gt;
+&lt;div class="notices note" &gt;&lt;p&gt;To see information about Administrators of the Organization and to manage them, you can only if your User Role in this Organization is an &lt;em&gt;Administrator&lt;/em&gt; or &lt;em&gt;Owner&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Billing</title><link>https://docs.ventuscloud.eu/getting-started/billing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/getting-started/billing/</guid><description>&lt;hr&gt;
+&lt;p&gt;On this page, you can find an explanation of how to use Billing Section in the Cloud Console.&lt;/p&gt;
+&lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#table-of-contents"&gt;Table of contents&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#user-billing-page"&gt;User Billing page&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#generate-consolidated-billing-report"&gt;Generate Consolidated Billing Report&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#update-billing-administrators-list"&gt;Update Billing Administrators list&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#organization-billing-overview-page"&gt;Organization Billing Overview Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#project-billing-overview-page"&gt;Project Billing Overview Page&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#generate-detailed-billing-report"&gt;Generate Detailed Billing Report&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#set-budget-threshold"&gt;Set Budget Threshold&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="user-billing-page"&gt;User Billing page&lt;/h2&gt;
+
+&lt;div class="notices note" &gt;&lt;p&gt;The Billing section displays only Organizations where the User has the &lt;strong&gt;owner&lt;/strong&gt; or &lt;strong&gt;billing administrator&lt;/strong&gt; role.
+More detailed information about User roles within an Organization can be found here - &lt;a href="https://docs.ventuscloud.eu/getting-started/organizations/#users-within-organization"&gt;Users within Organization&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Database's Backups</title><link>https://docs.ventuscloud.eu/products/databases/database_backups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/databases/database_backups/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page, you can find an explanation of what is database&amp;rsquo;s Backups, how to create it and how to restore Database from its Backup in the Cloud Console.&lt;/p&gt;
 &lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
 &lt;ul&gt;
@@ -652,7 +672,6 @@ To get ID and Access tokens. use next command:&lt;/p&gt;</description></item><it
 &lt;li&gt;&lt;a href="#projects-page"&gt;Projects page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-project"&gt;Create Project&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#project-overview-page"&gt;Project Overview Page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#set-budget-threshold"&gt;Set Budget Threshold&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#edit-project"&gt;Edit Project&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#delete-project"&gt;Delete Project&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#add-users-to-project"&gt;Add users to Project&lt;/a&gt;&lt;/li&gt;
@@ -761,7 +780,7 @@ connection between the Cloud Console Regions.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id="groups-page"&gt;Groups page&lt;/h2&gt;
 
-&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin or billing details, create or edit projects within that organization.&lt;/p&gt;</description></item><item><title>Pulumi</title><link>https://docs.ventuscloud.eu/iac/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/pulumi/</guid><description>&lt;hr&gt;
+&lt;div class="notices note" &gt;&lt;p&gt;In the Cloud Console, using Groups lets you add users to your project within your organization. As &amp;lsquo;members&amp;rsquo; of your organization they can access specified project resources but can&amp;rsquo;t add or remove users, view admin details, create or edit projects within that organization.&lt;/p&gt;</description></item><item><title>Pulumi</title><link>https://docs.ventuscloud.eu/iac/pulumi/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/iac/pulumi/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page, you can find essential steps and code for starting with Pulumi and Cloud, from installation to advanced deployment scenarios, highlighting the benefits of infrastructure as code (IaC) for simplifying and automating cloud infrastructure management.&lt;/p&gt;
 &lt;h1 id="table-of-contents"&gt;Table of contents&lt;/h1&gt;
 &lt;ul&gt;
@@ -871,12 +890,12 @@ connection between the Cloud Console Regions.&lt;/p&gt;
 &lt;li&gt;Set Up Your Environment
 Once Terraform is installed, create a new directory for your Terraform configurations. This directory will hold all your Terraform files for a specific project:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir terraform_basic_vm
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir terraform_basic_vm
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd terraform_basic_vm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
 &lt;li&gt;Create file provider.tf in terraform_basic_vm folder and add following code:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-tf" data-lang="tf"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;terraform&lt;/span&gt; {
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-tf" data-lang="tf"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;terraform&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a6e22e"&gt;required_version&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;gt;= 0.14.0&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;required_providers&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a6e22e"&gt;openstack&lt;/span&gt; &lt;span style="color:#f92672"&gt;=&lt;/span&gt; {
