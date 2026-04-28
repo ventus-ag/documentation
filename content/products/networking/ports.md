@@ -61,7 +61,7 @@ There are two ways add already created Port to the Virtual Machine:
 
 {{% notice note %}}
 📌 Editing a Port allows to:
-- update the Port name;
+- update the Port name;  
 - configure assigned firewalls (security groups);
 - set the port to active or inactive state;
 - enable or disable Port Security.
@@ -77,9 +77,10 @@ To edit the Port, do the following:
 After these steps, the selected Port will be updated.
 
 {{% notice note %}}
-⚠️ Important limitations:  
-- Port Security can only be disabled if no firewalls (security groups) are assigned to the Port;  
-- Firewalls cannot be configured when Port Security is disabled.  
+⚠️ Important limitations:
+
+- Port Security can only be disabled if no firewalls (security groups) are assigned to the Port;
+- Firewalls cannot be configured when Port Security is disabled.
 {{% /notice %}}
 
 ## Delete Port
