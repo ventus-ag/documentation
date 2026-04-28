@@ -492,6 +492,24 @@ div.notices p {
     margin-bottom: 0rem;
     color: #666;
 }
+div.notices ul, div.notices ol {
+    padding: 0 15px 15px 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #666;
+}
+div.notices.info ul, div.notices.info ol {
+    background: #FFF2DB;
+}
+div.notices.warning ul, div.notices.warning ol {
+    background: #FAE2E2;
+}
+div.notices.note ul, div.notices.note ol {
+    background: #E7F2FA;
+}
+div.notices.tip ul, div.notices.tip ol {
+    background: #E6F9E6;
+}
 div.notices p:first-child:before {
     position: absolute;
     top: 2px;
