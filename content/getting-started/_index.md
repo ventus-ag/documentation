@@ -6,10 +6,8 @@ chapter = true
 pre = "<b>1. </b>"
 +++
 
-### Chapter 1
-# **Getting Started**
 ___
 Here are guides for the first steps in the Cloud, such as registration and creating first Organization and Project.
 ___
 
-{{% children style="h4" depth="2" %}}
+{{% children depth="2" %}}

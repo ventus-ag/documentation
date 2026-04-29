@@ -6,9 +6,8 @@ chapter = true
 pre = "<b>      </b>"
 +++
 
-# **NETWORKING**
 ___
 Here you can find an explanation of how to create, manage and use Networks, Subnets, Routers and Floating IPs or how to configure Load Balancers in the Cloud Console, including setting up listeners, creating pools, and assigning a floating IP to your Load Balancer.
 ___
 
-{{% children style="h4" depth="1" %}}
+{{% children depth="1" %}}

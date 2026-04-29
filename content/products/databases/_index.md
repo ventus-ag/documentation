@@ -6,7 +6,6 @@ chapter = true
 pre = "<b>      </b>"
 +++
 
-# **DATABASES**
 ___
 Here you can find an explanation of how to create, manage and use Databases in the Cloud Console.
 
@@ -15,4 +14,4 @@ Database-as-a-Service feature in the Cloud Console is currently in beta.
 {{% /notice %}}
 ___
 
-{{% children style="h4" depth="1" %}}
+{{% children depth="1" %}}

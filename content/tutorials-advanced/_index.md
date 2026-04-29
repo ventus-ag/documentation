@@ -6,12 +6,10 @@ chapter = true
 pre = "<b>4. </b>"
 +++
 
-### Chapter 4
-# **Advanced**
 ___
 Here are tutorials for advanced users of the Cloud Console.
 ___
 
-{{% children style="h4" depth="2" %}}
+{{% children depth="2" %}}
 
 

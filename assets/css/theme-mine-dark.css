@@ -1,0 +1,46 @@
+:root {
+    --MAIN-TEXT-color: #d4d4d4;
+    --MAIN-TITLES-TEXT-color: #a0a8b0;
+    --MAIN-LINK-color: #4db8e8;
+    --MAIN-LINK-HOVER-color: #7acfee;
+    --MAIN-ANCHOR-color: #4db8e8;
+    --MAIN-BG-color: #1e2328;
+
+    --MENU-HOME-LINK-color: #ffffff;
+    --MENU-HOME-LINK-HOVER-color: #eeeeee;
+    --MENU-HEADER-BG-color: #0078a8;
+    --MENU-HEADER-BORDER-color: #005a80;
+
+    --MENU-SEARCH-BG-color: #005a80;
+    --MENU-SEARCH-BOX-color: #33a1ff;
+    --MENU-SEARCH-BOX-ICONS-color: #a1d2fd;
+
+    --MENU-SECTIONS-ACTIVE-BG-color: #141a1f;
+    --MENU-SECTIONS-BG-color: #1a2128;
+    --MENU-SECTIONS-LINK-color: #b0b8c0;
+    --MENU-SECTIONS-LINK-HOVER-color: #ffffff;
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #e0e0e1;
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #0076c031;
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color-2: #025e9836;
+
+    --MENU-VISITED-color: #4db8e8;
+    --MENU-SECTION-HR-color: #141a1f;
+
+    --CODE-theme: relearn-dark;
+    --CODE-BLOCK-color: rgba(248, 248, 242, 1);
+    --CODE-BLOCK-BG-color: rgba(30, 30, 30, 1);
+    --CODE-BLOCK-BORDER-color: rgba(60, 60, 60, 1);
+    --CODE-INLINE-color: rgba(130, 229, 80, 1);
+    --CODE-INLINE-BG-color: rgba(35, 35, 35, 1);
+    --CODE-INLINE-BORDER-color: rgba(60, 60, 60, 1);
+
+    --BROWSER-theme: dark;
+
+    --BOX-BG-color: rgba(20, 20, 20, 0.85);
+    --BOX-TEXT-color: rgba(210, 210, 210, 1);
+    --BOX-CAPTION-color: rgba(240, 240, 240, 1);
+}
+
+#R-body .box.note {
+    --VARIABLE-BOX-BG-color: #1a2f3f;
+}

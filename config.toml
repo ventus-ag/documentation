@@ -1,13 +1,29 @@
 baseURL = 'https://docs.ventuscloud.eu/'
 languageCode = "en-us"
 title = "EWW | ITandTEL Cloud Docs"
-theme = "hugo-theme-learn"
+theme = "hugo-theme-relearn"
 
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+
 [params]
 # Change default color scheme with a variant one. Can be "red", "blue", "green".
-themeVariant = "mine"
+themeVariant = ["auto", "mine", "mine-dark"]
 # Change the title separator. Default to "::".
 titleSeparator = "-"
+
+hideAuthorDate = true
+showVisitedLinks = true
+
+[[params.boxStyle]]
+  identifier = "note"
+  color = "#6AB0DE"
+  icon = "info-circle"

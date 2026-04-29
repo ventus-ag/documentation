@@ -6,7 +6,6 @@ chapter = true
 pre = "<b>      </b>"
 +++
 
-# **BACKUPS**
 ___
 Here you can find an explanation of how to configure Backup Workloads to set policies and schedules for backing up your VMs, and steps on how to restore your VMs from these backups in the Cloud Console.
 
@@ -15,4 +14,4 @@ Backups feature in the Cloud Console is currently in beta and is currently avail
 {{% /notice %}}
 ___
 
-{{% children style="h4" depth="1" %}}
+{{% children depth="1" %}}
