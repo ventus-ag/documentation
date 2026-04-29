@@ -155,7 +155,7 @@ Where:
 - *my-windows-vm* - the name of the Virtual Machine to be created.
 
 
-After the command completes, the VM will be available with the password you specified and can be used to connect via RDP as described in the the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
+After the command completes, the VM will be available with the password you specified and can be used to connect via RDP as described in the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
 
 
 ## Virtual Machine details page

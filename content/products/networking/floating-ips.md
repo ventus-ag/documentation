@@ -94,7 +94,7 @@ After confirmation your action on the next opened window the selected resource (
 It is possible to manage a Floating IP for a specific VM directly from the *Virtual Machine details page*.  
 💡 For more instructions and information see the article - [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
 
-If ypu need to manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*.  
+If you need to manage a Floating IP for a specific Load Balancer, go to the *Load Balancers page*.  
 <!-- 💡 For more instructions and information see the article - [Load Balancers](https://docs.ventuscloud.eu/products/networking/load-balancers/). -->
 
 ## Edit Floating IP
