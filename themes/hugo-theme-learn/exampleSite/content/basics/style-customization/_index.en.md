@@ -18,7 +18,7 @@ This theme defines the following partials :
 - *logo*: the logo, on top left hand corner.
 - *meta*: HTML meta tags, if you want to change default behavior
 - *menu*: left menu. _Not meant to be overwritten_
-- *menu-footer*: footer of the the left menu
+- *menu-footer*: footer of the left menu
 - *search*: search box
 - *toc*: table of contents
 
