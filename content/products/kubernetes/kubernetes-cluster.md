@@ -41,6 +41,9 @@ To create new Cluster, do the following:
   - *Name* - set a name for the Cluster;
   - *Cluster Template* - select the template that will be used to create Cluster;     
   - *Master Flavor* - select the size of the Cluster master-nodes (min is VC-2);  
+      Available flavors for nodes:
+       ![](../../../assets/images/clusters/37.png?width=30pc&classes=border,shadow) 
+      💡 If you need a custom flavor, you can request it via support.
   - *Node Flavor* - select the size of the Cluster worker-nodes (min is VC-2);  
   - *Key pair* - select the SSH Keypair that was previously created on the *Keypair page* or create a new one;   
     💡 SSH Keypair you will use to configure in the Cluster servers for ssh access;    
