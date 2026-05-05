@@ -178,6 +178,7 @@ Please, contact to the &lt;a href="mailto:support@ventus.ag"&gt;Cloud Support&lt
 &lt;li&gt;&lt;a href="#virtual-machines-page"&gt;Virtual Machines page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-linux-virtual-machine"&gt;Create Linux Virtual Machine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-windows-virtual-machine"&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-a-windows-vm-with-a-predefined-password-via-cli"&gt;Create a Windows VM with a predefined password via CLI&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#virtual-machine-details-page"&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#download-rdp-file"&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#activatedeactivate-interface"&gt;Activate/Deactivate Interface&lt;/a&gt;&lt;/li&gt;
@@ -605,6 +606,7 @@ To get ID and Access tokens. use next command:&lt;/p&gt;</description></item><it
 &lt;li&gt;&lt;a href="#create-port"&gt;Create Port&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#attach-port-to-the-vm"&gt;Attach Port to the VM&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#edit-port"&gt;Edit Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enabledisable-port"&gt;Enable/Disable Port&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#delete-port"&gt;Delete Port&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;

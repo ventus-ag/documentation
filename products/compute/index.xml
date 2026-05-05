@@ -7,6 +7,7 @@
 &lt;li&gt;&lt;a href="#virtual-machines-page"&gt;Virtual Machines page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-linux-virtual-machine"&gt;Create Linux Virtual Machine&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#create-windows-virtual-machine"&gt;Create Windows Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#create-a-windows-vm-with-a-predefined-password-via-cli"&gt;Create a Windows VM with a predefined password via CLI&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#virtual-machine-details-page"&gt;Virtual Machine details page&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#download-rdp-file"&gt;Download RDP File&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#activatedeactivate-interface"&gt;Activate/Deactivate Interface&lt;/a&gt;&lt;/li&gt;

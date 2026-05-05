@@ -94,6 +94,7 @@
 &lt;li&gt;&lt;a href="#create-port"&gt;Create Port&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#attach-port-to-the-vm"&gt;Attach Port to the VM&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#edit-port"&gt;Edit Port&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enabledisable-port"&gt;Enable/Disable Port&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#delete-port"&gt;Delete Port&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
