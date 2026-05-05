@@ -10,6 +10,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Virtual Machines page](#virtual-machines-page)
   - [Create Linux Virtual Machine](#create-linux-virtual-machine)
   - [Create Windows Virtual Machine](#create-windows-virtual-machine)
+  - [Create a Windows VM with a predefined password via CLI](#create-a-windows-vm-with-a-predefined-password-via-cli)
   - [Virtual Machine details page](#virtual-machine-details-page)
   - [Download RDP File](#download-rdp-file)
   - [Activate/Deactivate Interface](#activatedeactivate-interface)
@@ -128,6 +129,34 @@ After these steps, the newly created Windows VM will be added to the *Virtual M
 💡 To connect to the selected **Windows Virtual Machine** remotely via RDP you need to add an additional Firewall with a rule that will allow incoming traffic to TCP port 54000 like shown below - to find additional instructions and information about this, please see the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
   
 ![](../../../assets/images/vms/36.png?width=35pc&classes=border,shadow)
+
+
+
+## Create a Windows VM with a predefined password via CLI
+When creating a Windows Virtual Machine via the CLI, you can set the administrator password directly in the creation command by using the `--property admin_pass` flag.
+
+To create a Windows VM with a predefined password, run the following command:
+```
+openstack server create \
+  --flavor VC-2 \
+  --image windows-server-2022-datacenter-2108.28-en \
+  --network public \
+  --property admin_pass="XXXXX" \
+  --wait \
+  my-windows-vm
+```
+
+Where:
+- *--flavor* - specifies the flavor (resource configuration) for the VM;
+- *--image* - specifies the Windows image to use;
+- *--network* - specifies the network to attach the VM to;
+- *--property admin_pass* - sets the administrator password for the Windows VM;
+- *--wait* - waits until the VM reaches the ACTIVE status before returning;
+- *my-windows-vm* - the name of the Virtual Machine to be created.
+
+
+After the command completes, the VM will be available with the password you specified and can be used to connect via RDP as described in the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
+
 
 ## Virtual Machine details page
 To open the *Virtual Machine details page*, click on the **Name** of the corresponding Virtual Machine:

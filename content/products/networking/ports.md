@@ -11,6 +11,7 @@ On this page, you can find an explanation of how to create, edit, delete Port an
   - [Create Port](#create-port)
   - [Attach Port to the VM](#attach-port-to-the-vm)
   - [Edit Port](#edit-port)
+  - [Enable/Disable Port](#enabledisable-port)
   - [Delete Port](#delete-port)
 
 ## Ports page
@@ -38,9 +39,12 @@ To create new Port, do the following:
   - *Fixes IP* - specify a fixed IP address within the selected subnet (optional);
   - *Firewalls* - assign one or more firewall groups to the port (optional).
 
-After these steps, the newly created Port will be added to the *Ports page*:
+After these steps, the newly created Port will be added to the *Ports page*.
 
-📝 After creating a port, you can either attach it to an existing Virtual Machine or associate it during the VM creation process.  
+
+{{% notice note %}}
+💡 After creating a port, you can either attach it to an existing Virtual Machine or associate it during the VM creation process.
+{{% /notice %}}
 
 ## Attach Port to the VM
 
@@ -58,6 +62,11 @@ There are two ways add already created Port to the Virtual Machine:
 💡 Detailed information how to change the current set of the VM's Interfaces from the *VM details page* you can find in article: [VM's Networks and Interfaces](https://docs.ventuscloud.eu/products/networking/manage-networks/).
  
 ## Edit Port
+
+{{% notice note %}}
+⚠️ The Edit action is available only for Ports associated with virtual machines.
+{{% /notice %}}
+
 To edit the Port, do the following:
 - identify the Port, that you want to edit, on the *Ports page*;
 - click on the **Actions** icon and select the **Edit** in the list of available options;
@@ -65,7 +74,25 @@ To edit the Port, do the following:
 
 ![](../../../assets/images/networks/28.png?width=35pc&classes=border,shadow)
 
+
+{{% notice note %}}
+⚠️ **Important limitations**: Firewalls cannot be configured when Port Security is disabled.
+{{% /notice %}}
+
+
 After these steps, the selected Port will be updated.
+
+
+## Enable/Disable Port
+
+To disable an active Port, do the following:
+- identify this Port on the *Ports page* and ensure, that it is an ACTIVE state;
+- click on the **Actions** icon and select the **Disable** in the list of available options;
+- confirm the action in the next opened *Confirmation window*.  
+
+After these steps, the selected Port will become inactive, and its status and state will change to DOWN.
+
+To enable it again, click the **Actions** icon and select **Enable**. The Port status will change to ACTIVE, and the state will be set to UP.
 
 ## Delete Port
 
