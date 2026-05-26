@@ -212,9 +212,11 @@ This example creates a user `ubuntu` with a plain-text password and enables pass
 Use a PowerShell script to configure Windows VMs on first boot — for example, to create a local user and add them to the Administrators group:
 
 ```powershell
+<powershell>
 $password = ConvertTo-SecureString "MyStrongPassword123!" -AsPlainText -Force
 New-LocalUser "testuser" -Password $password
 Add-LocalGroupMember -Group "Administrators" -Member "testuser"
+</powershell>
 ```
 
 This example creates a local user `testuser` with a specified password and grants them administrator privileges:
