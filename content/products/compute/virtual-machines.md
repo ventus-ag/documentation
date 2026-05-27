@@ -193,18 +193,19 @@ Use `#cloud-config` YAML format to create users, configure SSH access, or run co
 
 ```yaml
 #cloud-config
-users:
-  - name: ubuntu
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    shell: /bin/bash
-    plain_text_passwd: MyStrongPassword123
-    lock_passwd: false
+package_update: true
+package_upgrade: false
 
-ssh_pwauth: true
+packages:
+  - nginx
+
+runcmd:
+  - systemctl enable nginx
+  - systemctl start nginx
 ```
 
-This example creates a user `ubuntu` with a plain-text password and enables password-based SSH authentication:
-![](../../../assets/images/vms/4-init.jpg?classes=border,shadow)
+This example installs and starts the Nginx web server during VM initialization:
+![](../../../assets/images/vms/4-init.png?classes=border,shadow)
 
 
 **Windows example (PowerShell):**
@@ -213,14 +214,12 @@ Use a PowerShell script to configure Windows VMs on first boot — for example, 
 
 ```powershell
 <powershell>
-$password = ConvertTo-SecureString "MyStrongPassword123!" -AsPlainText -Force
-New-LocalUser "testuser" -Password $password
-Add-LocalGroupMember -Group "Administrators" -Member "testuser"
+Install-WindowsFeature -Name Telnet-Client
 </powershell>
 ```
 
-This example creates a local user `testuser` with a specified password and grants them administrator privileges:
-![](../../../assets/images/vms/2-init.jpg?width=50pc?classes=border,shadow)
+This example installs the Telnet Client feature during the VM initialization process.
+![](../../../assets/images/vms/2-init.png?width=50pc?classes=border,shadow)
 
 ## Virtual Machine details page
 To open the *Virtual Machine details page*, click on the **Name** of the corresponding Virtual Machine:
