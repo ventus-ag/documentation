@@ -11,6 +11,7 @@ On this page, you can find an explanation of how to create, resize, delete Linux
   - [Create Linux Virtual Machine](#create-linux-virtual-machine)
   - [Create Windows Virtual Machine](#create-windows-virtual-machine)
   - [Create a Windows VM with a predefined password via CLI](#create-a-windows-vm-with-a-predefined-password-via-cli)
+  - [Create a Virtual Machine with Cloud-init](#create-a-virtual-machine-with-cloud-init)
   - [Virtual Machine details page](#virtual-machine-details-page)
   - [Download RDP File](#download-rdp-file)
   - [Activate/Deactivate Interface](#activatedeactivate-interface)
@@ -74,12 +75,14 @@ To create new Linux VM, do the following:
 
     💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.
     
-  - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
     minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;    
     by default, "50 GB" is pre-selected.  
   - *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
+  - *Advanced settings* - optional; check this box to expand additional fields:
+    - *Cloud-init data* - a script or YAML config executed on the VM's first boot (see [Create a Virtual Machine with Cloud-init](#create-a-virtual-machine-with-cloud-init));
+    - *Tags* - assign one or more tags to the VM.
 
 After these steps, the newly created Linux VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/6.png?classes=border,shadow)
@@ -116,12 +119,14 @@ To create new Windows VM, do the following:
 
     💡 The default Firewall allows outgoing Internet access but restricts incoming connections, except from resources in the same Firewall group.
 
-  - *Tags* - optional; use this field to assign tags to the VM.  
   - *Volume size (GB)* - provide the preferred disk size for the VM;  
     valid range: 10–1000 GiB;   
     minimal available size for Linux VMs - 10 GB; for Windows VMs - 50 GB;    
     by default, "50 GB" is pre-selected.  
-  - *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed.  
+  - *Delete Volume after VM deletion* – enable this option to automatically delete the volume when the VM is removed;  
+  - *Advanced settings* - optional; check this box to expand additional fields:
+    - *Cloud-init data* - a script or YAML config executed on the VM's first boot (see [Create a Virtual Machine with Cloud-init](#create-a-virtual-machine-with-cloud-init));
+    - *Tags* - assign one or more tags to the VM.
 
 After these steps, the newly created Windows VM will be added to the *Virtual Machine page* with the status ACTIVE:
 ![](../../../assets/images/vms/8.png?classes=border,shadow)
@@ -157,6 +162,64 @@ Where:
 
 After the command completes, the VM will be available with the password you specified and can be used to connect via RDP as described in the article **[Access Windows VM](https://docs.ventuscloud.eu/products/compute/connect-windows-vm/)**;
 
+
+## Create a Virtual Machine with Cloud-init
+
+{{% notice note %}}
+💡 Cloud-init data allows you to automatically configure a virtual machine on its first boot — for example, create users, set passwords, install packages, or run custom scripts.
+{{% /notice %}}
+
+{{% notice note %}}
+📌 Cloud-init data - a script or YAML config that will be passed to the instance on first boot;
+Supports standard #cloud-config YAML format for Linux and PowerShell scripts for Windows VMs.
+{{% /notice %}}
+
+To create a VM with a Cloud-init configuration, do the following:
+- go to the *Virtual Machines page* and click on the CREATE VM icon in the upper left corner;
+- fill in the standard VM creation form (see [Create Linux Virtual Machine](#create-linux-virtual-machine) or [Create Windows Virtual Machine](#create-windows-virtual-machine) for details);
+- check the **Advanced settings** checkbox at the bottom of the form to expand additional options:
+- paste your Cloud-init script or YAML configuration in the *Cloud-init data* field and click on the CREATE icon:
+![](../../../assets/images/vms/1-init.png?width=30pc&classes=border,shadow)
+
+After these steps, the VM will be created and the Cloud-init script will be executed automatically during the first boot.
+
+{{% notice note %}}
+Cloud-init data is executed only once, during the first boot of the VM. Make sure your script or configuration is correct before creating the VM, as it cannot be changed after creation.
+{{% /notice %}}
+
+**Linux example (cloud-config YAML):**
+
+Use `#cloud-config` YAML format to create users, configure SSH access, or run commands on first boot:
+
+```yaml
+#cloud-config
+package_update: true
+package_upgrade: false
+
+packages:
+  - nginx
+
+runcmd:
+  - systemctl enable nginx
+  - systemctl start nginx
+```
+
+This example installs and starts the Nginx web server during VM initialization:
+![](../../../assets/images/vms/4-init.png?classes=border,shadow)
+
+
+**Windows example (PowerShell):**
+
+Use a PowerShell script to configure Windows VMs on first boot — for example, to create a local user and add them to the Administrators group:
+
+```powershell
+<powershell>
+Install-WindowsFeature -Name Telnet-Client
+</powershell>
+```
+
+This example installs the Telnet Client feature during the VM initialization process.
+![](../../../assets/images/vms/2-init.png?width=50pc?classes=border,shadow)
 
 ## Virtual Machine details page
 To open the *Virtual Machine details page*, click on the **Name** of the corresponding Virtual Machine:
