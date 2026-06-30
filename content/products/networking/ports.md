@@ -37,10 +37,10 @@ To create new Port, do the following:
   - *Name* - specify a name for the port.
   - *Subnet* - optionally select the subnet where the port will be created;
   - *Fixed IP* - optionally specify a fixed IP address within the selected subnet; the IP must be within the subnet range;
-  - *Firewalls* - optionally assign one or more firewall groups to the port; firewalls cannot be configured when Port Security is disabled;
+  - *Firewalls* - optionally assign one or more firewall groups to the port; cannot be configured when Port Security is disabled;
   - *Port security* - enable or disable port-level security enforcement; when enabled, the port applies anti-spoofing rules and allows firewall groups to be attached.
   - *Admin state* - enable or disable the port administratively; when disabled, the port will not pass traffic regardless of its connection state;
-  - *Configure allowed address pairs* - optionally define one or more additional IP addresses (or CIDR ranges) that are permitted to send traffic through this port:
+  - *Configure allowed address pairs* - optionally define one or more additional IP addresses (or CIDR ranges) that are permitted to send traffic through this port (cannot be configured when Port Security is disabled;):
     - *IP address* - specify an IP address or CIDR range (e.g. `10.0.0.1` or `10.0.0.0/24`);
     - *MAC address* - optionally specify a MAC address to restrict the pair to a particular network interface.  
 
@@ -83,7 +83,7 @@ To edit the Port, do the following:
 
 
 {{% notice note %}}
-⚠️ Firewalls cannot be configured when Port Security is disabled.
+⚠️ Firewalls and Allowed Address Pairs cannot be configured when Port Security is disabled.
 {{% /notice %}}
 
 
