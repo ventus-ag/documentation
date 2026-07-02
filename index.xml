@@ -613,7 +613,7 @@ To get ID and Access tokens. use next command:&lt;/p&gt;</description></item><it
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="ports-page"&gt;Ports page&lt;/h2&gt;
-&lt;p&gt;To open the &lt;em&gt;Ports page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network and select the &lt;strong&gt;Ports TAB&lt;/strong&gt;:
+&lt;p&gt;To open the &lt;em&gt;Ports page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network and select the &lt;strong&gt;Ports TAB&lt;/strong&gt;:
 &lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;
 &lt;img src="../../../assets/images/networks/26.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>Advanced network scenarios</title><link>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/tutorials-advanced/advanced-network-scenarios/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page we will discuss scenarios, that can help you to build software upgrade friendly and fault-tolerant cloud infrastructure.&lt;/p&gt;

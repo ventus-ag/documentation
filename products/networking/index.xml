@@ -100,7 +100,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="ports-page"&gt;Ports page&lt;/h2&gt;
-&lt;p&gt;To open the &lt;em&gt;Ports page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network and select the &lt;strong&gt;Ports TAB&lt;/strong&gt;:
+&lt;p&gt;To open the &lt;em&gt;Ports page&lt;/em&gt;, go to &lt;em&gt;Networking page&lt;/em&gt;, click on the &lt;strong&gt;Name&lt;/strong&gt; of the corresponding Network and select the &lt;strong&gt;Ports TAB&lt;/strong&gt;:
 &lt;img src="../../../assets/images/networks/4.png?classes=border,shadow" alt=""&gt;
 &lt;img src="../../../assets/images/networks/26.png?width=15pc&amp;amp;classes=border,shadow" alt=""&gt;&lt;/p&gt;</description></item><item><title>VM's Networks and Interfaces</title><link>https://docs.ventuscloud.eu/products/networking/manage-networks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://docs.ventuscloud.eu/products/networking/manage-networks/</guid><description>&lt;hr&gt;
 &lt;p&gt;On this page, you can find an explanation of how to manage Networks and Interfaces, related to the selected Virtual Machine, from the &lt;em&gt;Virtual Machine details page&lt;/em&gt; in the Cloud Console.&lt;/p&gt;
