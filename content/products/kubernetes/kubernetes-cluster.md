@@ -17,6 +17,9 @@ On this page, you can find an explanation of how to create, resize, delete Kuber
     - [Node Pool Autoscaling Configuration](#node-pool-autoscaling-configuration)
     - [Upgrade Node Pool](#upgrade-node-pool)
   - [Upgrade Cluster](#upgrade-cluster)
+  - [Cluster Features](#cluster-features)
+  - [Enable OS Upgrade](#enable-os-upgrade)
+  - [Rotate Certificate Authority](#rotate-certificate-authority)
   - [Download kubeconfig file](#download-kubeconfig-file)
   - [Delete Cluster](#delete-cluster)
 
@@ -54,7 +57,14 @@ To create new Cluster, do the following:
   - *Node Count* - set how many worker-nodes the Cluster will contain;     
   - *Enable auto-scaling* - if you choose to enable this option, please set the  limits of node count;  
     💡 the max count is 10 nodes; 
-  - *Accessible on private network only*.
+  - *Accessible on private network only*;
+  - *Features* - switch on the optional cluster features you want to enable for the new Cluster (see [Cluster Features](#cluster-features) for the full list of available features and storage options).
+
+![](../../../assets/images/clusters/39.png?width=30pc&classes=border,shadow)
+
+{{% notice note %}}
+💡 All features enabled during creation can be changed later from the *Cluster details page*. See [Cluster Features](#cluster-features).
+{{% /notice %}}
 
 After these steps, the newly created Cluster will be added to the *Clusters page* with the status CREATE_COMPLETE.  
 Estimate creation time about 5 minutes.
@@ -157,6 +167,69 @@ To upgrade the Cluster, do the following:
 ![](../../../assets/images/clusters/23.png?width=30pc&classes=border,shadow)
 
 After these steps, the selected Cluster will be upgraded after a few minutes with the status UPDATE_COMPLETE.  
+
+## Cluster Features
+
+Kubernetes clusters support a set of optional features that can be switched on or off to extend the cluster's capabilities. These features can be enabled during [Cluster creation](#create-cluster) or changed at any time from the *Cluster details page*.
+
+{{% notice note %}}
+📌 The list below reflects the features available at the moment and will be expanded over time.
+{{% /notice %}}
+
+To manage cluster features, do the following:
+- go to the *Cluster details page*;
+- click on the **Actions** icon and select the **Features** in the list of available options;
+- switch the required features on or off on the opened *Features window* and click on the SAVE icon:
+
+![](../../../assets/images/clusters/40.png?width=30pc&classes=border,shadow)
+
+**Features**
+- *Enable Metrics Server for resource usage monitoring*;
+- *Enable Kubernetes Dashboard web UI*;
+- *Enable OpenStack cloud provider integration*;
+- *Automatically replace unhealthy nodes*;
+- *Enable cluster autoscaler for automatic node scaling*;
+- *Enable NVIDIA GPU Operator for GPU workloads*.  
+  💡 Enable this option only if your cluster has GPU nodes.
+
+**Storage**
+- *Enable Cinder CSI plugin for block storage volumes*.
+
+After these steps, the selected features will be applied to the Cluster.
+
+## Enable OS Upgrade
+
+Automatic OS upgrades keep the underlying operating system of your cluster nodes patched and up to date, so nodes receive security and stability fixes without manual intervention.
+
+To enable automatic OS upgrades, do the following:
+- go to the *Cluster details page*;
+- click on the **Actions** icon and select the **Features** in the list of available options;
+- switch on the *Enable automatic OS upgrades on nodes* option on the opened *Features window* and click on the SAVE icon:
+
+![](../../../assets/images/clusters/41.png?width=30pc&classes=border,shadow)
+
+After these steps, cluster nodes will be upgraded to the latest available OS image automatically.
+
+{{% notice tip %}}
+💡 The upgrade does not start immediately after you enable the option. Each node is scheduled its own upgrade time, so nodes are updated one at a time rather than all at once. This keeps your workloads running and avoids cluster downtime during the OS upgrade.
+{{% /notice %}}
+
+## Rotate Certificate Authority
+
+Rotating the Certificate Authority (CA) replaces the cluster's CA certificates and keys. Use it for regular security compliance or when the current certificates are compromised or approaching expiry.
+
+{{% notice note %}}
+📌 After a CA rotation the previous cluster credentials become invalid. Download a new [kubeconfig file](#download-kubeconfig-file) to continue accessing the cluster.
+{{% /notice %}}
+
+To rotate the cluster CA, do the following:
+- go to the *Cluster details page*;
+- click on the **Actions** icon and select the **Rotate CA** in the list of available options;
+- confirm the CA rotation on the next opened *Confirmation window*:
+
+![](../../../assets/images/clusters/42.png?width=30pc&classes=border,shadow)
+
+After these steps, the cluster CA will be rotated after a few minutes.
 
 ## Download kubeconfig file
 
