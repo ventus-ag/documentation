@@ -178,8 +178,8 @@ Kubernetes clusters support a set of optional features that can be switched on o
 
 To manage cluster features, do the following:
 - go to the *Cluster details page*;
-- click on the **Actions** icon and select the **Features** in the list of available options;
-- switch the required features on or off on the opened *Features window* and click on the SAVE icon:
+- open the **SETTINGS** tab (located between the **POOLS** and **LABELS** tabs);
+- switch the required features on or off and click on the SAVE icon:
 
 ![](../../../assets/images/clusters/40.png?width=30pc&classes=border,shadow)
 
@@ -203,8 +203,8 @@ Automatic OS upgrades keep the underlying operating system of your cluster nodes
 
 To enable automatic OS upgrades, do the following:
 - go to the *Cluster details page*;
-- click on the **Actions** icon and select the **Features** in the list of available options;
-- switch on the *Enable automatic OS upgrades on nodes* option on the opened *Features window* and click on the SAVE icon:
+- open the **SETTINGS** tab (located between the **POOLS** and **LABELS** tabs);
+- switch on the *Enable automatic OS upgrades on nodes* option and click on the SAVE icon:
 
 ![](../../../assets/images/clusters/41.png?width=30pc&classes=border,shadow)
 
