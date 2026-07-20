@@ -16,9 +16,9 @@ On this page, you can find an explanation of how to create, resize, delete Kuber
     - [Resize Node Pool](#resize-node-pool)
     - [Node Pool Autoscaling Configuration](#node-pool-autoscaling-configuration)
     - [Upgrade Node Pool](#upgrade-node-pool)
-  - [Upgrade Cluster](#upgrade-cluster)
   - [Cluster Features](#cluster-features)
-  - [Enable OS Upgrade](#enable-os-upgrade)
+    - [Enable OS Upgrade](#enable-os-upgrade)
+  - [Upgrade Cluster](#upgrade-cluster)
   - [Rotate Certificate Authority](#rotate-certificate-authority)
   - [Download kubeconfig file](#download-kubeconfig-file)
   - [Delete Cluster](#delete-cluster)
@@ -81,13 +81,18 @@ This action will redirect you to the *Cluster details page*, where you can fin
 - panel with available **quick actions** include management actions with this cluster such as: delete, download kubeconfig file and cluster upgrade:
 ![](../../../assets/images/clusters/30.png?width=15pc&classes=border,shadow)
 
-- transition to the NODE POOLS and LABELS pages related to this Cluster:  
-![](../../../assets/images/clusters/31.png?width=15pc&classes=border,shadow)
+- transition to the NODE POOLS, SETTINGS and LABELS pages related to this Cluster:  
+![](../../../assets/images/clusters/31.png?width=20pc&classes=border,shadow)
   
 **NODE POOLS TAB** - opens the *Cluster Node Pools page* where you can find all available Node Pools of corresponding Cluster with their details; add, delete, resize, and configure autoscaling for individual Node Pools.  
 
-💡 More information about the *Node Pools Management* will be provided in the following sections.  
+💡 More information about the **node pools management** will be provided in the following sections.  
 ![](../../../assets/images/clusters/32.png?classes=border,shadow)  
+
+**SETTINGS TAB** - opens the *Cluster Settings page* where you can find all available optional **clusters features** that can be switched on or off to extend the cluster's capabilities. 
+
+💡 More information about the **cluster features** will be provided in the following sections.  
+![](../../../assets/images/clusters/43.png?width=45pc&classes=border,shadow)  
 
 **LABELS TAB** - opens the *Cluster Labels page* with some additional information about this cluster:
 ![](../../../assets/images/clusters/33.png?classes=border,shadow) 
@@ -149,6 +154,52 @@ To upgrade the Node Pool, do the following:
 - click on the **Actions** icon  and select the **Upgrade** in the list of available options;
 - select the version to which you want to upgrade the selected Node Pool on the opened *Upgrade Node Pool window* and click on the UPGRADE icon:
 
+## Cluster Features
+
+Kubernetes clusters support a set of optional features that can be switched on or off to extend the cluster's capabilities. These features can be enabled during [Cluster creation](#create-cluster) or changed at any time from the *Cluster details page*.
+
+{{% notice note %}}
+📌 The list below reflects the features available at the moment and will be expanded over time.
+{{% /notice %}}
+
+To manage cluster features, do the following:
+- go to the *Cluster details page*;
+- open the SETTINGS tab;
+- switch the required features on or off and click on the SAVE icon:
+
+![](../../../assets/images/clusters/40.png?width=45pc&classes=border,shadow)
+
+**Features**
+- *Enable Metrics Server for resource usage monitoring*;
+- *Enable Kubernetes Dashboard web UI*;
+- *Enable OpenStack cloud provider integration*;
+- *Automatically replace unhealthy nodes*;
+- *Enable cluster autoscaler for automatic node scaling*;
+- *Enable NVIDIA GPU Operator for GPU workloads*.  
+  💡 Enable this option only if your cluster has GPU nodes.
+
+**Storage**
+- *Enable Cinder CSI plugin for block storage volumes*.
+
+After these steps, the selected features will be applied to the Cluster.
+
+### Enable OS Upgrade
+
+Automatic OS upgrades keep the underlying operating system of your cluster nodes patched and up to date, so nodes receive security and stability fixes without manual intervention.
+
+To enable automatic OS upgrades, do the following:
+- go to the *Cluster details page*;
+- open the SETTINGS tab;
+- switch on the *Enable automatic OS upgrades on nodes* option and click on the SAVE icon:
+
+![](../../../assets/images/clusters/41.png?width=45pc&classes=border,shadow)
+
+After these steps, cluster nodes will be upgraded to the latest available OS image automatically.
+
+{{% notice tip %}}
+💡 The upgrade does not start immediately after you enable the option. Each node is scheduled its own upgrade time, so nodes are updated one at a time rather than all at once. This keeps your workloads running and avoids cluster downtime during the OS upgrade.
+{{% /notice %}}
+
 ## Upgrade Cluster
 
 {{% notice note %}}
@@ -168,52 +219,6 @@ To upgrade the Cluster, do the following:
 
 After these steps, the selected Cluster will be upgraded after a few minutes with the status UPDATE_COMPLETE.  
 
-## Cluster Features
-
-Kubernetes clusters support a set of optional features that can be switched on or off to extend the cluster's capabilities. These features can be enabled during [Cluster creation](#create-cluster) or changed at any time from the *Cluster details page*.
-
-{{% notice note %}}
-📌 The list below reflects the features available at the moment and will be expanded over time.
-{{% /notice %}}
-
-To manage cluster features, do the following:
-- go to the *Cluster details page*;
-- open the **SETTINGS** tab (located between the **POOLS** and **LABELS** tabs);
-- switch the required features on or off and click on the SAVE icon:
-
-![](../../../assets/images/clusters/40.png?width=30pc&classes=border,shadow)
-
-**Features**
-- *Enable Metrics Server for resource usage monitoring*;
-- *Enable Kubernetes Dashboard web UI*;
-- *Enable OpenStack cloud provider integration*;
-- *Automatically replace unhealthy nodes*;
-- *Enable cluster autoscaler for automatic node scaling*;
-- *Enable NVIDIA GPU Operator for GPU workloads*.  
-  💡 Enable this option only if your cluster has GPU nodes.
-
-**Storage**
-- *Enable Cinder CSI plugin for block storage volumes*.
-
-After these steps, the selected features will be applied to the Cluster.
-
-## Enable OS Upgrade
-
-Automatic OS upgrades keep the underlying operating system of your cluster nodes patched and up to date, so nodes receive security and stability fixes without manual intervention.
-
-To enable automatic OS upgrades, do the following:
-- go to the *Cluster details page*;
-- open the **SETTINGS** tab (located between the **POOLS** and **LABELS** tabs);
-- switch on the *Enable automatic OS upgrades on nodes* option and click on the SAVE icon:
-
-![](../../../assets/images/clusters/41.png?width=30pc&classes=border,shadow)
-
-After these steps, cluster nodes will be upgraded to the latest available OS image automatically.
-
-{{% notice tip %}}
-💡 The upgrade does not start immediately after you enable the option. Each node is scheduled its own upgrade time, so nodes are updated one at a time rather than all at once. This keeps your workloads running and avoids cluster downtime during the OS upgrade.
-{{% /notice %}}
-
 ## Rotate Certificate Authority
 
 Rotating the Certificate Authority (CA) replaces the cluster's CA certificates and keys. Use it for regular security compliance or when the current certificates are compromised or approaching expiry.
@@ -227,7 +232,7 @@ To rotate the cluster CA, do the following:
 - click on the **Actions** icon and select the **Rotate CA** in the list of available options;
 - confirm the CA rotation on the next opened *Confirmation window*:
 
-![](../../../assets/images/clusters/42.png?width=30pc&classes=border,shadow)
+![](../../../assets/images/clusters/42.png?width=15pc&classes=border,shadow)
 
 After these steps, the cluster CA will be rotated after a few minutes.
 
@@ -246,6 +251,8 @@ After these steps, the *kubeconfig file* will be downloaded.
 Also, you can download the kubeconfig file from *Cluster details page*, by clicking on the appropriative **quick actions** icon there:
 
 ![](../../../assets/images/clusters/35.png?width=15pc&classes=border,shadow)
+
+
 
 ## Delete Cluster
 To delete the Cluster, do the following:
