@@ -17,6 +17,9 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href="#upgrade-cluster"&gt;Upgrade Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#cluster-features"&gt;Cluster Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#enable-os-upgrade"&gt;Enable OS Upgrade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#rotate-certificate-authority"&gt;Rotate Certificate Authority&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#download-kubeconfig-file"&gt;Download kubeconfig file&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="#delete-cluster"&gt;Delete Cluster&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
