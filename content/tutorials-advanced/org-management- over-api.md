@@ -44,11 +44,6 @@ export REGION_NAME="eastern-switzerland" //must be in lower case
 export PROJECT_ID="f5......45"
 ```
 
-Organization ID can be extracted from URL in Cloud Console, e.g.:
-```
-https://console.ventuscloud.eu/organizations/c19XXXX-XXXX-XXXX-XXXX-XXXX50/projects
-```
-
 **List all Projects**  
 To list all Projects, use next command:
 ```
