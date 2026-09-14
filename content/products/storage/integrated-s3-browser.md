@@ -18,6 +18,7 @@ On this page, you can find an explanation of how to use Object Storage with its 
   - [Get bucket's public URL](#get-buckets-public-url)
   - [Get object's public URL](#get-objects-public-url)
   - [Make bucket private](#make-bucket-private)
+  - [View bucket policies](#view-bucket-policies)
   - [Enable/suspend bucket versioning](#enablesuspend-bucket-versioning)
   - [Delete and multi-delete objects](#delete-and-multi-delete-objects)
   - [Set bucket retention policy](#set-bucket-retention-policy)
@@ -40,7 +41,8 @@ With our S3 browser, you can perform the following actions:
 - Delete files from a bucket;    
 - Obtain public links for buckets, folders, and individual files;
 - Configure versioning for buckets to keep multiple versions of the same object;
-- Set retention policies for automatic cleanup of older files.   
+- Set retention policies for automatic cleanup of older files;
+- View and copy the policies configured for a bucket (bucket policy, lifecycle policy, CORS policy and ACL).   
   
 This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create *Object Storage credentials* that include the access key and secret key.  
 
@@ -80,13 +82,13 @@ To access and navigate through the folders and files inside a bucket, click on t
 
 This action will redirect you to the inside *Bucket page*, where you can find:
 
-- **Bucket Details Area** and **Panel with Quick Actions** - this section displays basic information about the bucket, such as its name, whether it is set as public or private, retention policy status, and provides various quick actions, including next options:   
+- **Bucket Details Area** and **Panel with Quick Actions** - this section displays basic information about the bucket, such as its name, whether it is set as public or private, retention policy status, the list of policies configured for the bucket, and provides various quick actions, including next options:   
   -  get the bucket's URL (if it is public);  
   -  to change the bucket's access settings (make it public or private);  
   -  set retention policy for the bucket;
   -  enable/suspend versioning;
   -  delete the bucket;  
-  -  perform multi-deletion for selected files/folders (become enabled once you have selected at least one object (file or folder)).
+  -  perform multi-deletion for selected files/folders (become enabled once you have selected at least one object (file or folder).
     
 ![](../../../assets/images/store/22.png?width=45pc&classes=border,shadow) 
 
@@ -181,6 +183,10 @@ After these steps your bucket will be publicly available and you can obtain a UR
 Making a bucket public allows anyone to access its contents without requiring authentication or special permissions. Please be cautious when setting buckets to public, as it may expose sensitive data to the public. Always review and manage access controls carefully to ensure the security of your data.
 {{% /notice %}}
 
+{{% notice note %}}
+**Bucket policy will be overwritten:** changing the bucket access from private to public completely overwrites the current bucket policy. If you have configured a custom bucket policy via the S3 API or third-party tools, save its content before changing the access settings - you can copy it in the [View bucket policies](#view-bucket-policies) section.
+{{% /notice %}}
+
 ## Get bucket's public URL
 {{% notice note %}}
 You can obtain the URL for S3 bucket only if the bucket is publicly available. In such cases, you can generate a URL that allows direct access to the entire bucket or to individual objects (files or folders) through the provided link. However, if the bucket is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the bucket.
@@ -247,6 +253,33 @@ You can make your bucket private from both the *Buckets page* and the inside of 
 After these steps, your bucket will not be publicly available.  
 The access permissions will not allow the public to access the bucket or its contents through any direct URL. The objects within the bucket will remain private and can only be accessed by users with appropriate authentication and authorization.
 
+{{% notice note %}}
+**Bucket policy will be overwritten:** changing the bucket access from public to private completely overwrites the current bucket policy. If you have configured a custom bucket policy via the S3 API or third-party tools, save its content before changing the access settings - you can copy it in the [View bucket policies](#view-bucket-policies) section.
+{{% /notice %}}
+
+## View bucket policies
+
+{{% notice note %}}
+📌 Bucket policies are currently available in **read-only** format. You can view and copy them in the Cloud Console, but they cannot be edited or created here. To change a policy, use the S3 API or a third-party tool.
+{{% /notice %}}
+
+The integrated S3 browser shows the policies that are currently configured for your bucket, so you can check the effective configuration without leaving the Cloud Console. The following policy types are supported:
+
+- **Bucket policy** - access rules applied to the bucket and its objects;
+- **Lifecycle policy** - rules for automatic object expiration, including the retention policy set through the Cloud Console;
+- **CORS policy** - Cross-Origin Resource Sharing rules, which are also created when you grant permissions for console access during file upload;
+- **ACL** - the access control list of the bucket.
+
+To view a bucket policy, do the following:
+
+- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- in the **Bucket Details Area** find the **Configured policies** row - it lists only those policies that are actually configured for this bucket, so if a bucket has no policies at all, the row is not displayed;
+- click on the policy you want to inspect:
+
+![](../../../assets/images/store/50.png?width=45pc&classes=border,shadow)
+
+The next opened window will provide the content of the selected policy in JSON format and you can save it by clicking on the COPY TO CLIPBOARD button
+
 ## Enable/suspend bucket versioning
 
 {{% notice note %}}
@@ -287,6 +320,7 @@ Once versioning has been enabled on a bucket, you can later suspend it in the sa
 ![](../../../assets/images/store/48.png?width=45pc&classes=border,shadow)
 - suspend versioning from the *Bucket page*:
 ![](../../../assets/images/store/49.png?width=45pc&classes=border,shadow)
+![](../../../assets/images/store/51.png?width=45pc&classes=border,shadow)
 
 
 {{% notice note %}}
@@ -327,7 +361,7 @@ Also, the integrated S3 browser allows you to perform **multiple deletions** of 
 
 - if  bucket versioning is "enabled" or "suspended", mark the option **to delete all versions** (if needed) on the next opened *Confirmation window* and confirm your action by clicking on the DELETE button:   
 
-![](../../../assets/images/store/45.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/store/45.png?width=30pc&classes=border,shadow) 
 
 After these steps, the selected objects will be deleted in a few seconds.
 
