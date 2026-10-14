@@ -1,6 +1,7 @@
 ---
 title: Object Storage Clients
 weight: 35
+aliases: ["/products/storage/object-storage-clients/"]
 ---
 ___
 On this page, you can find an explanation to configure and use Object Storage with python API and with S3 Browser third-party tool - a freeware Windows client.
@@ -25,7 +26,7 @@ On this page, you can find an explanation to configure and use Object Storage wi
 In the Cloud Console, you have the option to use Object Storage as with its integrated S3-Browser, or you can choose to utilize different APIs or third-party tools such as S3 Browser (a freeware Windows client available at https://s3browser.com/) or Cyberduck (a libre server and cloud storage browser available for both Mac and Windows operating systems, accessible at https://cyberduck.io/).
 
 Before you can configure and use Object Storage, you need to create credentials that consist of an access key and secret key and will enable secure access to your Object Storage resources, allowing you to manage and interact with your data.  
-To find instructions of how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
+To find instructions of how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/)
 
 ## Use Object Storage with Python API  
 Python support is provided through a fork of the *boto3* library with features to make the most of the Cloud Console Object Storage. 

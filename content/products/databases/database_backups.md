@@ -38,7 +38,7 @@ To find information about all established backup schedulers for a specific datab
 ## Link Database to the S3 Storage
 To link the Database to the S3 Storage do the following:  
 - ensure that you have already created Object Storage credentials;  
-  to find information how to create Object Storage Credentials in the Cloud Console use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/).
+  to find information how to create Object Storage Credentials in the Cloud Console use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/).
   
 - open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;  
 - click on the appropriative **quick actions** icon there:    
@@ -46,7 +46,7 @@ To link the Database to the S3 Storage do the following:
 
 - fill in the form on the next opened *S3 storage linking* and click on LINK icon;   
   all necessary information you can take form the *Object Storage Credentials page*;  
-  how to get there, please use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/);  
+  how to get there, please use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/);  
   
 ![](../../../assets/images/databases/20.png?width=30pc&classes=border,shadow) 
 

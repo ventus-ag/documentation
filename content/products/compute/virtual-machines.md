@@ -254,12 +254,12 @@ This action will redirect you to the *Virtual Machine details page*, where you
 **VOLUMES TAB** - opens the *Volumes page* where you can find all attached volumes of corresponding VM, and also attache new one and manage them.  
 ![](../../../assets/images/vms/15.2.png?classes=border,shadow)  
 
-💡 To find additional information about volumes and how to manage them through this TAB use the articles: [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/). 
+💡 To find additional information about volumes and how to manage them through this TAB use the articles: [VM's Volumes](https://docs.ventuscloud.eu/products/block-storage/manage-volumes/). 
 
 **SNAPSHOTS TAB** - opens the *Snapshots page* where you can find all available snapshots of corresponding VM, create new one and manage them.  
 ![](../../../assets/images/vms/16.2.png?classes=border,shadow)
 
-💡 To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
+💡 To find additional information about snapshots and how to manage them through this TAB use the articles: [VM's Snapshots](https://docs.ventuscloud.eu/products/block-storage/manage-snapshots/).
   
 **LOG TAB** - opens the *Log page* where you can find VM's logs.
 ![](../../../assets/images/vms/17.2.png?classes=border,shadow)
