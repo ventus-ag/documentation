@@ -1,6 +1,7 @@
 ---
 title: Integrated S3-Browser
 weight: 34
+aliases: ["/products/storage/integrated-s3-browser/"]
 ---
 ___
 On this page, you can find an explanation of how to use Object Storage with its integrated S3-Browser in the Cloud Console, how to create and delete buckets, how to navigate through folders and files, upload and download files and instructions for other steps to manage an Object Storage effectively in the Cloud Console.
@@ -44,40 +45,45 @@ With our S3 browser, you can perform the following actions:
 - Set retention policies for automatic cleanup of older files;
 - View and copy the policies configured for a bucket (bucket policy, lifecycle policy, CORS policy and ACL).   
   
-This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create *Object Storage credentials* that include the access key and secret key.  
+This integrated S3 browser provides an efficient and user-friendly way to manage your Object Storage resources within the Cloud Console. Before we start using the integrated S3-Browser, we need to create a *master key* - Object Storage credentials that include the access key and secret key.  
 
-💡 To find instructions on how to create Object Storage Credentials in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/)
+💡 To find instructions on how to create master keys and subusers in the Cloud Console, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/)
 
 ## S3 Buckets page
 
-To get inside the integrated S3-Browser select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **S3 Browser TAB:**
-![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/store/1.png?width=30pc&classes=border,shadow) 
+To get inside the integrated S3-Browser select **Object Storage** from the VIRTUAL DATACENTER block in the *side-bar menu*:
+![](../../../assets/images/store/s3-1.png?width=15pc&classes=border,shadow) 
 
-These actions will redirect you to the Object Storage Credentials page, and if you have already created Object Storage Credentials, you will have the BROWSE BUCKETS button available:  
-![](../../../assets/images/store/14.png?width=45pc&classes=border,shadow) 
+This action will take you to the *Object Storage page*, which consists of two tabs - **CREDENTIALS** and **BROWSER**:
+![](../../../assets/images/store/s3-3.png?width=15pc&classes=border,shadow) 
 
-Clicking on this button will open the integrated S3-Browser and take you to the *S3 Buckets page*, where you can view all your previously created buckets, create new ones, browse objects inside the buckets, and perform other related actions:  
-![](../../../assets/images/store/16.png?width=45pc&classes=border,shadow) 
+Click on the **BROWSER** tab to open the integrated S3-Browser and get to the *S3 Buckets page*, where you can view all your previously created buckets, create new ones, browse objects inside the buckets, and perform other related actions:  
+![](../../../assets/images/store/s3-19.png?width=45pc&classes=border,shadow) 
 
-If you haven't created Object Storage Credentials yet, click on the CREATE S3 CREDENTIALS button and once you have completed this step, you will be able to use the BROWSE BUCKETS button:   
-![](../../../assets/images/store/15.png?width=45pc&classes=border,shadow) 
+{{% notice note %}}
+📌 The **BROWSER** tab is available only when the project has at least one master key. If you haven't created one yet, go to the **CREDENTIALS** tab and click on the CREATE MASTER KEY button - once you have completed this step, the BROWSER tab becomes available.
+{{% /notice %}}
 
-💡 To find more information about how to manage Object Storage Credentials, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/storage/object-storage-credentials/). 
+{{% notice tip %}}
+💡 **Take a tour of the page:** click on the ✨ icon in the upper right corner of the *Object Storage page* to start an interactive tour. It walks you through the page step by step, from master keys and subusers to the buckets list. If the project has no master key yet, the tour helps you create the first one.
+{{% /notice %}}
+
+💡 To find more information about how to manage master keys and subusers, please, see the article - [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/). 
 
 ## Create bucket
 To create a new S3 Bucket in the Cloud Console, do the following:
 
-- go to the *S3 Buckets page* and click on the CREATE BUCKET button in the upper left corner;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the CREATE BUCKET button in the upper left corner of the *S3 Buckets page*;
 - specify the name of the Bucket and click on the CREATE button:  
 
-![](../../../assets/images/store/17.png?width=35pc&classes=border,shadow) 
+![](../../../assets/images/store/s3-20.png?width=45pc&classes=border,shadow) 
+![](../../../assets/images/store/17.png?width=30pc&classes=border,shadow) 
 
 After these steps the newly created Bucket will be added to the  *S3 Buckets page* with "private" access and "not configured" versioning status, which are the default settings:
 ![](../../../assets/images/store/18.png?width=45pc&classes=border,shadow) 
 
 ## Browse folders and files within a bucket
-To access and navigate through the folders and files inside a bucket, click on the **Name** of the corresponding bucket on the *S3 Buckets page*:  
+To access and navigate through the folders and files inside a bucket, go to the **BROWSER** tab of the *Object Storage page* and click on the **Name** of the corresponding bucket:  
 ![](../../../assets/images/store/19.png?width=45pc&classes=border,shadow) 
 
 This action will redirect you to the inside *Bucket page*, where you can find:
@@ -116,9 +122,12 @@ To navigate to the parent level in the folder structure, click on the **../** ic
 ## Create folder
 To create a new Folder inside S3 Bucket in the Cloud Console, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - click on the CREATE FOLDER button in the upper left corner;
 - specify the Name of the Folder and click on the CREATE button. 
+
+![](../../../assets/images/store/s3-21.png?width=45pc&classes=border,shadow) 
+![](../../../assets/images/store/s3-22.png?width=30pc&classes=border,shadow) 
 
 After these steps the newly created Folder will be added to the Bucket. Inside the folder, you will have access to the same functionality as before, but on a deeper level. This allows you to continue navigating through the nested folder structure, perform actions like creating new folders or uploading files specific to the selected folder, and manage the files and folders within it.
 
@@ -128,7 +137,7 @@ After these steps the newly created Folder will be added to the Bucket. Inside t
 {{% /notice %}}
 To upload a File inside S3 Bucket in the Cloud Console, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page* and click on the SELECT FILE button;  
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*, then click on the SELECT FILE button;  
 - on the appeared *File selection dialog* browse your local environment and choose the desired file you want to upload;  
 - after selecting the file you will be able to use UPLOAD FILE button.
 Click on it to initiate the upload process, and you will see a loader icon indicating the progress of the upload:
@@ -146,7 +155,7 @@ Click on it to initiate the upload process, and you will see a loader icon indic
 
 To download a File from S3 Bucket to your local environment, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - identify the file, that you want to download, on the *Bucket page*;
 - click on the *Actions icon*  and select the **Download** in the list of available options:  
 
@@ -157,11 +166,11 @@ To download a File from S3 Bucket to your local environment, do the following:
 After these steps, the downloading process of the selected file will start automatically.
 
 ## Make bucket public
-You can make your bucket public from both the *Buckets page* and the inside of the selected *Bucket page*.
+You can make your bucket public from both the *S3 Buckets page* and the inside of the selected *Bucket page*.
 
-1. To make your bucket public from the *Buckets page*, follow these steps:  
+1. To make your bucket public from the *S3 Buckets page*, follow these steps:  
 
-- go to the *Buckets page* in the Cloud Console;
+- go to the **BROWSER** tab of the *Object Storage page* to open the *S3 Buckets page*;
 - find the bucket you want to make public;  
 - click on the **Actions** icon and select the **Make bucket public** in the list of available options:  
 
@@ -170,7 +179,7 @@ You can make your bucket public from both the *Buckets page* and the inside of t
 - confirm your action on the next opened *Confirmation window* by clicking on MAKE PUBLIC button.  
 
 2. To make your bucket public from inside the selected *Bucket page*, follow these steps:  
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*.
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*.
 - inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to change the bucket's access permissions:  
   
 ![](../../../assets/images/store/33.png?width=45pc&classes=border,shadow)
@@ -192,11 +201,11 @@ Making a bucket public allows anyone to access its contents without requiring au
 You can obtain the URL for S3 bucket only if the bucket is publicly available. In such cases, you can generate a URL that allows direct access to the entire bucket or to individual objects (files or folders) through the provided link. However, if the bucket is not publicly accessible, generating a URL will not grant access, and users will require appropriate authentication and authorization to access the bucket.
 {{% /notice %}}
 
-You can get your bucket's public URL from both the *Buckets page* and the inside of the selected *Bucket page*.
+You can get your bucket's public URL from both the *S3 Buckets page* and the inside of the selected *Bucket page*.
 
-1. To get your bucket's public URL from the *Buckets page*, follow these steps:
+1. To get your bucket's public URL from the *S3 Buckets page*, follow these steps:
 
-- go to the *Buckets page* in the Cloud Console;
+- go to the **BROWSER** tab of the *Object Storage page* to open the *S3 Buckets page*;
 - find the bucket which public URL you want to get;  
 - click on the **Actions** icon and select the **Show URL** in the list of available options:  
 
@@ -206,7 +215,7 @@ You can get your bucket's public URL from both the *Buckets page* and the inside
 
 2. To get your bucket's public URL from inside the selected *Bucket page*, follow these steps:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*.
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*.
 - inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to see bucket's URL (this icon will be available only if your bucket is public):  
 
 ![](../../../assets/images/store/35.png?width=45pc&classes=border,shadow)
@@ -220,7 +229,7 @@ You can obtain the URL for a folder or file in an S3 bucket only if the object i
 
 To get an object's public URL, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;  
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;  
 - identify the file or folder, which URL you want to get on the *Bucket page*;
 - click on the **Actions** icon and select the **Show URL** in the list of available options:
 
@@ -229,11 +238,11 @@ To get an object's public URL, do the following:
 The next opened window will provide your *object's URL* and you can save it by clicking on the COPY TO CLIPBOARD button. 
 
 ## Make bucket private
-You can make your bucket private from both the *Buckets page* and the inside of the selected *Bucket page*.
+You can make your bucket private from both the *S3 Buckets page* and the inside of the selected *Bucket page*.
 
-1. To make your bucket private from the *Buckets page*, follow these steps:
+1. To make your bucket private from the *S3 Buckets page*, follow these steps:
 
-- go to the *Buckets page* in the Cloud Console;
+- go to the **BROWSER** tab of the *Object Storage page* to open the *S3 Buckets page*;
 - find the bucket you want to make private;  
 - click on the **Actions** icon and select the **Make bucket private** in the list of available options:  
 
@@ -243,7 +252,7 @@ You can make your bucket private from both the *Buckets page* and the inside of 
 
 2. To make your bucket private from inside the selected *Bucket page*, follow these steps:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to change the bucket's access permissions:    
 
 ![](../../../assets/images/store/37.png?width=45pc&classes=border,shadow)
@@ -272,7 +281,7 @@ The integrated S3 browser shows the policies that are currently configured for y
 
 To view a bucket policy, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - in the **Bucket Details Area** find the **Configured policies** row - it lists only those policies that are actually configured for this bucket, so if a bucket has no policies at all, the row is not displayed;
 - click on the policy you want to inspect:
 
@@ -288,11 +297,11 @@ The next opened window will provide the content of the selected policy in JSON f
 
 By default, when you create a new bucket via the integrated S3 browser, versioning is set to "not configured", which means files exist in a single version only.
 
-You can enable bucket versioning from both the *Buckets page* and the inside of the selected *Bucket page*.
+You can enable bucket versioning from both the *S3 Buckets page* and the inside of the selected *Bucket page*.
 
-1. To enable bucket versioning from the *Buckets page*, follow these steps:
+1. To enable bucket versioning from the *S3 Buckets page*, follow these steps:
 
-- go to the *Buckets page* in the Cloud Console;
+- go to the **BROWSER** tab of the *Object Storage page* to open the *S3 Buckets page*;
 - find the bucket for which you want to change versioning settings;  
 - click on the **Actions** icon and select **Enable versioning** in the list of available options:
 
@@ -302,7 +311,7 @@ You can enable bucket versioning from both the *Buckets page* and the inside of 
 
 1. To enable bucket versioning from inside the selected *Bucket page*, follow these steps:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to change the bucket's versioning settings:
 
 ![](../../../assets/images/store/47.png?width=45pc&classes=border,shadow)
@@ -314,9 +323,9 @@ After these steps, the bucket’s versioning status will be **enabled**.
 📌 **Versioning behavior:** Once versioning has been enabled on a bucket, it cannot be returned to "not configured" status. You can only suspend versioning, which prevents new versions from being created but keeps all existing versions intact.
 {{% /notice %}}
 
-Once versioning has been enabled on a bucket, you can later suspend it in the same way — either from the *Buckets page* or the selected *Bucket page* using the **Suspend versioning** option:  
+Once versioning has been enabled on a bucket, you can later suspend it in the same way — either from the *S3 Buckets page* or the selected *Bucket page* using the **Suspend versioning** option:  
 
-- suspend versioning from the *Buckets page*:
+- suspend versioning from the *S3 Buckets page*:
 ![](../../../assets/images/store/48.png?width=45pc&classes=border,shadow)
 - suspend versioning from the *Bucket page*:
 ![](../../../assets/images/store/49.png?width=45pc&classes=border,shadow)
@@ -331,8 +340,9 @@ To completely delete an object and all its versions, use the **Delete all versio
 
 ## Delete and multi-delete objects
 📌 **Deleting objects in buckets with "not configured" versioning:**  
+
 To delete an object from an S3 bucket with **versioning set to "not configured"**, do the following:  
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - identify the file or folder, that you want to delete on the *Bucket page*;
 - click on the *Actions icon* and select the **Delete** in the list of available options:
 
@@ -383,7 +393,7 @@ The integrated S3 browser allows you to set a retention policy for your bucket, 
 
 To set a retention policy for your bucket, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - inside the bucket on the Panel with Quick Actions, click an option icon that allows you to set the bucket’s retention policy:  
 ![](../../../assets/images/store/40.png?width=35pc&classes=border,shadow)  
 - on the next opened window specify the number of days for the retention period (files older than this number of days will be permanently removed) and click on the SET button:  
@@ -427,7 +437,7 @@ This method will clear all bucket content while keeping the bucket itself intact
 
 To delete an existing retention policy from your bucket, do the following:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - inside the bucket on the Panel with Quick Actions, click an option icon that allows you to delete the bucket’s retention policy:  
 ![](../../../assets/images/store/43.png?width=45pc&classes=border,shadow)   
 - confirm your action on the next opened *Confirmation window* by clicking on the DELETE button.
@@ -441,11 +451,11 @@ To avoid any potential data loss during the deletion process, in the Cloud Conso
 
 Before deleting a bucket, all files must be removed. To empty your bucket efficiently, you can either use the [Fast bucket cleanup technique](#fast-bucket-cleanup-technique) with retention policy for large datasets, or the [multi-delete functionality](#delete-and-multi-delete-objects) for smaller amounts of data.
 
-You can delete bucket from both the *Buckets page* and the inside of the selected *Bucket page* but before, please ensure that all the objects (files and folders) inside the bucket have been removed or moved to another location.
+You can delete bucket from both the *S3 Buckets page* and the inside of the selected *Bucket page* but before, please ensure that all the objects (files and folders) inside the bucket have been removed or moved to another location.
 
-1. To delete bucket from the *Buckets page*, follow these steps:
+1. To delete a bucket from the *S3 Buckets page*, follow these steps:
 
-- go to the *Buckets page* in the Cloud Console;
+- go to the **BROWSER** tab of the *Object Storage page* to open the *S3 Buckets page*;
 - find the bucket you want to delete;  
 - click on the **Actions** icon and select the **Delete** in the list of available options:  
 
@@ -455,7 +465,7 @@ You can delete bucket from both the *Buckets page* and the inside of the selecte
 
 2. To delete bucket from inside the *Bucket page*, follow these steps:
 
-- access the *Bucket page* in the Cloud Console by clicking on the **name** of the bucket from the *Buckets page*;
+- go to the **BROWSER** tab of the *Object Storage page* and click on the **name** of the bucket to open the *Bucket page*;
 - inside the bucket on the *Panel with Quick Actions*, click an option icon that allows you to delete bucket:   
  
 ![](../../../assets/images/store/39.png?width=45pc&classes=border,shadow)

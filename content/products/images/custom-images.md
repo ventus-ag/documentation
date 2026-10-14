@@ -17,9 +17,9 @@ On this page, you can find an explanation of how to find list of default Images 
 - [Create image from Snapshot](#create-image-from-snapshot)
 
 ## Images page
-To get to the *Images page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Images TAB:**
+To get to the *Images page*, select the **Block Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Images TAB:**
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
-![](../../../assets/images/images/1.png?width=30pc&classes=border,shadow) 
+![](../../../assets/images/images/1.png?width=20pc&classes=border,shadow) 
 
 On this page you can find all default and custom Images:
 ![](../../../assets/images/images/2.png?classes=border,shadow)  

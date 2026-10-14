@@ -1,6 +1,7 @@
 ---
 title: VM's Volumes
 weight: 27
+aliases: ["/products/storage/manage-volumes/"]
 ---
 ___
 On this page, you can find an explanation of how to manage Volumes, related to the selected Virtual Machine, from the *Virtual Machine details page* in the Cloud Console.
@@ -25,7 +26,7 @@ To find all Volumes, related to the selected Virtual Machine, you need:
 
 - open the *VOLUMES page of this VM* - for this click on the VOLUMES TAB:
 
-![](../../../assets/images/vol/12.png?width=25pc&classes=border,shadow) 
+![](../../../assets/images/vol/12.png?width=35pc&classes=border,shadow) 
 
 On this page you can find all Volumes, attached to the corresponding VM, with the *Attach button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Volume: 
 ![](../../../assets/images/vol/13.png?classes=border,shadow)    
@@ -37,10 +38,10 @@ On this page you can find all Volumes, attached to the corresponding VM, with th
 - *Extend* - this option is used to change the Volume size; volume extension will restart the VM it is attached to.
 
 There are two ways to *attach*, *detach*, *edit* and *extend* Volumes:
-1. from the *Volumes page*;
+1. from the *VOLUMES TAB* on the *Block Storage page*;
 2. from the *VOLUMES TAB* on the *Virtual Machine details page*.
 
-In this article we will explain the second way - to manage Volumes from the *VOLUMES TAB* on the *Virtual Machine details page*. Information about the first one you can find in the next article - [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/).  
+In this article we will explain the second way - to manage Volumes from the *VOLUMES TAB* on the *Virtual Machine details page*. Information about the first one you can find in the next article - [Volumes](https://docs.ventuscloud.eu/products/block-storage/volumes/).  
 
 ## Attach Volume
 {{% notice note %}}
@@ -51,6 +52,7 @@ To attach the Volume from the *VOLUMES TAB* on the *Virtual Machine details 
 - click on the ATTACH VOLUME icon in the upper left corner of the *VOLUMES TAB* on the *Virtual Machine details page*;
 - select one of the available Volumes on the next opened *Attach volume window* and click on the ATTACH icon:
 
+![](../../../assets/images/vol/15.png?classes=border,shadow)  
 ![](../../../assets/images/vol/14.png?width=35pc&classes=border,shadow)  
 
 After these steps, the Volume will be attached to the selected VM and will be displayed on the *VOLUMES TAB* on the *Virtual Machine details page*:
@@ -59,7 +61,7 @@ After these steps, the Volume will be attached to the selected VM and will be d
 On the *Volumes page* its status will change to *in-use:
 ![](../../../assets/images/vol/9.png?classes=border,shadow) 
 
-Attach Volume you can also from the *Volumes page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/).
+Attach Volume you can also from the *VOLUMES TAB* on the *Block Storage page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/block-storage/volumes/).
 
 ## Detach Volume
 {{% notice note %}}
@@ -74,7 +76,7 @@ To detach the Volume from the *VOLUMES TAB* on the *Virtual Machine details 
 After these steps, the Volume will be detached from the selected VM.  
 On the *Volumes page* its status will change to *available*.
 
-Detach Volume you can also from the *Volumes page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/).
+Detach Volume you can also from the *VOLUMES TAB* on the *Block Storage page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/block-storage/volumes/).
 
 ## Edit Volume
 To edit the Volume from the *VOLUMES TAB* on the *Virtual Machine details page*, do the following:
@@ -86,7 +88,7 @@ To edit the Volume from the *VOLUMES TAB* on the *Virtual Machine details pa
 
 After these steps, the selected Volume will be updated.
 
-Edit Volume you can also from the *Volumes page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/).
+Edit Volume you can also from the *VOLUMES TAB* on the *Block Storage page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/block-storage/volumes/).
 
 ## Extend Volume
 
@@ -99,4 +101,4 @@ To extend the Volume from the *VOLUMES TAB* on the *Virtual Machine details 
 
 After these steps, the selected Volume will be updated.
 
-Extend Volume you can also from the *Volumes page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/storage/volumes/).
+Extend Volume you can also from the *VOLUMES TAB* on the *Block Storage page*, how to do this, please, see the article - [Volumes](https://docs.ventuscloud.eu/products/block-storage/volumes/).
