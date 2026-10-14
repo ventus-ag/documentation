@@ -8,3 +8,16 @@
   ga('send', 'pageview');
 
 </script>
+<script>
+  // Save the sidebar menu scroll position; it is restored in menu-footer.html
+  jQuery(function() {
+    var $menu = jQuery('#sidebar .highlightable');
+    $menu.perfectScrollbar('update');
+
+    function save() {
+      try { sessionStorage.setItem('sidebar-scroll', $menu.scrollTop()); } catch (e) {}
+    }
+    $menu.on('click', 'a', save);
+    jQuery(window).on('pagehide beforeunload', save);
+  });
+</script>

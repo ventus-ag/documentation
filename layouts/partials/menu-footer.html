@@ -1,0 +1,26 @@
+<p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+<script>
+  // Restore the sidebar menu scroll position before the first paint, so the menu
+  // doesn't jump to the top on page load. Runs inline at the end of the menu.
+  (function() {
+    var $menu = jQuery('#sidebar .highlightable');
+    // Same height as setMenuHeight() in learn.js, so the menu is scrollable now
+    $menu.height(jQuery('#sidebar').innerHeight() - jQuery('#header-wrapper').height() - 40);
+
+    var saved = null;
+    try { saved = sessionStorage.getItem('sidebar-scroll'); } catch (e) {}
+    if (saved !== null) {
+      $menu.scrollTop(parseInt(saved, 10));
+    }
+
+    // If the current page's menu item is not visible (direct link, or the menu
+    // changed because another section expanded), scroll to it
+    var $active = $menu.find('li.active > a').first();
+    if ($active.length) {
+      var top = $active.offset().top - $menu.offset().top;
+      if (top < 0 || top + $active.outerHeight() > $menu.innerHeight()) {
+        $menu.scrollTop($menu.scrollTop() + top - $menu.innerHeight() / 3);
+      }
+    }
+  })();
+</script>
