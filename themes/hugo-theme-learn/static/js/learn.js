@@ -48,8 +48,8 @@ function fallbackMessage(action) {
 }
 
 function switchTab(tabGroup, tabId) {
-    allTabItems = jQuery("[data-tab-group='"+tabGroup+"']");
-    targetTabItems = jQuery("[data-tab-group='"+tabGroup+"'][data-tab-item='"+tabId+"']");
+    var allTabItems = jQuery("[data-tab-group='"+tabGroup+"']");
+    var targetTabItems = jQuery("[data-tab-group='"+tabGroup+"'][data-tab-item='"+tabId+"']");
 
     // if event is undefined then switchTab was called from restoreTabSelection
     // so it's not a button event and we don't need to safe the selction or
@@ -179,7 +179,6 @@ jQuery(document).ready(function() {
         return false;
     });
 
-    var ajax;
     jQuery('[data-search-input]').on('input', function() {
         var input = jQuery(this),
             value = input.val(),
@@ -189,14 +188,12 @@ jQuery(document).ready(function() {
             $('ul.topics').removeClass('searched');
             items.css('display', 'block');
             sessionStorage.removeItem('search-value');
-            $(".highlightable").unhighlight({ element: 'mark' })
+            $(".highlightable").unhighlight({ element: 'mark' });
             return;
         }
 
         sessionStorage.setItem('search-value', value);
         $(".highlightable").unhighlight({ element: 'mark' }).highlight(value, { element: 'mark' });
-
-        if (ajax && ajax.abort) ajax.abort();
 
         jQuery('[data-search-clear]').on('click', function() {
             jQuery('[data-search-input]').val('').trigger('input');
@@ -212,7 +209,7 @@ jQuery(document).ready(function() {
     });
 
     if (sessionStorage.getItem('search-value')) {
-        var searchValue = sessionStorage.getItem('search-value')
+        var searchValue = sessionStorage.getItem('search-value');
         $(document.body).removeClass('searchbox-hidden');
         $('[data-search-input]').val(searchValue);
         $('[data-search-input]').trigger('input');
@@ -298,7 +295,7 @@ jQuery(document).ready(function() {
     $('#top-bar a:not(:has(img)):not(.btn)').addClass('highlight');
     $('#body-inner a:not(:has(img)):not(.btn):not(a[rel="footnote"])').addClass('highlight');
 
-    var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
+    var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
     if (!touchsupport){ // browser doesn't support touch
         $('#toc-menu').hover(function() {
             $('.progress').stop(true, false, true).fadeToggle(100);

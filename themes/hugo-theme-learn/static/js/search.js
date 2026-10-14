@@ -61,7 +61,7 @@ function search(queryTerm) {
 // Let's get started
 initLunr();
 $( document ).ready(function() {
-    var searchList = new autoComplete({
+    new autoComplete({
         /* selector for the search box element */
         selector: $("#search-by").get(0),
         /* source is the callback to perform the search */
