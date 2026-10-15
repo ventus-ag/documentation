@@ -29,9 +29,9 @@ The Cloud Console Object Storage makes it possible to store data simply and cost
 
 It’s built for scale and optimized for durability, availability, and concurrency across the entire data set. 
 
-An Object Storage API differs from a conventional filesystem: instead of directories and files, you manipulate containers where you store objects. A container can hold millions of objects.
+An Object Storage API differs from a conventional filesystem: instead of directories and files, you manipulate buckets where you store objects. A bucket can hold millions of objects.
 
-There is no notion of hierarchy with containers: you cannot nest a container within another, however, you can emulate a nested folder structure with a naming convention for your objects.
+There is no notion of hierarchy with buckets: you cannot nest a bucket within another, however, you can emulate a nested folder structure with a naming convention for your objects.
 
 **Object Storage access methods**  
 We can access Object Storage using different methods:
@@ -40,30 +40,37 @@ We can access Object Storage using different methods:
 
 - *APIs:* You can also interact with Object Storage using different APIs (Application Programming Interfaces). APIs enable developers to programmatically access and manipulate Object Storage resources, allowing for more customized and automated workflows.
 
-- *Third-Party Tools:* Additionally, you have the option to use third-party tools like S3 Browser and Cyberduck, which provide alternative interfaces for managing Object Storage. These tools may offer additional features and functionalities not available in the integrated S3-Browser, catering to specific user preferences and requirements.
+- *Third-Party Tools:* Additionally, you have the option to use third-party tools like S3 Browser, Cyberduck or s3cmd, which provide alternative interfaces for managing Object Storage. These tools may offer additional features and functionalities not available in the integrated S3-Browser, catering to specific user preferences and requirements.
 
 By offering multiple options to access Object Storage, the Cloud Console allows users to choose the most suitable approach for their storage management needs. Whether through the integrated S3-Browser, APIs, or third-party tools, users can efficiently interact with and manage their Object Storage resources.
 
-But before we start to configure and use Object Storage we need to create **credentials** that include the *access key* and *secret key* and will enable secure access to your Object Storage resources, allowing you to manage and interact with your data. In the Cloud Console there are two kinds of credentials:
 
-- **Master keys** - the project's own credentials, which provide full access to all buckets and objects in the project;
-- **Subusers** - separate identities with their own access keys and a limited access level, for example, for different applications or users.
+But before we start to configure and use Object Storage, you need to create S3 **credentials** that include the *access key* and *secret key*. These credentials allow S3-compatible tools and applications to authenticate and interact with your Object Storage resources.  
+In the Cloud Console, there are two types of credentials:
+
+- **Master keys** - the main S3 credentials for your project's Object Storage user. They provide access based on the user's permissions and access policies.
+- **Subusers** - additional identities associated with the main Object Storage user. Each has its own S3 credentials and access level, allowing separate access for different applications, services, or users.
 
 ## Object Storage page
 
 To get to the *Object Storage page*, select **Object Storage** from the VIRTUAL DATACENTER block in the *side-bar menu*:
 ![](../../../assets/images/store/s3-1.png?width=15pc&classes=border,shadow) 
 
+The top of the Object Storage page shows the details you need to connect to your project’s storage. Click the copy icon next to a value to copy all of it, because long values like the ARN are shortened on screen.
+Endpoint: the URL that S3-compatible clients and SDKs (AWS CLI, s3cmd, rclone, boto3, and others) connect to. Use the full value, including the port.
+Principal ARN: the identifier of your project’s identity. Use it in bucket policies when you grant or restrict access to a bucket. It has the format arn:aws:iam::<project_id>:user/<project_id>
+Далі вже йде про тур, як воно і є
+
+
 At the top of the page you can find the project's connection details and the **Take a tour** icon:  
 ![](../../../assets/images/store/s3-2.png?width=35pc&classes=border,shadow) 
 
-- **Principal ARN** - the unique identifier of the project's S3 user. Use it in bucket policies to grant or deny this user access to a bucket. It has the format `arn:aws:iam::<project_id>:user/<project_id>`;
-- **Endpoint** - the S3 endpoint to use in S3 clients and tools.
+- **Principal ARN** - the unique identifier of your project’s identity. Use it in bucket policies when you grant or restrict access to a bucket. It has the format `arn:aws:iam::<project_id>:user/<project_id>`; Click the copy icon next to a value to copy all of it, because long values are shortened on screen.
+- **Endpoint** - the URL that S3-compatible clients and SDKs (AWS CLI, s3cmd, rclone, boto3, and others) connect to. Use the full value, including the port.
 
 {{% notice tip %}}
 💡 **Take a tour of the page:** click on the ✨ icon in the upper right corner of the *Object Storage page* to start an interactive tour. It walks you through the page step by step: master keys, subusers and their access levels, bucket policy examples and the buckets list. If the project has no master key yet, the tour helps you create the first one.
 {{% /notice %}}
-
 
 Below them, the page consists of two tabs:
 ![](../../../assets/images/store/s3-3.png?width=15pc&classes=border,shadow) 
@@ -71,7 +78,7 @@ Below them, the page consists of two tabs:
 - **CREDENTIALS** - the project's [master keys](#master-keys) and [subusers](#subusers) with their own access keys:  
 ![](../../../assets/images/store/s3-4.png?width=45pc&classes=border,shadow) 
 
-- **BROWSER** - the integrated S3-Browser with all buckets of the project. This tab is available only when the project has a master key:  
+- **BROWSER** - the integrated S3-Browser, where you can view and manage all buckets in the project. This tab is available only when the project has a master key:  
 ![](../../../assets/images/store/s3-5.png?width=45pc&classes=border,shadow) 
 
 💡 In this article, we focus on the CREDENTIALS tab, where you can manage master keys and subusers.
@@ -134,6 +141,10 @@ To delete a master key, do the following:
 ![](../../../assets/images/store/s3-7.png?width=45pc&classes=border,shadow) 
 
 After these steps, the selected master key will be deleted.
+
+{{% notice warning %}}
+The project should have at least one master key. If you need to delete the last one, make sure all subusers and buckets of the project are deleted first.
+{{% /notice %}}
 
 ## Subusers
 
