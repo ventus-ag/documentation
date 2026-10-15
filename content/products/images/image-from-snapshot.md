@@ -45,7 +45,7 @@ It is recommended to stop the Virtual Machine before taking a Snapshot.
 {{% /notice %}} 
 
 {{% notice info %}}
-To find Volumes with an "available" status, go to the *Volumes page*. For this select the *Storage* from the VIRTUAL DATACENTER block in the *side-bar menu* and click the *Volumes TAB*.
+To find Volumes with an "available" status, go to the *Volumes page*. For this select the *Block Storage* from the VIRTUAL DATACENTER block in the *side-bar menu* and click the *Volumes TAB*.
 {{% /notice %}} 
 
 - go to the SNAPSHOTS TAB and click the CREATE icon in the upper left corner:
@@ -56,7 +56,7 @@ To find Volumes with an "available" status, go to the *Volumes page*. For this 
 
 After these steps, the newly created Snapshot will be added on the *Snapshots page*.
 
-To find more detailed instructions about Snapshot creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/).
+To find more detailed instructions about Snapshot creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/block-storage/manage-snapshots/).
 
 You can check if this Snapshot is working correctly by creating Virtual Machine from it:
 ![](../../../assets/images/tutorials/0-8.png?width=30pc&classes=border,shadow)
@@ -74,7 +74,7 @@ To create a Volume from the Snapshot do the following:
 After these steps, the newly created Volume will be added to the *Volumes page* with the status *available*:
 ![](../../../assets/images/snap/8.png?classes=border,shadow) 
 
-To find detailed instructions about Volume creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/storage/manage-snapshots/) 
+To find detailed instructions about Volume creation, see the article: [VM's Snapshots](https://docs.ventuscloud.eu/products/block-storage/manage-snapshots/) 
 
 ### Create Image from Volume
 To create a Image from the Volume do the following:

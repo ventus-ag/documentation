@@ -1,6 +1,7 @@
 ---
 title: VM's Snapshots
 weight: 32
+aliases: ["/products/storage/manage-snapshots/"]
 ---
 ___
 On this page, you can find an explanation of how to manage Snapshots, related to the selected Virtual Machine, from the *Virtual Machine details page* in the Cloud Console.
@@ -34,10 +35,10 @@ On this page you can find all Snapshots, related to the corresponding VM, with t
 - *Delete* - this option is for the Snapshot removing.
 
 There are two ways to *create*, *edit* and *delete* Snapshots:
-1. from the *Snapshots page*;
+1. from the *SNAPSHOTS TAB* on the *Block Storage page*;
 2. from the *SNAPSHOTS TAB* on the *Virtual Machine details page*.
 
-In this article we will explain the second way - to manage Snapshots from the *SNAPSHOTS TAB* on the *Virtual Machine details page*. Information about the first one you can find in the next article - [Snapshots](https://docs.ventuscloud.eu/products/storage/snapshots/).    
+In this article we will explain the second way - to manage Snapshots from the *SNAPSHOTS TAB* on the *Virtual Machine details page*. Information about the first one you can find in the next article - [Snapshots](https://docs.ventuscloud.eu/products/block-storage/snapshots/).    
 
 ## Create Snapshot
 To create new Snapshot from the *SNAPSHOTS TAB* on the *Virtual Machine details page*, do the following:
@@ -59,7 +60,7 @@ After these steps, the newly created Snapshot will be added to the *SNAPSHOTS T
 Also, this Snapshot will be displayed on the *Snapshots page*:
 ![](../../../assets/images/snap/13.png?classes=border,shadow)
 
-Create Snapshot you can also from the *Snapshots page*, how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/storage/snapshots/).
+Create Snapshot you can also from the *SNAPSHOTS TAB* on the *Block Storage page*, how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/block-storage/snapshots/).
 
 ## Edit Snapshot 
 To edit the Snapshot from the *SNAPSHOTS TAB* on the *Virtual Machine details page*, do the following:
@@ -69,7 +70,7 @@ To edit the Snapshot from the *SNAPSHOTS TAB* on the *Virtual Machine details
 
 After these steps, the selected Snapshot will be updated.
 
-Edit Snapshot you can also from the *Snapshots page*, how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/storage/snapshots/).
+Edit Snapshot you can also from the *SNAPSHOTS TAB* on the *Block Storage page*, how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/block-storage/snapshots/).
 
 ## Delete Snapshot
 To delete the Snapshot from the *SNAPSHOTS TAB* on the *Virtual Machine details page*, do the following:
@@ -79,4 +80,4 @@ To delete the Snapshot from the *SNAPSHOTS TAB* on the *Virtual Machine detai
 
 After these steps, the selected Snapshot will be deleted.
 
-Delete Snapshot you can also from the *Snapshots page*, how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/storage/snapshots/).
+Delete Snapshot you can also from the *SNAPSHOTS TAB* on the *Block Storage page*, how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/block-storage/snapshots/).
