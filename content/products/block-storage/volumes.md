@@ -1,6 +1,7 @@
 ---
 title: Volumes
 weight: 25
+aliases: ["/products/storage/volumes/"]
 ---
 ___
 On this page, you can find an explanation of how to create, edit, delete Volumes and instructions for other steps to manage Volumes in the Cloud Console.
@@ -17,7 +18,7 @@ On this page, you can find an explanation of how to create, edit, delete Volumes
   - [Delete Volume](#delete-volume)
 
 ## Volumes page
-To get to the *Volumes page*, select the **Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Volumes TAB:**
+To get to the *Volumes page*, select the **Block Storage** from the VIRTUAL DATACENTER block in the *side-bar menu* and click the **Volumes TAB:**
 ![](../../../assets/images/vol/1.png?width=15pc&classes=border,shadow) 
 ![](../../../assets/images/vol/2.png?width=30pc&classes=border,shadow) 
 
@@ -32,14 +33,14 @@ On this page you can find all your own Volumes, created in the current Project, 
 - *Delete* - this option is for Volume deletion.
 
 There are two ways to *attach*, *detach*, *edit* and *extend* Volumes:
-1. from the *Volumes page*;
+1. from the *VOLUMES TAB* on the *Block Storage page*;
 2. from the *VOLUMES TAB* on the *Virtual Machine details page*.
 
-In this article we will explain the first way - to manage Volumes from the *Volumes page*. Information about the second one you can find in the next article - [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/).  
+In this article we will explain the first way - to manage Volumes from the *VOLUMES TAB* on the *Block Storage page*. Information about the second one you can find in the next article - [VM's Volumes](https://docs.ventuscloud.eu/products/block-storage/manage-volumes/).  
 
 ## Create Volume
-To create new Volume from the *Volumes page*, do the following:
-- go to the *Volumes page* and click on the CREATE VOLUME icon in the upper left corner;
+To create a new Volume, do the following:
+- go to the *VOLUMES TAB* on the *Block Storage page* and click on the CREATE VOLUME icon in the upper left corner;
 - fill in the form on the next opened *Create Volume window* and click on the CREATE icon:
 
 ![](../../../assets/images/vol/4.png?width=35pc&classes=border,shadow) 
@@ -52,7 +53,7 @@ After these steps, the newly created Volume will be added to the *Volumes page*
 ![](../../../assets/images/vol/5.png?classes=border,shadow) 
 
 Also, Volume can be created from the Snapshot.  
-To find instructions how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/storage/snapshots/).
+To find instructions how to do this, please, see the article - [Snapshots](https://docs.ventuscloud.eu/products/block-storage/snapshots/).
 
 ## Attach Volume
 {{% notice note %}}
@@ -76,7 +77,7 @@ Also, this Volume will be displayed on the *VOLUMES TAB* on the *Virtual Machin
 If the Volume was created from the Snapshot, after attaching it to the VM, related with this Volume Snapshot will be displayed on the *SNAPSHOTS TAB* on the *Virtual Machine details page*. 
 {{% /notice %}}
 
-Attach Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/).
+Attach Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/block-storage/manage-volumes/).
 
 ## Detach Volume
 {{% notice note %}}
@@ -90,7 +91,7 @@ To detach the Volume from the *Volumes page*, do the following:
 
 After these steps, the Volume will be detached from the selected VM and on the *Volumes page* its status will change to *available*.
 
-Detach Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/).
+Detach Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/block-storage/manage-volumes/).
 
 ## Create VM from Volume
 {{% notice note %}}
@@ -119,7 +120,7 @@ To edit the Volume from the *Volumes page*, do the following:
 
 After these steps, the selected Volume will be updated.
 
-Edit Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/).
+Edit Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/block-storage/manage-volumes/).
 
 ## Extend Volume
 To extend the Volume from the *Volumes page*, do the following:
@@ -131,7 +132,7 @@ To extend the Volume from the *Volumes page*, do the following:
 
 After these steps, the selected Volume will be updated.
 
-Extend Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/storage/manage-volumes/).
+Extend Volume you can also from the *VOLUMES TAB* on the *Virtual Machine details page*, how to do this, please, see the article - [VM's Volumes](https://docs.ventuscloud.eu/products/block-storage/manage-volumes/).
 
 
 ## Delete Volume

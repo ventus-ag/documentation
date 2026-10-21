@@ -53,7 +53,7 @@ images.each(function(index){
     });
     if (typeof c !== "undefined") {
       var classes = c.split(',');
-      for (i = 0; i < classes.length; i++) {
+      for (var i = 0; i < classes.length; i++) {
         image.addClass(classes[i]);
       }
     }
@@ -68,7 +68,7 @@ $(document).ready(function(){
 
 jQuery(document).ready(function() {
   // Add link button for every
-  var text, clip = new ClipboardJS('.anchor');
+  var clip = new ClipboardJS('.anchor');
   $("h1~h2,h1~h3,h1~h4,h1~h5,h1~h6").append(function(index, html){
     var element = $(this);
     var url = encodeURI(document.location.origin + document.location.pathname);
