@@ -14,7 +14,9 @@ On this page, you can find an explanation of how to create, resize, delete Kuber
     - [Node Pool Types and Scaling Behavior](#node-pool-types-and-scaling-behavior)
     - [Create Node Pool](#create-node-pool)
     - [Resize Node Pool](#resize-node-pool)
-    - [Node Pool Autoscaling Configuration](#node-pool-autoscaling-configuration)
+    - [Change Node Pool Flavor](#change-node-pool-flavor)
+    - [Configure Node Pool](#configure-node-pool)
+    - [Node Labels and Taints](#node-labels-and-taints)
     - [Upgrade Node Pool](#upgrade-node-pool)
   - [Cluster Features](#cluster-features)
     - [Enable OS Upgrade](#enable-os-upgrade)
@@ -84,7 +86,7 @@ This action will redirect you to the *Cluster details page*, where you can fin
 - transition to the NODE POOLS, SETTINGS and LABELS pages related to this Cluster:  
 ![](../../../assets/images/clusters/31.png?width=20pc&classes=border,shadow)
   
-**NODE POOLS TAB** - opens the *Cluster Node Pools page* where you can find all available Node Pools of corresponding Cluster with their details; add, delete, resize, and configure autoscaling for individual Node Pools.  
+**NODE POOLS TAB** - opens the *Cluster Node Pools page* where you can find all available Node Pools of corresponding Cluster with their details; add, delete, resize, change the flavor, and configure autoscaling, node labels and taints for individual Node Pools.  
 
 💡 More information about the **node pools management** will be provided in the following sections.  
 ![](../../../assets/images/clusters/32.png?classes=border,shadow)  
@@ -107,12 +109,14 @@ The **NODE POOLS** tab displays all node pools within the selected Kubernetes cl
 - Supports horizontal scaling up only (1→2→3 nodes)
 - Cannot be scaled down once additional nodes are added
 - Critical for cluster control plane high availability
+- **Flavor**: Can be changed at any time using **Actions > Change Flavor** (see [Change Node Pool Flavor](#change-node-pool-flavor))
 - **Upgrade**: Requires whole cluster upgrade using **Action Button > Upgrade**
 
 **Worker Node Pool (default-worker):**  
 - Supports bidirectional scaling (scale up and down)
 - Configurable autoscaling can be enabled or disabled
 - Handles application workload distribution
+- **Flavor**: Can be changed at any time using **Actions > Change Flavor** (see [Change Node Pool Flavor](#change-node-pool-flavor))
 - **Upgrade**: Requires whole cluster upgrade using **Action Button > Upgrade**
 
 ### Create Node Pool
@@ -124,7 +128,7 @@ When creating new node pools using the **ADD NODE POOL** button, administrators 
 - **Autoscaling Options**: 
   - Enable autoscaling with minimum and maximum node limits
   - Create fixed-size pools without autoscaling
-- **Custom Configuration**: Define labels, taints, and other node-specific settings
+- **Custom Configuration**: Define node labels and taints to dedicate the pool to a specific workload (see [Node Labels and Taints](#node-labels-and-taints))
 - **Independent Upgrades**: Create and upgrade separate node pools to newer versions independently
 
 ![](../../../assets/images/clusters/25.png?width=30pc&classes=border,shadow)
@@ -138,14 +142,70 @@ To resize the Node Pool, do the following:
 
 ![](../../../assets/images/clusters/27.png?width=30pc&classes=border,shadow)
 
-### Node Pool Autoscaling Configuration
+### Change Node Pool Flavor
 
-To enable or disable the Autoscaling for the Node Pool, do the following:
-- identify the Node Pool, that you want to upgrade, on the *Cluster details page*;
-- click on the **Actions** icon  and select the **Configure Autoscaling** in the list of available options;
-- select the option to enable or disable the Autoscaling for the selected Node Pool on the opened *Autoscaling Node Pool window* or change the minimum and maximum node count and click on the SAVE icon:
+The flavor of an existing Node Pool can be changed at any time, for both master and worker Node Pools. Use it when the current flavor no longer fits the workload - for example, when the control plane needs more memory or when worker nodes have to run heavier applications.
+
+To change the flavor of the Node Pool, do the following:
+- identify the Node Pool, that you want to change, on the *Cluster details page*;
+- click on the **Actions** icon and select the **Change Flavor** in the list of available options;
+- select the new flavor for the selected Node Pool on the opened *Change Flavor window* and click on the CHANGE FLAVOR icon:
+
+![](../../../assets/images/clusters/44.png?width=30pc&classes=border,shadow)
+
+{{% notice note %}}
+📌 Nodes are replaced one at a time with the new flavor, so the workloads keep running during the change. For a master Node Pool, plan the change for a cluster with at least 3 master-nodes to keep the control plane available.
+{{% /notice %}}
+
+### Configure Node Pool
+
+The *Configure Node Pool window* holds the autoscaling settings of the Node Pool together with its node labels and taints.
+
+To configure the Node Pool, do the following:
+- identify the Node Pool, that you want to configure, on the *Cluster details page*;
+- click on the **Actions** icon and select the **Configure** in the list of available options;
+- enable or disable the Autoscaling and change the minimum and maximum node count, add or remove node labels and taints, then click on the SAVE icon:
 
 ![](../../../assets/images/clusters/28.png?width=30pc&classes=border,shadow)
+
+### Node Labels and Taints
+
+**Node labels** are key/value pairs that mark the nodes of a pool with a property - a hardware class, an owner team, or a workload type. A pod picks such nodes with a `nodeSelector`.
+
+**Taints** work in the opposite direction: a tainted node repels every pod that does not explicitly tolerate the taint. This keeps a pool reserved instead of merely preferred.
+
+They are used together when a Node Pool must be dedicated to one workload:
+- the label lets the right pod *select* the pool;
+- the taint stops every other pod from landing on it.
+
+Typical cases are database or stateful workloads that must not share nodes with the rest of the cluster, GPU pools that should only run GPU jobs, and pools with a licensed or expensive flavor.
+
+Taint effects:
+- *NoSchedule* - new pods without a matching toleration are not scheduled on the node;
+- *PreferNoSchedule* - the scheduler avoids the node, but may still use it if no other node fits;
+- *NoExecute* - new pods are not scheduled and the running pods without a matching toleration are evicted.
+
+**Example.** The Node Pool `test-pool` gets the label `compute=database` and the taint `compute=database:NoSchedule`. Only a pod that selects the label and tolerates the taint is scheduled on this pool:
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres
+spec:
+  nodeSelector:
+    compute: database
+  tolerations:
+    - key: compute
+      operator: Equal
+      value: database
+      effect: NoSchedule
+  containers:
+    - name: postgres
+      image: postgres:16
+```
+
+A pod without this toleration is never scheduled on `test-pool`, even when the pool is idle.
 
 ### Upgrade Node Pool
 
