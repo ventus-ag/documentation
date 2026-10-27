@@ -3,94 +3,93 @@ title: Database's Backups
 weight: 20
 ---
 ___
-On this page, you can find an explanation of what is database's Backups, how to create it and how to restore Database from its Backup in the Cloud Console.
+On this page, you can find what database's Backups are, how to connect backup storage, create and schedule backups and restore a Database from a backup in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
   - [Introduction](#introduction)
-  - [Link Database to the S3 Storage](#link-database-to-the-s3-storage)
-  - [Configure the Scheduler for Database Backups](#configure-the-scheduler-for-database-backups)
-  - [Create Immediate Database Backup](#create-immediate-database-backup)
-  - [Restore Database from Backup](#restore-database-from-backup)
+  - [Backup storage](#backup-storage)
+  - [Automatic backups](#automatic-backups)
+  - [Create backup](#create-backup)
+  - [Restore Database from backup](#restore-database-from-backup)
+  - [Undo the last restore](#undo-the-last-restore)
 
 ## Introduction
-**Database's Backups** offer an additional layer of security for your databases, similar to Database's Replicas. However, backed-up data is stored in the designated S3 storage, enhancing its safety. 
+**Database's Backups** keep a copy of your data in your own S3 storage, which makes it safer than [Replicas](../database-replicas). You can back up at any time or on a schedule. Everything is on the *BACKUPS TAB* of the *Database details page* (there is no separate scheduler tab). Backups need connected backup storage first.
 
-Within the Cloud Console, you can initiate a database's backup at any given time, or set up a scheduler to automate your backups.
-However, for both scenarios, the initial step involves linking the Database to the S3 Storage.
+![](../../../assets/images/databases/backups-tab.png?width=50pc&classes=border,shadow)
 
-{{% notice note %}}
-Before you can begin creating database backups, it's essential to link the Database to your S3 Storage. Don't overlook this step—detailed instructions will follow in the next section.
+| Part of the tab | Description |
+|-----------------|-------------|
+| **CREATE BACKUP** | makes a backup now |
+| **Backup storage** card | the S3 bucket where backups are stored |
+| **Automatic backups** card | the schedule and retention |
+| **Last backup** card | the result (*Success* or *Failed*) and the finish time of the last backup |
+| **Restore recovery** card | appears only when a copy of the data from before the last restore exists |
+| table | *Restore points* (one row per backup) or *Files* (every file in the bucket), switched with the toggle above the table |
+
+One backup writes one file per database (Redis: one file for the whole data set); the files of one backup form a **restore point**. The *Backup* block of the details area shows the *Backing up* and *Restoring* states and the result of the last backup. A failed backup is shown in the notice **Last backup failed** with the reason; while a backup or a restore runs, the notice **Backup in progress** says that new backups, restores and storage changes are unavailable until it finishes.
+
+## Backup storage
+Click **Connect storage** in the *Backup storage* card (**Change storage** when storage is already connected). Choose the *Storage provider*:
+
+![](../../../assets/images/databases/connect-storage.png?width=30pc&classes=border,shadow)
+
+| Provider | Fields |
+|----------|--------|
+| *This project's object storage* | *Access key* - an Object Storage access key of your Project; the buckets of the key load after you select it. *Backup bucket* - the bucket for backups. If you have no key or bucket yet, create it with *Create access key* or *Create backup bucket* at the end of the list; the new one is selected automatically. See [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/) |
+| *External S3 storage* | *S3 endpoint* (starts with `http://` or `https://`), *Bucket name*, *Access key* and *Secret key* of a bucket that is somewhere else |
+
+If keys or buckets cannot be loaded, the window shows the error with a retry button. When the storage is connected, the card shows its *Endpoint* and *Bucket*, and the details area shows the *S3 Endpoint* and the *S3 Key* as **Configured** (the secret is never shown). **Disconnect** removes the link. Connecting, changing and disconnecting are not available while a backup or a restore is in progress.
+
+## Automatic backups
+Click **Set schedule** (**Edit schedule** if one exists) in the *Automatic backups* card; it is available when the storage is connected.
+
+| Setting | Description |
+|---------|-------------|
+| Repeat | *Every day* (backup time); *Every week* (day of the week and time); *Every month* (day 1-31, days 29-31 skip shorter months, and time); *Every hour* (minute past each hour); *Custom cron (advanced)* - a cron expression of five fields: minute, hour, day of month, month, day of week |
+| Timezone | the time zone of the backup time; by default the one of your browser; the time follows its daylight-saving changes |
+| Keep backups for | *Days* (1-99), or *Custom duration* in the format `7d12h0m` (days, hours, minutes, maximum `99d23h59m`). Older backups of the schedule are removed automatically |
+
+![](../../../assets/images/databases/backup-schedule.png?width=30pc&classes=border,shadow)
+
+A schedule that was set earlier and is not one of the simple options is kept as *Custom cron (advanced)*. If the schedule cannot be saved, the window shows the reason.
+
+The card shows the state (*Scheduled*, *Not scheduled*, or *Storage disconnected* - a schedule exists, but the storage is not connected), a description such as *Every day at 01:00 (Europe/Vienna)* or *Every Monday at 03:30 (UTC)*, the *Retention* and the *Next run (your time)*. **Remove schedule** deletes the schedule after confirmation.
+
+## Create backup
+Click **CREATE BACKUP** and select the databases to include in *Databases (leave empty for all)*; an empty selection backs up every database. The field is not shown for Redis, which always backs up the whole data set. The button is not available, and its tooltip tells why, when: the storage is not connected (*Connect backup storage first.*), the Database is not running (*Start the database before running a backup or restore.*), or a backup or restore is already running (*A database backup or restore is already in progress.*).
+
+## Restore Database from backup
+Switch the table between **Restore points** and **Files** with the toggle (the numbers show the rows of each view).
+
+- **Restore points** - columns *Taken*, *Databases* (*whole instance* for Redis), *Files*, *Size* and *Type* (*Backup* or *Pre-restore copy*, see below). Use *Restore...* in the row **Actions** menu. In the window select *Databases to restore* (empty restores all; not shown for Redis, which is always restored completely) and keep *Copy the current data first, so this restore can be undone* selected (the default).
+- **Files** - columns *Name*, *Database*, *Size* and *Note*. Use *Restore* in the row **Actions** menu to restore one file: for PostgreSQL, TimescaleDB, MySQL, MariaDB and MongoDB select the database in *Restore into*; Redis is restored completely after a confirmation and its keys are merged with the existing ones. Files made before backups were named after the instance (*Older layout*) are restored into the database you select and do not recreate the source database; files that cannot be attributed to this Database are listed with a note and cannot be restored.
+
+![](../../../assets/images/databases/restore-backup.png?width=30pc&classes=border,shadow)
+
+{{% notice warning %}}
+A restore replaces the data of the restored databases: it starts by dropping what it replaces. Keep *Copy the current data first* selected unless you do not need the current data.
 {{% /notice %}}
 
-To find information about all created backups of corresponding database, to manage them or to use one of it to restore database - navigate the *BACKUPS TAB* on the *Database details page*, for this do the following:
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*:   
-   
-![](../../../assets/images/databases/6.png?classes=border,shadow)
+If the list cannot be loaded, the red notice *Could not load backups* with a *Retry* button is shown above the table. Restoring and creating backups are not available while the Database is not running or another backup or restore is in progress.
 
-- on the *Database details page* select the *BACKUPS TAB*:    
+The progress is shown as *Restoring* and *Restore phase* in the *Backup* block:
 
-![](../../../assets/images/databases/22.png?width=20pc&classes=border,shadow) 
+| Restore phase | Meaning |
+|---------------|---------|
+| `Preparing` | the copy of the current data is being taken |
+| `Restoring` | the data is being restored |
+| `RollingBack` | the restore failed, the copy of the current data is being put back |
+| `Succeeded` | the restore is finished |
+| `RolledBack` | the restore failed and the data was put back |
+| `Failed` | the restore failed and the data could not be put back; the message names the objects |
 
-To find information about all established backup schedulers for a specific database and to manage them, navigate to the *SCHEDULER TAB* on the *Database details page*:
-![](../../../assets/images/databases/23.png?width=20pc&classes=border,shadow) 
+A failed restore also shows the notice **Restore failed** or **Restore failed and was rolled back** with the details.
 
-## Link Database to the S3 Storage
-To link the Database to the S3 Storage do the following:  
-- ensure that you have already created Object Storage credentials;  
-  to find information how to create Object Storage Credentials in the Cloud Console use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/).
-  
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;  
-- click on the appropriative **quick actions** icon there:    
-![](../../../assets/images/databases/19.png?width=40pc&classes=border,shadow) 
-
-- fill in the form on the next opened *S3 storage linking* and click on LINK icon;   
-  all necessary information you can take form the *Object Storage Credentials page*;  
-  how to get there, please use the article: [Object Storage Credentials](https://docs.ventuscloud.eu/products/object-storage/object-storage-credentials/);  
-  
-![](../../../assets/images/databases/20.png?width=30pc&classes=border,shadow) 
-
-After these steps, the current database will establish a connection with the specified S3 storage and within the *database's details area*, you'll see relevant updates: the S3 mode will change from *Unlinked* to *Linked*, and will be provided details regarding the Endpoint and KEY:
-![](../../../assets/images/databases/21.png?width=50pc&classes=border,shadow) 
+## Undo the last restore
+While the copy taken before a restore exists (type *Pre-restore copy*, listed with your backups), the *Restore recovery* card shows the date of the *Safety copy*. It stays after a restore that finished successfully. Click **Undo last restore** and confirm: the databases go back to the copy, and everything written since the restore is lost. The button is not available while the storage is not connected, the Database is not running or another backup or restore is in progress.
 
 {{% notice note %}}
-With the S3 linked, you have the capability to create and manage scheduling as well as backups for your database.
+For Redis, undoing a restore empties the keyspace and loads the copy taken before the restore, because a Redis restore is merged with the existing keys.
 {{% /notice %}}
-
-## Configure the Scheduler for Database Backups
-To configure the scheduler for database backups do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
-- ensure that the selected database is already linked to the S3 storage:   
-![](../../../assets/images/databases/21.png?width=50pc&classes=border,shadow)
-
-- navigate to the *SCHEDULER TAB* and click CONFIGURE icon:  
-![](../../../assets/images/databases/24.png?width=35pc&classes=border,shadow)
-
-- fill in the form on the next opened *Scheduler configuration* and click on APPLY icon: 
-![](../../../assets/images/databases/25.png?width=30pc&classes=border,shadow) 
-
-After these steps, the scheduler you've set up will be engaged for automating database backups. All the backups created through this scheduler can be found on the *BACKUPS TAB*.
-
-## Create Immediate Database Backup
-To create immediate on-demand database backup do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
-- ensure that the selected database is already linked to the S3 storage:   
-![](../../../assets/images/databases/21.png?width=50pc&classes=border,shadow)
-
-- navigate to the *BACKUPS TAB* and click CREATE BACKUP icon:  
-![](../../../assets/images/databases/28.png?width=40pc&classes=border,shadow)
-
-- confirm your action on the next opened *Confirmation window*.
-
-After these steps, the newly created Backup of the current database will be added to the *BACKUPS TAB* and can be used to restore the database.
-
-## Restore Database from Backup
-To restore database form the backup do the following:    
-- open the selected *Database details page* - for this click on the **Name** of the corresponding Database on the *Databases page*;
-- navigate to the *BACKUPS TAB* and select the backup, that you want to use to restore database;
-- click on the **Actions** icon and select the **Restore** in the list of available options;  
-![](../../../assets/images/databases/26.png?width=40pc&classes=border,shadow)
-
-- confirm your action on the next opened *Confirmation window*.
-
-After these steps, the database restoring will be started.

@@ -3,111 +3,152 @@ title: Databases
 weight: 10
 ---
 ___
-On this page, you can find an explanation of how to create, edit, delete Databases and instructions for other steps to manage Databases in the Cloud Console.
+On this page, you can find how to create, edit, upgrade and delete Databases in the Cloud Console.
 
 # Table of contents
 - [Table of contents](#table-of-contents)
   - [Databases page](#databases-page)
   - [Create Database](#create-database)
+  - [High Availability](#high-availability)
   - [Database details page](#database-details-page)
   - [Edit Database](#edit-database)
+  - [Upgrade Database version](#upgrade-database-version)
   - [Reset Database Password](#reset-database-password)
-  - [Delete Database](#delete-database)
+  - [Start, Stop and Delete](#start-stop-and-delete)
 
 {{% notice note %}}
-Please be aware that the Database-as-a-Service feature in the Cloud Console is currently in beta. This means it has not been fully tested across all use cases but aims to provide a user-friendly way to manage a variety of databases. If you're willing to accept the associated risks of using a beta service, you're welcome to proceed. Be sure, customer support is readily available for any questions or issues you may encounter.   
+The Database-as-a-Service feature in the Cloud Console is currently in beta. It has not been fully tested across all use cases. Customer support is available for any questions or issues you may encounter.
 {{% /notice %}}
 
 ## Databases page
-To get to the *Databases page*, select **Databases** from the VIRTUAL DATACENTER block in the *side-bar menu*:
-![](../../../assets/images/databases/1.png?width=15pc&classes=border,shadow) 
+Select **Databases** in the VIRTUAL DATACENTER block of the *side-bar menu*. The page lists all Databases of the Project with a search bar, sorting and the **CREATE DATABASE** button. Click the name of a Database to open its [details page](#database-details-page).
 
-On this page you can find all created Databases with the *Create button*, *Search bar* and *Actions icon*, which opens a list of available management actions for the selected Database:
-![](../../../assets/images/databases/2.png?classes=border,shadow)
+![](../../../assets/images/databases/databases-list.png?classes=border,shadow)
 
-**Actions** icon opens the next list of available management actions:
-- *Edit* - this option is used to change next parameters of the selected Database: version, port, number of vCPUs, memory amount and IP ACL;
-- *Delete* - this option is for the Database removing;   
-- *Reset Password* - this option allows to change the database password;  
-  this option is only accessible for standalone databases and not for replicas.  
+| Column | Description |
+|--------|-------------|
+| Status | `ACTIVE` - ready to use; `PROVISIONING` - being created; `UPGRADING` - moving to another version; `DEGRADED` - running, but not fully healthy (for example, the High Availability standby is not ready); `STOPPED` - stopped; `FAILED` - could not reach the requested state, contact customer support; `DELETING` - being removed |
+| Mode | *Standalone*; *Primary* - the Database has [Replicas](../database-replicas) in other Projects; *Replica* |
+| Connection string | address and port to connect to the Database |
+
+The **Actions** menu of a row has *Start* (only for `STOPPED` Databases), *Edit* and *Delete*.
 
 ## Create Database
-To create new Database do the following:
-- go to the *Databases page* and click the *CREATE DATABASE* icon in the upper left corner;
-- fill in the form on the next opened *Create Database window* and click on the CREATE icon:
+Click **CREATE DATABASE**, fill in the form and click **CREATE**.
 
-![](../../../assets/images/databases/3.png?width=35pc&classes=border,shadow) 
-  - *Service name* - choose what database you want to create - now in Cloud Console you have possibility to create PostgreSQL, MySQL or MariaDB Database;  
-  - *Name* - set a Name for the new Database;  
-  - *Version* - select service version which you want to use for the new Database;  
-  - *DB User* - set the name od DB user, that you will use for the connecting;  
-  - *Port* - set the port for the Database;    
-    by default, default port for each Database Service is pre-selected;     
-  - *vCPUs* - set the number of vCPUs for the new Database;  
-  - *Memory* - set the Memory amount for the new Database;  
-  - *Disk size* - set the disk size;  
-    by default, 1000 MiB is pre-selected;    
-  - *IP ACL* - use this option, if you want to open current Database for specified  IP Addresses range;
-    or you can provision Database in private network;
+![](../../../assets/images/databases/create-database.png?width=35pc&classes=border,shadow)
 
-After these steps, the newly created Database will be added to the *Databases page* with a PROVISIONING status. It will initially be in Standalone Mode as no replicas are associated with it. The subsequent window will reveal your database password. Make sure to save this password for future use.
+| Field | Description |
+|-------|-------------|
+| Service name | PostgreSQL, TimescaleDB, MySQL, MariaDB, MongoDB or Redis |
+| Name | up to 16 characters: Latin letters, digits and hyphens; starts with a letter, does not end with a hyphen. It is also the name of the first database inside the instance, so names reserved by the engine (for example `postgres`, `mysql`, `admin`) are refused |
+| Version | only supported versions are offered; the recommended one is marked *(default)* and is used if nothing is selected |
+| Extensions | PostgreSQL and TimescaleDB only: extensions created in the initial database, see [Database Management](../database-management#extensions-and-settings) |
+| DB user | optional name of the main user: starts with a Latin letter, letters, digits and hyphens, up to 16 characters; names of system accounts (`root`, `postgres`, `admin`, `default`, `replication`, ...) are reserved |
+| Port | the default port of the service is pre-filled |
+| vCPUs, Memory | resources of the Database |
+| Disk | size in MiB, the range depends on the service; pre-filled with the minimum |
+| IP ACL | IPv4 networks with a prefix length that may connect to the public endpoint, one per line, for example `192.168.1.101/32`. Later it is changed on the NETWORK TAB, see [Database's Network](../database-network) |
+| Provision in private network | places the Database in a private *Network* and *Subnet*, optionally with a *Private static IP*; more endpoints can be added later on the NETWORK TAB |
+| Enable High Availability | adds a standby that takes over automatically, see [High Availability](#high-availability) |
 
-The database will be fully set up in a few minutes once the status updates to ACTIVE.
-![](../../../assets/images/databases/4.png?classes=border,shadow)
+After you click **CREATE** the Database appears with the `PROVISIONING` status and a window shows its password **once** - save it. The Database is ready in a few minutes, when the status becomes `ACTIVE`.
+
+| Service | Default port | Features |
+|---------|--------------|----------|
+| PostgreSQL | 5432 | databases with charset and collation, extensions, custom options, Replicas |
+| TimescaleDB | 5432 | the same as PostgreSQL |
+| MySQL, MariaDB | 3306 | databases with charset and collation, custom options, Replicas |
+| MongoDB | 27017 | databases without charset and collation, no Replicas; High Availability runs 3 members |
+| Redis | 6379 | no named databases (no DATABASES TAB), users get one access level for the whole instance, backups cover the whole data set |
+
+## High Availability
+**High Availability (HA)** keeps the Database available when its server fails. The platform runs the Database as a *primary* with one *standby* copy that receives all changes. If the primary stops responding, the standby is promoted automatically and the connection address stays the same; clients only need to reconnect. MongoDB runs a replica set of three members that elects its primary by itself.
+
+Switch HA on or off with *Enable High Availability* in the create or edit form. Switching it off removes the standby.
+
+- For PostgreSQL, TimescaleDB, MySQL and MariaDB a change is confirmed by the standby before it is acknowledged. If the standby is unavailable, the Database keeps working with asynchronous replication instead of blocking writes.
+- vCPUs, Memory and Disk are *per member*, and every member is charged: the Resources block shows **Charged: x2 (HA)** (**x3** for MongoDB).
+- HA protects against a server failure. It does not replace [Backups](../database_backups) and is not the same as [Replicas](../database-replicas), which are copies in other Projects.
+
+The General block of the details page shows *High availability*: Yes/No and, when it is on:
+
+| Field | Description |
+|-------|-------------|
+| Health | `Healthy` - all members work normally; `Suspect`, `Degraded` - a member has a problem, the Database may run without a standby; `FailingOver`, `SwitchingOver` - the standby is taking over, after a failure or as a planned operation; `SplitBrainRisk` - the members cannot agree on the primary, contact customer support |
+| Failover delay | how long the platform waits for the primary before promoting the standby |
+| Last failover | date and time of the last failover |
 
 ## Database details page
-To open the *Database details page*, click on the **Name** of the corresponding Database:
-![](../../../assets/images/databases/6.png?classes=border,shadow)
+![](../../../assets/images/databases/database-details.png?classes=border,shadow)
 
-This action will redirect you to the *Database details page*, where you can find:
-- Database **details area** with actual information about it:  
-![](../../../assets/images/databases/7.png?width=30pc&classes=border,shadow)
+**Notices.** Problems and progress are shown in one box at the top. One notice shows its title and text, as in the picture below; several are merged into one box *N notices*, most severe first (errors, warnings, information). Notices: *Upgrading X → Y* (red if the upgrade failed or is blocked); *Migration* pending approval, in progress, failed or blocked (an older Database is being moved to the current platform image; when it is pending approval, contact customer support to approve or schedule the one restart); *Restore failed* and *Restore failed and was rolled back*; *Last backup failed*; *Backup in progress*; *Load balancer not applied*; *Extensions not installed*, *Settings not applied*, *Charset and collation not applied (server default used)*, *Permissions not applied* and *Extensions installing after the database restarts*; and a notice that databases and users are read-only (see [User Management](../database-user-management#users-managed-inside-the-database)). The reason is written in every notice.
 
-- panel with available **quick actions**:   
-![](../../../assets/images/databases/8.png?width=15pc&classes=border,shadow)
-  - *Link to S3 storage* - this option is used to link the database with the S3 Storage, for managing its backups;  
-  - *Start* - this option is used to start the database if it was stopped; 
-  - *Stop* - this option is used to stop the database;
-  - *Edit* - this option is used to modify database details like the version, port, number of vCPUs, memory capacity, or IP ACL;  
-  - *Delete* - this option is for database removing;
-  - **Additional Actions:**
-    - *Reset Password* - this option allows to change the database password; this option is only accessible for databases in a *standalone* or *primary* modes and not for *replicas*. 
-   
-- transition to the REPLICAS, SCHEDULER and BACKUPS TABs of this database:  
-![](../../../assets/images/databases/9.png?width=20pc&classes=border,shadow) 
+![](../../../assets/images/databases/database-notices.png?classes=border,shadow)
 
-**REPLICAS TAB** - provides information about all created replicas of corresponding database in other Projects, and allows to manage this services:   
-![](../../../assets/images/databases/10.png?width=40pc&classes=border,shadow)  
+**Quick actions** (icons next to the title): *Start*, *Stop*, *Database management* (opens the web-based management tool DbGate in a new tab), *Reset password*, *Edit* and *Delete*.
 
-**SCHEDULER TAB** - provides information about all established backup schedulers for a specific database and allows to manage them:
-![](../../../assets/images/databases/27.png?width=40pc&classes=border,shadow) 
+**Details area:**
 
-**BACKUPS TAB** - provides information about all created backups of corresponding database, and allows to manage them or to use one of them for database restore:
-![](../../../assets/images/databases/26.png?width=40pc&classes=border,shadow) 
+| Block | Shows |
+|-------|-------|
+| General | ID, creation date, *Status*, *Mode*, number of Replicas, *High availability* and its health, *Connection pooler* address and mode if the pooler is on |
+| Resources | *Version* (and *Running*, the version actually running, while it differs, for example during an upgrade), *vCPU*, *Memory*, *Disk* with the used percentage, *Charged* multiplier with HA |
+| Backup | *Backing up* and *Restoring* states, *Restore phase*, *Last backup* result (hover it for the message), *Last run*, scheduler *Timezone* and *Next run*, S3 link state |
+| Connection information | *Host* (click to copy), *S3 Endpoint* and *S3 Key* when backup storage is connected; the secret is never shown, the key is displayed as **Configured** |
 
-**CUSTOM OPTIONS TAB** - provides information about all custom options of corresponding database, and allows to manage them:
-![](../../../assets/images/databases/29.png?width=40pc&classes=border,shadow)
+The **Usage** chart shows CPU and memory load for the last hour.
 
-Details about each tab and its features will be provided in the next articles of this block.
+**Tabs.** The selected tab is kept in the page address, so a link to it can be shared.
+
+| Tab | Purpose | Shown for |
+|-----|---------|-----------|
+| DATABASES | databases and extensions inside the instance, see [Database Management](../database-management) | all except Redis |
+| USERS | users and permissions, see [User Management](../database-user-management) | all |
+| REPLICAS | copies in other Projects, see [Database's Replicas](../database-replicas) | all except MongoDB |
+| BACKUPS | storage, schedule, backups and restore, see [Database's Backups](../database_backups) | all |
+| CUSTOM OPTIONS | engine options, see [Database's Custom Options](../database-custom-options) | PostgreSQL, TimescaleDB, MySQL, MariaDB, Redis, MongoDB |
+| NETWORK | public and internal endpoints, see [Database's Network](../database-network) | all |
+
+There is no separate scheduler tab: the backup schedule is on the BACKUPS TAB, and an old link with `?tab=scheduler` opens it.
+
 ## Edit Database
-To edit the Database do the following:  
-- identify Database, that you want to edit, on the *Databases page*;  
-- click on the **Actions** icon and select the **Edit** in the list of available options;  
-- modify details like the database version, port, number of vCPUs, memory capacity, or IP ACL on the next opened *Edit Database window* and click on the SAVE icon:
+Open **Edit** from the **Actions** menu on the *Databases page* or with the *Edit* icon on the details page, change the fields and click **SAVE**. The Database is updated in a few minutes.
 
-![](../../../assets/images/databases/5.png?width=30pc&classes=border,shadow) 
+![](../../../assets/images/databases/edit-database.png?width=30pc&classes=border,shadow)
 
-After these steps, the selected Database will be updated in a few minutes. 
+| Field | Notes |
+|-------|-------|
+| Version | the list offers the versions the Database can move to, see [Upgrade Database version](#upgrade-database-version) |
+| Port | the port of the Database |
+| vCPUs, Memory | resources of the Database (labelled *CPU* and *RAM* in the form on the details page) |
+| Disk | details page only. The size can only be **increased**: the field cannot be set below the current size, because a volume cannot shrink. The Database stays online while the disk grows, in most cases without a restart |
+| Enable High Availability | see [High Availability](#high-availability) |
+| Connection pooler | details page only, for PostgreSQL and TimescaleDB Databases that already use the pooler (PgBouncer on port 6432, beside each endpoint; the addresses are on the NETWORK TAB). It can be switched off, or its *Pooling mode* changed: *Transaction* - clients keep their connection through a switchover or failover, session state (SET, advisory locks, LISTEN, temporary tables) does not outlive a transaction; *Session* - full session semantics, connections are dropped on a switchover. Switching it off or changing the mode disconnects all clients of the pooler, the form warns you before you save |
 
-Also, you can edit the Database from the current *Database details page*, by clicking on the appropriative **quick actions** icon there: 
-![](../../../assets/images/databases/11.png?width=15pc&classes=border,shadow)
+{{% notice note %}}
+The *IP ACL* is not in the edit form any more: edit it on the NETWORK TAB with *Edit allowed CIDRs* (see [Database's Network](../database-network)). The databases, extensions, settings and custom options of a Replica follow its primary Database and cannot be edited on the Replica.
+{{% /notice %}}
 
-## Delete Database
-To delete the Database do the following:
-- identify this unnecessary Database on the *Databases page*;
-- click on the **Actions** icon and select the **Delete** in the list of available options;
-- confirm the Database deletion on the next opened *Confirmation window*.
+## Upgrade Database version
+Change the version with the *Version* field of the edit form.
+- The list contains the version that is running (marked *(current)*), a pending version (marked *(requested)*) and the newer versions that are available. Moving to an older version is not possible.
+- A major version is upgraded one major version at a time (for example 14 → 15 → 16). A step that skips a major version is refused.
+- If an extension in use is not available on the selected version, the form warns you: the upgrade may be blocked or leave the extension uninstalled.
+- During the upgrade the status is `UPGRADING`, the notice *Upgrading X → Y* shows the phase, and *Version* shows the requested version while *Running* shows the version that is running now.
+- If the upgrade fails or is blocked, the notice turns red and gives the reason. To cancel an unfinished upgrade, edit the Database, select the *(current)* version and save.
 
-After these steps, the selected Database will be deleted.
-Also, you can delete the Database from the current *Database details page*, by clicking on the appropriative **quick actions** icon there: 
-![](../../../assets/images/databases/13.png?width=15pc&classes=border,shadow)
+{{% notice warning %}}
+Create a backup before an upgrade (see [Database's Backups](../database_backups)). A major version upgrade cannot be reverted by selecting an older version.
+{{% /notice %}}
+
+## Reset Database Password
+Click the *Reset password* icon on the details page and confirm. The new password of the main Database user (the *DB user* from the create form) is shown **once** - save it. The icon is active for running Databases (`ACTIVE` or `DEGRADED`) in *Standalone* or *Primary* mode. It is not available for Replicas and for Databases whose users are managed inside the engine. Passwords of other users are reset on the USERS TAB.
+
+## Start, Stop and Delete
+- **Stop** (details page) stops a running Database: it does not accept connections, its data is kept. **Start** (details page, or the row **Actions** menu) starts a `STOPPED` Database.
+- **Delete** (the row **Actions** menu, or the *Delete* icon on the details page) asks you to type the name of the Database to confirm.
+
+{{% notice warning %}}
+Deleting a Database permanently removes its data. This action cannot be undone.
+{{% /notice %}}
